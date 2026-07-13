@@ -1,0 +1,124 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
+
+// Components
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import ScrollProgress from './components/ScrollProgress';
+
+// Pages
+import Home from './pages/Home';
+import About from './pages/About';
+import Services from './pages/Services';
+import Products from './pages/Products';
+import Projects from './pages/Projects';
+import Skylume from './pages/Skylume';
+import NoohStar from './pages/NoohStar';
+import Testimonials from './pages/Testimonials';
+import Contact from './pages/Contact';
+import CeilingSolution from './pages/Ceiling/CeilingSolution';
+import WallSolution from './pages/Wall/WallSolution';
+import FloorSolution from './pages/Floor/FloorSolution';
+import DecorativeSolution from './pages/DecorativeSolution';
+import StretchCeiling from './pages/Ceiling/StretchCeiling';
+import AsiftextileCeiling from './pages/Ceiling/AsiftextileCeiling';
+import MuralCeiling from './pages/Ceiling/MuralCeiling';
+import SunroofCeiling from './pages/Ceiling/SunroofCeiling';
+import ThreeDStretchCeiling from './pages/Ceiling/ThreeDStretchCeiling';
+import FloatingContactButtons from './components/FloatingContactButtons';
+import ThreeDallshape from './pages/Ceiling/ThreeDallshape';
+import Transluscent from './pages/Ceiling/Transluscent';
+import Rgbwpixel from './pages/Ceiling/Rgbwpixel';
+import GlossStretch from './pages/Ceiling/GlossStretch';
+import TunableDimmable from './pages/Ceiling/TunableDimmable';
+import DualCompatible from './pages/Ceiling/DualCompatible';
+import Franchise from './components/Franchise';
+import BlacklitAryclicwallart from './pages/Wall/BlacklitAryclicwallart';
+import Blackoutdecorativewall from './pages/Wall/Blackoutdecorativewall';
+import Customprintedwallpaper from './pages/Wall/Customprintedwallpaper';
+import Fabricwallmural from './pages/Wall/Fabricwallmural';
+import PaintingFraming from './pages/Wall/PaintingFraming';
+import RgbwpixelStretcWall from './pages/Wall/RgbwpixelStretchWall';
+import ThreeDwallmural from './pages/Wall/ThreeDwallmural';
+import TranslucentStretchWall from './pages/Wall/TranslucentStretchWall';
+import VinylyWallMural from './pages/Wall/VinylWallMural';
+import ThreeDPrintedStretchWall from './pages/Wall/ThreeDPrintedStretchWall';
+import Metallicpoxyflooring from './pages/Floor/Metallicpoxyflooring';
+import ThreeDmuralExpoxy from './pages/Floor/ThreeDmuralExpoxy';
+import WoodenFlooring from './pages/Floor/WoodenFlooring';
+
+
+function App() {
+
+  return (
+    <HelmetProvider>
+      <Router>
+        <div className="App bg-luxury-black min-h-screen">
+          <ScrollProgress />
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/franchise" element={< Franchise />}/>
+            <Route path="/skylume" element={<Skylume />} />
+            <Route path="/noohstar" element={<NoohStar />} />
+            <Route path="/ceiling-solutions" element={<CeilingSolution />} />
+
+            {/* routes for specific ceiling types */}
+            <Route path="/stretch-ceiling" element={<StretchCeiling />} />
+
+             {/*Stretch Ceiling sub-routes*/}
+            <Route path="/3d-stretch-ceiling" element={<ThreeDStretchCeiling />} />
+            <Route path="/all-shape-ceiling"  element={<ThreeDallshape/>}/>
+            <Route path="/translucent-ceiling" element={<Transluscent/>}/>
+            <Route path="/rgbw-ceiling" element={< Rgbwpixel/>}/>
+            <Route path="/gloss-ceiling" element={< GlossStretch/>}/>
+            <Route path="/tunable-ceiling" element={<TunableDimmable/>}/>
+            <Route path="/dual-compatible-ceiling" element={<DualCompatible/>}/>
+
+           <Route path="/asif-textile-ceiling" element={<AsiftextileCeiling />} />
+            <Route path="/mural-ceiling" element={<MuralCeiling />} />
+            <Route path="/french-virtual-sunroof" element={<SunroofCeiling />} />
+            <Route path="/asiftextile-ceiling" element={<AsiftextileCeiling />} />
+            <Route path="/mural-ceiling" element={<MuralCeiling />} />
+            <Route path="/sunroof-ceiling" element={<SunroofCeiling />} />
+              {/* Wall Solution  */}
+            <Route path="/wall-solutions" element={<WallSolution />} />
+            {/* Wall Categories */}
+            <Route path="/translucent-stretch-wall"  element={< TranslucentStretchWall/>}/>
+            <Route path="/backlit-acrylic-wall-art" element={<BlacklitAryclicwallart/>}/>
+            <Route path="/block-out-decorative-wall" element={<Blackoutdecorativewall/>}/>
+            <Route path="/custom-printed-wallpaper" element={<Customprintedwallpaper/>}/>
+            <Route path="/fabric-wall-mural" element={<Fabricwallmural/>}/>
+            <Route path="/painting-framing" element={<PaintingFraming/>}/>
+            <Route path="/rgbw-pixel-wall" element={<RgbwpixelStretcWall/>}/>
+            <Route path="/3d-wall-mural" element={<ThreeDwallmural/>}/>
+            <Route path="/vinyl-wall-mural" element={<VinylyWallMural/>}/>
+             <Route path="/threed-stretch-wall" element={<ThreeDPrintedStretchWall/>}/>
+             {/* Floor Solutions */}
+            <Route path="/floor-solutions" element={<FloorSolution />} />
+            {/*Floor Categories  */}
+            <Route path="/metallic-epoxy-flooring" element={<Metallicpoxyflooring />} />
+            <Route path="/3d-mural-epoxy-flooring" element={<ThreeDmuralExpoxy/>} />
+            <Route path="/wooden-flooring" element={<WoodenFlooring />} />
+
+            <Route path="/decorative-solutions" element={<DecorativeSolution />} />
+            <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/contact" element={<Contact />} />
+           
+          </Routes>
+          <Footer />
+       
+          <FloatingContactButtons/>
+        </div>
+      </Router>
+    </HelmetProvider>
+  );
+}
+
+export default App;
+
