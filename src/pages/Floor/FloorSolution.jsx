@@ -76,37 +76,9 @@ const FloorSolution = () => {
       </Helmet>
 
       <div className="min-h-screen bg-luxury-black pt-24">
-        {/* Hero Section */}
-        <section className="relative h-screen flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <img
-              src="https://plus.unsplash.com/premium_photo-1676823547752-1d24e8597047?q=80&w=1170"
-              alt="Floor "
-              className="h-full w-full object-cover object-center"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b bg-black/60" />
-          </div>
+       
 
-          <div className="relative z-10 container-custom mx-auto px-6 text-center">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8 }}
-            >
-              <h1 className="text-6xl md:text-8xl font-luxury font-bold text-gold-300 mb-6">
-                <span className="text-white">Premium</span> <span>Floor</span>
-              </h1>
-              <p className="text-2xl md:text-3xl text-white/90 mb-8">
-              </p>
-              <p className="text-xl text-white/70 max-w-3xl mx-auto mb-12">
-                Explore our collection of high-quality flooring systems, from metallic epoxy to wooden flooring, crafted to enhance the beauty.
-              </p>
-              <Link to="/contact" className="btn-luxury text-lg">
-                Request Demo
-              </Link>
-            </motion.div>
-          </div>
-        </section>
+         
 
         {/* Ceiling categories */}
         <section className="section-padding">
@@ -121,7 +93,7 @@ const FloorSolution = () => {
                 Explore Floor Categories
               </h2>
               <p className="text-xl text-white/70 max-w-3xl mx-auto">
-                Experience the benefits of natural daylight anywher
+                Experience the benefits of natural daylight anywhere
               </p>
             </motion.div>
 

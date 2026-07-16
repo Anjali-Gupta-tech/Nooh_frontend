@@ -45,42 +45,7 @@ const WallSolution = () => {
       </Helmet>
 
       <div className="min-h-screen bg-luxury-black pt-24">
-        {/* Hero Section */}
-        <section className="relative h-screen flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <img
-              src="https://images.unsplash.com/photo-1672130515395-32583062f72b?q=80&w=2070"
-              alt="Wall "
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b bg-black/60" />
-          </div>
-
-          <div className="relative z-10 container-custom mx-auto px-6 text-center">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8 }}
-            >
-              <h1 className="text-6xl md:text-8xl font-luxury font-bold text-gold-300 mb-6">
-                <span className="text-white">Premium</span> <span>Wall</span>
-              </h1>
-              <p className="text-2xl md:text-3xl text-white/90 mb-8">
-                Elegant Wall Systems for Modern Spaces
-              </p>
-              <p className="text-xl text-white/70 max-w-3xl mx-auto mb-12">
-                Enhance every interior with innovative wall solutions that
-                combine aesthetics, durability, and superior performance. We
-                design and install customized wall systems for residential,
-                commercial, hospitality, and industrial environments.
-              </p>
-              <Link to="/contact" className="btn-luxury text-lg">
-                Request Demo
-              </Link>
-            </motion.div>
-          </div>
-        </section>
-     
+      
 {/* Wall categories */}
   <section className="section-padding">
           <div className="container-custom mx-auto">

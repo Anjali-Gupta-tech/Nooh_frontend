@@ -52,41 +52,10 @@ const CeilingSolution = () => {
       </Helmet>
 
       <div className="min-h-screen bg-luxury-black pt-24">
-        {/* Hero Section */}
-        <section className="relative h-screen flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <img
-              src="https://images.unsplash.com/photo-1663006895289-37cfd433f00d?w=1200"
-              alt="Ceiling "
-              className="h-full w-full object-cover object-center"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b bg-black/60" />
-          </div>
-
-          <div className="relative z-10 container-custom mx-auto px-6 text-center">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8 }}
-            >
-              <h1 className="text-6xl md:text-8xl font-luxury font-bold text-gold-300 mb-6">
-                <span className="text-white">Premium</span> <span>Ceiling</span>
-              </h1>
-              <p className="text-2xl md:text-3xl text-white/90 mb-8">
-                Elegant Ceiling Systems for Modern Spaces
-              </p>
-              <p className="text-xl text-white/70 max-w-3xl mx-auto mb-12">
-                Enhance every interior with innovative ceiling solutions that
-                combine aesthetics, durability, and superior performance. We
-                design and install customized ceiling systems for residential,
-                commercial, hospitality, and industrial environments.
-              </p>
-              <Link to="/contact" className="btn-luxury text-lg">
-                Request Demo
-              </Link>
-            </motion.div>
-          </div>
-        </section>
+      
+    
+        
+          
 
         {/* Ceiling categories */}
         <section className="section-padding">
