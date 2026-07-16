@@ -166,7 +166,7 @@ const Contact = () => {
                           href="mailto:info@noohliving.com"
                           className="text-white/80 hover:text-luxury-gold smooth-transition"
                         >
-                        nooh.co.in
+                        info@noohliving.com
                         </a>
                       </div>
                     </div>
