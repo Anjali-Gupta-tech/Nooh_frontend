@@ -16,6 +16,7 @@ const Hero = () => {
     '/image/Hero4.png',
      '/image/Hero3.png',
     '/image/BarriorCeiling.png',
+    '/image/Hero5.png'
 
     
   ];
