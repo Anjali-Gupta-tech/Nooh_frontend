@@ -9,7 +9,7 @@ const Hero = () => {
   // Background Images
   const images = [
     
-    'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2070',
+    '/image/Hero1.png',
     'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2070',
     'https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   ];
@@ -53,9 +53,9 @@ const Hero = () => {
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
-            className="mb-8"
+           className="mt-24 md:mt-28 lg:mt-32 mb-8"
           >
-            <Logo className="h-24 md:h-32 lg:h-40 w-auto mx-auto text-white" />
+            <Logo className="h-20 md:h-32 lg:h-40 w-auto mx-auto text-white" />
 
             <motion.p
               initial={{ opacity: 0, letterSpacing: '0em' }}
