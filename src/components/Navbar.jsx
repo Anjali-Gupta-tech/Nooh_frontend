@@ -57,7 +57,7 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'glass py-3' : 'bg-transparent py-4 sm:py-5 md:py-6'
+        isScrolled ? 'glass py-3' : 'bg-black/20 py-4 sm:py-5 md:py-6'
       }`}
     >
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
