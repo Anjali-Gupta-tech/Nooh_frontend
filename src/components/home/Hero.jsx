@@ -12,14 +12,12 @@ const Hero = () => {
     '/image/Hero1.png',
     '/image/Hero2.png',
     '/image/Stretch.png',
-   
+    '/image/rgbwstretchceiling.png',
+     
      '/image/Hero3.png',
     '/image/BarriorCeiling.png',
-    '/image/editedphoto.png',
-    '/image/Hero5.png',
-    
-
-    
+    '/image/paintings.png',
+    '/image/Hero5.png',   
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
