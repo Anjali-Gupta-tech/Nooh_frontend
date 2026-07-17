@@ -10,8 +10,10 @@ const Hero = () => {
   const images = [
     
     '/image/Hero1.png',
-    'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2070',
-    'https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    '/image/Hero2.png',
+    '/image/Hero3.png',
+    '/image/Stretch.png',
+    
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
@@ -43,114 +45,9 @@ const Hero = () => {
       </div>
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/50 z-10" />
+      <div className="absolute inset-0 bg-black/20 z-10" />
 
-      {/* Content */}
-      <div className="relative z-20 h-full flex items-center justify-center">
-        <div className="container-custom mx-auto px-6 text-center">
-          {/* Animated Logo */}
-          <motion.div
-            initial={{ scale: 0, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
-           className="mt-24 md:mt-28 lg:mt-32 mb-8"
-          >
-            <Logo className="h-20 md:h-32 lg:h-40 w-auto mx-auto text-white" />
-
-            <motion.p
-              initial={{ opacity: 0, letterSpacing: '0em' }}
-              animate={{ opacity: 1, letterSpacing: '0.5em' }}
-              transition={{ duration: 1, delay: 0.3 }}
-              className="text-luxury-gold text-sm md:text-base uppercase tracking-[0.5em] mt-4"
-            >
-              Living Elevated
-            </motion.p>
-          </motion.div>
-
-          {/* Tagline */}
-          <motion.h2
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-2xl md:text-4xl lg:text-5xl font-light text-white mb-6 max-w-4xl mx-auto leading-relaxed"
-          >
-            Transforming Spaces into
-            <span className="text-luxury-gold font-luxury">
-              {' '}
-              Timeless Masterpieces
-            </span>
-          </motion.h2>
-
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7, duration: 0.8 }}
-            className="text-lg md:text-xl text-white/80 mb-12 max-w-2xl mx-auto"
-          >
-            Premium Stretch Ceilings, Fiber Optic Systems &
-            Luxury Interior Design Solutions
-          </motion.p>
-
-          {/* CTA Buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.9, duration: 0.8 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-6"
-          >
-            <Link to="/contact" className="btn-luxury">
-              Get Free Consultation
-            </Link>
-
-            <Link to="/projects" className="btn-outline-gold">
-              Explore Projects
-            </Link>
-          </motion.div>
-
-          {/* Slider Dots */}
-          <div className="flex justify-center gap-3 mt-10">
-            {images.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentImage(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  currentImage === index
-                    ? 'bg-luxury-gold scale-125'
-                    : 'bg-white/50'
-                }`}
-              />
-            ))}
-          </div>
-
-          {/* Scroll Indicator */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.5, duration: 1 }}
-            className="absolute bottom-12 left-1/2 transform -translate-x-1/2"
-          >
-            <motion.div
-              animate={{ y: [0, 10, 0] }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                ease: 'easeInOut',
-              }}
-              className="w-6 h-10 border-2 border-luxury-gold rounded-full flex items-start justify-center p-2"
-            >
-              <motion.div
-                animate={{ y: [0, 12, 0] }}
-                transition={{
-                  duration: 1.5,
-                  repeat: Infinity,
-                  ease: 'easeInOut',
-                }}
-                className="w-1 h-2 bg-luxury-gold rounded-full"
-              />
-            </motion.div>
-          </motion.div>
-        </div>
-      </div>
+    
 
       {/* Decorative Elements */}
       <div className="absolute top-0 left-0 w-full h-full z-10 pointer-events-none">
