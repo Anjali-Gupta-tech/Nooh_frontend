@@ -12,11 +12,12 @@ const Hero = () => {
     '/image/Hero1.png',
     '/image/Hero2.png',
     '/image/Stretch.png',
-    '/image/backlitewall.png',
+   
      '/image/Hero3.png',
     '/image/BarriorCeiling.png',
+    '/image/editedphoto.png',
     '/image/Hero5.png',
-    '/image/backlitewall.png'
+    
 
     
   ];
