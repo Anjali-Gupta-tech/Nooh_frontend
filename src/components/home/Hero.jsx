@@ -13,8 +13,10 @@ const Hero = () => {
     '/image/Hero2.png',
     '/image/epoxyflooring.png',
     '/image/Stretch.png',
+    '/image/Hero4.png',
      '/image/Hero3.png',
     '/image/BarriorCeiling.png',
+
     
   ];
 
