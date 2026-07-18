@@ -8,37 +8,38 @@ const Hero = () => {
 
   // Background Images
  const images = [
+   {
+    desktop: "/image/Hero1.png",
+    mobile: "/image/Hero1pic.png",
+  },
   {
     desktop: "/image/Hero2.png",
-    mobile: "/image/Heropic1.png",
+    mobile: "/image/Heropic2.png",
   },
-  {
-    desktop: "/image/Hero1.png",
-    mobile: "/image/Hero1.png",
-  },
+ 
   {
     desktop: "/image/Stretch.png",
-    mobile: "/image/Stretch.png",
+    mobile: "/image/Stretchpic.png",
   },
   {
     desktop: "/image/rgbwstretchceiling.png",
-    mobile: "/image/rgbwstretchceiling.png",
+    mobile: "/image/rwbgpic.png",
   },
   {
     desktop: "/image/Hero3.png",
-    mobile: "/image/Hero3.png",
+    mobile: "/image/Heroipic3.png",
   },
   {
     desktop: "/image/BarriorCeiling.png",
-    mobile: "/image/BarriorCeiling.png",
+    mobile: "/image/barriorceilingpic.png",
   },
   {
     desktop: "/image/paintings.png",
-    mobile: "/image/paintings.png",
+    mobile: "/image/paintingspic.png",
   },
   {
     desktop: "/image/Hero5.png",
-    mobile: "/image/Hero5.png",
+    mobile: "/image/Heropic5.png",
   },
 ];
 
