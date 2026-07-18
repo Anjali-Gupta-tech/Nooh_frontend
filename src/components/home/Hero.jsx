@@ -19,11 +19,11 @@ const Hero = () => {
  
   {
     desktop: "/image/Stretch.png",
-    mobile: "/image/Stretchpic.png",
+    mobile: "/image/Stretchupdatedpic.png",
   },
   {
     desktop: "/image/rgbwstretchceiling.png",
-    mobile: "/image/rwbgpic.png",
+    mobile: "/image/rbgwupdatedpic.png",
   },
   {
     desktop: "/image/Hero3.png",
