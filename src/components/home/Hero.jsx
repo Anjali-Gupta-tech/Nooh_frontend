@@ -7,18 +7,40 @@ const Hero = () => {
   const videoRef = useRef(null);
 
   // Background Images
-  const images = [
-    
-    '/image/Hero1.png',
-    '/image/Hero2.png',
-    '/image/Stretch.png',
-    '/image/rgbwstretchceiling.png',
-     
-     '/image/Hero3.png',
-    '/image/BarriorCeiling.png',
-    '/image/paintings.png',
-    '/image/Hero5.png',   
-  ];
+ const images = [
+  {
+    desktop: "/image/Hero2.png",
+    mobile: "/image/Heropic1.png",
+  },
+  {
+    desktop: "/image/Hero1.png",
+    mobile: "/image/Hero1.png",
+  },
+  {
+    desktop: "/image/Stretch.png",
+    mobile: "/image/Stretch.png",
+  },
+  {
+    desktop: "/image/rgbwstretchceiling.png",
+    mobile: "/image/rgbwstretchceiling.png",
+  },
+  {
+    desktop: "/image/Hero3.png",
+    mobile: "/image/Hero3.png",
+  },
+  {
+    desktop: "/image/BarriorCeiling.png",
+    mobile: "/image/BarriorCeiling.png",
+  },
+  {
+    desktop: "/image/paintings.png",
+    mobile: "/image/paintings.png",
+  },
+  {
+    desktop: "/image/Hero5.png",
+    mobile: "/image/Hero5.png",
+  },
+];
 
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -34,20 +56,29 @@ const Hero = () => {
   return (
     <section className="relative h-screen overflow-hidden">
       {/* Background Carousel */}
-      <div className="absolute inset-0">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${
-              index === currentImage ? 'opacity-100' : 'opacity-0'
-            }`}
-            style={{
-              backgroundImage: `url(${image})`,
-            }}
-          />
-        ))}
-      </div>
+ <div className="absolute inset-0">
+  {images.map((image, index) => (
+    <picture
+      key={index}
+      className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ${
+        index === currentImage ? "opacity-100" : "opacity-0"
+      }`}
+    >
+      {/* Mobile Image */}
+      <source
+        media="(max-width: 768px)"
+        srcSet={image.mobile}
+      />
 
+      {/* Desktop Image */}
+      <img
+        src={image.desktop}
+        alt="Hero"
+        className="w-full h-full object-cover"
+      />
+    </picture>
+  ))}
+</div>
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/20 z-10" />
 
