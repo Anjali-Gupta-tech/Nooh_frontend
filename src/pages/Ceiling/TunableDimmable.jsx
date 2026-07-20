@@ -5,13 +5,10 @@ import { motion } from "framer-motion";
 const galleryImages = [
   "https://images.unsplash.com/photo-1633681117690-262b94a01378?w=1200",
 "https://images.unsplash.com/photo-1568060965761-76ea3db880b5?q=80&w=1200",
-
 "https://images.unsplash.com/photo-1774769924168-ecc7d0a2a809?q=80&w=1200",
 "https://i.pinimg.com/736x/1c/c5/8e/1cc58efc00911b61cf5a6278613b8a33.jpg",
 "https://i.pinimg.com/736x/46/8f/2d/468f2d5cb87abff33cea3d09401e6952.jpg",
 "https://i.pinimg.com/736x/a2/00/88/a20088ed6347d9d16965c19d468c141b.jpg"
-
-
 ]
 
 const TunableDimmable = () => {

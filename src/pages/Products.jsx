@@ -80,7 +80,7 @@ const Products = () => {
   return (
     <>
       <Helmet>
-        <title>Product Gallery - NOOH Living Elevated</title>
+        <title>Product Gallery -Stretch Ceiling, Textile Ceiling & LED Backlit Panels| NOOH Living Elevated</title>
         <meta
           name="description"
           content="Browse our premium collection of stretch ceilings, fiber optic systems, wall coverings, and luxury furniture."

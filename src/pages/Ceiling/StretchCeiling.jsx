@@ -12,7 +12,31 @@ const StretchCeiling = () => {
       </Helmet>
 
       <div className="min-h-screen bg-luxury-black pt-24">
+        {/* Hero Section */}
+        <section className="section-padding">
+          <div className="container-custom mx-auto text-center">
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="text-4xl md:text-7xl font-luxury font-bold text-gold-300 mb-6"
+            >
+              Stretch Ceiling 
+            </motion.h1>
 
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+              className="text-xl text-white/80 max-w-3xl mx-auto"
+            >
+              Explore our premium stretch ceiling systems designed for
+              residential, commercial and luxury interiors.
+            </motion.p>
+          </div>
+        </section>
+
+        {/* Cards Section */}
+       {/* Cards Section */}
 {/* Cards Section */}
 <section className="pb-20 bg-luxury-black">
   <div className="max-w-6xl mx-auto px-5 lg:px-8">
