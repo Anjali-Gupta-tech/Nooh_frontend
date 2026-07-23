@@ -126,12 +126,12 @@ const Navbar = () => {
                 )}
               </div>
             ))}
-            <Link
-              to="/contact"
-              className="btn-luxury text-[11px] xl:text-xs whitespace-nowrap flex-shrink-0 ml-2 px-4 py-2 xl:px-5 xl:py-3"
-            >
-              Get Consultation
-            </Link>
+            <button
+  onClick={() => window.open("https://www.noohadmin.com/login", "_blank")}
+  className="btn-luxury text-[11px] xl:text-xs whitespace-nowrap flex-shrink-0 ml-2 px-4 py-2 xl:px-5 xl:py-3"
+>
+  Login
+</button>
           </div>
 
           {/* Mobile Hamburger */}
