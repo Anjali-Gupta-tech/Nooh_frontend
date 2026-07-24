@@ -412,82 +412,84 @@ const About = () => {
 
           <div className="container-custom mx-auto">
 
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
+           <div className="grid lg:grid-cols-2 gap-16 items-center">
+  <motion.div
+    initial={{ opacity: 0, x: -40 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    viewport={{ once: true }}
+  >
+    <div className="rounded-3xl overflow-hidden bg-white shadow-2xl">
+      <img
+        src="/images/StretchCeiling-Training.png"
+        alt="Training"
+        className="w-full h-auto object-contain"
+      />
+    </div>
+  </motion.div>
 
-              <motion.div
-                initial={{ opacity: 0, x: -40 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-              >
+  <motion.div
+    initial={{ opacity: 0, x: 40 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    viewport={{ once: true }}
+  >
+    {/* Your existing content */}
+<h2 className="text-5xl font-luxury font-bold text-gold-300 mb-8">
+  More Than Interiors
+</h2>
 
-                <img
-                  src="/images/StretchCeiling-Training.png"
-                  alt="Training"
-                  className="rounded-3xl w-full h-[650px] object-cover"
-                />
+<h3 className="text-3xl text-white mb-6">
+  We Build Skills
+</h3>
 
-              </motion.div>
+<p className="text-white/80 leading-relaxed mb-6">
+  At NOOH, we believe innovation should create opportunities.
+  Beyond delivering premium interior solutions, we are committed
+  to developing skilled professionals through practical
+  training, technical education, and product knowledge.
+</p>
 
-              <motion.div
-                initial={{ opacity: 0, x: 40 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-              >
+<p className="text-white/80 leading-relaxed mb-6">
+  We empower technicians, installers, architects, designers,
+  sales professionals, dealers, and business partners with the
+  expertise needed to build successful careers and sustainable
+  businesses in the interior industry.
+</p>
 
-                <h2 className="text-5xl font-luxury font-bold text-gold-300 mb-8">
-                  More Than Interiors
-                </h2>
+<p className="text-white/80 leading-relaxed">
+  Our vision is simple — transform spaces, develop skills,
+  create opportunities, and elevate lives.
+</p>
 
-                <h3 className="text-3xl text-white mb-6">
-                  We Build Skills
-                </h3>
+<div className="grid grid-cols-2 gap-6 mt-10">
 
-                <p className="text-white/80 leading-relaxed mb-6">
-                  At NOOH, we believe innovation should create opportunities.
-                  Beyond delivering premium interior solutions, we are committed
-                  to developing skilled professionals through practical
-                  training, technical education and product knowledge.
-                </p>
+  <div className="glass rounded-2xl p-6 text-center">
+    <FaUsers className="text-5xl text-luxury-gold mx-auto mb-4" />
+    <h4 className="text-white font-semibold">
+      Professional Training
+    </h4>
+  </div>
 
-                <p className="text-white/80 leading-relaxed mb-6">
-                  We empower technicians, installers, architects, designers,
-                  sales professionals, dealers and business partners with the
-                  expertise needed to build successful careers and sustainable
-                  businesses in the interior industry.
-                </p>
+  <div className="glass rounded-2xl p-6 text-center">
+    <FaTools className="text-5xl text-luxury-gold mx-auto mb-4" />
+    <h4 className="text-white font-semibold">
+      Technical Expertise
+    </h4>
+  </div>
 
-                <p className="text-white/80 leading-relaxed">
-                  Our vision is simple — transform spaces, develop skills,
-                  create opportunities and elevate lives.
-                </p>
+</div>
 
-                <div className="grid grid-cols-2 gap-6 mt-10">
 
-                  <div className="glass rounded-2xl p-6 text-center">
 
-                    <FaUsers className="text-5xl text-luxury-gold mx-auto mb-4" />
 
-                    <h4 className="text-white font-semibold">
-                      Professional Training
-                    </h4>
 
-                  </div>
 
-                  <div className="glass rounded-2xl p-6 text-center">
 
-                    <FaTools className="text-5xl text-luxury-gold mx-auto mb-4" />
 
-                    <h4 className="text-white font-semibold">
-                      Technical Expertise
-                    </h4>
 
-                  </div>
 
-                </div>
-
-              </motion.div>
-
-            </div>
+    
+  </motion.div>
+</div>
 
           </div>
 
