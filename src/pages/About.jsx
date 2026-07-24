@@ -30,12 +30,12 @@ const About = () => {
           <div className="absolute inset-0">
 
             <img
-              src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2070"
+              src="/images/StretchCeilingabout.png"
               alt="NOOH"
               className="w-full h-full object-cover"
             />
 
-            <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-luxury-black" />
+            <div className="absolute inset-0 bg-gradient-to-b luxury-black/40" />
 
           </div>
 
@@ -145,7 +145,7 @@ const About = () => {
                 />
 
                 <img
-                  src="/images/nooh-printed-stretch-ceiling-blue-sky-cloud-bedroom.webp"
+                  src="/images/image2.jpeg"
                   alt=""
                   className="rounded-3xl h-72 -mt-10 w-full object-cover"
                 />
@@ -477,18 +477,7 @@ const About = () => {
   </div>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-    
-  </motion.div>
+</motion.div>
 </div>
 
           </div>
