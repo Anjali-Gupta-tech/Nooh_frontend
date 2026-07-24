@@ -133,25 +133,25 @@ const About = () => {
               >
 
                 <img
-                  src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053"
+                  src="/images/nooh-cloudwave-textile-ceiling-modern-office-lobby.webp"
                   alt=""
                   className="rounded-3xl h-72 w-full object-cover"
                 />
 
                 <img
-                  src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070"
-                  alt=""
+                  src="/images/3d-epoxy-bathroom-flooring.webp"
+                  alt="3d-epoxy-bathroom-flooring"
                   className="rounded-3xl h-72 mt-10 w-full object-cover"
                 />
 
                 <img
-                  src="https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=2074"
+                  src="/images/nooh-printed-stretch-ceiling-blue-sky-cloud-bedroom.webp"
                   alt=""
                   className="rounded-3xl h-72 -mt-10 w-full object-cover"
                 />
 
                 <img
-                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0?q=80&w=2070"
+                  src="/images/nooh-printed-stretch-ceiling-sky-design-commercial-space.webp"
                   alt=""
                   className="rounded-3xl h-72 w-full object-cover"
                 />
@@ -200,9 +200,9 @@ const About = () => {
       >
 
         <img
-          src="/images/asif-ali.jpg"
+          src="/images/asif-sir.webp"
           alt="Mr. Asif Ali"
-          className="w-full h-[600px] object-cover rounded-3xl shadow-2xl"
+          className="w-full h-[650px] object-cover rounded-3xl shadow-2xl"
         />
 
       </motion.div>
@@ -392,9 +392,9 @@ const About = () => {
       >
 
         <img
-          src="/images/kapil-verma.jpg"
+          src="/images/kapil-sir.webp"
           alt="Mr. Kapil Verma"
-          className="w-full h-[600px] object-cover rounded-3xl shadow-2xl"
+          className="w-full h-[650px] object-cover rounded-3xl shadow-2xl"
         />
 
       </motion.div>
