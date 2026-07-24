@@ -28,7 +28,7 @@ import SunroofCeiling from './pages/Ceiling/SunroofCeiling';
 import ThreeDStretchCeiling from './pages/Ceiling/ThreeDStretchCeiling';
 import FloatingContactButtons from './components/FloatingContactButtons';
 import ThreeDallshape from './pages/Ceiling/ThreeDallshape';
-import Transluscent from './pages/Ceiling/Transluscent';
+
 import Rgbwpixel from './pages/Ceiling/Rgbwpixel';
 import GlossStretch from './pages/Ceiling/GlossStretch';
 import TunableDimmable from './pages/Ceiling/TunableDimmable';
@@ -47,6 +47,7 @@ import ThreeDPrintedStretchWall from './pages/Wall/ThreeDPrintedStretchWall';
 import Metallicpoxyflooring from './pages/Floor/Metallicpoxyflooring';
 import ThreeDmuralExpoxy from './pages/Floor/ThreeDmuralExpoxy';
 import WoodenFlooring from './pages/Floor/WoodenFlooring';
+import Translucentnew from './pages/StretchCeilingnewpages/Translucentnew';
 
 
 
@@ -75,7 +76,7 @@ function App() {
              {/*Stretch Ceiling sub-routes*/}
             <Route path="/3d-stretch-ceiling" element={<ThreeDStretchCeiling />} />
             <Route path="/all-shape-ceiling"  element={<ThreeDallshape/>}/>
-            <Route path="/translucent-ceiling" element={<Transluscent/>}/>
+        
             <Route path="/rgbw-ceiling" element={< Rgbwpixel/>}/>
             <Route path="/gloss-ceiling" element={< GlossStretch/>}/>
             <Route path="/tunable-ceiling" element={<TunableDimmable/>}/>
@@ -110,6 +111,11 @@ function App() {
             <Route path="/decorative-solutions" element={<DecorativeSolution />} />
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/contact" element={<Contact />} />
+
+
+
+
+            <Route path="/products/stretch-ceiling/translucent" element={<Translucentnew/>} />
            
           </Routes>
           <Footer />

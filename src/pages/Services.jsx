@@ -6,11 +6,31 @@ import { Link } from 'react-router-dom';
 const Services = () => {
   const services = [
     {
-      title: 'Stretch Ceiling Solutions',
-      description: 'Premium stretch ceiling systems with endless design possibilities. Perfect for creating stunning architectural features.',
-      features: ['Textile Stretch Ceiling', 'Translucent Stretch Ceiling', 'Custom Printed Designs', 'Quick Installation'],
-      image: '/images/star-ceiling.png',
+  title: 'STRETCHÉ™ by NOOH',
+   subheading: 'Premium Architectural Stretch Ceiling Systems',
+  description:
+    'STRETCHÉ™ by NOOH is a premium, lightweight and seamless ceiling system designed to transform ordinary ceilings into modern architectural features. Its flexible membrane offers fast installation, easy maintenance and exceptional design freedom for residential and commercial interiors.',
+
+  categories: [
+    {
+      title: 'STRETCHÉ™ TRANSLUCENT',
+      subtitle: 'Translucent & Illuminated Ceiling',
+      link: '/products/stretch-ceiling/translucent',
     },
+    {
+      title: 'STRETCHÉ™ PRINT',
+      subtitle: 'Customized Printed Stretch Ceiling',
+      link: '/products/stretch-ceiling/print',
+    },
+    {
+      title: 'STRETCHÉ™ GLOSS',
+      subtitle: 'High-Gloss Reflective Ceiling',
+      link: '/products/stretch-ceiling/gloss',
+    },
+  ],
+
+  image: '/images/star-ceiling.png',
+},
     {
       title: 'Fiber Optic Star Ceiling',
       description: 'Transform your ceilings into a mesmerizing night sky with our NOOHSTAR™ fiber optic systems.',
@@ -112,19 +132,110 @@ const Services = () => {
                     <h2 className="text-3xl md:text-5xl font-luxury font-bold text-white mb-4">
                       {service.title}
                     </h2>
+            
+                     
+
                     <p className="text-white/80 mb-6 text-lg leading-relaxed">
                       {service.description}
                     </p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                      {service.features.map((feature, idx) => (
-                        <div key={idx} className="flex items-center space-x-3">
-                          <div className="w-2 h-2 bg-luxury-gold rounded-full flex-shrink-0" />
-                          <span className="text-white/90">{feature}</span>
-                        </div>
-                      ))}
+                    {service.categories ? (
+
+  <div className="space-y-5 mb-8">
+
+    {service.categories.map((item, idx) => (
+
+      <Link
+        key={idx}
+        to={item.link}
+        className="block group border-b border-white/10 pb-4"
+      >
+
+        <h3 className="text-2xl font-bold text-gold-300 group-hover:text-white transition-all">
+          {item.title}
+        </h3>
+
+
+        <p className="text-white/70 mt-1">
+          {item.subtitle}
+        </p>
+
+      </Link>
+
+    ))}
+
+  </div>
+
+) : (
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+
+  {service.categories ? (
+
+  <div className="space-y-4 mb-8">
+
+    {service.categories.map((item, idx) => (
+
+      <Link
+        key={idx}
+        to={item.link}
+        className="group block rounded-xl border border-white/10 p-5 hover:border-gold-300 hover:bg-white/5 transition-all duration-300"
+      >
+
+        <div className="flex items-center justify-between">
+
+          <div>
+
+            <h3 className="text-2xl md:text-3xl font-bold text-gold-300 group-hover:text-white transition-colors">
+              {item.title}
+            </h3>
+
+            <p className="text-white/60 mt-2 group-hover:text-white transition-colors">
+              {item.subtitle}
+            </p>
+
+          </div>
+
+          <span className="text-gold-300 text-3xl group-hover:translate-x-2 transition-transform">
+            →
+          </span>
+
+        </div>
+
+      </Link>
+
+    ))}
+
+  </div>
+
+) : (
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+
+    {service.features.map((feature, idx) => (
+
+      <div key={idx} className="flex items-center space-x-3">
+
+        <div className="w-2 h-2 bg-luxury-gold rounded-full" />
+
+        <span className="text-white/90">
+          {feature}
+        </span>
+
+      </div>
+
+    ))}
+
+  </div>
+
+)}
+
+  </div>
+
+)}
                     </div>
                     <Link to="/contact" className="btn-luxury">
-                      Get Quote
+                      Download
                     </Link>
                   </div>
                   <div className={index % 2 === 1 ? 'lg:order-1' : ''}>

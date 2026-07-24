@@ -421,9 +421,9 @@ const About = () => {
               >
 
                 <img
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2070"
+                  src="/images/StretchCeiling-Training.png"
                   alt="Training"
-                  className="rounded-3xl w-full h-[500px] object-cover"
+                  className="rounded-3xl w-full h-[650px] object-cover"
                 />
 
               </motion.div>
