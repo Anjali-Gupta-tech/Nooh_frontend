@@ -49,6 +49,7 @@ import ThreeDmuralExpoxy from './pages/Floor/ThreeDmuralExpoxy';
 import WoodenFlooring from './pages/Floor/WoodenFlooring';
 import Translucentnew from './pages/Servicesnewpages/Translucentnew';
 import Stretchprint from './pages/Servicesnewpages/Stretchprint';
+import Stretchgloss from './pages/Servicesnewpages/Stretchgloss';
 
 
 
@@ -118,6 +119,7 @@ function App() {
 
             <Route path="/products/stretch-ceiling/translucent" element={<Translucentnew/>} />
            <Route path="/products/stretch-ceiling/print" element={<Stretchprint/>} />
+           <Route path="/products/stretch-ceiling/gloss" element={<Stretchgloss/>} />
 
            
           </Routes>
