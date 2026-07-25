@@ -50,7 +50,7 @@ import WoodenFlooring from './pages/Floor/WoodenFlooring';
 import Translucentnew from './pages/Servicesnewpages/Translucentnew';
 import Stretchprint from './pages/Servicesnewpages/Stretchprint';
 import Stretchgloss from './pages/Servicesnewpages/Stretchgloss';
-
+import Stretchpanel from './pages/Servicesnewpages/Stretchpanel';
 
 
 function App() {
@@ -120,7 +120,7 @@ function App() {
             <Route path="/products/stretch-ceiling/translucent" element={<Translucentnew/>} />
            <Route path="/products/stretch-ceiling/print" element={<Stretchprint/>} />
            <Route path="/products/stretch-ceiling/gloss" element={<Stretchgloss/>} />
-
+<Route path="/products/stretch-ceiling/panel" element={<Stretchpanel/>} />
            
           </Routes>
           <Footer />

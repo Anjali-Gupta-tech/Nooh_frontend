@@ -6,27 +6,54 @@ import { Link } from 'react-router-dom';
 const Services = () => {
   const services = [
     {
-  title: 'STRETCHÉ™ by NOOH',
+   title: (
+  <>
+    STRETCH<sup>™</sup> Ceiling  by NOOH
+  </>
+),
    subheading: 'Premium Architectural Stretch Ceiling Systems',
-  description:
-    'STRETCHÉ™ by NOOH is a premium, lightweight and seamless ceiling system designed to transform ordinary ceilings into modern architectural features. Its flexible membrane offers fast installation, easy maintenance and exceptional design freedom for residential and commercial interiors.',
-
+    description:(
+    <>
+    STRETCH<sup>™</sup> by NOOH is a premium, lightweight and seamless ceiling system designed to transform ordinary ceilings into modern architectural features. Its flexible membrane offers fast installation, easy maintenance and exceptional design freedom for residential and commercial interiors.,
+    </>
+  ),
   categories: [
     {
-      title: 'STRETCHÉ™ TRANSLUCENT',
+      title: (
+        <>
+          STRETCH<sup>™</sup> TRANSLUCENT
+        </>
+      ),
       subtitle: 'Translucent & Illuminated Ceiling',
       link: '/products/stretch-ceiling/translucent',
     },
     {
-      title: 'STRETCHÉ™ PRINT',
+      title: (
+        <>
+          STRETCH<sup>™</sup> PRINT
+        </>
+      ),
       subtitle: 'Customized Printed Stretch Ceiling',
       link: '/products/stretch-ceiling/print',
     },
     {
-      title: 'STRETCHÉ™ GLOSS',
+      title: (
+        <>
+          STRETCH<sup>™</sup> GLOSS
+        </>
+      ),
       subtitle: 'High-Gloss Reflective Ceiling',
       link: '/products/stretch-ceiling/gloss',
     },
+    {
+  title: (
+    <>
+      STRETCH<sup>™</sup> PANEL
+    </>
+  ),
+  subtitle: 'Premium Decorative Ceiling Panel',
+  link: '/products/stretch-ceiling/panel',
+},
   ],
 
   image: '/images/star-ceiling.png',
@@ -137,116 +164,81 @@ const Services = () => {
 
           {/* LEFT */}
 
-          <div className={index % 2 === 1 ? "lg:order-2" : ""}>
+         <div className={index % 2 === 1 ? "lg:order-2" : ""}>
 
-            <h2 className="text-3xl md:text-5xl font-luxury font-bold text-white mb-4">
-              {service.title}
-            </h2>
+  <h2 className="text-3xl md:text-5xl font-luxury font-bold text-white mb-4">
+    {service.title}
+  </h2>
 
-            {service.subheading && (
-              <p className="text-gold-300 text-xl mb-5">
-                {service.subheading}
-              </p>
-            )}
+  {service.subheading && (
+    <p className="text-gold-300 text-xl mb-5">
+      {service.subheading}
+    </p>
+  )}
 
-            <p className="text-white/80 text-lg leading-relaxed mb-8">
-              {service.description}
+  <p className="text-white/80 text-lg leading-relaxed mb-8">
+    {service.description}
+  </p>
+
+  {service.categories ? (
+
+    <>
+      <h4 className="text-gold-300 uppercase tracking-[3px] text-sm font-semibold mb-6">
+        Product Categories
+      </h4>
+
+      <div className="grid md:grid-cols-2 gap-5">
+
+        {service.categories.map((item, idx) => (
+          <Link
+            key={idx}
+            to={item.link}
+            className="group rounded-2xl border border-gold-300/20 bg-white/[0.03] p-6 hover:border-gold-300 hover:bg-gold-300/10 transition"
+          >
+            <h3 className="text-xl font-bold text-gold-300">
+              {item.title}
+            </h3>
+
+            <p className="text-white/60 mt-2">
+              {item.subtitle}
             </p>
+          </Link>
+        ))}
 
-            {service.categories ? (
+      </div>
+    </>
 
-              <>
+  ) : (
 
-                <h4 className="text-gold-300 uppercase tracking-[3px] text-sm font-semibold mb-6">
-                  Product Categories
-                </h4>
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
 
-                <div className="grid md:grid-cols-2 gap-5">
+      {service.features?.map((feature, idx) => (
 
-                  {service.categories.slice(0,2).map((item,idx)=>(
+        <div
+          key={idx}
+          className="flex items-center space-x-3"
+        >
+          <div className="w-2 h-2 rounded-full bg-luxury-gold" />
 
-                    <Link
-                      key={idx}
-                      to={item.link}
-                      className="group rounded-2xl border border-gold-300/20 bg-white/[0.03] p-6 hover:border-gold-300 hover:bg-gold-300/10 transition"
-                    >
+          <span className="text-white/90">
+            {feature}
+          </span>
+        </div>
 
-                      <h3 className="text-xl font-bold text-gold-300">
-                        {item.title}
-                      </h3>
+      ))}
 
-                      <p className="text-white/60 mt-2">
-                        {item.subtitle}
-                      </p>
+    </div>
 
-                    </Link>
+  )}
 
-                  ))}
+  <Link
+    to="/contact"
+    className="btn-luxury mt-8 inline-block"
+  >
+    Download Brochure
+  </Link>
 
-                </div>
-
-                {service.categories.length > 2 && (
-
-                  <div className="flex justify-center mt-5">
-
-                    <div className="w-full md:w-[48%]">
-
-                      <Link
-                        to={service.categories[2].link}
-                        className="group rounded-2xl border border-gold-300/20 bg-white/[0.03] p-6 hover:border-gold-300 hover:bg-gold-300/10 transition block"
-                      >
-
-                        <h3 className="text-xl font-bold text-gold-300">
-                          {service.categories[2].title}
-                        </h3>
-
-                        <p className="text-white/60 mt-2">
-                          {service.categories[2].subtitle}
-                        </p>
-
-                      </Link>
-
-                    </div>
-
-                  </div>
-
-                )}
-
-              </>
-
-            ) : (
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-
-                {service.features?.map((feature,idx)=>(
-
-                  <div
-                    key={idx}
-                    className="flex items-center space-x-3"
-                  >
-
-                    <div className="w-2 h-2 rounded-full bg-luxury-gold"/>
-
-                    <span className="text-white/90">
-                      {feature}
-                    </span>
-
-                  </div>
-
-                ))}
-
-              </div>
-
-            )}
-
-            <Link
-              to="/contact"
-              className="btn-luxury mt-8 inline-block"
-            >
-              Download Brochure
-            </Link>
-
-          </div>
+</div>
 
           {/* RIGHT */}
 

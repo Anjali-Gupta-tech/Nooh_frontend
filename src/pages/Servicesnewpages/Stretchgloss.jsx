@@ -6,7 +6,7 @@ const Stretchprint = () => {
   return (
     <>
       <Helmet>
-        <title>STRETCHÉ™ GLOSS | NOOH Living Elevated</title>
+        <title> STRETCH™GLOSS | NOOH Living Elevated</title>
         <meta
           name="description"
           content="Premium high-gloss stretch ceiling with Mirror-Like finish and advanced lighting technology."
@@ -34,7 +34,7 @@ const Stretchprint = () => {
       animate={{ opacity: 1, y: 0 }}
       className="text-5xl md:text-7xl font-luxury font-bold mb-6"
     >
-      STRETCHÉ™ GLOSS
+      STRETCH<sup>™</sup> GLOSS
     </motion.h1>
 
     <motion.p
