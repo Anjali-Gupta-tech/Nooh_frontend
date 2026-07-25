@@ -19,38 +19,38 @@ const Stretchprint = () => {
 
         <section className="py-20 border-b border-white/10">
 
-          <div className="container-custom mx-auto text-center">
+  <div className="container-custom mx-auto text-center">
 
-            <motion.p
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="uppercase tracking-[5px] text-gold-300 font-semibold mb-4"
-            >
-              STRETCHÉ™ PRINT 
-            </motion.p>
+    <motion.p
+      initial={{ opacity: 0, y: 15 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="uppercase tracking-[5px] text-gold-300 font-semibold mb-4"
+    >
+      STRETCHÉ™ Collection
+    </motion.p>
 
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="text-5xl md:text-7xl font-luxury font-bold mb-6"
-            >
-              STRETCHÉ™ PRINT
-            </motion.h1>
+    <motion.h1
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="text-5xl md:text-7xl font-luxury font-bold mb-6"
+    >
+      STRETCHÉ™ PRINT
+    </motion.h1>
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: .2 }}
-              className="max-w-4xl mx-auto text-white/70 text-xl leading-relaxed"
-            >
-              Premium translucent stretch ceiling system supporting four
-              advanced lighting technologies, from elegant architectural
-              lighting to intelligent programmable lighting experiences.
-            </motion.p>
+    <motion.p
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.2 }}
+      className="max-w-4xl mx-auto text-white/70 text-xl leading-relaxed"
+    >
+      STRETCHÉ™ PRINT transforms ceilings into stunning architectural
+      features using high-resolution customised artwork combined with
+      advanced backlighting technology. 
+    </motion.p>
 
-          </div>
+  </div>
 
-        </section>
+</section>
 
 
         {/* LIGHTING */}
@@ -92,95 +92,81 @@ const Stretchprint = () => {
             />
 
             <div>
+<p className="uppercase tracking-[5px] text-gold-300 font-semibold mb-2">
+  Type 1
+</p>
 
-              <p className="uppercase tracking-[5px] text-gold-300 font-semibold mb-2">
-                Type 1
-              </p>
+<h2 className="text-5xl font-luxury font-bold mb-3">
+  STATIC CCT
+</h2>
 
-              <h2 className="text-5xl font-luxury font-bold mb-3">
-                STATIC WHITE
-              </h2>
+<h3 className="text-2xl text-gold-300 font-semibold mb-6">
+  Fixed White Backlighting
+</h3>
 
-              <h3 className="text-2xl text-gold-300 font-semibold mb-6">
-                Fixed CCT LED System
-              </h3>
+<p className="text-white/70 leading-loose mb-6">
+  <strong>STRETCHÉ™ PRINT Type 1</strong> combines the customised printed
+  stretch ceiling with a single selected <strong>Fixed CCT LED lighting
+  system</strong>. Depending on the desired appearance, the project can be
+  configured with a white-light temperature such as
+  <strong> 3000K</strong>, <strong>4000K</strong>,
+  <strong>6000K</strong> or <strong>10000K</strong>.
+  Once selected, the ceiling delivers clean, consistent and uniform
+  backlighting across the entire printed surface.
+</p>
 
-              <p className="text-white/70 leading-loose mb-6">
+<p className="text-white/70 leading-loose mb-8">
+  <span className="text-gold-300 font-semibold">
+    Ideal For :
+  </span>{" "}
+  Printed Sky Ceilings, Residential Interiors, Offices, Retail Stores,
+  Showrooms and projects where simple, uniform illumination is required.
+</p>
 
-                This configuration uses a single fixed color-temperature LED
-                such as <strong>3000K</strong>, <strong>4000K</strong>,
-                <strong>6000K</strong> or <strong>10000K</strong> depending on
-                the desired visual effect. The ceiling remains consistently
-                illuminated at the selected white-light temperature.
+<div className="grid grid-cols-2 gap-5">
 
-              </p>
+  <div className="glass rounded-2xl p-5">
+    <p className="text-gold-300 text-sm uppercase mb-2">
+      Fixed CCT
+    </p>
 
-              <p className="text-white/70 leading-loose mb-8">
+    <h4 className="text-xl font-semibold">
+      Yes
+    </h4>
+  </div>
 
-                <span className="text-gold-300 font-semibold">
-                  Best For :
-                </span>{" "}
+  <div className="glass rounded-2xl p-5">
+    <p className="text-gold-300 text-sm uppercase mb-2">
+      Backlighting
+    </p>
 
-                Ceilings, Offices, Retail Spaces, Corridors and projects
-                requiring simple, clean and consistent illumination.
+    <h4 className="text-xl font-semibold">
+      Uniform
+    </h4>
+  </div>
 
-              </p>
+  <div className="glass rounded-2xl p-5">
+    <p className="text-gold-300 text-sm uppercase mb-2">
+      Operation
+    </p>
 
+    <h4 className="text-xl font-semibold">
+      ON / OFF
+    </h4>
+  </div>
 
-              <div className="grid grid-cols-2 gap-5">
+  <div className="glass rounded-2xl p-5">
+    <p className="text-gold-300 text-sm uppercase mb-2">
+      Configuration
+    </p>
 
-                <div className="glass rounded-2xl p-5">
+    <h4 className="text-xl font-semibold">
+      Cost Effective
+    </h4>
+  </div>
 
-                  <p className="text-gold-300 text-sm uppercase mb-2">
-                    Control
-                  </p>
+</div>
 
-                  <h4 className="text-xl font-semibold">
-                    ON / OFF
-                  </h4>
-
-                </div>
-
-
-                <div className="glass rounded-2xl p-5">
-
-                  <p className="text-gold-300 text-sm uppercase mb-2">
-                    CCT
-                  </p>
-
-                  <h4 className="text-xl font-semibold">
-                    Fixed
-                  </h4>
-
-                </div>
-
-
-                <div className="glass rounded-2xl p-5">
-
-                  <p className="text-gold-300 text-sm uppercase mb-2">
-                    Color Changing
-                  </p>
-
-                  <h4 className="text-xl font-semibold">
-                    No
-                  </h4>
-
-                </div>
-
-
-                <div className="glass rounded-2xl p-5">
-
-                  <p className="text-gold-300 text-sm uppercase mb-2">
-                    Dynamic Effects
-                  </p>
-
-                  <h4 className="text-xl font-semibold">
-                    No
-                  </h4>
-
-                </div>
-
-              </div>
 
             </div>
 
@@ -194,78 +180,97 @@ const Stretchprint = () => {
   className="grid lg:grid-cols-2 gap-20 items-center mb-32"
 >
 
-  <div>
-
+ <div>
     <p className="uppercase tracking-[5px] text-gold-300 font-semibold mb-2">
-      Type 2
+  Type 2
+</p>
+
+<h2 className="text-5xl font-luxury font-bold mb-3">
+  TUNABLE WHITE
+</h2>
+
+<h3 className="text-2xl text-gold-300 font-semibold mb-6">
+  Dimmable + Tunable CCT Backlighting
+</h3>
+
+<p className="text-white/70 leading-loose mb-6">
+  <strong>STRETCHÉ™ PRINT Type 2</strong> takes lighting control one step
+  further by integrating a <strong>Dimmable + Tunable White LED
+  System</strong> behind the printed ceiling. Instead of being limited to
+  one fixed white-light temperature, users can adjust both
+  <strong> brightness</strong> and the
+  <strong> white-light colour temperature</strong> to create the perfect
+  ambience for different environments and times of the day.
+</p>
+
+<p className="text-white/70 leading-loose mb-6">
+  Using a compatible <strong>remote, mobile app or lighting controller</strong>,
+  the ceiling can transition from a warm, relaxing atmosphere during the
+  evening to a bright daylight appearance for working environments,
+  providing maximum flexibility without changing the printed design.
+</p>
+
+<p className="text-white/70 leading-loose mb-8">
+  <span className="text-gold-300 font-semibold">
+    Ideal For :
+  </span>{" "}
+  Luxury Homes, Hotels, Meeting Rooms, Restaurants, Offices, Premium
+  Retail Spaces and Hospitality Interiors requiring adjustable white
+  lighting.
+</p>
+
+<div className="grid grid-cols-2 gap-5">
+
+  <div className="glass rounded-2xl p-5">
+
+    <p className="text-gold-300 text-sm uppercase mb-2">
+      Control
     </p>
 
-    <h2 className="text-5xl font-luxury font-bold mb-3">
-      TUNABLE WHITE
-    </h2>
-
-    <h3 className="text-2xl text-gold-300 font-semibold mb-6">
-      Dimmable + Tunable CCT LED System
-    </h3>
-
-    <p className="text-white/70 leading-loose mb-6">
-
-      Type 2 provides complete control over both brightness and
-      white-light temperature. The ambience can be adjusted from
-      warmer to cooler white according to the application,
-      time of day and desired mood.
-
-    </p>
-
-    <p className="text-white/70 leading-loose mb-8">
-
-      For example, a translucent ceiling can create a warm,
-      relaxing ambience during the evening and a bright,
-      daylight appearance during working hours.
-
-    </p>
-
-    <div className="grid grid-cols-2 gap-5">
-
-      <div className="glass rounded-2xl p-5">
-        <p className="text-gold-300 text-sm uppercase mb-2">
-          Control
-        </p>
-        <h4 className="text-lg font-semibold">
-          Dimming + CCT
-        </h4>
-      </div>
-
-      <div className="glass rounded-2xl p-5">
-        <p className="text-gold-300 text-sm uppercase mb-2">
-          Brightness
-        </p>
-        <h4 className="text-lg font-semibold">
-          Adjustable
-        </h4>
-      </div>
-
-      <div className="glass rounded-2xl p-5">
-        <p className="text-gold-300 text-sm uppercase mb-2">
-          White Temperature
-        </p>
-        <h4 className="text-lg font-semibold">
-          Adjustable
-        </h4>
-      </div>
-
-      <div className="glass rounded-2xl p-5">
-        <p className="text-gold-300 text-sm uppercase mb-2">
-          RGB Colours
-        </p>
-        <h4 className="text-lg font-semibold">
-          No
-        </h4>
-      </div>
-
-    </div>
+    <h4 className="text-xl font-semibold">
+      Remote / App
+    </h4>
 
   </div>
+
+  <div className="glass rounded-2xl p-5">
+
+    <p className="text-gold-300 text-sm uppercase mb-2">
+      Brightness
+    </p>
+
+    <h4 className="text-xl font-semibold">
+      Adjustable
+    </h4>
+
+  </div>
+
+  <div className="glass rounded-2xl p-5">
+
+    <p className="text-gold-300 text-sm uppercase mb-2">
+      White Temperature
+    </p>
+
+    <h4 className="text-xl font-semibold">
+      Tunable
+    </h4>
+
+  </div>
+
+  <div className="glass rounded-2xl p-5">
+
+    <p className="text-gold-300 text-sm uppercase mb-2">
+      Mood Control
+    </p>
+
+    <h4 className="text-xl font-semibold">
+      Dynamic Ambience
+    </h4>
+
+  </div>
+
+</div>
+ </div>
 
   <img
     src="/image/Ceiling2.webp"
@@ -293,76 +298,95 @@ const Stretchprint = () => {
   />
 
   <div>
-
     <p className="uppercase tracking-[5px] text-gold-300 font-semibold mb-2">
-      Type 3
+  Type 3
+</p>
+
+<h2 className="text-5xl font-luxury font-bold mb-3">
+  RGBW
+</h2>
+
+<h3 className="text-2xl text-gold-300 font-semibold mb-6">
+  Colour Changing + Dimmable + Tunable Lighting
+</h3>
+
+<p className="text-white/70 leading-loose mb-6">
+  <strong>STRETCHÉ™ PRINT Type 3</strong> integrates an advanced
+  <strong> RGBW LED lighting system</strong>, dramatically expanding the
+  creative possibilities of printed stretch ceilings. Along with tunable
+  white-light control and dimming capabilities, RGBW technology enables
+  the ceiling to display a full spectrum of vibrant colours while
+  maintaining natural white lighting whenever required.
+</p>
+
+<p className="text-white/70 leading-loose mb-6">
+  A single printed ceiling can transform from a bright daylight sky to
+  warm sunset-inspired tones, decorative colours or fully customised
+  lighting scenes. Using compatible <strong>remote or app-based
+  controllers</strong>, users can instantly switch between lighting moods
+  for different occasions and environments.
+</p>
+
+<p className="text-white/70 leading-loose mb-8">
+  <span className="text-gold-300 font-semibold">
+    Ideal For :
+  </span>{" "}
+  Luxury Homes, Hotels, Restaurants, Lounges, Experience Centres,
+  Premium Retail Spaces, Hospitality Interiors and feature ceilings
+  requiring colour-changing ambience.
+</p>
+
+<div className="grid grid-cols-2 gap-5">
+
+  <div className="glass rounded-2xl p-5">
+
+    <p className="text-gold-300 text-sm uppercase mb-2">
+      RGBW Lighting
     </p>
 
-    <h2 className="text-5xl font-luxury font-bold mb-3">
-      RGBW
-    </h2>
+    <h4 className="text-xl font-semibold">
+      Yes
+    </h4>
 
-    <h3 className="text-2xl text-gold-300 font-semibold mb-6">
-      Dimmable + Tunable White + Colour Changing
-    </h3>
+  </div>
 
-    <p className="text-white/70 leading-loose mb-6">
+  <div className="glass rounded-2xl p-5">
 
-      Type 3 integrates RGBW LED technology, providing premium
-      white illumination together with a wide range of coloured
-      lighting effects. Users can control brightness,
-      white-light settings and RGB colours from a single system.
-
+    <p className="text-gold-300 text-sm uppercase mb-2">
+      Brightness
     </p>
 
-    <p className="text-white/70 leading-loose mb-8">
+    <h4 className="text-xl font-semibold">
+      Adjustable
+    </h4>
 
-      A printed sky ceiling can appear as natural daylight,
-      then transition into sunset, blue sky or decorative
-      colour scenes to create completely different moods.
+  </div>
 
+  <div className="glass rounded-2xl p-5">
+
+    <p className="text-gold-300 text-sm uppercase mb-2">
+      White Light
     </p>
 
-    <div className="grid grid-cols-2 gap-5">
+    <h4 className="text-xl font-semibold">
+      Tunable
+    </h4>
 
-      <div className="glass rounded-2xl p-5">
-        <p className="text-gold-300 text-sm uppercase mb-2">
-          Control
-        </p>
-        <h4 className="text-lg font-semibold">
-          White + RGB
-        </h4>
-      </div>
+  </div>
 
-      <div className="glass rounded-2xl p-5">
-        <p className="text-gold-300 text-sm uppercase mb-2">
-          Brightness
-        </p>
-        <h4 className="text-lg font-semibold">
-          Adjustable
-        </h4>
-      </div>
+  <div className="glass rounded-2xl p-5">
 
-      <div className="glass rounded-2xl p-5">
-        <p className="text-gold-300 text-sm uppercase mb-2">
-          Colour Change
-        </p>
-        <h4 className="text-lg font-semibold">
-          Yes
-        </h4>
-      </div>
+    <p className="text-gold-300 text-sm uppercase mb-2">
+      Preset Scenes
+    </p>
 
-      <div className="glass rounded-2xl p-5">
-        <p className="text-gold-300 text-sm uppercase mb-2">
-          Preset Scenes
-        </p>
-        <h4 className="text-lg font-semibold">
-          Yes
-        </h4>
-      </div>
+    <h4 className="text-xl font-semibold">
+      Multiple
+    </h4>
 
-    </div>
+  </div>
 
+</div>
   </div>
 
 </motion.div>
@@ -376,79 +400,96 @@ const Stretchprint = () => {
 >
 
   <div>
-
     <p className="uppercase tracking-[5px] text-gold-300 font-semibold mb-2">
-      Type 4
+  Type 4
+</p>
+
+<h2 className="text-5xl font-luxury font-bold mb-3">
+  DYNAMIC
+</h2>
+
+<h3 className="text-2xl text-gold-300 font-semibold mb-6">
+  RGBW + DMX / Programmable Dynamic Lighting
+</h3>
+
+<p className="text-white/70 leading-loose mb-6">
+  <strong>STRETCHÉ™ PRINT Type 4</strong> is the most advanced lighting
+  configuration in the range, combining
+  <strong> addressable RGB/RGBW LEDs</strong> with
+  <strong> DMX / Pixel Controllers</strong> and programmable lighting
+  software. Individual lighting zones or pixels can be controlled
+  independently, transforming a printed ceiling into a fully interactive
+  visual experience.
+</p>
+
+<p className="text-white/70 leading-loose mb-6">
+  Dynamic lighting sequences such as moving clouds, flowing light,
+  sunrise & sunset effects, colour waves, chasing light and atmospheric
+  animations can be created to bring printed artwork to life. Instead of
+  simply illuminating the ceiling, Type 4 allows lighting, print and
+  programming to work together as one immersive experience.
+</p>
+
+<p className="text-white/70 leading-loose mb-8">
+  <span className="text-gold-300 font-semibold">
+    Ideal For :
+  </span>{" "}
+  Luxury Hotels, Airports, Museums, Experience Centres, Corporate
+  Headquarters, Retail Flagship Stores, Entertainment Venues and iconic
+  architectural projects requiring immersive programmable lighting.
+</p>
+
+<div className="grid grid-cols-2 gap-5">
+
+  <div className="glass rounded-2xl p-5">
+
+    <p className="text-gold-300 text-sm uppercase mb-2">
+      Pixel Control
     </p>
 
-    <h2 className="text-5xl font-luxury font-bold mb-3">
-      DYNAMIC PIXEL
-    </h2>
+    <h4 className="text-xl font-semibold">
+      DMX / RGBW
+    </h4>
 
-    <h3 className="text-2xl text-gold-300 font-semibold mb-6">
-      RGBW Pixel + DMX / MADRIX Programmable System
-    </h3>
+  </div>
 
-    <p className="text-white/70 leading-loose mb-6">
+  <div className="glass rounded-2xl p-5">
 
-      The most advanced STRETCHÉ™ lighting configuration.
-      Individually addressable RGBW Pixel LEDs are controlled
-      through DMX and compatible platforms such as MADRIX,
-      allowing different zones behind the translucent membrane
-      to operate independently.
-
+    <p className="text-gold-300 text-sm uppercase mb-2">
+      Dynamic Effects
     </p>
 
-    <p className="text-white/70 leading-loose mb-8">
+    <h4 className="text-xl font-semibold">
+      Enabled
+    </h4>
 
-      Instead of changing the entire ceiling to one colour,
-      Dynamic Pixel technology enables moving clouds,
-      sunrise & sunset sequences, flowing light, waves,
-      gradients, chasing effects and fully programmable
-      animated lighting experiences.
+  </div>
 
+  <div className="glass rounded-2xl p-5">
+
+    <p className="text-gold-300 text-sm uppercase mb-2">
+      Motion Scenes
     </p>
 
-    <div className="grid grid-cols-2 gap-5">
+    <h4 className="text-xl font-semibold">
+      Unlimited
+    </h4>
 
-      <div className="glass rounded-2xl p-5">
-        <p className="text-gold-300 text-sm uppercase mb-2">
-          Control
-        </p>
-        <h4 className="text-lg font-semibold">
-          DMX / Pixel
-        </h4>
-      </div>
+  </div>
 
-      <div className="glass rounded-2xl p-5">
-        <p className="text-gold-300 text-sm uppercase mb-2">
-          RGBW
-        </p>
-        <h4 className="text-lg font-semibold">
-          Yes
-        </h4>
-      </div>
+  <div className="glass rounded-2xl p-5">
 
-      <div className="glass rounded-2xl p-5">
-        <p className="text-gold-300 text-sm uppercase mb-2">
-          Motion Effects
-        </p>
-        <h4 className="text-lg font-semibold">
-          Yes
-        </h4>
-      </div>
+    <p className="text-gold-300 text-sm uppercase mb-2">
+      Automation
+    </p>
 
-      <div className="glass rounded-2xl p-5">
-        <p className="text-gold-300 text-sm uppercase mb-2">
-          Custom Scenes
-        </p>
-        <h4 className="text-lg font-semibold">
-          Unlimited
-        </h4>
-      </div>
+    <h4 className="text-xl font-semibold">
+      Advanced
+    </h4>
 
-    </div>
+  </div>
 
+</div>
   </div>
 
   <img
@@ -469,14 +510,15 @@ const Stretchprint = () => {
 >
 
   <h2 className="text-4xl md:text-5xl font-luxury font-bold mb-6">
-    Transform Your Space with STRETCHÉ™
+    Bring Your Designs to Life with STRETCHÉ™ PRINT
   </h2>
 
   <p className="text-white/70 text-lg max-w-3xl mx-auto mb-10 leading-relaxed">
-    From elegant static illumination to fully programmable Dynamic Pixel
-    lighting, STRETCHÉ™ Translucent Stretch Ceiling systems are designed
-    to create premium architectural experiences for luxury residential,
-    commercial and hospitality projects.
+    Transform ordinary ceilings into extraordinary architectural features
+    with high-resolution customised printed stretch ceilings. From elegant
+    backlit artwork to intelligent RGBW and Dynamic Pixel lighting,
+    STRETCHÉ™ PRINT delivers limitless design possibilities for luxury
+    residential, commercial and hospitality interiors.
   </p>
 
   <div className="flex flex-col sm:flex-row gap-5 justify-center">
@@ -485,7 +527,7 @@ const Stretchprint = () => {
       href="/contact"
       className="btn-luxury"
     >
-      Get Free Consultation
+      Request a Free Consultation
     </a>
 
     <a
