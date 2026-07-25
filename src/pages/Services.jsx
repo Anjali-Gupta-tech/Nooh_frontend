@@ -91,10 +91,10 @@ const Services = () => {
         <meta name="description" content="Explore our comprehensive luxury interior design services including stretch ceilings, fiber optic systems, and turnkey projects." />
       </Helmet>
 
-      <div className="min-h-screen bg-luxury-black pt-24">
+      <div className="min-h-screen pt-24">
         {/* Hero Section */}
-        <section className="section-padding">
-          <div className="container-custom mx-auto text-center">
+        <section className="section-padding  bg-luxury-black">
+          <div className="container-custom mx-auto text-center bg-luxury-black">
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -113,149 +113,169 @@ const Services = () => {
           </div>
         </section>
 
-        {/* Services Grid */}
-        <section className="section-padding bg-luxury-gray">
-          <div className="container-custom mx-auto">
-            <div className="space-y-24">
-              {services.map((service, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
-                  className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
-                    index % 2 === 1 ? 'lg:flex-row-reverse' : ''
-                  }`}
-                >
-                  <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
-                    <h2 className="text-3xl md:text-5xl font-luxury font-bold text-white mb-4">
-                      {service.title}
-                    </h2>
-            
-                     
+      
+{/* Services Grid */}
 
-                    <p className="text-white/80 mb-6 text-lg leading-relaxed">
-                      {service.description}
-                    </p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                    {service.categories ? (
+<section className="section-padding bg-luxury-gray">
 
-  <div className="space-y-5 mb-8">
+  <div className="container-custom mx-auto">
 
-    {service.categories.map((item, idx) => (
+    <div className="space-y-24">
 
-      <Link
-        key={idx}
-        to={item.link}
-        className="block group border-b border-white/10 pb-4"
-      >
+      {services.map((service, index) => (
 
-        <h3 className="text-2xl font-bold text-gold-300 group-hover:text-white transition-all">
-          {item.title}
-        </h3>
+        <motion.div
+          key={index}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
+            index % 2 === 1 ? "lg:flex-row-reverse" : ""
+          }`}
+        >
 
+          {/* LEFT */}
 
-        <p className="text-white/70 mt-1">
-          {item.subtitle}
-        </p>
+          <div className={index % 2 === 1 ? "lg:order-2" : ""}>
 
-      </Link>
+            <h2 className="text-3xl md:text-5xl font-luxury font-bold text-white mb-4">
+              {service.title}
+            </h2>
 
-    ))}
+            {service.subheading && (
+              <p className="text-gold-300 text-xl mb-5">
+                {service.subheading}
+              </p>
+            )}
 
-  </div>
-
-) : (
-
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-
-  {service.categories ? (
-
-  <div className="space-y-4 mb-8">
-
-    {service.categories.map((item, idx) => (
-
-      <Link
-        key={idx}
-        to={item.link}
-        className="group block rounded-xl border border-white/10 p-5 hover:border-gold-300 hover:bg-white/5 transition-all duration-300"
-      >
-
-        <div className="flex items-center justify-between">
-
-          <div>
-
-            <h3 className="text-2xl md:text-3xl font-bold text-gold-300 group-hover:text-white transition-colors">
-              {item.title}
-            </h3>
-
-            <p className="text-white/60 mt-2 group-hover:text-white transition-colors">
-              {item.subtitle}
+            <p className="text-white/80 text-lg leading-relaxed mb-8">
+              {service.description}
             </p>
 
-          </div>
+            {service.categories ? (
 
-          <span className="text-gold-300 text-3xl group-hover:translate-x-2 transition-transform">
-            →
-          </span>
+              <>
 
-        </div>
+                <h4 className="text-gold-300 uppercase tracking-[3px] text-sm font-semibold mb-6">
+                  Product Categories
+                </h4>
 
-      </Link>
+                <div className="grid md:grid-cols-2 gap-5">
 
-    ))}
+                  {service.categories.slice(0,2).map((item,idx)=>(
 
-  </div>
-
-) : (
-
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-
-    {service.features.map((feature, idx) => (
-
-      <div key={idx} className="flex items-center space-x-3">
-
-        <div className="w-2 h-2 bg-luxury-gold rounded-full" />
-
-        <span className="text-white/90">
-          {feature}
-        </span>
-
-      </div>
-
-    ))}
-
-  </div>
-
-)}
-
-  </div>
-
-)}
-                    </div>
-                    <Link to="/contact" className="btn-luxury">
-                      Download
-                    </Link>
-                  </div>
-                  <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
-                    <motion.div
-                      whileHover={{ scale: 1.05 }}
-                      className="relative overflow-hidden rounded-2xl shadow-2xl"
+                    <Link
+                      key={idx}
+                      to={item.link}
+                      className="group rounded-2xl border border-gold-300/20 bg-white/[0.03] p-6 hover:border-gold-300 hover:bg-gold-300/10 transition"
                     >
-                      <img
-                        src={service.image}
-                        alt={service.title}
-                        className="w-full h-96 object-cover"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/50 to-transparent" />
-                    </motion.div>
+
+                      <h3 className="text-xl font-bold text-gold-300">
+                        {item.title}
+                      </h3>
+
+                      <p className="text-white/60 mt-2">
+                        {item.subtitle}
+                      </p>
+
+                    </Link>
+
+                  ))}
+
+                </div>
+
+                {service.categories.length > 2 && (
+
+                  <div className="flex justify-center mt-5">
+
+                    <div className="w-full md:w-[48%]">
+
+                      <Link
+                        to={service.categories[2].link}
+                        className="group rounded-2xl border border-gold-300/20 bg-white/[0.03] p-6 hover:border-gold-300 hover:bg-gold-300/10 transition block"
+                      >
+
+                        <h3 className="text-xl font-bold text-gold-300">
+                          {service.categories[2].title}
+                        </h3>
+
+                        <p className="text-white/60 mt-2">
+                          {service.categories[2].subtitle}
+                        </p>
+
+                      </Link>
+
+                    </div>
+
                   </div>
-                </motion.div>
-              ))}
-            </div>
+
+                )}
+
+              </>
+
+            ) : (
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+
+                {service.features?.map((feature,idx)=>(
+
+                  <div
+                    key={idx}
+                    className="flex items-center space-x-3"
+                  >
+
+                    <div className="w-2 h-2 rounded-full bg-luxury-gold"/>
+
+                    <span className="text-white/90">
+                      {feature}
+                    </span>
+
+                  </div>
+
+                ))}
+
+              </div>
+
+            )}
+
+            <Link
+              to="/contact"
+              className="btn-luxury mt-8 inline-block"
+            >
+              Download Brochure
+            </Link>
+
           </div>
-        </section>
+
+          {/* RIGHT */}
+
+          <div className={index % 2 === 1 ? "lg:order-1" : ""}>
+
+            <motion.div
+              whileHover={{ scale: 1.03 }}
+              className="overflow-hidden rounded-3xl shadow-2xl"
+            >
+
+              <img
+                src={service.image}
+                alt={service.title}
+                className="w-full h-[650px] object-cover"
+              />
+
+            </motion.div>
+
+          </div>
+
+        </motion.div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>  
 
         {/* CTA Section */}
         <section className="section-padding">

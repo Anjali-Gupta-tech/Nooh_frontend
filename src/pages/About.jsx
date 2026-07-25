@@ -25,14 +25,14 @@ const About = () => {
 
         {/* ================= HERO ================= */}
 
-        <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+        <section className="relative h-[100vh] flex items-center justify-center overflow-hidden">
 
           <div className="absolute inset-0">
 
             <img
               src="/images/StretchCeilingabout.png"
               alt="NOOH"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover "
             />
 
             <div className="absolute inset-0 bg-gradient-to-b luxury-black/40" />
@@ -41,22 +41,9 @@ const About = () => {
 
           <div className="relative z-10 container-custom mx-auto px-6 text-center">
 
-            <motion.h1
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="text-5xl md:text-7xl font-luxury font-bold text-gold-300 mb-6"
-            >
-              About NOOH
-            </motion.h1>
+           
 
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="text-xl md:text-2xl text-white/80 max-w-4xl mx-auto"
-            >
-              Transforming Spaces Through Innovation, Design & Technology
-            </motion.p>
+           
 
           </div>
 
@@ -76,7 +63,7 @@ const About = () => {
                 viewport={{ once: true }}
               >
 
-                <h2 className="text-5xl font-luxury font-bold text-gold-300 mb-8">
+                <h2 className="text-5xl font-luxury font-bold text-gold-300 mb-2">
                   Who We Are
                 </h2>
 
@@ -163,7 +150,7 @@ const About = () => {
           </div>
 
         </section>
-                {/* ================= FOUNDERS ================= */}
+              
 
      {/* ================= FOUNDERS ================= */}
 
@@ -178,14 +165,6 @@ const About = () => {
       className="text-center mb-20"
     >
 
-      <h2 className="text-5xl md:text-6xl font-luxury font-bold text-gold-300 mb-6">
-        Meet Our Founders
-      </h2>
-
-      <p className="text-xl text-white/70 max-w-4xl mx-auto">
-        The visionaries behind NOOH Elevated Living LLP, combining innovation,
-        architecture and craftsmanship to redefine premium interior solutions.
-      </p>
 
     </motion.div>
 

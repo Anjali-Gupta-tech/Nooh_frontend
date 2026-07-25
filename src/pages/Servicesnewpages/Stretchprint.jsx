@@ -2,11 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 
-const Translucentnew = () => {
+const Stretchprint = () => {
   return (
     <>
       <Helmet>
-        <title>STRETCHÉ™ TRANSLUCENT | NOOH Living Elevated</title>
+        <title>STRETCHÉ™ Print | NOOH Living Elevated</title>
         <meta
           name="description"
           content="Premium translucent stretch ceiling with Static, Tunable, RGBW and Dynamic lighting technology."
@@ -26,7 +26,7 @@ const Translucentnew = () => {
               animate={{ opacity: 1, y: 0 }}
               className="uppercase tracking-[5px] text-gold-300 font-semibold mb-4"
             >
-              STRETCHÉ™ Collection
+              STRETCHÉ™ PRINT 
             </motion.p>
 
             <motion.h1
@@ -34,7 +34,7 @@ const Translucentnew = () => {
               animate={{ opacity: 1, y: 0 }}
               className="text-5xl md:text-7xl font-luxury font-bold mb-6"
             >
-              STRETCHÉ™ TRANSLUCENT
+              STRETCHÉ™ PRINT
             </motion.h1>
 
             <motion.p
@@ -55,7 +55,7 @@ const Translucentnew = () => {
 
         {/* LIGHTING */}
 
-        <section className="container-custom mx-auto py-24">
+        <section className="section-padding  mx-auto py-24 bg-luxury-gray">
 
           <div className="text-center mb-20">
 
@@ -507,4 +507,4 @@ const Translucentnew = () => {
 );
 };
 
-export default Translucentnew;
+export default Stretchprint;
