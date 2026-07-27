@@ -8,7 +8,7 @@ const Services = () => {
     {
    title: (
   <>
-    STRETCH<sup>™</sup> Ceiling Specialist  by NOOH
+    STRETCHE<sup>™</sup> STRETCH Ceiling Specialist  by NOOH
   </>
 ),
    subheading: 'Premium Architectural Stretch Ceiling Systems',
@@ -21,7 +21,7 @@ const Services = () => {
     {
       title: (
         <>
-          STRETCH<sup>™</sup> TRANSLUCENT
+          STRETCHE<sup>™</sup>  TRANSLUCENT
         </>
       ),
       subtitle: 'Translucent & Illuminated Ceiling',
@@ -30,7 +30,7 @@ const Services = () => {
     {
       title: (
         <>
-          STRETCH<sup>™</sup> PRINT
+          STRETCHE<sup>™</sup> PRINT
         </>
       ),
       subtitle: 'Customized Printed Stretch Ceiling',
@@ -39,7 +39,7 @@ const Services = () => {
     {
       title: (
         <>
-          STRETCH<sup>™</sup> GLOSS
+          STRETCHE<sup>™</sup> GLOSS
         </>
       ),
       subtitle: 'High-Gloss Reflective Ceiling',
@@ -48,7 +48,7 @@ const Services = () => {
     {
   title: (
     <>
-      STRETCH<sup>™</sup> PANEL
+      STRETCHE<sup>™</sup> PANEL
     </>
   ),
   subtitle: 'Premium Decorative Ceiling Panel',
@@ -231,12 +231,30 @@ const Services = () => {
 
   )}
 
-  <Link
-    to="/contact"
-    className="btn-luxury mt-8 inline-block"
+<div className="flex flex-col sm:flex-row gap-4 mt-8">
+
+  {/* View Catalogue */}
+
+  <a
+    href="/catalogue/STRETCHE_TM_STRETCH_CEILING_PANEL.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="btn-outline-gold inline-flex items-center justify-center"
   >
-    Download Brochure
-  </Link>
+    📖 View Catalogue
+  </a>
+
+  {/* Download Catalogue */}
+
+  <a
+    href="/catalogue/STRETCHE_TM_STRETCH_CEILING_PANEL.pdf"
+    download
+    className="btn-luxury inline-flex items-center justify-center"
+  >
+    ⬇ Download Catalogue
+  </a>
+
+</div>
 
 </div>
 
