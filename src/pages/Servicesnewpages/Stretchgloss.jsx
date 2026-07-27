@@ -6,77 +6,114 @@ const Stretchgloss = () => {
   return (
     <>
       <Helmet>
-        <title> STRETCH™GLOSS | NOOH Living Elevated</title>
+        <title>STRETCHÉ™ GLOSS | NOOH Living Elevated</title>
+
         <meta
           name="description"
-          content="Premium high-gloss stretch ceiling with Mirror-Like finish and advanced lighting technology."
+          content="Premium High-Gloss Reflective Stretch Ceiling with Mirror Finish Technology by NOOH Living Elevated."
         />
       </Helmet>
 
       <div className="min-h-screen bg-luxury-black text-white pt-24">
 
-        {/* HERO */}
+        {/* ================= HERO ================= */}
 
         <section className="py-20 border-b border-white/10">
 
-  <div className="container-custom mx-auto text-center">
+          <div className="container-custom mx-auto text-center">
 
-    <motion.p
-      initial={{ opacity: 0, y: 15 }}
-      animate={{ opacity: 1, y: 0 }}
-      className="uppercase tracking-[5px] text-gold-300 font-semibold mb-4"
-    >
-      STRETCHÉ™ Collection
-    </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="uppercase tracking-[5px] text-gold-300 font-semibold mb-4"
+            >
+              STRETCHÉ™ Collection
+            </motion.p>
 
-  <motion.h1
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  className="text-5xl md:text-7xl font-luxury font-bold mb-6"
->
-  STRETCHÉ<sup className="text-[35%] align-super ml-1">™</sup> GLOSS
-</motion.h1>
+            <motion.h1
+              initial={{ opacity: 0, y: 25 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: .7 }}
+              className="text-5xl md:text-7xl font-luxury font-bold mb-6"
+            >
+              STRETCHÉ
+              <sup className="relative -top-5 ml-1 text-xl md:text-3xl">
+                ™
+              </sup>{" "}
+              GLOSS
+            </motion.h1>
 
-    <motion.p
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.2 }}
-      className="max-w-4xl mx-auto text-white/70 text-xl leading-relaxed"
-    >
-      STRETCHÉ™ GLOSS transforms ceilings into stunning architectural
-      features using high-resolution customised artwork combined with
-      advanced backlighting technology. 
-    </motion.p>
+            <motion.h2
+              initial={{ opacity: 0, y: 25 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: .15 }}
+              className="text-2xl md:text-3xl text-gold-300 font-semibold mb-8"
+            >
+              Premium High-Gloss Reflective Stretch Ceiling
+            </motion.h2>
 
-  </div>
-
-</section>
-
-
-        {/* LIGHTING */}
-
-        <section className="section-padding  mx-auto py-24 bg-luxury-gray">
-
-          <div className="text-center mb-20">
-
-            <p className="text-gold-300 uppercase tracking-[5px] font-semibold mb-4">
-              Advanced Lighting System
-            </p>
-
-            <h2 className="text-5xl md:text-6xl font-luxury font-bold mb-6">
-              Lighting Technology
-            </h2>
-
-            <p className="text-white/70 max-w-3xl mx-auto leading-relaxed text-lg">
-              Four intelligent lighting systems designed for different
-              architectural applications.
-            </p>
+            <motion.p
+              initial={{ opacity: 0, y: 25 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: .3 }}
+              className="max-w-5xl mx-auto text-white/70 text-xl leading-relaxed"
+            >
+              STRETCHÉ™ GLOSS is a premium stretch ceiling system designed
+              to create exceptionally smooth, seamless and mirror-like
+              reflective ceiling surfaces. Its polished finish reflects
+              lighting, furniture and surrounding architectural elements,
+              creating a luxurious visual experience while making interiors
+              appear brighter, taller and more spacious.
+            </motion.p>
 
           </div>
 
+        </section>
 
 
-          {/* TYPE 1 */}
+
+        {/* ================= INTRO ================= */}
+
+        <section className="section-padding bg-luxury-gray">
+
+          <div className="container-custom mx-auto">
+
+            <div className="text-center mb-20">
+
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="uppercase tracking-[5px] text-gold-300 font-semibold mb-4"
+              >
+                Mirror Finish Technology
+              </motion.p>
+
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="text-5xl md:text-6xl font-luxury font-bold mb-6"
+              >
+                Luxury Through Reflection
+              </motion.h2>
+
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="max-w-4xl mx-auto text-white/70 text-lg leading-loose"
+              >
+                Unlike conventional gypsum, POP or painted ceilings,
+                STRETCHÉ™ GLOSS uses a specially engineered flexible
+                membrane precisely tensioned over an aluminium perimeter
+                profile system. The result is an elegant mirror-like
+                ceiling that transforms the entire ambience of a space.
+              </motion.p>
+
+            </div>
+            {/* ================= SECTION 1 ================= */}
+
 <motion.section
   initial={{ opacity: 0, y: 50 }}
   whileInView={{ opacity: 1, y: 0 }}
@@ -86,21 +123,30 @@ const Stretchgloss = () => {
 >
 
   {/* IMAGE */}
+  
+   <div className="rounded-3xl overflow-hidden shadow-2xl">
+  <img
+    src="/images/translucent2.png"
+    alt="translucent-image"
+    className="w-full h-[600px] rounded-3xl transition-transform duration-500 hover:scale-105"
+  />
+</div>
 
   <motion.div
     whileHover={{ scale: 1.03 }}
-    transition={{ duration: .5 }}
+    transition={{ duration: 0.5 }}
     className="group relative"
   >
 
     <div className="absolute -inset-5 bg-gold-300/10 blur-[80px] opacity-0 group-hover:opacity-100 duration-700 rounded-full" />
-
-    <img
-      src="/image/gloss-main.webp"
-      alt="Stretch Gloss Ceiling"
-      className="relative rounded-3xl h-[520px] w-full object-cover shadow-2xl"
-    />
-
+ <div className="rounded-3xl overflow-hidden shadow-2xl">
+  <img
+    src="/images/gloss.jpeg"
+    alt="translucent-image"
+    className="w-full h-[500px] rounded-3xl transition-transform duration-500 hover:scale-105"
+  />
+</div>
+  
   </motion.div>
 
   {/* CONTENT */}
@@ -112,87 +158,107 @@ const Stretchgloss = () => {
     </p>
 
     <h2 className="text-5xl font-luxury font-bold mb-5">
-      Mirror-Like Luxury Finish
+      Premium High-Gloss Reflective Ceiling
     </h2>
 
     <div className="w-24 h-[2px] bg-gold-300 rounded-full mb-8" />
 
     <p className="text-white/70 text-lg leading-loose mb-6">
 
-      <strong>STRETCHÉ™ GLOSS</strong> is a premium high-gloss stretch
-      ceiling system engineered to create a smooth, seamless and highly
-      reflective surface. Its mirror-like finish reflects light,
-      furniture and architectural elements, creating an impressive
-      feeling of depth, height and spaciousness.
+      <strong>STRETCHÉ™ GLOSS</strong> is designed to create an
+      exceptionally smooth, seamless and mirror-like ceiling surface.
+      Its glossy finish beautifully reflects chandeliers, decorative
+      lighting, furniture and surrounding architectural elements,
+      transforming ordinary interiors into elegant luxury spaces.
 
     </p>
 
     <p className="text-white/70 text-lg leading-loose mb-8">
 
-      Unlike conventional painted or gypsum ceilings, STRETCHÉ™ GLOSS
-      becomes a striking architectural feature that enhances interior
-      brightness while delivering a sophisticated luxury appearance.
+      The specially engineered stretch membrane is precisely tensioned
+      over an aluminium perimeter profile to produce a flawless finish
+      without visible joints, cracks or uneven surfaces. The result is a
+      sophisticated ceiling that enhances both daylight and artificial
+      lighting while making interiors appear larger and brighter.
 
     </p>
 
   </motion.div>
 
 </motion.section>
-{/* ================= TYPE 2 ================= */}
+
+
+
+{/* ================= KEY FEATURES ================= */}
 
 <motion.section
-  initial={{ opacity: 0, y: 50 }}
+  initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
   viewport={{ once: true }}
   className="mb-32"
 >
 
   <h2 className="text-4xl font-luxury text-center mb-14">
-    Key Benefits
+
+    Key Features
+
   </h2>
 
-  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
 
     {[
       {
-        title:"High Reflection",
-        desc:"Mirror-like glossy finish creates premium interiors."
+        title:"Mirror-Like Finish",
+        desc:"Creates a luxurious reflective ceiling with exceptional visual appeal."
       },
       {
-        title:"Enhanced Space",
-        desc:"Rooms appear taller, wider and more spacious."
+        title:"Smooth & Seamless",
+        desc:"Joint-free premium finish without cracks, peeling or paint issues."
       },
       {
-        title:"Luxury Finish",
-        desc:"Perfect for contemporary luxury architecture."
+        title:"Visual Depth",
+        desc:"Makes interiors appear taller, brighter and significantly more spacious."
       },
       {
-        title:"Light Enhancement",
-        desc:"Reflects natural and artificial lighting beautifully."
+        title:"Reflective Lighting",
+        desc:"Enhances chandeliers, pendant lights, spotlights and decorative lighting."
       },
       {
-        title:"Fast Installation",
-        desc:"Installed without heavy construction work."
+        title:"Easy Maintenance",
+        desc:"Durable surface that is easy to clean and maintain."
       },
       {
-        title:"Design Flexibility",
-        desc:"Compatible with chandeliers, spotlights and linear lighting."
+        title:"Custom Design",
+        desc:"Available in multiple colours, shapes and architectural concepts."
       }
 
     ].map((item,index)=>(
 
       <motion.div
+
         key={index}
-        whileHover={{ y:-8, scale:1.03 }}
+
+        whileHover={{
+          y:-8,
+          scale:1.03
+        }}
+
+        transition={{duration:.35}}
+
         className="glass rounded-3xl p-8"
+
       >
 
         <h3 className="text-gold-300 text-2xl font-semibold mb-4">
+
           {item.title}
+
         </h3>
 
         <p className="text-white/70 leading-relaxed">
+
           {item.desc}
+
         </p>
 
       </motion.div>
@@ -202,94 +268,126 @@ const Stretchgloss = () => {
   </div>
 
 </motion.section>
-
-
-
-{/* ================= TYPE 3 ================= */}
+{/* ================= THE BEAUTY OF REFLECTION ================= */}
 
 <motion.section
-className="grid lg:grid-cols-[1fr_1fr] gap-20 items-center mb-32"
+  initial={{ opacity: 0, y: 50 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: .8 }}
+  className="grid lg:grid-cols-[1fr_1fr] gap-20 items-center mb-32"
 >
 
-<div>
+  <div>
 
-<h2 className="text-5xl font-luxury mb-5">
-Visual Depth Effect
-</h2>
+    <p className="uppercase tracking-[5px] text-gold-300 font-semibold mb-3">
+      Reflection • Depth • Luxury
+    </p>
 
-<div className="w-24 h-[2px] bg-gold-300 rounded-full mb-8" />
+    <h2 className="text-5xl font-luxury font-bold mb-5">
+      The Beauty of Reflection
+    </h2>
 
-<p className="text-white/70 leading-loose mb-6">
+    <div className="w-24 h-[2px] bg-gold-300 rounded-full mb-8" />
 
-One of the most striking applications of STRETCHÉ™ GLOSS is
-its ability to create the visual illusion of additional
-height and depth. Reflections of chandeliers, decorative
-lighting and surrounding interiors make the ceiling become
-part of the overall luxury experience.
+    <p className="text-white/70 leading-loose mb-6">
 
-</p>
+      The defining feature of <strong>STRETCHÉ™ GLOSS</strong> is its
+      spectacular mirror-like reflective finish. Chandeliers, pendant
+      lights, spotlights, decorative lighting and interior elements are
+      reflected beautifully across the ceiling, creating an additional
+      architectural dimension throughout the space.
 
-<p className="text-white/70 leading-loose">
+    </p>
 
-Perfect for hotel lobbies, restaurants, villas,
-reception areas and premium commercial interiors where
-dramatic visual impact is desired.
+    <p className="text-white/70 leading-loose mb-6">
 
-</p>
+      This elegant reflection visually increases ceiling height while
+      making rooms feel brighter, larger and significantly more luxurious.
+      Every lighting element becomes part of the overall interior design
+      experience.
 
-</div>
+    </p>
 
-<motion.img
+    <p className="text-white/70 leading-loose">
 
-whileHover={{scale:1.03}}
+      STRETCHÉ™ GLOSS transforms ordinary ceilings into statement
+      architectural features that immediately enhance the character of
+      premium interiors.
 
-src="/image/gloss-depth.webp"
+    </p>
 
-className="rounded-3xl h-[520px] w-full object-cover shadow-2xl"
+  </div>
 
-/>
+  <motion.img
+    whileHover={{ scale: 1.03 }}
+    transition={{ duration: .5 }}
+    src="/image/gloss-depth.webp"
+    alt="Luxury Gloss Ceiling"
+    className="rounded-3xl h-[520px] w-full object-cover shadow-2xl"
+  />
 
 </motion.section>
-{/* ================= TYPE 4 ================= */}
+
+
+
+{/* ================= APPLICATIONS ================= */}
+
 <motion.section
-className="text-center mb-28"
+  initial={{ opacity: 0, y: 40 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  className="text-center mb-32"
 >
 
-<h2 className="text-4xl font-luxury mb-12">
-Ideal Applications
-</h2>
+  <p className="uppercase tracking-[5px] text-gold-300 font-semibold mb-4">
+    Perfect For
+  </p>
 
-<div className="flex flex-wrap justify-center gap-4">
+  <h2 className="text-5xl font-luxury font-bold mb-12">
+    Ideal Applications
+  </h2>
 
-{[
-"Luxury Homes",
-"Hotel Lobbies",
-"Restaurants",
-"Lounges",
-"Retail Stores",
-"Jewellery Showrooms",
-"Corporate Offices",
-"Salons",
-"Spas",
-"Reception Areas",
-"Premium Villas",
-"Commercial Spaces"
-].map((item,index)=>(
+  <div className="flex flex-wrap justify-center gap-5">
 
-<div
-key={index}
-className="glass px-6 py-3 rounded-full text-white hover:bg-gold-300 hover:text-black duration-300"
->
+    {[
+      "Luxury Residences",
+      "Premium Villas",
+      "Hotels",
+      "Restaurants",
+      "Lounges",
+      "Reception Areas",
+      "Retail Stores",
+      "Showrooms",
+      "Corporate Offices",
+      "Salons",
+      "Spas",
+      "Entertainment Spaces"
+    ].map((item,index)=>(
 
-{item}
+      <motion.div
 
-</div>
+        key={index}
 
-))}
+        whileHover={{
+          scale:1.08,
+          y:-6
+        }}
 
-</div>
+        className="glass px-6 py-3 rounded-full"
+
+      >
+
+        {item}
+
+      </motion.div>
+
+    ))}
+
+  </div>
 
 </motion.section>
+
 
 
 {/* ================= CTA ================= */}
@@ -302,15 +400,16 @@ className="glass px-6 py-3 rounded-full text-white hover:bg-gold-300 hover:text-
 >
 
   <h2 className="text-4xl md:text-5xl font-luxury font-bold mb-6">
-    Bring Your Designs to Life with STRETCHÉ™ GLOSS
+    Transform Your Space with STRETCHÉ™ GLOSS
   </h2>
 
   <p className="text-white/70 text-lg max-w-3xl mx-auto mb-10 leading-relaxed">
-    Transform ordinary ceilings into extraordinary architectural features
-    with high-resolution customised printed stretch ceilings. From elegant
-    backlit artwork to intelligent RGBW and Dynamic Pixel lighting,
-    STRETCHÉ™ GLOSS delivers limitless design possibilities for luxury
-    residential, commercial and hospitality interiors.
+
+    More than a ceiling, STRETCHÉ™ GLOSS becomes a reflective
+    architectural design element that interacts beautifully with lighting,
+    furniture and surrounding interiors. Experience exceptional depth,
+    elegance and seamless luxury with NOOH Living Elevated.
+
   </p>
 
   <div className="flex flex-col sm:flex-row gap-5 justify-center">
@@ -319,27 +418,32 @@ className="glass px-6 py-3 rounded-full text-white hover:bg-gold-300 hover:text-
       href="/contact"
       className="btn-luxury"
     >
-      Request a Free Consultation
+      Request Free Consultation
     </a>
 
     <a
-      href="/catalogue.pdf"
+      href="/catalogue/STRETCHE_TM_GLOSS.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
       className="btn-outline-gold"
     >
-      Download Catalogue
+      View Catalogue
     </a>
 
   </div>
 
 </motion.div>
 
+</div>
+
 </section>
 
 </div>
 
 </>
+
 );
+
 };
 
 export default Stretchgloss;
-
