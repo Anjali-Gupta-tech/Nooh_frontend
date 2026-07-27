@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 
-const Stretchprint = () => {
+const Stretchgloss = () => {
   return (
     <>
       <Helmet>
@@ -29,13 +29,13 @@ const Stretchprint = () => {
       STRETCHÉ™ Collection
     </motion.p>
 
-    <motion.h1
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      className="text-5xl md:text-7xl font-luxury font-bold mb-6"
-    >
-      STRETCH<sup>™</sup> GLOSS
-    </motion.h1>
+  <motion.h1
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  className="text-5xl md:text-7xl font-luxury font-bold mb-6"
+>
+  STRETCHÉ<sup className="text-[35%] align-super ml-1">™</sup> GLOSS
+</motion.h1>
 
     <motion.p
       initial={{ opacity: 0, y: 20 }}
@@ -341,5 +341,5 @@ className="glass px-6 py-3 rounded-full text-white hover:bg-gold-300 hover:text-
 );
 };
 
-export default Stretchprint;
+export default Stretchgloss;
 

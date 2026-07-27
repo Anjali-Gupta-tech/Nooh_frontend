@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 
+import PremiumCatalogueButton from "../components/PremiumCatalogueButton";
+
 const Services = () => {
   const services = [
     {
@@ -230,32 +232,14 @@ const Services = () => {
     </div>
 
   )}
+   {/*download button*/}
+ <div className="mt-10">
 
-<div className="flex flex-col sm:flex-row gap-4 mt-8">
-
-  {/* View Catalogue */}
-
-  <a
-    href="/catalogue/STRETCHE_TM_STRETCH_CEILING_PANEL.pdf"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="btn-outline-gold inline-flex items-center justify-center"
-  >
-    📖 View Catalogue
-  </a>
-
-  {/* Download Catalogue */}
-
-  <a
-    href="/catalogue/STRETCHE_TM_STRETCH_CEILING_PANEL.pdf"
-    download
-    className="btn-luxury inline-flex items-center justify-center"
-  >
-    ⬇ Download Catalogue
-  </a>
+  <PremiumCatalogueButton
+    pdf="/catalogue/STRETCHE_TM_STRETCH_CEILING_PANEL.pdf"
+  />
 
 </div>
-
 </div>
 
           {/* RIGHT */}
@@ -287,7 +271,9 @@ const Services = () => {
 
 </section>  
 
+
         {/* CTA Section */}
+
         <section className="section-padding">
           <div className="container-custom mx-auto">
             <motion.div

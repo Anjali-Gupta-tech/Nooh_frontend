@@ -29,13 +29,13 @@ const Stretchprint = () => {
       STRETCHÉ™ Collection
     </motion.p>
 
-    <motion.h1
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      className="text-5xl md:text-7xl font-luxury font-bold mb-6"
-    >
-      STRETCHÉ™ PRINT
-    </motion.h1>
+   <motion.h1
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  className="text-5xl md:text-7xl font-luxury font-bold mb-6"
+>
+  STRETCHÉ<sup className="text-[35%] align-super ml-1">™</sup> PRINT
+</motion.h1>
 
     <motion.p
       initial={{ opacity: 0, y: 20 }}

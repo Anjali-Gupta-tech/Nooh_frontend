@@ -29,13 +29,13 @@ const Translucentnew = () => {
               STRETCHÉ™ Collection
             </motion.p>
 
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="text-5xl md:text-7xl font-luxury font-bold mb-6"
-            >
-              STRETCHÉ™ TRANSLUCENT
-            </motion.h1>
+          <motion.h1
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  className="text-5xl md:text-7xl font-luxury font-bold mb-6"
+>
+  STRETCHÉ<sup className="text-[35%] align-super ml-1">™</sup> PRINT
+</motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -57,7 +57,7 @@ const Translucentnew = () => {
 
         <section className="section-padding  mx-auto py-24 bg-luxury-gray">
 
-          <div className="text-center mb-20">
+          <div className="text-center mb-10">
 
             <p className="text-gold-300 uppercase tracking-[5px] font-semibold mb-4">
               Advanced Lighting System
@@ -88,7 +88,7 @@ const Translucentnew = () => {
   <img
     src="/images/translucent1.png"
     alt="translucent-image"
-    className="w-full h-[500px] rounded-3xl transition-transform duration-500 hover:scale-105"
+    className="w-full h-[600px] rounded-3xl transition-transform duration-500 hover:scale-105"
   />
 </div>
    
@@ -272,7 +272,7 @@ const Translucentnew = () => {
   <img
     src="/images/translucent2.png"
     alt="translucent-image"
-    className="w-full h-[500px] rounded-3xl transition-transform duration-500 hover:scale-105"
+    className="w-full h-[600px] rounded-3xl transition-transform duration-500 hover:scale-105"
   />
 </div>
 
@@ -293,7 +293,7 @@ const Translucentnew = () => {
   <img
     src="/images/translucent3.png"
     alt="translucent-image"
-    className="w-full h-[500px] rounded-3xl transition-transform duration-500 hover:scale-105"
+    className="w-full h-[600px] rounded-3xl transition-transform duration-500 hover:scale-105"
   />
 </div>
 
@@ -460,7 +460,7 @@ const Translucentnew = () => {
   <img
     src="/images/translucent4.png"
     alt="translucent-image"
-    className="w-full h-[500px] rounded-3xl transition-transform duration-500 hover:scale-105"
+    className="w-full h-[600px] rounded-3xl transition-transform duration-500 hover:scale-105"
   />
 </div>
 
