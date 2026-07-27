@@ -56,7 +56,7 @@ const Services = () => {
 },
   ],
 
-  image: '/images/star-ceiling.png',
+  image: '/images/Stretch-Ceiling.jpeg',
 },
     {
       title: 'Fiber Optic Star Ceiling',

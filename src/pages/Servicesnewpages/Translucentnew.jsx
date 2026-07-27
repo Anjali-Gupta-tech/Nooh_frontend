@@ -86,8 +86,8 @@ const Translucentnew = () => {
           >
 
             <img
-              src="/image/Ceiling1.webp"
-              alt="Static White Stretch Ceiling"
+              src="/images/translucent1.png"
+              alt="translucent-image"
               className="rounded-3xl h-[500px] w-full object-cover shadow-2xl hover:scale-105 duration-500"
             />
 
@@ -268,7 +268,7 @@ const Translucentnew = () => {
   </div>
 
   <img
-    src="/image/Ceiling2.webp"
+    src="/images/translucent2.png"
     alt="Tunable White Stretch Ceiling"
     className="rounded-3xl h-[520px] w-full object-cover shadow-2xl hover:scale-105 duration-500"
   />
@@ -287,9 +287,9 @@ const Translucentnew = () => {
 >
 
   <img
-    src="/image/Ceiling3.webp"
+    src="/images/translucent3.png"
     alt="RGBW Stretch Ceiling"
-    className="rounded-3xl h-[520px] w-full object-cover shadow-2xl hover:scale-105 duration-500"
+    className="rounded-3xl h-[520px] w-full object-contain  shadow-2xl hover:scale-105 duration-500"
   />
 
   <div>
@@ -452,7 +452,7 @@ const Translucentnew = () => {
   </div>
 
   <img
-    src="/image/Ceiling4.webp"
+    src="/images/translucent4.png"
     alt="Dynamic Pixel Stretch Ceiling"
     className="rounded-3xl h-[520px] w-full object-cover shadow-2xl hover:scale-105 duration-500"
   />
