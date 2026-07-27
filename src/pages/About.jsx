@@ -25,12 +25,12 @@ const About = () => {
 
         {/* ================= HERO ================= */}
 
-        <section className="relative h-[100vh] flex items-center justify-center overflow-hidden">
+        <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
 
           <div className="absolute inset-0">
 
             <img
-              src="/images/StretchCeilingabout.png"
+              src="/images/about-image.png"
               alt="NOOH"
               className="w-full h-full object-cover "
             />
@@ -51,7 +51,7 @@ const About = () => {
 
         {/* ================= COMPANY OVERVIEW ================= */}
 
-        <section className="section-padding">
+        <section className="section-padding bg-luxury-gray">
 
           <div className="container-custom mx-auto">
 

@@ -57,7 +57,7 @@ const StretchBacklitPanel = () => {
               transition={{ delay: 0.25 }}
               className="max-w-5xl mx-auto text-white/70 text-xl leading-relaxed"
             >
-              STRETCHÉ™ BACKLIT PANEL is a premium modular illuminated ceiling
+              STRETCHÉ™ backlit panel is a premium modular illuminated ceiling
               panel system designed especially for Grid, T-Grid and modular
               false ceiling applications. Combining high-quality printed
               graphics with uniform LED backlighting, it transforms ordinary
@@ -307,20 +307,13 @@ const StretchBacklitPanel = () => {
 
   {/* IMAGE */}
 
-  <motion.div
-    whileHover={{ scale: 1.03 }}
-    transition={{ duration: .5 }}
-    className="rounded-3xl overflow-hidden shadow-2xl"
-  >
-
-    <img
-      src="/images/backlit-panel-large.webp"
-      alt="Large Backlit Ceiling"
-      className="w-full h-[520px] object-cover"
-    />
-
-  </motion.div>
-
+ <div className="rounded-3xl overflow-hidden shadow-2xl">
+  <img
+    src="/images/panel2.png"
+    alt="translucent-image"
+    className="w-full h-[600px] rounded-3xl transition-transform duration-500 hover:scale-105"
+  />
+</div>
 </motion.section>
 {/* ================= CUSTOM PRINTING ================= */}
 
@@ -411,28 +404,13 @@ className="grid lg:grid-cols-[1fr_1fr] gap-20 items-center mb-32"
 
 {/* IMAGE */}
 
-<motion.div
-
-whileHover={{ scale:1.03 }}
-
-transition={{ duration:.5 }}
-
-className="rounded-3xl overflow-hidden shadow-2xl"
-
->
-
-<img
-
-src="/images/backlit-panel-design.webp"
-
-alt="Backlit Panel Design"
-
-className="w-full h-[520px] object-cover"
-
-/>
-
-</motion.div>
-
+<div className="rounded-3xl overflow-hidden shadow-2xl">
+  <img
+    src="/images/panel3.jpeg"
+    alt="translucent-image"
+    className="w-full h-[600px] rounded-3xl transition-transform duration-500 hover:scale-105"
+  />
+</div>
 {/* CONTENT */}
 
 <div>

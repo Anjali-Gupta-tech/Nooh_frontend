@@ -122,26 +122,32 @@ const Services = () => {
 
       <div className="min-h-screen pt-24">
         {/* Hero Section */}
-        <section className="section-padding  bg-luxury-black">
-          <div className="container-custom mx-auto text-center bg-luxury-black">
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="text-4xl md:text-7xl font-luxury font-bold text-gold-300 mb-6"
-            >
-              Our Premium Services
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="text-xl text-white/80 max-w-3xl mx-auto"
-            >
-              Comprehensive luxury interior solutions designed to transform your spaces into extraordinary experiences
-            </motion.p>
-          </div>
-        </section>
+      <section className="relative h-[75vh] flex items-center justify-center overflow-hidden">
 
+  {/* Background Image */}
+
+  <img
+    src="/images/service-hero-image.png"
+    alt="NOOH Premium Services"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+
+  {/* Dark Overlay */}
+
+  <div className="absolute inset-0 bg-black/20"></div>
+
+  {/* Gold Gradient Overlay */}
+
+  <div className="absolute inset-0 bg-gradient-to-r"></div>
+
+  {/* Content */}
+
+  <div className="relative z-10 container-custom mx-auto text-center px-6">
+
+
+  </div>
+
+</section>
       
 {/* Services Grid */}
 

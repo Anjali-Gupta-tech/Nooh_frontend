@@ -78,40 +78,7 @@ const Stretchgloss = () => {
 
           <div className="container-custom mx-auto">
 
-            <div className="text-center mb-20">
-
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="uppercase tracking-[5px] text-gold-300 font-semibold mb-4"
-              >
-                Mirror Finish Technology
-              </motion.p>
-
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="text-5xl md:text-6xl font-luxury font-bold mb-6"
-              >
-                Luxury Through Reflection
-              </motion.h2>
-
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="max-w-4xl mx-auto text-white/70 text-lg leading-loose"
-              >
-                Unlike conventional gypsum, POP or painted ceilings,
-                STRETCHÉ™ GLOSS uses a specially engineered flexible
-                membrane precisely tensioned over an aluminium perimeter
-                profile system. The result is an elegant mirror-like
-                ceiling that transforms the entire ambience of a space.
-              </motion.p>
-
-            </div>
+          
             {/* ================= SECTION 1 ================= */}
 
 <motion.section
@@ -311,13 +278,23 @@ const Stretchgloss = () => {
 
   </div>
 
-  <motion.img
+  <motion.div
     whileHover={{ scale: 1.03 }}
-    transition={{ duration: .5 }}
-    src="/image/gloss-depth.webp"
-    alt="Luxury Gloss Ceiling"
-    className="rounded-3xl h-[520px] w-full object-cover shadow-2xl"
+    transition={{ duration: 0.5 }}
+    className="group relative"
+  >
+
+    <div className="absolute -inset-5 bg-gold-300/10 blur-[80px] opacity-0 group-hover:opacity-100 duration-700 rounded-full" />
+ <div className="rounded-3xl overflow-hidden shadow-2xl">
+  <img
+    src="/images/gloss-ceiling2.png"
+    alt="gloss-ceiling"
+    className="w-full h-[500px] rounded-3xl transition-transform duration-500 hover:scale-105"
   />
+</div>
+  
+  </motion.div>
+
 
 </motion.section>
 

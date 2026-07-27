@@ -34,7 +34,7 @@ const Translucentnew = () => {
   animate={{ opacity: 1, y: 0 }}
   className="text-5xl md:text-7xl font-luxury font-bold mb-6"
 >
-  STRETCHÉ<sup className="text-[35%] align-super ml-1">™</sup> PRINT
+  STRETCHÉ<sup className="text-[35%] align-super ml-1">™</sup> TRANSLUCENT
 </motion.h1>
 
             <motion.p
@@ -57,23 +57,7 @@ const Translucentnew = () => {
 
         <section className="section-padding  mx-auto py-24 bg-luxury-gray">
 
-          <div className="text-center mb-10">
-
-            <p className="text-gold-300 uppercase tracking-[5px] font-semibold mb-4">
-              Advanced Lighting System
-            </p>
-
-            <h2 className="text-5xl md:text-6xl font-luxury font-bold mb-6">
-              Lighting Technology
-            </h2>
-
-            <p className="text-white/70 max-w-3xl mx-auto leading-relaxed text-lg">
-              Four intelligent lighting systems designed for different
-              architectural applications.
-            </p>
-
-          </div>
-
+         
 
 
           {/* TYPE 1 */}
