@@ -84,13 +84,14 @@ const Translucentnew = () => {
             viewport={{ once: true }}
             className="grid lg:grid-cols-[0.95fr_1.05fr] xl:gap-28 gap-16 items-center mb-32"
           >
-
-            <img
-              src="/images/translucent1.png"
-              alt="translucent-image"
-              className="rounded-3xl h-[500px] w-full object-cover shadow-2xl hover:scale-105 duration-500"
-            />
-
+   <div className="rounded-3xl overflow-hidden shadow-2xl">
+  <img
+    src="/images/translucent1.png"
+    alt="translucent-image"
+    className="w-full h-[500px] rounded-3xl transition-transform duration-500 hover:scale-105"
+  />
+</div>
+   
             <div>
 
               <p className="uppercase tracking-[5px] text-gold-300 font-semibold mb-2">
@@ -267,11 +268,13 @@ const Translucentnew = () => {
 
   </div>
 
+   <div className="rounded-3xl overflow-hidden shadow-2xl">
   <img
     src="/images/translucent2.png"
-    alt="Tunable White Stretch Ceiling"
-    className="rounded-3xl h-[520px] w-full object-cover shadow-2xl hover:scale-105 duration-500"
+    alt="translucent-image"
+    className="w-full h-[500px] rounded-3xl transition-transform duration-500 hover:scale-105"
   />
+</div>
 
 </motion.div>
 
@@ -286,11 +289,13 @@ const Translucentnew = () => {
   className="grid lg:grid-cols-2 gap-20 items-center mb-32"
 >
 
+    <div className="rounded-3xl overflow-hidden shadow-2xl">
   <img
     src="/images/translucent3.png"
-    alt="RGBW Stretch Ceiling"
-    className="rounded-3xl h-[520px] w-full object-contain  shadow-2xl hover:scale-105 duration-500"
+    alt="translucent-image"
+    className="w-full h-[500px] rounded-3xl transition-transform duration-500 hover:scale-105"
   />
+</div>
 
   <div>
 
@@ -451,11 +456,13 @@ const Translucentnew = () => {
 
   </div>
 
+    <div className="rounded-3xl overflow-hidden shadow-2xl">
   <img
     src="/images/translucent4.png"
-    alt="Dynamic Pixel Stretch Ceiling"
-    className="rounded-3xl h-[520px] w-full object-cover shadow-2xl hover:scale-105 duration-500"
+    alt="translucent-image"
+    className="w-full h-[500px] rounded-3xl transition-transform duration-500 hover:scale-105"
   />
+</div>
 
 </motion.div>
 

@@ -73,10 +73,7 @@ const Stretchprint = () => {
             </p>
 
           </div>
-
-
-
-          {/* TYPE 1 */}
+      {/* TYPE 1 */}
 
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -84,12 +81,14 @@ const Stretchprint = () => {
             viewport={{ once: true }}
             className="grid lg:grid-cols-[0.95fr_1.05fr] xl:gap-28 gap-16 items-center mb-32"
           >
-
-            <img
-              src="/image/Ceiling1.webp"
-              alt="Static White Stretch Ceiling"
-              className="rounded-3xl h-[500px] w-full object-cover shadow-2xl hover:scale-105 duration-500"
-            />
+  <div className="rounded-3xl overflow-hidden shadow-2xl">
+  <img
+    src="/images/printed1.jpeg"
+    alt="translucent-image"
+    className="w-full h-[500px] rounded-3xl transition-transform duration-500 hover:scale-105"
+  />
+</div>
+          
 
             <div>
 <p className="uppercase tracking-[5px] text-gold-300 font-semibold mb-2">
@@ -272,11 +271,13 @@ const Stretchprint = () => {
 </div>
  </div>
 
+   <div className="rounded-3xl overflow-hidden shadow-2xl">
   <img
-    src="/image/Ceiling2.webp"
-    alt="Tunable White Stretch Ceiling"
-    className="rounded-3xl h-[520px] w-full object-cover shadow-2xl hover:scale-105 duration-500"
+    src="/images/printed2.jpeg"
+    alt="translucent-image"
+    className="w-full h-[500px] rounded-3xl transition-transform duration-500 hover:scale-105"
   />
+</div>
 
 </motion.div>
 
@@ -291,11 +292,13 @@ const Stretchprint = () => {
   className="grid lg:grid-cols-2 gap-20 items-center mb-32"
 >
 
+   <div className="rounded-3xl overflow-hidden shadow-2xl">
   <img
-    src="/image/Ceiling3.webp"
-    alt="RGBW Stretch Ceiling"
-    className="rounded-3xl h-[520px] w-full object-cover shadow-2xl hover:scale-105 duration-500"
+    src="/images/printed3.jpeg"
+    alt="translucent-image"
+    className="w-full h-[500px] rounded-3xl transition-transform duration-500 hover:scale-105"
   />
+</div>
 
   <div>
     <p className="uppercase tracking-[5px] text-gold-300 font-semibold mb-2">
@@ -492,11 +495,13 @@ const Stretchprint = () => {
 </div>
   </div>
 
+   <div className="rounded-3xl overflow-hidden shadow-2xl">
   <img
-    src="/image/Ceiling4.webp"
-    alt="Dynamic Pixel Stretch Ceiling"
-    className="rounded-3xl h-[520px] w-full object-cover shadow-2xl hover:scale-105 duration-500"
+    src="/images/printed4.jpeg"
+    alt="translucent-image"
+    className="w-full h-[500px] rounded-3xl transition-transform duration-500 hover:scale-105"
   />
+</div>
 
 </motion.div>
 
