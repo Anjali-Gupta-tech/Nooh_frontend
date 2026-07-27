@@ -123,14 +123,6 @@ const Stretchgloss = () => {
 >
 
   {/* IMAGE */}
-  
-   <div className="rounded-3xl overflow-hidden shadow-2xl">
-  <img
-    src="/images/translucent2.png"
-    alt="translucent-image"
-    className="w-full h-[600px] rounded-3xl transition-transform duration-500 hover:scale-105"
-  />
-</div>
 
   <motion.div
     whileHover={{ scale: 1.03 }}
