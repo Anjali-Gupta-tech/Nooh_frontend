@@ -126,11 +126,11 @@ const Services = () => {
 
   {/* Background Image */}
 
-  <img
-    src="/images/service-hero-image.png"
-    alt="NOOH Premium Services"
-    className="absolute inset-0 w-full h-full object-cover"
-  />
+ <img
+  src="/images/service-hero-image.png"
+  alt="NOOH Premium Services"
+  className="absolute inset-0 w-full h-full object-cover object-center"
+/>
 
   {/* Dark Overlay */}
 

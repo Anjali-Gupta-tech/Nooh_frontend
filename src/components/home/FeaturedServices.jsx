@@ -14,7 +14,13 @@ const FeaturedServices = () => {
   const services = [
     {
       icon: FaCog,
-      title: 'Stretch Ceiling Solutions',
+      title: (
+      <>
+        STRETCHE
+        <sup className="text-[60%] align-super ml-[1px]">™</sup>
+        {" "}Stretch Ceiling
+      </>
+    ),
       description: 'Premium textile & translucent stretch ceiling systems with innovative designs and superior quality.',
       image: '/images/celling.png',
     },

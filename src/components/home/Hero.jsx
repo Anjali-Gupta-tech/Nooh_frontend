@@ -11,9 +11,30 @@ const Hero = () => {
      {
       desktop: "/images/Ceiling-hero.jpeg",
       mobile: "/image/Hero1pic.webp",
-      title: "Stretch Ceiling Solutions",
-      description: "Elegant, Seamless & Premium Ceiling Systems",
+      title: "Wave Cloud Ceiling",
+description: "Elegant flowing ceiling designs inspired by the beauty of clouds and waves.",
     },
+    {
+  desktop: "/images/bathroom_stretch_ceiling.jpeg",
+  mobile: "/image/Hero1pic.webp",
+   title: "Bathroom Stretch Ceiling",
+  description: "Moisture-resistant ceilings with a seamless luxury finish.",
+   },
+
+     {
+  desktop: "/images/ceiling_collage_hero.png",
+  mobile: "/image/Hero1pic.webp",
+ title: "Premium Ceiling Solutions",
+  description: "Innovative ceiling systems crafted for modern luxury interiors.",
+   },
+   {
+  desktop: "/images/3d_epoxy_flooring_combined_3500x1000_HD.jpeg",
+  mobile: "/image/Hero1pic.webp",
+  title: "3D Epoxy Flooring",
+  description:
+    "Transform ordinary floors into stunning architectural masterpieces with seamless 3D Epoxy Flooring.",
+   },
+    
     {
       desktop: "/image/Hero1.webp",
       mobile: "/image/Hero1pic.webp",
