@@ -146,53 +146,49 @@ const About = () => {
 
      {/* ================= FOUNDERS ================= */}
 
-<section className="section-padding bg-luxury-black">
+<section className="py-20 bg-luxury-black">
 
   <div className="container-custom mx-auto">
 
-    <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      className="text-center mb-20"
-    >
-
-
-    </motion.div>
-
     {/* ================= Founder 1 ================= */}
 
-    <div className="grid lg:grid-cols-2 gap-16 items-center mb-28">
+    <div className="grid lg:grid-cols-2 gap-12 items-start mb-24">
+
+      {/* IMAGE */}
 
       <motion.div
         initial={{ opacity: 0, x: -60 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
+        className="self-start"
       >
 
         <img
-          src="/images/asif-sir.webp"
-          alt="Mr. Asif Ali"
-          className="w-full h-[650px] object-cover rounded-3xl shadow-2xl"
-        />
+  src="/images/asif-sir.webp"
+  alt="Mr. Asif Ali"
+  className="w-full h-[620px] object-cover object-top rounded-[30px] shadow-2xl"
+/>
 
       </motion.div>
+
+      {/* CONTENT */}
 
       <motion.div
         initial={{ opacity: 0, x: 60 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
+        className="self-start pt-1"
       >
 
         <p className="text-luxury-gold uppercase tracking-[4px] mb-3">
           Founder & Innovation Head
         </p>
 
-        <h2 className="text-5xl font-luxury font-bold text-white mb-6">
+        <h2 className="text-5xl font-luxury font-bold text-white leading-none mb-5">
           Mr. Asif Ali
         </h2>
 
-        <p className="text-white/80 leading-loose mb-6">
+        <p className="text-white/80 leading-8 mb-5">
           Mr. Asif Ali is an entrepreneur and innovation leader with more than
           <span className="text-luxury-gold font-semibold">
             {" "}15 years of industry experience.
@@ -202,14 +198,14 @@ const About = () => {
           on advanced design, technology and craftsmanship.
         </p>
 
-        <p className="text-white/80 leading-loose mb-6">
+        <p className="text-white/80 leading-8 mb-5">
           Under his leadership, NOOH has introduced innovative interior
           solutions including CLOUDWAVE™ Textile Ceilings, SKYLUME™ Backlit
           Panels and STRETCHÉ™ Stretch Ceiling Systems, delivering premium
           experiences for residential, commercial and hospitality projects.
         </p>
 
-        <p className="text-white/80 leading-loose mb-8">
+        <p className="text-white/80 leading-8 mb-6">
           His vision continues to inspire innovation, develop skilled
           professionals and create new business opportunities across the
           interior industry.
@@ -217,7 +213,7 @@ const About = () => {
 
         <div className="grid sm:grid-cols-2 gap-4">
 
-          <div className="glass rounded-xl p-4">
+          <div className="glass rounded-2xl p-5">
             <h4 className="text-luxury-gold font-semibold mb-2">
               Experience
             </h4>
@@ -225,10 +221,9 @@ const About = () => {
             <p className="text-white/80">
               15+ Years
             </p>
-
           </div>
 
-          <div className="glass rounded-xl p-4">
+          <div className="glass rounded-2xl p-5">
             <h4 className="text-luxury-gold font-semibold mb-2">
               Expertise
             </h4>
@@ -236,10 +231,9 @@ const About = () => {
             <p className="text-white/80">
               Product Innovation
             </p>
-
           </div>
 
-          <div className="glass rounded-xl p-4">
+          <div className="glass rounded-2xl p-5">
             <h4 className="text-luxury-gold font-semibold mb-2">
               Specialization
             </h4>
@@ -247,10 +241,9 @@ const About = () => {
             <p className="text-white/80">
               Interior Technologies
             </p>
-
           </div>
 
-          <div className="glass rounded-xl p-4">
+          <div className="glass rounded-2xl p-5">
             <h4 className="text-luxury-gold font-semibold mb-2">
               Focus
             </h4>
@@ -258,7 +251,6 @@ const About = () => {
             <p className="text-white/80">
               Business Leadership
             </p>
-
           </div>
 
         </div>
@@ -269,46 +261,50 @@ const About = () => {
 
     {/* ================= Founder 2 ================= */}
 
-    <div className="grid lg:grid-cols-2 gap-16 items-center">
+    <div className="grid lg:grid-cols-2 gap-12 items-start">
+
+      {/* CONTENT */}
 
       <motion.div
         initial={{ opacity: 0, x: -60 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
+        className="self-start pt-1"
       >
 
         <p className="text-luxury-gold uppercase tracking-[4px] mb-3">
           Co-Founder & Principal Architect
         </p>
 
-        <h2 className="text-5xl font-luxury font-bold text-white mb-6">
+        <h2 className="text-5xl font-luxury font-bold text-white leading-none mb-5">
           Mr. Kapil Verma
         </h2>
 
-        <p className="text-white/80 leading-loose mb-6">
+        <p className="text-white/80 leading-8 mb-5">
           Mr. Kapil Verma is a Principal Architect with more than
           <span className="text-luxury-gold font-semibold">
-            {" "}20 years of experience
+            {" "}20 years of experience.
           </span>
-          {" "}in architecture, luxury interiors and space planning.
+          {" "}His expertise spans architecture, luxury interiors and
+          premium space planning.
         </p>
 
-        <p className="text-white/80 leading-loose mb-6">
-          His architectural expertise ensures every NOOH project reflects
-          innovation, functionality and timeless aesthetics. His commitment to
-          quality and thoughtful design has helped deliver exceptional
-          residential, commercial and hospitality environments.
+        <p className="text-white/80 leading-8 mb-5">
+          His architectural vision ensures every NOOH project reflects
+          innovation, functionality and timeless aesthetics while
+          delivering exceptional residential, commercial and hospitality
+          environments.
         </p>
 
-        <p className="text-white/80 leading-loose mb-8">
-          Through creative vision and technical excellence, he continues to
-          lead NOOH towards becoming one of India's most innovative premium
-          interior solution companies.
+        <p className="text-white/80 leading-8 mb-6">
+          Through creative vision and technical excellence, he continues
+          to lead NOOH towards becoming one of India's most innovative
+          premium interior solution companies.
         </p>
 
         <div className="grid sm:grid-cols-2 gap-4">
 
-          <div className="glass rounded-xl p-4">
+          <div className="glass rounded-2xl p-5">
             <h4 className="text-luxury-gold font-semibold mb-2">
               Experience
             </h4>
@@ -316,10 +312,9 @@ const About = () => {
             <p className="text-white/80">
               20+ Years
             </p>
-
           </div>
 
-          <div className="glass rounded-xl p-4">
+          <div className="glass rounded-2xl p-5">
             <h4 className="text-luxury-gold font-semibold mb-2">
               Expertise
             </h4>
@@ -327,10 +322,9 @@ const About = () => {
             <p className="text-white/80">
               Architecture
             </p>
-
           </div>
 
-          <div className="glass rounded-xl p-4">
+          <div className="glass rounded-2xl p-5">
             <h4 className="text-luxury-gold font-semibold mb-2">
               Specialization
             </h4>
@@ -338,10 +332,9 @@ const About = () => {
             <p className="text-white/80">
               Luxury Interiors
             </p>
-
           </div>
 
-          <div className="glass rounded-xl p-4">
+          <div className="glass rounded-2xl p-5">
             <h4 className="text-luxury-gold font-semibold mb-2">
               Focus
             </h4>
@@ -349,23 +342,25 @@ const About = () => {
             <p className="text-white/80">
               Design Excellence
             </p>
-
           </div>
 
         </div>
 
       </motion.div>
 
+      {/* IMAGE */}
+
       <motion.div
         initial={{ opacity: 0, x: 60 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
+        className="self-start"
       >
 
         <img
           src="/images/kapil-sir.webp"
           alt="Mr. Kapil Verma"
-          className="w-full h-[650px] object-cover rounded-3xl shadow-2xl"
+          className="w-full h-[620px] object-cover rounded-[30px] shadow-2xl"
         />
 
       </motion.div>
