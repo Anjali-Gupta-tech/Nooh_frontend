@@ -39,122 +39,114 @@ const About = () => {
 
           </div>
 
-          <div className="relative z-10 container-custom mx-auto px-6 text-center">
-
-           
-
-           
-
-          </div>
-
+          
         </section>
 
         {/* ================= COMPANY OVERVIEW ================= */}
 
-        <section className="section-padding bg-luxury-gray">
+      <section className="section-padding bg-luxury-gray">
 
-          <div className="container-custom mx-auto">
+  <div className="container-custom mx-auto">
 
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
+    <div className="grid lg:grid-cols-2 gap-12 items-start">
 
-              <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-              >
+      {/* LEFT CONTENT */}
 
-                <h2 className="text-5xl font-luxury font-bold text-gold-300 mb-2">
-                  Who We Are
-                </h2>
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="self-start pt-1"
+      >
 
-                <p className="text-white/80 leading-relaxed mb-6">
-                  <strong className="text-luxury-gold">
-                    NOOH Elevated Living LLP
-                  </strong>{" "}
-                  is an innovative interior solutions company dedicated to
-                  transforming residential, commercial, hospitality and
-                  corporate spaces through advanced design, technology and
-                  exceptional craftsmanship.
-                </p>
+        <h2 className="text-5xl font-luxury font-bold text-gold-300 mb-5 leading-none">
+          Who We Are
+        </h2>
 
-                <p className="text-white/80 leading-relaxed mb-6">
-                  Our premium portfolio includes
-                  <strong className="text-luxury-gold">
-                    {" "}
-                    CLOUDWAVE™ Textile Ceilings,
-                  </strong>
-                  <strong className="text-luxury-gold">
-                    {" "}
-                    SKYLUME™ Backlit Panels,
-                  </strong>
-                  <strong className="text-luxury-gold">
-                    {" "}
-                    STRETCHÉ™ Printed & Translucent Stretch Ceilings,
-                  </strong>
-                  <strong className="text-luxury-gold">
-                    {" "}
-                    Embroidery Wallcoverings
-                  </strong>{" "}
-                  and
-                  <strong className="text-luxury-gold">
-                    {" "}
-                    Customized Wallpapers
-                  </strong>
-                  , delivering elegant and functional interior experiences.
-                </p>
+        <p className="text-white/80 leading-8 mb-5">
+          <strong className="text-luxury-gold">
+            NOOH Elevated Living LLP
+          </strong>{" "}
+          is an innovative interior solutions company dedicated to
+          transforming residential, commercial, hospitality and
+          corporate spaces through advanced design, technology and
+          exceptional craftsmanship.
+        </p>
 
-                <p className="text-white/80 leading-relaxed">
-                  Every project reflects our commitment to innovation,
-                  architecture, premium materials and precision execution,
-                  creating spaces that inspire, perform and stand the test of
-                  time.
-                </p>
+        <p className="text-white/80 leading-8 mb-5">
+          Our premium portfolio includes
+          <strong className="text-luxury-gold">
+            {" "}CLOUDWAVE™ Textile Ceilings,
+          </strong>
+          <strong className="text-luxury-gold">
+            {" "}SKYLUME™ Backlit Panels,
+          </strong>
+          <strong className="text-luxury-gold">
+            {" "}STRETCHÉ™ Printed & Translucent Stretch Ceilings,
+          </strong>
+          <strong className="text-luxury-gold">
+            {" "}Embroidery Wallcoverings
+          </strong>{" "}
+          and
+          <strong className="text-luxury-gold">
+            {" "}Customized Wallpapers
+          </strong>
+          , delivering elegant and functional interior experiences.
+        </p>
 
-              </motion.div>
+        <p className="text-white/80 leading-8">
+          Every project reflects our commitment to innovation,
+          architecture, premium materials and precision execution,
+          creating spaces that inspire, perform and stand the test of
+          time.
+        </p>
 
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                className="grid grid-cols-2 gap-5"
-              >
+      </motion.div>
 
-                <img
-                  src="/images/nooh-cloudwave-textile-ceiling-modern-office-lobby.webp"
-                  alt=""
-                  className="rounded-3xl h-72 w-full object-cover"
-                />
+      {/* RIGHT IMAGES */}
 
-                <img
-                  src="/images/3d-epoxy-bathroom-flooring.webp"
-                  alt="3d-epoxy-bathroom-flooring"
-                  className="rounded-3xl h-72 mt-10 w-full object-cover"
-                />
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="grid grid-cols-2 gap-4 self-start"
+      >
 
-                <img
-                  src="/images/image2.jpeg"
-                  alt=""
-                  className="rounded-3xl h-72 -mt-10 w-full object-cover"
-                />
+        <img
+          src="/images/nooh-cloudwave-textile-ceiling-modern-office-lobby.webp"
+          alt=""
+          className="rounded-[28px] h-[320px] w-full object-cover shadow-xl"
+        />
 
-                <img
-                  src="/images/nooh-printed-stretch-ceiling-sky-design-commercial-space.webp"
-                  alt=""
-                  className="rounded-3xl h-72 w-full object-cover"
-                />
+        <img
+          src="/images/3d-epoxy-bathroom-flooring.webp"
+          alt="3D Epoxy Bathroom Flooring"
+          className="rounded-[28px] h-[320px] w-full object-cover mt-6 shadow-xl"
+        />
 
-              </motion.div>
+        <img
+          src="/images/image2.jpeg"
+          alt=""
+          className="rounded-[28px] h-[320px] w-full object-cover -mt-6 shadow-xl"
+        />
 
-            </div>
+        <img
+          src="/images/nooh-printed-stretch-ceiling-sky-design-commercial-space.webp"
+          alt=""
+          className="rounded-[28px] h-[320px] w-full object-cover shadow-xl"
+        />
 
-          </div>
+      </motion.div>
 
-        </section>
-              
+    </div>
+
+  </div>
+
+</section>
 
      {/* ================= FOUNDERS ================= */}
 
-<section className="section-padding bg-luxury-gray">
+<section className="section-padding bg-luxury-black">
 
   <div className="container-custom mx-auto">
 

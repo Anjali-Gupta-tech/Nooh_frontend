@@ -8,35 +8,45 @@ const Hero = () => {
 
   // Background Images
   const images = [
+
      {
       desktop: "/images/Ceiling-hero.jpeg",
-      mobile: "/image/Hero1pic.webp",
+      mobile: "/images/cloudwave-mobile.png",
       title: "CLOUDWAVE™ TEXTILE CEILING",
-description:"It is a premium decorative fabric ceiling system creating elegant wave effects, visual depth, and stunning illuminated architectural interiors",
+      description:"It is a premium decorative fabric ceiling system creating elegant wave effects, visual depth, and stunning illuminated architectural interiors",
     },
     {
   desktop: "/images/bathroom_stretch_ceiling.jpeg",
-  mobile: "/image/Hero1pic.webp",
+  mobile: "/images/bathroom-ceiling-mobile.png",
    title: "BATHROOM STRETCH CEILING",
   description: "Moisture-resistant ceilings with a seamless luxury finish.",
    },
 
      {
   desktop: "/images/ceiling_collage_hero.png",
-  mobile: "/image/Hero1pic.webp",
+  mobile: "/images/ceiling-collage-mobile.png",
  title: "PREMIUM CEILING SOLUTION",
   description: "Innovative ceiling systems crafted for modern luxury interiors.",
    },
+  {
+  desktop: "/images/mural_ceiling.png",
+  mobile: "/images/mural-ceiling-mobile.png",
+ title: "3D MURAL CEILING",
+  description:
+  "Enhance your interiors with premium 3D mural ceilings featuring stunning high-definition artwork, seamless finishes, and realistic depth.",
+   },
+
+
    {
   desktop: "/images/3d_epoxy_flooring_combined_3500x1000_HD.jpeg",
-  mobile: "/image/Hero1pic.webp",
+  mobile: "/images/epoxy-mobile.png",
   title: "3D EPOXY FLOORING",
   description:
     "Transform ordinary floors into stunning architectural masterpieces with seamless 3D Epoxy Flooring.",
    },
     {
   desktop: "/images/stretch_ceiling_combined.jpeg",
-  mobile: "/image/Hero1pic.webp",
+  mobile: "/images/ceiling-hero-next.png",
   title: "STRETCHE™ PRINTED CEILING",
 
 description:
