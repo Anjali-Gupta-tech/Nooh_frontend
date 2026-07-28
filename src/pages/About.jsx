@@ -146,7 +146,7 @@ const About = () => {
 
      {/* ================= FOUNDERS ================= */}
 
-<section className="py-20 bg-luxury-black">
+<section className="section-padding bg-luxury-black">
 
   <div className="container-custom mx-auto">
 
