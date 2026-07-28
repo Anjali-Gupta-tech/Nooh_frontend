@@ -11,8 +11,8 @@ const Hero = () => {
      {
       desktop: "/images/Ceiling-hero.jpeg",
       mobile: "/image/Hero1pic.webp",
-      title: "Wave Cloud Ceiling",
-description: "Elegant flowing ceiling designs inspired by the beauty of clouds and waves.",
+      title: "CLOUDWAVE™ TEXTILE CEILING",
+description:"It is a premium decorative fabric ceiling system creating elegant wave effects, visual depth, and stunning illuminated architectural interiors",
     },
     {
   desktop: "/images/bathroom_stretch_ceiling.jpeg",
@@ -34,7 +34,14 @@ description: "Elegant flowing ceiling designs inspired by the beauty of clouds a
   description:
     "Transform ordinary floors into stunning architectural masterpieces with seamless 3D Epoxy Flooring.",
    },
-    
+    {
+  desktop: "/images/stretch_ceiling_combined.jpeg",
+  mobile: "/image/Hero1pic.webp",
+  title: "NOOH PRINTED™ STRETCH CEILING",
+
+description:
+"Transform ordinary interiors into extraordinary spaces with customized printed stretch ceilings.",
+    },   
     {
       desktop: "/image/Hero1.webp",
       mobile: "/image/Hero1pic.webp",
