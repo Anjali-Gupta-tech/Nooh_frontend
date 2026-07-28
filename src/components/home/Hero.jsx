@@ -17,27 +17,27 @@ description:"It is a premium decorative fabric ceiling system creating elegant w
     {
   desktop: "/images/bathroom_stretch_ceiling.jpeg",
   mobile: "/image/Hero1pic.webp",
-   title: "Bathroom Stretch Ceiling",
+   title: "BATHROOM STRETCH CEILING",
   description: "Moisture-resistant ceilings with a seamless luxury finish.",
    },
 
      {
   desktop: "/images/ceiling_collage_hero.png",
   mobile: "/image/Hero1pic.webp",
- title: "Premium Ceiling Solutions",
+ title: "PREMIUM CEILING SOLUTION",
   description: "Innovative ceiling systems crafted for modern luxury interiors.",
    },
    {
   desktop: "/images/3d_epoxy_flooring_combined_3500x1000_HD.jpeg",
   mobile: "/image/Hero1pic.webp",
-  title: "3D Epoxy Flooring",
+  title: "3D EPOXY FLOORING",
   description:
     "Transform ordinary floors into stunning architectural masterpieces with seamless 3D Epoxy Flooring.",
    },
     {
   desktop: "/images/stretch_ceiling_combined.jpeg",
   mobile: "/image/Hero1pic.webp",
-  title: "NOOH PRINTED™ STRETCH CEILING",
+  title: "STRETCHE™ PRINTED CEILING",
 
 description:
 "Transform ordinary interiors into extraordinary spaces with customized printed stretch ceilings.",
@@ -45,46 +45,46 @@ description:
     {
       desktop: "/image/Hero1.webp",
       mobile: "/image/Hero1pic.webp",
-      title: "Stretch Ceiling Solutions",
+      title: "STRETCH CEILING SOLUTIONS",
       description: "Elegant, Seamless & Premium Ceiling Systems",
     },
     {
       desktop: "/image/Hero2.webp",
       mobile: "/image/Heropic2.webp",
-      title:"Designer Ceiling Collection",
+      title:"DESIGNER CEILING COLLECTION",
       description:"Innovative ceiling concepts that redefine spaces with artistic forms, ambient lighting, and premium finishes."
     },
 
     {
       desktop: "/image/Stretch.webp",
       mobile: "/image/Stretchupdatedpic.webp",
-        title:"Luxury Interior Design",
+        title:"LUXURY INTERIOR DESIGN",
       description:"Thoughtfully designed interiors that blend timeless aesthetics with modern luxury and functionality.",
     },
     
     {
       desktop: "/image/rgbwstretchceiling.webp",
       mobile: "/image/rbgwupdatedpic.webp",
-        title:"RGBW Stretch Ceiling",
+        title:"RGBW STRETCH CEILING",
       description:"Dynamic color-changing stretch ceilings that create immersive lighting experiences for commercial and luxury spaces.",
     },
     {
       desktop: "/image/Hero3.webp",
       mobile: "/image/Heroipic3.webp",
-        title:" Luxury Ceiling & Interior",
+        title:"LUXURY CEILING & INTERIOR",
       description:"Bespoke ceiling designs crafted to add elegance, depth, and architectural character to premium interiors.",
     },
 
     {
       desktop: "/image/paintings.webp",
       mobile: "/image/paintingspic.webp",
-        title:"Virtual Window Collection",
+        title:"VIRTUAL WINDOW COLLECTION",
       description:"Bring breathtaking outdoor views indoors with illuminated virtual windows that create a realistic daylight experience.",
     },
     {
       desktop: "/image/Hero5.webp",
       mobile: "/image/Heropic5.webp",
-        title:"Traditional Wall Art",
+        title:"TRADITIONAL WALL ART",
       description:"Handcrafted decorative wall panels that transform ordinary walls into elegant works of art.",
     },
   ];
