@@ -10,7 +10,7 @@ const Services = () => {
     {
    title: (
   <>
-    STRETCHE<sup>™</sup> STRETCH Ceiling Specialist  by NOOH
+    STRETCHE<sup>™</sup> Stretch Ceiling Specialist  by NOOH
   </>
 ),
    subheading: 'Premium Architectural Stretch Ceiling Systems',
