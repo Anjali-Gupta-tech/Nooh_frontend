@@ -55,14 +55,11 @@ const Translucentnew = () => {
 
         {/* LIGHTING */}
 
-        <section className="section-padding  mx-auto py-24 bg-luxury-gray">
+        <section className="section-padding  mx-auto py-24 bg-luxury-gray ">
 
-         
-
-
-          {/* TYPE 1 */}
-
-          <motion.div
+         {/* TYPE 1 */}
+        
+            <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -170,6 +167,7 @@ const Translucentnew = () => {
             </div>
 
           </motion.div>
+        
 {/* ================= TYPE 2 ================= */}
 
 <motion.div
@@ -273,7 +271,7 @@ const Translucentnew = () => {
   className="grid lg:grid-cols-2 gap-20 items-center mb-32"
 >
 
-    <div className="rounded-3xl overflow-hidden shadow-2xl">
+   <div className="rounded-3xl overflow-hidden shadow-2xl">
   <img
     src="/images/translucent3.png"
     alt="translucent-image"

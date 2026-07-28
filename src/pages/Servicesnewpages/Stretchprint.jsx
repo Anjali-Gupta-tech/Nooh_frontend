@@ -69,7 +69,7 @@ const Stretchprint = () => {
   <img
     src="/images/printed1.jpeg"
     alt="translucent-image"
-    className="w-full h-[500px] rounded-3xl transition-transform duration-500 hover:scale-105"
+    className="w-full h-[600px] rounded-3xl transition-transform duration-500 hover:scale-105"
   />
 </div>
           
@@ -259,7 +259,7 @@ const Stretchprint = () => {
   <img
     src="/images/printed2.jpeg"
     alt="translucent-image"
-    className="w-full h-[500px] rounded-3xl transition-transform duration-500 hover:scale-105"
+    className="w-full h-[600px] rounded-3xl transition-transform duration-500 hover:scale-105"
   />
 </div>
 
@@ -280,7 +280,7 @@ const Stretchprint = () => {
   <img
     src="/images/printed3.jpeg"
     alt="translucent-image"
-    className="w-full h-[500px] rounded-3xl transition-transform duration-500 hover:scale-105"
+    className="w-full h-[600px] rounded-3xl transition-transform duration-500 hover:scale-105"
   />
 </div>
 
@@ -483,7 +483,7 @@ const Stretchprint = () => {
   <img
     src="/images/printed4.jpeg"
     alt="translucent-image"
-    className="w-full h-[500px] rounded-3xl transition-transform duration-500 hover:scale-105"
+    className="w-full h-[650px] rounded-3xl transition-transform duration-500 hover:scale-105"
   />
 </div>
 
