@@ -15,6 +15,14 @@ const Hero = () => {
       title: "CLOUDWAVE™ TEXTILE CEILING",
       description:"It is a premium decorative fabric ceiling system creating elegant wave effects, visual depth, and stunning illuminated architectural interiors",
     },
+    {
+  desktop: "/images/mural_images-hero.png",
+  mobile: "/images/cloudwave-mobile.png",
+  title: "WALL CRAFTING",
+
+  description:
+    "Transform your interiors with bespoke wall crafting solutions featuring artistic textures, decorative finishes, and premium craftsmanship that bring elegance, character, and timeless luxury to every space.",
+},
      {
       desktop: "/images/hero-image-10.png",
       mobile: "/images/cloudwave-mobile.png",
@@ -37,6 +45,8 @@ const Hero = () => {
  title: "PREMIUM CEILING SOLUTION",
   description: "Innovative ceiling systems crafted for modern luxury interiors.",
    },
+    
+    
   {
   desktop: "/images/mural_ceiling.png",
   mobile: "/images/mural-ceiling-mobile.png",
