@@ -8,6 +8,12 @@ const Hero = () => {
 
   // Background Images
   const images = [
+     {
+      desktop: "/images/Ceiling-hero.jpeg",
+      mobile: "/image/Hero1pic.webp",
+      title: "Stretch Ceiling Solutions",
+      description: "Elegant, Seamless & Premium Ceiling Systems",
+    },
     {
       desktop: "/image/Hero1.webp",
       mobile: "/image/Hero1pic.webp",
