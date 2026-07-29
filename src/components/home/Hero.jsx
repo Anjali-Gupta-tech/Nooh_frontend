@@ -46,6 +46,13 @@ const Hero = () => {
   description: "Innovative ceiling systems crafted for modern luxury interiors.",
    },
     
+ {
+  desktop: "/images/living-illusion.png",
+  mobile: "/images/.png",
+  title: "WALL ILLUSION™ LIVING ART",
+  description:
+    "Transform your interiors with luxury panoramic wall murals featuring breathtaking artwork.",
+},
     
   {
   desktop: "/images/mural_ceiling.png",
@@ -55,13 +62,6 @@ const Hero = () => {
   "Enhance your interiors with premium 3D mural ceilings featuring stunning high-definition artwork, seamless finishes, and realistic depth.",
    },
 
- {
-  desktop: "/images/living-illusion.png",
-  mobile: "/images/.png",
-  title: "WALL ILLUSION™ LIVING ART",
-  description:
-    "Transform your interiors with luxury panoramic wall murals featuring breathtaking artwork, seamless installation, and museum-quality printing to create immersive, elegant, and visually captivating spaces.",
-},
 
 
    {
