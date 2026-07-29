@@ -47,7 +47,7 @@ const Hero = () => {
    },
 
      {
-  desktop: "/images/ceiling_collage_hero.png",
+  desktop: "/images/ceiling_collage_hero.webp",
   mobile: "/images/ceiling-collage-mobile.png",
  title: "PREMIUM CEILING SOLUTION",
   description: "Innovative ceiling systems crafted for modern luxury interiors.",

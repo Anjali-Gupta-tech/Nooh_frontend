@@ -36,7 +36,7 @@ const StretchBacklitPanel = () => {
               className="text-5xl md:text-7xl font-luxury font-bold mb-6"
             >
               STRETCHÉ
-              <sup className="relative -top-5 ml-1 text-xl md:text-3xl">
+              <sup className="relative -top-5 ml-1 text-l md:text-3xl">
                 ™
               </sup>{" "}
               BACKLIT PANEL
@@ -169,7 +169,7 @@ const StretchBacklitPanel = () => {
     </h2>
 
     <p className="text-white/70 max-w-3xl mx-auto text-lg leading-relaxed">
-      STRETCHÉ™ BACKLIT PANEL is available in multiple modular sizes to
+      STRETCHÉ™ backlit panel  is available in multiple modular sizes to
       suit almost every Grid and T-Grid ceiling system.
     </p>
 
