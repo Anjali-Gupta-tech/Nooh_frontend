@@ -10,7 +10,7 @@ const Hero = () => {
   const images = [
 
      {
-      desktop: "/images/Ceiling-hero.jpeg",
+      desktop: "/images/Ceiling-hero.webp",
       mobile: "/images/cloudwave-mobile.png",
       title: "CLOUDWAVE™ TEXTILE CEILING",
       description:"It is a premium decorative fabric ceiling system creating elegant wave effects, visual depth, and stunning illuminated architectural interiors",
@@ -72,8 +72,8 @@ const Hero = () => {
 
 
    {
-  desktop: "/images/3d_epoxy_flooring_combined_3500x1000_HD.jpeg",
-  mobile: "/images/epoxy-mobile.png",
+  desktop: "/images/3d_epoxy_flooring_combined_3500x1000_HD.webp",
+  mobile: "/images/epoxy-mobile.webp",
   title: "3D EPOXY FLOORING",
   description:
     "Transform ordinary floors into stunning architectural masterpieces with seamless 3D Epoxy Flooring.",
