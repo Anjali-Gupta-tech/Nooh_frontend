@@ -5,6 +5,7 @@ import {
   FaPhoneAlt,
   FaInstagram,
   FaEnvelope,
+   FaYoutube
 } from "react-icons/fa";
 
 const FloatingContactButtons = () => {
@@ -18,13 +19,13 @@ const FloatingContactButtons = () => {
       hover: "hover:opacity-90",
       label: "Instagram",
     },
-    {
-      icon: <FaEnvelope size={22} />,
-      link: "mailto:info@noohliving.com",
-      color: "bg-blue-500",
-      hover: "hover:bg-blue-600",
-      label: "Email",
-    },
+   {
+  icon: <FaYoutube size={22} />,
+  link: "https://www.youtube.com/@shilpkarfactory",
+  color: "bg-red-600",
+  hover: "hover:bg-red-700",
+  label: "YouTube",
+},
     {
       icon: <FaPhoneAlt size={22} />,
       link: `tel:+${phoneNumber}`,

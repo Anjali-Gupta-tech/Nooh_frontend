@@ -34,7 +34,7 @@ const Hero = () => {
      
       {
   desktop: "/images/warm-hero-img.png",
-  mobile: "/images/.png",
+  mobile: "/images/warm-hero-mobile.png",
    title: "Warm Mural-Filled Heritage Living Room",
   description:"Luxury heritage living room with handcrafted murals and rich artistic details.",
    },

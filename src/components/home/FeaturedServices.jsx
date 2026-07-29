@@ -23,7 +23,7 @@ const FeaturedServices = () => {
       </>
     ),
       description: 'Premium textile & translucent stretch ceiling systems with innovative designs and superior quality.',
-      image: '/images/celling.png',
+      image: '/images/Stretche-stretch-home.png',
     },
     {
       icon: FaStar,
@@ -100,7 +100,7 @@ const FeaturedServices = () => {
             alt={service.title}
             className="w-full h-full object-cover transform group-hover:scale-110 smooth-transition"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-luxury-black via-luxury-black/80 to-transparent" />
+          <div className="absolute inset-0 bg-luxury-black/50 to-transparent" />
         </div>
 
         {/* Content */}
