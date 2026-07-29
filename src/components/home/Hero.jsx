@@ -17,7 +17,7 @@ const Hero = () => {
     },
     {
   desktop: "/images/mural_images-hero.png",
-  mobile: "/images/cloudwave-mobile.png",
+  mobile: "/images/mural-wall-mobile.png",
   title: "WALL CRAFTING",
 
   description:
@@ -25,7 +25,7 @@ const Hero = () => {
 },
      {
       desktop: "/images/hero-image-10.png",
-      mobile: "/images/cloudwave-mobile.png",
+      mobile: "/images/luxury-wall-mural-mobile.png",
      title: "LUXURY WALL MURAL",
 
   description:
@@ -54,6 +54,14 @@ const Hero = () => {
   description:
   "Enhance your interiors with premium 3D mural ceilings featuring stunning high-definition artwork, seamless finishes, and realistic depth.",
    },
+
+ {
+  desktop: "/images/living-illusion.png",
+  mobile: "/images/.png",
+  title: "WALL ILLUSION™ LIVING ART",
+  description:
+    "Transform your interiors with luxury panoramic wall murals featuring breathtaking artwork, seamless installation, and museum-quality printing to create immersive, elegant, and visually captivating spaces.",
+},
 
 
    {

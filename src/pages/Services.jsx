@@ -125,12 +125,21 @@ const Services = () => {
       <section className="relative h-[75vh] flex items-center justify-center overflow-hidden">
 
   {/* Background Image */}
+<div className="absolute inset-0">
+  {/* Desktop Image */}
+  <img
+    src="/images/service-hero-image.png"
+    alt="NOOH Premium Services"
+    className="hidden md:block w-full h-full object-cover object-center"
+  />
 
- <img
-  src="/images/service-hero-image.png"
-  alt="NOOH Premium Services"
-  className="absolute inset-0 w-full h-full object-cover object-center"
-/>
+  {/* Mobile Image */}
+  <img
+    src="/images/service-hero-mobile.png"
+    alt="NOOH Premium Services"
+    className="block md:hidden w-full h-full object-cover object-center"
+  />
+</div>
 
   {/* Dark Overlay */}
 
