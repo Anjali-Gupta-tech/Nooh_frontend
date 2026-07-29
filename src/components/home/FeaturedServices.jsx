@@ -23,7 +23,7 @@ const FeaturedServices = () => {
       </>
     ),
       description: 'Premium textile & translucent stretch ceiling systems with innovative designs and superior quality.',
-      image: '/images/Stretche-stretch-home.png',
+      image: '/images/stretch-ceiling-manufacted.png',
     },
     {
       icon: FaStar,

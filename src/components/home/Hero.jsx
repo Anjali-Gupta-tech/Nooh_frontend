@@ -11,13 +11,13 @@ const Hero = () => {
 
      {
       desktop: "/images/Ceiling-hero.webp",
-      mobile: "/images/cloudwave-mobile.png",
+      mobile: "/images/cloudwave-mobile.webp",
       title: "CLOUDWAVE™ TEXTILE CEILING",
       description:"It is a premium decorative fabric ceiling system creating elegant wave effects, visual depth, and stunning illuminated architectural interiors",
     },
     {
-  desktop: "/images/mural_images-hero.png",
-  mobile: "/images/mural-wall-mobile.png",
+  desktop: "/images/mural_images-hero.webp",
+  mobile: "/images/mural-wall-mobile.webp",
   title: "WALL CRAFTING",
 
   description:
@@ -33,8 +33,8 @@ const Hero = () => {
      },
      
       {
-  desktop: "/images/warm-hero-img.png",
-  mobile: "/images/warm-hero-mobile.png",
+  desktop: "/images/warm-hero-img.webp",
+  mobile: "/images/warm-hero-mobile.webp",
    title: "Warm Mural-Filled Heritage Living Room",
   description:"Luxury heritage living room with handcrafted murals and rich artistic details.",
    },
@@ -48,29 +48,26 @@ const Hero = () => {
 
      {
   desktop: "/images/ceiling_collage_hero.webp",
-  mobile: "/images/ceiling-collage-mobile.png",
+  mobile: "/images/ceiling-collage-mobile.webp",
  title: "PREMIUM CEILING SOLUTION",
   description: "Innovative ceiling systems crafted for modern luxury interiors.",
    },
     
  {
-  desktop: "/images/living-illusion.png",
-  mobile: "/images/living-illusion-mobile.png",
+  desktop: "/images/living-illusion.webp",
+  mobile: "/images/living-illusion-mobile.webp",
   title: "WALL ILLUSION™ LIVING ART",
   description:
     "Transform your interiors with luxury panoramic wall murals featuring breathtaking artwork.",
 },
     
   {
-  desktop: "/images/mural_ceiling.png",
-  mobile: "/images/mural-ceiling-mobile.png",
+  desktop: "/images/mural_ceiling.webp",
+  mobile: "/images/mural-ceiling-mobile.webp",
  title: "3D MURAL CEILING",
   description:
   "Enhance your interiors with premium 3D mural ceilings featuring stunning high-definition artwork, seamless finishes, and realistic depth.",
    },
-
-
-
    {
   desktop: "/images/3d_epoxy_flooring_combined_3500x1000_HD.webp",
   mobile: "/images/epoxy-mobile.webp",
@@ -98,8 +95,7 @@ description:
       title:"DESIGNER CEILING COLLECTION",
       description:"Innovative ceiling concepts that redefine spaces with artistic forms, ambient lighting, and premium finishes."
     },
-
-    {
+   {
       desktop: "/image/Stretch.webp",
       mobile: "/image/Stretchupdatedpic.webp",
         title:"LUXURY INTERIOR DESIGN",
