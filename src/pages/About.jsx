@@ -25,22 +25,31 @@ const About = () => {
 
         {/* ================= HERO ================= */}
 
-        <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
+  <div className="absolute inset-0">
+    {/* Desktop Image */}
+    <img
+      src="/images/about-image.png"
+      alt="NOOH"
+      className="hidden md:block w-full h-full object-cover object-center"
+    />
 
-          <div className="absolute inset-0">
+    {/* Mobile Image */}
+    <img
+      src="/images/about-mobile.png"
+      alt="NOOH"
+      className="block md:hidden w-full h-full object-cover object-center"
+    />
 
-            <img
-              src="/images/about-image.png"
-              alt="NOOH"
-              className="w-full h-full object-cover "
-            />
+    {/* Overlay */}
+    <div className="absolute inset-0 bg-gradient-to-b luxury-black/20" />
+  </div>
 
-            <div className="absolute inset-0 bg-gradient-to-b luxury-black/40" />
-
-          </div>
-
-          
-        </section>
+  {/* Your Content Here */}
+  <div className="relative z-10">
+    {/* Heading, Text, Buttons */}
+  </div>
+</section>
 
         {/* ================= COMPANY OVERVIEW ================= */}
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+
 import { 
   FaCog, 
   FaStar, 
@@ -75,44 +76,53 @@ const FeaturedServices = () => {
         </motion.div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ y: -10 }}
-              className="group relative overflow-hidden rounded-2xl glass cursor-pointer"
-            >
-              {/* Background Image */}
-              <div className="absolute inset-0 z-0">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-cover transform group-hover:scale-110 smooth-transition"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-luxury-black via-luxury-black/80 to-transparent" />
-              </div>
+  
 
-              {/* Content */}
-              <div className="relative z-10 p-8 h-full flex flex-col justify-end">
-                <service.icon className="text-5xl text-luxury-gold mb-4 group-hover:scale-110 smooth-transition" />
-                <h3 className="text-2xl font-luxury font-bold text-white mb-3 group-hover:text-luxury-gold smooth-transition">
-                  {service.title}
-                </h3>
-                <p className="text-white/70 mb-6">{service.description}</p>
-                <Link
-                  to="/services"
-                  className="text-luxury-gold font-semibold uppercase text-sm tracking-wider animated-underline inline-block"
-                >
-                  Learn More →
-                </Link>
-              </div>
-            </motion.div>
-          ))}
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  {services.map((service, index) => (
+    <Link
+      key={index}
+      to="/services"
+      className="block"
+    >
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: index * 0.1 }}
+        whileHover={{ y: -10 }}
+        className="group relative overflow-hidden rounded-2xl glass cursor-pointer h-full"
+      >
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src={service.image}
+            alt={service.title}
+            className="w-full h-full object-cover transform group-hover:scale-110 smooth-transition"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-luxury-black via-luxury-black/80 to-transparent" />
         </div>
+
+        {/* Content */}
+        <div className="relative z-10 p-8 h-full flex flex-col justify-end">
+          <service.icon className="text-5xl text-luxury-gold mb-4 group-hover:scale-110 smooth-transition" />
+
+          <h3 className="text-2xl font-luxury font-bold text-white mb-3 group-hover:text-luxury-gold smooth-transition">
+            {service.title}
+          </h3>
+
+          <p className="text-white/70 mb-6">
+            {service.description}
+          </p>
+
+          <span className="text-luxury-gold font-semibold uppercase text-sm tracking-wider animated-underline inline-block">
+            Learn More →
+          </span>
+        </div>
+      </motion.div>
+    </Link>
+  ))}
+</div>
 
         {/* CTA */}
         <motion.div

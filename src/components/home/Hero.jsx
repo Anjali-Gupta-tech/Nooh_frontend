@@ -30,7 +30,14 @@ const Hero = () => {
 
   description:
     "Transform your interiors with premium luxury wall murals featuring timeless artwork, nature-inspired designs, and museum-quality printing."
-    },
+     },
+     
+      {
+  desktop: "/images/warm-hero-img.png",
+  mobile: "/images/.png",
+   title: "Warm Mural-Filled Heritage Living Room",
+  description:"Luxury heritage living room with handcrafted murals and rich artistic details.",
+   },
     
     {
   desktop: "/images/bathroom_stretch_ceiling.jpeg",
@@ -48,7 +55,7 @@ const Hero = () => {
     
  {
   desktop: "/images/living-illusion.png",
-  mobile: "/images/.png",
+  mobile: "/images/living-illusion-mobile.png",
   title: "WALL ILLUSION™ LIVING ART",
   description:
     "Transform your interiors with luxury panoramic wall murals featuring breathtaking artwork.",
