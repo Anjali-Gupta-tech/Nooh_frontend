@@ -29,7 +29,7 @@ const FeaturedServices = () => {
       icon: FaStar,
       title: 'Fiber Optic Star Ceiling',
       description: 'Transform your space with mesmerizing star ceiling effects and galaxy ceiling systems.',
-      image: '/images/fiber-optic.png',
+      image: '/images/FIBER-OPTIC-NOOH.webp',
     },
     {
       icon: FaPaintBrush,
