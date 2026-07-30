@@ -41,7 +41,7 @@ const FeaturedServices = () => {
       icon: FaLightbulb,
       title: 'LED Backlit Panels',
       description: 'Energy-efficient LED ceiling and wall panels with RGBW & tunable white systems.',
-      image: '/images/led-backlit.png',
+      image: '/images/led-backlit-panel.png',
     },
     {
       icon: FaCouch,
