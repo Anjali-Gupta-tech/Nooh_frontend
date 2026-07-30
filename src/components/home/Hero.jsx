@@ -38,6 +38,7 @@ const Hero = () => {
    title: "Warm Mural-Filled Heritage Living Room",
   description:"Luxury heritage living room with handcrafted murals and rich artistic details.",
    },
+
     
     {
   desktop: "/images/bathroom_stretch_ceiling.jpeg",
@@ -101,6 +102,12 @@ description:
         title:"LUXURY INTERIOR DESIGN",
       description:"Thoughtfully designed interiors that blend timeless aesthetics with modern luxury and functionality.",
     },
+     {
+  desktop: "/images/wallmural.webp",
+  mobile: "/images/wall-mural-mobile.webp",
+   title: "Luxury 3D Wall Craft",
+  description:"Transform Blank Walls into Timeless Masterpieces",
+   },
     
     {
       desktop: "/image/rgbwstretchceiling.webp",

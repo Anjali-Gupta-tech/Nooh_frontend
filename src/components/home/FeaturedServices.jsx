@@ -55,6 +55,42 @@ const FeaturedServices = () => {
       description: 'End-to-end construction and turnkey project management for residential & commercial spaces.',
       image: '/image/tumkey-img.jpeg',
     },
+    {
+      icon: FaBuilding,
+      title: 'Turnkey Construction',
+      description: 'End-to-end construction and turnkey project management for residential & commercial spaces.',
+      image: '/image/tumkey-img.jpeg',
+    },
+    {
+      icon: FaBuilding,
+      title: 'Turnkey Construction',
+      description: 'End-to-end construction and turnkey project management for residential & commercial spaces.',
+      image: '/image/tumkey-img.jpeg',
+    },
+    {
+      icon: FaBuilding,
+      title: 'Turnkey Construction',
+      description: 'End-to-end construction and turnkey project management for residential & commercial spaces.',
+      image: '/image/tumkey-img.jpeg',
+    },
+    {
+      icon: FaBuilding,
+      title: 'Turnkey Construction',
+      description: 'End-to-end construction and turnkey project management for residential & commercial spaces.',
+      image: '/image/tumkey-img.jpeg',
+    },
+    {
+      icon: FaBuilding,
+      title: 'Turnkey Construction',
+      description: 'End-to-end construction and turnkey project management for residential & commercial spaces.',
+      image: '/image/tumkey-img.jpeg',
+    },
+    {
+      icon: FaBuilding,
+      title: 'Turnkey Construction',
+      description: 'End-to-end construction and turnkey project management for residential & commercial spaces.',
+      image: '/image/tumkey-img.jpeg',
+    },
   ];
 
   return (

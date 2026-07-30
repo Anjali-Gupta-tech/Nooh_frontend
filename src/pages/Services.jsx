@@ -60,18 +60,128 @@ const Services = () => {
 
   image: '/images/Stretch-Ceiling.jpeg',
 },
+  {
+  title: (
+    <>
+      STRETCHE<sup>™</sup> Fiber Optic Star Ceiling
+    </>
+  ),
+
+  subheading: "Premium Fiber Optic Star Ceiling Systems",
+
+  description: (
+    <>
+      STRETCHE<sup>™</sup> Fiber Optic Star Ceiling by NOOH creates stunning
+      starry sky effects using advanced fiber optic lighting technology.
+      Designed for luxury homes, hotels, cinemas, spas, and commercial spaces,
+      it delivers a magical ambiance with customizable star patterns, shooting
+      stars, and dynamic lighting effects.
+    </>
+  ),
+
+  categories: [
     {
-      title: 'Fiber Optic Star Ceiling',
-      description: 'Transform your ceilings into a mesmerizing night sky with our NOOHSTAR™ fiber optic systems.',
-      features: ['Galaxy Ceiling Effects', 'Customizable Star Patterns', 'RGB Color Options', 'Energy Efficient'],
-      image: '/images/fiber-optic.png',
+      title: (
+        <>
+          STRETCHE<sup>™</sup> STAR SKY
+        </>
+      ),
+      subtitle: "Realistic Starry Night Ceiling",
+      link: "/products/fiber-optic/star-sky",
     },
     {
-      title: 'Embroidery Wall Covering Fabric',
-      description: 'Luxurious embroidered wall fabrics that add texture, elegance, and sophistication to any space.',
-      features: ['Premium Fabrics', 'Custom Embroidery', 'Acoustic Properties', 'Easy Maintenance'],
-      image: '/images/embroidery-wall.png',
+      title: (
+        <>
+          STRETCHE<sup>™</sup> GALAXY
+        </>
+      ),
+      subtitle: "Milky Way & Galaxy Ceiling",
+      link: "/products/fiber-optic/galaxy",
     },
+    {
+      title: (
+        <>
+          STRETCHE<sup>™</sup> CONSTELLATION
+        </>
+      ),
+      subtitle: "Custom Zodiac & Constellation Ceiling",
+      link: "/products/fiber-optic/constellation",
+    },
+    {
+      title: (
+        <>
+          STRETCHE<sup>™</sup> SHOOTING STAR
+        </>
+      ),
+      subtitle: "Dynamic Shooting Star Ceiling",
+      link: "/products/fiber-optic/shooting-star",
+    },
+  ],
+
+  image: "/images/FIBER-OPTIC-NOOH.webp",
+},
+    
+      {
+  title: (
+    <>
+      STRETCHE<sup>™</sup> Embroidery Wall Covering Fabric
+    </>
+  ),
+
+  subheading: "Premium Embroidered Wall Covering Systems",
+
+  description: (
+    <>
+      STRETCHE<sup>™</sup> Embroidery Wall Covering Fabric by NOOH combines
+      luxurious embroidered textures with premium wall finishes to create
+      elegant interiors. Designed for residences, hotels, offices, retail
+      spaces, and hospitality projects, it delivers timeless aesthetics,
+      acoustic comfort, and exceptional craftsmanship.
+    </>
+  ),
+
+  categories: [
+    {
+      title: (
+        <>
+          STRETCHE<sup>™</sup> FLORAL
+        </>
+      ),
+      subtitle: "Elegant Floral Embroidered Fabric",
+      link: "/products/embroidery-wall-covering/floral",
+    },
+    {
+      title: (
+        <>
+          STRETCHE<sup>™</sup> GEOMETRIC
+        </>
+      ),
+      subtitle: "Contemporary Pattern Embroidery",
+      link: "/products/embroidery-wall-covering/geometric",
+    },
+    {
+      title: (
+        <>
+          STRETCHE<sup>™</sup> ABSTRACT
+        </>
+      ),
+      subtitle: "Luxury Artistic Embroidery Design",
+      link: "/products/embroidery-wall-covering/abstract",
+    },
+    {
+      title: (
+        <>
+          STRETCHE<sup>™</sup> CUSTOM
+        </>
+      ),
+      subtitle: "Bespoke Embroidered Wall Fabric",
+      link: "/products/embroidery-wall-covering/custom",
+    },
+  ],
+
+  image: "/images/Embroidery-Wall-Covering-Fabric.jpeg",
+},
+    ,
     {
       title: 'Wall Mural Printing',
       description: 'Custom wall murals that bring your vision to life with stunning high-resolution printing.',
