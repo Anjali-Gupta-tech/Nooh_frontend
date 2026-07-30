@@ -179,7 +179,7 @@ const Services = () => {
     },
   ],
 
-  image: "/images/Embroidery-Wall-Covering-Fabric.jpeg",
+  image: "/images/embroidery-wall.png",
 },
     ,
     {
@@ -200,8 +200,6 @@ const Services = () => {
       features: ['3D Visualization', 'Space Planning', 'Custom Furniture', 'Turnkey Execution'],
 
       image: '/image/laxury.jpg',
-
-  
     },
     {
       title: 'Modular Kitchen',
