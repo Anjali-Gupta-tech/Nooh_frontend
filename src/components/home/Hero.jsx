@@ -38,9 +38,7 @@ const Hero = () => {
    title: "Warm Mural-Filled Heritage Living Room",
   description:"Luxury heritage living room with handcrafted murals and rich artistic details.",
    },
-
-    
-    {
+  {
   desktop: "/images/bathroom_stretch_ceiling.jpeg",
   mobile: "/images/bathroom-ceiling-mobile.png",
    title: "BATHROOM STRETCH CEILING",
@@ -84,12 +82,7 @@ const Hero = () => {
 description:
 "Transform ordinary interiors into extraordinary spaces with customized printed stretch ceilings.",
     },   
-    {
-      desktop: "/image/Hero1.webp",
-      mobile: "/image/Hero1pic.webp",
-      title: "STRETCH CEILING SOLUTIONS",
-      description: "Elegant, Seamless & Premium Ceiling Systems",
-    },
+   
     {
       desktop: "/image/Hero2.webp",
       mobile: "/image/Heropic2.webp",
