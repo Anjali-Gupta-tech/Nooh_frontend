@@ -141,69 +141,150 @@ description:
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
+const [isPaused, setIsPaused] = useState(false);
 
-  // Auto Change Images Every 4 Seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 4000);
+// Auto Slider
+useEffect(() => {
+  if (isPaused) return;
 
-    return () => clearInterval(interval);
-  }, [images.length]);
+  const interval = setInterval(() => {
+    setCurrentImage((prev) => (prev + 1) % images.length);
+  }, 4000);
 
-  return (
-    <>
-      <section className="relative h-screen overflow-hidden">
-        {/* Background Carousel */}
-        <div className="absolute inset-0">
-          {images.map((image, index) => (
-            <picture
-              key={index}
-              className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ${
-                index === currentImage ? "opacity-100" : "opacity-0"
-              }`}
-            >
-              {/* Mobile Image */}
-              <source media="(max-width: 768px)" srcSet={image.mobile} />
+  return () => clearInterval(interval);
+}, [currentImage, isPaused, images.length]);
 
-              {/* Desktop Image */}
-              <img
-                src={image.desktop}
-                alt="Hero"
-                className="w-full h-full object-cover"
-              />
-            </picture>
-          ))}
-        </div>
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/30 z-10" />
-        {/*Heading and description */}
-        <div className="relative z-20 h-full flex items-center justify-center">
-          <div className="container-custom mx-auto px-6 text-center">
-            <motion.h2
-              key={currentImage}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="text-xl md:text-3xl lg:text-4xl font-light text-white mb-4"
-            >
-              {images[currentImage].title}
-            </motion.h2>
+const nextSlide = () => {
+  setCurrentImage((prev) => (prev + 1) % images.length);
+};
 
-            <motion.p
-              key={`desc-${currentImage}`}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto"
-            >
-              {images[currentImage].description}
-            </motion.p>
-          </div>
-        </div>
-      </section>
-    </>
+const prevSlide = () => {
+  setCurrentImage((prev) =>
+    prev === 0 ? images.length - 1 : prev - 1
   );
 };
 
+return (
+  <section
+  className="relative h-screen overflow-hidden cursor-pointer"
+  onClick={() => setIsPaused((prev) => !prev)}
+>
+    {/* Background Images */}
+
+    <div className="absolute inset-0">
+
+      {images.map((image, index) => (
+
+        <picture
+          key={index}
+          className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ${
+            index === currentImage ? "opacity-100" : "opacity-0"
+          }`}
+        >
+
+          <source
+            media="(max-width:768px)"
+            srcSet={image.mobile}
+          />
+
+          <img
+            src={image.desktop}
+            alt={image.title}
+            className="w-full h-full object-cover"
+          />
+
+        </picture>
+
+      ))}
+
+    </div>
+
+    {/* Overlay */}
+
+    <div className="absolute inset-0 bg-black/40 z-10" />
+
+    {/* Content */}
+
+    <div className="relative z-20 h-full flex items-center justify-center">
+
+      <div className="container-custom mx-auto px-6 text-center">
+
+        <motion.h2
+          key={currentImage}
+          initial={{ opacity: 0, y: 25 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: .5 }}
+          className="text-2xl md:text-4xl lg:text-5xl font-light text-white mb-5"
+        >
+
+          {images[currentImage].title}
+
+        </motion.h2>
+
+        <motion.p
+          key={`desc-${currentImage}`}
+          initial={{ opacity: 0, y: 25 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: .2 }}
+          className="max-w-3xl mx-auto text-white/80 text-lg md:text-xl leading-relaxed"
+        >
+
+          {images[currentImage].description}
+
+        </motion.p>
+
+      </div>
+
+    </div>
+
+    {/* Controls */}
+
+    <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30 flex items-center gap-5">
+
+      {/* Previous */}
+
+      <button
+        onClick={prevSlide}
+        className="w-11 h-11 rounded-full bg-black/40 backdrop-blur-md border border-white/20 text-white hover:bg-gold-300 hover:text-black transition"
+      >
+        ❮
+      </button>
+
+      {/* Dots */}
+
+      <div className="flex gap-2">
+
+        {images.map((_, index) => (
+
+          <button
+            key={index}
+            onClick={() => setCurrentImage(index)}
+            className={`transition-all duration-300 rounded-full ${
+              currentImage === index
+                ? "w-8 h-2 bg-gold-300"
+                : "w-2 h-2 bg-white/50 hover:bg-white"
+            }`}
+          />
+
+        ))}
+
+      </div>
+
+      {/* Play Pause */}
+
+      {/* Next */}
+
+      <button
+        onClick={nextSlide}
+        className="w-11 h-11 rounded-full bg-black/40 backdrop-blur-md border border-white/20 text-white hover:bg-gold-300 hover:text-black transition"
+      >
+        ❯
+      </button>
+
+    </div>
+
+  </section>
+);
+}
 export default Hero;
+
