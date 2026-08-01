@@ -15,6 +15,17 @@ const Hero = () => {
       title: "CLOUDWAVE™ TEXTILE CEILING",
       description:"It is a premium decorative fabric ceiling system creating elegant wave effects, visual depth, and stunning illuminated architectural interiors",
     },
+
+{
+  desktop: "/images//embroidary-wallpaper-mobile.webp",
+  mobile: "/images/embroidary-wallpaper-mobile.webp",
+  title: "EMBROIDERY WALLPAPER",
+
+  description:
+    "Elevate your interiors with premium embroidered wallpapers that blend intricate craftsmanship, luxurious textures, and timeless elegance. Designed to create sophisticated feature walls, they add depth, warmth, and a distinctive artistic character to luxury residential and commercial spaces.",
+},
+
+
     {
   desktop: "/images/mural_images-hero.webp",
   mobile: "/images/mural-wall-mobile.webp",

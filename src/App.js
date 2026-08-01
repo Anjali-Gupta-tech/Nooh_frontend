@@ -51,6 +51,7 @@ import Translucentnew from './pages/Servicesnewpages/Translucentnew';
 import Stretchprint from './pages/Servicesnewpages/Stretchprint';
 import Stretchgloss from './pages/Servicesnewpages/Stretchgloss';
 import Stretchpanel from './pages/Servicesnewpages/Stretchpanel';
+import StarSky from './pages/Servicesnewpages/StarSky';
 
 
 function App() {
@@ -120,7 +121,8 @@ function App() {
             <Route path="/products/stretch-ceiling/translucent" element={<Translucentnew/>} />
            <Route path="/products/stretch-ceiling/print" element={<Stretchprint/>} />
            <Route path="/products/stretch-ceiling/gloss" element={<Stretchgloss/>} />
-<Route path="/products/stretch-ceiling/panel" element={<Stretchpanel/>} />
+         <Route path="/products/stretch-ceiling/panel" element={<Stretchpanel/>} />
+      <Route path="/products/fiber-optic/star-sky" element={<StarSky/>} />
            
           </Routes>
           <Footer />
