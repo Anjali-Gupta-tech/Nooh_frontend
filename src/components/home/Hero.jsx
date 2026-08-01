@@ -43,6 +43,16 @@ const Hero = () => {
     "Transform your interiors with premium luxury wall murals featuring timeless artwork, nature-inspired designs, and museum-quality printing."
      },
      
+{
+  desktop: "/images/backlite-by-nooh.png",
+  mobile: "/images/stretch-backlit-wall-mobile.webp",
+
+  title: "STRETCHE™ BACKLIT WALL",
+
+  description:
+    "Illuminate your interiors with STRETCHE™ Backlit Wall, a premium architectural lighting solution that combines seamless stretch fabric with high-performance LED illumination. "
+},
+
       {
   desktop: "/images/warm-hero-img.webp",
   mobile: "/images/warm-hero-mobile.webp",

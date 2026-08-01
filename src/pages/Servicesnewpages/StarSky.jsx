@@ -15,10 +15,9 @@ const StarSky = () => {
         />
       </Helmet>
 
-      <div className="min-h-screen text-white pt-24">
-          
-<section className="section-padding bg-luxury-gray">
-         <section className="py-20 bg-luxury-black">
+      <div className="min-h-screen text-white pt-24 bg-luxury-black">
+        
+         <section className="py-20 border-b border-white/10">
        
                  <div className="container-custom mx-auto text-center">
        
@@ -59,6 +58,8 @@ const StarSky = () => {
                </section>
 
        {/* design variations */}
+
+         <section className="section-padding bg-luxury-gray">
 <motion.section
   initial={{ opacity: 0, y: 40 }}
   whileInView={{ opacity: 1, y: 0 }}
@@ -74,56 +75,53 @@ const StarSky = () => {
       Design Variations
     </h2>
 
-    <p className="max-w-4xl mx-auto text-white/70 text-lg leading-relaxed">
-
-      Every STRETCHE™ Star Sky ceiling is custom designed to suit the
-      ambience of your space. Choose from elegant night skies,
-      cinematic galaxy effects or completely personalized star
-      compositions.
-
-    </p>
+    
 
   </div>
 
   {[
-    {
-      title: "Classic Star Sky",
-      image: "/images/star-sky/classic.jpg",
-      desc:
-        "A timeless arrangement of scattered stars inspired by the natural night sky. Perfect for bedrooms, lounges and premium residences where a calm, elegant atmosphere is desired."
-    },
-    {
-      title: "Dense Star Sky",
-      image: "/images/star-sky/dense.jpg",
-      desc:
-        "Features a much higher concentration of fiber optic stars to create a dramatic luxury ceiling with exceptional depth and visual richness."
-    },
-    {
-      title: "Twinkling Star Sky",
-      image: "/images/star-sky/twinkling.jpg",
-      desc:
-        "Dynamic fiber optic programming creates subtle shimmering stars that replicate the gentle movement of a real night sky."
-    },
-    {
-      title: "Milky Way Star Sky",
-      image: "/images/star-sky/milkyway.jpg",
-      desc:
-        "Inspired by the Milky Way galaxy, this design combines dense star clusters with artistic lighting patterns for a breathtaking celestial experience."
-    },
-    {
-      title: "RGB Star Sky",
-      image: "/images/star-sky/rgb.jpg",
-      desc:
-        "Color-changing fiber optic technology allows users to switch between multiple ambient lighting moods using RGB illumination."
-    },
-    {
-      title: "Custom Pattern Star Sky",
-      image: "/images/star-sky/custom.jpg",
-      desc:
-        "Create personalized constellations, company logos, zodiac patterns or custom artistic layouts tailored specifically for your project."
-    }
-  ].map((item, index) => (
+  {
+    title: "Classic Star Sky",
+    image: "/images/fiber-optics-img.png",
+    desc:
+      "The Classic Star Sky is the purest expression of luxury fiber optic ceiling design, inspired by the timeless beauty of a naturally illuminated night sky. Thousands of precision-engineered fiber optic points are carefully integrated into a premium stretch ceiling membrane to create a realistic constellation effect that radiates elegance and serenity."
+  },
+  {
+    title: "Dense Star Sky",
+    image: "/images/fiber-optics-img.png",
+    desc:
+      "Dense Star Sky is designed for those who desire a richer and more dramatic celestial experience. Featuring a significantly higher concentration of precision fiber optic stars, this design creates extraordinary depth, brilliance, and visual richness that closely resembles the breathtaking appearance of the galaxy on a crystal-clear night. The increased star density transforms the ceiling into a luxurious architectural centerpiece while maintaining an elegant and sophisticated atmosphere. Ideal for premium home theatres, luxury villas, executive lounges, five-star hotel suites, restaurants, and entertainment spaces, Dense Star Sky delivers an unforgettable visual experience."
 
+  },
+  {
+    title: "Twinkling Star Sky",
+    image: "/images/fiber-optics-img.png",
+    desc:
+      "Twinkling Star Sky recreates the magical movement of real stars through advanced programmable fiber optic technology. Intelligent lighting controllers gently vary the brightness of selected fiber optic points, producing a soft shimmering effect that closely resembles a naturally sparkling night sky. The subtle animation introduces life and motion to the ceiling without becoming distracting, creating a peaceful and luxurious atmosphere. This premium design is especially suited for home theatres, wellness centers, luxury bedrooms, spas, boutique hotels, meditation spaces, and high-end residential interiors where comfort and relaxation are essential. By combining dynamic lighting effects with seamless stretch ceiling technology, Twinkling Star Sky transforms ordinary interiors into extraordinary architectural experiences.",
+
+  },
+  {
+    title: "Milky Way Star Sky",
+    image: "/images/fiber-optics-img.png",
+    desc:
+      "Inspired by the breathtaking beauty of our galaxy, the Milky Way Star Sky transforms ceilings into spectacular cosmic landscapes. Carefully arranged clusters of fiber optic stars recreate the flowing appearance of the Milky Way, adding remarkable depth, texture, and artistic character to any interior. This luxurious design combines dense star formations with carefully balanced illumination to create a dramatic visual centerpiece that immediately captures attention. Perfect for luxury residences, premium hospitality projects, cinemas, restaurants, luxury villas, and designer commercial spaces, Milky Way Star Sky delivers an immersive architectural feature unlike any conventional ceiling system. Every installation is custom designed to ensure a unique and unforgettable celestial experience.",
+
+  },
+  {
+    title: "RGB Star Sky",
+    image: "/images/fiber-optics-img.png",
+    desc:
+      "RGB Star Sky combines premium fiber optic technology with intelligent RGB LED illumination to create fully customizable lighting environments. Users can effortlessly switch between millions of colors, adjust brightness levels, and select dynamic lighting scenes to complement different moods, occasions, or interior themes. Whether creating a relaxing blue night sky, vibrant entertainment atmosphere, or elegant warm ambience, RGB Star Sky offers complete flexibility without compromising luxury aesthetics. Designed for modern residences, gaming rooms, premium lounges, bars, clubs, hospitality projects, luxury hotels, and commercial entertainment venues, this innovative ceiling system seamlessly blends sophisticated architectural design with cutting-edge lighting technology.",
+
+  },
+  {
+    title: "Custom Pattern Star Sky",
+    image: "/images/fiber-optics-img.png",
+    desc:
+      "Custom Pattern Star Sky offers complete creative freedom by transforming unique ideas into extraordinary illuminated ceiling masterpieces. From personalized constellations and zodiac formations to company logos, family initials, artistic graphics, and bespoke celestial compositions, every project is individually designed according to the client's vision. Using advanced fiber optic technology combined with precision craftsmanship, our designers create one-of-a-kind ceiling installations that become the defining feature of luxury interiors. Ideal for signature residences, luxury villas, premium hotels, corporate experience centers, restaurants, themed entertainment spaces, and exclusive commercial projects, Custom Pattern Star Sky delivers a truly personalized architectural statement that reflects individuality, innovation, and timeless elegance.",
+
+  }
+].map((item, index) => (
     <motion.div
       key={index}
       initial={{ opacity: 0, y: 40 }}
@@ -160,11 +158,11 @@ const StarSky = () => {
 
         </p>
 
-        <h3 className="text-4xl font-luxury font-bold mb-6">
+        <h2 className="text-4xl font-luxury font-bold mb-6">
 
           {item.title}
 
-        </h3>
+        </h2>
 
         <div className="w-24 h-[2px] bg-gold-300 rounded-full mb-8" />
 
@@ -281,74 +279,6 @@ const StarSky = () => {
 
 
 <motion.section
-  initial={{ opacity: 0, y: 40 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true }}
-  className="grid lg:grid-cols-2 gap-20 items-center mb-36"
->
-
-  <div>
-
-    <p className="uppercase tracking-[5px] text-gold-300 font-semibold mb-3">
-      Technology
-    </p>
-
-    <h2 className="text-5xl font-luxury font-bold mb-6">
-      Precision Fiber Optic Technology
-    </h2>
-
-    <div className="w-24 h-[2px] bg-gold-300 rounded-full mb-8" />
-
-    <p className="text-white/70 text-lg leading-loose mb-6">
-      STRETCHE™ Star Sky utilizes advanced fiber optic lighting technology,
-      where thousands of ultra-fine optical fibers are connected to a centralized
-      LED light engine. The fibers transmit light without carrying electricity,
-      making the system exceptionally safe, energy-efficient, and long-lasting.
-    </p>
-
-    <p className="text-white/70 text-lg leading-loose mb-8">
-      Every installation is engineered to create a seamless constellation of
-      stars that can be customized with varying densities, brightness levels,
-      twinkling effects, and RGB color options.
-    </p>
-
-    <div className="grid sm:grid-cols-2 gap-5">
-
-      {[
-        "Fiber Optic Light Engine",
-        "Safe Low Voltage System",
-        "Twinkling Star Controller",
-        "50,000+ Hour LED Life"
-      ].map((item,index)=>(
-        <div
-          key={index}
-          className="glass rounded-xl p-4 text-center"
-        >
-          {item}
-        </div>
-      ))}
-
-    </div>
-
-  </div>
-
-  <motion.div
-    whileHover={{ scale:1.02 }}
-    className="overflow-hidden rounded-3xl shadow-2xl"
-  >
-
-    <img
-      src="/images/star-sky/technology.jpg"
-      alt="Fiber Optic Technology"
-      className="w-full h-[550px] object-cover transition duration-700 hover:scale-105"
-    />
-
-  </motion.div>
-
-</motion.section>
-
-
-<motion.section
   initial={{ opacity:0,y:40 }}
   whileInView={{ opacity:1,y:0 }}
   viewport={{ once:true }}
@@ -457,6 +387,8 @@ const StarSky = () => {
 </motion.section>
 
 </section>
+
+
       </div>
     </>
   );
