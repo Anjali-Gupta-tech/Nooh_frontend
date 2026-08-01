@@ -34,6 +34,17 @@ const Hero = () => {
   description:
     "Transform your interiors with bespoke wall crafting solutions featuring artistic textures, decorative finishes, and premium craftsmanship that bring elegance, character, and timeless luxury to every space.",
 },
+
+
+{
+  desktop: "/images/virtual-window.png",
+  mobile: "/images/virtual-window-mobile.webp",
+
+  title: "VIRTUAL WINDOW™",
+
+  description:
+    " VIRTUAL WINDOW™ by NOOH combines premium backlit technology with ultra-high-definition imagery to create realistic illuminated windows that bring natural beauty."
+},
      {
       desktop: "/images/hero-image-10.png",
       mobile: "/images/luxury-wall-mural-mobile.png",
