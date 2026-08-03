@@ -21,7 +21,7 @@ const FloatingContactButtons = () => {
     },
    {
   icon: <FaYoutube size={22} />,
-  link: "https://www.youtube.com/@shilpkarfactory",
+  link: "https://www.youtube.com/@noohliving",
   color: "bg-red-600",
   hover: "hover:bg-red-700",
   label: "YouTube",

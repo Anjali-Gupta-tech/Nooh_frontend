@@ -18,78 +18,140 @@ const FeaturedServices = () => {
       title: (
       <>
         STRETCHE
-        <sup className="text-[60%] align-super ml-[1px]">™</sup>
-        {" "}Stretch Ceiling
+        <sup className="text-[50%] align-super ml-[1px]">™</sup>
+        {" "}SRTETCH CEILING
       </>
     ),
       description: 'Premium textile & translucent stretch ceiling systems with innovative designs and superior quality.',
       image: '/images/stretch-ceiling-manufacted.png',
     },
-    {
-      icon: FaStar,
-      title: 'Fiber Optic Star Ceiling',
-      description: 'Transform your space with mesmerizing star ceiling effects and galaxy ceiling systems.',
-      image: '/images/FIBER-OPTIC-NOOH.webp',
-    },
-    {
-      icon: FaPaintBrush,
-      title: 'Embroidery Wall Covering',
-      description: 'Luxurious embroidered wall fabrics and custom wall mural printing for elegant interiors.',
-      image: '/images/embroidery-wall.png',
-    },
+  {
+  icon: FaLightbulb,
+  title: ' FIBER OPTIC CEILING',
+  description:
+    'Create a breathtaking starry sky with NOOH Fiber Optic Ceiling. Featuring customizable star patterns, twinkling effects, and premium fiber optic technology.',
+  image: '/images/FIBER-OPTIC-NOOH.webp',
+},
     {
       icon: FaLightbulb,
-      title: 'LED Backlit Panels',
-      description: 'Energy-efficient LED ceiling and wall panels with RGBW & tunable white systems.',
-      image: '/images/led-backlit-panel.png',
+        title: (
+      <>
+        STRETCHE
+        <sup className="text-[60%] align-super ml-[1px]">™</sup>
+        {" "}PANEL LIGHTING
+      </>
+    ),
+      description: 'SKYLUME™ PANEL LIGHTING by NOOH is a premium LED backlit ceiling panel available in 1×1, 2×2, 4×2 and 4×1 ft sizes, delivering bright, energy-efficient, glare-free illumination with customizable printed designs.',
+      image: '/service/led-backlite-panel.png',
     },
     {
       icon: FaCouch,
-      title: 'Luxury Interior Design',
-      description: 'Complete interior design solutions with modular kitchens and bespoke luxury furniture.',
-      image: '/images/luxury-interior.jpeg',
+           title: (
+      <>
+        ClOUDWAVE
+        <sup className="text-[50%] align-super ml-[1px]">™</sup>
+        {" "}
+      </>
+    ),
+      description: 'CLOUDWAVE™ combines high-quality printed textile with advanced LED lighting technology to create stunning visual effects. Choose from Dimmable White, Tunable White (2700K–10000K), RGBW Color Changing, or RGBW Pixel Programming systems',
+      image: '/service/cloudewave.png',
     },
     {
       icon: FaBuilding,
-      title: 'Turnkey Construction',
-      description: 'End-to-end construction and turnkey project management for residential & commercial spaces.',
-      image: '/image/tumkey-img.jpeg',
+         title: (
+      <>
+         NOOH PRISM
+        <sup className="text-[50%] align-super ml-[1px]">™</sup>
+        {" "}
+      </>
+    ),
+      description: 'NOOH PRISM™ Decorative Customized Ceiling transforms ordinary ceilings into elegant architectural masterpieces with fully customized designs, premium finishes and integrated lighting. Perfect for luxury residential, hospitality, retail and commercial interiors, creating unique, modern and visually striking spaces.',
+      image: '/service/nooh-prism.png',
+    },
+
+     {
+      icon: FaStar,
+         title: (
+      <>
+        CLOUDWAVE 
+        <sup className="text-[50%] align-super ml-[1px]">™</sup>
+        {" "}GLOSS TEXTILE CEILING 
+      </>
+    ),
+      description: 'CLOUDWAVE™ by NOOH Gloss Textile Ceiling combines a premium high-gloss textile finish with seamless installation to create elegant, reflective and visually striking ceilings. Lightweight, durable and fully customizable, it enhances brightness, depth and lu',
+      image: '/service/cloudewave-textile.png',
     },
     {
       icon: FaBuilding,
-      title: 'Turnkey Construction',
-      description: 'End-to-end construction and turnkey project management for residential & commercial spaces.',
-      image: '/image/tumkey-img.jpeg',
+       title: (
+      <>
+        EPOXY DECORS 
+        <sup className="text-[50%] align-super ml-[1px]">™</sup>
+        {" "}3D EPOXY FLOORING
+      </>
+    ),
+      description:'EPOXY DECORS™ 3D EPOXY FLOORING transforms ordinary floors into seamless, high-gloss artistic surfaces with stunning 3D visuals.',
+      image:'/service/epoxy-decore.png',
     },
     {
       icon: FaBuilding,
-      title: 'Turnkey Construction',
-      description: 'End-to-end construction and turnkey project management for residential & commercial spaces.',
-      image: '/image/tumkey-img.jpeg',
+       title: (
+      <>
+        NOOH MIRROR
+        <sup className="text-[50%] align-super ml-[1px]">™</sup>
+        {" "}
+      </>
+    ),
+      description: 'NOOH MIRROR™ Gloss Stretch Ceiling System features a premium high-gloss reflective finish in 21 elegant colors, creating luxurious, seamless ceilings with enhanced depth, brightness and sophistication for residential, commercial and hospitality interiors.',
+      image: '/service/nooh-mirror.png',
     },
     {
       icon: FaBuilding,
-      title: 'Turnkey Construction',
-      description: 'End-to-end construction and turnkey project management for residential & commercial spaces.',
-      image: '/image/tumkey-img.jpeg',
+        title: (
+      <>
+        STRETCHÉ
+        <sup className="text-[50%] align-super ml-[1px]">™</sup>
+        {" "}PILLAR
+      </>
+    ),
+      description: 'STRETCHÉ™ Pillar Stretch Ceiling System transforms ordinary columns into illuminated architectural features with customized lighting, seamless premium finishes and bespoke designs, creating elegant, modern focal points for residential, commercial and hospitality interiors.',
+      image: '/service/stretch-piller.png',
     },
     {
       icon: FaBuilding,
-      title: 'Turnkey Construction',
-      description: 'End-to-end construction and turnkey project management for residential & commercial spaces.',
-      image: '/image/tumkey-img.jpeg',
+           title: (
+      <>
+        STRETCHÉ
+        <sup className="text-[50%] align-super ml-[1px]">™</sup>
+        {" "}KITCHEN STRETCH CEILING
+      </>
+    ),
+      description: 'STRETCHÉ™ Kitchen Stretch Ceiling is a seamless, moisture-resistant ceiling system designed for modern kitchens. Easy to clean, durable and customizable with printed or illuminated designs, it enhances hygiene, elegance and long-lasting performance.',
+      image: '/service/stretch-kitchen.png',
     },
     {
       icon: FaBuilding,
-      title: 'Turnkey Construction',
-      description: 'End-to-end construction and turnkey project management for residential & commercial spaces.',
-      image: '/image/tumkey-img.jpeg',
+             title: (
+      <>
+        STRETCHÉ
+        <sup className="text-[50%] align-super ml-[1px]">™</sup>
+        {" "}DOME STRETCH CEILING
+      </>
+    ),
+      description: 'STRETCHÉ™ Dome Stretch Ceiling System creates elegant curved and dome-shaped ceilings with seamless premium membranes, customized printed designs and integrated lighting, delivering luxurious architectural aesthetics for residential, hospitality, retail and commercial interiors.',
+      image: '/service/stretch-dome.png',
     },
     {
       icon: FaBuilding,
-      title: 'Turnkey Construction',
-      description: 'End-to-end construction and turnkey project management for residential & commercial spaces.',
-      image: '/image/tumkey-img.jpeg',
+                title: (
+      <>
+        RESTAURANT DECORS
+        <sup className="text-[50%] align-super ml-[1px]">™</sup>
+        {" "}
+      </>
+    ),
+      description: 'RESTAURANT DECORS™ offers innovative decorative ceiling ideas and customized ceiling systems that transform restaurants into memorable dining destinations with unique designs, premium finishes, integrated lighting and exceptional ambience for every concept.',
+      image: '/service/restorant-decor.png',
     },
   ];
 
