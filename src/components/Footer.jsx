@@ -59,7 +59,7 @@ const Footer = () => {
                 <FaFacebook />
               </a>
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/noohlivingelevated/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-white hover:text-luxury-gold smooth-transition text-xl"
@@ -67,7 +67,7 @@ const Footer = () => {
                 <FaInstagram />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/company/noohlivingelevated/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-white hover:text-luxury-gold smooth-transition text-xl"
@@ -75,7 +75,7 @@ const Footer = () => {
                 <FaLinkedin />
               </a>
               <a 
-                href="https://youtube.com" 
+                href="https://www.youtube.com/@noohliving" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-white hover:text-luxury-gold smooth-transition text-xl"
@@ -152,7 +152,7 @@ const Footer = () => {
                     href="tel:+919540060180" 
                     className="text-white/70 hover:text-luxury-gold smooth-transition text-sm block"
                   >
-                    +91 9540060180
+                    +91  97189 21229
                   </a>
                   <a 
                     href="tel:+919958748979" 

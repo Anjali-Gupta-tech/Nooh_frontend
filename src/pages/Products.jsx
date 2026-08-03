@@ -12,7 +12,6 @@ const Products = () => {
     'Fiber Optic',
     'Wall Coverings',
     'LED Panels',
-    'Furniture',
     'mirrors',
     'decorative ',
     'flooring',
