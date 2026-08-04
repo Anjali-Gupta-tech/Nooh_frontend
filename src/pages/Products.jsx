@@ -39,7 +39,7 @@ const Products = () => {
     {
       id: 4,
       title: 'Cloudwave™ ',
-      category: 'LED Panels',
+      category: 'Stretch Ceilings',
       image: '/service/cloudewave.png',
     },
     {
@@ -94,7 +94,7 @@ const Products = () => {
      {
       id: 13,
       title: 'NOOH – WallSculpt™',
-      category: 'decorative ',
+      category: 'Wall Coverings',
       image: '/service/WallSculpt.jpeg',
     },
   ];
@@ -176,7 +176,7 @@ const Products = () => {
                     <img
                       src={product.image}
                       alt={product.title}
-                      className="w-full h-full object-cover transform group-hover:scale-110 smooth-transition"
+                      className="w-full max-h-[75vh] object-contain rounded-2xl"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-luxury-black via-luxury-black/60 to-transparent opacity-80 group-hover:opacity-90 smooth-transition" />
                     <div className="absolute bottom-0 left-0 right-0 p-6">

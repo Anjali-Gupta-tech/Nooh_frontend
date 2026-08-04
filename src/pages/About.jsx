@@ -407,51 +407,86 @@ const About = () => {
     whileInView={{ opacity: 1, x: 0 }}
     viewport={{ once: true }}
   >
-    {/* Your existing content */}
-<h2 className="text-5xl font-luxury font-bold text-gold-300 mb-8">
+ <h2 className="text-5xl font-luxury font-bold text-gold-300 mb-5">
   More Than Interiors
 </h2>
 
 <h3 className="text-3xl text-white mb-6">
-  We Build Skills
+  We Build Skills. We Build Businesses.
 </h3>
 
 <p className="text-white/80 leading-relaxed mb-6">
-  At NOOH, we believe innovation should create opportunities.
-  Beyond delivering premium interior solutions, we are committed
-  to developing skilled professionals through practical
-  training, technical education, and product knowledge.
+  At <span className="text-luxury-gold font-semibold">NOOH Elevated Living LLP</span>,
+  we believe true innovation is not only about creating exceptional interior
+  solutions—it is about creating opportunities for people. Our mission is to
+  help individuals build successful careers and profitable businesses through
+  professional training, practical experience and continuous innovation.
 </p>
 
 <p className="text-white/80 leading-relaxed mb-6">
-  We empower technicians, installers, architects, designers,
-  sales professionals, dealers, and business partners with the
-  expertise needed to build successful careers and sustainable
-  businesses in the interior industry.
+  We conduct specialized workshops for aspiring entrepreneurs, technicians,
+  architects, interior designers, contractors, dealers and business owners.
+  From technical installation to business development, our programs are
+  designed to build both professional skills and successful businesses.
 </p>
 
-<p className="text-white/80 leading-relaxed">
-  Our vision is simple — transform spaces, develop skills,
-  create opportunities, and elevate lives.
-</p>
+<div className="grid grid-cols-2 gap-4 my-8">
 
-<div className="grid grid-cols-2 gap-6 mt-10">
-
-  <div className="glass rounded-2xl p-6 text-center">
-    <FaUsers className="text-5xl text-luxury-gold mx-auto mb-4" />
-    <h4 className="text-white font-semibold">
-      Professional Training
+  <div className="glass rounded-2xl p-5">
+    <h4 className="text-luxury-gold font-semibold mb-2">
+      Training Programs
     </h4>
+
+    <p className="text-white/80 text-sm">
+      Stretch Ceilings, Textile Ceilings, Fiber Optic, 3D Epoxy Flooring,
+      Installation & Business Training.
+    </p>
   </div>
 
-  <div className="glass rounded-2xl p-6 text-center">
-    <FaTools className="text-5xl text-luxury-gold mx-auto mb-4" />
-    <h4 className="text-white font-semibold">
-      Technical Expertise
+  <div className="glass rounded-2xl p-5">
+    <h4 className="text-luxury-gold font-semibold mb-2">
+      Learn. Build. Earn.
     </h4>
+
+    <p className="text-white/80 text-sm">
+      Practical learning with real-world projects to help participants
+      confidently start or expand their interior business.
+    </p>
+  </div>
+
+  <div className="glass rounded-2xl p-5">
+    <h4 className="text-luxury-gold font-semibold mb-2">
+      Learn From Experts
+    </h4>
+
+    <p className="text-white/80 text-sm">
+      Guided by Asif Ali & Kapil Verma through product knowledge,
+      installation techniques, quality standards and customer handling.
+    </p>
+  </div>
+
+  <div className="glass rounded-2xl p-5">
+    <h4 className="text-luxury-gold font-semibold mb-2">
+      Innovation Never Stops
+    </h4>
+
+    <p className="text-white/80 text-sm">
+      Every year NOOH develops innovative decorative interior products,
+      creating new opportunities for partners and professionals.
+    </p>
   </div>
 
 </div>
+
+<p className="text-white/80 leading-relaxed">
+  Whether your goal is to become a certified installer, launch your own
+  decorative interior business or become a franchise partner, NOOH provides
+  the knowledge, technology and long-term support to help you succeed.
+</p>
+
+
+ 
+
 </motion.div>
 </div>
 
