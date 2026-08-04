@@ -27,9 +27,15 @@ const FeaturedServices = () => {
     },
   {
   icon: FaLightbulb,
-  title: ' FIBER OPTIC CEILING',
+   title: (
+      <>
+        STRETCHE
+        <sup className="text-[50%] align-super ml-[1px]">™</sup>
+        {" "}FIBER OPTIC
+      </>
+    ),
   description:
-    'Create a breathtaking starry sky with NOOH Fiber Optic Ceiling. Featuring customizable star patterns, twinkling effects, and premium fiber optic technology.',
+    'Create a breathtaking starry sky with NOOH Fiber Optic Ceiling. ',
   image: '/images/FIBER-OPTIC-NOOH.webp',
 },
     {
@@ -41,7 +47,7 @@ const FeaturedServices = () => {
         {" "}PANEL LIGHTING
       </>
     ),
-      description: 'SKYLUME™ PANEL LIGHTING by NOOH is a premium LED backlit ceiling panel available in 1×1, 2×2, 4×2 and 4×1 ft sizes, delivering bright, energy-efficient, glare-free illumination with customizable printed designs.',
+      description: 'STRETCHE™ Panel Lighting combines high-quality stretch ceiling materials with advanced LED technology.',
       image: '/service/led-backlite-panel.png',
     },
     {
@@ -53,7 +59,7 @@ const FeaturedServices = () => {
         {" "}
       </>
     ),
-      description: 'CLOUDWAVE™ combines high-quality printed textile with advanced LED lighting technology to create stunning visual effects. Choose from Dimmable White, Tunable White (2700K–10000K), RGBW Color Changing, or RGBW Pixel Programming systems',
+      description: 'CLOUDWAVE™ by NOOH Gloss Textile Ceiling combines a premium high-gloss textile finish with seamless installation to create elegant.',
       image: '/service/cloudewave.png',
     },
     {
@@ -65,7 +71,7 @@ const FeaturedServices = () => {
         {" "}
       </>
     ),
-      description: 'NOOH PRISM™ Decorative Customized Ceiling transforms ordinary ceilings into elegant architectural masterpieces with fully customized designs, premium finishes and integrated lighting. Perfect for luxury residential, hospitality, retail and commercial interiors, creating unique, modern and visually striking spaces.',
+      description: 'NOOH PRISM™ Decorative Customized Ceiling transforms ordinary ceilings into elegant architectural masterpieces.',
       image: '/service/nooh-prism.png',
     },
 
@@ -78,7 +84,7 @@ const FeaturedServices = () => {
         {" "}GLOSS TEXTILE CEILING 
       </>
     ),
-      description: 'CLOUDWAVE™ by NOOH Gloss Textile Ceiling combines a premium high-gloss textile finish with seamless installation to create elegant, reflective and visually striking ceilings. Lightweight, durable and fully customizable, it enhances brightness, depth and lu',
+      description: 'CLOUDWAVE™ by NOOH Gloss Textile Ceiling combines a premium high-gloss textile finish.',
       image: '/service/cloudewave-textile.png',
     },
     {
@@ -90,7 +96,7 @@ const FeaturedServices = () => {
         {" "}3D EPOXY FLOORING
       </>
     ),
-      description:'EPOXY DECORS™ 3D EPOXY FLOORING transforms ordinary floors into seamless, high-gloss artistic surfaces with stunning 3D visuals.',
+      description:'EPOXY DECORS™ 3D EPOXY FLOORING transforms ordinary floors into seamless.',
       image:'/service/epoxy-decore.png',
     },
     {
@@ -102,7 +108,7 @@ const FeaturedServices = () => {
         {" "}
       </>
     ),
-      description: 'NOOH MIRROR™ Gloss Stretch Ceiling System features a premium high-gloss reflective finish in 21 elegant colors, creating luxurious, seamless ceilings with enhanced depth, brightness and sophistication for residential, commercial and hospitality interiors.',
+      description: 'NOOH MIRROR™ Gloss Stretch Ceiling System features a premium high-gloss reflective finish in 21 elegant colors.' ,
       image: '/service/nooh-mirror.png',
     },
     {
@@ -114,7 +120,7 @@ const FeaturedServices = () => {
         {" "}PILLAR
       </>
     ),
-      description: 'STRETCHÉ™ Pillar Stretch Ceiling System transforms ordinary columns into illuminated architectural features with customized lighting, seamless premium finishes and bespoke designs, creating elegant, modern focal points for residential, commercial and hospitality interiors.',
+      description: 'STRETCHÉ™ Pillar Stretch Ceiling System transforms ordinary columns into illuminated architectural features.', 
       image: '/service/stretch-piller.png',
     },
     {
@@ -126,7 +132,7 @@ const FeaturedServices = () => {
         {" "}KITCHEN STRETCH CEILING
       </>
     ),
-      description: 'STRETCHÉ™ Kitchen Stretch Ceiling is a seamless, moisture-resistant ceiling system designed for modern kitchens. Easy to clean, durable and customizable with printed or illuminated designs, it enhances hygiene, elegance and long-lasting performance.',
+      description: 'STRETCHÉ™ Kitchen Stretch Ceiling is a seamless, moisture-resistant ceiling system designed for modern kitchens. ',
       image: '/service/stretch-kitchen.png',
     },
     {
@@ -138,7 +144,7 @@ const FeaturedServices = () => {
         {" "}DOME STRETCH CEILING
       </>
     ),
-      description: 'STRETCHÉ™ Dome Stretch Ceiling System creates elegant curved and dome-shaped ceilings with seamless premium membranes, customized printed designs and integrated lighting, delivering luxurious architectural aesthetics for residential, hospitality, retail and commercial interiors.',
+      description: 'STRETCHÉ™ Dome Stretch Ceiling System creates elegant curved and dome-shaped ceilings with seamless premium membranes.', 
       image: '/service/stretch-dome.png',
     },
     {
@@ -150,8 +156,20 @@ const FeaturedServices = () => {
         {" "}
       </>
     ),
-      description: 'RESTAURANT DECORS™ offers innovative decorative ceiling ideas and customized ceiling systems that transform restaurants into memorable dining destinations with unique designs, premium finishes, integrated lighting and exceptional ambience for every concept.',
+      description: 'RESTAURANT DECORS™ offers innovative decorative ceiling ideas and customized ceiling systems.',
       image: '/service/restorant-decor.png',
+    },
+      {
+      icon: FaBuilding,
+                title: (
+      <>
+         NOOH – WallSculpt™
+        <sup className="text-[50%] align-super ml-[1px]">™</sup>
+        {" "}
+      </>
+    ),
+      description: 'NOOH – WallSculpt™ offers innovative decorative wall solutions and customized installations.',
+      image: '/service/Wallsculpt.jpeg',
     },
   ];
 

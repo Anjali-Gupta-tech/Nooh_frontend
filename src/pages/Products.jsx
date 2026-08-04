@@ -20,57 +20,82 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      title:'Textile Stretch Ceiling',
+      title:'STRETCHE™ STRETCH CEILING',
       category: 'Stretch Ceilings',
       image: '/images/stretch-ceiling-manufacted.png',
     },
     {
       id: 2,
-      title: 'Fiber Optic Star Ceiling',
+      title: 'STRETCHE™ FIBER OPTIC',
       category: 'Fiber Optic',
       image: '/images/FIBER-OPTIC-NOOH.webp',
     },
     {
       id: 3,
-      title: 'Stretch Panel Lighting',
+      title: 'STRETCHE™ PANEL LIGHTING',
       category: 'LED Panels',
       image: '/service/led-backlite-panel.png',
     },
     {
       id: 4,
-      title: 'Cloudwave™ LED Ceiling',
+      title: 'Cloudwave™ ',
       category: 'LED Panels',
       image: '/service/cloudewave.png',
     },
     {
       id: 5,
-      title: 'NOOH Prism',
+      title: 'NOOH Prism™ ',
       category: 'mirrors',
       image: '/service/nooh-prism.png',
     },
-    {
+     {
       id: 6,
-      title: 'Epoxy Decore',
+      title: 'CLOUDWAVE™ GLOSS TEXTILE CEILING ',
+      category: 'mirrors',
+      image: '/service/cloudewave-textile.png',
+    },
+    {
+      id: 7,
+      title: 'EPOXY DECORS™ 3D EPOXY FLOORING',
       category: 'flooring',
       image: '/service/epoxy-decore.png',
     },
     {
-      id: 7,
-      title: 'NOOH Mirror',
+      id: 8,
+      title: 'NOOH MIRROR™',
       category: 'mirrors',
       image: '/service/nooh-mirror.png',
     },
+       {
+      id: 9,
+      title: 'STRETCHÉ™ PILLAR STRETCH CEILING SYSTEM',
+      category: 'Stretch Ceilings',
+      image: '/service/stretch-piller.png',
+    }, {
+      id: 10,
+      title: 'STRETCHÉ™ KITCHEN STRETCH CEILING SYSTEM',
+      category: 'Stretch Ceilings',
+      image: '/service/stretch-kitchen.png',
+    },
+
+
     {
-      id: 8,
-      title: 'Stretch Dome',
+      id: 11,
+      title: 'STRETCHÉ™ DOME STRETCH CEILING SYSTEM',
       category: 'Stretch Ceilings',
       image: '/service/stretch-dome.png',
     },
     {
-      id: 9,
-      title: 'Restaurant Decoration',
+      id: 12,
+      title: 'RESTAURANT DECORS™',
       category: 'decorative ',
       image: '/service/restorant-decor.png',
+    },
+     {
+      id: 13,
+      title: 'NOOH – WallSculpt™',
+      category: 'decorative ',
+      image: '/service/WallSculpt.jpeg',
     },
   ];
 
@@ -79,7 +104,7 @@ const Products = () => {
       ? products
       : products.filter((product) => product.category === activeFilter);
 
-  return (
+  return ( 
     <>
       <Helmet>
         <title>Product Gallery -Stretch Ceiling, Textile Ceiling & LED Backlit Panels| NOOH Living Elevated</title>
@@ -89,9 +114,9 @@ const Products = () => {
         />
       </Helmet>
 
-      <div className="min-h-screen bg-luxury-black pt-24">
+      <div className="min-h-screen bg-luxury-gray pt-24">
         {/* Hero Section */}
-        <section className="section-padding">
+        <section className="section-padding bg-luxury-black">
           <div className="container-custom mx-auto text-center">
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
