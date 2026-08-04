@@ -156,7 +156,7 @@ const FeaturedServices = () => {
         {" "}
       </>
     ),
-      description: 'RESTAURANT DECORS™ offers innovative decorative ceiling ideas and customized ceiling systems.',
+      description: 'It offers innovative decorative ceiling ideas and customized ceiling systems.',
       image: '/service/restorant-decor.png',
     },
       {
@@ -169,7 +169,7 @@ const FeaturedServices = () => {
       </>
     ),
       description: 'NOOH – WallSculpt™ offers innovative decorative wall solutions and customized installations.',
-      image: '/service/Wallsculpt.jpeg',
+      image: '/service/WallSculpt.jpeg',
     },
   ];
 
