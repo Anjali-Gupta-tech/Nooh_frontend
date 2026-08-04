@@ -52,7 +52,9 @@ import Stretchprint from './pages/Servicesnewpages/Stretchprint';
 import Stretchgloss from './pages/Servicesnewpages/Stretchgloss';
 import Stretchpanel from './pages/Servicesnewpages/Stretchpanel';
 import StarSky from './pages/Servicesnewpages/StarSky';
-
+import FiberskyGalaxy from './pages/Servicesnewpages/FiberskyGalaxy';
+import FiberskyRgb from './pages/Servicesnewpages/FiberskyRgb';
+import FiberskyTwinkling from './pages/Servicesnewpages/FiberskyTwinkling';
 
 function App() {
 
@@ -123,7 +125,9 @@ function App() {
            <Route path="/products/stretch-ceiling/gloss" element={<Stretchgloss/>} />
          <Route path="/products/stretch-ceiling/panel" element={<Stretchpanel/>} />
       <Route path="/products/fiber-optic/star-sky" element={<StarSky/>} />
-           
+      <Route path="/products/fiber-optic/galaxy-star" element={<FiberskyGalaxy/>} />
+    <Route path="/products/fiber-optic/rgb-star" element={<FiberskyRgb/>} />
+    <Route path="/products/fiber-optic/twinkling-star" element={<FiberskyTwinkling/>} />
           </Routes>
           <Footer />
        

@@ -37,6 +37,7 @@ const Services = () => {
       ),
       subtitle: 'Customized Printed Stretch Ceiling',
       link: '/products/stretch-ceiling/print',
+    
     },
     {
       title: (
@@ -59,11 +60,12 @@ const Services = () => {
   ],
 
   image: '/images/Stretch-Ceiling.jpeg',
+  pdf: '/catalogue/STRETCHE_TM_STRETCH_CEILING_PANEL.pdf',
 },
   {
   title: (
     <>
-      STRETCHE<sup>™</sup> Fiber Optic Star Ceiling
+      FIBERSKY<sup>™</sup> Fiber Optic Star Ceiling
     </>
   ),
 
@@ -83,7 +85,7 @@ const Services = () => {
     {
       title: (
         <>
-          STRETCHE<sup>™</sup> STAR SKY
+          FIBERSKY<sup>™</sup> STATIC 
         </>
       ),
       subtitle: "Realistic Starry Night Ceiling",
@@ -92,33 +94,34 @@ const Services = () => {
     {
       title: (
         <>
-          STRETCHE<sup>™</sup> GALAXY
+          FIBERSKY<sup>™</sup> TWINKLE
+        </>
+      ),
+      subtitle: "Dynamic Twinkling Star Ceiling",
+      link: "/products/fiber-optic/twinkling-star",
+    },
+    {
+      title: (
+        <>
+          FIBERSKY<sup>™</sup> RGB
+        </>
+      ),
+      subtitle: "Color-Changing RGB Star Ceiling",
+      link: "/products/fiber-optic/rgb-star",
+    },
+    {
+      title: (
+        <>
+        FIBERSKY<sup>™</sup> GALAXY PRO
         </>
       ),
       subtitle: "Milky Way & Galaxy Ceiling",
-      link: "/products/fiber-optic/galaxy",
-    },
-    {
-      title: (
-        <>
-          STRETCHE<sup>™</sup> CONSTELLATION
-        </>
-      ),
-      subtitle: "Custom Zodiac & Constellation Ceiling",
-      link: "/products/fiber-optic/constellation",
-    },
-    {
-      title: (
-        <>
-          STRETCHE<sup>™</sup> SHOOTING STAR
-        </>
-      ),
-      subtitle: "Dynamic Shooting Star Ceiling",
-      link: "/products/fiber-optic/shooting-star",
+      link: "/products/fiber-optic/galaxy-star",
     },
   ],
 
   image: "/images/FIBER-OPTIC-NOOH.webp",
+  pdf:"/catalogue/fiber-optic-star-lights.pdf"
 },
     
       {
@@ -180,6 +183,7 @@ const Services = () => {
   ],
 
   image: "/images/embroidery-wall.png",
+  pdf: "embroidery-wall-covering.pdf"
 },
     ,
     {
@@ -187,12 +191,14 @@ const Services = () => {
       description: 'Custom wall murals that bring your vision to life with stunning high-resolution printing.',
       features: ['HD Printing Quality', 'Custom Designs', 'Durable Materials', 'Professional Installation'],
       image: '/images/wall-mural.png',
+      pdf: 'wall-mural-printing.pdf'
     },
     {
       title: 'LED Backlit Ceiling & Wall Panels',
       description: 'Innovative LED lighting solutions including our NOOH SKYLUME™ artificial daylight systems.',
       features: ['Virtual Sky Ceiling', 'RGBW Systems', 'Tunable White', 'Energy Efficient'],
       image: '/images/led-backlit.png',
+      pdf: 'led-backlit-ceiling-wall-panels.pdf'
     },
     {
       title: 'Luxury Interior Design',
@@ -200,24 +206,28 @@ const Services = () => {
       features: ['3D Visualization', 'Space Planning', 'Custom Furniture', 'Turnkey Execution'],
 
       image: '/image/laxury.jpg',
+      pdf: 'luxury-interior-design.pdf'
     },
     {
       title: 'Modular Kitchen',
       description: 'Functional and stylish modular kitchens designed to maximize space and efficiency.',
       features: ['Custom Layouts', 'Premium Hardware', 'Smart Storage', 'Modern Finishes'],
       image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=2068',
+      pdf: 'modular-kitchen.pdf'
     },
     {
       title: 'Luxury Furniture',
       description: 'Bespoke luxury furniture pieces that combine comfort, style, and craftsmanship.',
       features: ['Custom Design', 'Premium Materials', 'Expert Craftsmanship', 'Unique Pieces'],
       image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=2070',
+      pdf: 'luxury-furniture.pdf'
     },
     {
       title: 'Turnkey Construction',
       description: 'End-to-end project management from concept to completion for residential and commercial spaces.',
       features: ['Complete Project Management', 'Quality Assurance', 'Timely Delivery', 'Post-Delivery Support'],
       image: '/image/tumkey-img.png',
+      pdf: 'turnkey-construction.pdf'
     },
   ];
 
@@ -358,9 +368,13 @@ const Services = () => {
    {/*download button*/}
  <div className="mt-10">
 
-  <PremiumCatalogueButton
-    pdf="/catalogue/STRETCHE_TM_STRETCH_CEILING_PANEL.pdf"
-  />
+ <div className="mt-10">
+  {service.pdf && (
+    <PremiumCatalogueButton
+      pdf={service.pdf}
+    />
+  )}
+</div>
 
 </div>
 </div>

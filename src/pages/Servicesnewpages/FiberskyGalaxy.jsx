@@ -3,15 +3,15 @@ import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import { ChevronRight, Sparkles, Star } from "lucide-react";
 
-const StarSky = () => {
+const FiberskyGalaxy = () => {
   return (
     <>
       <Helmet>
-        <title>STRETCHE™ Star Sky | NOOH Living Elevated</title>
+        <title>FIBERSKY™ GALAXY | NOOH Living Elevated</title>
 
         <meta
           name="description"
-          content="Experience the beauty of a realistic night sky with STRETCHE™ Star Sky. Premium fiber optic stretch ceilings for luxury homes, hotels, spas, home theatres and commercial interiors."
+          content="Experience the beauty of a realistic night sky with FIBERSKY™ GALAXY. Premium fiber optic stretch ceilings for luxury homes, hotels, spas, home theatres and commercial interiors."
         />
       </Helmet>
 
@@ -39,7 +39,7 @@ const StarSky = () => {
                      <sup className="relative -top-5 ml-1 text-xl md:text-3xl">
                        ™
                      </sup>{" "}
-                     STATIC
+                     GALAXY PRO
                    </motion.h1>
        
                   
@@ -50,7 +50,7 @@ const StarSky = () => {
                      transition={{ delay: .3 }}
                      className="max-w-5xl mx-auto text-white/70 text-xl leading-relaxed"
                    >
-                     FIBERSKY™ STATIC  is a premium fiber optic stretch ceiling solution designed to recreate the mesmerizing beauty of a clear, star-filled night sky within luxury interiors.
+                     FIBERSKY™ GALAXY PRO is a premium fiber optic stretch ceiling solution designed to recreate the mesmerizing beauty of a clear, star-filled night sky within luxury interiors.
                    </motion.p>
        
                  </div>
@@ -67,16 +67,16 @@ const StarSky = () => {
   className="mb-36"
 >
 
- 
+  
   {[
+  
   {
-    title: "FIBERSKY™ STATIC",
-    image: "/images/fiber-optics-img.png",
+    title: "FIBERSKY™ GALAXY PRO",
+    image: "/service/programmable-star.png",
     desc:
-      "The Classic Star Sky is the purest expression of luxury fiber optic ceiling design, inspired by the timeless beauty of a naturally illuminated night sky."
+      "Inspired by the breathtaking beauty of our galaxy, the Milky Way Star Sky transforms ceilings into spectacular cosmic landscapes. Carefully arranged clusters of fiber optic stars recreate the flowing appearance of the Milky Way, adding remarkable depth, texture, and artistic character to any interior. This luxurious design combines dense star formations with carefully balanced illumination to create a dramatic visual centerpiece that immediately captures attention. "
+
   },
- 
- 
   
   
 ].map((item, index) => (
@@ -110,7 +110,7 @@ const StarSky = () => {
 
       <div>
 
-        
+       
 
         <h2 className="text-4xl font-luxury font-bold mb-6">
 
@@ -162,7 +162,7 @@ const StarSky = () => {
 
   <p className="uppercase tracking-[5px] text-gold-300 text-center font-semibold mb-4">
 
-    Why Choose FIBERSKY™ STATIC
+    Why Choose FIBERSKY™ GALAXY PRO
 
   </p>
 
@@ -348,4 +348,4 @@ const StarSky = () => {
   );
 };
 
-export default StarSky;
+export default FiberskyGalaxy;

@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 import { ChevronRight, Sparkles, Star } from "lucide-react";
 
-const StarSky = () => {
+const FiberskyRgb= () => {
   return (
     <>
       <Helmet>
-        <title>STRETCHE™ Star Sky | NOOH Living Elevated</title>
+        <title>Fibersky RGB | NOOH Living Elevated</title>
 
         <meta
           name="description"
@@ -39,7 +39,7 @@ const StarSky = () => {
                      <sup className="relative -top-5 ml-1 text-xl md:text-3xl">
                        ™
                      </sup>{" "}
-                     STATIC
+                     RGB
                    </motion.h1>
        
                   
@@ -50,7 +50,7 @@ const StarSky = () => {
                      transition={{ delay: .3 }}
                      className="max-w-5xl mx-auto text-white/70 text-xl leading-relaxed"
                    >
-                     FIBERSKY™ STATIC  is a premium fiber optic stretch ceiling solution designed to recreate the mesmerizing beauty of a clear, star-filled night sky within luxury interiors.
+                     FIBERSKY™ RGB  is a premium fiber optic stretch ceiling solution designed to recreate the mesmerizing beauty of a clear, star-filled night sky within luxury interiors.
                    </motion.p>
        
                  </div>
@@ -67,16 +67,18 @@ const StarSky = () => {
   className="mb-36"
 >
 
- 
+  
+
   {[
+ 
+  
   {
-    title: "FIBERSKY™ STATIC",
-    image: "/images/fiber-optics-img.png",
+    title: "FIBERSKY™ RGB ",
+    image: "/service/rgb-sky-star.png",
     desc:
-      "The Classic Star Sky is the purest expression of luxury fiber optic ceiling design, inspired by the timeless beauty of a naturally illuminated night sky."
+      "Twinkling Star Sky recreates the magical movement of real stars through advanced programmable fiber optic technology. Intelligent lighting controllers gently vary the brightness of selected fiber optic points, producing a soft shimmering effect that closely resembles a naturally sparkling night sky."
   },
- 
- 
+  
   
   
 ].map((item, index) => (
@@ -110,7 +112,7 @@ const StarSky = () => {
 
       <div>
 
-        
+      
 
         <h2 className="text-4xl font-luxury font-bold mb-6">
 
@@ -162,7 +164,7 @@ const StarSky = () => {
 
   <p className="uppercase tracking-[5px] text-gold-300 text-center font-semibold mb-4">
 
-    Why Choose FIBERSKY™ STATIC
+    Why Choose FIBERSKY™ RGB
 
   </p>
 
@@ -348,4 +350,4 @@ const StarSky = () => {
   );
 };
 
-export default StarSky;
+export default FiberskyRgb;
