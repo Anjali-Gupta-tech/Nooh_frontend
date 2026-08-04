@@ -81,46 +81,31 @@ const StarSky = () => {
 
   {[
   {
-    title: "Classic Star Sky",
+    title: "ClASSIC STAR SKY",
     image: "/images/fiber-optics-img.png",
     desc:
-      "The Classic Star Sky is the purest expression of luxury fiber optic ceiling design, inspired by the timeless beauty of a naturally illuminated night sky. Thousands of precision-engineered fiber optic points are carefully integrated into a premium stretch ceiling membrane to create a realistic constellation effect that radiates elegance and serenity."
+      "The Classic Star Sky is the purest expression of luxury fiber optic ceiling design, inspired by the timeless beauty of a naturally illuminated night sky."
   },
   {
-    title: "Dense Star Sky",
-    image: "/images/fiber-optics-img.png",
-    desc:
-      "Dense Star Sky is designed for those who desire a richer and more dramatic celestial experience. Featuring a significantly higher concentration of precision fiber optic stars, this design creates extraordinary depth, brilliance, and visual richness that closely resembles the breathtaking appearance of the galaxy on a crystal-clear night. The increased star density transforms the ceiling into a luxurious architectural centerpiece while maintaining an elegant and sophisticated atmosphere. Ideal for premium home theatres, luxury villas, executive lounges, five-star hotel suites, restaurants, and entertainment spaces, Dense Star Sky delivers an unforgettable visual experience."
-
+    title: "FIBERSKY™ TWINKLE",
+    image: "/service/twinkling.png",
+   desc:" It is a dynamic fiber optic ceiling where stars gently twinkle to simulate the natural beauty of the night sky, creating a relaxing and immersive atmosphere., ",
   },
   {
-    title: "Twinkling Star Sky",
-    image: "/images/fiber-optics-img.png",
+    title: "FIBERSKY™ RGB ",
+    image: "/service/rgb-sky-star.png",
     desc:
-      "Twinkling Star Sky recreates the magical movement of real stars through advanced programmable fiber optic technology. Intelligent lighting controllers gently vary the brightness of selected fiber optic points, producing a soft shimmering effect that closely resembles a naturally sparkling night sky. The subtle animation introduces life and motion to the ceiling without becoming distracting, creating a peaceful and luxurious atmosphere. This premium design is especially suited for home theatres, wellness centers, luxury bedrooms, spas, boutique hotels, meditation spaces, and high-end residential interiors where comfort and relaxation are essential. By combining dynamic lighting effects with seamless stretch ceiling technology, Twinkling Star Sky transforms ordinary interiors into extraordinary architectural experiences.",
-
+      "Twinkling Star Sky recreates the magical movement of real stars through advanced programmable fiber optic technology. Intelligent lighting controllers gently vary the brightness of selected fiber optic points, producing a soft shimmering effect that closely resembles a naturally sparkling night sky."
   },
   {
-    title: "Milky Way Star Sky",
-    image: "/images/fiber-optics-img.png",
+    title: "FIBERSKY™ GALAXY PRO",
+    image: "/service/programmable-star.png",
     desc:
-      "Inspired by the breathtaking beauty of our galaxy, the Milky Way Star Sky transforms ceilings into spectacular cosmic landscapes. Carefully arranged clusters of fiber optic stars recreate the flowing appearance of the Milky Way, adding remarkable depth, texture, and artistic character to any interior. This luxurious design combines dense star formations with carefully balanced illumination to create a dramatic visual centerpiece that immediately captures attention. Perfect for luxury residences, premium hospitality projects, cinemas, restaurants, luxury villas, and designer commercial spaces, Milky Way Star Sky delivers an immersive architectural feature unlike any conventional ceiling system. Every installation is custom designed to ensure a unique and unforgettable celestial experience.",
+      "Inspired by the breathtaking beauty of our galaxy, the Milky Way Star Sky transforms ceilings into spectacular cosmic landscapes. Carefully arranged clusters of fiber optic stars recreate the flowing appearance of the Milky Way, adding remarkable depth, texture, and artistic character to any interior. This luxurious design combines dense star formations with carefully balanced illumination to create a dramatic visual centerpiece that immediately captures attention. "
 
   },
-  {
-    title: "RGB Star Sky",
-    image: "/images/fiber-optics-img.png",
-    desc:
-      "RGB Star Sky combines premium fiber optic technology with intelligent RGB LED illumination to create fully customizable lighting environments. Users can effortlessly switch between millions of colors, adjust brightness levels, and select dynamic lighting scenes to complement different moods, occasions, or interior themes. Whether creating a relaxing blue night sky, vibrant entertainment atmosphere, or elegant warm ambience, RGB Star Sky offers complete flexibility without compromising luxury aesthetics. Designed for modern residences, gaming rooms, premium lounges, bars, clubs, hospitality projects, luxury hotels, and commercial entertainment venues, this innovative ceiling system seamlessly blends sophisticated architectural design with cutting-edge lighting technology.",
-
-  },
-  {
-    title: "Custom Pattern Star Sky",
-    image: "/images/fiber-optics-img.png",
-    desc:
-      "Custom Pattern Star Sky offers complete creative freedom by transforming unique ideas into extraordinary illuminated ceiling masterpieces. From personalized constellations and zodiac formations to company logos, family initials, artistic graphics, and bespoke celestial compositions, every project is individually designed according to the client's vision. Using advanced fiber optic technology combined with precision craftsmanship, our designers create one-of-a-kind ceiling installations that become the defining feature of luxury interiors. Ideal for signature residences, luxury villas, premium hotels, corporate experience centers, restaurants, themed entertainment spaces, and exclusive commercial projects, Custom Pattern Star Sky delivers a truly personalized architectural statement that reflects individuality, innovation, and timeless elegance.",
-
-  }
+  
+  
 ].map((item, index) => (
     <motion.div
       key={index}
