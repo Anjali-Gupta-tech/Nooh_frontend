@@ -15,9 +15,13 @@ const Hero = () => {
       title: "STRETCHE™ CEILING",
       description:"It is a premium decorative fabric ceiling system creating elegant wave effects, visual depth, and stunning illuminated architectural interiors",
     },
-
-    
-
+    {
+  desktop: "/hero-images/translucent-stretch-ceiling.png",
+  mobile: "/images/translucent-stretch-ceiling-mobile.webp",
+  title: "STRETCHE™ TRANSLUCENT CEILING",
+  description:
+    "A premium translucent stretch ceiling system with integrated LED backlighting, creating soft, uniform illumination, seamless finishes, and luxurious architectural interiors."
+},
 {
   desktop: "/images//embroidary-wallpaper-mobile.webp",
   mobile: "/images/embroidary-wallpaper-mobile.webp",
