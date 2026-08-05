@@ -47,6 +47,20 @@ const Hero = () => {
     "A premium custom-printed stretch ceiling featuring breathtaking 3D galaxy visuals with integrated LED illumination, creating a spectacular cosmic ambiance and immersive architectural experience."
 },
 {
+  desktop: "/hero-images/EMBRODIARY-CEILING-SYSTEMS.png",
+  mobile: "/images/embroidery-ceiling-system-mobile.webp",
+  title: "STRETCHE™ EMBROIDERY CEILING SYSTEM",
+  description:
+    "A premium stretch ceiling system featuring custom embroidered fabric designs that combine artistic craftsmanship with modern architecture, creating elegant, luxurious, and visually distinctive interior spaces."
+},
+{
+  desktop: "/hero-images/STRETCHE-PANEL-LIGHT.png",
+  mobile: "/images/stretche-panel-light-mobile.webp",
+  title: "STRETCHE™ PANEL LIGHT",
+  description:
+    "A premium ultra-slim LED panel lighting solution engineered to deliver uniform illumination, high energy efficiency, and a sleek architectural finish for residential, commercial, and luxury interiors."
+},
+{
   desktop: "/images//embroidary-wallpaper-mobile.webp",
   mobile: "/images/embroidary-wallpaper-mobile.webp",
   title: "EMBROIDERY WALLPAPER",
