@@ -16,12 +16,7 @@ const Hero = () => {
       description:"It is a premium decorative fabric ceiling system creating elegant wave effects, visual depth, and stunning illuminated architectural interiors",
     },
 
-     {
-      desktop: "/images/Ceiling-hero.webp",
-      mobile: "/images/cloudwave-mobile.webp",
-      title: "CLOUDWAVE™ TEXTILE CEILING",
-      description:"It is a premium decorative fabric ceiling system creating elegant wave effects, visual depth, and stunning illuminated architectural interiors",
-    },
+    
 
 {
   desktop: "/images//embroidary-wallpaper-mobile.webp",
@@ -33,34 +28,10 @@ const Hero = () => {
 },
 
 
-    {
-  desktop: "/images/mural_images-hero.webp",
-  mobile: "/images/mural-wall-mobile.webp",
-  title: "WALL CRAFTING",
-
-  description:
-    "Transform your interiors with bespoke wall crafting solutions featuring artistic textures, decorative finishes, and premium craftsmanship that bring elegance, character, and timeless luxury to every space.",
-},
+  
 
 
-{
-  desktop: "/images/virtual-window.png",
-  mobile: "/images/virtual-window-mobile.webp",
 
-  title: "VIRTUAL WINDOW™",
-
-  description:
-    " VIRTUAL WINDOW™ by NOOH combines premium backlit technology with ultra-high-definition imagery to create realistic illuminated windows that bring natural beauty."
-},
-     {
-      desktop: "/images/hero-image-10.png",
-      mobile: "/images/luxury-wall-mural-mobile.png",
-     title: "LUXURY WALL MURAL",
-
-  description:
-    "Transform your interiors with premium luxury wall murals featuring timeless artwork, nature-inspired designs, and museum-quality printing."
-     },
-     
 {
   desktop: "/images/backlite-by-nooh.png",
   mobile: "/images/stretch-backlit-wall-mobile.webp",
@@ -77,19 +48,9 @@ const Hero = () => {
    title: "Warm Mural-Filled Heritage Living Room",
   description:"Luxury heritage living room with handcrafted murals and rich artistic details.",
    },
-  {
-  desktop: "/images/bathroom_stretch_ceiling.jpeg",
-  mobile: "/images/bathroom-ceiling-mobile.png",
-   title: "BATHROOM STRETCH CEILING",
-  description: "Moisture-resistant ceilings with a seamless luxury finish.",
-   },
+ 
 
-     {
-  desktop: "/images/ceiling_collage_hero.webp",
-  mobile: "/images/ceiling-collage-mobile.webp",
- title: "PREMIUM CEILING SOLUTION",
-  description: "Innovative ceiling systems crafted for modern luxury interiors.",
-   },
+  
     
  {
   desktop: "/images/living-illusion.webp",
@@ -106,53 +67,12 @@ const Hero = () => {
   description:
   "Enhance your interiors with premium 3D mural ceilings featuring stunning high-definition artwork, seamless finishes, and realistic depth.",
    },
-   {
-  desktop: "/images/3d_epoxy_flooring_combined_3500x1000_HD.webp",
-  mobile: "/images/epoxy-mobile.webp",
-  title: "3D EPOXY FLOORING",
-  description:
-    "Transform ordinary floors into stunning architectural masterpieces with seamless 3D Epoxy Flooring.",
-   },
-    {
-  desktop: "/images/stretch_ceiling_combined.jpeg",
-  mobile: "/images/ceiling-hero-next.png",
-  title: "STRETCHE™ PRINTED CEILING",
-
-description:
-"Transform ordinary interiors into extraordinary spaces with customized printed stretch ceilings.",
-    },   
+  
+      
    
-    {
-      desktop: "/image/Hero2.webp",
-      mobile: "/image/Heropic2.webp",
-      title:"DESIGNER CEILING COLLECTION",
-      description:"Innovative ceiling concepts that redefine spaces with artistic forms, ambient lighting, and premium finishes."
-    },
-   {
-      desktop: "/image/Stretch.webp",
-      mobile: "/image/Stretchupdatedpic.webp",
-        title:"LUXURY INTERIOR DESIGN",
-      description:"Thoughtfully designed interiors that blend timeless aesthetics with modern luxury and functionality.",
-    },
-     {
-  desktop: "/images/wallmural.webp",
-  mobile: "/images/wall-mural-mobile.webp",
-   title: "Luxury 3D Wall Craft",
-  description:"Transform Blank Walls into Timeless Masterpieces",
-   },
+   
+  
     
-    {
-      desktop: "/image/rgbwstretchceiling.webp",
-      mobile: "/image/rbgwupdatedpic.webp",
-        title:"RGBW STRETCH CEILING",
-      description:"Dynamic color-changing stretch ceilings that create immersive lighting experiences for commercial and luxury spaces.",
-    },
-    {
-      desktop: "/image/Hero3.webp",
-      mobile: "/image/Heroipic3.webp",
-        title:"LUXURY CEILING & INTERIOR",
-      description:"Bespoke ceiling designs crafted to add elegance, depth, and architectural character to premium interiors.",
-    },
 
     {
       desktop: "/image/paintings.webp",
@@ -160,12 +80,7 @@ description:
         title:"VIRTUAL WINDOW COLLECTION",
       description:"Bring breathtaking outdoor views indoors with illuminated virtual windows that create a realistic daylight experience.",
     },
-    {
-      desktop: "/image/Hero5.webp",
-      mobile: "/image/Heropic5.webp",
-        title:"TRADITIONAL WALL ART",
-      description:"Handcrafted decorative wall panels that transform ordinary walls into elegant works of art.",
-    },
+    
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
