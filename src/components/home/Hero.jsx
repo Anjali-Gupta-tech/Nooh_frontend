@@ -62,7 +62,7 @@ const Hero = () => {
 },
 
 {
-  desktop: "/hero-images/STRETCHE-GLOSS-STRETCH-CEILING.png",
+  desktop: "/hero-images/STRETCH-GLOSS-STRETCH-CEILING.png",
   mobile: "/images/stretche-gloss-ceiling-mobile.webp",
   title: "STRETCHE™ GLOSS CEILING",
   description:
@@ -187,7 +187,7 @@ return (
 
     {/* Overlay */}
 
-    <div className="absolute inset-0 bg-black/40 z-10" />
+    <div className="absolute inset-0 bg-black/30 z-10" />
 
     {/* Content */}
 
