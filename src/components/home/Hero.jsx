@@ -31,6 +31,13 @@ const Hero = () => {
     "A premium printed translucent stretch ceiling with integrated LED backlighting, creating a realistic open-sky illusion that brings natural brightness."
 },
 {
+  desktop: "/hero-images/3d-mural-ceiling.png",
+  mobile: "/images/3D CEILING MURAL.png",
+  title: "STRETCHE™ 3D CEILING MURAL",
+  description:
+    "A premium custom-printed stretch ceiling featuring stunning 3D visual effects that create depth, realism, and an immersive architectural experience for residential, commercial, and luxury interiors."
+},
+{
   desktop: "/images//embroidary-wallpaper-mobile.webp",
   mobile: "/images/embroidary-wallpaper-mobile.webp",
   title: "EMBROIDERY WALLPAPER",
