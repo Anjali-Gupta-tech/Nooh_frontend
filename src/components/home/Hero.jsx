@@ -8,6 +8,13 @@ const Hero = () => {
 
   // Background Images
   const images = [
+    
+     {
+      desktop: "/images/stretch-ceiling.png",
+      mobile: "/images/cloudwave-mobile.webp",
+      title: "STRETCHE™ CEILING",
+      description:"It is a premium decorative fabric ceiling system creating elegant wave effects, visual depth, and stunning illuminated architectural interiors",
+    },
 
      {
       desktop: "/images/Ceiling-hero.webp",
