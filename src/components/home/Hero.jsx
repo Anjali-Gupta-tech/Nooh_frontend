@@ -22,6 +22,14 @@ const Hero = () => {
   description:
     "A premium translucent stretch ceiling system with integrated LED backlighting, creating soft, uniform illumination, seamless finishes, and luxurious architectural interiors."
 },
+
+{
+  desktop: "/hero-images/stretch-skylume.png",
+  mobile: "/images/skylume-ceiling-mobile.webp",
+  title: "STRETCHE™ SKYLUME CEILING",
+  description:
+    "A premium printed translucent stretch ceiling with integrated LED backlighting, creating a realistic open-sky illusion that brings natural brightness."
+},
 {
   desktop: "/images//embroidary-wallpaper-mobile.webp",
   mobile: "/images/embroidary-wallpaper-mobile.webp",
