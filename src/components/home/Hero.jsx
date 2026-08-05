@@ -60,6 +60,14 @@ const Hero = () => {
   description:
     "A premium ultra-slim LED panel lighting solution engineered to deliver uniform illumination, high energy efficiency, and a sleek architectural finish for residential, commercial, and luxury interiors."
 },
+
+{
+  desktop: "/hero-images/STRETCHE-GLOSS-STRETCH-CEILING.png",
+  mobile: "/images/stretche-gloss-ceiling-mobile.webp",
+  title: "STRETCHE™ GLOSS CEILING",
+  description:
+    "A premium high-gloss stretch ceiling system with a mirror-like finish that enhances brightness, creates a sense of spaciousness, and adds a sleek, luxurious touch to modern interiors."
+},
 {
   desktop: "/images//embroidary-wallpaper-mobile.webp",
   mobile: "/images/embroidary-wallpaper-mobile.webp",
