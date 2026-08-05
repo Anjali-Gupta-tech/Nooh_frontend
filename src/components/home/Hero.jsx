@@ -112,7 +112,13 @@ const Hero = () => {
   description:
     "A premium translucent stretch ceiling system designed to diffuse light evenly, delivering seamless illumination, elegant aesthetics, and high-performance architectural lighting for luxury interiors."
 },
-
+{
+  desktop: "/hero-images/STRETCHE-DECORATIVE-CEILING (1).png",
+  mobile: "/images/decorative-stretch-ceiling-mobile.webp",
+  title: "STRETCHE™ DECORATIVE STRETCH CEILING",
+  description:
+    "A premium decorative stretch ceiling system designed to enhance interiors with elegant finishes, custom designs, and modern architectural aesthetics for residential, commercial, and luxury spaces."
+},
 {
   desktop: "/images/backlite-by-nooh.png",
   mobile: "/images/stretch-backlit-wall-mobile.webp",
