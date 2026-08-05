@@ -70,10 +70,48 @@ const Hero = () => {
 },
 
 
-
-  
-
-
+{
+  desktop: "/hero-images/STRETCH-CEILING-MANUFACTURER-DELHI-NCR-NOIDA-DELHI.png",
+  mobile: "/images/sky-garden-ceiling-mobile.webp",
+  title: "STRETCHE™ CEILING",
+  description:
+    "A premium printed translucent stretch ceiling featuring nature-inspired artwork and integrated LED backlighting, creating the illusion of an open sky while bringing elegance, tranquility, and biophilic design into modern interiors."
+},
+  {
+  desktop: "/hero-images/STRETCHE-BACKLIT-STRETCH-CEILING.png",
+  mobile: "/images/backlit-stretch-ceiling-mobile.webp",
+  title: "STRETCHE™ BACKLIT STRETCH CEILING",
+  description:
+    "A premium LED backlit stretch ceiling system designed to deliver seamless illumination, soft diffused lighting, and a sophisticated architectural finish for residential, commercial, and luxury interiors."
+},
+{
+  desktop: "/hero-images/STRETCHE-UV-PRINTING.png",
+  mobile: "/images/uv-printed-stretch-ceiling-mobile.webp",
+  title: "STRETCHE™ UV PRINTED  CEILING",
+  description:
+    "A premium stretch ceiling featuring high-definition UV printing technology that delivers vibrant colors, exceptional durability, and custom-designed artwork for elegant residential, commercial, and luxury interiors."
+},
+{
+  desktop: "/hero-images/STARRY-LIGHT-PRINTING-STRETCH-CEILING.png",
+  mobile: "/images/starry-light-printed-stretch-ceiling-mobile.webp",
+  title: "STRETCHE™ STARRY LIGHT PRINTED STRETCH CEILING",
+  description:
+    "A premium printed stretch ceiling featuring a mesmerizing starry sky design with integrated LED illumination, creating a magical nighttime ambiance and luxurious architectural interiors."
+},
+{
+  desktop: "/hero-images/SKY-LUME-PANEL-LIGHTING.png",
+  mobile: "/images/sky-lume-panel-lighting-mobile.webp",
+  title: "STRETCHE™ SKYLUME PANEL LIGHTING",
+  description:
+    "A premium LED panel lighting system engineered to deliver uniform illumination, exceptional energy efficiency, and a realistic daylight effect, creating bright, elegant, and modern architectural interiors."
+},
+{
+  desktop: "/hero-images/STRETCHE-TRANSLITE-STRE.png",
+  mobile: "/images/translite-stretch-ceiling-mobile.webp",
+  title: "STRETCHE™ TRANSLITE STRETCH CEILING",
+  description:
+    "A premium translucent stretch ceiling system designed to diffuse light evenly, delivering seamless illumination, elegant aesthetics, and high-performance architectural lighting for luxury interiors."
+},
 
 {
   desktop: "/images/backlite-by-nooh.png",
