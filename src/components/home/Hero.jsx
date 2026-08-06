@@ -211,7 +211,7 @@ const Hero = () => {
 },
 
 {
-  desktop: "/hero-images/STRETCHE-DECORATIVE-STRETCH-CEILING.png",
+  desktop: "/hero-images/decorative_ceiling.png",
   mobile: "/images/decorative-stretch-ceiling-mobile.webp",
   title: "STRETCHÉ™ DECORATIVE STRETCH CEILING",
   description:
