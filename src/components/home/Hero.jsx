@@ -119,55 +119,113 @@ const Hero = () => {
   description:
     "A premium decorative stretch ceiling system designed to enhance interiors with elegant finishes, custom designs, and modern architectural aesthetics for residential, commercial, and luxury spaces."
 },
+
 {
-  desktop: "/images/backlite-by-nooh.png",
-  mobile: "/images/stretch-backlit-wall-mobile.webp",
-
-  title: "STRETCHE™ BACKLIT WALL",
-
+  desktop: "/hero-images/STRETCHE-GRAPHIC-CEILING.png",
+  mobile: "/images/graphic-stretch-ceiling-mobile.webp",
+  title: "STRETCHÉ™ GRAPHIC STRETCH CEILING",
   description:
-    "Illuminate your interiors with STRETCHE™ Backlit Wall, a premium architectural lighting solution that combines seamless stretch fabric with high-performance LED illumination. "
+    "Create stunning visual interiors with premium graphic stretch ceilings featuring customized artwork and seamless architectural finishes."
 },
 
-      {
-  desktop: "/images/warm-hero-img.webp",
-  mobile: "/images/warm-hero-mobile.webp",
-   title: "Warm Mural-Filled Heritage Living Room",
-  description:"Luxury heritage living room with handcrafted murals and rich artistic details.",
-   },
- 
-
-  
-    
- {
-  desktop: "/images/living-illusion.webp",
-  mobile: "/images/living-illusion-mobile.webp",
-  title: "WALL ILLUSION™ LIVING ART",
+{
+  desktop: "/hero-images/NOOH-EPOXY-FLOORING-INDIA.png",
+  mobile: "/images/epoxy-flooring-mobile.webp",
+  title: "3D EPOXY FLOORING",
   description:
-    "Transform your interiors with luxury panoramic wall murals featuring breathtaking artwork.",
+    "Luxury seamless epoxy flooring designed with artistic finishes, exceptional durability, and modern decorative appeal."
 },
-    
-  {
-  desktop: "/images/mural_ceiling.webp",
-  mobile: "/images/mural-ceiling-mobile.webp",
- title: "3D MURAL CEILING",
-  description:
-  "Enhance your interiors with premium 3D mural ceilings featuring stunning high-definition artwork, seamless finishes, and realistic depth.",
-   },
-  
-      
-   
-   
-  
-    
 
-    {
-      desktop: "/image/paintings.webp",
-      mobile: "/image/paintingspic.webp",
-        title:"VIRTUAL WINDOW COLLECTION",
-      description:"Bring breathtaking outdoor views indoors with illuminated virtual windows that create a realistic daylight experience.",
-    },
-    
+
+
+{
+  desktop: "/hero-images/3D-WALL-ART.png",
+  mobile: "/images/3d-wall-art-mobile.webp",
+  title: "3D DECORATIVE WALL ART",
+  description:
+    "Premium 3D wall art solutions crafted to add texture, depth, and architectural elegance to interior spaces."
+},
+
+{
+  desktop: "/hero-images/WINDFABRIC-TEXTILE-CEILING.png",
+  mobile: "/images/windfabric-textile-mobile.webp",
+  title: "CLOUDWAVE™ WINDFABRIC TEXTILE CEILING",
+  description:
+    "Innovative textile ceiling systems offering flowing architectural designs with lightweight and elegant finishes."
+},
+
+{
+  desktop: "/hero-images/STRETCHE-RGB-STRETCH-CEILING.png",
+  mobile: "/images/rgb-stretch-ceiling-mobile.webp",
+  title: "STRETCHÉ™ RGB STRETCH CEILING",
+  description:
+    "Dynamic RGB stretch ceiling solutions that transform interiors with vibrant colours and intelligent lighting effects."
+},
+
+{
+  desktop: "/hero-images/STRETCHE-TEXTURED-STRETCH-CEILING.png",
+  mobile: "/images/textured-stretch-ceiling-mobile.webp",
+  title: "STRETCHÉ™ TEXTURED STRETCH CEILING",
+  description:
+    "Premium textured stretch ceilings designed to create sophisticated surfaces with unique architectural character."
+},
+
+{
+  desktop: "/hero-images/STRETCHE-BACKLIT-WALL.png",
+  mobile: "/images/backlit-wall-mobile.webp",
+  title: "STRETCHÉ™ BACKLIT WALL",
+  description:
+    "Decorative illuminated wall systems featuring premium graphics with uniform LED backlighting for striking interiors."
+},
+
+{
+  desktop: "/hero-images/7D-STRETCHE-CEILING-SOLUTION.png",
+  mobile: "/images/7d-stretch-ceiling-mobile.webp",
+  title: "7D STRETCHÉ™ CEILING SOLUTION",
+  description:
+    "Advanced ceiling solutions delivering immersive visual depth through innovative stretch ceiling technology."
+},
+
+{
+  desktop: "/hero-images/FIBER-OPTIC-CEILING.png",
+  mobile: "/images/fiber-optic-mobile.webp",
+  title: " FIBERSKY™  FIBER  OPTIC CEILING",
+  description:
+    "Create breathtaking starry sky ceilings with premium fiber optic lighting for luxury residential and commercial spaces."
+},
+
+{
+  desktop: "/hero-images/WINDFABRIC-TEXTILE-CEILING.png",
+  mobile: "/images/windfabric-mobile.webp",
+  title: "CLOUDWAVE™ TEXTILE CEILING",
+  description:
+    "Elegant textile ceiling systems that blend innovative design with lightweight architectural performance."
+},
+
+{
+  desktop: "/hero-images/CLOUDWAVE-TEXTILE-CEILING.png",
+  mobile: "/images/cloudwave-mobile.webp",
+  title: "CLOUDWAVE™ TEXTILE CEILING",
+  description:
+    "Modern textile ceiling solutions featuring seamless flowing forms for premium architectural interiors."
+},
+
+{
+  desktop: "/hero-images/STRETCHE-DECORATIVE-STRETCH-CEILING.png",
+  mobile: "/images/decorative-stretch-ceiling-mobile.webp",
+  title: "STRETCHÉ™ DECORATIVE STRETCH CEILING",
+  description:
+    "Premium decorative stretch ceilings crafted to enhance interiors with elegant finishes and contemporary design."
+},
+
+{
+  desktop: "/hero-images/STRETCHE-DECORATIVE-CEILING.png",
+  mobile: "/images/decorative-ceiling-mobile.webp",
+  title: "STRETCHÉ™ DECORATIVE CEILING",
+  description:
+    "Luxury decorative ceiling systems combining innovative materials with timeless architectural elegance."
+},
+   
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
