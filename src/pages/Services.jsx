@@ -186,7 +186,7 @@ const Services = () => {
 
   image: "/images/wallpaper.png",
 
-  pdf: "/catalogue/NOOH_WALLMURAL_TM_CUSTOM_ARCHITECTURAL_WALL_MURAL_SOLUTIONS.pdf",
+  pdf: "/catalogue/NOOH_ CUSTOM_ARCHITECTURAL WALL PANNEL.pdf",
 },
   
     {
