@@ -68,9 +68,7 @@ const Navbar = () => {
             <motion.div whileHover={{ scale: 1.05 }} className="relative">
               <Logo className="h-9 sm:h-10 md:h-12 w-auto text-white" />
               <div className="mt-1">
-                <p className="text-[8px] sm:text-[10px] tracking-[0.2em] sm:tracking-[0.3em] text-luxury-gold uppercase">
-                  Living Elevated
-                </p>
+                
               </div>
             </motion.div>
           </Link>

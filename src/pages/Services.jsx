@@ -127,15 +127,15 @@ const Services = () => {
 {
   title: (
     <>
-      NOOH WALLMURAL<sup>™</sup>
+      NOOH MURAL PANEL<sup>™</sup>
     </>
   ),
 
-  subheading: "Premium Architectural Wall Mural Systems",
+  subheading: "Custom Architectural Mural with Panel —Tailored to Your Vision",
 
   description: (
     <>
-      NOOH WALLMURAL<sup>™</sup> transforms ordinary walls into extraordinary
+      NOOH MURAL PANEL<sup>™</sup> transforms ordinary walls into extraordinary
       architectural masterpieces through fully customized HDMR wall panels,
       precision CNC cutting, handcrafted detailing, premium decorative
       finishes, and high-resolution UV-printed artwork. Designed for luxury
