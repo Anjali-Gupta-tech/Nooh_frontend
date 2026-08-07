@@ -123,76 +123,65 @@ const Services = () => {
   image: "/images/FIBER-OPTIC-NOOH.webp",
   pdf:"/catalogue/fiber-optic-star-lights.pdf"
 },
-    
-      {
+      
+{
   title: (
     <>
-      STRETCHE<sup>™</sup> Embroidery Wall Covering Fabric
+      NOOH<sup>™</sup> Custom Architectural Wall Panels
     </>
   ),
 
-  subheading: "Premium Embroidered Wall Covering Systems",
+  subheading: "Premium Modular Wall Panel Solutions",
 
   description: (
     <>
-      STRETCHE<sup>™</sup> Embroidery Wall Covering Fabric by NOOH combines
-      luxurious embroidered textures with premium wall finishes to create
-      elegant interiors. Designed for residences, hotels, offices, retail
-      spaces, and hospitality projects, it delivers timeless aesthetics,
-      acoustic comfort, and exceptional craftsmanship.
+      NOOH<sup>™</sup> Custom Architectural Wall Panels are designed to
+      transform interiors with premium decorative finishes, UV printed
+      artwork, mirror surfaces, and customized wall solutions. Ideal for
+      luxury residences, hotels, offices, retail spaces, restaurants, and
+      commercial interiors, our modular wall panels combine elegant design,
+      durability, and effortless installation to create stunning feature
+      walls tailored to every project.
     </>
   ),
 
   categories: [
     {
-      title: (
-        <>
-          STRETCHE<sup>™</sup> FLORAL
-        </>
-      ),
-      subtitle: "Elegant Floral Embroidered Fabric",
-      link: "/products/embroidery-wall-covering/floral",
+      title: "Canvas UV Print",
+      subtitle: "Premium Printed Wall Panels",
+      link: "/products/wall-panel/canvas-uv-print",
     },
     {
-      title: (
-        <>
-          STRETCHE<sup>™</sup> GEOMETRIC
-        </>
-      ),
-      subtitle: "Contemporary Pattern Embroidery",
-      link: "/products/embroidery-wall-covering/geometric",
+      title: "Mirror Finish",
+      subtitle: "Luxury Reflective Wall Panels",
+      link: "/products/wall-panel/mirror-finish",
     },
     {
-      title: (
-        <>
-          STRETCHE<sup>™</sup> ABSTRACT
-        </>
-      ),
-      subtitle: "Luxury Artistic Embroidery Design",
-      link: "/products/embroidery-wall-covering/abstract",
+      title: "Decorative Wall Murals",
+      subtitle: "Custom Printed Wall Solutions",
+      link: "/products/wall-panel/decorative-wall-mural",
     },
     {
-      title: (
-        <>
-          STRETCHE<sup>™</sup> CUSTOM
-        </>
-      ),
-      subtitle: "Bespoke Embroidered Wall Fabric",
-      link: "/products/embroidery-wall-covering/custom",
+      title: "Textured Wall Panels",
+      subtitle: "Modern Decorative Surface Panels",
+      link: "/products/wall-panel/textured-wall-panels",
+    },
+    {
+      title: "Wood Finish Panels",
+      subtitle: "Elegant Wooden Interior Panels",
+      link: "/products/wall-panel/wood-finish-panels",
+    },
+    {
+      title: "Customized Wall Panels",
+      subtitle: "Tailor-Made Architectural Solutions",
+      link: "/products/wall-panel/customized-wall-panels",
     },
   ],
 
-  image: "/images/embroidery-wall.png",
-  pdf: "embroidery-wall-covering.pdf"
+  image: "/images/ARCHITECTURAL-WALL-PANEL.webp",
+  pdf: "/catalogue/NOOH_ CUSTOM_ARCHITECTURAL WALL PANNEL.pdf",
 },
-    ,
-    {
-      title: 'Wall Mural Printing',
-      description: 'Custom wall murals that bring your vision to life with stunning high-resolution printing.',
-      features: ['HD Printing Quality', 'Custom Designs', 'Durable Materials', 'Professional Installation'],
-      image: '/images/wall-mural.png',
-      pdf: 'wall-mural-printing.pdf'
-    },
+  
     {
       title: 'LED Backlit Ceiling & Wall Panels',
       description: 'Innovative LED lighting solutions including our NOOH SKYLUME™ artificial daylight systems.',
