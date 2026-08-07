@@ -127,59 +127,66 @@ const Services = () => {
 {
   title: (
     <>
-      NOOH<sup>™</sup> Custom Architectural Wall Panels
+      NOOH WALLMURAL<sup>™</sup>
     </>
   ),
 
-  subheading: "Premium Modular Wall Panel Solutions",
+  subheading: "Premium Architectural Wall Mural Systems",
 
   description: (
     <>
-      NOOH<sup>™</sup> Custom Architectural Wall Panels are designed to
-      transform interiors with premium decorative finishes, UV printed
-      artwork, mirror surfaces, and customized wall solutions. Ideal for
-      luxury residences, hotels, offices, retail spaces, restaurants, and
-      commercial interiors, our modular wall panels combine elegant design,
-      durability, and effortless installation to create stunning feature
-      walls tailored to every project.
+      NOOH WALLMURAL<sup>™</sup> transforms ordinary walls into extraordinary
+      architectural masterpieces through fully customized HDMR wall panels,
+      precision CNC cutting, handcrafted detailing, premium decorative
+      finishes, and high-resolution UV-printed artwork. Designed for luxury
+      residential and commercial interiors, every wall mural is tailored to
+      your vision with unlimited possibilities in design, texture, color,
+      lighting, and artistic expression.
     </>
   ),
 
   categories: [
     {
-      title: "Canvas UV Print",
-      subtitle: "Premium Printed Wall Panels",
-      link: "/products/wall-panel/canvas-uv-print",
+      title: (
+        <>
+          WALLMURAL<sup>™</sup> LIVING
+        </>
+      ),
+      subtitle: "Luxury Living Room Wall Collection",
+      link: "/products/wallmural/living",
     },
     {
-      title: "Mirror Finish",
-      subtitle: "Luxury Reflective Wall Panels",
-      link: "/products/wall-panel/mirror-finish",
+      title: (
+        <>
+          WALLMURAL<sup>™</sup> KITCHEN
+        </>
+      ),
+      subtitle: "Designer Kitchen Wall Collection",
+      link: "/products/wallmural/kitchen",
     },
     {
-      title: "Decorative Wall Murals",
-      subtitle: "Custom Printed Wall Solutions",
-      link: "/products/wall-panel/decorative-wall-mural",
+      title: (
+        <>
+          WALLMURAL<sup>™</sup> DRAWING ROOM
+        </>
+      ),
+      subtitle: "Elegant Reception & Drawing Room Collection",
+      link: "/products/wallmural/drawing-room",
     },
     {
-      title: "Textured Wall Panels",
-      subtitle: "Modern Decorative Surface Panels",
-      link: "/products/wall-panel/textured-wall-panels",
-    },
-    {
-      title: "Wood Finish Panels",
-      subtitle: "Elegant Wooden Interior Panels",
-      link: "/products/wall-panel/wood-finish-panels",
-    },
-    {
-      title: "Customized Wall Panels",
-      subtitle: "Tailor-Made Architectural Solutions",
-      link: "/products/wall-panel/customized-wall-panels",
+      title: (
+        <>
+          WALLMURAL<sup>™</sup> HIGHLIGHT
+        </>
+      ),
+      subtitle: "Feature Wall & Statement Collection",
+      link: "/products/wallmural/highlight",
     },
   ],
 
-  image: "/images/ARCHITECTURAL-WALL-PANEL.webp",
-  pdf: "/catalogue/NOOH_ CUSTOM_ARCHITECTURAL WALL PANNEL.pdf",
+  image: "/images/wallpaper.png",
+
+  pdf: "/catalogue/NOOH_WALLMURAL_TM_CUSTOM_ARCHITECTURAL_WALL_MURAL_SOLUTIONS.pdf",
 },
   
     {
