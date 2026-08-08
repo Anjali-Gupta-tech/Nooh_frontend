@@ -1,148 +1,281 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Helmet } from 'react-helmet-async';
-import { FaEye, FaBullseye, FaHeart } from 'react-icons/fa';
-import BeforeAfterFranchise from '../pages/BeroreAfterFranchise';
+import React from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Franchise = () => {
+  const franchiseOptions = [
+    {
+      title: "DEALERSHIP PROGRAM",
+      description:
+        "Build your own NOOH business with premium products, professional training and dedicated business support.",
+      image: "/franchaise-hero/dealership.png",
+      link: "/franchise/dealership",
+    },
+    {
+      title: "ASSOCIATE PROGRAM",
+      description:
+        "Partner with NOOH to offer premium ceiling solutions with complete project and technical support.",
+      image: "/franchaise-hero/associate.png",
+      link: "/franchise/associate",
+    },
+    {
+      title: "TRAINING PROGRAM",
+      description:
+        "Learn product knowledge, installation, estimation, sales and project execution through professional training.",
+      image: "/franchaise-hero/training.png",
+      link: "/franchaise-hero/training",
+    },
+  ];
+
   return (
-    <>
-      <Helmet>
-        <title>Franchise - NOOH Living Elevated</title>
-        <meta name="description" content="Learn about NOOH Living Elevated - your trusted partner in luxury interior design and stretch ceiling solutions." />
-      </Helmet>
+    <div className="min-h-screen text-white bg-white ">
 
-      <div className="min-h-screen bg-luxury-black">
-        {/* Hero Section */}
-        <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <img
-              src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2070"
-              alt="About NOOH"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-luxury-black/80 via-luxury-black/60 to-luxury-black" />
-          </div>
-          
-          <div className="relative z-10 container-custom mx-auto px-6 text-center">
-            <motion.h2
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="text-4xl md:text-7xl font-luxury font-bold text-gold-300 mb-6"
-            >
-              Become a Franchise Partner
-            </motion.h2>
+      {/* =====================================================
+          HERO / HEADER SECTION
+      ===================================================== */}
+      <section className="relative min-h-[540px] overflow-hidden ">
+
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img
+            src="/franchaise-hero/franchaise-hero.png"
+            alt="NOOH Luxury Interior"
+            className="h-full w-full object-cover"
+          />
+
+          {/* Dark overlay */}
+          <div className="absolute inset-0 bg-black/65" />
+
+          {/* Soft center gradient */}
+          <div className="absolute inset-0 " />
+        </div>
+
+
+        {/* Hero Content */}
+        <div className="relative z-10 flex min-h-[540px] items-center justify-center px-6 text-center bg-black">
+
+          <motion.div
+            initial={{ opacity: 0, y: 35 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="mx-auto max-w-4xl"
+          >
+
+            {/* Small Label */}
             <motion.p
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto leading-loose pb-2 overflow-visible"
+              transition={{ duration: 0.6, delay: 0.15 }}
+              className="mb-6 text-[11px] font-medium uppercase tracking-[0.45em] text-luxury-gold"
             >
-             Join one of India's growing luxury interior brands and deliver exceptional spaces with our trusted business model.
+              NOOH ELEVATED LIVING LLP
             </motion.p>
-          </div>
-        </section>
 
-      {/* Before and after */}
-      <BeforeAfterFranchise/>
 
-        {/* Mission, Vision, Values */}
-        <section className="section-padding bg-luxury-gray">
-          <div className="container-custom mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="glass-gold rounded-2xl p-8 text-center hover:scale-105 smooth-transition"
-              >
-                <FaEye className="text-6xl text-luxury-gold mx-auto mb-6" />
-                <h3 className="text-2xl font-luxury font-bold text-white mb-4">Our Vision</h3>
-                <p className="text-white/80 leading-relaxed">
-                  To be India's most trusted and innovative luxury interior design company, 
-                  setting new benchmarks in quality, design excellence, and customer satisfaction.
-                </p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.1 }}
-                className="glass-gold rounded-2xl p-8 text-center hover:scale-105 smooth-transition"
-              >
-                <FaBullseye className="text-6xl text-luxury-gold mx-auto mb-6" />
-                <h3 className="text-2xl font-luxury font-bold text-white mb-4">Our Mission</h3>
-                <p className="text-white/80 leading-relaxed">
-                  To transform spaces into timeless masterpieces by delivering premium interior 
-                  solutions with cutting-edge technology, superior craftsmanship, and unmatched service.
-                </p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.2 }}
-                className="glass-gold rounded-2xl p-8 text-center hover:scale-105 smooth-transition"
-              >
-                <FaHeart className="text-6xl text-luxury-gold mx-auto mb-6" />
-                <h3 className="text-2xl font-luxury font-bold text-white mb-4">Our Values</h3>
-                <p className="text-white/80 leading-relaxed">
-                  Excellence, integrity, innovation, and customer-centricity guide everything 
-                  we do. We believe in building lasting relationships through quality and trust.
-                </p>
-              </motion.div>
-            </div>
-          </div>
-        </section>
-
-        {/* Why Choose NOOH */}
-        <section className="section-padding">
-          <div className="container-custom mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mb-16"
+            {/* Main Heading */}
+            <motion.h1
+              initial={{ opacity: 0, scale: 0.97 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.9, delay: 0.2 }}
+              className="font-serif text-5xl font-normal leading-[1.05] tracking-tight text-white md:text-7xl lg:text-[82px]"
             >
-              <h2 className="text-4xl md:text-7xl font-luxury font-bold text-gold-300 mb-6">
-                Why Choose NOOH?
-              </h2>
-              <p className="text-xl text-white/70 max-w-3xl mx-auto">
-                Experience the difference that true craftsmanship and dedication make
-              </p>
-            </motion.div>
+              Franchise &{" "}
+              <span className="text-gold-300">
+                Business Opportunities
+              </span>
+            </motion.h1>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                'Premium Quality Materials',
-                '21+ Years Warranty Support',
-                'Expert Design Team',
-                'Pan India Service Network',
-                'Timely Project Completion',
-                'Competitive Pricing',
-                'ISO Certified Processes',
-                'Turnkey Project Management',
-                '24/7 Customer Support',
-              ].map((item, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.05 }}
-                  className="glass rounded-xl p-6 flex items-center space-x-4 hover:glass-gold smooth-transition"
-                >
-                  <div className="w-3 h-3 bg-luxury-gold rounded-full flex-shrink-0" />
-                  <p className="text-white font-semibold">{item}</p>
-                </motion.div>
-              ))}
+
+            {/* Gold Line */}
+            <motion.div
+              initial={{ width: 0 }}
+              animate={{ width: 70 }}
+              transition={{ duration: 0.7, delay: 0.5 }}
+              className="mx-auto mt-8 h-[1px] bg-[#d6af45]"
+            />
+
+
+            {/* Description */}
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="mx-auto mt-7 max-w-2xl text-sm font-light leading-7 tracking-wide text-white/75 md:text-base"
+            >
+              Join one of India's growing luxury interior brands and build
+              your premium interior business with innovative ceiling
+              solutions, professional training and trusted support.
+            </motion.p>
+
+          </motion.div>
+
+        </div>
+
+
+        {/* Gold Bottom Divider */}
+        <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-[#d6af45]" />
+
+      </section>
+
+
+      {/* =====================================================
+          OPPORTUNITIES SECTION
+      ===================================================== */}
+      <section className="bg-[#f7f5f0] px-6 py-20 text-[#171717] md:px-10 md:py-24">
+
+        <div className="mx-auto max-w-7xl">
+
+          {/* Section Heading */}
+          <motion.div
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="mb-14 text-center"
+          >
+
+            <div className="mb-5 flex items-center justify-center gap-4">
+
+              <span className="h-px w-12 bg-[#c9a43a]" />
+
+              <span className="text-[11px] font-medium uppercase tracking-[0.4em] text-luxury-gold">
+                EXPLORE
+              </span>
+
+              <span className="h-px w-12 bg-[#c9a43a]" />
+
             </div>
+
+
+            <h2 className="font-serif text-4xl font-normal md:text-5xl">
+              Choose Your{" "}
+              <span className="text-gold-300">
+                Opportunity
+              </span>
+            </h2>
+
+            <div className="mx-auto mt-6 h-[2px] w-12 bg-[#c9a43a]" />
+
+          </motion.div>
+
+
+          {/* Cards */}
+          <div className="grid gap-7 md:grid-cols-3">
+
+            {franchiseOptions.map((item, index) => (
+
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 45 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.7,
+                  delay: index * 0.15,
+                  ease: "easeOut",
+                }}
+                whileHover={{ y: -8 }}
+              >
+
+                <Link
+                  to={item.link}
+                  className="group block overflow-hidden bg-white shadow-[0_10px_40px_rgba(0,0,0,0.08)]"
+                >
+
+                  {/* Image */}
+                  <div className="relative h-[260px] overflow-hidden">
+
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+
+                    {/* Image Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+
+                    {/* Gold Circle */}
+                    <div className="absolute bottom-[-25px] left-1/2 flex h-14 w-14 -translate-x-1/2 items-center justify-center rounded-full border-4 border-white bg-[#c9a43a] text-white shadow-lg">
+
+                      <span className="text-lg">
+                        ✦
+                      </span>
+
+                    </div>
+
+                  </div>
+
+
+                  {/* Card Content */}
+                  <div className="px-7 pb-8 pt-10 text-center">
+
+                    <h3 className="font-serif text-xl text-gold-300">
+                      {item.title}
+                    </h3>
+
+                    <p className="mx-auto mt-5 max-w-sm text-sm leading-7 text-neutral-600">
+                      {item.description}
+                    </p>
+
+
+                    {/* Link */}
+                    <div className="mt-7 inline-flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-gold-300">
+
+                      <span>
+                        Explore
+                      </span>
+
+                      <motion.span
+                        initial={{ x: 0 }}
+                        whileHover={{ x: 5 }}
+                        className="text-base"
+                      >
+                        →
+                      </motion.span>
+
+                    </div>
+
+                  </div>
+
+                </Link>
+
+              </motion.div>
+
+            ))}
+
           </div>
-        </section>
-      </div>
-    </>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          BOTTOM CTA
+      ===================================================== */}
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="bg-[#0d0d0d] px-6 py-20 text-center"
+      >
+
+        <p className="text-[11px] uppercase tracking-[0.4em]  ">
+          PARTNER WITH NOOH
+        </p>
+
+        <h2 className="mt-5 font-serif text-4xl text-white md:text-5xl">
+          Build Your Business.
+        </h2>
+
+        <p className="mt-3 font-serif text-2xl text-luxury-gold">
+          Grow With NOOH.
+        </p>
+
+      </motion.section>
+
+    </div>
   );
 };
 
