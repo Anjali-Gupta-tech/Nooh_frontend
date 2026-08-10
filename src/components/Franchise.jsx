@@ -23,7 +23,7 @@ const Franchise = () => {
       description:
         "Learn product knowledge, installation, estimation, sales and project execution through professional training.",
       image: "/franchaise-hero/training.png",
-      link: "/franchaise-hero/training",
+      link: "/franchaise/training",
     },
   ];
 
