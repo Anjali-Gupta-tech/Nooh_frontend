@@ -15,17 +15,17 @@ const Dealership = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
 
-          <img
-            src="/franchaise-hero/dealership.png"
-            alt="NOOH Dealership Program"
-            className="h-full w-full object-cover"
-          />
+         <img
+  src="/franchaise-hero/dealership-hero.png"
+  alt="NOOH Dealership Program"
+  className="h-full w-full object-cover"
+/>
 
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/65" />
+          <div className="absolute inset-0 bg-black/10" />
 
           {/* Soft Gradient */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/45 to-black/20" />
+          <div className="absolute inset-0 " />
 
         </div>
 
@@ -37,76 +37,6 @@ const Dealership = () => {
         {/* =================================================
             STATIC HERO CONTENT
         ================================================= */}
-
-        <div className="relative z-10 flex min-h-[600px] items-center justify-center px-6 text-center">
-
-          <div className="mx-auto max-w-5xl">
-
-            {/* Small Label */}
-            <p className="mb-6 text-[11px] font-medium uppercase tracking-[0.45em] text-luxury-gold">
-              NOOH ELEVATED LIVING LLP
-            </p>
-
-
-            {/* Main Heading */}
-            <h1 className="font-luxury text-5xl font-bold leading-[1.05] tracking-tight text-white md:text-7xl lg:text-[78px]">
-              Dealership{" "}
-              <span className="text-gold-300">
-                Program
-              </span>
-            </h1>
-
-
-            {/* Gold Line */}
-            <div className="mx-auto mt-8 h-[1px] w-[70px] bg-[#d6af45]" />
-
-
-            {/* Tagline */}
-            <h2 className="mt-7 font-luxury text-2xl font-bold text-white md:text-3xl">
-              One City. One Dealership.
-            </h2>
-
-
-            {/* Description */}
-            <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 tracking-wide text-white/75 md:text-base">
-              Build your own NOOH business with premium products,
-              professional training and dedicated business support.
-            </p>
-
-
-            {/* Buttons */}
-            <div className="mt-9 flex flex-wrap justify-center gap-4">
-
-              {/* Investment */}
-              <a
-                href="#investment"
-                className="group inline-flex items-center gap-3 bg-[#d6af45] px-7 py-4 text-[11px] font-bold uppercase tracking-[0.2em] text-black transition-all duration-300 hover:bg-[#c9a43a]"
-              >
-                Explore Investment
-
-                <span className="transition-transform duration-300 group-hover:translate-x-1">
-                  →
-                </span>
-              </a>
-
-
-              {/* How To Join */}
-              <a
-                href="#how-to-join"
-                className="group inline-flex items-center gap-3 border border-luxury-gold/50 px-7 py-4 text-[11px] font-bold uppercase tracking-[0.2em] text-white transition-all duration-300 hover:bg-luxury-gold hover:text-black"
-              >
-                How To Join
-
-                <span className="transition-transform duration-300 group-hover:translate-x-1">
-                  →
-                </span>
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
 
       </section>
 
@@ -191,7 +121,331 @@ const Dealership = () => {
 
       </section>
 
+    {/* =====================================================
+          INVESTMENT SECTION
+      ===================================================== */}
 
+      <section
+        id="investment"
+        className="section-padding bg-luxury-black"
+      >
+
+        <div className="container-custom mx-auto">
+
+          {/* =================================================
+              SECTION HEADING
+          ================================================= */}
+
+          <motion.div
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="mb-14 text-center"
+          >
+
+            <div className="mb-5 flex items-center justify-center gap-4">
+
+              <span className="h-px w-12 bg-luxury-gold/60" />
+
+              <span className="text-[11px] font-bold uppercase tracking-[0.4em] text-luxury-gold">
+                INVESTMENT
+              </span>
+
+              <span className="h-px w-12 bg-luxury-gold/60" />
+
+            </div>
+
+
+            <h2 className="font-luxury text-4xl font-bold md:text-5xl">
+              Start Your{" "}
+              <span className="text-gold-300">
+                NOOH Business
+              </span>
+            </h2>
+
+
+            <div className="mx-auto mt-6 h-[2px] w-12 bg-luxury-gold" />
+
+
+            <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/65 md:text-base">
+              A complete dealership package designed to help you
+              start your NOOH business with the essential resources
+              required to get started.
+            </p>
+
+          </motion.div>
+
+
+          {/* =================================================
+              MAIN INVESTMENT CARD
+          ================================================= */}
+
+          <motion.div
+            initial={{ opacity: 0, y: 35 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="glass-gold overflow-hidden"
+          >
+
+            <div className="grid lg:grid-cols-2">
+
+
+              {/* =================================================
+                  LEFT — TOTAL INVESTMENT
+              ================================================= */}
+
+              <div className="flex flex-col items-center justify-center border-b border-luxury-gold/20 p-10 text-center lg:border-b-0 lg:border-r">
+
+                <span className="text-[11px] font-bold uppercase tracking-[0.35em] text-luxury-gold">
+                  TOTAL INVESTMENT
+                </span>
+
+
+                <div className="mt-6">
+
+                  <span className="font-luxury text-5xl font-bold text-white md:text-6xl">
+                    ₹1,00,000
+                  </span>
+
+                  <span className="ml-2 text-xl font-bold text-gold-300">
+                    + GST
+                  </span>
+
+                </div>
+
+
+                <div className="mx-auto mt-7 h-[2px] w-16 bg-luxury-gold" />
+
+
+                <p className="mt-6 max-w-md text-sm leading-7 text-white/60">
+                  The dealership program requires a one-time
+                  investment of ₹1,00,000 + GST.
+                </p>
+
+              </div>
+
+
+              {/* =================================================
+                  RIGHT — PACKAGE BREAKDOWN
+              ================================================= */}
+
+              <div className="grid md:grid-cols-4">
+
+                {/* Raw Material */}
+                <motion.div
+                  whileHover={{ y: -4 }}
+                  className="border-b border-luxury-gold/15 p-8 text-center transition-all duration-300 md:border-b-0 md:border-r"
+                >
+
+                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-luxury-gold/40 text-lg text-luxury-gold">
+                    ◈
+                  </div>
+
+
+                  <p className="mt-6 font-luxury text-2xl font-bold text-white">
+                    ₹50,000
+                  </p>
+
+
+                  <h3 className="mt-3 font-luxury text-sm font-bold uppercase tracking-[0.15em] text-gold-300">
+                    Raw Material
+                  </h3>
+
+
+                  <p className="mt-4 text-sm leading-6 text-white/55">
+                    Initial raw material included as part of the
+                    dealership package.
+                  </p>
+
+                </motion.div>
+
+
+                {/* Tool Kit */}
+                <motion.div
+                  whileHover={{ y: -4 }}
+                  className="border-b border-luxury-gold/15 p-8 text-center transition-all duration-300 md:border-b-0 md:border-r"
+                >
+
+                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-luxury-gold/40 text-lg text-luxury-gold">
+                    ⚒
+                  </div>
+
+
+                  <p className="mt-6 font-luxury text-2xl font-bold text-white">
+                    ₹25,000
+                  </p>
+
+
+                  <h3 className="mt-3 font-luxury text-sm font-bold uppercase tracking-[0.15em] text-gold-300">
+                    Tool Kit
+                  </h3>
+
+
+                  <p className="mt-4 text-sm leading-6 text-white/55">
+                    Professional tool kit included to support
+                    dealership operations.
+                  </p>
+
+                </motion.div>
+
+
+                {/* Display Kit */}
+                <motion.div
+                  whileHover={{ y: -4 }}
+                  className="p-8 text-center transition-all duration-300"
+                >
+
+                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-luxury-gold/40 text-lg text-luxury-gold">
+                    ▣
+                  </div>
+
+
+                  <p className="mt-6 font-luxury text-2xl font-bold text-white">
+                    ₹5,000
+                  </p>
+
+
+                  <h3 className="mt-3 font-luxury text-sm font-bold uppercase tracking-[0.15em] text-gold-300">
+                    Display Kit
+                  </h3>
+
+
+                  <p className="mt-4 text-sm leading-6 text-white/55">
+                    Display kit included to help showcase NOOH
+                    products professionally.
+                  </p>
+
+                </motion.div>
+{/* bussiness installation  */}
+<motion.div
+  whileHover={{ y: -4 }}
+  className="p-8 text-center transition-all duration-300"
+>
+  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-luxury-gold/40 text-lg text-luxury-gold">
+    ◈
+  </div>
+
+  <p className="mt-6 font-luxury text-2xl font-bold text-white">
+    ₹20,000
+  </p>
+
+  <h3 className="mt-3 font-luxury text-sm font-bold uppercase tracking-[0.15em] text-gold-300">
+    Business & Installation Training
+  </h3>
+
+  <p className="mt-4 text-sm leading-6 text-white/55">
+    Complete business setup guidance along with professional training.
+  </p>
+</motion.div>
+              </div>
+
+            </div>
+
+          </motion.div>
+
+
+          {/* =================================================
+              INVESTMENT NOTE
+          ================================================= */}
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="mt-5 text-center"
+          >
+
+            <p className="text-[11px] tracking-wide text-white/40">
+              Investment: ₹1,00,000 + GST
+            </p>
+
+          </motion.div>
+
+
+          {/* =================================================
+              PACKAGE HIGHLIGHTS
+          ================================================= */}
+
+          <div className="mt-14 grid gap-5 md:grid-cols-4">
+
+            {[
+              {
+                number: "01",
+                title: "RAW MATERIAL",
+                text: "₹50,000",
+              },
+              {
+                number: "02",
+                title: "TOOL KIT",
+                text: "₹25,000",
+              },
+              {
+                number: "03",
+                title: "DISPLAY KIT",
+                text: "₹5,000",
+              },
+                {
+                number: "04",
+                title: "Bussiness and Installation Training",
+                text: "₹20,000",
+              },
+            ].map((item, index) => (
+
+              <motion.div
+                key={item.number}
+                initial={{
+                  opacity: 0,
+                  y: 25,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                viewport={{
+                  once: true,
+                }}
+                transition={{
+                  duration: 0.6,
+                  delay: index * 0.1,
+                }}
+                whileHover={{
+                  y: -5,
+                }}
+                className="glass-gold p-7"
+              >
+
+                <div className="flex items-center justify-between">
+
+                  <span className="font-luxury text-3xl font-bold text-luxury-gold/40">
+                    {item.number}
+                  </span>
+
+                  <span className="h-px w-10 bg-luxury-gold/50" />
+
+                </div>
+
+
+                <h3 className="mt-6 font-luxury text-sm font-bold tracking-[0.18em] text-gold-300">
+                  {item.title}
+                </h3>
+
+
+                <p className="mt-3 font-luxury text-2xl font-bold text-white">
+                  {item.text}
+                </p>
+
+              </motion.div>
+
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
       {/* =====================================================
           WHY PARTNER WITH NOOH
       ===================================================== */}
@@ -325,306 +579,7 @@ const Dealership = () => {
         </div>
 
       </section>
-            {/* =====================================================
-          INVESTMENT SECTION
-      ===================================================== */}
-
-      <section
-        id="investment"
-        className="section-padding bg-luxury-black"
-      >
-
-        <div className="container-custom mx-auto">
-
-          {/* =================================================
-              SECTION HEADING
-          ================================================= */}
-
-          <motion.div
-            initial={{ opacity: 0, y: 25 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="mb-14 text-center"
-          >
-
-            <div className="mb-5 flex items-center justify-center gap-4">
-
-              <span className="h-px w-12 bg-luxury-gold/60" />
-
-              <span className="text-[11px] font-bold uppercase tracking-[0.4em] text-luxury-gold">
-                INVESTMENT
-              </span>
-
-              <span className="h-px w-12 bg-luxury-gold/60" />
-
-            </div>
-
-
-            <h2 className="font-luxury text-4xl font-bold md:text-5xl">
-              Start Your{" "}
-              <span className="text-gold-300">
-                NOOH Business
-              </span>
-            </h2>
-
-
-            <div className="mx-auto mt-6 h-[2px] w-12 bg-luxury-gold" />
-
-
-            <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/65 md:text-base">
-              A complete dealership package designed to help you
-              start your NOOH business with the essential resources
-              required to get started.
-            </p>
-
-          </motion.div>
-
-
-          {/* =================================================
-              MAIN INVESTMENT CARD
-          ================================================= */}
-
-          <motion.div
-            initial={{ opacity: 0, y: 35 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="glass-gold overflow-hidden"
-          >
-
-            <div className="grid lg:grid-cols-2">
-
-
-              {/* =================================================
-                  LEFT — TOTAL INVESTMENT
-              ================================================= */}
-
-              <div className="flex flex-col items-center justify-center border-b border-luxury-gold/20 p-10 text-center lg:border-b-0 lg:border-r">
-
-                <span className="text-[11px] font-bold uppercase tracking-[0.35em] text-luxury-gold">
-                  TOTAL INVESTMENT
-                </span>
-
-
-                <div className="mt-6">
-
-                  <span className="font-luxury text-5xl font-bold text-white md:text-6xl">
-                    ₹1,00,000
-                  </span>
-
-                  <span className="ml-2 text-xl font-bold text-gold-300">
-                    + GST
-                  </span>
-
-                </div>
-
-
-                <div className="mx-auto mt-7 h-[2px] w-16 bg-luxury-gold" />
-
-
-                <p className="mt-6 max-w-md text-sm leading-7 text-white/60">
-                  The dealership program requires a one-time
-                  investment of ₹1,00,000 + GST.
-                </p>
-
-              </div>
-
-
-              {/* =================================================
-                  RIGHT — PACKAGE BREAKDOWN
-              ================================================= */}
-
-              <div className="grid md:grid-cols-3">
-
-                {/* Raw Material */}
-                <motion.div
-                  whileHover={{ y: -4 }}
-                  className="border-b border-luxury-gold/15 p-8 text-center transition-all duration-300 md:border-b-0 md:border-r"
-                >
-
-                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-luxury-gold/40 text-lg text-luxury-gold">
-                    ◈
-                  </div>
-
-
-                  <p className="mt-6 font-luxury text-2xl font-bold text-white">
-                    ₹50,000
-                  </p>
-
-
-                  <h3 className="mt-3 font-luxury text-sm font-bold uppercase tracking-[0.15em] text-gold-300">
-                    Raw Material
-                  </h3>
-
-
-                  <p className="mt-4 text-sm leading-6 text-white/55">
-                    Initial raw material included as part of the
-                    dealership package.
-                  </p>
-
-                </motion.div>
-
-
-                {/* Tool Kit */}
-                <motion.div
-                  whileHover={{ y: -4 }}
-                  className="border-b border-luxury-gold/15 p-8 text-center transition-all duration-300 md:border-b-0 md:border-r"
-                >
-
-                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-luxury-gold/40 text-lg text-luxury-gold">
-                    ⚒
-                  </div>
-
-
-                  <p className="mt-6 font-luxury text-2xl font-bold text-white">
-                    ₹25,000
-                  </p>
-
-
-                  <h3 className="mt-3 font-luxury text-sm font-bold uppercase tracking-[0.15em] text-gold-300">
-                    Tool Kit
-                  </h3>
-
-
-                  <p className="mt-4 text-sm leading-6 text-white/55">
-                    Professional tool kit included to support
-                    dealership operations.
-                  </p>
-
-                </motion.div>
-
-
-                {/* Display Kit */}
-                <motion.div
-                  whileHover={{ y: -4 }}
-                  className="p-8 text-center transition-all duration-300"
-                >
-
-                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full border border-luxury-gold/40 text-lg text-luxury-gold">
-                    ▣
-                  </div>
-
-
-                  <p className="mt-6 font-luxury text-2xl font-bold text-white">
-                    ₹5,000
-                  </p>
-
-
-                  <h3 className="mt-3 font-luxury text-sm font-bold uppercase tracking-[0.15em] text-gold-300">
-                    Display Kit
-                  </h3>
-
-
-                  <p className="mt-4 text-sm leading-6 text-white/55">
-                    Display kit included to help showcase NOOH
-                    products professionally.
-                  </p>
-
-                </motion.div>
-
-              </div>
-
-            </div>
-
-          </motion.div>
-
-
-          {/* =================================================
-              INVESTMENT NOTE
-          ================================================= */}
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="mt-5 text-center"
-          >
-
-            <p className="text-[11px] tracking-wide text-white/40">
-              Investment: ₹1,00,000 + GST
-            </p>
-
-          </motion.div>
-
-
-          {/* =================================================
-              PACKAGE HIGHLIGHTS
-          ================================================= */}
-
-          <div className="mt-14 grid gap-5 md:grid-cols-3">
-
-            {[
-              {
-                number: "01",
-                title: "RAW MATERIAL",
-                text: "₹50,000",
-              },
-              {
-                number: "02",
-                title: "TOOL KIT",
-                text: "₹25,000",
-              },
-              {
-                number: "03",
-                title: "DISPLAY KIT",
-                text: "₹5,000",
-              },
-            ].map((item, index) => (
-
-              <motion.div
-                key={item.number}
-                initial={{
-                  opacity: 0,
-                  y: 25,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                }}
-                viewport={{
-                  once: true,
-                }}
-                transition={{
-                  duration: 0.6,
-                  delay: index * 0.1,
-                }}
-                whileHover={{
-                  y: -5,
-                }}
-                className="glass-gold p-7"
-              >
-
-                <div className="flex items-center justify-between">
-
-                  <span className="font-luxury text-3xl font-bold text-luxury-gold/40">
-                    {item.number}
-                  </span>
-
-                  <span className="h-px w-10 bg-luxury-gold/50" />
-
-                </div>
-
-
-                <h3 className="mt-6 font-luxury text-sm font-bold tracking-[0.18em] text-gold-300">
-                  {item.title}
-                </h3>
-
-
-                <p className="mt-3 font-luxury text-2xl font-bold text-white">
-                  {item.text}
-                </p>
-
-              </motion.div>
-
-            ))}
-
-          </div>
-
-        </div>
-
-      </section>
+        
             {/* =====================================================
           WHAT YOU GET
       ===================================================== */}
