@@ -59,6 +59,7 @@ import MuralLiving from './pages/Servicesnewpages/MuralLiving';
 import Dealership from './pages/franchise/Dealership';
 import Associate from './pages/franchise/Associate';
 import DealerForm from './pages/franchise/Dealerform';
+import AssociateForm from './pages/franchise/Associateform';
 
 function App() {
 
@@ -136,6 +137,7 @@ function App() {
     {/* franchise */}
     <Route path="/franchise/dealership" element={<Dealership/>}/>
     <Route path="/franchise/dealershipform" element={<DealerForm/>}/>
+    <Route path="/franchise/associateform" element={<AssociateForm/>}/>
 
     <Route path="/franchise/associate" element={<Associate/>}/>
           </Routes>

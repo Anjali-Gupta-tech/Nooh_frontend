@@ -1680,7 +1680,7 @@ const Associate = () => {
             <div className="mt-9 flex flex-wrap justify-center gap-4">
 
               <Link
-                to="/contact"
+                to="/franchise/associate"
                 className="group inline-flex items-center gap-3 bg-[#d6af45] px-8 py-4 text-[11px] font-bold uppercase tracking-[0.2em] text-black transition-all duration-300 hover:bg-[#c9a43a]"
               >
                 Become An Associate

@@ -40,86 +40,22 @@ const Franchise = () => {
         <div className="absolute inset-0">
 
           <img
-            src="/franchaise-hero/franchaise-hero.png"
+            src="/image/STRETCH-CEILING-BUSINESS-DEALERSHIP.png"
             alt="NOOH Luxury Interior"
             className="h-full w-full object-cover"
           />
 
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/65" />
+          <div className="absolute inset-0 bg-black/20" />
 
           {/* Premium Gradient */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/20" />
+          <div className="absolute inset-0 " />
 
         </div>
 
 
         {/* Hero Content */}
-        <div className="relative z-10 flex min-h-[560px] items-center justify-center px-6 text-center">
-
-          <div className="mx-auto max-w-5xl">
-
-            {/* Small Label */}
-            <motion.p
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.6,
-                delay: 0.1,
-              }}
-              className="mb-6 text-[11px] font-medium uppercase tracking-[0.45em] text-luxury-gold"
-            >
-              NOOH ELEVATED LIVING LLP
-            </motion.p>
-
-
-            {/* Main Heading */}
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.8,
-                delay: 0.2,
-              }}
-              className="font-luxury text-5xl font-bold leading-[1.05] tracking-tight text-white md:text-7xl lg:text-[78px]"
-            >
-              Franchise &{" "}
-              <span className="text-gold-300">
-                Business Opportunities
-              </span>
-            </motion.h1>
-
-
-            {/* Gold Line */}
-            <motion.div
-              initial={{ width: 0 }}
-              animate={{ width: 70 }}
-              transition={{
-                duration: 0.7,
-                delay: 0.5,
-              }}
-              className="mx-auto mt-8 h-[1px] bg-[#d6af45]"
-            />
-
-
-            {/* Description */}
-            <motion.p
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.7,
-                delay: 0.6,
-              }}
-              className="mx-auto mt-7 max-w-2xl text-sm font-light leading-7 tracking-wide text-white/75 md:text-base"
-            >
-              Join one of India's growing luxury interior brands and build
-              your premium interior business with innovative ceiling
-              solutions, professional training and trusted support.
-            </motion.p>
-
-          </div>
-
-        </div>
+       
 
 
         {/* Gold Bottom Divider */}
