@@ -38,12 +38,11 @@ const Franchise = () => {
 
         {/* Background Image */}
         <div className="absolute inset-0">
-
-          <img
-            src="/image/STRETCH-CEILING-BUSSINESS-DEALERSHIP.png"
-            alt="NOOH Luxury Interior"
-            className="h-full w-full object-cover"
-          />
+<img
+  src="/image/STRETCH-CEILING-BUSSINESS-DEALERSHIP.png"
+  alt="NOOH Luxury Interior"
+  className="h-full w-full object-cover object-bottom"
+/>
 
           {/* Dark Overlay */}
           <div className="absolute inset-0 bg-black/20" />
