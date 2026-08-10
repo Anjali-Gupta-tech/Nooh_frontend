@@ -58,6 +58,7 @@ import FiberskyTwinkling from './pages/Servicesnewpages/FiberskyTwinkling';
 import MuralLiving from './pages/Servicesnewpages/MuralLiving';
 import Dealership from './pages/franchise/Dealership';
 import Associate from './pages/franchise/Associate';
+import DealerForm from './pages/franchise/Dealerform';
 
 function App() {
 
@@ -134,6 +135,8 @@ function App() {
     <Route path="/products/wallmural/living" element={<MuralLiving/>} />
     {/* franchise */}
     <Route path="/franchise/dealership" element={<Dealership/>}/>
+    <Route path="/franchise/dealershipform" element={<DealerForm/>}/>
+
     <Route path="/franchise/associate" element={<Associate/>}/>
           </Routes>
           <Footer />
