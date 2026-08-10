@@ -56,6 +56,8 @@ import FiberskyGalaxy from './pages/Servicesnewpages/FiberskyGalaxy';
 import FiberskyRgb from './pages/Servicesnewpages/FiberskyRgb';
 import FiberskyTwinkling from './pages/Servicesnewpages/FiberskyTwinkling';
 import MuralLiving from './pages/Servicesnewpages/MuralLiving';
+import Dealership from './pages/franchise/Dealership';
+import Associate from './pages/franchise/Associate';
 
 function App() {
 
@@ -130,6 +132,9 @@ function App() {
     <Route path="/products/fiber-optic/rgb-star" element={<FiberskyRgb/>} />
     <Route path="/products/fiber-optic/twinkling-star" element={<FiberskyTwinkling/>} />
     <Route path="/products/wallmural/living" element={<MuralLiving/>} />
+    {/* franchise */}
+    <Route path="/franchise/dealership" element={<Dealership/>}/>
+    <Route path="/franchise/associate" element={<Associate/>}/>
           </Routes>
           <Footer />
        
