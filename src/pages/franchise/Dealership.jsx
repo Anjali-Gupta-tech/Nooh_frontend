@@ -18,7 +18,7 @@ const Dealership = () => {
          <img
   src="/franchaise-hero/dealership-hero.png"
   alt="NOOH Dealership Program"
-  className="h-full w-full object-cover mt-2"
+  className="h-full w-full object-cover mt-4 mb-4"
 />
 
           {/* Dark Overlay */}
