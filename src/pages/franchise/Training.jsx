@@ -116,7 +116,7 @@ const Training = () => {
           />
 
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-black/20" />
 
           {/* Premium Gradient */}
           <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/20" />

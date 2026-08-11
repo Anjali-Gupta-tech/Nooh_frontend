@@ -1,232 +1,346 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from "react-router-dom";
+import { useEffect } from 'react';
 
 import PremiumCatalogueButton from "../components/PremiumCatalogueButton";
 
 const Services = () => {
+    const location = useLocation();
   const services = [
-    {
-   title: (
-  <>
-    STRETCHE<sup>™</sup> Stretch Ceiling Specialist  by NOOH
-  </>
-),
-   subheading: 'Premium Architectural Stretch Ceiling Systems',
-    description:(
-    <>
-    STRETCH<sup>™</sup> by NOOH is a premium, lightweight and seamless ceiling system designed to transform ordinary ceilings into modern architectural features. Its flexible membrane offers fast installation, easy maintenance and exceptional design freedom for residential and commercial interiors.,
-    </>
-  ),
-  categories: [
-    {
-      title: (
-        <>
-          STRETCHE<sup>™</sup>  TRANSLUCENT
-        </>
-      ),
-      subtitle: 'Translucent & Illuminated Ceiling',
-      link: '/products/stretch-ceiling/translucent',
-    },
-    {
-      title: (
-        <>
-          STRETCHE<sup>™</sup> PRINT
-        </>
-      ),
-      subtitle: 'Customized Printed Stretch Ceiling',
-      link: '/products/stretch-ceiling/print',
-    
-    },
-    {
-      title: (
-        <>
-          STRETCHE<sup>™</sup> GLOSS
-        </>
-      ),
-      subtitle: 'High-Gloss Reflective Ceiling',
-      link: '/products/stretch-ceiling/gloss',
-    },
-    {
-  title: (
-    <>
-      STRETCHE<sup>™</sup> PANEL
-    </>
-  ),
-  subtitle: 'Premium Decorative Ceiling Panel',
-  link: '/products/stretch-ceiling/panel',
-},
-  ],
-
-  image: '/images/Stretch-Ceiling.jpeg',
-  pdf: '/catalogue/STRETCHE_TM_STRETCH_CEILING_PANEL.pdf',
-},
   {
-  title: (
-    <>
-      FIBERSKY<sup>™</sup> Fiber Optic Star Ceiling
-    </>
-  ),
+    id: "stretch-ceiling",
 
-  subheading: "Premium Fiber Optic Star Ceiling Systems",
+    title: (
+      <>
+        STRETCHE<sup>™</sup> Stretch Ceiling Specialist by NOOH
+      </>
+    ),
 
-  description: (
-    <>
-      STRETCHE<sup>™</sup> Fiber Optic Star Ceiling by NOOH creates stunning
-      starry sky effects using advanced fiber optic lighting technology.
-      Designed for luxury homes, hotels, cinemas, spas, and commercial spaces,
-      it delivers a magical ambiance with customizable star patterns, shooting
-      stars, and dynamic lighting effects.
-    </>
-  ),
+    subheading: "Premium Architectural Stretch Ceiling Systems",
 
-  categories: [
-    {
-      title: (
-        <>
-          FIBERSKY<sup>™</sup> STATIC 
-        </>
-      ),
-      subtitle: "Realistic Starry Night Ceiling",
-      link: "/products/fiber-optic/star-sky",
-    },
-    {
-      title: (
-        <>
-          FIBERSKY<sup>™</sup> TWINKLE
-        </>
-      ),
-      subtitle: "Dynamic Twinkling Star Ceiling",
-      link: "/products/fiber-optic/twinkling-star",
-    },
-    {
-      title: (
-        <>
-          FIBERSKY<sup>™</sup> RGB
-        </>
-      ),
-      subtitle: "Color-Changing RGB Star Ceiling",
-      link: "/products/fiber-optic/rgb-star",
-    },
-    {
-      title: (
-        <>
-        FIBERSKY<sup>™</sup> GALAXY PRO
-        </>
-      ),
-      subtitle: "Milky Way & Galaxy Ceiling",
-      link: "/products/fiber-optic/galaxy-star",
-    },
-  ],
+    description: (
+      <>
+        STRETCH<sup>™</sup> by NOOH is a premium, lightweight and seamless
+        ceiling system designed to transform ordinary ceilings into modern
+        architectural features. Its flexible membrane offers fast installation,
+        easy maintenance and exceptional design freedom for residential and
+        commercial interiors.
+      </>
+    ),
 
-  image: "/images/FIBER-OPTIC-NOOH.webp",
-  pdf:"/catalogue/fiber-optic-star-lights.pdf"
-},
-      
-{
-  title: (
-    <>
-      NOOH MURAL PANEL<sup>™</sup>
-    </>
-  ),
+    categories: [
+      {
+        title: (
+          <>
+            STRETCHE<sup>™</sup> TRANSLUCENT
+          </>
+        ),
+        subtitle: "Translucent & Illuminated Ceiling",
+        link: "/products/stretch-ceiling/translucent",
+      },
 
-  subheading: "Custom Architectural Mural with Panel —Tailored to Your Vision",
+      {
+        title: (
+          <>
+            STRETCHE<sup>™</sup> PRINT
+          </>
+        ),
+        subtitle: "Customized Printed Stretch Ceiling",
+        link: "/products/stretch-ceiling/print",
+      },
 
-  description: (
-    <>
-      NOOH MURAL PANEL<sup>™</sup> transforms ordinary walls into extraordinary
-      architectural masterpieces through fully customized HDMR wall panels,
-      precision CNC cutting, handcrafted detailing, premium decorative
-      finishes, and high-resolution UV-printed artwork. Designed for luxury
-      residential and commercial interiors, every wall mural is tailored to
-      your vision with unlimited possibilities in design, texture, color,
-      lighting, and artistic expression.
-    </>
-  ),
+      {
+        title: (
+          <>
+            STRETCHE<sup>™</sup> GLOSS
+          </>
+        ),
+        subtitle: "High-Gloss Reflective Ceiling",
+        link: "/products/stretch-ceiling/gloss",
+      },
 
-  categories: [
-    {
-      title: (
-        <>
-          WALLMURAL<sup>™</sup> LIVING
-        </>
-      ),
-      subtitle: "Luxury Living Room Wall Collection",
-      link: "/products/wallmural/living",
-    },
-    {
-      title: (
-        <>
-          WALLMURAL<sup>™</sup> KITCHEN
-        </>
-      ),
-      subtitle: "Designer Kitchen Wall Collection",
-      link: "/products/wallmural/kitchen",
-    },
-    {
-      title: (
-        <>
-          WALLMURAL<sup>™</sup> DRAWING ROOM
-        </>
-      ),
-      subtitle: "Elegant Reception & Drawing Room Collection",
-      link: "/products/wallmural/drawing-room",
-    },
-    {
-      title: (
-        <>
-          WALLMURAL<sup>™</sup> HIGHLIGHT
-        </>
-      ),
-      subtitle: "Feature Wall & Statement Collection",
-      link: "/products/wallmural/highlight",
-    },
-  ],
+      {
+        title: (
+          <>
+            STRETCHE<sup>™</sup> PANEL
+          </>
+        ),
+        subtitle: "Premium Decorative Ceiling Panel",
+        link: "/products/stretch-ceiling/panel",
+      },
+    ],
 
-  image: "/images/wallpaper.png",
+    image: "/images/Stretch-Ceiling.jpeg",
 
-  pdf: "/catalogue/NOOH_ CUSTOM_ARCHITECTURAL WALL PANNEL.pdf",
-},
-  
-    {
-      title: 'LED Backlit Ceiling & Wall Panels',
-      description: 'Innovative LED lighting solutions including our NOOH SKYLUME™ artificial daylight systems.',
-      features: ['Virtual Sky Ceiling', 'RGBW Systems', 'Tunable White', 'Energy Efficient'],
-      image: '/images/led-backlit.png',
-      pdf: 'led-backlit-ceiling-wall-panels.pdf'
-    },
-    {
-      title: 'Luxury Interior Design',
-      description: 'Complete interior design solutions tailored to your lifestyle and preferences.',
-      features: ['3D Visualization', 'Space Planning', 'Custom Furniture', 'Turnkey Execution'],
+    pdf: "/catalogue/STRETCHE_TM_STRETCH_CEILING_PANEL.pdf",
+  },
 
-      image: '/image/laxury.jpg',
-      pdf: 'luxury-interior-design.pdf'
-    },
-    {
-      title: 'Modular Kitchen',
-      description: 'Functional and stylish modular kitchens designed to maximize space and efficiency.',
-      features: ['Custom Layouts', 'Premium Hardware', 'Smart Storage', 'Modern Finishes'],
-      image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=2068',
-      pdf: 'modular-kitchen.pdf'
-    },
-    {
-      title: 'Luxury Furniture',
-      description: 'Bespoke luxury furniture pieces that combine comfort, style, and craftsmanship.',
-      features: ['Custom Design', 'Premium Materials', 'Expert Craftsmanship', 'Unique Pieces'],
-      image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=2070',
-      pdf: 'luxury-furniture.pdf'
-    },
-    {
-      title: 'Turnkey Construction',
-      description: 'End-to-end project management from concept to completion for residential and commercial spaces.',
-      features: ['Complete Project Management', 'Quality Assurance', 'Timely Delivery', 'Post-Delivery Support'],
-      image: '/image/tumkey-img.png',
-      pdf: 'turnkey-construction.pdf'
-    },
-  ];
 
+  {
+    id: "fiber-optic",
+
+    title: (
+      <>
+        FIBERSKY<sup>™</sup> Fiber Optic Star Ceiling
+      </>
+    ),
+
+    subheading: "Premium Fiber Optic Star Ceiling Systems",
+
+    description: (
+      <>
+        STRETCHE<sup>™</sup> Fiber Optic Star Ceiling by NOOH creates stunning
+        starry sky effects using advanced fiber optic lighting technology.
+        Designed for luxury homes, hotels, cinemas, spas, and commercial spaces,
+        it delivers a magical ambiance with customizable star patterns,
+        shooting stars, and dynamic lighting effects.
+      </>
+    ),
+
+    categories: [
+      {
+        title: (
+          <>
+            FIBERSKY<sup>™</sup> STATIC
+          </>
+        ),
+        subtitle: "Realistic Starry Night Ceiling",
+        link: "/products/fiber-optic/star-sky",
+      },
+
+      {
+        title: (
+          <>
+            FIBERSKY<sup>™</sup> TWINKLE
+          </>
+        ),
+        subtitle: "Dynamic Twinkling Star Ceiling",
+        link: "/products/fiber-optic/twinkling-star",
+      },
+
+      {
+        title: (
+          <>
+            FIBERSKY<sup>™</sup> RGB
+          </>
+        ),
+        subtitle: "Color-Changing RGB Star Ceiling",
+        link: "/products/fiber-optic/rgb-star",
+      },
+
+      {
+        title: (
+          <>
+            FIBERSKY<sup>™</sup> GALAXY PRO
+          </>
+        ),
+        subtitle: "Milky Way & Galaxy Ceiling",
+        link: "/products/fiber-optic/galaxy-star",
+      },
+    ],
+
+    image: "/images/FIBER-OPTIC-NOOH.webp",
+
+    pdf: "/catalogue/fiber-optic-star-lights.pdf",
+  },
+
+
+  {
+    id: "mural-panel",
+
+    title: (
+      <>
+        NOOH MURAL PANEL<sup>™</sup>
+      </>
+    ),
+
+    subheading:
+      "Custom Architectural Mural with Panel — Tailored to Your Vision",
+
+    description: (
+      <>
+        NOOH MURAL PANEL<sup>™</sup> transforms ordinary walls into
+        extraordinary architectural masterpieces through fully customized HDMR
+        wall panels, precision CNC cutting, handcrafted detailing, premium
+        decorative finishes, and high-resolution UV-printed artwork. Designed
+        for luxury residential and commercial interiors, every wall mural is
+        tailored to your vision with unlimited possibilities in design,
+        texture, color, lighting, and artistic expression.
+      </>
+    ),
+
+    categories: [
+      {
+        title: (
+          <>
+            WALLMURAL<sup>™</sup> LIVING
+          </>
+        ),
+        subtitle: "Luxury Living Room Wall Collection",
+        link: "/products/wallmural/living",
+      },
+
+      {
+        title: (
+          <>
+            WALLMURAL<sup>™</sup> KITCHEN
+          </>
+        ),
+        subtitle: "Designer Kitchen Wall Collection",
+        link: "/products/wallmural/kitchen",
+      },
+
+      {
+        title: (
+          <>
+            WALLMURAL<sup>™</sup> DRAWING ROOM
+          </>
+        ),
+        subtitle: "Elegant Reception & Drawing Room Collection",
+        link: "/products/wallmural/drawing-room",
+      },
+
+      {
+        title: (
+          <>
+            WALLMURAL<sup>™</sup> HIGHLIGHT
+          </>
+        ),
+        subtitle: "Feature Wall & Statement Collection",
+        link: "/products/wallmural/highlight",
+      },
+    ],
+
+    image: "/images/wallpaper.png",
+
+    pdf: "/catalogue/NOOH_CUSTOM_ARCHITECTURAL_WALL_PANNEL.pdf",
+  },
+
+
+  {
+    id: "panel-lighting",
+
+    title: "LED Backlit Ceiling & Wall Panels",
+
+    description:
+      "Innovative LED lighting solutions including our NOOH SKYLUME™ artificial daylight systems.",
+
+    features: [
+      "Virtual Sky Ceiling",
+      "RGBW Systems",
+      "Tunable White",
+      "Energy Efficient",
+    ],
+
+    image: "/images/led-backlit.png",
+
+    pdf: "led-backlit-ceiling-wall-panels.pdf",
+  },
+
+
+  {
+    id: "luxury-interior",
+
+    title: "Luxury Interior Design",
+
+    description:
+      "Complete interior design solutions tailored to your lifestyle and preferences.",
+
+    features: [
+      "3D Visualization",
+      "Space Planning",
+      "Custom Furniture",
+      "Turnkey Execution",
+    ],
+
+    image: "/image/laxury.jpg",
+
+    pdf: "luxury-interior-design.pdf",
+  },
+
+
+  {
+    id: "modular-kitchen",
+
+    title: "Modular Kitchen",
+
+    description:
+      "Functional and stylish modular kitchens designed to maximize space and efficiency.",
+
+    features: [
+      "Custom Layouts",
+      "Premium Hardware",
+      "Smart Storage",
+      "Modern Finishes",
+    ],
+
+    image:
+      "https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=2068",
+
+    pdf: "modular-kitchen.pdf",
+  },
+
+
+  {
+    id: "luxury-furniture",
+
+    title: "Luxury Furniture",
+
+    description:
+      "Bespoke luxury furniture pieces that combine comfort, style, and craftsmanship.",
+
+    features: [
+      "Custom Design",
+      "Premium Materials",
+      "Expert Craftsmanship",
+      "Unique Pieces",
+    ],
+
+    image:
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=2070",
+
+    pdf: "luxury-furniture.pdf",
+  },
+
+
+  {
+    id: "turnkey-construction",
+
+    title: "Turnkey Construction",
+
+    description:
+      "End-to-end project management from concept to completion for residential and commercial spaces.",
+
+    features: [
+      "Complete Project Management",
+      "Quality Assurance",
+      "Timely Delivery",
+      "Post-Delivery Support",
+    ],
+
+    image: "/image/tumkey-img.png",
+
+    pdf: "turnkey-construction.pdf",
+  },
+];
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.substring(1);
+
+      setTimeout(() => {
+        const element = document.getElementById(id);
+
+        if (element) {
+          element.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      }, 100);
+    }
+  }, [location.hash]);
   return (
     <>
       <Helmet>
@@ -283,101 +397,143 @@ const Services = () => {
       {services.map((service, index) => (
 
         <motion.div
-          key={index}
+          key={service.id}
+          id={service.id}
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
+          className={`scroll-mt-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
             index % 2 === 1 ? "lg:flex-row-reverse" : ""
           }`}
         >
 
-          {/* LEFT */}
+          {/* =================================================
+              LEFT CONTENT
+          ================================================= */}
 
-         <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-
-  <h2 className="text-3xl md:text-5xl font-luxury font-bold text-white mb-4">
-    {service.title}
-  </h2>
-
-  {service.subheading && (
-    <p className="text-gold-300 text-xl mb-5">
-      {service.subheading}
-    </p>
-  )}
-
-  <p className="text-white/80 text-lg leading-relaxed mb-8">
-    {service.description}
-  </p>
-
-  {service.categories ? (
-
-    <>
-      <h4 className="text-gold-300 uppercase tracking-[3px] text-sm font-semibold mb-6">
-        Product Categories
-      </h4>
-
-      <div className="grid md:grid-cols-2 gap-5">
-
-        {service.categories.map((item, idx) => (
-          <Link
-            key={idx}
-            to={item.link}
-            className="group rounded-2xl border border-gold-300/20 bg-white/[0.03] p-6 hover:border-gold-300 hover:bg-gold-300/10 transition"
+          <div
+            className={
+              index % 2 === 1
+                ? "lg:order-2"
+                : ""
+            }
           >
-            <h3 className="text-xl font-bold text-gold-300">
-              {item.title}
-            </h3>
 
-            <p className="text-white/60 mt-2">
-              {item.subtitle}
+            <h2 className="text-3xl md:text-5xl font-luxury font-bold text-white mb-4">
+              {service.title}
+            </h2>
+
+
+            {service.subheading && (
+              <p className="text-gold-300 text-xl mb-5">
+                {service.subheading}
+              </p>
+            )}
+
+
+            <p className="text-white/80 text-lg leading-relaxed mb-8">
+              {service.description}
             </p>
-          </Link>
-        ))}
 
-      </div>
-    </>
 
-  ) : (
+            {/* =================================================
+                PRODUCT CATEGORIES
+            ================================================= */}
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+            {service.categories ? (
 
-      {service.features?.map((feature, idx) => (
+              <>
 
-        <div
-          key={idx}
-          className="flex items-center space-x-3"
-        >
-          <div className="w-2 h-2 rounded-full bg-luxury-gold" />
+                <h4 className="text-gold-300 uppercase tracking-[3px] text-sm font-semibold mb-6">
+                  Product Categories
+                </h4>
 
-          <span className="text-white/90">
-            {feature}
-          </span>
-        </div>
 
-      ))}
+                <div className="grid md:grid-cols-2 gap-5">
 
-    </div>
+                  {service.categories.map((item, idx) => (
 
-  )}
-   {/*download button*/}
- <div className="mt-10">
+                    <Link
+                      key={idx}
+                      to={item.link}
+                      className="group rounded-2xl border border-gold-300/20 bg-white/[0.03] p-6 hover:border-gold-300 hover:bg-gold-300/10 transition"
+                    >
 
- <div className="mt-10">
-  {service.pdf && (
-    <PremiumCatalogueButton
-      pdf={service.pdf}
-    />
-  )}
-</div>
+                      <h3 className="text-xl font-bold text-gold-300">
+                        {item.title}
+                      </h3>
 
-</div>
-</div>
+                      <p className="text-white/60 mt-2">
+                        {item.subtitle}
+                      </p>
 
-          {/* RIGHT */}
+                    </Link>
 
-          <div className={index % 2 === 1 ? "lg:order-1" : ""}>
+                  ))}
+
+                </div>
+
+              </>
+
+            ) : (
+
+              /* =================================================
+                 FEATURES
+              ================================================= */
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+
+                {service.features?.map((feature, idx) => (
+
+                  <div
+                    key={idx}
+                    className="flex items-center space-x-3"
+                  >
+
+                    <div className="w-2 h-2 rounded-full bg-luxury-gold" />
+
+                    <span className="text-white/90">
+                      {feature}
+                    </span>
+
+                  </div>
+
+                ))}
+
+              </div>
+
+            )}
+
+
+            {/* =================================================
+                DOWNLOAD BUTTON
+            ================================================= */}
+
+            {service.pdf && (
+              <div className="mt-10">
+
+                <PremiumCatalogueButton
+                  pdf={service.pdf}
+                />
+
+              </div>
+            )}
+
+          </div>
+
+
+          {/* =================================================
+              RIGHT IMAGE
+          ================================================= */}
+
+          <div
+            className={
+              index % 2 === 1
+                ? "lg:order-1"
+                : ""
+            }
+          >
 
             <motion.div
               whileHover={{ scale: 1.03 }}
@@ -402,8 +558,7 @@ const Services = () => {
 
   </div>
 
-</section>  
-
+</section>
 
         {/* CTA Section */}
 

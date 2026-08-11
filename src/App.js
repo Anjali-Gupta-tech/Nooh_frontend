@@ -61,6 +61,7 @@ import DealerForm from './pages/franchise/Dealerform';
 import AssociateForm from './pages/franchise/Associateform';
 import Training from './pages/franchise/Training';
 import Trainingform from './pages/franchise/Trainingform';
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
 
@@ -68,6 +69,7 @@ function App() {
     <HelmetProvider>
       <Router>
         <div className="App bg-luxury-black min-h-screen">
+            <ScrollToTop />
           <ScrollProgress />
           <Navbar />
           <Routes>
