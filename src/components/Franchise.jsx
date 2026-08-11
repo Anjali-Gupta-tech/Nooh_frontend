@@ -16,7 +16,7 @@ const Franchise = () => {
       description:
         "Partner with NOOH to offer premium ceiling solutions with complete project and technical support.",
       image: "/franchaise-hero/associate-hero.png",
-      link: "/franchaise-hero/associate",
+      link: "/franchise/associate",
     },
     {
       title: "TRAINING PROGRAM",

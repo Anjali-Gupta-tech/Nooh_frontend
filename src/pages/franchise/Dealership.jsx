@@ -9,22 +9,26 @@ const Dealership = () => {
       {/* =====================================================
           HERO SECTION
       ===================================================== */}
+{/* =====================================================
+    DEALERSHIP HERO SECTION
+===================================================== */}
 
-      <section className="relative min-h-[600px] overflow-hidden">
+
+      <section className="relative min-h-[560px] overflow-hidden">
 
         {/* Background Image */}
         <div className="absolute inset-0">
 
-         <img
-  src="/franchaise-hero/dealership-hero.png"
-  alt="NOOH Dealership Program"
-  className="h-full w-full object-cover mt-4 mb-4"
-/>
+          <img
+            src="/franchaise-hero/dealership-hero.png"
+            alt="NOOH dealer Program"
+            className="h-full w-full object-cover"
+          />
 
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/10" />
+          <div className="absolute inset-0 bg-black/20" />
 
-          {/* Soft Gradient */}
+          {/* Premium Gradient */}
           <div className="absolute inset-0 " />
 
         </div>
@@ -35,91 +39,62 @@ const Dealership = () => {
 
 
         {/* =================================================
-            STATIC HERO CONTENT
+            HERO CONTENT
         ================================================= */}
 
-      </section>
+        <div className="relative z-10 flex min-h-[560px] items-center justify-center px-6 text-center">
 
+          <div className="mx-auto max-w-5xl mt-96">
+            {/* Buttons */}
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: 20,
+              }}
+              animate={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                duration: 0.7,
+                delay: 0.8,
+              }}
+              className="mt-9 flex flex-wrap justify-center gap-4"
+            >
 
-      {/* =====================================================
-          BENEFITS STRIP
-      ===================================================== */}
+              {/* Investment */}
+          <Link
+  to="/franchise/dealershipform"
+  className="group inline-flex items-center gap-3 bg-[#d6af45] px-7 py-4 text-[11px] font-bold uppercase tracking-[0.2em] text-black transition-all duration-300 hover:bg-[#c9a43a]"
+>
+  Become a Dealer
 
-      <section className="section-padding bg-luxury-black">
+  <span className="transition-transform duration-300 group-hover:translate-x-1">
+    →
+  </span>
+</Link>
 
-        <div className="container-custom mx-auto">
-
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-
-            {[
-              {
-                title: "PREMIUM PRODUCTS",
-                description:
-                  "High-quality products with proven market demand.",
-              },
-              {
-                title: "STRONG SUPPORT",
-                description:
-                  "Training, marketing, installation and after-sales support.",
-              },
-              {
-                title: "HIGH RETURNS",
-                description:
-                  "Excellent margins and recurring business opportunities.",
-              },
-              {
-                title: "EXCLUSIVE TERRITORY",
-                description:
-                  "One City. One Dealership — you are the only one.",
-              },
-            ].map((item, index) => (
-
-              <motion.div
-                key={item.title}
-                initial={{
-                  opacity: 0,
-                  y: 30,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                }}
-                viewport={{
-                  once: true,
-                }}
-                transition={{
-                  duration: 0.6,
-                  delay: index * 0.1,
-                }}
-                className="text-center"
+              {/* How It Works */}
+              <a
+                href="#how-it-works"
+                className="group inline-flex items-center gap-3 border border-luxury-gold/50 px-7 py-4 text-[11px] font-bold uppercase tracking-[0.2em] text-white transition-all duration-300 hover:bg-luxury-gold hover:text-black"
               >
+                How It Works
 
-                {/* Icon */}
-                <div className="mx-auto mb-5 flex h-12 w-12 items-center justify-center rounded-full border border-luxury-gold/40 text-luxury-gold">
-                  ✦
-                </div>
+                <span className="transition-transform duration-300 group-hover:translate-x-1">
+                  →
+                </span>
+              </a>
 
-
-                {/* Title */}
-                <h3 className="font-luxury text-sm font-bold tracking-[0.15em] text-gold-300">
-                  {item.title}
-                </h3>
-
-
-                {/* Description */}
-                <p className="mx-auto mt-3 max-w-xs text-sm leading-6 text-white/60">
-                  {item.description}
-                </p>
-
-              </motion.div>
-
-            ))}
+            </motion.div>
 
           </div>
 
         </div>
 
       </section>
+
+     
 
     {/* =====================================================
           INVESTMENT SECTION
@@ -144,17 +119,7 @@ const Dealership = () => {
             className="mb-14 text-center"
           >
 
-            <div className="mb-5 flex items-center justify-center gap-4">
-
-              <span className="h-px w-12 bg-luxury-gold/60" />
-
-              <span className="text-[11px] font-bold uppercase tracking-[0.4em] text-luxury-gold">
-                INVESTMENT
-              </span>
-
-              <span className="h-px w-12 bg-luxury-gold/60" />
-
-            </div>
+          
 
 
             <h2 className="font-luxury text-4xl font-bold md:text-5xl">
@@ -331,7 +296,7 @@ const Dealership = () => {
     ₹20,000
   </p>
 
-  <h3 className="mt-3 font-luxury text-sm font-bold uppercase tracking-[0.15em] text-gold-300">
+  <h3 className="mt-3 font-luxury text-sm font-bold uppercase  tracking-[0.15em] text-gold-300">
     Business & Installation Training
   </h3>
 
@@ -345,52 +310,97 @@ const Dealership = () => {
 
           </motion.div>
 
+     {/* =====================================================
+          COMPLETE SUPPORT
+      ===================================================== */}
+
+     
+         
+          {/* =================================================
+              PACKAGE HIGHLIGHTS
+          ================================================= */}
+
+        </div>
+
+      </section>
+
+       <section className="section-padding bg-luxury-black">
+
+        <div className="container-custom mx-auto">
 
           {/* =================================================
-              INVESTMENT NOTE
+              SECTION HEADING
           ================================================= */}
 
           <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="mt-5 text-center"
+            transition={{ duration: 0.7 }}
+            className="mb-14 text-center"
           >
 
-            <p className="text-[11px] tracking-wide text-white/40">
-              Investment: ₹1,00,000 + GST
+            <h2 className="font-luxury text-4xl font-bold md:text-5xl">
+              Support At{" "}
+              <span className="text-gold-300">
+                Every Step
+              </span>
+            </h2>
+
+
+            <div className="mx-auto mt-6 h-[2px] w-12 bg-luxury-gold" />
+
+            <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/65 md:text-base">
+              From training and installation to marketing and
+              after-sales support, NOOH stands with you throughout
+              your dealership journey.
             </p>
 
           </motion.div>
 
 
           {/* =================================================
-              PACKAGE HIGHLIGHTS
+              SUPPORT GRID
           ================================================= */}
 
-          <div className="mt-14 grid gap-5 md:grid-cols-4">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
 
             {[
               {
                 number: "01",
-                title: "RAW MATERIAL",
-                text: "₹50,000",
+                title: "Training & Knowledge",
+                description:
+                  "Product, installation and business training to help you confidently represent NOOH.",
               },
               {
                 number: "02",
-                title: "TOOL KIT",
-                text: "₹25,000",
+                title: "Installation Support",
+                description:
+                  "Installation guidance and technical assistance to support smooth project execution.",
               },
               {
                 number: "03",
-                title: "DISPLAY KIT",
-                text: "₹5,000",
+                title: "Marketing Support",
+                description:
+                  "Marketing and promotional support to help build awareness and establish your local presence.",
               },
-                {
+              {
                 number: "04",
-                title: "Bussiness and Installation Training",
-                text: "₹20,000",
+                title: "Supply Chain Support",
+                description:
+                  "Consistent product availability and timely supply to support your customer projects.",
+              },
+              {
+                number: "05",
+                title: "After-Sales Support",
+                description:
+                  "Continued assistance and customer support even after project installation.",
+              },
+              {
+                number: "06",
+                title: "Business Growth",
+                description:
+                  "Guidance and brand support to help you build and grow your NOOH dealership.",
               },
             ].map((item, index) => (
 
@@ -398,7 +408,7 @@ const Dealership = () => {
                 key={item.number}
                 initial={{
                   opacity: 0,
-                  y: 25,
+                  y: 35,
                 }}
                 whileInView={{
                   opacity: 1,
@@ -409,32 +419,42 @@ const Dealership = () => {
                 }}
                 transition={{
                   duration: 0.6,
-                  delay: index * 0.1,
+                  delay: index * 0.08,
                 }}
                 whileHover={{
-                  y: -5,
+                  y: -7,
                 }}
-                className="glass-gold p-7"
+                className="glass-gold p-7 transition-all duration-500"
               >
 
+                {/* Number + Icon */}
                 <div className="flex items-center justify-between">
 
                   <span className="font-luxury text-3xl font-bold text-luxury-gold/40">
                     {item.number}
                   </span>
 
-                  <span className="h-px w-10 bg-luxury-gold/50" />
+
+                  <div className="flex h-11 w-11 items-center justify-center rounded-full border border-luxury-gold/40 text-luxury-gold">
+                    ✦
+                  </div>
 
                 </div>
 
 
-                <h3 className="mt-6 font-luxury text-sm font-bold tracking-[0.18em] text-gold-300">
+                {/* Gold Line */}
+                <div className="mt-6 h-px w-10 bg-luxury-gold/60" />
+
+
+                {/* Title */}
+                <h3 className="mt-6 font-luxury text-xl font-bold text-gold-300">
                   {item.title}
                 </h3>
 
 
-                <p className="mt-3 font-luxury text-2xl font-bold text-white">
-                  {item.text}
+                {/* Description */}
+                <p className="mt-4 text-sm leading-7 text-white/60">
+                  {item.description}
                 </p>
 
               </motion.div>
@@ -446,6 +466,170 @@ const Dealership = () => {
         </div>
 
       </section>
+
+      {/* =====================================================
+          WHO CAN JOIN
+      ===================================================== */}
+
+      <section className="section-padding bg-luxury-black">
+
+        <div className="container-custom mx-auto">
+
+          <div className="grid items-center gap-12 lg:grid-cols-2">
+
+
+            {/* =================================================
+                LEFT CONTENT
+            ================================================= */}
+
+            <motion.div
+              initial={{
+                opacity: 0,
+                x: -35,
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              viewport={{
+                once: true,
+              }}
+              transition={{
+                duration: 0.7,
+              }}
+            >
+
+              {/* Label */}
+              <div className="mb-5 flex items-center gap-4">
+
+                <span className="h-px w-12 bg-luxury-gold/60" />
+
+                <span className="text-[11px] font-bold uppercase tracking-[0.4em] text-luxury-gold">
+                  WHO CAN JOIN
+                </span>
+
+              </div>
+
+
+              {/* Heading */}
+              <h2 className="font-luxury text-4xl font-bold leading-tight md:text-5xl">
+                Is NOOH Dealership
+                <br />
+
+                <span className="text-gold-300">
+                  Right For You?
+                </span>
+              </h2>
+
+
+              {/* Gold Line */}
+              <div className="mt-7 h-[2px] w-14 bg-luxury-gold" />
+
+
+              {/* Description */}
+              <p className="mt-7 max-w-xl text-sm leading-7 text-white/65 md:text-base">
+                The NOOH Dealership opportunity is designed for
+                entrepreneurs and professionals who are passionate
+                about quality products and customer satisfaction.
+              </p>
+
+
+              {/* Highlight */}
+              <div className="glass-gold mt-8 border-l-2 border-luxury-gold p-6">
+
+                <p className="font-luxury text-xl font-bold text-white">
+                  Build. Represent. Grow.
+                </p>
+
+                <p className="mt-2 text-sm leading-6 text-white/55">
+                  Become part of the NOOH business network and
+                  build your presence in your city.
+                </p>
+
+              </div>
+
+            </motion.div>
+
+
+            {/* =================================================
+                RIGHT — PROFESSIONAL TYPES
+            ================================================= */}
+
+            <div className="grid grid-cols-2 gap-5">
+
+              {[
+                {
+                  title: "Retailers",
+                  icon: "◈",
+                },
+                {
+                  title: "Interior Designers",
+                  icon: "✦",
+                },
+                {
+                  title: "Architects",
+                  icon: "◇",
+                },
+                {
+                  title: "Civil Engineers",
+                  icon: "⌂",
+                },
+                {
+                  title: "Contractors",
+                  icon: "▣",
+                },
+                {
+                  title: "Entrepreneurs",
+                  icon: "◆",
+                },
+              ].map((item, index) => (
+
+                <motion.div
+                  key={item.title}
+                  initial={{
+                    opacity: 0,
+                    y: 25,
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                  }}
+                  viewport={{
+                    once: true,
+                  }}
+                  transition={{
+                    duration: 0.5,
+                    delay: index * 0.08,
+                  }}
+                  whileHover={{
+                    y: -5,
+                  }}
+                  className="glass-gold p-6 text-center transition-all duration-500"
+                >
+
+                  {/* Icon */}
+                  <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full border border-luxury-gold/40 text-lg text-luxury-gold">
+                    {item.icon}
+                  </div>
+
+
+                  {/* Title */}
+                  <h3 className="mt-5 font-luxury text-lg font-bold text-gold-300">
+                    {item.title}
+                  </h3>
+
+                </motion.div>
+
+              ))}
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
       {/* =====================================================
           WHY PARTNER WITH NOOH
       ===================================================== */}
@@ -915,108 +1099,45 @@ const Dealership = () => {
         </div>
 
       </section>
-            {/* =====================================================
-          COMPLETE SUPPORT
-      ===================================================== */}
+       
+ {/* =================================================
+              INVESTMENT NOTE
+          ================================================= */}
 
-      <section className="section-padding bg-luxury-black">
+         <section className="section-padding bg-luxury-black">
 
         <div className="container-custom mx-auto">
 
-          {/* =================================================
-              SECTION HEADING
-          ================================================= */}
-
-          <motion.div
-            initial={{ opacity: 0, y: 25 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
-            className="mb-14 text-center"
-          >
-
-            <div className="mb-5 flex items-center justify-center gap-4">
-
-              <span className="h-px w-12 bg-luxury-gold/60" />
-
-              <span className="text-[11px] font-bold uppercase tracking-[0.4em] text-luxury-gold">
-                COMPLETE SUPPORT
-              </span>
-
-              <span className="h-px w-12 bg-luxury-gold/60" />
-
-            </div>
-
-
-            <h2 className="font-luxury text-4xl font-bold md:text-5xl">
-              Support At{" "}
-              <span className="text-gold-300">
-                Every Step
-              </span>
-            </h2>
-
-
-            <div className="mx-auto mt-6 h-[2px] w-12 bg-luxury-gold" />
-
-            <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/65 md:text-base">
-              From training and installation to marketing and
-              after-sales support, NOOH stands with you throughout
-              your dealership journey.
-            </p>
-
-          </motion.div>
-
-
-          {/* =================================================
-              SUPPORT GRID
-          ================================================= */}
-
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
 
             {[
               {
-                number: "01",
-                title: "Training & Knowledge",
+                title: "PREMIUM PRODUCTS",
                 description:
-                  "Product, installation and business training to help you confidently represent NOOH.",
+                  "High-quality products with proven market demand.",
               },
               {
-                number: "02",
-                title: "Installation Support",
+                title: "STRONG SUPPORT",
                 description:
-                  "Installation guidance and technical assistance to support smooth project execution.",
+                  "Training, marketing, installation and after-sales support.",
               },
               {
-                number: "03",
-                title: "Marketing Support",
+                title: "HIGH RETURNS",
                 description:
-                  "Marketing and promotional support to help build awareness and establish your local presence.",
+                  "Excellent margins and recurring business opportunities.",
               },
               {
-                number: "04",
-                title: "Supply Chain Support",
+                title: "EXCLUSIVE TERRITORY",
                 description:
-                  "Consistent product availability and timely supply to support your customer projects.",
-              },
-              {
-                number: "05",
-                title: "After-Sales Support",
-                description:
-                  "Continued assistance and customer support even after project installation.",
-              },
-              {
-                number: "06",
-                title: "Business Growth",
-                description:
-                  "Guidance and brand support to help you build and grow your NOOH dealership.",
+                  "One City. One Dealership — you are the only one.",
               },
             ].map((item, index) => (
 
               <motion.div
-                key={item.number}
+                key={item.title}
                 initial={{
                   opacity: 0,
-                  y: 35,
+                  y: 30,
                 }}
                 whileInView={{
                   opacity: 1,
@@ -1027,41 +1148,25 @@ const Dealership = () => {
                 }}
                 transition={{
                   duration: 0.6,
-                  delay: index * 0.08,
+                  delay: index * 0.1,
                 }}
-                whileHover={{
-                  y: -7,
-                }}
-                className="glass-gold p-7 transition-all duration-500"
+                className="text-center"
               >
 
-                {/* Number + Icon */}
-                <div className="flex items-center justify-between">
-
-                  <span className="font-luxury text-3xl font-bold text-luxury-gold/40">
-                    {item.number}
-                  </span>
-
-
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full border border-luxury-gold/40 text-luxury-gold">
-                    ✦
-                  </div>
-
+                {/* Icon */}
+                <div className="mx-auto mb-5 flex h-12 w-12 items-center justify-center rounded-full border border-luxury-gold/40 text-luxury-gold">
+                  ✦
                 </div>
 
 
-                {/* Gold Line */}
-                <div className="mt-6 h-px w-10 bg-luxury-gold/60" />
-
-
                 {/* Title */}
-                <h3 className="mt-6 font-luxury text-xl font-bold text-gold-300">
+                <h3 className="font-luxury text-sm font-bold tracking-[0.15em] text-gold-300">
                   {item.title}
                 </h3>
 
 
                 {/* Description */}
-                <p className="mt-4 text-sm leading-7 text-white/60">
+                <p className="mx-auto mt-3 max-w-xs text-sm leading-6 text-white/60">
                   {item.description}
                 </p>
 
@@ -1076,168 +1181,7 @@ const Dealership = () => {
       </section>
 
 
-      {/* =====================================================
-          WHO CAN JOIN
-      ===================================================== */}
-
-      <section className="section-padding bg-luxury-black">
-
-        <div className="container-custom mx-auto">
-
-          <div className="grid items-center gap-12 lg:grid-cols-2">
-
-
-            {/* =================================================
-                LEFT CONTENT
-            ================================================= */}
-
-            <motion.div
-              initial={{
-                opacity: 0,
-                x: -35,
-              }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-              }}
-              viewport={{
-                once: true,
-              }}
-              transition={{
-                duration: 0.7,
-              }}
-            >
-
-              {/* Label */}
-              <div className="mb-5 flex items-center gap-4">
-
-                <span className="h-px w-12 bg-luxury-gold/60" />
-
-                <span className="text-[11px] font-bold uppercase tracking-[0.4em] text-luxury-gold">
-                  WHO CAN JOIN
-                </span>
-
-              </div>
-
-
-              {/* Heading */}
-              <h2 className="font-luxury text-4xl font-bold leading-tight md:text-5xl">
-                Is NOOH Dealership
-                <br />
-
-                <span className="text-gold-300">
-                  Right For You?
-                </span>
-              </h2>
-
-
-              {/* Gold Line */}
-              <div className="mt-7 h-[2px] w-14 bg-luxury-gold" />
-
-
-              {/* Description */}
-              <p className="mt-7 max-w-xl text-sm leading-7 text-white/65 md:text-base">
-                The NOOH Dealership opportunity is designed for
-                entrepreneurs and professionals who are passionate
-                about quality products and customer satisfaction.
-              </p>
-
-
-              {/* Highlight */}
-              <div className="glass-gold mt-8 border-l-2 border-luxury-gold p-6">
-
-                <p className="font-luxury text-xl font-bold text-white">
-                  Build. Represent. Grow.
-                </p>
-
-                <p className="mt-2 text-sm leading-6 text-white/55">
-                  Become part of the NOOH business network and
-                  build your presence in your city.
-                </p>
-
-              </div>
-
-            </motion.div>
-
-
-            {/* =================================================
-                RIGHT — PROFESSIONAL TYPES
-            ================================================= */}
-
-            <div className="grid grid-cols-2 gap-5">
-
-              {[
-                {
-                  title: "Retailers",
-                  icon: "◈",
-                },
-                {
-                  title: "Interior Designers",
-                  icon: "✦",
-                },
-                {
-                  title: "Architects",
-                  icon: "◇",
-                },
-                {
-                  title: "Civil Engineers",
-                  icon: "⌂",
-                },
-                {
-                  title: "Contractors",
-                  icon: "▣",
-                },
-                {
-                  title: "Entrepreneurs",
-                  icon: "◆",
-                },
-              ].map((item, index) => (
-
-                <motion.div
-                  key={item.title}
-                  initial={{
-                    opacity: 0,
-                    y: 25,
-                  }}
-                  whileInView={{
-                    opacity: 1,
-                    y: 0,
-                  }}
-                  viewport={{
-                    once: true,
-                  }}
-                  transition={{
-                    duration: 0.5,
-                    delay: index * 0.08,
-                  }}
-                  whileHover={{
-                    y: -5,
-                  }}
-                  className="glass-gold p-6 text-center transition-all duration-500"
-                >
-
-                  {/* Icon */}
-                  <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full border border-luxury-gold/40 text-lg text-luxury-gold">
-                    {item.icon}
-                  </div>
-
-
-                  {/* Title */}
-                  <h3 className="mt-5 font-luxury text-lg font-bold text-gold-300">
-                    {item.title}
-                  </h3>
-
-                </motion.div>
-
-              ))}
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
+      
             {/* =====================================================
           HOW TO JOIN
       ===================================================== */}

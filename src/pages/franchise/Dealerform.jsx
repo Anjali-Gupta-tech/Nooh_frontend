@@ -54,7 +54,7 @@ const DealerForm = () => {
         <div className="absolute inset-0">
 
           <img
-            src="/franchaise-hero/dealership.png"
+            src="/franchaise-hero/deal.png"
             alt="NOOH Dealership"
             className="h-full w-full object-cover"
           />
@@ -259,7 +259,7 @@ const DealerForm = () => {
                       required
                     />
 
-                    <FormInput
+                    <FormInput 
                       label="Email Address"
                       name="email"
                       value={formData.email}
