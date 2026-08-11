@@ -15,7 +15,6 @@ import Products from './pages/Products';
 import Projects from './pages/Projects';
 import Skylume from './pages/Skylume';
 import NoohStar from './pages/NoohStar';
-import Testimonials from './pages/Testimonials';
 import Contact from './pages/Contact';
 import CeilingSolution from './pages/Ceiling/CeilingSolution';
 import WallSolution from './pages/Wall/WallSolution';
@@ -120,7 +119,7 @@ function App() {
             <Route path="/wooden-flooring" element={<WoodenFlooring />} />
 
             <Route path="/decorative-solutions" element={<DecorativeSolution />} />
-            <Route path="/testimonials" element={<Testimonials />} />
+       
             <Route path="/contact" element={<Contact />} />
 
 

@@ -24,8 +24,8 @@ const Home = () => {
 
       <div className="overflow-hidden">
         <Hero />
-        <Stats />
-        <FeaturedServices />
+       <FeaturedServices />
+         <Stats />
         <WhyChoose />
         <FeaturedProjects />
         <CTASection />

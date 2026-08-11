@@ -34,20 +34,22 @@ const Navbar = () => {
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/services' },
     { name: 'Products', path: '/products' },
+     {name:'FRANCHISE',path:'/franchise'},
     { name: 'Projects', path: '/projects' },
 
     {
-      name: 'Solutions',
+      name: 'SHOP BY CATEGORY',
       submenu: [
-        {name : 'CEILING', path:'/ceiling-solutions'},
-        {name:'WALL ',path:'/wall-solutions'},
-        {name:'FLOOR ',path:'/floor-solutions'},
+        {name : 'CEILING ART', path:'/ceiling-solutions'},
+        {name:'WALL ART',path:'/wall-solutions'},
+        {name:'FLOOR ART ',path:'/floor-solutions'},
+        {name:'HOME DECOR',path:'/floor-solutions'},
         
       ],
     },
   
-    {name:'FRANCHISE',path:'/franchise'},
-    { name: 'Testimonials', path: '/testimonials' },
+   
+   
     { name: 'Contact', path: '/contact' },
 
   ];

@@ -15,14 +15,14 @@ const Franchise = () => {
       title: "ASSOCIATE PROGRAM",
       description:
         "Partner with NOOH to offer premium ceiling solutions with complete project and technical support.",
-      image: "/franchaise-hero/associate.png",
-      link: "/franchise/associate",
+      image: "/franchaise-hero/associate-hero.png",
+      link: "/franchaise-hero/associate",
     },
     {
       title: "TRAINING PROGRAM",
       description:
         "Learn product knowledge, installation, estimation, sales and project execution through professional training.",
-      image: "/franchaise-hero/training.png",
+      image: "/franchaise-hero/training-hero.png",
       link: "/franchaise/training",
     },
   ];

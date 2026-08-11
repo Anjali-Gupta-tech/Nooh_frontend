@@ -128,7 +128,7 @@ const About = () => {
         />
 
         <img
-          src="/images/3d-epoxy-bathroom-flooring.webp"
+          src="/images/epoxy-flooring.png"
           alt="3D Epoxy Bathroom Flooring"
           className="rounded-[28px] h-[320px] w-full object-cover mt-6 shadow-xl"
         />
