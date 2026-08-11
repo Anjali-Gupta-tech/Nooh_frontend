@@ -80,7 +80,7 @@ const Associate = () => {
           
                         {/* Investment */}
                     <Link
-            to="/franchise/dealershipform"
+            to="/franchise/associateform"
             className="group inline-flex items-center gap-3 bg-[#d6af45] px-7 py-4 text-[11px] font-bold uppercase tracking-[0.2em] text-black transition-all duration-300 hover:bg-[#c9a43a]"
           >
             Become a Associate

@@ -129,103 +129,53 @@ const Training = () => {
 
         {/* Hero Content */}
         <div className="relative z-10 flex min-h-[560px] items-center justify-center px-6 text-center">
-
-          <div className="mx-auto max-w-5xl">
-
-            {/* Small Label */}
-            <motion.p
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="mb-6 text-[11px] font-medium uppercase tracking-[0.45em] text-luxury-gold"
-            >
-              NOOH PROFESSIONAL TRAINING
-            </motion.p>
-
-
-            {/* Main Heading */}
-            <motion.h3
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="font-luxury text-5xl font-bold leading-[1.05] tracking-tight text-white md:text-7xl lg:text-[78px]"
-            >
-              We Build Skills.{" "}
-              <span className="text-gold-300">
-                We Build Businesses.
-              </span>
-            </motion.h3>
-
-
-            {/* Gold Line */}
-            <motion.div
-              initial={{ width: 0 }}
-              animate={{ width: 70 }}
-              transition={{ duration: 0.7, delay: 0.5 }}
-              className="mx-auto mt-8 h-[1px] bg-[#d6af45]"
-            />
-
-
-            {/* Tagline */}
-            <motion.h2
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.55 }}
-              className="mt-7 font-luxury text-2xl font-bold text-white md:text-3xl"
-            >
-              Learn. Install. Grow.
-            </motion.h2>
-
-
-            {/* Description */}
-            <motion.p
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.65 }}
-              className="mx-auto mt-5 max-w-2xl text-sm font-light leading-7 tracking-wide text-white/75 md:text-base"
-            >
-              Practical learning in premium interior solutions,
-              installation techniques and business development to help
-              professionals confidently start or expand their interior
-              business.
-            </motion.p>
-
-
-            {/* Buttons */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.8 }}
-              className="mt-9 flex flex-wrap justify-center gap-4"
-            >
-
-              <a
-                href="#training"
-                className="group inline-flex items-center gap-3 bg-[#d6af45] px-7 py-4 text-[11px] font-bold uppercase tracking-[0.2em] text-black transition-all duration-300 hover:bg-[#c9a43a]"
-              >
-                Explore Training
-
-                <span className="transition-transform duration-300 group-hover:translate-x-1">
-                  →
-                </span>
-              </a>
-
-
-              <a
-                href="#curriculum"
-                className="group inline-flex items-center gap-3 border border-luxury-gold/50 px-7 py-4 text-[11px] font-bold uppercase tracking-[0.2em] text-white transition-all duration-300 hover:bg-luxury-gold hover:text-black"
-              >
-                View Curriculum
-
-                <span className="transition-transform duration-300 group-hover:translate-x-1">
-                  →
-                </span>
-              </a>
-
-            </motion.div>
-
-          </div>
-
+                <div className="mx-auto max-w-5xl mt-96">
+                                {/* Buttons */}
+                                <motion.div
+                                  initial={{
+                                    opacity: 0,
+                                    y: 20,
+                                  }}
+                                  animate={{
+                                    opacity: 1,
+                                    y: 0,
+                                  }}
+                                  transition={{
+                                    duration: 0.7,
+                                    delay: 0.8,
+                                  }}
+                                  className="mt-9 flex flex-wrap justify-center gap-4"
+                                >
+                    
+                                  {/* Investment */}
+                              <Link
+                      to="/franchise/trainingform"
+                      className="group inline-flex items-center gap-3 bg-[#d6af45] px-7 py-4 text-[11px] font-bold uppercase tracking-[0.2em] text-black transition-all duration-300 hover:bg-[#c9a43a]"
+                    >
+                      Apply for Training
+                    
+                      <span className="transition-transform duration-300 group-hover:translate-x-1">
+                        →
+                      </span>
+                    </Link>
+                    
+                                  {/* How It Works */}
+                                  <a
+                                    href="#how-it-works"
+                                    className="group inline-flex items-center gap-3 border border-luxury-gold/50 px-7 py-4 text-[11px] font-bold uppercase tracking-[0.2em] text-white transition-all duration-300 hover:bg-luxury-gold hover:text-black"
+                                  >
+                                    Download pdf
+                    
+                                    <span className="transition-transform duration-300 group-hover:translate-x-1">
+                                      →
+                                    </span>
+                                  </a>
+                    
+                                </motion.div>
+                    
+                              </div>
+                    
+         
         </div>
 
       </section>

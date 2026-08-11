@@ -60,6 +60,7 @@ import Associate from './pages/franchise/Associate';
 import DealerForm from './pages/franchise/Dealerform';
 import AssociateForm from './pages/franchise/Associateform';
 import Training from './pages/franchise/Training';
+import Trainingform from './pages/franchise/Trainingform';
 
 function App() {
 
@@ -141,6 +142,7 @@ function App() {
 
     <Route path="/franchise/associate" element={<Associate/>}/>
     <Route path="/franchaise/training" element={<Training/>}/>
+    <Route path="/franchise/trainingform" element={<Trainingform/>}/>
           </Routes>
           <Footer />
        
