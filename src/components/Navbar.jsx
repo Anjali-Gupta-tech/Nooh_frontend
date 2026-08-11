@@ -43,7 +43,7 @@ const Navbar = () => {
         {name : 'CEILING ART', path:'/ceiling-solutions'},
         {name:'WALL ART',path:'/wall-solutions'},
         {name:'FLOOR ART ',path:'/floor-solutions'},
-        {name:'HOME DECOR',path:'/floor-solutions'},
+        {name:'HOME DECOR',path:'/'},
         
       ],
     },
