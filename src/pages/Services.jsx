@@ -222,7 +222,7 @@ const Services = () => {
   {
     id: "panel-lighting",
 
-    title: "LED Backlit Ceiling & Wall Panels",
+    title: "Stretch Panel Lighting",
 
     description:
       "Innovative LED lighting solutions including our NOOH SKYLUME™ artificial daylight systems.",
