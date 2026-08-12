@@ -73,17 +73,18 @@ const Associate = () => {
             </span>
           </Link>
           
-                        {/* How It Works */}
-                        <a
-                          href="#how-it-works"
-                          className="group inline-flex items-center gap-3 border border-luxury-gold/50 px-7 py-4 text-[11px] font-bold uppercase tracking-[0.2em] text-white transition-all duration-300 hover:bg-luxury-gold hover:text-black"
-                        >
-                          Download pdf
-          
-                          <span className="transition-transform duration-300 group-hover:translate-x-1">
-                            →
-                          </span>
-                        </a>
+  {/* PDF Download */}
+<a
+  href="/FRANCHISE_BUSINESS_PARTNER.pdf"
+  download="FRANCHISE_BUSINESS_PARTNER.pdf"
+  className="group inline-flex items-center gap-3 bg-[#d6af45] px-7 py-4 text-[11px] font-bold uppercase tracking-[0.2em] text-black transition-all duration-300 hover:bg-[#c9a43a]"
+>
+  Download PDF
+
+  <span className="transition-transform duration-300 group-hover:translate-x-1">
+    →
+  </span>
+</a>
           
                       </motion.div>
           
@@ -192,15 +193,7 @@ const Associate = () => {
 
   </div>
 </section>
-{/* ============================================================
-    ASSOCIATE BENEFITS
-============================================================ */}
-{/* ============================================================
-    ASSOCIATE BENEFITS
-============================================================ */}
-{/* ============================================================
-    ASSOCIATE BENEFITS
-============================================================ */}
+
 
 {/* ============================================================
     ASSOCIATE BENEFITS
