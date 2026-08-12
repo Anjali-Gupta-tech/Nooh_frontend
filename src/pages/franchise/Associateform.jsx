@@ -1,7 +1,267 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const AssociateForm = () => {
+/* ============================================================
+   STATE → CITY DATA
+============================================================ */
+
+const stateCities = {
+  "Andhra Pradesh": [
+    "Visakhapatnam",
+    "Vijayawada",
+    "Guntur",
+    "Nellore",
+    "Tirupati",
+    "Kurnool",
+    "Rajahmundry",
+  ],
+
+  "Arunachal Pradesh": [
+    "Itanagar",
+    "Naharlagun",
+    "Pasighat",
+  ],
+
+  Assam: [
+    "Guwahati",
+    "Dibrugarh",
+    "Silchar",
+    "Jorhat",
+    "Nagaon",
+  ],
+
+  Bihar: [
+    "Patna",
+    "Gaya",
+    "Muzaffarpur",
+    "Bhagalpur",
+    "Darbhanga",
+    "Purnia",
+  ],
+
+  Chhattisgarh: [
+    "Raipur",
+    "Bhilai",
+    "Bilaspur",
+    "Korba",
+    "Durg",
+  ],
+
+  Goa: [
+    "Panaji",
+    "Margao",
+    "Vasco da Gama",
+  ],
+
+  Gujarat: [
+    "Ahmedabad",
+    "Surat",
+    "Vadodara",
+    "Rajkot",
+    "Gandhinagar",
+    "Bhavnagar",
+    "Jamnagar",
+  ],
+
+  Haryana: [
+    "Gurugram",
+    "Faridabad",
+    "Panipat",
+    "Ambala",
+    "Hisar",
+    "Karnal",
+    "Rohtak",
+    "Sonipat",
+  ],
+
+  "Himachal Pradesh": [
+    "Shimla",
+    "Dharamshala",
+    "Solan",
+    "Mandi",
+    "Baddi",
+  ],
+
+  Jharkhand: [
+    "Ranchi",
+    "Jamshedpur",
+    "Dhanbad",
+    "Bokaro",
+    "Deoghar",
+  ],
+
+  Karnataka: [
+    "Bengaluru",
+    "Mysuru",
+    "Mangaluru",
+    "Hubballi",
+    "Belagavi",
+    "Davanagere",
+  ],
+
+  Kerala: [
+    "Thiruvananthapuram",
+    "Kochi",
+    "Kozhikode",
+    "Thrissur",
+    "Kollam",
+    "Kannur",
+  ],
+
+  "Madhya Pradesh": [
+    "Bhopal",
+    "Indore",
+    "Gwalior",
+    "Jabalpur",
+    "Ujjain",
+    "Sagar",
+  ],
+
+  Maharashtra: [
+    "Mumbai",
+    "Pune",
+    "Nagpur",
+    "Nashik",
+    "Thane",
+    "Aurangabad",
+    "Navi Mumbai",
+    "Kolhapur",
+  ],
+
+  Manipur: [
+    "Imphal",
+  ],
+
+  Meghalaya: [
+    "Shillong",
+  ],
+
+  Mizoram: [
+    "Aizawl",
+  ],
+
+  Nagaland: [
+    "Kohima",
+    "Dimapur",
+  ],
+
+  Odisha: [
+    "Bhubaneswar",
+    "Cuttack",
+    "Rourkela",
+    "Puri",
+    "Sambalpur",
+  ],
+
+  Punjab: [
+    "Ludhiana",
+    "Amritsar",
+    "Jalandhar",
+    "Patiala",
+    "Mohali",
+    "Bathinda",
+  ],
+
+  Rajasthan: [
+    "Jaipur",
+    "Jodhpur",
+    "Udaipur",
+    "Kota",
+    "Ajmer",
+    "Bikaner",
+    "Alwar",
+  ],
+
+  Sikkim: [
+    "Gangtok",
+  ],
+
+  "Tamil Nadu": [
+    "Chennai",
+    "Coimbatore",
+    "Madurai",
+    "Salem",
+    "Tiruchirappalli",
+    "Tiruppur",
+    "Erode",
+  ],
+
+  Telangana: [
+    "Hyderabad",
+    "Warangal",
+    "Nizamabad",
+    "Karimnagar",
+    "Khammam",
+  ],
+
+  Tripura: [
+    "Agartala",
+  ],
+
+  "Uttar Pradesh": [
+    "Noida",
+    "Greater Noida",
+    "Ghaziabad",
+    "Lucknow",
+    "Kanpur",
+    "Agra",
+    "Varanasi",
+    "Prayagraj",
+    "Meerut",
+    "Gorakhpur",
+    "Bareilly",
+    "Moradabad",
+    "Aligarh",
+    "Mathura",
+    "Muzaffarnagar",
+    "Saharanpur",
+    "Jhansi",
+  ],
+
+  Uttarakhand: [
+    "Dehradun",
+    "Haridwar",
+    "Rishikesh",
+    "Haldwani",
+    "Nainital",
+    "Roorkee",
+  ],
+
+  "West Bengal": [
+    "Kolkata",
+    "Howrah",
+    "Durgapur",
+    "Siliguri",
+    "Asansol",
+  ],
+
+  Delhi: [
+    "New Delhi",
+    "Delhi",
+  ],
+
+  "Jammu & Kashmir": [
+    "Srinagar",
+    "Jammu",
+    "Anantnag",
+  ],
+
+  Chandigarh: [
+    "Chandigarh",
+  ],
+
+  Puducherry: [
+    "Puducherry",
+  ],
+};
+
+
+/* ============================================================
+   ASSOCIATE FORM
+============================================================ */
+
+const Associateform = () => {
+
   const [formData, setFormData] = useState({
     fullName: "",
     mobile: "",
@@ -27,25 +287,69 @@ const AssociateForm = () => {
     agree: false,
   });
 
+
+  /* ============================================================
+     HANDLE CHANGE
+  ============================================================ */
+
   const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
+
+    const {
+      name,
+      value,
+      type,
+      checked,
+    } = e.target;
 
     setFormData((prev) => ({
       ...prev,
-      [name]: type === "checkbox" ? checked : value,
+      [name]:
+        type === "checkbox"
+          ? checked
+          : value,
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
 
-    console.log("Associate Application:", formData);
+  /* ============================================================
+     STATE CHANGE
+  ============================================================ */
 
-    alert("Associate application submitted successfully.");
+  const handleStateChange = (e) => {
+
+    const selectedState = e.target.value;
+
+    setFormData((prev) => ({
+      ...prev,
+      state: selectedState,
+      city: "",
+    }));
   };
 
+
+  /* ============================================================
+     SUBMIT
+  ============================================================ */
+
+  const handleSubmit = (e) => {
+
+    e.preventDefault();
+
+    console.log(
+      "Associate Application:",
+      formData
+    );
+
+    alert(
+      "Associate application submitted successfully."
+    );
+  };
+
+
   return (
+
     <div className="min-h-screen bg-luxury-black text-white">
+
 
       {/* =====================================================
           HERO
@@ -54,6 +358,7 @@ const AssociateForm = () => {
       <section className="relative overflow-hidden">
 
         {/* Background */}
+
         <div className="absolute inset-0">
 
           <img
@@ -70,10 +375,12 @@ const AssociateForm = () => {
 
 
         {/* Gold Bottom Line */}
+
         <div className="absolute bottom-0 left-0 right-0 z-10 h-[3px] bg-[#d6af45]" />
 
 
         {/* Hero Content */}
+
         <div className="relative z-10 flex min-h-[420px] items-center justify-center px-6 text-center">
 
           <motion.div
@@ -122,6 +429,7 @@ const AssociateForm = () => {
       </section>
 
 
+
       {/* =====================================================
           FORM SECTION
       ===================================================== */}
@@ -155,7 +463,9 @@ const AssociateForm = () => {
               className="lg:sticky lg:top-24 lg:self-start"
             >
 
+
               {/* Label */}
+
               <div className="mb-5 flex items-center gap-4">
 
                 <span className="h-px w-12 bg-luxury-gold/60" />
@@ -168,6 +478,7 @@ const AssociateForm = () => {
 
 
               {/* Heading */}
+
               <h2 className="font-luxury text-4xl font-bold leading-tight md:text-5xl">
 
                 Become A{" "}
@@ -189,41 +500,11 @@ const AssociateForm = () => {
 
 
               {/* Investment Card */}
-              <div className="glass-gold mt-8 p-7">
 
-                <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-luxury-gold">
-                  ASSOCIATE INVESTMENT
-                </p>
-
-
-                <p className="mt-4 font-luxury text-4xl font-bold text-white">
-
-                  ₹50,000
-
-                  <span className="ml-2 text-lg text-gold-300">
-                    + GST
-                  </span>
-
-                </p>
-
-
-                <div className="mt-5 h-px w-full bg-luxury-gold/20" />
-
-
-                <p className="mt-5 font-luxury text-lg font-bold text-gold-300">
-                  Zero Royalty
-                </p>
-
-
-                <p className="mt-2 text-sm leading-6 text-white/50">
-                  Build your association with NOOH and bring
-                  suitable project opportunities to the brand.
-                </p>
-
-              </div>
-
+              
 
               {/* Support Points */}
+
               <div className="mt-7 space-y-3">
 
                 {[
@@ -252,7 +533,9 @@ const AssociateForm = () => {
 
               </div>
 
+
             </motion.div>
+
 
 
             {/* =================================================
@@ -274,7 +557,7 @@ const AssociateForm = () => {
               transition={{
                 duration: 0.7,
               }}
-              className="glass-gold p-6 md:p-10"
+              className="glass-gold rounded-2xl p-6 md:p-10"
             >
 
               <form
@@ -350,6 +633,7 @@ const AssociateForm = () => {
                 </div>
 
 
+
                 {/* =================================================
                     PROFESSIONAL DETAILS
                 ================================================= */}
@@ -421,6 +705,7 @@ const AssociateForm = () => {
                 </div>
 
 
+
                 {/* =================================================
                     LOCATION
                 ================================================= */}
@@ -442,28 +727,39 @@ const AssociateForm = () => {
 
                   <div className="grid gap-5 md:grid-cols-2">
 
-                    <FormInput
+
+                    {/* STATE */}
+
+                    <FormSelect
+                      label="State"
+                      name="state"
+                      value={formData.state}
+                      onChange={handleStateChange}
+                      required
+                      options={Object.keys(stateCities)}
+                    />
+
+
+                    {/* CITY */}
+
+                    <FormSelect
                       label="City"
                       name="city"
                       value={formData.city}
                       onChange={handleChange}
-                      placeholder="Enter city"
                       required
-                    />
-
-
-                    <FormInput
-                      label="State"
-                      name="state"
-                      value={formData.state}
-                      onChange={handleChange}
-                      placeholder="Enter state"
-                      required
+                      disabled={!formData.state}
+                      options={
+                        formData.state
+                          ? stateCities[formData.state]
+                          : []
+                      }
                     />
 
                   </div>
 
                 </div>
+
 
 
                 {/* =================================================
@@ -486,6 +782,7 @@ const AssociateForm = () => {
 
 
                   <div className="space-y-5">
+
 
                     <FormSelect
                       label="Who Are Your Typical Clients?"
@@ -532,6 +829,7 @@ const AssociateForm = () => {
                 </div>
 
 
+
                 {/* =================================================
                     ASSOCIATION DETAILS
                 ================================================= */}
@@ -552,6 +850,7 @@ const AssociateForm = () => {
 
 
                   <div className="space-y-5">
+
 
                     <FormSelect
                       label="Are You Comfortable With The Associate Investment?"
@@ -593,6 +892,7 @@ const AssociateForm = () => {
                 </div>
 
 
+
                 {/* =================================================
                     AGREEMENT
                 ================================================= */}
@@ -612,15 +912,18 @@ const AssociateForm = () => {
 
 
                     <span className="text-xs leading-6 text-white/50">
+
                       I confirm that the information provided above
                       is accurate and I agree to be contacted by
                       the NOOH team regarding the Associate Partner
                       Program.
+
                     </span>
 
                   </label>
 
                 </div>
+
 
 
                 {/* =================================================
@@ -629,7 +932,7 @@ const AssociateForm = () => {
 
                 <button
                   type="submit"
-                  className="group flex w-full items-center justify-center gap-4 bg-[#d6af45] px-8 py-5 text-[11px] font-bold uppercase tracking-[0.25em] text-black transition-all duration-300 hover:bg-[#c9a43a]"
+                  className="group flex w-full items-center justify-center gap-4 rounded-lg bg-[#d6af45] px-8 py-5 text-[11px] font-bold uppercase tracking-[0.25em] text-black transition-all duration-300 hover:bg-[#c9a43a]"
                 >
 
                   Become An Associate Partner
@@ -642,8 +945,10 @@ const AssociateForm = () => {
 
 
                 <p className="text-center text-[10px] leading-5 text-white/30">
+
                   By submitting this form, you agree to be contacted
                   regarding the NOOH Associate Partner Program.
+
                 </p>
 
               </form>
@@ -661,6 +966,7 @@ const AssociateForm = () => {
 };
 
 
+
 /* ============================================================
    INPUT COMPONENT
 ============================================================ */
@@ -674,10 +980,12 @@ const FormInput = ({
   type = "text",
   required = false,
 }) => {
+
   return (
+
     <div>
 
-      <label className="mb-2 block text-[10px] font-bold uppercase tracking-[0.18em] text-white/60">
+      <label className="mb-2 block text-sm font-semibold text-white">
 
         {label}
 
@@ -697,12 +1005,13 @@ const FormInput = ({
         onChange={onChange}
         placeholder={placeholder}
         required={required}
-        className="w-full border border-white/10 bg-white/[0.03] px-4 py-3.5 text-sm text-white outline-none transition-all duration-300 placeholder:text-white/25 focus:border-luxury-gold/60 focus:bg-white/[0.05]"
+        className="w-full rounded-lg border border-luxury-gold/30 bg-luxury-black/50 px-4 py-3 text-sm text-white outline-none transition-all duration-300 placeholder:text-white/30 focus:border-luxury-gold"
       />
 
     </div>
   );
 };
+
 
 
 /* ============================================================
@@ -716,11 +1025,14 @@ const FormSelect = ({
   onChange,
   options,
   required = false,
+  disabled = false,
 }) => {
+
   return (
+
     <div>
 
-      <label className="mb-2 block text-[10px] font-bold uppercase tracking-[0.18em] text-white/60">
+      <label className="mb-2 block text-sm font-semibold text-white">
 
         {label}
 
@@ -738,20 +1050,34 @@ const FormSelect = ({
         value={value}
         onChange={onChange}
         required={required}
-        className="w-full border border-white/10 bg-[#111111] px-4 py-3.5 text-sm text-white outline-none transition-all duration-300 focus:border-luxury-gold/60"
+        disabled={disabled}
+        className={`w-full rounded-lg border border-luxury-gold/30 bg-luxury-black/50 px-4 py-3 text-sm text-white outline-none transition-all duration-300 focus:border-luxury-gold ${
+          disabled
+            ? "cursor-not-allowed opacity-40"
+            : "cursor-pointer"
+        }`}
       >
 
-        <option value="">
-          Select an option
+        <option
+          value=""
+          className="bg-[#111111] text-white"
+        >
+          {disabled
+            ? "Select state first"
+            : "Select an option"}
         </option>
 
+
         {options.map((option) => (
+
           <option
             key={option}
             value={option}
+            className="bg-[#111111] text-white"
           >
             {option}
           </option>
+
         ))}
 
       </select>
@@ -759,6 +1085,7 @@ const FormSelect = ({
     </div>
   );
 };
+
 
 
 /* ============================================================
@@ -772,10 +1099,12 @@ const FormTextarea = ({
   onChange,
   placeholder,
 }) => {
+
   return (
+
     <div>
 
-      <label className="mb-2 block text-[10px] font-bold uppercase tracking-[0.18em] text-white/60">
+      <label className="mb-2 block text-sm font-semibold text-white">
         {label}
       </label>
 
@@ -786,7 +1115,7 @@ const FormTextarea = ({
         onChange={onChange}
         placeholder={placeholder}
         rows={4}
-        className="w-full resize-none border border-white/10 bg-white/[0.03] px-4 py-3.5 text-sm text-white outline-none transition-all duration-300 placeholder:text-white/25 focus:border-luxury-gold/60 focus:bg-white/[0.05]"
+        className="w-full resize-none rounded-lg border border-luxury-gold/30 bg-luxury-black/50 px-4 py-3 text-sm text-white outline-none transition-all duration-300 placeholder:text-white/30 focus:border-luxury-gold"
       />
 
     </div>
@@ -794,4 +1123,4 @@ const FormTextarea = ({
 };
 
 
-export default AssociateForm;
+export default Associateform;

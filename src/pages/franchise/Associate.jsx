@@ -42,23 +42,6 @@ const Associate = () => {
 
           <div className="mx-auto max-w-5xl">
 
-            {/* Small Label */}
-        
-
-            {/* Main Heading */}
-          
-
-            {/* Gold Line */}
-           
-             
-
-
-            {/* Tagline */}
-         
-
-            {/* Description */}
-          
-
             {/* Buttons */}
              <div className="mx-auto max-w-5xl mt-96">
                       {/* Buttons */}
@@ -113,399 +96,416 @@ const Associate = () => {
 
       </section>
 
+{/* ============================================================
+    ASSOCIATE PROGRAM — GROW TOGETHER
+============================================================ */}
 
-      {/* =====================================================
-          INVESTMENT OVERVIEW
-      ===================================================== */}
+<section
+  id="associate-program"
+  className="section-padding bg-luxury-black"
+>
+  <div className="container-custom mx-auto">
 
-      <section
-        id="investment"
-        className="section-padding bg-luxury-black"
-      >
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7 }}
+      className="glass-gold overflow-hidden"
+    >
 
-        <div className="container-custom mx-auto">
+      <div className="grid lg:grid-cols-[1.4fr_0.8fr]">
 
-          {/* Section Heading */}
-          <motion.div
-            initial={{
-              opacity: 0,
-              y: 25,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            viewport={{
-              once: true,
-            }}
-            transition={{
-              duration: 0.7,
-            }}
-            className="mb-14 text-center"
-          >
+        {/* LEFT */}
+        <div className="p-8 md:p-12">
 
-            <div className="mb-5 flex items-center justify-center gap-4">
+          <div className="mb-5 flex items-center gap-4">
 
-              <span className="h-px w-12 bg-luxury-gold/60" />
+            <span className="h-px w-12 bg-luxury-gold/60" />
 
-              <span className="text-[11px] font-medium uppercase tracking-[0.4em] text-luxury-gold">
-                INVESTMENT
-              </span>
+            <span className="text-[11px] font-medium uppercase tracking-[0.4em] text-luxury-gold">
+              ASSOCIATE PROGRAM
+            </span>
 
-              <span className="h-px w-12 bg-luxury-gold/60" />
-
-            </div>
+          </div>
 
 
-            <h2 className="font-luxury text-4xl font-bold md:text-5xl">
-              Start With{" "}
-              <span className="text-gold-300">
-                NOOH
-              </span>
-            </h2>
+          <h2 className="font-luxury text-4xl font-bold md:text-5xl">
+            Partner With{" "}
+            <span className="text-gold-300">
+              NOOH
+            </span>
+          </h2>
 
 
-            <div className="mx-auto mt-6 h-[2px] w-12 bg-luxury-gold" />
-
-          </motion.div>
-
-
-          {/* Investment Card */}
-          <motion.div
-            initial={{
-              opacity: 0,
-              y: 35,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            viewport={{
-              once: true,
-            }}
-            transition={{
-              duration: 0.8,
-            }}
-            className="glass-gold overflow-hidden"
-          >
-
-            <div className="grid lg:grid-cols-2">
-
-              {/* Left */}
-              <div className="flex flex-col items-center justify-center border-b border-luxury-gold/20 p-10 text-center lg:border-b-0 lg:border-r">
-
-                <span className="text-[11px] font-bold uppercase tracking-[0.35em] text-luxury-gold">
-                  ONE-TIME INVESTMENT
-                </span>
+          <p className="mt-3 font-luxury text-xl font-semibold text-white/80">
+            Grow Together.
+          </p>
 
 
-                <div className="mt-6">
-
-                  <span className="font-luxury text-5xl font-bold text-white md:text-6xl">
-                    ₹50,000
-                  </span>
-
-                  <span className="ml-2 text-xl font-bold text-gold-300">
-                    + GST
-                  </span>
-
-                </div>
+          <div className="mt-6 h-[2px] w-14 bg-luxury-gold" />
 
 
-                <div className="mx-auto mt-7 h-[2px] w-16 bg-luxury-gold" />
-
-
-                <p className="mt-6 max-w-md text-sm leading-7 text-white/60">
-                  Join the NOOH Associate Program with a
-                  one-time investment of ₹50,000 + GST.
-                </p>
-
-              </div>
-
-
-              {/* Right */}
-              <div className="flex flex-col justify-center p-10">
-
-                <div className="flex items-start gap-5">
-
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-luxury-gold/40 text-luxury-gold">
-                    ✦
-                  </div>
-
-
-                  <div>
-
-                    <h3 className="font-luxury text-2xl font-bold text-gold-300">
-                      Zero Royalty
-                    </h3>
-
-                    <p className="mt-3 text-sm leading-7 text-white/60">
-                      No recurring royalty is required under the
-                      Associate Program.
-                    </p>
-
-                  </div>
-
-                </div>
-
-
-                <div className="mt-8 flex items-start gap-5">
-
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-luxury-gold/40 text-luxury-gold">
-                    ✦
-                  </div>
-
-
-                  <div>
-
-                    <h3 className="font-luxury text-2xl font-bold text-gold-300">
-                      Dedicated Manager
-                    </h3>
-
-                    <p className="mt-3 text-sm leading-7 text-white/60">
-                      Get dedicated assistance for your projects,
-                      quotations and coordination.
-                    </p>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </motion.div>
+          <p className="mt-6 max-w-2xl text-sm leading-7 text-white/60">
+            Join the NOOH Associate Program and start building
+            business opportunities with NOOH products, project
+            support and professional guidance.
+          </p>
 
         </div>
 
-      </section>
-            {/* =====================================================
-          WHAT YOU GET
-      ===================================================== */}
 
-      <section className="section-padding bg-luxury-black">
+        {/* RIGHT — FREE */}
+        <div className="flex items-center justify-center border-t border-luxury-gold/20 p-8 lg:border-l lg:border-t-0">
 
-        <div className="container-custom mx-auto">
+          <div className="w-full max-w-sm border border-luxury-gold/40 bg-white/[0.02] p-8 text-center">
 
-          {/* =================================================
-              SECTION HEADING
-          ================================================= */}
+            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-luxury-gold">
+              ASSOCIATE INVESTMENT
+            </span>
 
-          <motion.div
-            initial={{
-              opacity: 0,
-              y: 25,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            viewport={{
-              once: true,
-            }}
-            transition={{
-              duration: 0.7,
-            }}
-            className="mb-14 text-center"
-          >
 
-            <div className="mb-5 flex items-center justify-center gap-4">
+            <div className="mt-5">
 
-              <span className="h-px w-12 bg-luxury-gold/60" />
-
-              <span className="text-[11px] font-medium uppercase tracking-[0.4em] text-luxury-gold">
-                WHAT YOU GET
+              <span className="font-luxury text-5xl font-bold text-white">
+                FREE
               </span>
-
-              <span className="h-px w-12 bg-luxury-gold/60" />
 
             </div>
 
 
-            <h2 className="font-luxury text-4xl font-bold md:text-5xl">
-              More Than Just{" "}
-              <span className="text-gold-300">
-                A Partnership
-              </span>
-            </h2>
+            <div className="mx-auto mt-5 h-[2px] w-14 bg-luxury-gold" />
 
 
-            <div className="mx-auto mt-6 h-[2px] w-12 bg-luxury-gold" />
-
-
-            <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/65 md:text-base">
-              Build your business with the NOOH brand while we
-              support you with the complete project journey.
+            <p className="mt-5 text-sm leading-6 text-white/50">
+              Join the NOOH Associate Program absolutely FREE
+              and start earning with zero investment.
             </p>
-
-          </motion.div>
-
-
-          {/* =================================================
-              BENEFIT CARDS
-          ================================================= */}
-
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
-
-            {[
-              {
-                number: "01",
-                title: "Dedicated Manager",
-                description:
-                  "Get dedicated assistance for project coordination, quotations and business support.",
-              },
-              {
-                number: "02",
-                title: "Fixed Price System",
-                description:
-                  "Work with a structured pricing system that makes project discussions and quotations easier.",
-              },
-              {
-                number: "03",
-                title: "Complete Project Support",
-                description:
-                  "NOOH supports the project from quotation and execution through completion.",
-              },
-              {
-                number: "04",
-                title: "Zero Royalty",
-                description:
-                  "Join the Associate Program without recurring royalty obligations.",
-              },
-            ].map((item, index) => (
-
-              <motion.div
-                key={item.number}
-                initial={{
-                  opacity: 0,
-                  y: 35,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                }}
-                viewport={{
-                  once: true,
-                }}
-                transition={{
-                  duration: 0.6,
-                  delay: index * 0.1,
-                }}
-                whileHover={{
-                  y: -7,
-                }}
-                className="glass-gold p-7 transition-all duration-500"
-              >
-
-                {/* Number */}
-                <div className="flex items-center justify-between">
-
-                  <span className="font-luxury text-3xl font-bold text-luxury-gold/40">
-                    {item.number}
-                  </span>
-
-
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full border border-luxury-gold/40 text-luxury-gold">
-                    ✦
-                  </div>
-
-                </div>
-
-
-                {/* Gold Line */}
-                <div className="mt-6 h-px w-10 bg-luxury-gold/60" />
-
-
-                {/* Title */}
-                <h3 className="mt-6 font-luxury text-xl font-bold text-gold-300">
-                  {item.title}
-                </h3>
-
-
-                {/* Description */}
-                <p className="mt-4 text-sm leading-7 text-white/60">
-                  {item.description}
-                </p>
-
-              </motion.div>
-
-            ))}
 
           </div>
 
         </div>
 
-      </section>
+      </div>
+
+    </motion.div>
+
+  </div>
+</section>
+{/* ============================================================
+    ASSOCIATE BENEFITS
+============================================================ */}
+{/* ============================================================
+    ASSOCIATE BENEFITS
+============================================================ */}
+{/* ============================================================
+    ASSOCIATE BENEFITS
+============================================================ */}
+
+{/* ============================================================
+    ASSOCIATE BENEFITS
+============================================================ */}
+
+<section
+  id="associate-benefits"
+  className="section-padding bg-luxury-black"
+>
+  <div className="container-custom mx-auto">
+
+    {/* Section Heading */}
+    <motion.div
+      initial={{ opacity: 0, y: 25 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7 }}
+      className="mb-14 text-center"
+    >
+
+      <div className="mb-5 flex items-center justify-center gap-4">
+
+        <span className="h-px w-12 bg-luxury-gold/60" />
+
+        <span className="text-[11px] font-medium uppercase tracking-[0.4em] text-luxury-gold">
+          WHAT YOU RECEIVE
+        </span>
+
+        <span className="h-px w-12 bg-luxury-gold/60" />
+
+      </div>
+
+      <h2 className="font-luxury text-4xl font-bold md:text-5xl">
+        Associate{" "}
+        <span className="text-gold-300">
+          Benefits
+        </span>
+      </h2>
+
+      <div className="mx-auto mt-6 h-[2px] w-12 bg-luxury-gold" />
+
+    </motion.div>
 
 
-      {/* =====================================================
+    {/* Benefits Cards */}
+
+    <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+
+      {[
+        {
+          number: "01",
+          icon: "▣",
+          title: "Associate Code",
+          text: "Receive your official NOOH Associate ID and become an authorized associate partner of NOOH Elevated Living LLP.",
+        },
+
+        {
+          number: "02",
+          icon: "◆",
+          title: "Fixed Price Structure",
+          text: "NOOH provides a fixed project price list. Associates are free to sell projects at their own market price and retain their own profit margin.",
+        },
+
+        {
+          number: "03",
+          icon: "◉",
+          title: "Complete Project Support",
+          text: "Get complete support including client consultation, site survey, design support, material supply, installation, project execution and technical support.",
+        },
+
+        {
+          number: "04",
+          icon: "♙",
+          title: "Dedicated Manager",
+          text: "Every associate receives a dedicated manager for client handling, quotation support, project coordination, technical guidance and order management.",
+        },
+
+        {
+          number: "05",
+          icon: "▤",
+          title: "Certification",
+          text: "Receive an official Associate Certificate from NOOH Elevated Living LLP as recognition of your association with the brand.",
+        },
+
+      ].map((item, index) => (
+
+        <motion.div
+          key={item.number}
+          initial={{
+            opacity: 0,
+            y: 25,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          viewport={{
+            once: true,
+          }}
+          transition={{
+            duration: 0.5,
+            delay: index * 0.06,
+          }}
+          whileHover={{
+            y: -5,
+          }}
+          className="glass-gold group relative overflow-hidden p-7 transition-all duration-300"
+        >
+
+          {/* Number + Icon */}
+
+          <div className="flex items-center justify-between">
+
+            <span className="text-[10px] font-bold tracking-[0.2em] text-luxury-gold">
+              {item.number}
+            </span>
+
+            <div className="flex h-12 w-12 items-center justify-center rounded-full border border-luxury-gold/40 bg-black/20 text-lg text-luxury-gold transition-all duration-300 group-hover:bg-luxury-gold group-hover:text-black">
+              {item.icon}
+            </div>
+
+          </div>
+
+
+          {/* Title */}
+
+          <h3 className="mt-6 font-luxury text-xl font-bold text-white">
+            {item.title}
+          </h3>
+
+
+          {/* Gold Divider */}
+
+          <div className="mt-4 h-[2px] w-10 bg-luxury-gold transition-all duration-300 group-hover:w-14" />
+
+
+          {/* Description */}
+
+          <p className="mt-5 text-sm leading-7 text-white/60">
+            {item.text}
+          </p>
+
+        </motion.div>
+
+      ))}
+
+    </div>
+
+  </div>
+</section>
+{/* ============================================================
+    COMPLETE PROJECT SUPPORT
+============================================================ */}
+{/* ============================================================
+    COMPLETE PROJECT SUPPORT
+============================================================ */}
+
+<section
+  id="project-support"
+  className="section-padding bg-luxury-black"
+>
+  <div className="container-custom mx-auto">
+
+    {/* ========================================================
+        SECTION HEADING
+    ======================================================== */}
+
+    <motion.div
+      initial={{ opacity: 0, y: 25 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7 }}
+      className="mb-14 text-center"
+    >
+
+      <div className="mb-5 flex items-center justify-center gap-4">
+
+        <span className="h-px w-12 bg-luxury-gold/60" />
+
+        <span className="text-[11px] font-medium uppercase tracking-[0.4em] text-luxury-gold">
           COMPLETE PROJECT SUPPORT
-      ===================================================== */}
+        </span>
 
-      <section className="section-padding bg-luxury-black">
+        <span className="h-px w-12 bg-luxury-gold/60" />
 
-        <div className="container-custom mx-auto">
-
-          <div className="grid items-center gap-12 lg:grid-cols-2">
+      </div>
 
 
-            {/* =================================================
-                LEFT — IMAGE
-            ================================================= */}
+      <h2 className="font-luxury text-4xl font-bold md:text-5xl">
+        We Support You{" "}
+        <span className="text-gold-300">
+          From Start To Finish
+        </span>
+      </h2>
+
+
+      <div className="mx-auto mt-6 h-[2px] w-12 bg-luxury-gold" />
+
+
+      <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/55">
+        As a NOOH Associate, you don't have to manage the entire
+        project alone. Our team supports you across consultation,
+        planning, execution and technical requirements.
+      </p>
+
+    </motion.div>
+
+
+
+    {/* ========================================================
+        MAIN SUPPORT CARD
+    ======================================================== */}
+
+    <motion.div
+      initial={{ opacity: 0, y: 35 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      className="glass-gold overflow-hidden"
+    >
+
+      <div className="grid lg:grid-cols-[0.8fr_1.7fr]">
+
+
+        {/* ====================================================
+            LEFT — INTRO
+        ==================================================== */}
+
+        <div className="border-b border-luxury-gold/20 p-8 md:p-10 lg:border-b-0 lg:border-r">
+
+          <div className="flex h-14 w-14 items-center justify-center rounded-full border border-luxury-gold/40 bg-black/20 text-xl text-luxury-gold">
+            ✦
+          </div>
+
+
+          <h3 className="mt-7 font-luxury text-3xl font-bold text-white">
+            Your Project.
+            <br />
+
+            <span className="text-gold-300">
+              Our Support.
+            </span>
+          </h3>
+
+
+          <div className="mt-6 h-[2px] w-12 bg-luxury-gold" />
+
+
+          <p className="mt-6 text-sm leading-7 text-white/55">
+            From the first client discussion to final installation,
+            NOOH provides the required support so that you can
+            confidently handle projects and focus on growing
+            your business.
+          </p>
+
+
+          <div className="mt-8 border-t border-luxury-gold/15 pt-6">
+
+            <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-luxury-gold">
+              PROJECT ASSISTANCE
+            </p>
+
+            <p className="mt-2 text-sm leading-6 text-white/40">
+              Professional guidance at every important stage
+              of your project.
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        {/* ====================================================
+            RIGHT — SUPPORT SERVICES
+        ==================================================== */}
+
+        <div className="p-6 md:p-8">
+
+          <div className="grid gap-4 sm:grid-cols-2">
+
+
+            {/* Client Consultation */}
 
             <motion.div
-              initial={{
-                opacity: 0,
-                x: -35,
-              }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-              }}
-              viewport={{
-                once: true,
-              }}
-              transition={{
-                duration: 0.7,
-              }}
-              className="relative order-2 lg:order-1"
+              whileHover={{ y: -3 }}
+              className="group rounded-lg border border-white/10 bg-white/[0.025] p-5 transition-all duration-300 hover:border-luxury-gold/40"
             >
 
-              <div className="glass-gold overflow-hidden p-2">
+              <div className="flex items-start gap-4">
 
-                <div className="relative h-[430px] overflow-hidden">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-luxury-gold/30 text-luxury-gold">
+                  01
+                </div>
 
-                  <img
-                    src="/franchaise-hero/associate.png"
-                    alt="NOOH Associate Project Support"
-                    className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
-                  />
+                <div>
 
-                  {/* Overlay */}
-                  <div className="absolute inset-0 bg-black/40" />
+                  <h4 className="font-luxury text-lg font-bold text-white group-hover:text-gold-300">
+                    Client Consultation
+                  </h4>
 
-
-                  {/* Center Text */}
-                  <div className="absolute inset-0 flex items-center justify-center p-6 text-center">
-
-                    <div>
-
-                      <p className="text-[10px] font-bold uppercase tracking-[0.35em] text-luxury-gold">
-                        NOOH ASSOCIATE
-                      </p>
-
-                      <p className="mt-4 font-luxury text-3xl font-bold text-white md:text-4xl">
-                        Complete Project
-                      </p>
-
-                      <p className="mt-1 font-luxury text-2xl font-bold text-gold-300">
-                        Support
-                      </p>
-
-                    </div>
-
-                  </div>
+                  <p className="mt-2 text-sm leading-6 text-white/45">
+                    Assistance in understanding client requirements,
+                    product suitability and project expectations.
+                  </p>
 
                 </div>
 
@@ -514,480 +514,651 @@ const Associate = () => {
             </motion.div>
 
 
-            {/* =================================================
-                RIGHT — CONTENT
-            ================================================= */}
+
+            {/* Site Survey */}
 
             <motion.div
-              initial={{
-                opacity: 0,
-                x: 35,
-              }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-              }}
-              viewport={{
-                once: true,
-              }}
-              transition={{
-                duration: 0.7,
-              }}
-              className="order-1 lg:order-2"
+              whileHover={{ y: -3 }}
+              className="group rounded-lg border border-white/10 bg-white/[0.025] p-5 transition-all duration-300 hover:border-luxury-gold/40"
             >
 
-              {/* Label */}
-              <div className="mb-5 flex items-center gap-4">
+              <div className="flex items-start gap-4">
 
-                <span className="h-px w-12 bg-luxury-gold/60" />
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-luxury-gold/30 text-luxury-gold">
+                  02
+                </div>
 
-                <span className="text-[11px] font-medium uppercase tracking-[0.4em] text-luxury-gold">
-                  COMPLETE PROJECT SUPPORT
-                </span>
+                <div>
 
-              </div>
+                  <h4 className="font-luxury text-lg font-bold text-white group-hover:text-gold-300">
+                    Site Survey
+                  </h4>
 
+                  <p className="mt-2 text-sm leading-6 text-white/45">
+                    Support for understanding site conditions,
+                    measurements and installation requirements.
+                  </p>
 
-              {/* Heading */}
-              <h2 className="font-luxury text-4xl font-bold leading-tight md:text-5xl">
-
-                You Bring The{" "}
-                <span className="text-gold-300">
-                  Opportunity.
-                </span>
-
-                <br />
-
-                We Handle The{" "}
-                <span className="text-gold-300">
-                  Project.
-                </span>
-
-              </h2>
-
-
-              {/* Gold Line */}
-              <div className="mt-7 h-[2px] w-14 bg-luxury-gold" />
-
-
-              {/* Description */}
-              <p className="mt-7 max-w-xl text-sm leading-7 text-white/65 md:text-base">
-                As an Associate, you can focus on bringing projects
-                and customers while NOOH supports the project with
-                quotation, technical coordination and execution.
-              </p>
-
-
-              {/* Support Points */}
-              <div className="mt-8 space-y-4">
-
-                {[
-                  "Quotation support",
-                  "Technical project support",
-                  "Project execution",
-                  "Dedicated coordination",
-                ].map((point, index) => (
-
-                  <motion.div
-                    key={point}
-                    initial={{
-                      opacity: 0,
-                      x: 15,
-                    }}
-                    whileInView={{
-                      opacity: 1,
-                      x: 0,
-                    }}
-                    viewport={{
-                      once: true,
-                    }}
-                    transition={{
-                      duration: 0.5,
-                      delay: index * 0.08,
-                    }}
-                    className="flex items-center gap-4"
-                  >
-
-                    <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-luxury-gold/40 text-xs text-luxury-gold">
-                      ✓
-                    </span>
-
-                    <span className="text-sm text-white/75">
-                      {point}
-                    </span>
-
-                  </motion.div>
-
-                ))}
-
-              </div>
-
-
-              {/* Highlight */}
-              <div className="glass-gold mt-8 border-l-2 border-luxury-gold p-6">
-
-                <p className="font-luxury text-xl font-bold text-white">
-                  Your Referral. Our Execution.
-                </p>
-
-                <p className="mt-2 text-sm leading-6 text-white/55">
-                  Work together with NOOH to deliver a professional
-                  project experience for your client.
-                </p>
+                </div>
 
               </div>
 
             </motion.div>
 
+
+
+            {/* Design Support */}
+
+            <motion.div
+              whileHover={{ y: -3 }}
+              className="group rounded-lg border border-white/10 bg-white/[0.025] p-5 transition-all duration-300 hover:border-luxury-gold/40"
+            >
+
+              <div className="flex items-start gap-4">
+
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-luxury-gold/30 text-luxury-gold">
+                  03
+                </div>
+
+                <div>
+
+                  <h4 className="font-luxury text-lg font-bold text-white group-hover:text-gold-300">
+                    Design Support
+                  </h4>
+
+                  <p className="mt-2 text-sm leading-6 text-white/45">
+                    Product and design guidance to help present
+                    suitable NOOH solutions to your clients.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </motion.div>
+
+
+
+            {/* Material Supply */}
+
+            <motion.div
+              whileHover={{ y: -3 }}
+              className="group rounded-lg border border-white/10 bg-white/[0.025] p-5 transition-all duration-300 hover:border-luxury-gold/40"
+            >
+
+              <div className="flex items-start gap-4">
+
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-luxury-gold/30 text-luxury-gold">
+                  04
+                </div>
+
+                <div>
+
+                  <h4 className="font-luxury text-lg font-bold text-white group-hover:text-gold-300">
+                    Material Supply
+                  </h4>
+
+                  <p className="mt-2 text-sm leading-6 text-white/45">
+                    Access to required NOOH materials with
+                    coordinated order processing and supply.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </motion.div>
+
+
+
+            {/* Installation */}
+
+            <motion.div
+              whileHover={{ y: -3 }}
+              className="group rounded-lg border border-white/10 bg-white/[0.025] p-5 transition-all duration-300 hover:border-luxury-gold/40"
+            >
+
+              <div className="flex items-start gap-4">
+
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-luxury-gold/30 text-luxury-gold">
+                  05
+                </div>
+
+                <div>
+
+                  <h4 className="font-luxury text-lg font-bold text-white group-hover:text-gold-300">
+                    Installation Support
+                  </h4>
+
+                  <p className="mt-2 text-sm leading-6 text-white/45">
+                    Professional installation assistance and
+                    technical guidance for project execution.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </motion.div>
+
+
+
+            {/* Project Execution */}
+
+            <motion.div
+              whileHover={{ y: -3 }}
+              className="group rounded-lg border border-white/10 bg-white/[0.025] p-5 transition-all duration-300 hover:border-luxury-gold/40"
+            >
+
+              <div className="flex items-start gap-4">
+
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-luxury-gold/30 text-luxury-gold">
+                  06
+                </div>
+
+                <div>
+
+                  <h4 className="font-luxury text-lg font-bold text-white group-hover:text-gold-300">
+                    Project Execution
+                  </h4>
+
+                  <p className="mt-2 text-sm leading-6 text-white/45">
+                    Coordination support to help ensure smooth
+                    execution and professional project delivery.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </motion.div>
+
+
+
+            {/* Technical Support */}
+
+            <motion.div
+              whileHover={{ y: -3 }}
+              className="group rounded-lg border border-white/10 bg-white/[0.025] p-5 transition-all duration-300 hover:border-luxury-gold/40 sm:col-span-2"
+            >
+
+              <div className="flex items-start gap-4">
+
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-luxury-gold/30 text-luxury-gold">
+                  07
+                </div>
+
+                <div>
+
+                  <h4 className="font-luxury text-lg font-bold text-white group-hover:text-gold-300">
+                    Technical Support
+                  </h4>
+
+                  <p className="mt-2 text-sm leading-6 text-white/45">
+                    Get technical assistance whenever required for
+                    product understanding, installation requirements
+                    and project-related queries.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </motion.div>
+
+
           </div>
 
         </div>
 
-      </section>
-            {/* =====================================================
-          HOW IT WORKS
-      ===================================================== */}
+      </div>
 
-      <section
-        id="how-it-works"
-        className="section-padding bg-luxury-black"
+    </motion.div>
+
+  </div>
+</section>
+
+{/* ============================================================
+    STRETCH CEILING RATE LIST
+============================================================ */}
+
+<section
+  id="rate-list"
+  className="section-padding bg-luxury-black"
+>
+  <div className="container-custom mx-auto">
+
+    {/* ========================================================
+        SECTION HEADING
+    ======================================================== */}
+
+    <motion.div
+      initial={{ opacity: 0, y: 25 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7 }}
+      className="mb-14 text-center"
+    >
+
+      <div className="mb-5 flex items-center justify-center gap-4">
+
+        <span className="h-px w-12 bg-luxury-gold/60" />
+
+        <span className="text-[11px] font-medium uppercase tracking-[0.4em] text-luxury-gold">
+          ASSOCIATE RATE LIST
+        </span>
+
+        <span className="h-px w-12 bg-luxury-gold/60" />
+
+      </div>
+
+
+      <h2 className="font-luxury text-4xl font-bold md:text-5xl">
+        Stretch Ceiling{" "}
+        <span className="text-gold-300">
+          Rate List
+        </span>
+      </h2>
+
+
+      <p className="mt-3 font-luxury text-lg text-white/50">
+        Premium solutions for NOOH Associates
+      </p>
+
+
+      <div className="mx-auto mt-6 h-[2px] w-12 bg-luxury-gold" />
+
+    </motion.div>
+
+
+
+    {/* ========================================================
+        RATE CARDS
+    ======================================================== */}
+
+    <div className="grid gap-6 lg:grid-cols-2">
+
+
+      {/* ======================================================
+          A — TRANSLUCENT STRETCH CEILING
+      ====================================================== */}
+
+      <motion.div
+        initial={{ opacity: 0, y: 25 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="glass-gold overflow-hidden"
       >
 
-        <div className="container-custom mx-auto">
+        <div className="border-b border-luxury-gold/20 px-6 py-5">
 
-          {/* =================================================
-              SECTION HEADING
-          ================================================= */}
+          <div className="flex items-center gap-4">
 
-          <motion.div
-            initial={{
-              opacity: 0,
-              y: 25,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            viewport={{
-              once: true,
-            }}
-            transition={{
-              duration: 0.7,
-            }}
-            className="mb-16 text-center"
-          >
+            <span className="flex h-10 w-10 items-center justify-center rounded-full border border-luxury-gold/40 font-luxury text-lg font-bold text-luxury-gold">
+              A
+            </span>
 
-            <div className="mb-5 flex items-center justify-center gap-4">
-
-              <span className="h-px w-12 bg-luxury-gold/60" />
-
-              <span className="text-[11px] font-medium uppercase tracking-[0.4em] text-luxury-gold">
-                HOW IT WORKS
-              </span>
-
-              <span className="h-px w-12 bg-luxury-gold/60" />
-
-            </div>
-
-
-            <h2 className="font-luxury text-4xl font-bold md:text-5xl">
-              A Simple Path To{" "}
-              <span className="text-gold-300">
-                Success
-              </span>
-            </h2>
-
-
-            <div className="mx-auto mt-6 h-[2px] w-12 bg-luxury-gold" />
-
-
-            <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/65 md:text-base">
-              Bring the opportunity to NOOH and let our team
-              handle the project journey from quotation to execution.
-            </p>
-
-          </motion.div>
-
-
-          {/* =================================================
-              PROCESS FLOW
-          ================================================= */}
-
-          <div className="relative">
-
-            {/* Connecting Line — Desktop */}
-            <div className="absolute left-[10%] right-[10%] top-8 hidden h-px bg-gradient-to-r from-transparent via-luxury-gold/50 to-transparent lg:block" />
-
-
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
-
-              {[
-                {
-                  number: "01",
-                  title: "You Refer",
-                  description:
-                    "Bring a potential client or project opportunity to NOOH.",
-                },
-                {
-                  number: "02",
-                  title: "We Quote",
-                  description:
-                    "NOOH prepares the quotation using the fixed-price system.",
-                },
-                {
-                  number: "03",
-                  title: "We Execute",
-                  description:
-                    "Our team handles the technical and project execution.",
-                },
-                {
-                  number: "04",
-                  title: "Client Satisfied",
-                  description:
-                    "The project is completed professionally for your client.",
-                },
-                {
-                  number: "05",
-                  title: "You Earn",
-                  description:
-                    "Earn from the successful project you referred to NOOH.",
-                },
-              ].map((item, index) => (
-
-                <motion.div
-                  key={item.number}
-                  initial={{
-                    opacity: 0,
-                    y: 35,
-                  }}
-                  whileInView={{
-                    opacity: 1,
-                    y: 0,
-                  }}
-                  viewport={{
-                    once: true,
-                  }}
-                  transition={{
-                    duration: 0.6,
-                    delay: index * 0.1,
-                  }}
-                  className="relative text-center"
-                >
-
-                  {/* Number Circle */}
-                  <motion.div
-                    whileHover={{
-                      scale: 1.08,
-                    }}
-                    className="relative z-10 mx-auto flex h-16 w-16 items-center justify-center rounded-full border border-luxury-gold bg-luxury-black font-luxury text-xl font-bold text-luxury-gold"
-                  >
-                    {item.number}
-                  </motion.div>
-
-
-                  {/* Card */}
-                  <motion.div
-                    whileHover={{
-                      y: -6,
-                    }}
-                    className="glass-gold mt-7 min-h-[220px] p-7 transition-all duration-500"
-                  >
-
-                    {/* Icon */}
-                    <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-full border border-luxury-gold/40 text-sm text-luxury-gold">
-                      ✦
-                    </div>
-
-
-                    {/* Title */}
-                    <h3 className="mt-5 font-luxury text-xl font-bold text-gold-300">
-                      {item.title}
-                    </h3>
-
-
-                    {/* Line */}
-                    <div className="mx-auto mt-4 h-px w-8 bg-luxury-gold/60" />
-
-
-                    {/* Description */}
-                    <p className="mt-4 text-sm leading-6 text-white/60">
-                      {item.description}
-                    </p>
-
-                  </motion.div>
-
-                </motion.div>
-
-              ))}
-
-            </div>
+            <h3 className="font-luxury text-xl font-bold text-white">
+              Translucent Stretch Ceiling
+            </h3>
 
           </div>
 
         </div>
 
-      </section>
+
+        <div className="p-6">
+
+          {[
+            {
+              name: "FIX CCT TRANSLUCENT 3K/4K/6K/10K",
+              price: "₹350 / SQFT",
+            },
+            {
+              name: "D&T TRANSLUCENT WITH REMOTE AND APP",
+              price: "₹450 / SQFT",
+            },
+            {
+              name: "RGBW TRANSLUCENT WITH REMOTE AND APP",
+              price: "₹550 / SQFT",
+            },
+            {
+              name: "RGBW PIXEL TRANSLUCENT WITH REMOTE AND APP",
+              price: "₹650 / SQFT",
+            },
+            {
+              name: "WOODEN STRUCTURE WITH PRIMER",
+              price: "₹350 / SQFT",
+            },
+          ].map((item, index) => (
+
+            <div
+              key={index}
+              className="flex items-center justify-between gap-4 border-b border-white/10 py-4 last:border-b-0"
+            >
+
+              <div className="flex items-start gap-3">
+
+                <span className="text-[10px] font-bold text-luxury-gold">
+                  0{index + 1}
+                </span>
+
+                <p className="text-xs leading-5 text-white/65">
+                  {item.name}
+                </p>
+
+              </div>
+
+
+              <span className="shrink-0 font-luxury text-sm font-bold text-gold-300">
+                {item.price}
+              </span>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </motion.div>
+
+
+
+      {/* ======================================================
+          B — UV PRINTED STRETCH CEILING
+      ====================================================== */}
+
+      <motion.div
+        initial={{ opacity: 0, y: 25 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.08 }}
+        className="glass-gold overflow-hidden"
+      >
+
+        <div className="border-b border-luxury-gold/20 px-6 py-5">
+
+          <div className="flex items-center gap-4">
+
+            <span className="flex h-10 w-10 items-center justify-center rounded-full border border-luxury-gold/40 font-luxury text-lg font-bold text-luxury-gold">
+              B
+            </span>
+
+            <h3 className="font-luxury text-xl font-bold text-white">
+              UV Printed Stretch Ceiling
+            </h3>
+
+          </div>
+
+        </div>
+
+
+        <div className="p-6">
+
+          {[
+            {
+              name: "FIX CCT PRINTED 3K/4K/6K/10K",
+              price: "₹450 / SQFT",
+            },
+            {
+              name: "D&T PRINTED WITH REMOTE AND APP",
+              price: "₹550 / SQFT",
+            },
+            {
+              name: "RGBW PRINTED WITH REMOTE AND APP",
+              price: "₹650 / SQFT",
+            },
+            {
+              name: "RGBW PIXEL PRINTED WITH REMOTE AND APP",
+              price: "₹650 / SQFT",
+            },
+            {
+              name: "WOODEN STRUCTURE WITH PRIMER",
+              price: "₹350 / SQFT",
+            },
+          ].map((item, index) => (
+
+            <div
+              key={index}
+              className="flex items-center justify-between gap-4 border-b border-white/10 py-4 last:border-b-0"
+            >
+
+              <div className="flex items-start gap-3">
+
+                <span className="text-[10px] font-bold text-luxury-gold">
+                  0{index + 1}
+                </span>
+
+                <p className="text-xs leading-5 text-white/65">
+                  {item.name}
+                </p>
+
+              </div>
+
+
+              <span className="shrink-0 font-luxury text-sm font-bold text-gold-300">
+                {item.price}
+              </span>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </motion.div>
+
+
+
+      {/* ======================================================
+          C — FIBER OPTIC CEILING
+      ====================================================== */}
+
+      <motion.div
+        initial={{ opacity: 0, y: 25 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.12 }}
+        className="glass-gold overflow-hidden"
+      >
+
+        <div className="border-b border-luxury-gold/20 px-6 py-5">
+
+          <div className="flex items-center gap-4">
+
+            <span className="flex h-10 w-10 items-center justify-center rounded-full border border-luxury-gold/40 font-luxury text-lg font-bold text-luxury-gold">
+              C
+            </span>
+
+            <h3 className="font-luxury text-xl font-bold text-white">
+              Fiber Optic Ceiling
+            </h3>
+
+          </div>
+
+        </div>
+
+
+        <div className="p-6">
+
+          {[
+            {
+              name: "TWINKLE + STAR CEILING WITH REMOTE AND APP",
+              price: "₹450 / SQFT",
+            },
+            {
+              name: "TWINKLE + SHOOTING STAR CEILING WITH REMOTE / APP",
+              price: "₹550 / SQFT",
+            },
+            {
+              name: "GALAXY + TWINKLE + SHOOTING WITH REMOTE AND APP",
+              price: "₹650 / SQFT",
+            },
+            {
+              name: "PRINTED MURAL CEILING + TWINKLE + SHOOTING STAR WITH REMOTE AND APP",
+              price: "₹750 / SQFT",
+            },
+          ].map((item, index) => (
+
+            <div
+              key={index}
+              className="flex items-center justify-between gap-4 border-b border-white/10 py-4 last:border-b-0"
+            >
+
+              <div className="flex items-start gap-3">
+
+                <span className="text-[10px] font-bold text-luxury-gold">
+                  0{index + 1}
+                </span>
+
+                <p className="text-xs leading-5 text-white/65">
+                  {item.name}
+                </p>
+
+              </div>
+
+
+              <span className="shrink-0 font-luxury text-sm font-bold text-gold-300">
+                {item.price}
+              </span>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </motion.div>
+
+
+
+      {/* ======================================================
+          D — EXCLUSIVE CEILING
+      ====================================================== */}
+
+      <motion.div
+        initial={{ opacity: 0, y: 25 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.16 }}
+        className="glass-gold overflow-hidden"
+      >
+
+        <div className="border-b border-luxury-gold/20 px-6 py-5">
+
+          <div className="flex items-center gap-4">
+
+            <span className="flex h-10 w-10 items-center justify-center rounded-full border border-luxury-gold/40 font-luxury text-lg font-bold text-luxury-gold">
+              D
+            </span>
+
+            <h3 className="font-luxury text-xl font-bold text-white">
+              Exclusive Ceiling
+            </h3>
+
+          </div>
+
+        </div>
+
+
+        <div className="p-6">
+
+          {[
+            {
+              name: "CLOUDWAVE TEXTILE CEILING",
+              price: "₹550 / SQFT",
+            },
+            {
+              name: "CLOUDWAVE TEXTILE CEILING WITH TRANSLUCENT CEILING D&T",
+              price: "₹950 / SQFT",
+            },
+            {
+              name: "WINDFABRIC TEXTILE CEILING",
+              price: "₹750 / RUNNING FEET",
+            },
+            {
+              name: "SKYLUME 22×22 PANEL",
+              price: "₹1850 / PCS",
+            },
+            {
+              name: "SUNROOF CEILING AND WINDOW WITH WOODEN STRUCTURE",
+              price: "₹2000 / SQFT",
+            },
+            {
+              name: "SUNROOF CEILING AND WINDOW WITHOUT WOODEN STRUCTURE",
+              price: "₹750 / SQFT",
+            },
+          ].map((item, index) => (
+
+            <div
+              key={index}
+              className="flex items-center justify-between gap-4 border-b border-white/10 py-4 last:border-b-0"
+            >
+
+              <div className="flex items-start gap-3">
+
+                <span className="text-[10px] font-bold text-luxury-gold">
+                  0{index + 1}
+                </span>
+
+                <p className="text-xs leading-5 text-white/65">
+                  {item.name}
+                </p>
+
+              </div>
+
+
+              <span className="shrink-0 font-luxury text-sm font-bold text-gold-300">
+                {item.price}
+              </span>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </motion.div>
+
+    </div>
+
+
+
+    {/* ========================================================
+        BOTTOM NOTE
+    ======================================================== */}
+
+    <motion.div
+      initial={{ opacity: 0, y: 15 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className="mt-8 flex flex-col items-center justify-center gap-4 text-center sm:flex-row"
+    >
+
+      <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-luxury-gold">
+        NOTE
+      </span>
+
+      <span className="hidden h-px w-8 bg-luxury-gold/30 sm:block" />
+
+      <p className="text-xs text-white/40">
+        Transport, team travelling and GST will be extra.
+      </p>
+
+    </motion.div>
+
+
+  </div>
+</section>
+
 
 
       {/* =====================================================
           BUSINESS MODEL HIGHLIGHT
       ===================================================== */}
 
-      <section className="section-padding bg-luxury-black">
-
-        <div className="container-custom mx-auto">
-
-          <motion.div
-            initial={{
-              opacity: 0,
-              y: 30,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            viewport={{
-              once: true,
-            }}
-            transition={{
-              duration: 0.7,
-            }}
-            className="glass-gold overflow-hidden"
-          >
-
-            <div className="grid items-stretch lg:grid-cols-2">
-
-
-              {/* =================================================
-                  LEFT
-              ================================================= */}
-
-              <div className="relative flex min-h-[360px] items-center justify-center overflow-hidden">
-
-                <img
-                  src="/franchaise-hero/associate.png"
-                  alt="NOOH Associate Business Model"
-                  className="absolute inset-0 h-full w-full object-cover"
-                />
-
-
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black/60" />
-
-
-                {/* Content */}
-                <div className="relative z-10 px-8 text-center">
-
-                  <p className="text-[10px] font-bold uppercase tracking-[0.35em] text-luxury-gold">
-                    THE ASSOCIATE MODEL
-                  </p>
-
-
-                  <h3 className="mt-5 font-luxury text-4xl font-bold text-white md:text-5xl">
-                    Refer.
-                  </h3>
-
-                  <h3 className="font-luxury text-4xl font-bold text-gold-300 md:text-5xl">
-                    Earn.
-                  </h3>
-
-                </div>
-
-              </div>
-
-
-              {/* =================================================
-                  RIGHT
-              ================================================= */}
-
-              <div className="flex flex-col justify-center p-8 md:p-12">
-
-                <div className="flex items-center gap-4">
-
-                  <span className="h-px w-12 bg-luxury-gold/60" />
-
-                  <span className="text-[11px] font-medium uppercase tracking-[0.35em] text-luxury-gold">
-                    BUSINESS OPPORTUNITY
-                  </span>
-
-                </div>
-
-
-                <h2 className="mt-6 font-luxury text-3xl font-bold md:text-4xl">
-
-                  Your Network.
-                  <br />
-
-                  <span className="text-gold-300">
-                    Your Opportunity.
-                  </span>
-
-                </h2>
-
-
-                <div className="mt-6 h-[2px] w-12 bg-luxury-gold" />
-
-
-                <p className="mt-6 text-sm leading-7 text-white/60 md:text-base">
-                  The Associate Program allows you to bring
-                  projects to NOOH while our team supports the
-                  quotation, technical coordination and execution.
-                </p>
-
-
-                {/* Key Points */}
-                <div className="mt-8 space-y-4">
-
-                  {[
-                    "No recurring royalty",
-                    "Dedicated project support",
-                    "Fixed-price system",
-                    "Professional execution",
-                  ].map((point, index) => (
-
-                    <motion.div
-                      key={point}
-                      initial={{
-                        opacity: 0,
-                        x: 15,
-                      }}
-                      whileInView={{
-                        opacity: 1,
-                        x: 0,
-                      }}
-                      viewport={{
-                        once: true,
-                      }}
-                      transition={{
-                        duration: 0.5,
-                        delay: index * 0.08,
-                      }}
-                      className="flex items-center gap-4"
-                    >
-
-                      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-luxury-gold/40 text-xs text-luxury-gold">
-                        ✓
-                      </span>
-
-                      <span className="text-sm text-white/75">
-                        {point}
-                      </span>
-
-                    </motion.div>
-
-                  ))}
-
-                </div>
-
-              </div>
-
-            </div>
-
-          </motion.div>
-
-        </div>
-
-      </section>
             {/* =====================================================
           WHO CAN BECOME AN ASSOCIATE
       ===================================================== */}
@@ -1162,169 +1333,7 @@ const Associate = () => {
       </section>
 
 
-      {/* =====================================================
-          ASSOCIATE BENEFITS
-      ===================================================== */}
 
-      <section className="section-padding bg-luxury-black">
-
-        <div className="container-custom mx-auto">
-
-          {/* =================================================
-              HEADING
-          ================================================= */}
-
-          <motion.div
-            initial={{
-              opacity: 0,
-              y: 25,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            viewport={{
-              once: true,
-            }}
-            transition={{
-              duration: 0.7,
-            }}
-            className="mb-14 text-center"
-          >
-
-            <div className="mb-5 flex items-center justify-center gap-4">
-
-              <span className="h-px w-12 bg-luxury-gold/60" />
-
-              <span className="text-[11px] font-medium uppercase tracking-[0.4em] text-luxury-gold">
-                ASSOCIATE BENEFITS
-              </span>
-
-              <span className="h-px w-12 bg-luxury-gold/60" />
-
-            </div>
-
-
-            <h2 className="font-luxury text-4xl font-bold md:text-5xl">
-              Why Become A{" "}
-              <span className="text-gold-300">
-                NOOH Associate?
-              </span>
-            </h2>
-
-
-            <div className="mx-auto mt-6 h-[2px] w-12 bg-luxury-gold" />
-
-          </motion.div>
-
-
-          {/* =================================================
-              BENEFIT GRID
-          ================================================= */}
-
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-
-            {[
-              {
-                number: "01",
-                title: "Low Entry Investment",
-                description:
-                  "Start your association with a one-time investment of ₹50,000 + GST.",
-              },
-              {
-                number: "02",
-                title: "Zero Royalty",
-                description:
-                  "No recurring royalty requirement under the Associate Program.",
-              },
-              {
-                number: "03",
-                title: "Dedicated Manager",
-                description:
-                  "Get dedicated support for your projects and coordination.",
-              },
-              {
-                number: "04",
-                title: "Fixed Price System",
-                description:
-                  "A structured pricing system makes quotation and project discussions easier.",
-              },
-              {
-                number: "05",
-                title: "Project Execution Support",
-                description:
-                  "NOOH supports technical coordination and execution of the project.",
-              },
-              {
-                number: "06",
-                title: "Earn From Referrals",
-                description:
-                  "Generate business opportunities by referring suitable projects to NOOH.",
-              },
-            ].map((item, index) => (
-
-              <motion.div
-                key={item.number}
-                initial={{
-                  opacity: 0,
-                  y: 30,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                }}
-                viewport={{
-                  once: true,
-                }}
-                transition={{
-                  duration: 0.6,
-                  delay: index * 0.08,
-                }}
-                whileHover={{
-                  y: -7,
-                }}
-                className="glass-gold p-7 transition-all duration-500"
-              >
-
-                {/* Number */}
-                <div className="flex items-center justify-between">
-
-                  <span className="font-luxury text-3xl font-bold text-luxury-gold/40">
-                    {item.number}
-                  </span>
-
-
-                  <span className="flex h-10 w-10 items-center justify-center rounded-full border border-luxury-gold/40 text-luxury-gold">
-                    ✦
-                  </span>
-
-                </div>
-
-
-                {/* Gold Line */}
-                <div className="mt-6 h-px w-10 bg-luxury-gold/60" />
-
-
-                {/* Title */}
-                <h3 className="mt-6 font-luxury text-xl font-bold text-gold-300">
-                  {item.title}
-                </h3>
-
-
-                {/* Description */}
-                <p className="mt-4 text-sm leading-7 text-white/60">
-                  {item.description}
-                </p>
-
-              </motion.div>
-
-            ))}
-
-          </div>
-
-        </div>
-
-      </section>
 
 
       {/* =====================================================
@@ -1632,9 +1641,7 @@ const Associate = () => {
       </section>
 
 
-      {/* =====================================================
-          PAGE END
-      ===================================================== */}
+     
 
     </div>
   );
