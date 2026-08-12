@@ -1,48 +1,361 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const DealerForm = () => {
+/* ============================================================
+   STATE → CITY DATA
+============================================================ */
+
+const stateCities = {
+  "Andhra Pradesh": [
+    "Visakhapatnam",
+    "Vijayawada",
+    "Guntur",
+    "Nellore",
+    "Tirupati",
+    "Kurnool",
+    "Rajahmundry",
+  ],
+
+  "Arunachal Pradesh": [
+    "Itanagar",
+    "Naharlagun",
+    "Pasighat",
+  ],
+
+  "Assam": [
+    "Guwahati",
+    "Dibrugarh",
+    "Silchar",
+    "Jorhat",
+    "Nagaon",
+  ],
+
+  "Bihar": [
+    "Patna",
+    "Gaya",
+    "Muzaffarpur",
+    "Bhagalpur",
+    "Darbhanga",
+    "Purnia",
+  ],
+
+  "Chhattisgarh": [
+    "Raipur",
+    "Bhilai",
+    "Bilaspur",
+    "Korba",
+    "Durg",
+  ],
+
+  "Goa": [
+    "Panaji",
+    "Margao",
+    "Vasco da Gama",
+  ],
+
+  "Gujarat": [
+    "Ahmedabad",
+    "Surat",
+    "Vadodara",
+    "Rajkot",
+    "Gandhinagar",
+    "Bhavnagar",
+    "Jamnagar",
+  ],
+
+  "Haryana": [
+    "Gurugram",
+    "Faridabad",
+    "Panipat",
+    "Ambala",
+    "Hisar",
+    "Karnal",
+    "Rohtak",
+    "Sonipat",
+  ],
+
+  "Himachal Pradesh": [
+    "Shimla",
+    "Dharamshala",
+    "Solan",
+    "Mandi",
+    "Baddi",
+  ],
+
+  "Jharkhand": [
+    "Ranchi",
+    "Jamshedpur",
+    "Dhanbad",
+    "Bokaro",
+    "Deoghar",
+  ],
+
+  "Karnataka": [
+    "Bengaluru",
+    "Mysuru",
+    "Mangaluru",
+    "Hubballi",
+    "Belagavi",
+    "Davanagere",
+  ],
+
+  "Kerala": [
+    "Thiruvananthapuram",
+    "Kochi",
+    "Kozhikode",
+    "Thrissur",
+    "Kollam",
+    "Kannur",
+  ],
+
+  "Madhya Pradesh": [
+    "Bhopal",
+    "Indore",
+    "Gwalior",
+    "Jabalpur",
+    "Ujjain",
+    "Sagar",
+  ],
+
+  "Maharashtra": [
+    "Mumbai",
+    "Pune",
+    "Nagpur",
+    "Nashik",
+    "Thane",
+    "Aurangabad",
+    "Navi Mumbai",
+    "Kolhapur",
+  ],
+
+  "Manipur": [
+    "Imphal",
+  ],
+
+  "Meghalaya": [
+    "Shillong",
+  ],
+
+  "Mizoram": [
+    "Aizawl",
+  ],
+
+  "Nagaland": [
+    "Kohima",
+    "Dimapur",
+  ],
+
+  "Odisha": [
+    "Bhubaneswar",
+    "Cuttack",
+    "Rourkela",
+    "Puri",
+    "Sambalpur",
+  ],
+
+  "Punjab": [
+    "Ludhiana",
+    "Amritsar",
+    "Jalandhar",
+    "Patiala",
+    "Mohali",
+    "Bathinda",
+  ],
+
+  "Rajasthan": [
+    "Jaipur",
+    "Jodhpur",
+    "Udaipur",
+    "Kota",
+    "Ajmer",
+    "Bikaner",
+    "Alwar",
+  ],
+
+  "Sikkim": [
+    "Gangtok",
+  ],
+
+  "Tamil Nadu": [
+    "Chennai",
+    "Coimbatore",
+    "Madurai",
+    "Salem",
+    "Tiruchirappalli",
+    "Tiruppur",
+    "Erode",
+  ],
+
+  "Telangana": [
+    "Hyderabad",
+    "Warangal",
+    "Nizamabad",
+    "Karimnagar",
+    "Khammam",
+  ],
+
+  "Tripura": [
+    "Agartala",
+  ],
+
+  "Uttar Pradesh": [
+    "Noida",
+    "Greater Noida",
+    "Ghaziabad",
+    "Lucknow",
+    "Kanpur",
+    "Agra",
+    "Varanasi",
+    "Prayagraj",
+    "Meerut",
+    "Gorakhpur",
+    "Bareilly",
+    "Moradabad",
+    "Aligarh",
+    "Mathura",
+    "Muzaffarnagar",
+    "Saharanpur",
+    "Jhansi",
+  ],
+
+  "Uttarakhand": [
+    "Dehradun",
+    "Haridwar",
+    "Rishikesh",
+    "Haldwani",
+    "Nainital",
+    "Roorkee",
+  ],
+
+  "West Bengal": [
+    "Kolkata",
+    "Howrah",
+    "Durgapur",
+    "Siliguri",
+    "Asansol",
+  ],
+
+  "Delhi": [
+    "New Delhi",
+    "Delhi",
+  ],
+
+  "Jammu & Kashmir": [
+    "Srinagar",
+    "Jammu",
+    "Anantnag",
+  ],
+
+  "Chandigarh": [
+    "Chandigarh",
+  ],
+
+  "Puducherry": [
+    "Puducherry",
+  ],
+};
+
+
+/* ============================================================
+   DEALER FORM
+============================================================ */
+
+const Dealerform = () => {
+
   const [formData, setFormData] = useState({
     fullName: "",
     mobile: "",
     email: "",
     whatsapp: "",
+
     companyName: "",
     businessType: "",
     yearsInBusiness: "",
     website: "",
+
     city: "",
     state: "",
     dealershipCity: "",
     address: "",
+
     industryExperience: "",
     clientNetwork: "",
     monthlyBusiness: "",
     reason: "",
+
     callbackTime: "",
     investmentReady: "",
+
     agree: false,
   });
 
+
+  /* ============================================================
+     HANDLE CHANGE
+  ============================================================ */
+
   const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
+
+    const {
+      name,
+      value,
+      type,
+      checked,
+    } = e.target;
 
     setFormData((prev) => ({
       ...prev,
-      [name]: type === "checkbox" ? checked : value,
+      [name]:
+        type === "checkbox"
+          ? checked
+          : value,
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
 
-    console.log("Dealer Application:", formData);
+  /* ============================================================
+     STATE CHANGE
+  ============================================================ */
 
-    alert("Dealer application submitted successfully.");
+  const handleStateChange = (e) => {
+
+    const selectedState = e.target.value;
+
+    setFormData((prev) => ({
+      ...prev,
+
+      state: selectedState,
+
+      // Reset cities when state changes
+      city: "",
+      dealershipCity: "",
+    }));
   };
 
+
+  /* ============================================================
+     SUBMIT
+  ============================================================ */
+
+  const handleSubmit = (e) => {
+
+    e.preventDefault();
+
+    console.log(
+      "Dealer Application:",
+      formData
+    );
+
+    alert(
+      "Dealer application submitted successfully."
+    );
+  };
+
+
   return (
+
     <div className="min-h-screen bg-luxury-black text-white">
+
 
       {/* =====================================================
           HERO
@@ -50,7 +363,6 @@ const DealerForm = () => {
 
       <section className="relative overflow-hidden">
 
-        {/* Background */}
         <div className="absolute inset-0">
 
           <img
@@ -67,16 +379,26 @@ const DealerForm = () => {
 
 
         {/* Gold Bottom */}
-        <div className="absolute bottom-0 left-0 right-0 z-10 h-[3px] bg-gray" />
+
+        <div className="absolute bottom-0 left-0 right-0 z-10 h-[3px] bg-luxury-gold" />
 
 
         {/* Hero Content */}
+
         <div className="relative z-10 flex min-h-[420px] items-center justify-center px-6 text-center">
 
           <motion.div
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{
+              opacity: 0,
+              y: 25,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 0.8,
+            }}
             className="max-w-4xl"
           >
 
@@ -84,14 +406,20 @@ const DealerForm = () => {
               NOOH ELEVATED LIVING LLP
             </p>
 
+
             <h1 className="font-luxury text-5xl font-bold leading-tight md:text-7xl">
+
               Dealer{" "}
+
               <span className="text-gold-300">
                 Application
               </span>
+
             </h1>
 
+
             <div className="mx-auto mt-7 h-[1px] w-[70px] bg-[#d6af45]" />
+
 
             <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/70 md:text-base">
               Take the first step towards becoming an authorized
@@ -103,6 +431,7 @@ const DealerForm = () => {
         </div>
 
       </section>
+
 
 
       {/* =====================================================
@@ -121,10 +450,20 @@ const DealerForm = () => {
             ================================================= */}
 
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
+              initial={{
+                opacity: 0,
+                x: -30,
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              viewport={{
+                once: true,
+              }}
+              transition={{
+                duration: 0.7,
+              }}
               className="lg:sticky lg:top-24 lg:self-start"
             >
 
@@ -140,10 +479,13 @@ const DealerForm = () => {
 
 
               <h2 className="font-luxury text-4xl font-bold leading-tight md:text-5xl">
+
                 Become A{" "}
+
                 <span className="text-gold-300">
                   NOOH Dealer
                 </span>
+
               </h2>
 
 
@@ -158,24 +500,32 @@ const DealerForm = () => {
 
 
               {/* Investment Card */}
-              <div className="glass-gold mt-8 p-7">
+
+              <div className="glass-gold mt-8 rounded-2xl p-7">
 
                 <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-luxury-gold">
                   DEALERSHIP INVESTMENT
                 </p>
 
+
                 <p className="mt-4 font-luxury text-4xl font-bold text-white">
+
                   ₹1,00,000
+
                   <span className="ml-2 text-lg text-gold-300">
                     + GST
                   </span>
+
                 </p>
 
+
                 <div className="mt-5 h-px w-full bg-luxury-gold/20" />
+
 
                 <p className="mt-5 font-luxury text-lg font-bold text-gold-300">
                   One City. One Dealership.
                 </p>
+
 
                 <p className="mt-2 text-sm leading-6 text-white/50">
                   Build your NOOH business with premium products,
@@ -186,6 +536,7 @@ const DealerForm = () => {
 
 
               {/* Small Note */}
+
               <div className="mt-6 flex gap-3">
 
                 <span className="text-luxury-gold">
@@ -202,22 +553,34 @@ const DealerForm = () => {
             </motion.div>
 
 
+
             {/* =================================================
                 FORM
             ================================================= */}
 
             <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-              className="glass-gold p-6 md:p-10"
+              initial={{
+                opacity: 0,
+                x: 30,
+              }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              viewport={{
+                once: true,
+              }}
+              transition={{
+                duration: 0.7,
+              }}
+              className="glass-gold rounded-2xl p-6 md:p-10"
             >
 
               <form
                 onSubmit={handleSubmit}
                 className="space-y-10"
               >
+
 
                 {/* =================================================
                     PERSONAL DETAILS
@@ -249,6 +612,7 @@ const DealerForm = () => {
                       required
                     />
 
+
                     <FormInput
                       label="Mobile Number"
                       name="mobile"
@@ -259,7 +623,8 @@ const DealerForm = () => {
                       required
                     />
 
-                    <FormInput 
+
+                    <FormInput
                       label="Email Address"
                       name="email"
                       value={formData.email}
@@ -268,6 +633,7 @@ const DealerForm = () => {
                       type="email"
                       required
                     />
+
 
                     <FormInput
                       label="WhatsApp Number"
@@ -281,6 +647,7 @@ const DealerForm = () => {
                   </div>
 
                 </div>
+
 
 
                 {/* =================================================
@@ -355,6 +722,7 @@ const DealerForm = () => {
                 </div>
 
 
+
                 {/* =================================================
                     LOCATION
                 ================================================= */}
@@ -376,32 +744,54 @@ const DealerForm = () => {
 
                   <div className="grid gap-5 md:grid-cols-2">
 
-                    <FormInput
+
+                    {/* STATE */}
+
+                    <FormSelect
+                      label="State"
+                      name="state"
+                      value={formData.state}
+                      onChange={handleStateChange}
+                      required
+                      options={Object.keys(stateCities)}
+                    />
+
+
+                    {/* CURRENT CITY */}
+
+                    <FormSelect
                       label="Current City"
                       name="city"
                       value={formData.city}
                       onChange={handleChange}
-                      placeholder="Enter city"
                       required
+                      disabled={!formData.state}
+                      options={
+                        formData.state
+                          ? stateCities[formData.state]
+                          : []
+                      }
                     />
 
-                    <FormInput
-                      label="State"
-                      name="state"
-                      value={formData.state}
-                      onChange={handleChange}
-                      placeholder="Enter state"
-                      required
-                    />
 
-                    <FormInput
+                    {/* DEALERSHIP CITY */}
+
+                    <FormSelect
                       label="Preferred Dealership City"
                       name="dealershipCity"
                       value={formData.dealershipCity}
                       onChange={handleChange}
-                      placeholder="City you want to represent"
                       required
+                      disabled={!formData.state}
+                      options={
+                        formData.state
+                          ? stateCities[formData.state]
+                          : []
+                      }
                     />
+
+
+                    {/* ADDRESS */}
 
                     <div className="md:col-span-2">
 
@@ -418,6 +808,7 @@ const DealerForm = () => {
                   </div>
 
                 </div>
+
 
 
                 {/* =================================================
@@ -492,8 +883,9 @@ const DealerForm = () => {
                 </div>
 
 
+
                 {/* =================================================
-                    INVESTMENT
+                    NEXT STEP
                 ================================================= */}
 
                 <div>
@@ -544,6 +936,7 @@ const DealerForm = () => {
                 </div>
 
 
+
                 {/* =================================================
                     AGREEMENT
                 ================================================= */}
@@ -561,6 +954,7 @@ const DealerForm = () => {
                       className="mt-1 h-4 w-4 accent-[#d6af45]"
                     />
 
+
                     <span className="text-xs leading-6 text-white/50">
                       I confirm that the information provided above
                       is accurate and I agree to be contacted by the
@@ -572,13 +966,14 @@ const DealerForm = () => {
                 </div>
 
 
+
                 {/* =================================================
                     SUBMIT
                 ================================================= */}
 
                 <button
                   type="submit"
-                  className="group flex w-full items-center justify-center gap-4 bg-[#d6af45] px-8 py-5 text-[11px] font-bold uppercase tracking-[0.25em] text-black transition-all duration-300 hover:bg-[#c9a43a]"
+                  className="group flex w-full items-center justify-center gap-4 rounded-lg bg-[#d6af45] px-8 py-5 text-[11px] font-bold uppercase tracking-[0.25em] text-black transition-all duration-300 hover:bg-[#c9a43a]"
                 >
 
                   Submit Dealer Application
@@ -610,6 +1005,7 @@ const DealerForm = () => {
 };
 
 
+
 /* ============================================================
    REUSABLE INPUT
 ============================================================ */
@@ -623,17 +1019,23 @@ const FormInput = ({
   type = "text",
   required = false,
 }) => {
+
   return (
+
     <div>
 
-      <label className="mb-2 block text-[10px] font-bold uppercase tracking-[0.18em] text-white/60">
+      <label className="mb-2 block text-sm font-semibold text-white">
+
         {label}
+
         {required && (
           <span className="ml-1 text-luxury-gold">
             *
           </span>
         )}
+
       </label>
+
 
       <input
         type={type}
@@ -642,12 +1044,13 @@ const FormInput = ({
         onChange={onChange}
         placeholder={placeholder}
         required={required}
-        className="w-full border border-white/10 bg-white/[0.03] px-4 py-3.5 text-sm text-white outline-none transition-all duration-300 placeholder:text-white/25 focus:border-luxury-gold/60 focus:bg-white/[0.05]"
+        className="w-full rounded-lg border border-luxury-gold/30 bg-luxury-black/50 px-4 py-3 text-white outline-none transition-all duration-300 placeholder:text-white/30 focus:border-luxury-gold"
       />
 
     </div>
   );
 };
+
 
 
 /* ============================================================
@@ -661,38 +1064,59 @@ const FormSelect = ({
   onChange,
   options,
   required = false,
+  disabled = false,
 }) => {
+
   return (
+
     <div>
 
-      <label className="mb-2 block text-[10px] font-bold uppercase tracking-[0.18em] text-white/60">
+      <label className="mb-2 block text-sm font-semibold text-white">
+
         {label}
+
         {required && (
           <span className="ml-1 text-luxury-gold">
             *
           </span>
         )}
+
       </label>
+
 
       <select
         name={name}
         value={value}
         onChange={onChange}
         required={required}
-        className="w-full border border-white/10 bg-[#111111] px-4 py-3.5 text-sm text-white outline-none transition-all duration-300 focus:border-luxury-gold/60"
+        disabled={disabled}
+        className={`w-full rounded-lg border border-luxury-gold/30 bg-luxury-black/50 px-4 py-3 text-white outline-none transition-all duration-300 focus:border-luxury-gold ${
+          disabled
+            ? "cursor-not-allowed opacity-40"
+            : "cursor-pointer"
+        }`}
       >
 
-        <option value="">
-          Select an option
+        <option
+          value=""
+          className="bg-[#111111] text-white"
+        >
+          {disabled
+            ? "Select state first"
+            : "Select an option"}
         </option>
 
+
         {options.map((option) => (
+
           <option
             key={option}
             value={option}
+            className="bg-[#111111] text-white"
           >
             {option}
           </option>
+
         ))}
 
       </select>
@@ -700,6 +1124,7 @@ const FormSelect = ({
     </div>
   );
 };
+
 
 
 /* ============================================================
@@ -713,12 +1138,15 @@ const FormTextarea = ({
   onChange,
   placeholder,
 }) => {
+
   return (
+
     <div>
 
-      <label className="mb-2 block text-[10px] font-bold uppercase tracking-[0.18em] text-white/60">
+      <label className="mb-2 block text-sm font-semibold text-white">
         {label}
       </label>
+
 
       <textarea
         name={name}
@@ -726,11 +1154,12 @@ const FormTextarea = ({
         onChange={onChange}
         placeholder={placeholder}
         rows={4}
-        className="w-full resize-none border border-white/10 bg-white/[0.03] px-4 py-3.5 text-sm text-white outline-none transition-all duration-300 placeholder:text-white/25 focus:border-luxury-gold/60 focus:bg-white/[0.05]"
+        className="w-full resize-none rounded-lg border border-luxury-gold/30 bg-luxury-black/50 px-4 py-3 text-white outline-none transition-all duration-300 placeholder:text-white/30 focus:border-luxury-gold"
       />
 
     </div>
   );
 };
 
-export default DealerForm;
+
+export default Dealerform;

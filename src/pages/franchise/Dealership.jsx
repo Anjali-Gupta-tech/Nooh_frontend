@@ -60,8 +60,8 @@ const Dealership = () => {
 
               {/* Investment */}
           <Link
-  to="/franchise/dealershipform"
-  className="group inline-flex items-center gap-3 bg-[#d6af45] px-7 py-4 text-[11px] font-bold uppercase tracking-[0.2em] text-black transition-all duration-300 hover:bg-[#c9a43a]"
+    to="/franchise/dealershipform"
+    className="group inline-flex items-center gap-3 bg-[#d6af45] px-7 py-4 text-[11px] font-bold uppercase tracking-[0.2em] text-black transition-all duration-300 hover:bg-[#c9a43a]"
 >
   Become a Dealer
 
@@ -70,18 +70,19 @@ const Dealership = () => {
   </span>
 </Link>
 
-              {/* How It Works */}
-              <a
-                href="#how-it-works"
-                className="group inline-flex items-center gap-3 border border-luxury-gold/50 px-7 py-4 text-[11px] font-bold uppercase tracking-[0.2em] text-white transition-all duration-300 hover:bg-luxury-gold hover:text-black"
-              >
-                Download pdf
+              {/* pdf download */}
+{/* PDF Download */}
+<a
+  href="/FRANCHISE_BUSINESS_PARTNER.pdf"
+  download="FRANCHISE_BUSINESS_PARTNER.pdf"
+  className="group inline-flex items-center gap-3 bg-[#d6af45] px-7 py-4 text-[11px] font-bold uppercase tracking-[0.2em] text-black transition-all duration-300 hover:bg-[#c9a43a]"
+>
+  Download PDF
 
-                <span className="transition-transform duration-300 group-hover:translate-x-1">
-                  →
-                </span>
-              </a>
-
+  <span className="transition-transform duration-300 group-hover:translate-x-1">
+    →
+  </span>
+</a>
             </motion.div>
 
           </div>
@@ -254,6 +255,8 @@ const Dealership = () => {
   </div>
 
 </section>
+
+
 {/* =====================================================
     DEALERSHIP BENEFITS
 ===================================================== */}
@@ -364,6 +367,62 @@ const Dealership = () => {
           title: "Exclusive Territory",
           text: "One City — One Authorized Dealership. Exclusive dealership rights are provided city-wise, subject to company approval.",
         },
+   
+// =================================================
+// ADDITIONAL ADVANTAGES
+// =================================================
+
+{
+  number: "09",
+  icon: "◎",
+  title: "Company Website Visibility",
+  text:
+    "Your dealer name and city will be showcased on the official NOOH company website.",
+},
+
+{
+  number: "10",
+  icon: "↗",
+  title: "100% Profit & Margin",
+  text:
+    "Associates and dealers can earn 100% profit and margin on material and services. ",
+},
+
+{
+  number: "11",
+  icon: "◉",
+  title: "Dedicated Manager",
+  text:
+    "Get dedicated assistance for customer and project understanding 24×7. ",
+},
+
+{
+  number: "12",
+  icon: "◫",
+  title: "Product Training & Upgradation",
+  text:
+    "Receive regular product training and timely updates on new products, technologies and solutions.", 
+},
+
+{
+  number: "13",
+  icon: "◇",
+  title: "Business Development",
+  text:
+    "Get access to regular business development guidance and training programs designed.",
+},
+
+{
+  number: "14",
+  icon: "⚒",
+  title: "Installation Support",
+  text:
+    "Get professional installation support from experienced company technicians whenever required.",
+},
+  
+
+
+
 
       ].map((item, index) => (
 
@@ -414,143 +473,12 @@ const Dealership = () => {
       ))}
 
     </div>
-
-  </div>
-
-</section>
-{/* =====================================================
-    ADDITIONAL ADVANTAGES
-===================================================== */}
-
-<section
-  id="additional-advantages"
-  className="section-padding bg-luxury-black"
->
-
-  <div className="container-custom mx-auto">
-
-    {/* Section Heading */}
-
-    <motion.div
-      initial={{ opacity: 0, y: 25 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.7 }}
-      className="mb-14 text-center"
-    >
-
-      <div className="mb-5 flex items-center justify-center gap-4">
-
-        <span className="h-px w-12 bg-luxury-gold/60" />
-
-        <span className="text-[11px] font-medium uppercase tracking-[0.4em] text-luxury-gold">
-          MORE THAN A DEALERSHIP
-        </span>
-
-        <span className="h-px w-12 bg-luxury-gold/60" />
-
-      </div>
-
-
-      <h2 className="font-luxury text-4xl font-bold md:text-5xl">
-        Additional{" "}
-        <span className="text-gold-300">
-          Advantages
-        </span>
-      </h2>
-
-
-      <div className="mx-auto mt-6 h-[2px] w-12 bg-luxury-gold" />
-
-    </motion.div>
-
-
-    {/* Advantages */}
-
-    <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-
-      {[
-        {
-          icon: "◎",
-          title: "Company Website Visibility",
-          text: "Company website will show dealer name city-wise.",
-        },
-
-        {
-          icon: "↗",
-          title: "100% Profit & Margin",
-          text: "100% profit and margin on material and services.",
-        },
-
-        {
-          icon: "◉",
-          title: "Dedicated Manager",
-          text: "Dedicated manager for customer and project understanding 24×7.",
-        },
-
-        {
-          icon: "◫",
-          title: "Product Training & Upgradation",
-          text: "Time-to-time product training and upgrades.",
-        },
-
-        {
-          icon: "◇",
-          title: "Business Development",
-          text: "Time-to-time business development and training programs.",
-        },
-
-        {
-          icon: "⚒",
-          title: "Installation Support",
-          text: "Installation support from company technicians.",
-        },
-
-      ].map((item, index) => (
-
-        <motion.div
-          key={item.title}
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{
-            duration: 0.5,
-            delay: index * 0.07,
-          }}
-          whileHover={{ y: -5 }}
-          className="glass-gold flex gap-5 p-7"
-        >
-
-          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-luxury-gold/40 text-luxury-gold">
-            {item.icon}
-          </div>
-
-
-          <div>
-
-            <h3 className="font-luxury text-lg font-bold text-gold-300">
-              {item.title}
-            </h3>
-
-            <p className="mt-3 text-sm leading-6 text-white/55">
-              {item.text}
-            </p>
-
-          </div>
-
-        </motion.div>
-
-      ))}
-
-    </div>
+      
 
   </div>
 
 </section>
 
-{/* =====================================================
-    DEALER MATERIAL & PRICING
-===================================================== */}
 
 {/* =====================================================
     DEALER MATERIAL & PRICING
@@ -1108,6 +1036,385 @@ const Dealership = () => {
       </div>
 
     </motion.div>
+
+  </div>
+
+</section>
+{/* =====================================================
+    ABOUT NOOH
+===================================================== */}
+
+<section
+  id="about-nooh"
+  className="section-padding bg-luxury-black"
+>
+
+  <div className="container-custom mx-auto">
+
+
+    {/* =================================================
+        SECTION HEADING
+    ================================================= */}
+
+    <motion.div
+      initial={{ opacity: 0, y: 25 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7 }}
+      className="mb-14 text-center"
+    >
+
+      <div className="mb-5 flex items-center justify-center gap-4">
+
+        <span className="h-px w-12 bg-luxury-gold/60" />
+
+        <span className="text-[11px] font-medium uppercase tracking-[0.4em] text-luxury-gold">
+          ABOUT NOOH
+        </span>
+
+        <span className="h-px w-12 bg-luxury-gold/60" />
+
+      </div>
+
+
+      <h2 className="font-luxury text-4xl font-bold md:text-5xl">
+
+        About{" "}
+
+        <span className="text-gold-300">
+          NOOH
+        </span>
+
+      </h2>
+
+
+      <div className="mx-auto mt-6 h-[2px] w-12 bg-luxury-gold" />
+
+    </motion.div>
+
+
+
+    {/* =================================================
+        INTRODUCTION CARD
+    ================================================= */}
+
+    <motion.div
+      initial={{ opacity: 0, y: 35 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      className="glass-gold overflow-hidden"
+    >
+
+      <div className="grid lg:grid-cols-[1.1fr_0.9fr]">
+
+
+        {/* LEFT — ABOUT */}
+
+        <div className="border-b border-luxury-gold/20 p-8 md:p-10 lg:border-b-0 lg:border-r">
+
+          <div className="flex items-start gap-5">
+
+            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-luxury-gold/40 text-xl text-luxury-gold">
+              N
+            </div>
+
+
+            <div>
+
+              <span className="text-[10px] font-bold uppercase tracking-[0.35em] text-luxury-gold">
+                NOOH ELEVATED LIVING LLP
+              </span>
+
+
+              <h3 className="mt-3 font-luxury text-2xl font-bold text-white md:text-3xl">
+                Innovative Interior Ceiling Solutions
+              </h3>
+
+            </div>
+
+          </div>
+
+
+          <p className="mt-7 text-sm leading-7 text-white/60 md:text-base">
+
+            <span className="font-semibold text-gold-300">
+              NOOH Elevated Living LLP
+            </span>{" "}
+            is a premium interior ceiling solutions company
+            specializing in innovative decorative ceiling systems
+            for residential, commercial, hospitality, healthcare,
+            retail, and luxury interior projects across India.
+
+          </p>
+
+
+          <div className="mt-7 h-[2px] w-14 bg-luxury-gold" />
+
+        </div>
+
+
+
+        {/* RIGHT — POSITIONING */}
+
+        <div className="flex items-center p-8 md:p-10">
+
+          <div className="w-full">
+
+            <span className="text-[10px] font-bold uppercase tracking-[0.35em] text-luxury-gold">
+              OUR APPROACH
+            </span>
+
+
+            <h3 className="mt-4 font-luxury text-2xl font-bold text-white">
+              Premium Spaces.
+              <br />
+
+              <span className="text-gold-300">
+                Innovative Ceilings.
+              </span>
+            </h3>
+
+
+            <p className="mt-5 text-sm leading-7 text-white/50">
+              NOOH focuses on innovative decorative ceiling
+              systems designed for modern residential,
+              commercial and luxury interior environments.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </motion.div>
+
+
+
+    {/* =================================================
+        PRODUCT PORTFOLIO
+    ================================================= */}
+
+    <motion.div
+      initial={{ opacity: 0, y: 25 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7 }}
+      className="mt-20 mb-10 text-center"
+    >
+
+      <div className="mb-5 flex items-center justify-center gap-4">
+
+        <span className="h-px w-12 bg-luxury-gold/60" />
+
+        <span className="text-[11px] font-medium uppercase tracking-[0.4em] text-luxury-gold">
+          OUR PRODUCT PORTFOLIO
+        </span>
+
+        <span className="h-px w-12 bg-luxury-gold/60" />
+
+      </div>
+
+
+      <h2 className="font-luxury text-3xl font-bold md:text-4xl">
+
+        Our Product{" "}
+
+        <span className="text-gold-300">
+          Portfolio
+        </span>
+
+      </h2>
+
+
+      <div className="mx-auto mt-6 h-[2px] w-12 bg-luxury-gold" />
+
+    </motion.div>
+
+
+
+    {/* =================================================
+        PRODUCT CARDS
+    ================================================= */}
+
+    <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+
+      {[
+        {
+          number: "01",
+          icon: "◈",
+          title: "STRETCHÉ™",
+          type: "Stretch Ceiling",
+        },
+
+        {
+          number: "02",
+          icon: "≋",
+          title: "Cloudwave™",
+          type: "Textile Ceiling",
+        },
+
+        {
+          number: "03",
+          icon: "◇",
+          title: "WindFabric™",
+          type: "Ceiling",
+        },
+
+        {
+          number: "04",
+          icon: "☁",
+          title: "Virtual Sky",
+          type: "Ceiling",
+        },
+
+        {
+          number: "05",
+          icon: "▱",
+          title: "SkyLume™",
+          type: "Panel Light Ceiling",
+        },
+
+        {
+          number: "06",
+          icon: "✦",
+          title: "Fiber Optic Star",
+          type: "Ceiling",
+        },
+
+      ].map((item, index) => (
+
+        <motion.div
+          key={item.number}
+          initial={{
+            opacity: 0,
+            y: 25,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          viewport={{
+            once: true,
+          }}
+          transition={{
+            duration: 0.5,
+            delay: index * 0.07,
+          }}
+          whileHover={{
+            y: -5,
+          }}
+          className="glass-gold p-6 transition-all duration-300 hover:border-luxury-gold/60"
+        >
+
+          <div className="flex items-center justify-between">
+
+            <span className="text-[10px] font-bold tracking-[0.2em] text-luxury-gold">
+              {item.number}
+            </span>
+
+
+            <div className="flex h-12 w-12 items-center justify-center rounded-full border border-luxury-gold/40 text-lg text-luxury-gold">
+              {item.icon}
+            </div>
+
+          </div>
+
+
+          <h3 className="mt-6 font-luxury text-xl font-bold text-white">
+            {item.title}
+          </h3>
+
+
+          <p className="mt-2 text-sm text-white/50">
+            {item.type}
+          </p>
+
+
+          <div className="mt-5 h-px w-full bg-luxury-gold/15" />
+
+        </motion.div>
+
+      ))}
+
+    </div>
+
+
+
+    {/* =================================================
+        OUR MISSION
+    ================================================= */}
+
+    <motion.div
+      initial={{
+        opacity: 0,
+        y: 30,
+      }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+      }}
+      viewport={{
+        once: true,
+      }}
+      transition={{
+        duration: 0.8,
+      }}
+      className="mt-20"
+    >
+
+      <div className="glass-gold overflow-hidden">
+
+        <div className="grid items-center lg:grid-cols-[110px_1fr]">
+
+
+          {/* Mission Icon */}
+
+          <div className="flex items-center justify-center border-b border-luxury-gold/20 bg-luxury-gold/5 p-8 lg:border-b-0 lg:border-r">
+
+            <div className="flex h-16 w-16 items-center justify-center rounded-full border border-luxury-gold/50 text-2xl text-luxury-gold">
+              ◎
+            </div>
+
+          </div>
+
+
+          {/* Mission Content */}
+
+          <div className="p-8 md:p-10">
+
+            <span className="text-[10px] font-bold uppercase tracking-[0.35em] text-luxury-gold">
+              OUR MISSION
+            </span>
+
+
+            <h3 className="mt-3 font-luxury text-2xl font-bold text-white md:text-3xl">
+              Building Successful Businesses
+            </h3>
+
+
+            <div className="mt-5 h-[2px] w-14 bg-luxury-gold" />
+
+
+            <p className="mt-6 max-w-4xl text-sm leading-7 text-white/60 md:text-base">
+
+              Our mission is to help entrepreneurs, architects,
+              interior designers, contractors, and business owners
+              build a successful business in the growing premium
+              interior industry through professional training,
+              technical support, and complete business guidance.
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </motion.div>
+
 
   </div>
 
