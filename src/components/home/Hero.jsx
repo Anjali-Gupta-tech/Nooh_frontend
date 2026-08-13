@@ -74,7 +74,13 @@ const Hero = () => {
   description:
     "A premium high-gloss stretch ceiling system with a mirror-like finish that enhances brightness, creates a sense of spaciousness, and adds a sleek, luxurious touch to modern interiors."
 },
-
+{
+  desktop: "/hero-images/noohlivingrock.png",
+  mobile: "/images/nooh-rockscape-mobile.webp",
+  title: "NOOH ROCKSCAPE™",
+  description:
+    "Architectural artificial rock systems creating realistic, sculptural environments through innovative textures, forms, and immersive surface design."
+},
 
 {
   desktop: "/hero-images/STRETCH-CEILING-MANUFACTURER-DELHI-NCR-NOIDA-DELHI.png",
