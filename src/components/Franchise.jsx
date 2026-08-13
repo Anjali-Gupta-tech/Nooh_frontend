@@ -238,56 +238,82 @@ const Franchise = () => {
   className="section-padding bg-luxury-black"
 >
 
+    <motion.div
+      initial={{ opacity: 0, y: 25 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7 }}
+      className="mb-14 text-center"
+    >
+
+      
+
+
+      <h2 className="font-luxury text-4xl font-bold md:text-5xl">
+
+     OUR   PRODUCT{" "}
+
+        <span className="text-gold-300">
+          PORTFOLIO
+        </span>
+
+      </h2>
+
+
+      <div className="mx-auto mt-6 h-[2px] w-12 bg-luxury-gold" />
+
+    </motion.div>
+
  {/* =================================================
     PRODUCT CARDS
 ================================================= */}
 
 <div className="grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
 
-  {[
-    {
-      number: "01",
-      title: "STRETCHÉ™",
-      type: "Stretch Ceiling",
-      image: "/images/products/stretche.jpg",
-    },
+ {[
+  {
+    number: "01",
+    title: <>STRETCHÉ<sup>™</sup></>,
+    type: "Stretch Ceiling",
+    image: "/images/stretch-ceiling-manufacted.png",
+  },
 
-    {
-      number: "02",
-      title: "Cloudwave™",
-      type: "Textile Ceiling",
-      image: "/images/products/cloudwave.jpg",
-    },
+  {
+    number: "02",
+    title: <>Cloudwave<sup>™</sup></>,
+    type: "Textile Ceiling",
+    image: "/service/cloudewave.png",
+  },
 
-    {
-      number: "03",
-      title: "WindFabric™",
-      type: "Architectural Fabric Ceiling",
-      image: "/images/products/windfabric.jpg",
-    },
+  {
+    number: "03",
+    title: <>WindFabric<sup>™</sup></>,
+    type: "Architectural Fabric Ceiling",
+    image: "/hero-images/windfabric.png",
+  },
 
-    {
-      number: "04",
-      title: "Virtual Sky",
-      type: "Virtual Sky Ceiling",
-      image: "/images/products/virtual-sky.jpg",
-    },
+  {
+    number: "04",
+    title: "Virtual Sky",
+    type: "Virtual Sky Ceiling",
+    image: "/hero-images/virtualsky.png",
+  },
 
-    {
-      number: "05",
-      title: "SkyLume™",
-      type: "Panel Light Ceiling",
-      image: "/images/products/skylume.jpg",
-    },
+  {
+    number: "05",
+    title: <>SkyLume<sup>™</sup></>,
+    type: "Panel Light Ceiling",
+    image: "/hero-images/SKY-LUME-PANEL-LIGHTING.png",
+  },
 
-    {
-      number: "06",
-      title: "Fiber Optic Star",
-      type: "Fiber Optic Ceiling",
-      image: "/images/products/fiber-optic.jpg",
-    },
+  {
+    number: "06",
+    title: "Fiber Optic Star",
+    type: "Fiber Optic Ceiling",
+    image: "/images/FIBER-OPTIC-NOOH.webp",
+  },
 
-  ].map((item, index) => (
+].map((item, index) => (
 
     <motion.div
       key={item.number}
