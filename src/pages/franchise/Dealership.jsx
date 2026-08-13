@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Dealership = () => {
   return (
@@ -1039,6 +1040,636 @@ const Dealership = () => {
   </div>
 
 </section>
+
+
+{/* =====================================================
+    OUR DEALERSHIPS
+===================================================== */}
+
+<section
+  id="our-dealerships"
+  className="section-padding bg-luxury-black"
+>
+  <div className="container-custom mx-auto">
+
+    {/* =================================================
+        SECTION HEADER
+    ================================================= */}
+
+    <motion.div
+      initial={{ opacity: 0, y: 25 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7 }}
+      className="mb-12 text-center"
+    >
+      <div className="mb-5 flex items-center justify-center gap-4">
+
+        <span className="h-px w-12 bg-luxury-gold/60" />
+
+        <span className="text-[11px] font-medium uppercase tracking-[0.4em] text-luxury-gold">
+          NOOH NETWORK
+        </span>
+
+        <span className="h-px w-12 bg-luxury-gold/60" />
+
+      </div>
+
+      <h2 className="font-luxury text-4xl font-bold md:text-5xl">
+        Our{" "}
+        <span className="text-gold-300">
+          Dealerships
+        </span>
+      </h2>
+
+      <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-white/50 md:text-base">
+        Find our authorized dealership locations across different cities.
+      </p>
+
+      <div className="mx-auto mt-6 h-[2px] w-12 bg-luxury-gold" />
+
+    </motion.div>
+
+
+    {/* =================================================
+        DEALERSHIP DATA
+    ================================================= */}
+
+    {(() => {
+
+      const dealerships = [
+  {
+    id: 1,
+    name: "Shree Balaji Traders",
+    location: "Panipat, Haryana",
+    state: "Haryana",
+    city: "Panipat",
+    lat: 29.3909,
+    lng: 76.9635,
+  },
+  {
+    id: 2,
+    name: "Kumar Sales Corporation",
+    location: "Jaipur, Rajasthan",
+    state: "Rajasthan",
+    city: "Jaipur",
+    lat: 26.9124,
+    lng: 75.7873,
+  },
+  {
+    id: 3,
+    name: "Maa Durga Automobiles",
+    location: "Lucknow, Uttar Pradesh",
+    state: "Uttar Pradesh",
+    city: "Lucknow",
+    lat: 26.8467,
+    lng: 80.9462,
+  },
+  {
+    id: 4,
+    name: "Shiv Shakti Agencies",
+    location: "New Delhi, Delhi",
+    state: "Delhi",
+    city: "New Delhi",
+    lat: 28.6139,
+    lng: 77.209,
+  },
+  {
+    id: 5,
+    name: "Gupta Automobiles",
+    location: "Ahmedabad, Gujarat",
+    state: "Gujarat",
+    city: "Ahmedabad",
+    lat: 23.0225,
+    lng: 72.5714,
+  },
+  {
+    id: 6,
+    name: "S.S. Industrial Solutions",
+    location: "Mumbai, Maharashtra",
+    state: "Maharashtra",
+    city: "Mumbai",
+    lat: 19.076,
+    lng: 72.8777,
+  },
+  {
+    id: 7,
+    name: "R.K. Enterprises",
+    location: "Bengaluru, Karnataka",
+    state: "Karnataka",
+    city: "Bengaluru",
+    lat: 12.9716,
+    lng: 77.5946,
+  },
+  {
+    id: 8,
+    name: "Jai Mata Di Traders",
+    location: "Kolkata, West Bengal",
+    state: "West Bengal",
+    city: "Kolkata",
+    lat: 22.5726,
+    lng: 88.3639,
+  },
+  {
+    id: 9,
+    name: "Om Sai Agencies",
+    location: "Hyderabad, Telangana",
+    state: "Telangana",
+    city: "Hyderabad",
+    lat: 17.385,
+    lng: 78.4867,
+  },
+  {
+    id: 10,
+    name: "NOOH Living Solutions",
+    location: "Chandigarh, Chandigarh",
+    state: "Chandigarh",
+    city: "Chandigarh",
+    lat: 30.7333,
+    lng: 76.7794,
+  },
+  {
+    id: 11,
+    name: "Elite Space Traders",
+    location: "Kochi, Kerala",
+    state: "Kerala",
+    city: "Kochi",
+    lat: 9.9312,
+    lng: 76.2673,
+  },
+  {
+    id: 12,
+    name: "Prime Interior Solutions",
+    location: "Pune, Maharashtra",
+    state: "Maharashtra",
+    city: "Pune",
+    lat: 18.5204,
+    lng: 73.8567,
+  },
+];
+
+
+      const [search, setSearch] = useState("");
+      const [stateFilter, setStateFilter] = useState("All States");
+      const [cityFilter, setCityFilter] = useState("All Cities");
+      const [currentPage, setCurrentPage] = useState(1);
+      const [selectedDealer, setSelectedDealer] = useState(dealerships[0]);
+
+      const itemsPerPage = 6;
+
+
+      /* =================================================
+          STATES
+      ================================================= */
+
+      const states = [
+        "All States",
+        ...new Set(dealerships.map((dealer) => dealer.state)),
+      ];
+
+
+      /* =================================================
+          CITIES
+      ================================================= */
+
+      const cities = [
+        "All Cities",
+        ...new Set(
+          dealerships
+            .filter(
+              (dealer) =>
+                stateFilter === "All States" ||
+                dealer.state === stateFilter
+            )
+            .map((dealer) => dealer.city)
+        ),
+      ];
+
+
+      /* =================================================
+          FILTER
+      ================================================= */
+
+      const filteredDealers = dealerships.filter((dealer) => {
+
+        const searchMatch =
+          dealer.name.toLowerCase().includes(search.toLowerCase()) ||
+          dealer.location.toLowerCase().includes(search.toLowerCase());
+
+        const stateMatch =
+          stateFilter === "All States" ||
+          dealer.state === stateFilter;
+
+        const cityMatch =
+          cityFilter === "All Cities" ||
+          dealer.city === cityFilter;
+
+        return searchMatch && stateMatch && cityMatch;
+
+      });
+
+
+      /* =================================================
+          PAGINATION
+      ================================================= */
+
+      const totalPages = Math.ceil(
+        filteredDealers.length / itemsPerPage
+      );
+
+      const startIndex =
+        (currentPage - 1) * itemsPerPage;
+
+      const visibleDealers =
+        filteredDealers.slice(
+          startIndex,
+          startIndex + itemsPerPage
+        );
+
+
+      /* =================================================
+          RESET PAGE
+      ================================================= */
+
+      const handleSearch = (value) => {
+        setSearch(value);
+        setCurrentPage(1);
+      };
+
+      const handleState = (value) => {
+        setStateFilter(value);
+        setCityFilter("All Cities");
+        setCurrentPage(1);
+      };
+
+      const handleCity = (value) => {
+        setCityFilter(value);
+        setCurrentPage(1);
+      };
+
+
+      return (
+        <>
+
+          {/* =================================================
+              SEARCH & FILTER
+          ================================================= */}
+
+          <div className="mb-8">
+
+            <div className="grid gap-3 md:grid-cols-[1.5fr_1fr_1fr_auto]">
+
+              {/* Search */}
+
+              <div className="relative">
+
+                <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-white/30">
+                  ⌕
+                </span>
+
+                <input
+                  type="text"
+                  value={search}
+                  onChange={(e) =>
+                    handleSearch(e.target.value)
+                  }
+                  placeholder="Search by Business Name or City"
+                  className="h-12 w-full border border-luxury-gold/20 bg-white/[0.03] pl-11 pr-4 text-sm text-white outline-none transition-all duration-300 placeholder:text-white/30 focus:border-luxury-gold/60"
+                />
+
+              </div>
+
+
+              {/* State */}
+
+              <select
+                value={stateFilter}
+                onChange={(e) =>
+                  handleState(e.target.value)
+                }
+                className="h-12 border border-luxury-gold/20 bg-[#111] px-4 text-sm text-white/60 outline-none focus:border-luxury-gold/60"
+              >
+
+                {states.map((state) => (
+                  <option
+                    key={state}
+                    value={state}
+                    className="bg-[#111] text-white"
+                  >
+                    {state}
+                  </option>
+                ))}
+
+              </select>
+
+
+              {/* City */}
+
+              <select
+                value={cityFilter}
+                onChange={(e) =>
+                  handleCity(e.target.value)
+                }
+                className="h-12 border border-luxury-gold/20 bg-[#111] px-4 text-sm text-white/60 outline-none focus:border-luxury-gold/60"
+              >
+
+                {cities.map((city) => (
+                  <option
+                    key={city}
+                    value={city}
+                    className="bg-[#111] text-white"
+                  >
+                    {city}
+                  </option>
+                ))}
+
+              </select>
+
+
+              {/* Search Button */}
+
+              <button
+                type="button"
+                onClick={() => setCurrentPage(1)}
+                className="h-12 bg-[#d6af45] px-7 text-[10px] font-bold uppercase tracking-[0.2em] text-black transition-all duration-300 hover:bg-[#c9a43a]"
+              >
+                Search
+              </button>
+
+            </div>
+
+          </div>
+
+
+          {/* =================================================
+              MAIN DEALERSHIP AREA
+          ================================================= */}
+
+          <div className="grid gap-7 lg:grid-cols-[1.8fr_0.75fr]">
+
+
+            {/* =================================================
+                LEFT — DEALERSHIP CARDS
+            ================================================= */}
+
+            <div>
+
+              <div className="mb-5 flex items-center justify-between">
+
+                <div>
+
+                  <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-luxury-gold">
+                    DEALERSHIP NETWORK
+                  </span>
+
+                  <h3 className="mt-2 font-luxury text-xl font-bold text-white">
+                    Authorized Locations
+                  </h3>
+
+                </div>
+
+                <div className="text-right">
+
+                  <span className="text-xl font-bold text-gold-300">
+                    {filteredDealers.length}
+                  </span>
+
+                  <p className="text-[8px] uppercase tracking-[0.2em] text-white/30">
+                    Dealerships
+                  </p>
+
+                </div>
+
+              </div>
+
+
+              {/* Cards */}
+
+              <div className="grid gap-4 md:grid-cols-2">
+
+                {visibleDealers.length > 0 ? (
+
+                  visibleDealers.map((dealer, index) => (
+
+                    <motion.button
+                      key={dealer.id}
+                      type="button"
+                      onClick={() =>
+                        setSelectedDealer(dealer)
+                      }
+                      initial={{
+                        opacity: 0,
+                        y: 20,
+                      }}
+                      whileInView={{
+                        opacity: 1,
+                        y: 0,
+                      }}
+                      viewport={{
+                        once: true,
+                      }}
+                      transition={{
+                        duration: 0.5,
+                        delay: index * 0.05,
+                      }}
+                      whileHover={{
+                        y: -4,
+                      }}
+                      className={`group w-full border p-5 text-left transition-all duration-300 ${
+                        selectedDealer.id === dealer.id
+                          ? "border-luxury-gold/70 bg-luxury-gold/[0.05]"
+                          : "border-white/10 bg-white/[0.02] hover:border-luxury-gold/40"
+                      }`}
+                    >
+
+                      <div className="flex items-start gap-4">
+
+                        {/* Location Icon */}
+
+                        <div
+                          className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full border transition-all duration-300 ${
+                            selectedDealer.id === dealer.id
+                              ? "border-luxury-gold bg-luxury-gold text-black"
+                              : "border-luxury-gold/30 text-luxury-gold group-hover:border-luxury-gold"
+                          }`}
+                        >
+                          <span className="text-lg">
+                            ◉
+                          </span>
+                        </div>
+
+
+                        {/* Details */}
+
+                        <div className="min-w-0">
+
+                          <h4 className="font-luxury text-base font-bold text-white transition-colors duration-300 group-hover:text-gold-300">
+                            {dealer.name}
+                          </h4>
+
+                          <p className="mt-2 text-sm leading-6 text-white/45">
+                            {dealer.location}
+                          </p>
+
+                        </div>
+
+                      </div>
+
+                    </motion.button>
+
+                  ))
+
+                ) : (
+
+                  <div className="border border-white/10 p-10 text-center md:col-span-2">
+
+                    <p className="text-sm text-white/40">
+                      No dealerships found.
+                    </p>
+
+                  </div>
+
+                )}
+
+              </div>
+
+
+              {/* =================================================
+                  PAGINATION
+              ================================================= */}
+
+              {totalPages > 1 && (
+
+                <div className="mt-8 flex items-center justify-center gap-2">
+
+                  <button
+                    type="button"
+                    disabled={currentPage === 1}
+                    onClick={() =>
+                      setCurrentPage((page) =>
+                        Math.max(page - 1, 1)
+                      )
+                    }
+                    className="flex h-9 w-9 items-center justify-center border border-white/10 text-white/50 transition hover:border-luxury-gold/50 hover:text-luxury-gold disabled:cursor-not-allowed disabled:opacity-30"
+                  >
+                    ←
+                  </button>
+
+
+                  {Array.from(
+                    { length: totalPages },
+                    (_, index) => index + 1
+                  ).map((page) => (
+
+                    <button
+                      key={page}
+                      type="button"
+                      onClick={() =>
+                        setCurrentPage(page)
+                      }
+                      className={`flex h-9 w-9 items-center justify-center border text-[10px] font-bold transition ${
+                        currentPage === page
+                          ? "border-luxury-gold bg-luxury-gold text-black"
+                          : "border-white/10 text-white/50 hover:border-luxury-gold/50 hover:text-luxury-gold"
+                      }`}
+                    >
+                      {page}
+                    </button>
+
+                  ))}
+
+
+                  <button
+                    type="button"
+                    disabled={
+                      currentPage === totalPages
+                    }
+                    onClick={() =>
+                      setCurrentPage((page) =>
+                        Math.min(
+                          page + 1,
+                          totalPages
+                        )
+                      )
+                    }
+                    className="flex h-9 w-9 items-center justify-center border border-white/10 text-white/50 transition hover:border-luxury-gold/50 hover:text-luxury-gold disabled:cursor-not-allowed disabled:opacity-30"
+                  >
+                    →
+                  </button>
+
+                </div>
+
+              )}
+
+            </div>
+
+
+            {/* =================================================
+                RIGHT — MAP + CTA
+            ================================================= */}
+
+            <div className="space-y-5">
+
+
+              {/* MAP */}
+
+              <div className="relative h-[430px] overflow-hidden border border-luxury-gold/20 bg-[#111]">
+
+                <iframe
+                  key={`${selectedDealer.lat}-${selectedDealer.lng}`}
+                  title={`${selectedDealer.name} Location`}
+                  src={`https://www.google.com/maps?q=${selectedDealer.lat},${selectedDealer.lng}&z=13&output=embed`}
+                  className="h-full w-full border-0 grayscale-[25%]"
+                  loading="lazy"
+                />
+
+
+                {/* Map Label */}
+
+                <div className="pointer-events-none absolute left-4 top-4">
+
+                  <div className="border border-luxury-gold/30 bg-black/80 px-4 py-3 backdrop-blur-md">
+
+                    <p className="text-[8px] font-bold uppercase tracking-[0.3em] text-luxury-gold">
+                      SELECTED LOCATION
+                    </p>
+
+                    <p className="mt-1 text-xs font-semibold text-white">
+                      {selectedDealer.city}
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              {/* =================================================
+                  BECOME DEALER CTA
+              ================================================= */}
+
+           
+
+            </div>
+
+          </div>
+
+
+          {/* =================================================
+              BOTTOM NOTE
+          ================================================= */}
+
+
+        </>
+
+      );
+
+    })()}
+
+  </div>
+</section>
+
 {/* =====================================================
     ABOUT NOOH
 ===================================================== */}
@@ -1154,182 +1785,12 @@ const Dealership = () => {
   </div>
 
 </section>
-<section
-
-  className="section-padding bg-luxury-black"
->
-
-    <motion.div
-      initial={{ opacity: 0, y: 25 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.7 }}
-      className="mb-14 text-center"
-    >
-
-      
 
 
-      <h2 className="font-luxury text-4xl font-bold md:text-5xl">
-
-     OUR   PRODUCT{" "}
-
-        <span className="text-gold-300">
-          PORTFOLIO
-        </span>
-
-      </h2>
 
 
-      <div className="mx-auto mt-6 h-[2px] w-12 bg-luxury-gold" />
-
-    </motion.div>
-
- {/* =================================================
-    PRODUCT CARDS
-================================================= */}
-
-<div className="grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
-
- {[
-  {
-    number: "01",
-    title: <>STRETCHÉ<sup>™</sup></>,
-    type: "Stretch Ceiling",
-    image: "/images/stretch-ceiling-manufacted.png",
-  },
-
-  {
-    number: "02",
-    title: <>Cloudwave<sup>™</sup></>,
-    type: "Textile Ceiling",
-    image: "/service/cloudewave.png",
-  },
-
-  {
-    number: "03",
-    title: <>WindFabric<sup>™</sup></>,
-    type: "Architectural Fabric Ceiling",
-    image: "/hero-images/windfabric.png",
-  },
-
-  {
-    number: "04",
-    title: "Virtual Sky",
-    type: "Virtual Sky Ceiling",
-    image: "/hero-images/virtualsky.png",
-  },
-
-  {
-    number: "05",
-    title: <>SkyLume<sup>™</sup></>,
-    type: "Panel Light Ceiling",
-    image: "/hero-images/SKY-LUME-PANEL-LIGHTING.png",
-  },
-
-  {
-    number: "06",
-    title: "Fiber Optic Star",
-    type: "Fiber Optic Ceiling",
-    image: "/images/FIBER-OPTIC-NOOH.webp",
-  },
-
-].map((item, index) => (
-
-    <motion.div
-      key={item.number}
-      initial={{
-        opacity: 0,
-        y: 30,
-      }}
-      whileInView={{
-        opacity: 1,
-        y: 0,
-      }}
-      viewport={{
-        once: true,
-      }}
-      transition={{
-        duration: 0.6,
-        delay: index * 0.07,
-      }}
-      whileHover={{
-        y: -7,
-      }}
-      className="group relative h-[360px] overflow-hidden rounded-xl border border-white/10 transition-all duration-500 hover:border-luxury-gold/70"
-    >
-
-      {/* =================================================
-          BACKGROUND IMAGE
-      ================================================= */}
-
-      <img
-        src={item.image}
-        alt={item.title}
-        className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-      />
 
 
-      {/* =================================================
-          DARK OVERLAY
-      ================================================= */}
-
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/55 to-black/10 transition-all duration-500 group-hover:via-black/65" />
-
-
-      {/* =================================================
-          GOLD HOVER GLOW
-      ================================================= */}
-
-      <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-        <div className="absolute inset-0 border border-luxury-gold/50 rounded-xl" />
-      </div>
-
-
-      {/* =================================================
-          CARD CONTENT
-      ================================================= */}
-
-      <div className="relative z-10 flex h-full flex-col justify-between p-7">
-
-
-        {/* Number */}
-
-        <div className="flex items-center justify-between">
-
-          <span className="text-[10px] font-bold tracking-[0.25em] text-white/70">
-            {item.number}
-          </span>
-
-          <div className="h-px w-12 bg-luxury-gold/70 transition-all duration-500 group-hover:w-20" />
-
-        </div>
-
-
-        {/* Bottom Content */}
-
-        <div>
-
-          <div className="mb-4 h-[2px] w-10 bg-luxury-gold transition-all duration-500 group-hover:w-16" />
-
-          <h3 className="font-luxury text-2xl font-bold text-white md:text-3xl">
-            {item.title}
-          </h3>
-
-          <p className="mt-2 text-sm tracking-wide text-white/65">
-            {item.type}
-          </p>
-
-        </div>
-
-      </div>
-
-    </motion.div>
-
-  ))}
-
-</div>
-</section>
         {/* =====================================================
           FAQ
       ===================================================== */}
