@@ -60,7 +60,13 @@ const Hero = () => {
   description:
     "A premium ultra-slim LED panel lighting solution engineered to deliver uniform illumination, high energy efficiency, and a sleek architectural finish for residential, commercial, and luxury interiors."
 },
-
+{
+  desktop: "/hero-images/Architechtural.png",
+  mobile: "/images/architectural-wall-art-mobile.webp",
+  title: "ARCHITECTURAL WALL ART™",
+  description:
+    "Premium wall art solutions transforming architectural spaces through immersive visuals, artistic expression, and innovative surface design."
+},
 {
   desktop: "/hero-images/STRETCH-GLOSS-STRETCH-CEILING.png",
   mobile: "/images/stretche-gloss-ceiling-mobile.webp",

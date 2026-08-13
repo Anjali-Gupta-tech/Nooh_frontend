@@ -70,7 +70,7 @@ const Dealership = () => {
   </span>
 </Link>
 
-              {/* pdf download */}
+              
 {/* PDF Download */}
 <a
   href="/FRANCHISE_BUSINESS_PARTNER.pdf"
@@ -388,16 +388,10 @@ const Dealership = () => {
     "Associates and dealers can earn 100% profit and margin on material and services. ",
 },
 
-{
-  number: "11",
-  icon: "◉",
-  title: "Dedicated Manager",
-  text:
-    "Get dedicated assistance for customer and project understanding 24×7. ",
-},
+
 
 {
-  number: "12",
+  number: "11",
   icon: "◫",
   title: "Product Training & Upgradation",
   text:
@@ -405,7 +399,7 @@ const Dealership = () => {
 },
 
 {
-  number: "13",
+  number: "12",
   icon: "◇",
   title: "Business Development",
   text:
@@ -413,14 +407,19 @@ const Dealership = () => {
 },
 
 {
-  number: "14",
+  number: "13",
   icon: "⚒",
   title: "Installation Support",
   text:
     "Get professional installation support from experienced company technicians whenever required.",
 },
   
-
+{
+  number: "14",
+  icon: "◈",
+  title: "Skilled Technician Training",
+  text: "Professional training to develop skilled technicians for NOOH product installation, technical execution and on-site project requirements.",
+},
 
 
 

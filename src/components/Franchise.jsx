@@ -234,308 +234,63 @@ const Franchise = () => {
 ===================================================== */}
 
 <section
-  id="about-nooh"
+
   className="section-padding bg-luxury-black"
 >
 
-  <div className="container-custom mx-auto">
+ {/* =================================================
+    PRODUCT CARDS
+================================================= */}
 
+<div className="grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
 
-    {/* =================================================
-        SECTION HEADING
-    ================================================= */}
+  {[
+    {
+      number: "01",
+      title: "STRETCHÉ™",
+      type: "Stretch Ceiling",
+      image: "/images/products/stretche.jpg",
+    },
 
-    <motion.div
-      initial={{ opacity: 0, y: 25 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.7 }}
-      className="mb-14 text-center"
-    >
+    {
+      number: "02",
+      title: "Cloudwave™",
+      type: "Textile Ceiling",
+      image: "/images/products/cloudwave.jpg",
+    },
 
-      <div className="mb-5 flex items-center justify-center gap-4">
+    {
+      number: "03",
+      title: "WindFabric™",
+      type: "Architectural Fabric Ceiling",
+      image: "/images/products/windfabric.jpg",
+    },
 
-        <span className="h-px w-12 bg-luxury-gold/60" />
+    {
+      number: "04",
+      title: "Virtual Sky",
+      type: "Virtual Sky Ceiling",
+      image: "/images/products/virtual-sky.jpg",
+    },
 
-        <span className="text-[11px] font-medium uppercase tracking-[0.4em] text-luxury-gold">
-          ABOUT NOOH
-        </span>
+    {
+      number: "05",
+      title: "SkyLume™",
+      type: "Panel Light Ceiling",
+      image: "/images/products/skylume.jpg",
+    },
 
-        <span className="h-px w-12 bg-luxury-gold/60" />
+    {
+      number: "06",
+      title: "Fiber Optic Star",
+      type: "Fiber Optic Ceiling",
+      image: "/images/products/fiber-optic.jpg",
+    },
 
-      </div>
-
-
-      <h2 className="font-luxury text-4xl font-bold md:text-5xl">
-
-        About{" "}
-
-        <span className="text-gold-300">
-          NOOH
-        </span>
-
-      </h2>
-
-
-      <div className="mx-auto mt-6 h-[2px] w-12 bg-luxury-gold" />
-
-    </motion.div>
-
-
-
-    {/* =================================================
-        INTRODUCTION CARD
-    ================================================= */}
-
-    <motion.div
-      initial={{ opacity: 0, y: 35 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
-      className="glass-gold overflow-hidden"
-    >
-
-      <div className="grid lg:grid-cols-[1.1fr_0.9fr]">
-
-
-        {/* LEFT — ABOUT */}
-
-        <div className="border-b border-luxury-gold/20 p-8 md:p-10 lg:border-b-0 lg:border-r">
-
-          <div className="flex items-start gap-5">
-
-            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-luxury-gold/40 text-xl text-luxury-gold">
-              N
-            </div>
-
-
-            <div>
-
-              <span className="text-[10px] font-bold uppercase tracking-[0.35em] text-luxury-gold">
-                NOOH ELEVATED LIVING LLP
-              </span>
-
-
-              <h3 className="mt-3 font-luxury text-2xl font-bold text-white md:text-3xl">
-                Innovative Interior Ceiling Solutions
-              </h3>
-
-            </div>
-
-          </div>
-
-
-          <p className="mt-7 text-sm leading-7 text-white/60 md:text-base">
-
-            <span className="font-semibold text-gold-300">
-              NOOH Elevated Living LLP
-            </span>{" "}
-            is a premium interior ceiling solutions company
-            specializing in innovative decorative ceiling systems
-            for residential, commercial, hospitality, healthcare,
-            retail, and luxury interior projects across India.
-
-          </p>
-
-
-          <div className="mt-7 h-[2px] w-14 bg-luxury-gold" />
-
-        </div>
-
-
-
-        {/* RIGHT — POSITIONING */}
-
-        <div className="flex items-center p-8 md:p-10">
-
-          <div className="w-full">
-
-            <span className="text-[10px] font-bold uppercase tracking-[0.35em] text-luxury-gold">
-              OUR APPROACH
-            </span>
-
-
-            <h3 className="mt-4 font-luxury text-2xl font-bold text-white">
-              Premium Spaces.
-              <br />
-
-              <span className="text-gold-300">
-                Innovative Ceilings.
-              </span>
-            </h3>
-
-
-            <p className="mt-5 text-sm leading-7 text-white/50">
-              NOOH focuses on innovative decorative ceiling
-              systems designed for modern residential,
-              commercial and luxury interior environments.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </motion.div>
-
-
-
-    {/* =================================================
-        PRODUCT PORTFOLIO
-    ================================================= */}
+  ].map((item, index) => (
 
     <motion.div
-      initial={{ opacity: 0, y: 25 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.7 }}
-      className="mt-20 mb-10 text-center"
-    >
-
-      <div className="mb-5 flex items-center justify-center gap-4">
-
-        <span className="h-px w-12 bg-luxury-gold/60" />
-
-        <span className="text-[11px] font-medium uppercase tracking-[0.4em] text-luxury-gold">
-          OUR PRODUCT PORTFOLIO
-        </span>
-
-        <span className="h-px w-12 bg-luxury-gold/60" />
-
-      </div>
-
-
-      <h2 className="font-luxury text-3xl font-bold md:text-4xl">
-
-        Our Product{" "}
-
-        <span className="text-gold-300">
-          Portfolio
-        </span>
-
-      </h2>
-
-
-      <div className="mx-auto mt-6 h-[2px] w-12 bg-luxury-gold" />
-
-    </motion.div>
-
-
-
-    {/* =================================================
-        PRODUCT CARDS
-    ================================================= */}
-
-    <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-
-      {[
-        {
-          number: "01",
-          icon: "◈",
-          title: "STRETCHÉ™",
-          type: "Stretch Ceiling",
-        },
-
-        {
-          number: "02",
-          icon: "≋",
-          title: "Cloudwave™",
-          type: "Textile Ceiling",
-        },
-
-        {
-          number: "03",
-          icon: "◇",
-          title: "WindFabric™",
-          type: "Ceiling",
-        },
-
-        {
-          number: "04",
-          icon: "☁",
-          title: "Virtual Sky",
-          type: "Ceiling",
-        },
-
-        {
-          number: "05",
-          icon: "▱",
-          title: "SkyLume™",
-          type: "Panel Light Ceiling",
-        },
-
-        {
-          number: "06",
-          icon: "✦",
-          title: "Fiber Optic Star",
-          type: "Ceiling",
-        },
-
-      ].map((item, index) => (
-
-        <motion.div
-          key={item.number}
-          initial={{
-            opacity: 0,
-            y: 25,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
-          viewport={{
-            once: true,
-          }}
-          transition={{
-            duration: 0.5,
-            delay: index * 0.07,
-          }}
-          whileHover={{
-            y: -5,
-          }}
-          className="glass-gold p-6 transition-all duration-300 hover:border-luxury-gold/60"
-        >
-
-          <div className="flex items-center justify-between">
-
-            <span className="text-[10px] font-bold tracking-[0.2em] text-luxury-gold">
-              {item.number}
-            </span>
-
-
-            <div className="flex h-12 w-12 items-center justify-center rounded-full border border-luxury-gold/40 text-lg text-luxury-gold">
-              {item.icon}
-            </div>
-
-          </div>
-
-
-          <h3 className="mt-6 font-luxury text-xl font-bold text-white">
-            {item.title}
-          </h3>
-
-
-          <p className="mt-2 text-sm text-white/50">
-            {item.type}
-          </p>
-
-
-          <div className="mt-5 h-px w-full bg-luxury-gold/15" />
-
-        </motion.div>
-
-      ))}
-
-    </div>
-
-
-
-    {/* =================================================
-        OUR MISSION
-    ================================================= */}
-
-    <motion.div
+      key={item.number}
       initial={{
         opacity: 0,
         y: 30,
@@ -548,55 +303,75 @@ const Franchise = () => {
         once: true,
       }}
       transition={{
-        duration: 0.8,
+        duration: 0.6,
+        delay: index * 0.07,
       }}
-      className="mt-20"
+      whileHover={{
+        y: -7,
+      }}
+      className="group relative h-[360px] overflow-hidden rounded-xl border border-white/10 transition-all duration-500 hover:border-luxury-gold/70"
     >
 
-      <div className="glass-gold overflow-hidden">
+      {/* =================================================
+          BACKGROUND IMAGE
+      ================================================= */}
 
-        <div className="grid items-center lg:grid-cols-[110px_1fr]">
-
-
-          {/* Mission Icon */}
-
-          <div className="flex items-center justify-center border-b border-luxury-gold/20 bg-luxury-gold/5 p-8 lg:border-b-0 lg:border-r">
-
-            <div className="flex h-16 w-16 items-center justify-center rounded-full border border-luxury-gold/50 text-2xl text-luxury-gold">
-              ◎
-            </div>
-
-          </div>
+      <img
+        src={item.image}
+        alt={item.title}
+        className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+      />
 
 
-          {/* Mission Content */}
+      {/* =================================================
+          DARK OVERLAY
+      ================================================= */}
 
-          <div className="p-8 md:p-10">
-
-            <span className="text-[10px] font-bold uppercase tracking-[0.35em] text-luxury-gold">
-              OUR MISSION
-            </span>
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/55 to-black/10 transition-all duration-500 group-hover:via-black/65" />
 
 
-            <h3 className="mt-3 font-luxury text-2xl font-bold text-white md:text-3xl">
-              Building Successful Businesses
-            </h3>
+      {/* =================================================
+          GOLD HOVER GLOW
+      ================================================= */}
+
+      <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+        <div className="absolute inset-0 border border-luxury-gold/50 rounded-xl" />
+      </div>
 
 
-            <div className="mt-5 h-[2px] w-14 bg-luxury-gold" />
+      {/* =================================================
+          CARD CONTENT
+      ================================================= */}
+
+      <div className="relative z-10 flex h-full flex-col justify-between p-7">
 
 
-            <p className="mt-6 max-w-4xl text-sm leading-7 text-white/60 md:text-base">
+        {/* Number */}
 
-              Our mission is to help entrepreneurs, architects,
-              interior designers, contractors, and business owners
-              build a successful business in the growing premium
-              interior industry through professional training,
-              technical support, and complete business guidance.
+        <div className="flex items-center justify-between">
 
-            </p>
+          <span className="text-[10px] font-bold tracking-[0.25em] text-white/70">
+            {item.number}
+          </span>
 
-          </div>
+          <div className="h-px w-12 bg-luxury-gold/70 transition-all duration-500 group-hover:w-20" />
+
+        </div>
+
+
+        {/* Bottom Content */}
+
+        <div>
+
+          <div className="mb-4 h-[2px] w-10 bg-luxury-gold transition-all duration-500 group-hover:w-16" />
+
+          <h3 className="font-luxury text-2xl font-bold text-white md:text-3xl">
+            {item.title}
+          </h3>
+
+          <p className="mt-2 text-sm tracking-wide text-white/65">
+            {item.type}
+          </p>
 
         </div>
 
@@ -604,9 +379,9 @@ const Franchise = () => {
 
     </motion.div>
 
+  ))}
 
-  </div>
-
+</div>
 </section>
       {/* =====================================================
           BOTTOM CTA
