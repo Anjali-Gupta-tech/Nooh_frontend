@@ -62,6 +62,7 @@ import AssociateForm from './pages/franchise/Associateform';
 import Training from './pages/franchise/Training';
 import Trainingform from './pages/franchise/Trainingform';
 import ScrollToTop from "./components/ScrollToTop";
+import BespokeWall from './pages/Servicesnewpages/BespokeWall';
 
 function App() {
 
@@ -124,19 +125,17 @@ function App() {
             <Route path="/decorative-solutions" element={<DecorativeSolution />} />
        
             <Route path="/contact" element={<Contact />} />
-
-
-
-
             <Route path="/products/stretch-ceiling/translucent" element={<Translucentnew/>} />
            <Route path="/products/stretch-ceiling/print" element={<Stretchprint/>} />
            <Route path="/products/stretch-ceiling/gloss" element={<Stretchgloss/>} />
+
          <Route path="/products/stretch-ceiling/panel" element={<Stretchpanel/>} />
       <Route path="/products/fiber-optic/star-sky" element={<StarSky/>} />
       <Route path="/products/fiber-optic/galaxy-star" element={<FiberskyGalaxy/>} />
     <Route path="/products/fiber-optic/rgb-star" element={<FiberskyRgb/>} />
     <Route path="/products/fiber-optic/twinkling-star" element={<FiberskyTwinkling/>} />
     <Route path="/products/wallmural/living" element={<MuralLiving/>} />
+    <Route path="/products/bespokewall" element={<BespokeWall/>}/>
     {/* franchise */}
     <Route path="/franchise/dealership" element={<Dealership/>}/>
     <Route path="/franchise/dealershipform" element={<DealerForm/>}/>
@@ -145,7 +144,8 @@ function App() {
     <Route path="/franchise/associate" element={<Associate/>}/>
     <Route path="/franchaise/training" element={<Training/>}/>
     <Route path="/franchise/trainingform" element={<Trainingform/>}/>
-          </Routes>
+      
+           </Routes>
           <Footer />
        
           <FloatingContactButtons/>

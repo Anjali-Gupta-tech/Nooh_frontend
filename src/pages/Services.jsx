@@ -218,26 +218,76 @@ const Services = () => {
     pdf: "/catalogue/NOOH_CUSTOM_ARCHITECTURAL_WALL_PANNEL.pdf",
   },
 
+{
+  id: "architectural-wall-art",
 
-  {
-    id: "panel-lighting",
+  title: (
+    <>
+       ARCHITECTURAL WALL ART<sup>™</sup>
+    </>
+  ),
 
-    title: "Stretch Panel Lighting",
+  subheading:
+    "Customized Wallpaper & Premium Architectural Wall Décor",
 
-    description:
-      "Innovative LED lighting solutions including our NOOH SKYLUME™ artificial daylight systems.",
+  description: (
+    <>
+      NOOH ARCHITECTURAL WALL ART<sup>™</sup> transforms ordinary walls into
+      distinctive interior experiences through customized murals, seamless
+      repeat patterns, exclusive embroidered wall coverings, and architectural
+      decorative panels. Each solution can be developed according to wall
+      dimensions, interior style, colour palette, customer preference, and
+      project requirements.
+    </>
+  ),
 
-    features: [
-      "Virtual Sky Ceiling",
-      "RGBW Systems",
-      "Tunable White",
-      "Energy Efficient",
-    ],
+  categories: [
+    {
+      title: (
+        <>
+          BESPOKEWALL<sup>™</sup>
+        </>
+      ),
+      subtitle: "Customized Wallpaper & Personalized Murals",
+      link: "/products/bespokewall",
+    },
 
-    image: "/images/led-backlit.png",
+    {
+      title: (
+        <>
+          PATTERNLINE<sup>™</sup>
+        </>
+      ),
+      subtitle: "Seamless Repeat Pattern Wallpaper",
+      link: "/products/architectural-wall-art/patternline",
+    },
 
-    pdf: "led-backlit-ceiling-wall-panels.pdf",
-  },
+    {
+      title: (
+        <>
+          EMBROWALL<sup>™</sup>
+        </>
+      ),
+      subtitle: "Exclusive Embroidery Wallpaper",
+      link: "/products/architectural-wall-art/embrowall",
+    },
+
+    {
+      title: (
+        <>
+          WALLSCULPT<sup>™</sup>
+        </>
+      ),
+      subtitle: "Architectural Wall Murals & Decorative Panels",
+      link: "/products/architectural-wall-art/wallsculpt",
+    },
+  ],
+
+  image: "/images/embroidery-wall.png",
+
+  pdf: "/catalogue/NOOH_ARCHITECTURAL_WALL_ART.pdf",
+},
+
 
 
   {
