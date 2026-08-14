@@ -106,90 +106,6 @@ const BespokeWall = () => {
 
           </motion.div>
 
-
-          {/* =========================================================
-              SECTION 2 — CUSTOMIZATION
-          ========================================================= */}
-
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="grid lg:grid-cols-2 gap-20 items-center mb-32"
-          >
-
-            <div className="order-2 lg:order-1">
-
-              <p className="uppercase tracking-[5px] text-gold-300 font-semibold mb-2">
-                Customization
-              </p>
-
-              <h2 className="text-4xl md:text-5xl font-luxury font-bold mb-6">
-                YOUR DESIGN.
-                <br />
-                YOUR DIMENSIONS.
-              </h2>
-
-              <p className="text-white/70 leading-loose mb-8">
-                Every BespokeWall™ project can be adapted according to the
-                requirements of the space and the desired artistic expression.
-              </p>
-
-
-              <div className="grid grid-cols-2 gap-5">
-
-                <div className="glass rounded-2xl p-5">
-                  <p className="text-gold-300 text-sm uppercase mb-2">
-                    Artwork
-                  </p>
-                  <h4 className="text-lg font-semibold">
-                    Custom Selection
-                  </h4>
-                </div>
-
-                <div className="glass rounded-2xl p-5">
-                  <p className="text-gold-300 text-sm uppercase mb-2">
-                    Sizing
-                  </p>
-                  <h4 className="text-lg font-semibold">
-                    Exact Wall Size
-                  </h4>
-                </div>
-
-                <div className="glass rounded-2xl p-5">
-                  <p className="text-gold-300 text-sm uppercase mb-2">
-                    Colour
-                  </p>
-                  <h4 className="text-lg font-semibold">
-                    Custom Palette
-                  </h4>
-                </div>
-
-                <div className="glass rounded-2xl p-5">
-                  <p className="text-gold-300 text-sm uppercase mb-2">
-                    Personalization
-                  </p>
-                  <h4 className="text-lg font-semibold">
-                    Custom Elements
-                  </h4>
-                </div>
-
-              </div>
-
-            </div>
-
-
-            <div className="order-1 lg:order-2 rounded-3xl overflow-hidden shadow-2xl">
-              <img
-                src="/images/bespokewall-2.png"
-                alt="Customized wall artwork"
-                className="w-full h-[520px] object-cover rounded-3xl transition-transform duration-500 hover:scale-105"
-              />
-            </div>
-
-          </motion.div>
-
-
           {/* =========================================================
               SECTION 3 — DESIGN COLLECTIONS
           ========================================================= */}
@@ -299,6 +215,90 @@ const BespokeWall = () => {
 
           </motion.div>
 
+          {/* =========================================================
+              SECTION 2 — CUSTOMIZATION
+          ========================================================= */}
+
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="grid lg:grid-cols-2 gap-20 items-center mb-32"
+          >
+
+            <div className="order-2 lg:order-1">
+
+              <p className="uppercase tracking-[5px] text-gold-300 font-semibold mb-2">
+                Customization
+              </p>
+
+              <h2 className="text-4xl md:text-5xl font-luxury font-bold mb-6">
+                YOUR DESIGN.
+                <br />
+                YOUR DIMENSIONS.
+              </h2>
+
+              <p className="text-white/70 leading-loose mb-8">
+                Every BespokeWall™ project can be adapted according to the
+                requirements of the space and the desired artistic expression.
+              </p>
+
+
+              <div className="grid grid-cols-2 gap-5">
+
+                <div className="glass rounded-2xl p-5">
+                  <p className="text-gold-300 text-sm uppercase mb-2">
+                    Artwork
+                  </p>
+                  <h4 className="text-lg font-semibold">
+                    Custom Selection
+                  </h4>
+                </div>
+
+                <div className="glass rounded-2xl p-5">
+                  <p className="text-gold-300 text-sm uppercase mb-2">
+                    Sizing
+                  </p>
+                  <h4 className="text-lg font-semibold">
+                    Exact Wall Size
+                  </h4>
+                </div>
+
+                <div className="glass rounded-2xl p-5">
+                  <p className="text-gold-300 text-sm uppercase mb-2">
+                    Colour
+                  </p>
+                  <h4 className="text-lg font-semibold">
+                    Custom Palette
+                  </h4>
+                </div>
+
+                <div className="glass rounded-2xl p-5">
+                  <p className="text-gold-300 text-sm uppercase mb-2">
+                    Personalization
+                  </p>
+                  <h4 className="text-lg font-semibold">
+                    Custom Elements
+                  </h4>
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div className="order-1 lg:order-2 rounded-3xl overflow-hidden shadow-2xl">
+              <img
+                src="/images/bespokewall-2.png"
+                alt="Customized wall artwork"
+                className="w-full h-[520px] object-cover rounded-3xl transition-transform duration-500 hover:scale-105"
+              />
+            </div>
+
+          </motion.div>
+
+
+       
 
           {/* =========================================================
               SECTION 4 — MATERIALS
