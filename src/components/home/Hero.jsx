@@ -17,7 +17,7 @@ const Hero = () => {
     },
     {
   desktop: "/hero-images/translucent-stretch-ceiling.png",
-  mobile: "/images/",
+  mobile: "/images/translucent-mobile.png",
   title: "STRETCHE™ TRANSLUCENT CEILING",
   description:
     "A premium translucent stretch ceiling system with integrated LED backlighting, creating soft, uniform illumination, seamless finishes, and luxurious architectural interiors."
@@ -25,7 +25,7 @@ const Hero = () => {
 
 {
   desktop: "/hero-images/stretch-skylume.png",
-  mobile: "/images/skylume-ceiling-mobile.webp",
+  mobile: "/images/skylume-mobile.png",
   title: "STRETCHE™ SKYLUME CEILING",
   description:
     "A premium printed translucent stretch ceiling with integrated LED backlighting, creating a realistic open-sky illusion that brings natural brightness."
@@ -33,7 +33,7 @@ const Hero = () => {
 
 {
   desktop: "/hero-images/3d-mural-ceiling.png",
-  mobile: "/images/",
+  mobile: "/images/embodry-mobile.png",
   title: "STRETCHE™ 3D CEILING MURAL",
   description:
     "A premium custom-printed stretch ceiling featuring stunning 3D visual effects that create depth, realism, and an immersive architectural experience for residential, commercial, and luxury interiors."
@@ -41,14 +41,14 @@ const Hero = () => {
 
 {
   desktop: "/hero-images/3D-GALAXY-PRINTING-CEILING.png",
-  mobile: "/images/",
+  mobile: "/images/3-d-stretch.png",
   title: "STRETCHE™ 3D GALAXY PRINTED CEILING",
   description:
     "A premium custom-printed stretch ceiling featuring breathtaking 3D galaxy visuals with integrated LED illumination, creating a spectacular cosmic ambiance and immersive architectural experience."
 },
 {
   desktop: "/hero-images/EMBRODIARY-CEILING-SYSTEMS.png",
-  mobile: "/images/",
+  mobile: "/hero-images/embordery.png",
   title: "STRETCHE™ EMBROIDERY CEILING SYSTEM",
   description:
     "A premium stretch ceiling system featuring custom embroidered fabric designs that combine artistic craftsmanship with modern architecture, creating elegant, luxurious, and visually distinctive interior spaces."

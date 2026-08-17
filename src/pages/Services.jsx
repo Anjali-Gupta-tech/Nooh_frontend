@@ -329,7 +329,7 @@ const Services = () => {
         <meta name="description" content="Explore our comprehensive luxury interior design services including stretch ceilings, fiber optic systems, and turnkey projects." />
       </Helmet>
 
-      <div className="min-h-screen pt-24">
+      <div className="min-h-screen pt-20">
         {/* Hero Section */}
       <section className="relative h-[75vh] flex items-center justify-center overflow-hidden">
 
@@ -337,7 +337,7 @@ const Services = () => {
 <div className="absolute inset-0">
   {/* Desktop Image */}
   <img
-    src="/images/service-hero-image.png"
+    src="/hero-images/products.png"
     alt="NOOH Premium Services"
     className="hidden md:block w-full h-full object-cover object-center"
   />

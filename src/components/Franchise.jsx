@@ -28,39 +28,46 @@ const Franchise = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-luxury-black text-white">
+    <div className="min-h-screen pt-20 bg-luxury-black text-white ">
 
       {/* =====================================================
           HERO / HEADER SECTION
       ===================================================== */}
+ <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
 
-      <section className="relative min-h-[690px] overflow-hidden">
+  {/* Background Image */}
+<div className="absolute inset-0">
+  {/* Desktop Image */}
+  <img
+    src="/franchaise-hero/franchise-hero.png"
+    alt="NOOH Premium Services"
+    className="hidden md:block w-full h-full object-cover object-center"
+  />
 
-        {/* Background Image */}
-        <div className="absolute inset-0">
-<img
-  src="/franchaise-hero/franchise.png"
-  alt="NOOH Luxury Interior"
-  className="h-full w-full object-cover "
-/>
+  {/* Mobile Image */}
+  <img
+    src="/franchise-hero/franchise-hero.png"
+    alt="NOOH Premium Services"
+    className="block md:hidden w-full h-full object-cover object-center"
+  />
+</div>
 
-          {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/20" />
+  {/* Dark Overlay */}
 
-          {/* Premium Gradient */}
-          <div className="absolute inset-0 " />
+  <div className="absolute inset-0 bg-black/20"></div>
 
-        </div>
+  {/* Gold Gradient Overlay */}
+
+  <div className="absolute inset-0 bg-gradient-to-r"></div>
+
+  {/* Content */}
+
+  <div className="relative z-10 container-custom mx-auto text-center px-6">
 
 
-        {/* Hero Content */}
-       
+  </div>
 
-
-        {/* Gold Bottom Divider */}
-        <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-[#d6af45]" />
-
-      </section>
+</section>
 
 
       {/* =====================================================
