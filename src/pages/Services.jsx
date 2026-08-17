@@ -331,7 +331,7 @@ const Services = () => {
 
       <div className="min-h-screen pt-20">
         {/* Hero Section */}
-      <section className="relative h-[75vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
 
   {/* Background Image */}
 <div className="absolute inset-0">

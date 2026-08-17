@@ -55,7 +55,7 @@ const Hero = () => {
 },
 {
   desktop: "/hero-images/STRETCHE-PANEL-LIGHT.png",
-  mobile: "/images/",
+  mobile: "/hero-images/panel-hero-img.png",
   title: "STRETCHE™ PANEL LIGHT",
   description:
     "A premium ultra-slim LED panel lighting solution engineered to deliver uniform illumination, high energy efficiency, and a sleek architectural finish for residential, commercial, and luxury interiors."
