@@ -11,13 +11,13 @@ const Hero = () => {
     
      {
       desktop: "/images/stretch-ceiling.png",
-      mobile: "/images/cloudwave-mobile.webp",
+      mobile: "/images/stretch-ceiling-mobile.png",
       title: "STRETCHE™ CEILING",
       description:"It is a premium decorative fabric ceiling system creating elegant wave effects, visual depth, and stunning illuminated architectural interiors",
     },
     {
   desktop: "/hero-images/translucent-stretch-ceiling.png",
-  mobile: "/images/translucent-stretch-ceiling-mobile.webp",
+  mobile: "/images/",
   title: "STRETCHE™ TRANSLUCENT CEILING",
   description:
     "A premium translucent stretch ceiling system with integrated LED backlighting, creating soft, uniform illumination, seamless finishes, and luxurious architectural interiors."
@@ -33,7 +33,7 @@ const Hero = () => {
 
 {
   desktop: "/hero-images/3d-mural-ceiling.png",
-  mobile: "/images/3D CEILING MURAL.png",
+  mobile: "/images/",
   title: "STRETCHE™ 3D CEILING MURAL",
   description:
     "A premium custom-printed stretch ceiling featuring stunning 3D visual effects that create depth, realism, and an immersive architectural experience for residential, commercial, and luxury interiors."
@@ -41,21 +41,21 @@ const Hero = () => {
 
 {
   desktop: "/hero-images/3D-GALAXY-PRINTING-CEILING.png",
-  mobile: "/images/3d-galaxy-printed-ceiling-mobile.webp",
+  mobile: "/images/",
   title: "STRETCHE™ 3D GALAXY PRINTED CEILING",
   description:
     "A premium custom-printed stretch ceiling featuring breathtaking 3D galaxy visuals with integrated LED illumination, creating a spectacular cosmic ambiance and immersive architectural experience."
 },
 {
   desktop: "/hero-images/EMBRODIARY-CEILING-SYSTEMS.png",
-  mobile: "/images/embroidery-ceiling-system-mobile.webp",
+  mobile: "/images/",
   title: "STRETCHE™ EMBROIDERY CEILING SYSTEM",
   description:
     "A premium stretch ceiling system featuring custom embroidered fabric designs that combine artistic craftsmanship with modern architecture, creating elegant, luxurious, and visually distinctive interior spaces."
 },
 {
   desktop: "/hero-images/STRETCHE-PANEL-LIGHT.png",
-  mobile: "/images/stretche-panel-light-mobile.webp",
+  mobile: "/images/",
   title: "STRETCHE™ PANEL LIGHT",
   description:
     "A premium ultra-slim LED panel lighting solution engineered to deliver uniform illumination, high energy efficiency, and a sleek architectural finish for residential, commercial, and luxury interiors."
