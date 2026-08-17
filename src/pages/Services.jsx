@@ -147,76 +147,7 @@ const Services = () => {
   },
 
 
-  {
-    id: "mural-panel",
 
-    title: (
-      <>
-        NOOH MURAL PANEL<sup>™</sup>
-      </>
-    ),
-
-    subheading:
-      "Custom Architectural Mural with Panel — Tailored to Your Vision",
-
-    description: (
-      <>
-        NOOH MURAL PANEL<sup>™</sup> transforms ordinary walls into
-        extraordinary architectural masterpieces through fully customized HDMR
-        wall panels, precision CNC cutting, handcrafted detailing, premium
-        decorative finishes, and high-resolution UV-printed artwork. Designed
-        for luxury residential and commercial interiors, every wall mural is
-        tailored to your vision with unlimited possibilities in design,
-        texture, color, lighting, and artistic expression.
-      </>
-    ),
-
-    categories: [
-      {
-        title: (
-          <>
-            WALLMURAL<sup>™</sup> LIVING
-          </>
-        ),
-        subtitle: "Luxury Living Room Wall Collection",
-        link: "/products/wallmural/living",
-      },
-
-      {
-        title: (
-          <>
-            WALLMURAL<sup>™</sup> KITCHEN
-          </>
-        ),
-        subtitle: "Designer Kitchen Wall Collection",
-        link: "/products/wallmural/kitchen",
-      },
-
-      {
-        title: (
-          <>
-            WALLMURAL<sup>™</sup> DRAWING ROOM
-          </>
-        ),
-        subtitle: "Elegant Reception & Drawing Room Collection",
-        link: "/products/wallmural/drawing-room",
-      },
-
-      {
-        title: (
-          <>
-            WALLMURAL<sup>™</sup> HIGHLIGHT
-          </>
-        ),
-        subtitle: "Feature Wall & Statement Collection",
-        link: "/products/wallmural/highlight",
-      },
-    ],
-
-    image: "/images/wallpaper.png",
-
-    pdf: "/catalogue/NOOH_CUSTOM_ARCHITECTURAL_WALL_PANNEL.pdf",
-  },
 
 {
   id: "architectural-wall-art",
@@ -259,7 +190,7 @@ const Services = () => {
         </>
       ),
       subtitle: "Seamless Repeat Pattern Wallpaper",
-      link: "/products/architectural-wall-art/patternline",
+      link: "/products/patternline",
     },
 
     {
@@ -269,7 +200,7 @@ const Services = () => {
         </>
       ),
       subtitle: "Exclusive Embroidery Wallpaper",
-      link: "/products/architectural-wall-art/embrowall",
+      link: "/products/emborwall",
     },
 
     {
@@ -279,7 +210,7 @@ const Services = () => {
         </>
       ),
       subtitle: "Architectural Wall Murals & Decorative Panels",
-      link: "/products/architectural-wall-art/wallsculpt",
+      link: "/product/wallscript",
     },
   ],
 

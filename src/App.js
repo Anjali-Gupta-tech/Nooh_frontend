@@ -63,6 +63,9 @@ import Training from './pages/franchise/Training';
 import Trainingform from './pages/franchise/Trainingform';
 import ScrollToTop from "./components/ScrollToTop";
 import BespokeWall from './pages/Servicesnewpages/BespokeWall';
+import PatternLine from './pages/Servicesnewpages/PatternLine';
+import EmbroWall from './pages/Servicesnewpages/Embrowall';
+import WallScript from './pages/Servicesnewpages/WallScript';
 
 function App() {
 
@@ -134,8 +137,11 @@ function App() {
       <Route path="/products/fiber-optic/galaxy-star" element={<FiberskyGalaxy/>} />
     <Route path="/products/fiber-optic/rgb-star" element={<FiberskyRgb/>} />
     <Route path="/products/fiber-optic/twinkling-star" element={<FiberskyTwinkling/>} />
-    <Route path="/products/wallmural/living" element={<MuralLiving/>} />
+  
     <Route path="/products/bespokewall" element={<BespokeWall/>}/>
+    <Route path="/products/patternline" element={<PatternLine/>}/>
+    <Route path="/products/emborwall" element={<EmbroWall/>}/>
+    <Route path="/product/wallscript" element={<WallScript/>}/>
     {/* franchise */}
     <Route path="/franchise/dealership" element={<Dealership/>}/>
     <Route path="/franchise/dealershipform" element={<DealerForm/>}/>
