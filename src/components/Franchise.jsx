@@ -39,7 +39,7 @@ const Franchise = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
 <img
-  src="/franchaise-hero/franchise-image-hero.png"
+  src="/franchaise-hero/franchise-hero.png"
   alt="NOOH Luxury Interior"
   className="h-full w-full object-cover "
 />
