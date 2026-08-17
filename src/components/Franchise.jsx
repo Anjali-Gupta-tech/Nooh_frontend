@@ -34,12 +34,12 @@ const Franchise = () => {
           HERO / HEADER SECTION
       ===================================================== */}
 
-      <section className="relative min-h-[560px] overflow-hidden">
+      <section className="relative min-h-[690px] overflow-hidden">
 
         {/* Background Image */}
         <div className="absolute inset-0">
 <img
-  src="/franchaise-hero/franchise-hero.png"
+  src="/franchaise-hero/franchise.png"
   alt="NOOH Luxury Interior"
   className="h-full w-full object-cover "
 />
