@@ -404,16 +404,23 @@ const Contact = () => {
             </div>
           </div>
         </section>
+        {/*dealership*/}
+{/* =========================================================
+    OUR BRANCH OFFICES
+========================================================= */}
+{/* =========================================================
+    OUR BRANCH OFFICES
+========================================================= */}
+
 <section
-  id="our-dealership"
+  id="our-branch-offices"
   className="section-padding bg-luxury-black"
 >
-
   <div className="container-custom mx-auto">
 
-    {/* =================================================
+    {/* =====================================================
         SECTION HEADING
-    ================================================= */}
+    ===================================================== */}
 
     <motion.div
       initial={{ opacity: 0, y: 25 }}
@@ -429,13 +436,15 @@ const Contact = () => {
 
         <span className="h-px w-12 bg-luxury-gold/60" />
 
-        <span className="
-          text-[11px]
-          font-medium
-          uppercase
-          tracking-[0.4em]
-          text-luxury-gold
-        ">
+        <span
+          className="
+            text-[11px]
+            font-medium
+            uppercase
+            tracking-[0.4em]
+            text-luxury-gold
+          "
+        >
           OUR AUTHORIZED NETWORK
         </span>
 
@@ -446,126 +455,171 @@ const Contact = () => {
 
       {/* MAIN HEADING */}
 
-      <h2 className="
-        font-luxury
-        text-4xl
-        font-bold
-        md:text-5xl
-      ">
-
+      <h2
+        className="
+          font-luxury
+          text-4xl
+          font-bold
+          md:text-5xl
+        "
+      >
         Our{" "}
-
         <span className="text-gold-300">
           Branch Offices
         </span>
-
       </h2>
 
 
       {/* DIVIDER */}
 
-      <div className="
-        mx-auto
-        mt-6
-        h-[2px]
-        w-12
-        bg-luxury-gold
-      " />
+      <div
+        className="
+          mx-auto
+          mt-6
+          h-[2px]
+          w-12
+          bg-luxury-gold
+        "
+      />
 
 
       {/* DESCRIPTION */}
 
-      <p className="
-        mx-auto
-        mt-6
-        max-w-2xl
-        text-sm
-        leading-7
-        text-white/55
-        md:text-base
-      ">
-        Explore our growing network of authorized NOOH branch offices
-        across India. Connect with your nearest branch office  for
-        product information, project assistance and business support.
+      <p
+        className="
+          mx-auto
+          mt-6
+          max-w-2xl
+          text-sm
+          leading-7
+          text-white/55
+          md:text-base
+        "
+      >
+        Explore our growing network of NOOH branch offices
+        across India. Connect with our nearest branch office
+        for product information, project assistance and
+        business support.
       </p>
 
     </motion.div>
 
 
+    {/* =====================================================
+        BRANCH OFFICE GRID
+    ===================================================== */}
 
-    {/* =================================================
-        DEALERSHIP GRID
-    ================================================= */}
+    <div
+      className="
+        grid
+        gap-5
+        sm:grid-cols-2
+        lg:grid-cols-3
+        xl:grid-cols-4
+      "
+    >
 
-    <div className="
-      grid
-      gap-5
-      sm:grid-cols-2
-      lg:grid-cols-3
-      xl:grid-cols-4
-    ">
+      {[
+        {
+          number: "01",
+          icon: "⌖",
+          name: "F K & COMPANY",
 
-   {  [
-  {
-    number: "01",
-    icon: "⌖",
-    name: "F K & COMPANY",
-    address:
-      "Floor No.: BANGAI, Building No./Flat No.: 0, Sri Surendra Kumar Sahani, Maharajganj Road, Jhungia Bazar, Gorakhpur, Uttar Pradesh – 273013",
-  },
+          address:
+            "Floor No.: BANGAI, Building No./Flat No.: 0, Sri Surendra Kumar Sahani, Maharajganj Road, Jhungia Bazar, Gorakhpur, Uttar Pradesh – 273013",
 
-  {
-    number: "02",
-    icon: "⌖",
-    name: "NOOH Branch Office",
-    address: "Noida, Uttar Pradesh",
-  },
+          branchManager: " Ar. Nidhi ",
+          managerNumber: "+91 8448391967",
+        },
 
-  {
-    number: "03",
-    icon: "⌖",
-    name: "NOOH Branch Office",
-    address: "New Delhi, Delhi",
-  },
+        {
+          number: "02",
+          icon: "⌖",
+          name: "MHA ENTERPRISES",
 
-  {
-    number: "04",
-    icon: "⌖",
-    name: "NOOH Branch Office",
-    address: "Jaipur, Rajasthan",
-  },
+          address:
+            "Near Masjid Usman, Noor Bagh, Sopore, Baramulla, Jammu and Kashmir – 193201",
 
-  {
-    number: "05",
-    icon: "⌖",
-    name: "NOOH Branch Office",
-    address: "Ahmedabad, Gujarat",
-  },
+          branchManager: " Ar. Nidhi ",
+          managerNumber: "+91 8448391967",
+        },
 
-  {
-    number: "06",
-    icon: "⌖",
-    name: "NOOH Branch Office",
-    address: "Mumbai, Maharashtra",
-  },
+        {
+          number: "03",
+          icon: "⌖",
+          name: "NOOH Branch Office",
 
-  {
-    number: "07",
-    icon: "⌖",
-    name: "NOOH Branch Office",
-    address: "Bengaluru, Karnataka",
-  },
+          address:
+            "New Delhi, Delhi",
 
-  {
-    number: "08",
-    icon: "⌖",
-    name: "NOOH Branch Office",
-    address: "Hyderabad, Telangana",
-  },
-].map((dealer, index) => (
+          branchManager: "Branch Manager Name",
+          managerNumber: "+91 XXXXX XXXXX",
+        },
+
+        {
+          number: "04",
+          icon: "⌖",
+          name: "NOOH Branch Office",
+
+          address:
+            "Jaipur, Rajasthan",
+
+          branchManager: "Branch Manager Name",
+          managerNumber: "+91 XXXXX XXXXX",
+        },
+
+        {
+          number: "05",
+          icon: "⌖",
+          name: "NOOH Branch Office",
+
+          address:
+            "Ahmedabad, Gujarat",
+
+          branchManager: "Branch Manager Name",
+          managerNumber: "+91 XXXXX XXXXX",
+        },
+
+        {
+          number: "06",
+          icon: "⌖",
+          name: "NOOH Branch Office",
+
+          address:
+            "Mumbai, Maharashtra",
+
+          branchManager: "Branch Manager Name",
+          managerNumber: "+91 XXXXX XXXXX",
+        },
+
+        {
+          number: "07",
+          icon: "⌖",
+          name: "NOOH Branch Office",
+
+          address:
+            "Bengaluru, Karnataka",
+
+          branchManager: "Branch Manager Name",
+          managerNumber: "+91 XXXXX XXXXX",
+        },
+
+        {
+          number: "08",
+          icon: "⌖",
+          name: "NOOH Branch Office",
+
+          address:
+            "Hyderabad, Telangana",
+
+          branchManager: "Branch Manager Name",
+          managerNumber: "+91 XXXXX XXXXX",
+        },
+
+      ].map((branch, index) => (
 
         <motion.div
-          key={dealer.number}
+          key={branch.number}
 
           initial={{
             opacity: 0,
@@ -600,64 +654,66 @@ const Contact = () => {
         >
 
           {/* =================================================
-              CARD TOP
+              CARD HEADER
           ================================================= */}
 
-          <div className="
-            flex
-            items-center
-            justify-between
-          ">
+          <div className="flex items-center justify-between">
 
             {/* NUMBER */}
 
-            <span className="
-              text-[10px]
-              font-bold
-              tracking-[0.2em]
-              text-luxury-gold
-            ">
-              {dealer.number}
+            <span
+              className="
+                text-[10px]
+                font-bold
+                tracking-[0.2em]
+                text-luxury-gold
+              "
+            >
+              {branch.number}
             </span>
 
 
             {/* LOCATION ICON */}
 
-            <div className="
-              flex
-              h-12
-              w-12
-              items-center
-              justify-center
-              rounded-full
-              border
-              border-luxury-gold/40
-              text-lg
-              text-luxury-gold
-              transition-all
-              duration-300
-              group-hover:border-luxury-gold
-              group-hover:bg-luxury-gold/10
-            ">
-              {dealer.icon}
+            <div
+              className="
+                flex
+                h-12
+                w-12
+                items-center
+                justify-center
+                rounded-full
+                border
+                border-luxury-gold/40
+                text-lg
+                text-luxury-gold
+                transition-all
+                duration-300
+                group-hover:border-luxury-gold
+                group-hover:bg-luxury-gold/10
+              "
+            >
+              {branch.icon}
             </div>
 
           </div>
 
 
           {/* =================================================
-              DEALERSHIP NAME
+              BRANCH NAME
           ================================================= */}
 
-          <h3 className="
-            mt-7
-            font-luxury
-            text-xl
-            font-bold
-            leading-snug
-            text-white
-          ">
-            {dealer.name}
+          <h3
+            className="
+              mt-7
+              font-luxury
+              text-xl
+              font-bold
+              leading-snug
+              text-white
+            "
+          >
+            {branch.name}
           </h3>
 
 
@@ -665,31 +721,92 @@ const Contact = () => {
               ADDRESS
           ================================================= */}
 
-          <div className="
-            mt-5
-            border-t
-            border-white/10
-            pt-5
-          ">
+          <div
+            className="
+              mt-5
+              border-t
+              border-white/10
+              pt-5
+            "
+          >
 
-            <p className="
-              text-[10px]
-              font-medium
-              uppercase
-              tracking-[0.25em]
-              text-luxury-gold
-            ">
+            <p
+              className="
+                text-[10px]
+                font-medium
+                uppercase
+                tracking-[0.25em]
+                text-luxury-gold
+              "
+            >
               Address
             </p>
 
 
-            <p className="
-              mt-2
-              text-sm
-              leading-6
-              text-white/55
-            ">
-              {dealer.address}
+            <p
+              className="
+                mt-2
+                text-sm
+                leading-6
+                text-white/55
+              "
+            >
+              {branch.address}
+            </p>
+
+          </div>
+
+
+          {/* =================================================
+              BRANCH MANAGER
+          ================================================= */}
+
+          <div
+            className="
+              mt-5
+              border-t
+              border-white/10
+              pt-5
+            "
+          >
+
+            <p
+              className="
+                text-[10px]
+                font-medium
+                uppercase
+                tracking-[0.25em]
+                text-luxury-gold
+              "
+            >
+              Branch Manager
+            </p>
+
+
+            <p
+              className="
+                mt-2
+                text-sm
+                font-medium
+                text-white/80
+              "
+            >
+              {branch.branchManager}
+            </p>
+
+
+            {/* =================================================
+                MANAGER NUMBER
+            ================================================= */}
+
+            <p
+              className="
+                mt-1
+                text-sm
+                text-white/50
+              "
+            >
+              {branch.managerNumber}
             </p>
 
           </div>
@@ -699,15 +816,17 @@ const Contact = () => {
               BOTTOM GOLD LINE
           ================================================= */}
 
-          <div className="
-            mt-6
-            h-px
-            w-10
-            bg-luxury-gold/60
-            transition-all
-            duration-500
-            group-hover:w-full
-          " />
+          <div
+            className="
+              mt-6
+              h-px
+              w-10
+              bg-luxury-gold/60
+              transition-all
+              duration-500
+              group-hover:w-full
+            "
+          />
 
         </motion.div>
 
@@ -716,10 +835,9 @@ const Contact = () => {
     </div>
 
 
-
-    {/* =================================================
+    {/* =====================================================
         BOTTOM NOTE
-    ================================================= */}
+    ===================================================== */}
 
     <motion.div
       initial={{
@@ -741,25 +859,23 @@ const Contact = () => {
         delay: 0.2,
       }}
 
-      className="
-        mt-10
-        text-center
-      "
+      className="mt-10 text-center"
     >
 
-      <p className="
-        text-xs
-        uppercase
-        tracking-[0.25em]
-        text-white/35
-      ">
-        More authorized dealerships coming soon
+      <p
+        className="
+          text-xs
+          uppercase
+          tracking-[0.25em]
+          text-white/35
+        "
+      >
+        More NOOH branch offices coming soon
       </p>
 
     </motion.div>
 
   </div>
-
 </section>
         {/* Map Section */}
         <section className="section-padding">
