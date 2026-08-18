@@ -97,6 +97,165 @@ const Dealership = () => {
     DEALERSHIP OPPORTUNITY
 ===================================================== */}
 
+<section
+  id="dealership-opportunity"
+  className="section-padding bg-luxury-black"
+>
+
+  <div className="container-custom mx-auto">
+
+    {/* Section Heading */}
+    <motion.div
+      initial={{ opacity: 0, y: 25 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7 }}
+      className="mb-14 text-center"
+    >
+
+      <div className="mb-5 flex items-center justify-center gap-4">
+
+        <span className="h-px w-12 bg-luxury-gold/60" />
+
+        <span className="text-[11px] font-medium uppercase tracking-[0.4em] text-luxury-gold">
+          DEALERSHIP OPPORTUNITY
+        </span>
+
+        <span className="h-px w-12 bg-luxury-gold/60" />
+
+      </div>
+
+
+      <h2 className="font-luxury text-4xl font-bold md:text-5xl">
+        Grow With{" "}
+        <span className="text-gold-300">
+          NOOH
+        </span>
+      </h2>
+
+
+      <div className="mx-auto mt-6 h-[2px] w-12 bg-luxury-gold" />
+
+    </motion.div>
+
+
+    {/* Main Card */}
+    <motion.div
+      initial={{ opacity: 0, y: 35 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      className="glass-gold overflow-hidden"
+    >
+
+      <div className="grid lg:grid-cols-2">
+
+        {/* LEFT — PROGRAM */}
+        <div className="border-b border-luxury-gold/20 p-10 lg:border-b-0 lg:border-r">
+
+          <div className="flex items-start gap-5">
+
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-luxury-gold/40 text-luxury-gold">
+              01
+            </div>
+
+            <div>
+
+              <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-luxury-gold">
+                DEALERSHIP PROGRAM
+              </span>
+
+              <h3 className="mt-3 font-luxury text-2xl font-bold text-white">
+                Build Your NOOH Business
+              </h3>
+
+              <p className="mt-4 text-sm leading-7 text-white/60">
+                Designed for entrepreneurs who want to establish
+                a complete NOOH business setup in their city.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          {/* Eligibility */}
+
+          <div className="mt-9 border-t border-luxury-gold/15 pt-7">
+
+            <div className="flex items-start gap-5">
+
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-luxury-gold/40 text-luxury-gold">
+                ✓
+              </div>
+
+              <div>
+
+                <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-luxury-gold">
+                  ELIGIBILITY
+                </span>
+
+                <ul className="mt-4 space-y-3 text-sm leading-6 text-white/60">
+
+                  <li>• GST Registration — Mandatory</li>
+
+                  <li>• Small Office or Showroom</li>
+
+                  <li>• Basic knowledge of Interior Decoration Industry</li>
+
+                  <li>• Passion to build a premium interior business</li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        {/* RIGHT — INVESTMENT */}
+
+        <div className="flex items-center justify-center p-10">
+
+          <div className="w-full max-w-sm border border-luxury-gold/40 p-8 text-center">
+
+            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-luxury-gold">
+              DEALERSHIP INVESTMENT
+            </span>
+
+            <div className="mt-6">
+
+              <span className="font-luxury text-4xl font-bold text-white md:text-5xl">
+                ₹1,00,000
+              </span>
+
+              <span className="ml-2 text-xl font-bold text-gold-300">
+                + GST
+              </span>
+
+            </div>
+
+            <div className="mx-auto mt-6 h-[2px] w-16 bg-luxury-gold" />
+
+            <p className="mt-5 text-sm leading-6 text-white/50">
+              One-time investment to establish your
+              NOOH dealership in your city.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </motion.div>
+
+  </div>
+
+</section>
 
 
 {/* =====================================================
@@ -325,571 +484,11 @@ const Dealership = () => {
     DEALER MATERIAL & PRICING
 ===================================================== */}
 
-<section
-  id="dealer-material-pricing"
-  className="section-padding bg-luxury-black"
->
-
-  <div className="container-custom mx-auto">
-
-
-    {/* =================================================
-        SECTION HEADING
-    ================================================= */}
-
-    <motion.div
-      initial={{ opacity: 0, y: 25 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.7 }}
-      className="mb-14 text-center"
-    >
-
-      <div className="mb-5 flex items-center justify-center gap-4">
-
-        <span className="h-px w-12 bg-luxury-gold/60" />
-
-        <span className="text-[11px] font-medium uppercase tracking-[0.4em] text-luxury-gold">
-          DEALER MATERIALS
-        </span>
-
-        <span className="h-px w-12 bg-luxury-gold/60" />
-
-      </div>
-
-
-      <h2 className="font-luxury text-4xl font-bold md:text-5xl">
-
-        Stretch Ceiling{" "}
-
-        <span className="text-gold-300">
-          Material & Pricing
-        </span>
-
-      </h2>
-
-
-      <div className="mx-auto mt-6 h-[2px] w-12 bg-luxury-gold" />
-
-    </motion.div>
-
-
-
-    {/* =================================================
-        MAIN CARD
-    ================================================= */}
-
-    <motion.div
-      initial={{ opacity: 0, y: 35 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.8 }}
-      className="glass-gold overflow-hidden"
-    >
-
-      <div className="grid gap-0 lg:grid-cols-[1.55fr_0.8fr]">
-
-
-        {/* =================================================
-            LEFT — PRODUCT LIST & PRICING
-        ================================================= */}
-
-        <div className="border-b border-luxury-gold/20 p-6 md:p-8 lg:border-b-0 lg:border-r">
-
-
-          {/* Product List Header */}
-
-          <div className="mb-7">
-
-            <span className="text-[10px] font-bold uppercase tracking-[0.35em] text-luxury-gold">
-              PRODUCT LIST & PRICING
-            </span>
-
-            <h3 className="mt-3 font-luxury text-2xl font-bold text-white">
-              Dealer Price List
-            </h3>
-
-            <div className="mt-4 h-[2px] w-12 bg-luxury-gold" />
-
-          </div>
-
-
-
-          {/* =================================================
-              FABRIC MATERIALS
-          ================================================= */}
-
-          <div className="overflow-hidden border border-luxury-gold/20">
-
-            {/* Header */}
-
-            <div className="flex items-center gap-4 border-b border-luxury-gold/20 px-5 py-4">
-
-              <div className="flex h-10 w-10 items-center justify-center rounded-full border border-luxury-gold/40 text-lg text-luxury-gold">
-                ◈
-              </div>
-
-              <h4 className="font-luxury text-base font-bold uppercase tracking-wide text-white">
-                Fabric Materials
-              </h4>
-
-            </div>
-
-
-            {/* Rows */}
-
-            <div>
-
-              {[
-                ["White Fabric 120 Inch", "₹35 – 45", "/ Sqft"],
-                ["White Fabric 196 Inch", "₹45 – 55", "/ Sqft"],
-                ["UV Printed Fabric 120 Inch", "₹55 – 65", "/ Sqft"],
-                ["UV Printed Fabric 196 Inch", "₹80 – 90", "/ Sqft"],
-                ["UV Printed Fabric 196 Inch", "₹120", "/ Sqft"],
-              ].map(([name, price, unit], index) => (
-
-                <div
-                  key={`${name}-${index}`}
-                  className="group flex items-center justify-between gap-4 border-b border-luxury-gold/10 px-5 py-3.5 transition-all duration-300 last:border-b-0 hover:bg-luxury-gold/5"
-                >
-
-                  <div className="flex items-center gap-2">
-
-                    {(index === 3 || index === 4) && (
-                      <span className="rounded bg-luxury-gold px-1.5 py-0.5 text-[7px] font-bold uppercase text-black">
-                        NEW
-                      </span>
-                    )}
-
-                    <span className="text-sm text-white/65 transition-colors duration-300 group-hover:text-white">
-                      {name}
-                    </span>
-
-                  </div>
-
-
-                  <div className="shrink-0">
-
-                    <span className="font-semibold text-gold-300">
-                      {price}
-                    </span>
-
-                    <span className="ml-1 text-xs text-white/40">
-                      {unit}
-                    </span>
-
-                  </div>
-
-                </div>
-
-              ))}
-
-            </div>
-
-          </div>
-
-
-
-          {/* =================================================
-              LED COMPONENTS
-          ================================================= */}
-
-          <div className="mt-5 overflow-hidden border border-luxury-gold/20">
-
-            {/* Header */}
-
-            <div className="flex items-center gap-4 border-b border-luxury-gold/20 px-5 py-4">
-
-              <div className="flex h-10 w-10 items-center justify-center rounded-full border border-luxury-gold/40 text-lg text-luxury-gold">
-                ◉
-              </div>
-
-              <h4 className="font-luxury text-base font-bold uppercase tracking-wide text-white">
-                LED Components
-              </h4>
-
-            </div>
-
-
-            {/* Rows */}
-
-            <div>
-
-              {[
-                ["LED Direct Block Light", "₹35", "/ Pcs"],
-                ["LED 8 Eye Block Light", "₹75", "/ Pcs", "Dimmable & Tunable"],
-                ["RGBW 6 Eye Block LED", "₹75", "/ Pcs", "NEW"],
-                ["LED Block Light Controller", "₹1250", "/ Pcs"],
-                ["LED Block Light Remote", "₹850", "/ Pcs"],
-              ].map(([name, price, unit, tag], index) => (
-
-                <div
-                  key={`${name}-${index}`}
-                  className="group flex items-center justify-between gap-4 border-b border-luxury-gold/10 px-5 py-3.5 transition-all duration-300 last:border-b-0 hover:bg-luxury-gold/5"
-                >
-
-                  <div>
-
-                    <div className="flex flex-wrap items-center gap-2">
-
-                      <span className="text-sm text-white/65 transition-colors duration-300 group-hover:text-white">
-                        {name}
-                      </span>
-
-
-                      {tag === "NEW" && (
-                        <span className="rounded bg-luxury-gold px-1.5 py-0.5 text-[7px] font-bold uppercase text-black">
-                          NEW
-                        </span>
-                      )}
-
-                    </div>
-
-
-                    {tag === "Dimmable & Tunable" && (
-                      <span className="mt-1 block text-[10px] text-white/35">
-                        ({tag})
-                      </span>
-                    )}
-
-                  </div>
-
-
-                  <div className="shrink-0">
-
-                    <span className="font-semibold text-gold-300">
-                      {price}
-                    </span>
-
-                    <span className="ml-1 text-xs text-white/40">
-                      {unit}
-                    </span>
-
-                  </div>
-
-                </div>
-
-              ))}
-
-            </div>
-
-          </div>
-
-
-
-          {/* =================================================
-              INSTALLATION ACCESSORIES
-          ================================================= */}
-
-          <div className="mt-5 overflow-hidden border border-luxury-gold/20">
-
-            {/* Header */}
-
-            <div className="flex items-center gap-4 border-b border-luxury-gold/20 px-5 py-4">
-
-              <div className="flex h-10 w-10 items-center justify-center rounded-full border border-luxury-gold/40 text-lg text-luxury-gold">
-                ⚒
-              </div>
-
-              <h4 className="font-luxury text-base font-bold uppercase tracking-wide text-white">
-                Installation Accessories
-              </h4>
-
-            </div>
-
-
-            {/* Rows */}
-
-            <div>
-
-              {[
-                ["Profile PVC 48 Inch", "₹50", "/ Running Foot"],
-                ["Harpoon", "₹15", "/ Running Foot"],
-              ].map(([name, price, unit]) => (
-
-                <div
-                  key={name}
-                  className="group flex items-center justify-between gap-4 border-b border-luxury-gold/10 px-5 py-3.5 transition-all duration-300 last:border-b-0 hover:bg-luxury-gold/5"
-                >
-
-                  <span className="text-sm text-white/65 transition-colors duration-300 group-hover:text-white">
-                    {name}
-                  </span>
-
-
-                  <div className="shrink-0">
-
-                    <span className="font-semibold text-gold-300">
-                      {price}
-                    </span>
-
-                    <span className="ml-1 text-xs text-white/40">
-                      {unit}
-                    </span>
-
-                  </div>
-
-                </div>
-
-              ))}
-
-            </div>
-
-          </div>
-
-
-
-          {/* =================================================
-              PREMIUM PRODUCT
-          ================================================= */}
-
-          <div className="mt-5 overflow-hidden border border-luxury-gold/20">
-
-            {/* Header */}
-
-            <div className="flex items-center gap-4 border-b border-luxury-gold/20 px-5 py-4">
-
-              <div className="flex h-10 w-10 items-center justify-center rounded-full border border-luxury-gold/40 text-lg text-luxury-gold">
-                ◆
-              </div>
-
-              <h4 className="font-luxury text-base font-bold uppercase tracking-wide text-white">
-                Premium Product
-              </h4>
-
-            </div>
-
-
-            <div className="flex items-center justify-between gap-4 px-5 py-4">
-
-              <span className="text-sm text-white/65">
-                2×2 Backlit Printed Panel
-              </span>
-
-
-              <div className="shrink-0">
-
-                <span className="font-semibold text-gold-300">
-                  ₹1800
-                </span>
-
-                <span className="ml-1 text-xs text-white/40">
-                  / Panel
-                </span>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-
-        {/* =================================================
-            RIGHT — WHY CHOOSE OUR MATERIALS
-        ================================================= */}
-
-        <div className="p-6 md:p-8">
-
-
-          {/* Heading */}
-
-          <div className="mb-8">
-
-            <span className="text-[10px] font-bold uppercase tracking-[0.35em] text-luxury-gold">
-              WHY CHOOSE US
-            </span>
-
-            <h3 className="mt-3 font-luxury text-2xl font-bold text-white">
-
-              Why Choose Our{" "}
-
-              <span className="text-gold-300">
-                Materials?
-              </span>
-
-            </h3>
-
-            <div className="mt-4 h-[2px] w-12 bg-luxury-gold" />
-
-          </div>
-
-
-
-          {/* =================================================
-              BENEFITS
-          ================================================= */}
-
-          <div className="space-y-4">
-
-            {[
-              {
-                icon: "✦",
-                title: "Premium Quality Guaranteed",
-                text: "Quality-focused materials for premium projects.",
-              },
-
-              {
-                icon: "▣",
-                title: "Factory Direct Pricing",
-                text: "Competitive dealer pricing directly from the source.",
-              },
-
-              {
-                icon: "◈",
-                title: "Consistent Stock Supply",
-                text: "Reliable availability to support your ongoing projects.",
-              },
-
-              {
-                icon: "➜",
-                title: "Fast & Safe Delivery",
-                text: "Efficient and secure material delivery.",
-              },
-
-              {
-                icon: "◉",
-                title: "Technical Support",
-                text: "Professional technical assistance whenever required.",
-              },
-
-            ].map((item, index) => (
-
-              <motion.div
-                key={item.title}
-                initial={{
-                  opacity: 0,
-                  x: 15,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  x: 0,
-                }}
-                viewport={{
-                  once: true,
-                }}
-                transition={{
-                  duration: 0.5,
-                  delay: index * 0.07,
-                }}
-                whileHover={{
-                  x: 4,
-                }}
-                className="group flex gap-4 border border-luxury-gold/20 p-5 transition-all duration-300 hover:border-luxury-gold/50 hover:bg-luxury-gold/5"
-              >
-
-                {/* Icon */}
-
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-luxury-gold/40 text-white/70 transition-all duration-300 group-hover:text-luxury-gold">
-                  {item.icon}
-                </div>
-
-
-                {/* Text */}
-
-                <div>
-
-                  <h4 className="font-luxury text-base font-bold text-white transition-colors duration-300 group-hover:text-gold-300">
-                    {item.title}
-                  </h4>
-
-                  <p className="mt-2 text-xs leading-5 text-white/45">
-                    {item.text}
-                  </p>
-
-                </div>
-
-              </motion.div>
-
-            ))}
-
-          </div>
-
-
-
-          {/* =================================================
-              SUPPORT FEATURES
-          ================================================= */}
-
-          <div className="mt-8 border-t border-luxury-gold/15 pt-7">
-
-            <div className="grid grid-cols-3 gap-3">
-
-
-              {/* Installation */}
-
-              <div className="text-center">
-
-                <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-full border border-luxury-gold/40 text-luxury-gold">
-                  ⚒
-                </div>
-
-                <p className="mt-3 text-[9px] font-semibold uppercase leading-4 tracking-wide text-white/60">
-                  Professional
-                  <br />
-                  Installation Support
-                </p>
-
-              </div>
-
-
-              {/* Training */}
-
-              <div className="border-x border-luxury-gold/15 px-2 text-center">
-
-                <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-full border border-luxury-gold/40 text-luxury-gold">
-                  ◉
-                </div>
-
-                <p className="mt-3 text-[9px] font-semibold uppercase leading-4 tracking-wide text-white/60">
-                  Training &
-                  <br />
-                  Workshop
-                </p>
-
-              </div>
-
-
-              {/* Catalog */}
-
-              <div className="text-center">
-
-                <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-full border border-luxury-gold/40 text-luxury-gold">
-                  ▣
-                </div>
-
-                <p className="mt-3 text-[9px] font-semibold uppercase leading-4 tracking-wide text-white/60">
-                  Free
-                  <br />
-                  Dealership Catalog
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </motion.div>
-
-  </div>
-
-</section>
 
 
 {/* =====================================================
     OUR DEALERSHIPS
 ===================================================== */}
-{/* =====================================================
-    OUR DEALERSHIP
-===================================================== */}
-
 
 
 
