@@ -85,27 +85,90 @@ const Contact = () => {
         <meta name="description" content="Get in touch with NOOH Living Elevated for luxury interior design consultation. Located in Noida, serving pan India." />
       </Helmet>
 
-      <div className="min-h-screen bg-luxury-black pt-24">
+      <div className="min-h-screen bg-luxury-black pt-20">
         {/* Hero Section */}
-        <section className="section-padding">
-          <div className="container-custom mx-auto text-center">
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="text-5xl md:text-7xl font-luxury font-bold text-gold-300 mb-6"
-            >
-              Get In Touch
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="text-xl text-white/80 max-w-3xl mx-auto"
-            >
-              Let's discuss how we can transform your space into a luxury masterpiece
-            </motion.p>
-          </div>
-        </section>
+        
+    
+<section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
+
+  <div className="absolute inset-0">
+
+    {/* Desktop Image */}
+    <img
+      src="/hero-images/stretch-ceiling-contact.png"
+      alt="NOOH Contact"
+      className="
+        hidden
+        md:block
+        w-full
+        h-full
+        object-cover
+        object-center
+      "
+    />
+
+    {/* Mobile Image */}
+    <img
+      src="/images/contact-mobile.png"
+      alt="NOOH Contact"
+      className="
+        block
+        md:hidden
+        w-full
+        h-full
+        object-cover
+        object-center
+      "
+    />
+
+    {/* Luxury Overlay */}
+    <div className="
+      absolute
+      inset-0
+      bg-gradient-to-b"/>
+
+  </div>
+
+
+  {/* =================================================
+      CONTENT
+  ================================================= */}
+
+  <div className="
+    relative
+    z-10
+    container-custom
+    mx-auto
+    px-6
+    text-center
+  ">
+
+    {/* Small Label */}
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7 }}
+      className="
+        mb-5
+        flex
+        items-center
+        justify-center
+        gap-4
+      "
+    >
+
+      <span className="h-px w-12 bg-luxury-gold/70" />
+
+    
+
+      <span className="h-px w-12 bg-luxury-gold/70" />
+
+    </motion.div>
+
+
+  </div>
+
+</section>
 
         {/* Contact Info & Form */}
         <section className="section-padding bg-luxury-gray">
