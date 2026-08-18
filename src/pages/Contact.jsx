@@ -484,8 +484,8 @@ const Contact = () => {
         text-white/55
         md:text-base
       ">
-        Explore our growing network of authorized NOOH dealerships
-        across India. Connect with your nearest dealership for
+        Explore our growing network of authorized NOOH branch offices
+        across India. Connect with your nearest branch office  for
         product information, project assistance and business support.
       </p>
 
@@ -505,64 +505,64 @@ const Contact = () => {
       xl:grid-cols-4
     ">
 
-      {[
-        {
-          number: "01",
-          icon: "⌖",
-          name: "F K & COMPANY",
-          address:  "Floor No.: BANGAI, Building No./Flat No.: 0, Sri Surendra Kumar Sahani, Maharajganj Road, Jhungia Bazar, Gorakhpur, Uttar Pradesh – 273013",
-        },
+   {  [
+  {
+    number: "01",
+    icon: "⌖",
+    name: "F K & COMPANY",
+    address:
+      "Floor No.: BANGAI, Building No./Flat No.: 0, Sri Surendra Kumar Sahani, Maharajganj Road, Jhungia Bazar, Gorakhpur, Uttar Pradesh – 273013",
+  },
 
-        {
-          number: "02",
-          icon: "⌖",
-          name: "NOOH Authorized Dealership",
-          address: "Noida, Uttar Pradesh",
-        },
+  {
+    number: "02",
+    icon: "⌖",
+    name: "NOOH Branch Office",
+    address: "Noida, Uttar Pradesh",
+  },
 
-        {
-          number: "03",
-          icon: "⌖",
-          name: "NOOH Authorized Dealership",
-          address: "New Delhi, Delhi",
-        },
+  {
+    number: "03",
+    icon: "⌖",
+    name: "NOOH Branch Office",
+    address: "New Delhi, Delhi",
+  },
 
-        {
-          number: "04",
-          icon: "⌖",
-          name: "NOOH Authorized Dealership",
-          address: "Jaipur, Rajasthan",
-        },
+  {
+    number: "04",
+    icon: "⌖",
+    name: "NOOH Branch Office",
+    address: "Jaipur, Rajasthan",
+  },
 
-        {
-          number: "05",
-          icon: "⌖",
-          name: "NOOH Authorized Dealership",
-          address: "Ahmedabad, Gujarat",
-        },
+  {
+    number: "05",
+    icon: "⌖",
+    name: "NOOH Branch Office",
+    address: "Ahmedabad, Gujarat",
+  },
 
-        {
-          number: "06",
-          icon: "⌖",
-          name: "NOOH Authorized Dealership",
-          address: "Mumbai, Maharashtra",
-        },
+  {
+    number: "06",
+    icon: "⌖",
+    name: "NOOH Branch Office",
+    address: "Mumbai, Maharashtra",
+  },
 
-        {
-          number: "07",
-          icon: "⌖",
-          name: "NOOH Authorized Dealership",
-          address: "Bengaluru, Karnataka",
-        },
+  {
+    number: "07",
+    icon: "⌖",
+    name: "NOOH Branch Office",
+    address: "Bengaluru, Karnataka",
+  },
 
-        {
-          number: "08",
-          icon: "⌖",
-          name: "NOOH Authorized Dealership",
-          address: "Hyderabad, Telangana",
-        },
-
-      ].map((dealer, index) => (
+  {
+    number: "08",
+    icon: "⌖",
+    name: "NOOH Branch Office",
+    address: "Hyderabad, Telangana",
+  },
+].map((dealer, index) => (
 
         <motion.div
           key={dealer.number}
