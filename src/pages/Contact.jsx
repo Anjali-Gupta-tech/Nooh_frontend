@@ -456,7 +456,7 @@ const Contact = () => {
         Our{" "}
 
         <span className="text-gold-300">
-          Dealership
+          Branch Offices
         </span>
 
       </h2>
