@@ -64,111 +64,292 @@ const Navbar = () => {
       }`}
     >
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between w-full">
 
-          {/* Logo */}
-          <Link to="/" className="flex items-center flex-shrink-0">
-            <motion.div whileHover={{ scale: 1.05 }} className="relative">
-              <Logo className="h-9 sm:h-10 md:h-12 w-auto text-white" />
-              <div className="mt-1">
-                
-              </div>
-            </motion.div>
+  {/* =====================================================
+      LOGO
+  ===================================================== */}
+
+  <Link
+    to="/"
+    className="flex items-center flex-shrink-0"
+  >
+    <motion.div
+      whileHover={{ scale: 1.03 }}
+      className="relative flex items-center"
+    >
+      <Logo
+        className="
+          h-9
+          sm:h-10
+          md:h-12
+          w-auto
+          text-white
+        "
+      />
+    </motion.div>
+  </Link>
+
+
+  {/* =====================================================
+      DESKTOP MENU
+  ===================================================== */}
+
+  <div
+    className="
+      hidden
+      lg:flex
+      items-center
+      gap-4
+      xl:gap-6
+      ml-auto
+    "
+  >
+
+    {navItems.map((item, index) => (
+
+      <div
+        key={index}
+        className="relative group flex-shrink-0"
+      >
+
+        {item.submenu ? (
+
+          <>
+            {/* DROPDOWN BUTTON */}
+
+            <button
+              className="
+                text-white
+                hover:text-luxury-gold
+                smooth-transition
+                flex
+                items-center
+                gap-1
+                uppercase
+                text-[11px]
+                xl:text-xs
+                font-semibold
+                tracking-wider
+                animated-underline
+                whitespace-nowrap
+              "
+              onMouseEnter={() => setShowMegaMenu(true)}
+              onMouseLeave={() => setShowMegaMenu(false)}
+            >
+
+              {item.name}
+
+              <FaChevronDown className="text-[10px]" />
+
+            </button>
+
+
+            {/* DROPDOWN */}
+
+            <AnimatePresence>
+
+              {showMegaMenu && (
+
+                <motion.div
+                  initial={{
+                    opacity: 0,
+                    y: 10,
+                  }}
+                  animate={{
+                    opacity: 1,
+                    y: 0,
+                  }}
+                  exit={{
+                    opacity: 0,
+                    y: 10,
+                  }}
+                  onMouseEnter={() => setShowMegaMenu(true)}
+                  onMouseLeave={() => setShowMegaMenu(false)}
+                  className="
+                    absolute
+                    top-full
+                    left-0
+                    mt-3
+                    w-56
+                    xl:w-64
+                    glass-gold
+                    rounded-lg
+                    shadow-2xl
+                    p-3
+                    z-50
+                  "
+                >
+
+                  {item.submenu.map(
+                    (subItem, subIndex) => (
+
+                      <Link
+                        key={subIndex}
+                        to={subItem.path}
+                        className="
+                          block
+                          px-4
+                          py-3
+                          hover:bg-luxury-gold/20
+                          rounded-lg
+                          smooth-transition
+                          text-white
+                          hover:text-luxury-gold
+                          text-sm
+                        "
+                      >
+                        {subItem.name}
+                      </Link>
+
+                    )
+                  )}
+
+                </motion.div>
+
+              )}
+
+            </AnimatePresence>
+
+          </>
+
+        ) : (
+
+          /* NORMAL NAV ITEM */
+
+          <Link
+            to={item.path}
+            className={`
+              uppercase
+              text-[11px]
+              xl:text-xs
+              font-semibold
+              tracking-wider
+              smooth-transition
+              animated-underline
+              whitespace-nowrap
+              ${
+                location.pathname === item.path
+                  ? "text-luxury-gold"
+                  : "text-white hover:text-luxury-gold"
+              }
+            `}
+          >
+            {item.name}
           </Link>
 
-          {/* Desktop Menu */}
-          <div className="hidden lg:flex items-center gap-3 xl:gap-6 flex-nowrap overflow-visible ml-4">
-            {navItems.map((item, index) => (
-              <div key={index} className="relative group flex-shrink-0">
-                {item.submenu ? (
-                  <>
-                    <button
-                      className="text-white hover:text-luxury-gold smooth-transition flex items-center gap-1 uppercase text-[11px] xl:text-xs font-semibold tracking-wider animated-underline whitespace-nowrap"
-                      onMouseEnter={() => setShowMegaMenu(true)}
-                      onMouseLeave={() => setShowMegaMenu(false)}
-                    >
-                      {item.name}
-                      <FaChevronDown className="text-xs" />
-                    </button>
-                    <AnimatePresence>
-                      {showMegaMenu && (
-                        <motion.div
-                          initial={{ opacity: 0, y: 10 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: 10 }}
-                          onMouseEnter={() => setShowMegaMenu(true)}
-                          onMouseLeave={() => setShowMegaMenu(false)}
-                          className="absolute top-full left-0 mt-2 w-56 xl:w-64 glass-gold rounded-lg shadow-2xl p-4 z-50"
-                        >
-                          {item.submenu.map((subItem, subIndex) => (
-                            <Link
-                              key={subIndex}
-                              to={subItem.path}
-                              className="block px-4 py-3 hover:bg-luxury-gold/20 rounded-lg smooth-transition text-white hover:text-luxury-gold text-sm"
-                            >
-                              {subItem.name}
-                            </Link>
-                          ))}
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
-                  </>
-                ) : (
-                  <Link
-                    to={item.path}
-                    className={`uppercase text-[11px] xl:text-xs font-semibold tracking-wider smooth-transition animated-underline whitespace-nowrap ${
-                      location.pathname === item.path
-                        ? 'text-luxury-gold'
-                        : 'text-white hover:text-luxury-gold'
-                    }`}
-                  >
-                    {item.name}
-                  </Link>
-                )}
-              </div>
-            ))}
-            <button
-  onClick={() => window.open("https://www.noohadmin.com/login", "_blank")}
-  className="btn-luxury text-[11px] xl:text-xs whitespace-nowrap flex-shrink-0 ml-2 px-4 py-2 xl:px-5 xl:py-3"
->
-  Login
-</button>
-          </div>
+        )}
 
-          {/* Mobile Hamburger */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden text-white text-xl sm:text-2xl p-2 focus:outline-none flex-shrink-0"
-            aria-label="Toggle menu"
-          >
-            <AnimatePresence mode="wait">
-              {isOpen ? (
-                <motion.span
-                  key="close"
-                  initial={{ rotate: -90, opacity: 0 }}
-                  animate={{ rotate: 0, opacity: 1 }}
-                  exit={{ rotate: 90, opacity: 0 }}
-                  transition={{ duration: 0.2 }}
-                  className="block"
-                >
-                  <FaTimes />
-                </motion.span>
-              ) : (
-                <motion.span
-                  key="open"
-                  initial={{ rotate: 90, opacity: 0 }}
-                  animate={{ rotate: 0, opacity: 1 }}
-                  exit={{ rotate: -90, opacity: 0 }}
-                  transition={{ duration: 0.2 }}
-                  className="block"
-                >
-                  <FaBars />
-                </motion.span>
-              )}
-            </AnimatePresence>
-          </button>
-        </div>
+      </div>
 
+    ))}
+
+
+    {/* =================================================
+        LOGIN BUTTON
+    ================================================= */}
+
+    <button
+      onClick={() =>
+        window.open(
+          "https://www.noohadmin.com/login",
+          "_blank"
+        )
+      }
+      className="
+        btn-luxury
+        text-[11px]
+        xl:text-xs
+        whitespace-nowrap
+        flex-shrink-0
+        ml-1
+        px-4
+        py-2
+        xl:px-5
+        xl:py-3
+      "
+    >
+      Login
+    </button>
+
+  </div>
+
+
+  {/* =====================================================
+      MOBILE HAMBURGER
+  ===================================================== */}
+
+  <button
+    onClick={() => setIsOpen(!isOpen)}
+    className="
+      lg:hidden
+      text-white
+      text-xl
+      sm:text-2xl
+      p-2
+      focus:outline-none
+      flex-shrink-0
+    "
+    aria-label="Toggle menu"
+  >
+
+    <AnimatePresence mode="wait">
+
+      {isOpen ? (
+
+        <motion.span
+          key="close"
+          initial={{
+            rotate: -90,
+            opacity: 0,
+          }}
+          animate={{
+            rotate: 0,
+            opacity: 1,
+          }}
+          exit={{
+            rotate: 90,
+            opacity: 0,
+          }}
+          transition={{
+            duration: 0.2,
+          }}
+          className="block"
+        >
+          <FaTimes />
+        </motion.span>
+
+      ) : (
+
+        <motion.span
+          key="open"
+          initial={{
+            rotate: 90,
+            opacity: 0,
+          }}
+          animate={{
+            rotate: 0,
+            opacity: 1,
+          }}
+          exit={{
+            rotate: -90,
+            opacity: 0,
+          }}
+          transition={{
+            duration: 0.2,
+          }}
+          className="block"
+        >
+          <FaBars />
+        </motion.span>
+
+      )}
+
+    </AnimatePresence>
+
+  </button>
+
+</div>
         {/* Mobile Menu */}
         <AnimatePresence>
           {isOpen && (
