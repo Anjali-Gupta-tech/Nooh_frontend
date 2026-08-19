@@ -66,6 +66,7 @@ import BespokeWall from './pages/Servicesnewpages/BespokeWall';
 import PatternLine from './pages/Servicesnewpages/PatternLine';
 import EmbroWall from './pages/Servicesnewpages/Embrowall';
 import WallScript from './pages/Servicesnewpages/WallScript';
+import Testimonials from './pages/Testimonials';
 
 function App() {
 
@@ -86,6 +87,7 @@ function App() {
             <Route path="/skylume" element={<Skylume />} />
             <Route path="/noohstar" element={<NoohStar />} />
             <Route path="/ceiling-solutions" element={<CeilingSolution />} />
+            <Route path="/testomonial" element={<Testimonials/>}/>
 
             {/* routes for specific ceiling types */}
             <Route path="/stretch-ceiling" element={<StretchCeiling />} />
