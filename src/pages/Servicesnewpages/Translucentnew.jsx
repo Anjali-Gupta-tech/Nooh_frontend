@@ -1,9 +1,15 @@
 import React from "react";
+import BookNowModel from "../../components/BookNowModel";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
+import { useState } from "react";
+
 
 const Translucentnew = () => {
+  const [bookingOpen, setBookingOpen] = useState(false);
+const [selectedType, setSelectedType] = useState("");
   return (
+
     <>
       <Helmet>
         <title>STRETCHÉ™ TRANSLUCENT | NOOH Living Elevated</title>
@@ -161,9 +167,21 @@ const Translucentnew = () => {
                   </h4>
 
                 </div>
-
+                   
+                   
               </div>
+                 {/* BOOK THIS TYPE BUTTON */}
 
+              <button
+                type="button"
+                onClick={() => {
+                  setSelectedType("STATIC WHITE");
+                  setBookingOpen(true);
+                }}
+                className="mt-8 px-7 py-3 rounded-full border border-gold-300 text-gold-300 hover:bg-gold-300 hover:text-black transition"
+              >
+                BOOK THIS TYPE →
+              </button>
             </div>
 
           </motion.div>
@@ -247,7 +265,16 @@ const Translucentnew = () => {
       </div>
 
     </div>
-
+<button
+  type="button"
+  onClick={() => {
+    setSelectedType("TUNABLE WHITE");
+    setBookingOpen(true);
+  }}
+  className="mt-8 px-7 py-3 rounded-full border border-gold-300 text-gold-300 hover:bg-gold-300 hover:text-black transition"
+>
+  BOOK THIS TYPE →
+</button>
   </div>
 
    <div className="rounded-3xl overflow-hidden shadow-2xl">
@@ -349,7 +376,16 @@ const Translucentnew = () => {
       </div>
 
     </div>
-
+<button
+  type="button"
+  onClick={() => {
+    setSelectedType("RGBW");
+    setBookingOpen(true);
+  }}
+  className="mt-8 px-7 py-3 rounded-full border border-gold-300 text-gold-300 hover:bg-gold-300 hover:text-black transition"
+>
+  BOOK THIS TYPE →
+</button>
   </div>
 
 </motion.div>
@@ -435,7 +471,16 @@ const Translucentnew = () => {
       </div>
 
     </div>
-
+<button
+  type="button"
+  onClick={() => {
+    setSelectedType("DYNAMIC PIXEL");
+    setBookingOpen(true);
+  }}
+  className="mt-8 px-7 py-3 rounded-full border border-gold-300 text-gold-300 hover:bg-gold-300 hover:text-black transition"
+>
+  BOOK THIS TYPE →
+</button>
   </div>
 
     <div className="rounded-3xl overflow-hidden shadow-2xl">
@@ -489,7 +534,16 @@ const Translucentnew = () => {
 </motion.div>
 
 </section>
+      {/* YOUR EXISTING CTA SECTION */}
 
+      <BookNowModel
+        isOpen={bookingOpen}
+        onClose={() => setBookingOpen(false)}
+        productName="STRETCHÉ™ TRANSLUCENT"
+        selectedType={selectedType}
+      />
+
+  
 </div>
 
 </>
