@@ -33,7 +33,7 @@ const Navbar = () => {
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Products', path: '/services' },
-
+    { name: 'Products', path: '/products' },
      {name:'FRANCHISE',path:'/franchise'},
     { name: 'Projects', path: '/projects' },
 
@@ -68,7 +68,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center flex-shrink-0">
             <motion.div whileHover={{ scale: 1.05 }} className="relative">
-          <Logo className="h-10 sm:h-11 md:h-[62px] lg:h-[66px] w-auto text-white" />
+              <Logo className="h-9 sm:h-10 md:h-12 w-auto text-white" />
               <div className="mt-1">
                 
               </div>
