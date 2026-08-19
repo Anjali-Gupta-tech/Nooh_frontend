@@ -40,7 +40,7 @@ const Testimonials = () => {
                 Product Videos
               </h2>
               <p className="text-xl text-white/70">
-                Watch our clients share their experience
+                Explore Our Products, Projects & Installations
               </p>
             </div>
 
