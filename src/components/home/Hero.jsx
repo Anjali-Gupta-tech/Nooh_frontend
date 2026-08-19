@@ -46,6 +46,7 @@ const Hero = () => {
   description:
     "A premium custom-printed stretch ceiling featuring breathtaking 3D galaxy visuals with integrated LED illumination, creating a spectacular cosmic ambiance and immersive architectural experience."
 },
+
 {
   desktop: "/hero-images/EMBRODIARY-CEILING-SYSTEMS.png",
   mobile: "/hero-images/embordery.png",
@@ -62,21 +63,21 @@ const Hero = () => {
 },
 {
   desktop: "/hero-images/Architechtural.png",
-  mobile: "/images/architectural-wall-art-mobile.webp",
+  mobile: "/hero-images/architectural.png",
   title: "ARCHITECTURAL WALL ART™",
   description:
     "Premium wall art solutions transforming architectural spaces through immersive visuals, artistic expression, and innovative surface design."
 },
 {
   desktop: "/hero-images/STRETCH-GLOSS-STRETCH-CEILING.png",
-  mobile: "/images/stretche-gloss-ceiling-mobile.webp",
+  mobile: "/hero-images/stretch-gloss.png",
   title: "STRETCHE™ GLOSS CEILING",
   description:
     "A premium high-gloss stretch ceiling system with a mirror-like finish that enhances brightness, creates a sense of spaciousness, and adds a sleek, luxurious touch to modern interiors."
 },
 {
   desktop: "/hero-images/noohlivingrock.png",
-  mobile: "/images/nooh-rockscape-mobile.webp",
+  mobile: "/hero-images/rock-mobile.png",
   title: "NOOH ROCKSCAPE™",
   description:
     "Architectural artificial rock systems creating realistic, sculptural environments through innovative textures, forms, and immersive surface design."
@@ -84,7 +85,7 @@ const Hero = () => {
 
 {
   desktop: "/hero-images/STRETCH-CEILING-MANUFACTURER-DELHI-NCR-NOIDA-DELHI.png",
-  mobile: "/images/sky-garden-ceiling-mobile.webp",
+  mobile: "/images/stretch-gloss.png",
   title: "STRETCHE™ CEILING",
   description:
     "A premium printed translucent stretch ceiling featuring nature-inspired artwork and integrated LED backlighting, creating the illusion of an open sky while bringing elegance, tranquility, and biophilic design into modern interiors."
