@@ -11,7 +11,7 @@ const Hero = () => {
     
      {
       desktop: "/images/stretch-ceiling.png",
-      mobile: "/images/stretch-ceiling-mobile.png",
+      mobile: "/hero-images/stretch-manufature-mobile.png",
       title: "STRETCHE™ CEILING",
       description:"It is a premium decorative fabric ceiling system creating elegant wave effects, visual depth, and stunning illuminated architectural interiors",
     },
@@ -92,21 +92,21 @@ const Hero = () => {
 },
   {
   desktop: "/hero-images/STRETCHE-BACKLIT-STRETCH-CEILING.png",
-  mobile: "/images/backlit-stretch-ceiling-mobile.webp",
+  mobile: "/hero-images/stretch-backlit.png",
   title: "STRETCHE™ BACKLIT STRETCH CEILING",
   description:
     "A premium LED backlit stretch ceiling system designed to deliver seamless illumination, soft diffused lighting, and a sophisticated architectural finish for residential, commercial, and luxury interiors."
 },
 {
   desktop: "/hero-images/STRETCHE-UV-PRINTING.png",
-  mobile: "/images/uv-printed-stretch-ceiling-mobile.webp",
+  mobile: "/hero-images/UV-printing.png",
   title: "STRETCHE™ UV PRINTED  CEILING",
   description:
     "A premium stretch ceiling featuring high-definition UV printing technology that delivers vibrant colors, exceptional durability, and custom-designed artwork for elegant residential, commercial, and luxury interiors."
 },
 {
   desktop: "/hero-images/STARRY-LIGHT-PRINTING-STRETCH-CEILING.png",
-  mobile: "/images/starry-light-printed-stretch-ceiling-mobile.webp",
+  mobile: "/hero-images/starry-light.png",
   title: "STRETCHE™ STARRY LIGHT PRINTED STRETCH CEILING",
   description:
     "A premium printed stretch ceiling featuring a mesmerizing starry sky design with integrated LED illumination, creating a magical nighttime ambiance and luxurious architectural interiors."

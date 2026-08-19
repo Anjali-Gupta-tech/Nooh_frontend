@@ -768,50 +768,7 @@ const BookNowModel = ({
                     CONTROL
                 ================================================= */}
 
-                {type && (
-
-                  <div className="mt-8">
-
-                    <p className="text-white/50 text-sm mb-3">
-                      Select Control
-                    </p>
-
-                    <div className="flex flex-wrap gap-3">
-
-                      {(type === "DYNAMIC PIXEL"
-                        ? ["DMX", "MADRIX"]
-                        : type === "STATIC WHITE"
-                        ? ["ON / OFF"]
-                        : [
-                            "Remote Control",
-                            "Smart Control",
-                            "DALI",
-                          ]
-                      ).map((option) => (
-
-                        <button
-                          key={option}
-                          type="button"
-                          onClick={() =>
-                            setControl(option)
-                          }
-                          className={`px-5 py-3 rounded-full border transition ${
-                            control === option
-                              ? "border-gold-300 bg-gold-300/10 text-gold-300"
-                              : "border-white/10 text-white hover:border-white/30"
-                          }`}
-                        >
-                          {option}
-                        </button>
-
-                      ))}
-
-                    </div>
-
-                  </div>
-
-                )}
-
+ 
                 {/* CURRENT RATE */}
 
                 {type && (

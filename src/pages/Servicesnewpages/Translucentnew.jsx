@@ -180,7 +180,7 @@ const [selectedType, setSelectedType] = useState("");
                 }}
                 className="mt-8 px-7 py-3 rounded-full border border-gold-300 text-gold-300 hover:bg-gold-300 hover:text-black transition"
               >
-                BOOK THIS TYPE →
+                BUY THIS →
               </button>
             </div>
 
@@ -273,7 +273,7 @@ const [selectedType, setSelectedType] = useState("");
   }}
   className="mt-8 px-7 py-3 rounded-full border border-gold-300 text-gold-300 hover:bg-gold-300 hover:text-black transition"
 >
-  BOOK THIS TYPE →
+  BUY THIS →
 </button>
   </div>
 
@@ -384,7 +384,7 @@ const [selectedType, setSelectedType] = useState("");
   }}
   className="mt-8 px-7 py-3 rounded-full border border-gold-300 text-gold-300 hover:bg-gold-300 hover:text-black transition"
 >
-  BOOK THIS TYPE →
+  BUY THIS  →
 </button>
   </div>
 
@@ -479,7 +479,7 @@ const [selectedType, setSelectedType] = useState("");
   }}
   className="mt-8 px-7 py-3 rounded-full border border-gold-300 text-gold-300 hover:bg-gold-300 hover:text-black transition"
 >
-  BOOK THIS TYPE →
+  BUY THIS →
 </button>
   </div>
 

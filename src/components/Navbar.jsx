@@ -36,7 +36,7 @@ const Navbar = () => {
   
      {name:'FRANCHISE',path:'/franchise'},
     { name: 'Projects', path: '/projects' },
-    {name: 'Product Videos', path:'/testomonial'},
+   
 
     {
       name: 'SHOP BY CATEGORY',
