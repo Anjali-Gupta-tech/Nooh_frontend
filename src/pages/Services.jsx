@@ -77,7 +77,6 @@ const Services = () => {
     pdf: "/catalogue/STRETCHE_TM_STRETCH_CEILING_PANEL.pdf",
   },
 
-
   {
     id: "fiber-optic",
 
@@ -145,9 +144,6 @@ const Services = () => {
 
     pdf: "/catalogue/fiber-optic-star-lights.pdf",
   },
-
-
-
 
 {
   id: "architectural-wall-art",
@@ -218,28 +214,115 @@ const Services = () => {
 
   pdf: "/catalogue/NOOH_ARCHITECTURAL_WALL_ART.pdf",
 },
+{
+  id: "mirrora",
 
+  title: (
+    <>
+      MIRRORA<sup>™</sup> Illuminated Architectural Surface System
+    </>
+  ),
 
+  subheading: "Flexible Illuminated Architectural Surface System",
 
-  {
-    id: "luxury-interior",
+  description: (
+    <>
+      MIRRORA<sup>™</sup> is a flexible illuminated architectural surface
+      system that transforms light, form and graphics into immersive
+      architectural experiences. Designed for ceilings, suspended features,
+      walls, partitions and decorative installations, MIRRORA<sup>™</sup>
+      combines translucent surfaces with integrated LED illumination,
+      customized forms, printing and programmable lighting.
+    </>
+  ),
 
-    title: "Luxury Interior Design",
+  categories: [
+    {
+      title: (
+        <>
+          MIRRORA<sup>™</sup> WAVE
+        </>
+      ),
+      subtitle: "Flowing Illuminated Architectural Forms",
+      link: "/products/mirrora/wave",
+    },
 
-    description:
-      "Complete interior design solutions tailored to your lifestyle and preferences.",
+    {
+      title: (
+        <>
+          MIRRORA<sup>™</sup> RIBBON
+        </>
+      ),
+      subtitle: "Continuous Suspended Illuminated Forms",
+      link: "/products/mirrora/ribbon",
+    },
 
-    features: [
-      "3D Visualization",
-      "Space Planning",
-      "Custom Furniture",
-      "Turnkey Execution",
-    ],
+    {
+      title: (
+        <>
+          MIRRORA<sup>™</sup> LOOP
+        </>
+      ),
+      subtitle: "Circular & Elliptical Architectural Forms",
+      link: "/products/mirrora/loop",
+    },
 
-    image: "/image/laxury.jpg",
+    {
+      title: (
+        <>
+          MIRRORA<sup>™</sup> SPIRAL
+        </>
+      ),
+      subtitle: "Sculptural Hanging Illuminated Forms",
+      link: "/products/mirrora/spiral",
+    },
 
-    pdf: "luxury-interior-design.pdf",
-  },
+    {
+      title: (
+        <>
+          MIRRORA<sup>™</sup> WALL
+        </>
+      ),
+      subtitle: "Illuminated Vertical Architectural Features",
+      link: "/products/mirrora/wall",
+    },
+
+    {
+      title: (
+        <>
+          MIRRORA<sup>™</sup> PRINT
+        </>
+      ),
+      subtitle: "Customized Printed Illuminated Surfaces",
+      link: "/products/mirrora/print",
+    },
+
+    {
+      title: (
+        <>
+          MIRRORA<sup>™</sup> RGB
+        </>
+      ),
+      subtitle: "RGB & RGBW Colour-Changing Illumination",
+      link: "/products/mirrora/rgb",
+    },
+
+    {
+      title: (
+        <>
+          MIRRORA<sup>™</sup> DYNAMIC
+        </>
+      ),
+      subtitle: "Programmable & Chasing Light Effects",
+      link: "/products/mirrora/dynamic",
+    },
+  ],
+
+  image: "/hero-images/mirrora.png",
+
+  pdf: "/catalogue/mirrora.pdf",
+},
+
 
 
   {
