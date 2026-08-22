@@ -196,7 +196,7 @@ export const mirroraData = {
     ],
 
     // CARD IMAGE
-    image: "/hero-images/loop-card.jpeg",
+    image: "/hero-images/loop-hero.png",
 
     // PAGE HERO BACKGROUND
     heroImage:"/hero-images/loop-hero.png",

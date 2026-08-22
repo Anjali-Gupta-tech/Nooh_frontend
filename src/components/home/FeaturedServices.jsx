@@ -69,7 +69,23 @@ const services = [
 
     image: "/service/led-backlite-panel.png",
   },
+{
+  id: "mirrora",
 
+  icon: FaLightbulb,
+
+  title: (
+    <>
+      MIRRORA
+      <sup className="text-[50%] align-super ml-[1px]">™</sup>
+    </>
+  ),
+
+  description:
+    "Sculptural illuminated architectural forms that bring movement, rhythm and elegance to premium interiors.",
+
+  image: "/hero-images/mirrora.png",
+},
   {
     id: "cloudwave",
 
