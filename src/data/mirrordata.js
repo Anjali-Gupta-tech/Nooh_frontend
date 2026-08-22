@@ -1,10 +1,15 @@
 export const mirroraData = {
+  /* =========================================================
+     MIRRORA™ WAVE
+  ========================================================= */
+
   wave: {
     id: "wave",
 
     title: (
       <>
-            MIRRORA<sup className="text-[35%] align-super">™</sup> WAVE
+        MIRRORA
+        <sup className="text-[35%] align-super ml-1">™</sup> WAVE
       </>
     ),
 
@@ -54,8 +59,17 @@ export const mirroraData = {
       "Installation",
     ],
 
-    image: "/images/mirrora-wave.webp",
+    // CARD IMAGE
+    image: "/hero-images/mirrora.png",
+
+    // PAGE HERO BACKGROUND
+    heroImage: "/hero-images/mirrora.png",
   },
+
+
+  /* =========================================================
+     MIRRORA™ RIBBON
+  ========================================================= */
 
   ribbon: {
     id: "ribbon",
@@ -63,8 +77,7 @@ export const mirroraData = {
     title: (
       <>
         MIRRORA
-        <sup className="text-[35%] align-super">™</sup>{" "}
-        RIBBON
+        <sup className="text-[35%] align-super ml-1">™</sup> RIBBON
       </>
     ),
 
@@ -114,8 +127,17 @@ export const mirroraData = {
       "Installation",
     ],
 
-    image: "/images/mirrora-ribbon.webp",
+    // CARD IMAGE
+    image: "/hero-images/ribbon-card.png",
+
+    // PAGE HERO BACKGROUND
+    heroImage: "/hero-images/ribbon-card.png",
   },
+
+
+  /* =========================================================
+     MIRRORA™ LOOP
+  ========================================================= */
 
   loop: {
     id: "loop",
@@ -123,8 +145,7 @@ export const mirroraData = {
     title: (
       <>
         MIRRORA
-        <sup className="text-[35%] align-super">™</sup>{" "}
-        LOOP
+        <sup className="text-[35%] align-super ml-1">™</sup> LOOP
       </>
     ),
 
@@ -174,8 +195,17 @@ export const mirroraData = {
       "Installation",
     ],
 
-    image: "/images/mirrora-loop.webp",
+    // CARD IMAGE
+    image: "/hero-images/loop-card.jpeg",
+
+    // PAGE HERO BACKGROUND
+    heroImage:"/hero-images/loop-hero.png",
   },
+
+
+  /* =========================================================
+     MIRRORA™ SPIRAL
+  ========================================================= */
 
   spiral: {
     id: "spiral",
@@ -183,8 +213,7 @@ export const mirroraData = {
     title: (
       <>
         MIRRORA
-        <sup className="text-[35%] align-super">™</sup>{" "}
-        SPIRAL
+        <sup className="text-[35%] align-super ml-1">™</sup> SPIRAL
       </>
     ),
 
@@ -234,8 +263,17 @@ export const mirroraData = {
       "Installation",
     ],
 
-    image: "/images/mirrora-spiral.webp",
+    // CARD IMAGE
+    image: "/hero-images/spiral-card.png",
+
+    // PAGE HERO BACKGROUND
+    heroImage: "/hero-images/spiral-hero.png",
   },
+
+
+  /* =========================================================
+     MIRRORA™ WALL
+  ========================================================= */
 
   wall: {
     id: "wall",
@@ -243,8 +281,7 @@ export const mirroraData = {
     title: (
       <>
         MIRRORA
-        <sup className="text-[35%] align-super">™</sup>{" "}
-        WALL
+        <sup className="text-[35%] align-super ml-1">™</sup> WALL
       </>
     ),
 
@@ -294,8 +331,17 @@ export const mirroraData = {
       "Installation",
     ],
 
-    image: "/images/mirrora-wall.webp",
+    // CARD IMAGE
+    image: "/hero-images/wall-card.png",
+
+    // PAGE HERO BACKGROUND
+    heroImage: "/hero-images/wall-card.png",
   },
+
+
+  /* =========================================================
+     MIRRORA™ PRINT
+  ========================================================= */
 
   print: {
     id: "print",
@@ -303,8 +349,7 @@ export const mirroraData = {
     title: (
       <>
         MIRRORA
-        <sup className="text-[35%] align-super">™</sup>{" "}
-        PRINT
+        <sup className="text-[35%] align-super ml-1">™</sup> PRINT
       </>
     ),
 
@@ -354,8 +399,17 @@ export const mirroraData = {
       "Installation",
     ],
 
-    image: "/images/mirrora-print.webp",
+    // CARD IMAGE
+    image: "/hero-images/print-card.png",
+
+    // PAGE HERO BACKGROUND
+    heroImage:"/hero-images/print-card.png",
   },
+
+
+  /* =========================================================
+     MIRRORA™ RGB
+  ========================================================= */
 
   rgb: {
     id: "rgb",
@@ -363,8 +417,7 @@ export const mirroraData = {
     title: (
       <>
         MIRRORA
-        <sup  className="text-[35%] align-super ml-1">™</sup>{" "}
-        RGB
+        <sup className="text-[35%] align-super ml-1">™</sup> RGB
       </>
     ),
 
@@ -414,8 +467,17 @@ export const mirroraData = {
       "Installation",
     ],
 
-    image: "/images/mirrora-rgb.webp",
+    // CARD IMAGE
+    image: "/hero-images/mirrora-rgb.png",
+
+    // PAGE HERO BACKGROUND
+    heroImage: "/hero-images/mirrora-rgb.png",
   },
+
+
+  /* =========================================================
+     MIRRORA™ DYNAMIC
+  ========================================================= */
 
   dynamic: {
     id: "dynamic",
@@ -423,8 +485,7 @@ export const mirroraData = {
     title: (
       <>
         MIRRORA
-        <sup className="text-[35%] align-super">™</sup>{" "}
-        DYNAMIC
+        <sup className="text-[35%] align-super ml-1">™</sup> DYNAMIC
       </>
     ),
 
@@ -474,6 +535,10 @@ export const mirroraData = {
       "Installation",
     ],
 
-    image: "/images/mirrora-dynamic.webp",
+    // CARD IMAGE
+    image: "/hero-images/programming-card.png",
+
+    // PAGE HERO BACKGROUND
+    heroImage: "/hero-images/programming-card.png",
   },
 };

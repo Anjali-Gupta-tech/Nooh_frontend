@@ -318,9 +318,9 @@ const Services = () => {
     },
   ],
 
-  image: "/hero-images/mirrora.png",
+  image: "/hero-images/mirrora-main.png",
 
-  pdf: "/catalogue/mirrora.pdf",
+  pdf: "/catalogue/mirrora-architecture.pdf",
 },
 
 
