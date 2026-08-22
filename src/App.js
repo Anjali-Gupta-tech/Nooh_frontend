@@ -66,7 +66,7 @@ import BespokeWall from './pages/Servicesnewpages/BespokeWall';
 import PatternLine from './pages/Servicesnewpages/PatternLine';
 import EmbroWall from './pages/Servicesnewpages/Embrowall';
 import WallScript from './pages/Servicesnewpages/WallScript';
-
+import MirroraCollection from './pages/Servicesnewpages/MirroraCollection';
 
 function App() {
 
@@ -87,6 +87,7 @@ function App() {
             <Route path="/skylume" element={<Skylume />} />
             <Route path="/noohstar" element={<NoohStar />} />
             <Route path="/ceiling-solutions" element={<CeilingSolution />} />
+            <Route path="/products/mirrora/:id" element={<MirroraCollection/>}/>
   
 
             {/* routes for specific ceiling types */}
