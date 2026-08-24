@@ -4,19 +4,19 @@ import { motion } from "framer-motion";
 
 const Associate = () => {
   return (
-    <div className="min-h-screen bg-luxury-black text-white">
+    <div className="min-h-screen pt-20 bg-luxury-black text-white">
 
       {/* =====================================================
           HERO SECTION
       ===================================================== */}
 
-      <section className="relative min-h-[560px] overflow-hidden">
+      <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
 
         {/* Background Image */}
         <div className="absolute inset-0">
 
           <img
-            src="/franchaise-hero/associate.png"
+            src="/franchaise-hero/associate-hero-img.png"
             alt="NOOH Associate Program"
             className="h-full w-full object-cover"
           />
