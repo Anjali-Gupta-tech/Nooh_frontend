@@ -28,7 +28,7 @@ const Franchise = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-16 bg-luxury-black text-white ">
+    <div className="min-h-screen pt-20 bg-luxury-black text-white ">
 
       {/* =====================================================
           HERO / HEADER SECTION
