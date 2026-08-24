@@ -28,12 +28,12 @@ const Franchise = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-20 bg-luxury-black text-white ">
+    <div className="min-h-screen pt-16 bg-luxury-black text-white ">
 
       {/* =====================================================
           HERO / HEADER SECTION
       ===================================================== */}
- <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
+ <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
 
   {/* Background Image */}
 <div className="absolute inset-0">
