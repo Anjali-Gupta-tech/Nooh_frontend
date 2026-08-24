@@ -110,7 +110,7 @@ const Training = () => {
         <div className="absolute inset-0">
 
           <img
-            src="/franchaise-hero/training-hero-img.png"
+            src="/franchaise-hero/TRANING.png"
             alt="NOOH Training Program"
             className="h-full w-full object-cover"
           />
