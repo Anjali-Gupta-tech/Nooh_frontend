@@ -98,19 +98,19 @@ const Training = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-luxury-black text-white">
+    <div className=" min-h-screen pt-20 bg-luxury-black text-white">
 
       {/* =====================================================
           HERO SECTION
       ===================================================== */}
 
-      <section className="relative min-h-[560px] overflow-hidden">
+      <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
 
         {/* Background Image */}
         <div className="absolute inset-0">
 
           <img
-            src="/franchaise-hero/training.png"
+            src="/franchaise-hero/training-hero-img.png"
             alt="NOOH Training Program"
             className="h-full w-full object-cover"
           />
@@ -119,7 +119,7 @@ const Training = () => {
           <div className="absolute inset-0 bg-black/20" />
 
           {/* Premium Gradient */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/20" />
+          <div className="absolute inset-0" />
 
         </div>
 
