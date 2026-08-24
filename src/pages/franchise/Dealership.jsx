@@ -5,19 +5,20 @@ import { useState } from "react";
 
 const Dealership = () => {
   return (
-    <div className="min-h-screen bg-luxury-black text-white">
+    <div className="min-h-screen pt-20 bg-luxury-black text-white">
 
       {/* =====================================================
           HERO SECTION
       ===================================================== */}
 
-      <section className="relative min-h-[560px] overflow-hidden">
+      <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
+    
 
         {/* Background Image */}
         <div className="absolute inset-0">
 
           <img
-            src="/franchaise-hero/dealership-hero.png"
+            src="/franchaise-hero/training-hero-img.png"
             alt="NOOH dealer Program"
             className="h-full w-full object-cover"
           />
