@@ -86,6 +86,24 @@ const services = [
   image: "/hero-images/mirrora-main.png",
 },
  {
+    id: "cloudwave-gloss-textile",
+
+    icon: FaStar,
+
+    title: (
+      <>
+        CLOUDWAVE
+        <sup className="text-[50%] align-super ml-[1px]">™</sup>
+        {" "}GLOSS TEXTILE CEILING
+      </>
+    ),
+
+    description:
+      "CLOUDWAVE™ by NOOH Gloss Textile Ceiling combines a premium high-gloss textile finish.",
+
+    image: "/service/cloudewave-textile.png",
+  },
+ {
     id: "panel-lighting",
 
     icon: FaLightbulb,
@@ -141,24 +159,7 @@ const services = [
     image: "/service/nooh-prism.png",
   },
 
-  {
-    id: "cloudwave-gloss-textile",
-
-    icon: FaStar,
-
-    title: (
-      <>
-        CLOUDWAVE
-        <sup className="text-[50%] align-super ml-[1px]">™</sup>
-        {" "}GLOSS TEXTILE CEILING
-      </>
-    ),
-
-    description:
-      "CLOUDWAVE™ by NOOH Gloss Textile Ceiling combines a premium high-gloss textile finish.",
-
-    image: "/service/cloudewave-textile.png",
-  },
+ 
 
   {
     id: "epoxy-flooring",

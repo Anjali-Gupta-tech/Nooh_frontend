@@ -214,6 +214,7 @@ const Services = () => {
 
   pdf: "/catalogue/NOOH_ARCHITECTURAL_WALL_ART.pdf",
 },
+
 {
   id: "mirrora",
 
@@ -322,8 +323,10 @@ const Services = () => {
 
   pdf: "/catalogue/mirrora-architecture.pdf",
 },
+
+
 {
-  id: "cloudwave",
+  id: "cloudwave-gloss-textile",
 
   title: (
     <>
