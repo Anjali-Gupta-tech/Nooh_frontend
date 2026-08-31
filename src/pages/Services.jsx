@@ -393,6 +393,76 @@ const Services = () => {
 
   pdf: "/catalogue/cloudwave-gloss-textile-ceiling.pdf",
 },
+
+{
+  id: "panel-lighting",
+
+  title: (
+    <>
+      STRETCHÉ<sup>™</sup> Panel Lighting
+    </>
+  ),
+
+  subheading: "Premium Backlit Stretch Panel Lighting Systems",
+
+  description: (
+    <>
+      STRETCHÉ<sup>™</sup> Panel Lighting by NOOH combines premium stretch
+      surfaces with advanced LED illumination to create seamless and visually
+      striking architectural lighting solutions. From elegant white lighting
+      and tunable colour temperatures to printed designs and dynamic RGBW
+      effects, each panel transforms ceilings and interiors into immersive
+      luminous experiences.
+    </>
+  ),
+
+  categories: [
+    {
+      title: (
+        <>
+          STRETCHÉ<sup>™</sup> PANEL WHITE
+        </>
+      ),
+      subtitle: "Uniform Backlit White Panel Lighting",
+      link: "/products/panel-lighting/white",
+    },
+
+    {
+      title: (
+        <>
+          STRETCHÉ<sup>™</sup> PANEL TUNABLE
+        </>
+      ),
+      subtitle: "Adjustable Warm-to-Cool White Lighting",
+      link: "/products/panel-lighting/tunable",
+    },
+
+    {
+      title: (
+        <>
+          STRETCHÉ<sup>™</sup> PANEL PRINT
+        </>
+      ),
+      subtitle: "Custom Backlit Printed Panel Ceiling",
+      link: "/products/panel-lighting/print",
+    },
+
+    {
+      title: (
+        <>
+          STRETCHÉ<sup>™</sup> PANEL RGBW
+        </>
+      ),
+      subtitle: "Dynamic Colour-Changing Panel Lighting",
+      link: "/products/panel-lighting/rgbw",
+    },
+  ],
+
+  image: "/service/product-panel.png",
+
+  pdf: "/catalogue/stretche-panel-lighting.pdf",
+},
+
   {
     id: "modular-kitchen",
 
