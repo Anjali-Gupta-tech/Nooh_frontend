@@ -50,25 +50,24 @@ const services = [
 
     image: "/images/FIBER-OPTIC-NOOH.webp",
   },
+{
+  id: "architectural-wall-art",
 
-  {
-    id: "panel-lighting",
+  icon: FaPaintBrush,
 
-    icon: FaLightbulb,
+  title: (
+    <>
+      ARCHITECTURAL WALL ART
+      <sup className="text-[60%] align-super ml-[1px]">™</sup>
+    </>
+  ),
 
-    title: (
-      <>
-        STRETCHE
-        <sup className="text-[60%] align-super ml-[1px]">™</sup>
-        {" "}PANEL LIGHTING
-      </>
-    ),
+  description:
+    "Architectural Wall Art™ transforms interior spaces with artistic wall compositions.",
 
-    description:
-      "STRETCHE™ Panel Lighting combines high-quality stretch ceiling materials with advanced LED technology.",
-
-    image: "/service/led-backlite-panel.png",
-  },
+  image: "/images/embroidery-wall.png",
+},
+ 
 {
   id: "mirrora",
 
@@ -86,6 +85,24 @@ const services = [
 
   image: "/hero-images/mirrora.png",
 },
+ {
+    id: "panel-lighting",
+
+    icon: FaLightbulb,
+
+    title: (
+      <>
+        STRETCHE
+        <sup className="text-[60%] align-super ml-[1px]">™</sup>
+        {" "}PANEL LIGHTING
+      </>
+    ),
+
+    description:
+      "STRETCHE™ Panel Lighting combines high-quality stretch ceiling materials with advanced LED technology.",
+
+    image: "/service/led-backlite-panel.png",
+  },
   {
     id: "cloudwave",
 
