@@ -83,7 +83,7 @@ const services = [
   description:
     "Sculptural illuminated architectural forms that bring movement, rhythm and elegance to premium interiors.",
 
-  image: "/hero-images/mirrora.png",
+  image: "/hero-images/mirrora-main.png",
 },
  {
     id: "panel-lighting",

@@ -322,9 +322,74 @@ const Services = () => {
 
   pdf: "/catalogue/mirrora-architecture.pdf",
 },
+{
+  id: "cloudwave",
 
+  title: (
+    <>
+      CLOUDWAVE<sup>™</sup> Gloss Textile Ceiling
+    </>
+  ),
 
+  subheading: "Premium Gloss Textile Ceiling Systems",
 
+  description: (
+    <>
+      CLOUDWAVE<sup>™</sup> by NOOH is a premium decorative ceiling solution
+      designed with sophisticated textile-inspired finishes and seamless
+      architectural detailing. From high-gloss reflective surfaces to satin,
+      textured, and custom-printed designs, CLOUDWAVE<sup>™</sup> transforms
+      ordinary ceilings into elegant visual features for luxury residential,
+      hospitality, and commercial interiors.
+    </>
+  ),
+
+  categories: [
+    {
+      title: (
+        <>
+          CLOUDWAVE<sup>™</sup> GLOSS
+        </>
+      ),
+      subtitle: "Premium High-Gloss Textile Ceiling",
+      link: "/products/cloudwave/gloss",
+    },
+
+    {
+      title: (
+        <>
+          CLOUDWAVE<sup>™</sup> SATIN
+        </>
+      ),
+      subtitle: "Soft Silk-Like Textile Ceiling Finish",
+      link: "/products/cloudwave/satin",
+    },
+
+    {
+      title: (
+        <>
+          CLOUDWAVE<sup>™</sup> TEXTURE
+        </>
+      ),
+      subtitle: "Decorative Textured Ceiling Finishes",
+      link: "/products/cloudwave/texture",
+    },
+
+    {
+      title: (
+        <>
+          CLOUDWAVE<sup>™</sup> PRINT
+        </>
+      ),
+      subtitle: "Custom Printed Architectural Ceiling",
+      link: "/products/cloudwave/print",
+    },
+  ],
+
+  image: "/service/cloudwave-gloss.png",
+
+  pdf: "/catalogue/cloudwave-gloss-textile-ceiling.pdf",
+},
   {
     id: "modular-kitchen",
 
