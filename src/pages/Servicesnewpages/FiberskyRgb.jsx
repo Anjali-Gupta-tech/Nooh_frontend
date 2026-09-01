@@ -15,24 +15,24 @@ const FiberskyRgb= () => {
         />
       </Helmet>
 
-      <div className="min-h-screen text-white pt-24 bg-luxury-black">
+      <div className="min-h-screen text-white pt-20 bg-luxury-black">
         
         
-<section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+<section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
 
   {/* Background Image */}
 
   <div className="absolute inset-0">
 
     <img
-      src="/images/fibersky-rgb-bg.jpg"
+      src="/service/rgb-hero.png"
       alt="FIBERSKY RGB"
       className="h-full w-full object-cover"
     />
 
     {/* Dark Overlay */}
 
-    <div className="absolute inset-0 bg-black/50" />
+    <div className="absolute inset-0 bg-black/40" />
 
   </div>
 
@@ -89,11 +89,6 @@ const FiberskyRgb= () => {
   </div>
 
 </section>
-
- 
-
-
-
 
        {/* design variations */}
 
