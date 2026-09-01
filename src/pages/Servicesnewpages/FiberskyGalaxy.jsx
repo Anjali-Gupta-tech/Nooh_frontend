@@ -25,7 +25,7 @@ const FiberskyGalaxy = () => {
   <div className="absolute inset-0">
 
     <img
-      src="/service/galaxy-product.png"
+      src="/service/galaxy.png"
       alt="FIBERSKY GALAXY PRO"
       className="h-full w-full object-cover"
     />
