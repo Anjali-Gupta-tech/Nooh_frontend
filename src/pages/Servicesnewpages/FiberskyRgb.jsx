@@ -25,7 +25,7 @@ const FiberskyRgb= () => {
   <div className="absolute inset-0">
 
     <img
-      src="/service/rgb-hero.png"
+      src="/images/rgb.png"
       alt="FIBERSKY RGB"
       className="h-full w-full object-cover"
     />
