@@ -120,7 +120,7 @@ const services = [
     description:
       "STRETCHE™ Panel Lighting combines high-quality stretch ceiling materials with advanced LED technology.",
 
-    image: "/service/led-backlite-panel.png",
+    image: "/images/panel-home.png",
   },
   
   {
