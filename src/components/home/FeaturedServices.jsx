@@ -48,7 +48,7 @@ const services = [
     description:
       "Create a breathtaking starry sky with NOOH Fiber Optic Ceiling.",
 
-    image: "/images/FIBER-OPTIC-NOOH.webp",
+    image: "/images/fiber-optics-home.png",
   },
 {
   id: "architectural-wall-art",
@@ -103,6 +103,7 @@ const services = [
 
     image: "/service/cloudewave-textile.png",
   },
+
  {
     id: "panel-lighting",
 
@@ -121,6 +122,7 @@ const services = [
 
     image: "/service/led-backlite-panel.png",
   },
+  
   {
     id: "cloudwave",
 

@@ -140,7 +140,7 @@ const Services = () => {
       },
     ],
 
-    image: "/images/FIBER-OPTIC-NOOH.webp",
+    image: "/images/fiber-optics-hero.png",
 
     pdf: "/catalogue/fiber-optic-star-lights.pdf",
   },
@@ -762,7 +762,7 @@ const Services = () => {
 
 </section>
 
-        {/* CTA Section */}
+        {/* CTA Section */}      
 
         <section className="section-padding">
           <div className="container-custom mx-auto">
