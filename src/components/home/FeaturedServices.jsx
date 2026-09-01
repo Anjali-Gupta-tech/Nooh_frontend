@@ -65,7 +65,7 @@ const services = [
   description:
     "Architectural Wall Art™ transforms interior spaces with artistic wall compositions.",
 
-  image: "/images/embroidery-wall.png",
+  image: "/images/embordery-wall.png",
 },
  
 {

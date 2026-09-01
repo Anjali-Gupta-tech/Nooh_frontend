@@ -115,11 +115,11 @@ const Projects = () => {
 
     {
       id: 101,
-      title: "CLOUDWAVE™ Textile Ceiling",
+      title: "CLOUDWAVE™  Ceiling",
       category: "Product",
       productCategory: "Textile Ceiling",
       type: "video",
-      media: "/videos/cloudwave-textile-ceiling.mp4",
+      media: "/video/cloudwave-ceiling.mp4",
       description:
         "A premium textile ceiling solution designed to create elegant flowing forms, soft architectural curves, and immersive interior spaces.",
     },

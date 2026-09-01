@@ -63,7 +63,7 @@ const Trainingform = () => {
 
           <div className="absolute inset-0 bg-black/75" />
 
-          <div className="absolute inset-0 " />
+          <div className="absolute inset-0 "/>
 
         </div>
 
