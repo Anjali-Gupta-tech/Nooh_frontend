@@ -94,7 +94,7 @@ const services = [
       <>
         CLOUDWAVE
         <sup className="text-[50%] align-super ml-[1px]">™</sup>
-        {" "} TEXTILE CEILING
+        {" "}GLOSS TEXTILE CEILING
       </>
     ),
 
@@ -123,24 +123,7 @@ const services = [
     image: "/images/panel-home.png",
   },
   
-  {
-    id: "cloudwave",
-
-    icon: FaCouch,
-
-    title: (
-      <>
-        ClOUDWAVE
-        <sup className="text-[50%] align-super ml-[1px]">™</sup>
-        {" "}
-      </>
-    ),
-
-    description:
-      "CLOUDWAVE™ by NOOH Gloss Textile Ceiling combines a premium high-gloss textile finish with seamless installation to create elegant.",
-
-    image: "/service/cloudewave.png",
-  },
+  
 
   {
     id: "nooh-prism",
