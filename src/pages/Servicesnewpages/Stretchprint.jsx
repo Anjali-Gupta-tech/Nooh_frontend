@@ -22,15 +22,14 @@ const Stretchprint = () => {
 
   <div className="absolute inset-0">
     <img
-      src="/images/stretch-print-hero.png"
+      src="/service/stretch-print.png"
       alt="STRETCHÉ PRINT"
       className="h-full w-full object-cover"
     />
 
-```
 {/* Dark Overlay */}
 <div className="absolute inset-0 bg-black/40" />
-```
+
 
   </div>
 

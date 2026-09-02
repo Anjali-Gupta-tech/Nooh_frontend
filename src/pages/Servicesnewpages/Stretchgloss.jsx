@@ -24,7 +24,7 @@ const Stretchgloss = () => {
 
   <div className="absolute inset-0">
     <img
-      src="/images/stretch-gloss-hero.png"
+      src="/service/stretch-gloss-head.png"
       alt="STRETCHÉ GLOSS"
       className="h-full w-full object-cover"
     />
@@ -128,7 +128,7 @@ const Stretchgloss = () => {
     <div className="absolute -inset-5 bg-gold-300/10 blur-[80px] opacity-0 group-hover:opacity-100 duration-700 rounded-full" />
  <div className="rounded-3xl overflow-hidden shadow-2xl">
   <img
-    src="/service/stretch-gloss-head.png"
+    src="/images/gloss.jpeg"
     alt="translucent-image"
     className="w-full h-[500px] rounded-3xl transition-transform duration-500 hover:scale-105"
   />

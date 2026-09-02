@@ -24,7 +24,7 @@ const StretchBacklitPanel = () => {
 
   <div className="absolute inset-0">
     <img
-      src="/images/stretch-backlit-panel-hero.png"
+      src="/service/backlit-head.png"
       alt="STRETCHÉ BACKLIT PANEL"
       className="h-full w-full object-cover"
     />
