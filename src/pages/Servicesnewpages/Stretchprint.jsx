@@ -16,41 +16,76 @@ const Stretchprint = () => {
       <div className="min-h-screen bg-luxury-black text-white pt-24">
 
         {/* HERO */}
+<section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
 
-        <section className="py-20 border-b border-white/10">
+{/* Background Image */}
 
-  <div className="container-custom mx-auto text-center">
+  <div className="absolute inset-0">
+    <img
+      src="/images/stretch-print-hero.png"
+      alt="STRETCHÉ PRINT"
+      className="h-full w-full object-cover"
+    />
 
-    <motion.p
-      initial={{ opacity: 0, y: 15 }}
-      animate={{ opacity: 1, y: 0 }}
-      className="uppercase tracking-[5px] text-gold-300 font-semibold mb-4"
-    >
-      STRETCHÉ™ Collection
-    </motion.p>
+```
+{/* Dark Overlay */}
+<div className="absolute inset-0 bg-black/40" />
+```
 
-   <motion.h1
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  className="text-5xl md:text-7xl font-luxury font-bold mb-6"
->
-  STRETCHÉ<sup className="text-[35%] align-super ml-1">™</sup> PRINT
-</motion.h1>
+  </div>
 
-    <motion.p
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.2 }}
-      className="max-w-4xl mx-auto text-white/70 text-xl leading-relaxed"
-    >
-      STRETCHÉ™ PRINT transforms ceilings into stunning architectural
-      features using high-resolution customised artwork combined with
-      advanced backlighting technology. 
-    </motion.p>
+{/* Gold Bottom Line */}
+
+  <div className="absolute bottom-0 left-0 right-0 z-20 h-[3px] bg-[#d6af45]" />
+
+{/* HERO CONTENT */}
+
+  <div className="relative z-10 w-full px-6 text-center">
+
+<div className="container-custom mx-auto text-center">
+
+  <motion.p
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    className="uppercase tracking-[5px] text-gold-300 font-semibold mb-4"
+  >
+    STRETCHÉ™ Collection
+  </motion.p>
+
+
+  <motion.h1
+    initial={{ opacity: 0, y: 25 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.7 }}
+    className="text-5xl md:text-7xl font-luxury font-bold mb-6"
+  >
+    STRETCHÉ
+    <sup className="relative -top-5 ml-1 text-xl md:text-3xl">
+      ™
+    </sup>{" "}
+    PRINT
+  </motion.h1>
+
+
+  <motion.p
+    initial={{ opacity: 0, y: 25 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.3 }}
+    className="max-w-4xl mx-auto text-white/70 text-xl leading-relaxed"
+  >
+    STRETCHÉ™ PRINT transforms ceilings into stunning architectural
+    features using high-resolution customised artwork combined with
+    advanced backlighting technology.
+  </motion.p>
+
+</div>
+
 
   </div>
 
 </section>
+
+
 
 
         {/* LIGHTING */}

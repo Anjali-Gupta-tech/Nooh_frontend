@@ -18,57 +18,86 @@ const StretchBacklitPanel = () => {
 
         {/* ================= HERO ================= */}
 
-        <section className="py-20 border-b border-white/10">
+       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
 
-          <div className="container-custom mx-auto text-center">
+{/* Background Image */}
 
-            <motion.p
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="uppercase tracking-[5px] text-gold-300 font-semibold mb-4"
-            >
-              STRETCHÉ™ Collection
-            </motion.p>
+  <div className="absolute inset-0">
+    <img
+      src="/images/stretch-backlit-panel-hero.png"
+      alt="STRETCHÉ BACKLIT PANEL"
+      className="h-full w-full object-cover"
+    />
 
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="text-5xl md:text-7xl font-luxury font-bold mb-6"
-            >
-              STRETCHÉ
-              <sup className="relative -top-5 ml-1 text-l md:text-3xl">
-                ™
-              </sup>{" "}
-              BACKLIT PANEL
-            </motion.h1>
 
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.15 }}
-              className="text-2xl md:text-3xl text-gold-300 font-semibold mb-8"
-            >
-              Modular Printed & Illuminated Panels for Grid Ceiling Systems
-            </motion.h2>
+{/* Dark Overlay */}
+<div className="absolute inset-0 bg-black/40" />
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.25 }}
-              className="max-w-5xl mx-auto text-white/70 text-xl leading-relaxed"
-            >
-              STRETCHÉ™ backlit panel is a premium modular illuminated ceiling
-              panel system designed especially for Grid, T-Grid and modular
-              false ceiling applications. Combining high-quality printed
-              graphics with uniform LED backlighting, it transforms ordinary
-              ceiling tiles into bright decorative architectural features for
-              commercial, hospitality, healthcare and luxury residential
-              interiors.
-            </motion.p>
 
-          </div>
+  </div>
 
-        </section>
+{/* Gold Bottom Line */}
+
+  <div className="absolute bottom-0 left-0 right-0 z-20 h-[3px] bg-[#d6af45]" />
+
+{/* HERO CONTENT */}
+
+  <div className="relative z-10 w-full px-6 text-center">
+
+
+<div className="container-custom mx-auto text-center">
+
+  <motion.p
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    className="uppercase tracking-[5px] text-gold-300 font-semibold mb-4"
+  >
+    STRETCHÉ™ Collection
+  </motion.p>
+
+
+  <motion.h1
+    initial={{ opacity: 0, y: 25 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.7 }}
+    className="text-5xl md:text-7xl font-luxury font-bold mb-6"
+  >
+    STRETCHÉ
+    <sup className="relative -top-5 ml-1 text-xl md:text-3xl">
+      ™
+    </sup>{" "}
+    BACKLIT PANEL
+  </motion.h1>
+
+
+  <motion.h2
+    initial={{ opacity: 0, y: 25 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.15 }}
+    className="text-2xl md:text-3xl text-gold-300 font-semibold mb-8"
+  >
+    Modular Printed & Illuminated Panels for Grid Ceiling Systems
+  </motion.h2>
+
+
+  <motion.p
+    initial={{ opacity: 0, y: 25 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.3 }}
+    className="max-w-5xl mx-auto text-white/70 text-xl leading-relaxed"
+  >
+    STRETCHÉ™ backlit panel is a premium modular illuminated ceiling
+    panel system designed especially for Grid, T-Grid and modular
+    false ceiling applications.
+  </motion.p>
+
+</div>
+
+
+  </div>
+
+</section>
+
         {/* ================= GRID CEILING APPLICATION ================= */}
 
 <section className="section-padding bg-luxury-gray">

@@ -18,57 +18,85 @@ const Stretchgloss = () => {
 
         {/* ================= HERO ================= */}
 
-        <section className="py-20 border-b border-white/10">
+    <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
 
-          <div className="container-custom mx-auto text-center">
+{/* Background Image */}
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="uppercase tracking-[5px] text-gold-300 font-semibold mb-4"
-            >
-              STRETCHÉ™ Collection
-            </motion.p>
+  <div className="absolute inset-0">
+    <img
+      src="/images/stretch-gloss-hero.png"
+      alt="STRETCHÉ GLOSS"
+      className="h-full w-full object-cover"
+    />
 
-            <motion.h1
-              initial={{ opacity: 0, y: 25 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: .7 }}
-              className="text-5xl md:text-7xl font-luxury font-bold mb-6"
-            >
-              STRETCHÉ
-              <sup className="relative -top-5 ml-1 text-xl md:text-3xl">
-                ™
-              </sup>{" "}
-              GLOSS
-            </motion.h1>
 
-            <motion.h2
-              initial={{ opacity: 0, y: 25 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: .15 }}
-              className="text-2xl md:text-3xl text-gold-300 font-semibold mb-8"
-            >
-              Premium High-Gloss Reflective Stretch Ceiling
-            </motion.h2>
+{/* Dark Overlay */}
+<div className="absolute inset-0 bg-black/40" />
 
-            <motion.p
-              initial={{ opacity: 0, y: 25 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: .3 }}
-              className="max-w-5xl mx-auto text-white/70 text-xl leading-relaxed"
-            >
-              STRETCHÉ™ GLOSS is a premium stretch ceiling system designed
-              to create exceptionally smooth, seamless and mirror-like
-              reflective ceiling surfaces. Its polished finish reflects
-              lighting, furniture and surrounding architectural elements,
-              creating a luxurious visual experience while making interiors
-              appear brighter, taller and more spacious.
-            </motion.p>
 
-          </div>
+  </div>
 
-        </section>
+{/* Gold Bottom Line */}
+
+  <div className="absolute bottom-0 left-0 right-0 z-20 h-[3px] bg-[#d6af45]" />
+
+{/* HERO CONTENT */}
+
+  <div className="relative z-10 w-full px-6 text-center">
+
+
+<div className="container-custom mx-auto text-center">
+
+  <motion.p
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    className="uppercase tracking-[5px] text-gold-300 font-semibold mb-4"
+  >
+    STRETCHÉ™ Collection
+  </motion.p>
+
+
+  <motion.h1
+    initial={{ opacity: 0, y: 25 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.7 }}
+    className="text-5xl md:text-7xl font-luxury font-bold mb-6"
+  >
+    STRETCHÉ
+    <sup className="relative -top-5 ml-1 text-xl md:text-3xl">
+      ™
+    </sup>{" "}
+    GLOSS
+  </motion.h1>
+
+
+  <motion.h2
+    initial={{ opacity: 0, y: 25 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.15 }}
+    className="text-2xl md:text-3xl text-gold-300 font-semibold mb-8"
+  >
+    Premium High-Gloss Reflective Stretch Ceiling
+  </motion.h2>
+
+
+  <motion.p
+    initial={{ opacity: 0, y: 25 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.3 }}
+    className="max-w-5xl mx-auto text-white/70 text-xl leading-relaxed"
+  >
+    STRETCHÉ™ GLOSS is a premium stretch ceiling system designed
+    to create exceptionally smooth, seamless and mirror-like
+    reflective ceiling surfaces.
+  </motion.p>
+
+</div>
+
+
+  </div>
+
+</section>
 
 
 
@@ -100,7 +128,7 @@ const Stretchgloss = () => {
     <div className="absolute -inset-5 bg-gold-300/10 blur-[80px] opacity-0 group-hover:opacity-100 duration-700 rounded-full" />
  <div className="rounded-3xl overflow-hidden shadow-2xl">
   <img
-    src="/images/gloss.jpeg"
+    src="/service/stretch-gloss-head.png"
     alt="translucent-image"
     className="w-full h-[500px] rounded-3xl transition-transform duration-500 hover:scale-105"
   />
