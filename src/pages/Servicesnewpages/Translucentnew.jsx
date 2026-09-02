@@ -103,7 +103,7 @@ const [selectedType, setSelectedType] = useState("");
   <img
     src="/images/translucent1.png"
     alt="translucent-image"
-    className="w-full h-[600px] rounded-3xl transition-transform duration-500 hover:scale-105"
+    className="w-full h-[500px] rounded-3xl transition-transform duration-500 hover:scale-105"
   />
 </div>
    

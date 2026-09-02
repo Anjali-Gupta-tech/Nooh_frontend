@@ -125,7 +125,7 @@ const StretchBacklitPanel = () => {
        
    <div className="rounded-3xl overflow-hidden shadow-2xl">
   <img
-    src="/images/STRETCHE_BACKLIT_PANEL (1).png"
+    src="/images/panel-home.png"
     alt="translucent-image"
     className="w-full h-[600px] rounded-3xl transition-transform duration-500 hover:scale-105"
   />

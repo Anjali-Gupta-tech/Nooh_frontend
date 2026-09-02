@@ -330,7 +330,7 @@ const Services = () => {
 
   title: (
     <>
-      CLOUDWAVE<sup>™</sup> Gloss Textile Ceiling
+      CLOUDWAVE<sup>™</sup> Textile Ceiling
     </>
   ),
 
@@ -389,7 +389,7 @@ const Services = () => {
     },
   ],
 
-  image: "/service/cloudwave-gloss.png",
+  image: "/service/cloudwave-gloss.jpeg",
 
   pdf: "/catalogue/cloudwave-gloss-textile-ceiling.pdf",
 },

@@ -24,7 +24,7 @@ const StarSky = () => {
   <div className="absolute inset-0">
 
     <img
-      src="/images/fiber-optics-img.png"
+      src="/service/fiber-optics-img.png"
       alt="FIBERSKY STATIC"
       className="h-full w-full object-cover"
     />
