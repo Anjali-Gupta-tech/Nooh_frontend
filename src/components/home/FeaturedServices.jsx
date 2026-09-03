@@ -101,7 +101,7 @@ const services = [
     description:
       "CLOUDWAVE™ by NOOH Gloss Textile Ceiling combines a premium high-gloss textile finish.",
 
-    image: "/service/cloudewave-textile.png",
+    image: "/images/cloudwave-gloss-home.png",
   },
 
  {
