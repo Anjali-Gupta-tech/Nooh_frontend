@@ -91,7 +91,7 @@ const Services = () => {
 
   ],
 
-  image: "/images/stretch-translucent.png",
+  image: "/service/translucent-main.png",
 
   pdf: "/catalogue/STRETCHE_TM_TRANSLUCENT_CEILING.pdf",
 },
