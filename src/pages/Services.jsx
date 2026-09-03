@@ -9,6 +9,7 @@ import PremiumCatalogueButton from "../components/PremiumCatalogueButton";
 const Services = () => {
     const location = useLocation();
   const services = [
+
     {
   id: "stretch-translucent",
 
@@ -95,49 +96,6 @@ const Services = () => {
   pdf: "/catalogue/STRETCHE_TM_TRANSLUCENT_CEILING.pdf",
 },
 {
-  id: "stretch-gloss",
-
-  title: (
-    <>
-      STRETCHÉ<sup>™</sup> GLOSS
-    </>
-  ),
-
-  subheading:
-    "Premium High-Gloss Reflective Stretch Ceiling",
-
-  description: (
-    <>
-      STRETCHÉ<sup>™</sup> GLOSS is a premium high-gloss stretch ceiling
-      system designed to create exceptionally smooth, seamless and
-      mirror-like reflective surfaces. Its polished finish reflects
-      lighting and surrounding interiors, making spaces appear brighter,
-      taller and more spacious.
-    </>
-  ),
-
-  categories: [
-
-    {
-      title: (
-        <>
-          HIGH GLOSS
-        </>
-      ),
-
-      subtitle:
-        "Mirror-Like Reflective Ceiling Finish",
-
-      link: "/products/stretch-ceiling/gloss/high-gloss",
-    },
-
-  ],
-
-  image: "/images/stretch-gloss.png",
-
-  pdf: "/catalogue/STRETCHE_TM_GLOSS_CEILING.pdf",
-},
-{
   id: "stretch-print",
 
   title: (
@@ -222,6 +180,118 @@ const Services = () => {
 
   pdf: "/catalogue/STRETCHE_TM_PRINT_CEILING.pdf",
 },
+{
+  id: "stretch-gloss",
+
+  title: (
+    <>
+      STRETCHÉ<sup>™</sup> GLOSS
+    </>
+  ),
+
+  subheading:
+    "Premium High-Gloss Reflective Stretch Ceiling",
+
+  description: (
+    <>
+      STRETCHÉ<sup>™</sup> GLOSS is a premium high-gloss stretch ceiling
+      system designed to create exceptionally smooth, seamless and
+      mirror-like reflective surfaces. Its polished finish reflects
+      lighting and surrounding interiors, making spaces appear brighter,
+      taller and more spacious.
+    </>
+  ),
+
+  categories: [
+
+    {
+      title: (
+        <>
+          HIGH GLOSS
+        </>
+      ),
+
+      subtitle:
+        "Mirror-Like Reflective Ceiling Finish",
+
+      link: "/products/stretch-ceiling/gloss/high-gloss",
+    },
+
+  ],
+
+  image: "/images/stretch-gloss.png",
+
+  pdf: "/catalogue/STRETCHE_TM_GLOSS_CEILING.pdf",
+},
+    {
+  id: "panel-lighting",
+
+  title: (
+    <>
+      STRETCHÉ<sup>™</sup> Panel Lighting
+    </>
+  ),
+
+  subheading: "Premium Backlit Stretch Panel Lighting Systems",
+
+  description: (
+    <>
+      STRETCHÉ<sup>™</sup> Panel Lighting by NOOH combines premium stretch
+      surfaces with advanced LED illumination to create seamless and visually
+      striking architectural lighting solutions. From elegant white lighting
+      and tunable colour temperatures to printed designs and dynamic RGBW
+      effects, each panel transforms ceilings and interiors into immersive
+      luminous experiences.
+    </>
+  ),
+
+  categories: [
+    {
+      title: (
+        <>
+          STRETCHÉ<sup>™</sup> PANEL WHITE
+        </>
+      ),
+      subtitle: "Uniform Backlit White Panel Lighting",
+      link: "/products/panel-lighting/white",
+    },
+
+    {
+      title: (
+        <>
+          STRETCHÉ<sup>™</sup> PANEL TUNABLE
+        </>
+      ),
+      subtitle: "Adjustable Warm-to-Cool White Lighting",
+      link: "/products/panel-lighting/tunable",
+    },
+
+    {
+      title: (
+        <>
+          STRETCHÉ<sup>™</sup> PANEL PRINT
+        </>
+      ),
+      subtitle: "Custom Backlit Printed Panel Ceiling",
+      link: "/products/panel-lighting/print",
+    },
+
+    {
+      title: (
+        <>
+          STRETCHÉ<sup>™</sup> PANEL RGBW
+        </>
+      ),
+      subtitle: "Dynamic Colour-Changing Panel Lighting",
+      link: "/products/panel-lighting/rgbw",
+    },
+  ],
+
+  image: "/service/product-panel.png",
+
+  pdf: "/catalogue/stretche-panel-lighting.pdf",
+},
+
   {
     id: "stretch-ceiling",
 
@@ -602,7 +672,7 @@ const Services = () => {
     },
   ],
 
-  image: "/images/cloudwave-gloss.png",
+  image: "/imag/cloudwave-gloss.png",
 
   pdf: "/catalogue/cloudwave-gloss-textile-ceiling.pdf",
 },
