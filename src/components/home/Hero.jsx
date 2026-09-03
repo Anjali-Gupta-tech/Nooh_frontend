@@ -8,13 +8,17 @@ const Hero = () => {
 
   // Background Images
   const images = [
-    
-     {
-      desktop: "/images/stretch-ceiling.png",
-      mobile: "/hero-images/stretch-manufature-mobile.png",
-      title: "STRETCHE™ CEILING",
-      description:"It is a premium decorative fabric ceiling system creating elegant wave effects, visual depth, and stunning illuminated architectural interiors",
-    },
+{
+  desktop: "/hero-images/hero-main.png",
+
+  mobile: "/images/s.png",
+
+  title: "STRETCHÉ™ CEILING",
+
+  description:
+    "A premium seamless stretch ceiling system designed to transform interiors with elegant surfaces, exceptional finishes and integrated architectural lighting."
+},
+     
     {
   desktop: "/hero-images/translucent-stretch-ceiling.png",
   mobile: "/images/translucent-mobile.png",
@@ -22,6 +26,12 @@ const Hero = () => {
   description:
     "A premium translucent stretch ceiling system with integrated LED backlighting, creating soft, uniform illumination, seamless finishes, and luxurious architectural interiors."
 },
+{
+      desktop: "/images/stretch-ceiling.png",
+      mobile: "/hero-images/stretch-manufature-mobile.png",
+      title: "STRETCHE™ CEILING",
+      description:"It is a premium decorative fabric ceiling system creating elegant wave effects, visual depth, and stunning illuminated architectural interiors",
+    },
 
 {
   desktop: "/hero-images/stretch-skylume.png",
