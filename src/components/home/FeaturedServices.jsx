@@ -94,7 +94,7 @@ const services = [
       <>
         CLOUDWAVE
         <sup className="text-[50%] align-super ml-[1px]">™</sup>
-        {" "}GLOSS TEXTILE CEILING
+        {" "} TEXTILE CEILING
       </>
     ),
 
