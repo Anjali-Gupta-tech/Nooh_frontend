@@ -30,7 +30,7 @@ const CloudwaveGloss = () => {
           <div className="absolute inset-0">
 
             <img
-              src="/service/cloudewave-textile.png"
+              src="/service/cloudew"
               alt="CLOUDWAVE GLOSS Textile Ceiling"
               className="h-full w-full object-cover"
             />
