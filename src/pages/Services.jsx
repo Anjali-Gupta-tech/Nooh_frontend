@@ -389,7 +389,7 @@ const Services = () => {
     },
   ],
 
-  image: "/service/cloudwave-gloss.png",
+  image: "/images/cloudwave-gloss.png",
 
   pdf: "/catalogue/cloudwave-gloss-textile-ceiling.pdf",
 },
