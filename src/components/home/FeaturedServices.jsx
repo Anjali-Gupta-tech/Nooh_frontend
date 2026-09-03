@@ -66,29 +66,30 @@ const services = [
   ),
 
   description:
-    "Premium high-gloss stretch ceiling with a seamless mirror-like reflective finish for luxurious and spacious interiors.",
+    "Premium high-gloss stretch ceiling with a seamless mirror-like reflective finish.",
 
   image: "/images/stretch-gloss.png",
 },
 
-{
-  id: "stretch-print",
+ {
+    id: "panel-lighting",
 
-  icon: FaCog,
+    icon: FaLightbulb,
 
-  title: (
-    <>
-      STRETCHÉ
-      <sup className="text-[50%] align-super ml-[1px]">™</sup>
-      {" "}PRINT
-    </>
-  ),
+    title: (
+      <>
+        STRETCHE
+        <sup className="text-[60%] align-super ml-[1px]">™</sup>
+        {" "}PANEL LIGHTING
+      </>
+    ),
 
-  description:
-    "Premium printed stretch ceiling featuring high-resolution customised artwork.",
+    description:
+      "STRETCHE™ Panel Lighting combines high-quality stretch ceiling materials with advanced LED technology.",
 
-  image: "/images/stretch-print.png",
-},
+    image: "/images/panel-home.png",
+  },
+  
 
   {
     id: "fiber-optic",
@@ -162,25 +163,7 @@ const services = [
     image: "/images/cloudwave-gloss-home.png",
   },
 
- {
-    id: "panel-lighting",
 
-    icon: FaLightbulb,
-
-    title: (
-      <>
-        STRETCHE
-        <sup className="text-[60%] align-super ml-[1px]">™</sup>
-        {" "}PANEL LIGHTING
-      </>
-    ),
-
-    description:
-      "STRETCHE™ Panel Lighting combines high-quality stretch ceiling materials with advanced LED technology.",
-
-    image: "/images/panel-home.png",
-  },
-  
   
 
   {

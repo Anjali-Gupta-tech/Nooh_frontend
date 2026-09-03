@@ -9,6 +9,219 @@ import PremiumCatalogueButton from "../components/PremiumCatalogueButton";
 const Services = () => {
     const location = useLocation();
   const services = [
+    {
+  id: "stretch-translucent",
+
+  title: (
+    <>
+      STRETCHÉ<sup>™</sup> TRANSLUCENT
+    </>
+  ),
+
+  subheading:
+    "Premium Translucent & Illuminated Stretch Ceiling System",
+
+  description: (
+    <>
+      STRETCHÉ<sup>™</sup> TRANSLUCENT is a premium illuminated stretch
+      ceiling system designed to create seamless, elegant and evenly
+      illuminated architectural surfaces. Combined with advanced LED
+      technology, it transforms ordinary interiors into sophisticated,
+      comfortable and visually dynamic spaces.
+    </>
+  ),
+
+  categories: [
+
+    {
+      title: (
+        <>
+          STATIC WHITE
+        </>
+      ),
+
+      subtitle:
+        "Uniform Architectural White Illumination",
+
+      link: "/products/stretch-ceiling/translucent/static-white",
+    },
+
+
+    {
+      title: (
+        <>
+          TUNABLE WHITE
+        </>
+      ),
+
+      subtitle:
+        "Adjustable Warm to Cool White Lighting",
+
+      link: "/products/stretch-ceiling/translucent/tunable-white",
+    },
+
+
+    {
+      title: (
+        <>
+          RGBW
+        </>
+      ),
+
+      subtitle:
+        "Custom Colour & White Lighting Experience",
+
+      link: "/products/stretch-ceiling/translucent/rgbw",
+    },
+
+
+    {
+      title: (
+        <>
+          DYNAMIC PIXEL
+        </>
+      ),
+
+      subtitle:
+        "Programmable Animated Lighting Effects",
+
+      link: "/products/stretch-ceiling/translucent/dynamic-pixel",
+    },
+
+  ],
+
+  image: "/images/stretch-translucent.png",
+
+  pdf: "/catalogue/STRETCHE_TM_TRANSLUCENT_CEILING.pdf",
+},
+{
+  id: "stretch-gloss",
+
+  title: (
+    <>
+      STRETCHÉ<sup>™</sup> GLOSS
+    </>
+  ),
+
+  subheading:
+    "Premium High-Gloss Reflective Stretch Ceiling",
+
+  description: (
+    <>
+      STRETCHÉ<sup>™</sup> GLOSS is a premium high-gloss stretch ceiling
+      system designed to create exceptionally smooth, seamless and
+      mirror-like reflective surfaces. Its polished finish reflects
+      lighting and surrounding interiors, making spaces appear brighter,
+      taller and more spacious.
+    </>
+  ),
+
+  categories: [
+
+    {
+      title: (
+        <>
+          HIGH GLOSS
+        </>
+      ),
+
+      subtitle:
+        "Mirror-Like Reflective Ceiling Finish",
+
+      link: "/products/stretch-ceiling/gloss/high-gloss",
+    },
+
+  ],
+
+  image: "/images/stretch-gloss.png",
+
+  pdf: "/catalogue/STRETCHE_TM_GLOSS_CEILING.pdf",
+},
+{
+  id: "stretch-print",
+
+  title: (
+    <>
+      STRETCHÉ<sup>™</sup> PRINT
+    </>
+  ),
+
+  subheading:
+    "Premium Printed & Illuminated Stretch Ceiling System",
+
+  description: (
+    <>
+      STRETCHÉ<sup>™</sup> PRINT combines high-resolution customised
+      artwork with advanced illumination technology to transform ceilings
+      into extraordinary architectural features. From elegant static
+      lighting to intelligent programmable effects, every design can be
+      customised to create a unique visual experience.
+    </>
+  ),
+
+  categories: [
+
+    {
+      title: (
+        <>
+          STATIC CCT
+        </>
+      ),
+
+      subtitle:
+        "Fixed Colour Temperature Illuminated Print Ceiling",
+
+      link: "/products/stretch-ceiling/print/static-cct",
+    },
+
+
+    {
+      title: (
+        <>
+          TUNABLE WHITE
+        </>
+      ),
+
+      subtitle:
+        "Adjustable Warm to Cool White Printed Ceiling",
+
+      link: "/products/stretch-ceiling/print/tunable-white",
+    },
+
+
+    {
+      title: (
+        <>
+          RGBW
+        </>
+      ),
+
+      subtitle:
+        "Custom Colour & White Illuminated Print Ceiling",
+
+      link: "/products/stretch-ceiling/print/rgbw",
+    },
+
+
+    {
+      title: (
+        <>
+          DYNAMIC
+        </>
+      ),
+
+      subtitle:
+        "Programmable Animated Lighting for Immersive Ceiling Effects",
+
+      link: "/products/stretch-ceiling/print/dynamic",
+    },
+
+  ],
+
+  image: "/images/stretch-print.png",
+
+  pdf: "/catalogue/STRETCHE_TM_PRINT_CEILING.pdf",
+},
   {
     id: "stretch-ceiling",
 
