@@ -49,7 +49,7 @@ const services = [
   description:
     "Premium printed stretch ceiling featuring high-resolution.",
 
-  image: "/images/stretch-print.png",
+  image: "/images/stretch-ceiling-manufacted.png",
 },
 
 {
