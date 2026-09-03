@@ -13,24 +13,82 @@ import {
 
 const FeaturedServices = () => {
 const services = [
+ 
   {
-    id: "stretch-ceiling",
+  id: "stretch-translucent",
 
-    icon: FaCog,
+  icon: FaCog,
 
-    title: (
-      <>
-        STRETCHE
-        <sup className="text-[50%] align-super ml-[1px]">™</sup>
-        {" "}SRTETCH CEILING
-      </>
-    ),
+  title: (
+    <>
+      STRETCHÉ
+      <sup className="text-[50%] align-super ml-[1px]">™</sup>
+      {" "}TRANSLUCENT
+    </>
+  ),
 
-    description:
-      "Premium textile & translucent stretch ceiling systems with innovative designs and superior quality.",
+  description:
+    "Premium translucent stretch ceiling with integrated lighting technology.",
 
-    image: "/images/stretch-ceiling-manufacted.png",
-  },
+  image: "/images/stretch-translucent.png",
+},
+
+{
+  id: "stretch-print",
+
+  icon: FaCog,
+
+  title: (
+    <>
+      STRETCHÉ
+      <sup className="text-[50%] align-super ml-[1px]">™</sup>
+      {" "}PRINT
+    </>
+  ),
+
+  description:
+    "Premium printed stretch ceiling featuring high-resolution.",
+
+  image: "/images/stretch-print.png",
+},
+
+{
+  id: "stretch-gloss",
+
+  icon: FaCog,
+
+  title: (
+    <>
+      STRETCHÉ
+      <sup className="text-[50%] align-super ml-[1px]">™</sup>
+      {" "}GLOSS
+    </>
+  ),
+
+  description:
+    "Premium high-gloss stretch ceiling with a seamless mirror-like reflective finish for luxurious and spacious interiors.",
+
+  image: "/images/stretch-gloss.png",
+},
+
+{
+  id: "stretch-print",
+
+  icon: FaCog,
+
+  title: (
+    <>
+      STRETCHÉ
+      <sup className="text-[50%] align-super ml-[1px]">™</sup>
+      {" "}PRINT
+    </>
+  ),
+
+  description:
+    "Premium printed stretch ceiling featuring high-resolution customised artwork.",
+
+  image: "/images/stretch-print.png",
+},
 
   {
     id: "fiber-optic",
