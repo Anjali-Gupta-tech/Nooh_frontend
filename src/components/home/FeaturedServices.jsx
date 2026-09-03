@@ -30,7 +30,7 @@ const services = [
   description:
     "Premium translucent stretch ceiling with integrated lighting technology.",
 
-  image: "/images/stretch-translucent.png",
+  image: "/service/translucent-home.png",
 },
 
 {
