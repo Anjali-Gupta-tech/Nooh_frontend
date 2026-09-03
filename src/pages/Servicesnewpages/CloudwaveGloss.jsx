@@ -120,7 +120,7 @@ const CloudwaveGloss = () => {
               {
                 title: "CLOUDWAVE™ GLOSS TEXTILE CEILING",
 
-                image: "/service/cloudwave-gloss-detail.png",
+                image: "/service/gloss-left.png",
 
                 desc:
                   "CLOUDWAVE™ GLOSS transforms ordinary ceilings into extraordinary architectural statements. Designed with flowing sculptural forms and a refined glossy finish, the system creates a sense of movement, depth and visual sophistication within luxury interiors. The seamless textile surface allows designers to move beyond traditional flat ceilings and explore elegant waves, curves and immersive ceiling compositions."
