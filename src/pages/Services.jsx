@@ -355,7 +355,7 @@ const Services = () => {
         </>
       ),
       subtitle: "Premium High-Gloss Textile Ceiling",
-      link: "/products/cloudwave/gloss",
+      link: "/products/cloudwave-gloss",
     },
 
     {

@@ -123,6 +123,22 @@ const Projects = () => {
       description:
         "A premium textile ceiling solution designed to create elegant flowing forms, soft architectural curves, and immersive interior spaces.",
     },
+    {
+  id: 101,
+
+  title: "Dimmable & Tunable Lighting",
+
+  category: "Product",
+
+  productCategory: "Lighting Technology",
+
+  type: "video",
+
+  media: "/video/tunnable-demmible.mp4",
+
+  description:
+    "An advanced intelligent lighting solution that allows complete control over brightness and colour temperature, enabling users to create the perfect lighting atmosphere for every space and moment.",
+},
 
   ];
 

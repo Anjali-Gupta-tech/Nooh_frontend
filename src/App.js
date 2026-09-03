@@ -67,7 +67,10 @@ import PatternLine from './pages/Servicesnewpages/PatternLine';
 import EmbroWall from './pages/Servicesnewpages/Embrowall';
 import WallScript from './pages/Servicesnewpages/WallScript';
 import MirroraCollection from './pages/Servicesnewpages/MirroraCollection';
-
+import CloudwaveGloss from './pages/Servicesnewpages/CloudwaveGloss';
+import CloudwavePrint from './pages/Servicesnewpages/CloudwavePrint';
+import CloudwaveSatin from './pages/Servicesnewpages/CloudwaveSatin';
+import CloudwaveTexture from './pages/Servicesnewpages/CloudwaveTexture';
 function App() {
 
   return (
@@ -88,7 +91,10 @@ function App() {
             <Route path="/noohstar" element={<NoohStar />} />
             <Route path="/ceiling-solutions" element={<CeilingSolution />} />
             <Route path="/products/mirrora/:id" element={<MirroraCollection/>}/>
-  
+             <Route path="/products/cloudwave-gloss" element={<CloudwaveGloss/>}/>
+             <Route path="/products/cloudwave/satin" element={<CloudwaveSatin/>}/>
+             <Route path="/products/cloudwave/print" element={<CloudwavePrint/>}/>
+             <Route path="/products/cloudwave/texture" element={<CloudwaveTexture/>}/>
 
             {/* routes for specific ceiling types */}
             <Route path="/stretch-ceiling" element={<StretchCeiling />} />
