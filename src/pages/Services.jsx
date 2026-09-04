@@ -176,7 +176,7 @@ const Services = () => {
 
   ],
 
-  image: "/images/stretch-print.png",
+  image: "/service/print-stretch-ceiling.png",
 
   pdf: "/catalogue/STRETCHE_TM_PRINT_CEILING.pdf",
 },
