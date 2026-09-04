@@ -125,7 +125,7 @@ const Projects = () => {
     },
    
 {
-  id: 103,
+  id: 102,
   title: "Embroidery Wallpaper",
   category: "Product",
   productCategory: "Wall Solutions",
@@ -135,7 +135,7 @@ const Projects = () => {
     "A premium decorative wall solution inspired by the intricate beauty of embroidery. Featuring rich textures, detailed patterns, and artistic craftsmanship, Embroidery Wallpaper transforms ordinary walls into elegant statement surfaces with a luxurious and sophisticated character.",
 },
 {
-  id: 104,
+  id: 103,
   title: "Printed Wallpaper",
   category: "Product",
   productCategory: "Wall Solutions",
@@ -145,7 +145,7 @@ const Projects = () => {
     "A premium customised wall solution featuring high-quality printed designs, patterns, and artwork. Printed Wallpaper transforms ordinary walls into visually striking surfaces, allowing complete creative freedom to match the style and character of any interior space.",
 },
  {
-  id: 102,
+  id: 104,
 
   title: "Dimmable & Tunable Lighting",
 
@@ -159,6 +159,16 @@ const Projects = () => {
 
   description:
     "An advanced intelligent lighting solution that allows complete control over brightness and colour temperature, enabling users to create the perfect lighting atmosphere for every space and moment.",
+},
+{
+  id: 105,
+  title: "Printed Stretch Ceiling",
+  category: "Product",
+  productCategory: "Ceiling Solutions",
+  type: "video",
+  media: "/video/stretch-printed.mp4",
+  description:
+    "A premium decorative ceiling solution featuring high-quality customised printed designs. Printed Stretch Ceiling transforms ordinary interiors into visually striking spaces with detailed artwork, creative patterns, and seamless architectural finishes.",
 },
   ];
 

@@ -371,7 +371,7 @@ const services = [
                   className="w-full h-full object-cover transform group-hover:scale-110 smooth-transition"
                 />
 
-                <div className="absolute inset-0 bg-luxury-black/50 to-transparent" />
+                <div className="absolute inset-0 bg-luxury-black/20 to-transparent" />
 
               </div>
 

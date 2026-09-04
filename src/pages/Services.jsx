@@ -44,7 +44,7 @@ const Services = () => {
       subtitle:
         "Uniform Architectural White Illumination",
 
-      link: "/products/stretch-ceiling/translucent/static-white",
+      link: "/products/translucent/static-white",
     },
 
 
@@ -58,7 +58,7 @@ const Services = () => {
       subtitle:
         "Adjustable Warm to Cool White Lighting",
 
-      link: "/products/stretch-ceiling/translucent/tunable-white",
+      link: "/products/translucent/tunable-white",
     },
 
 
@@ -72,7 +72,7 @@ const Services = () => {
       subtitle:
         "Custom Colour & White Lighting Experience",
 
-      link: "/products/stretch-ceiling/translucent/rgbw",
+      link: "/products/translucent/rgbw",
     },
 
 
@@ -86,7 +86,7 @@ const Services = () => {
       subtitle:
         "Programmable Animated Lighting Effects",
 
-      link: "/products/stretch-ceiling/translucent/dynamic-pixel",
+      link: "/products/translucent/dynamic-pixel",
     },
 
   ],
