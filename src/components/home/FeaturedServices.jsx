@@ -35,8 +35,7 @@ const services = [
 
 {
   id: "stretch-print",
-
-  icon: FaCog,
+  icon: FaPaintBrush,
 
   title: (
     <>
@@ -55,7 +54,7 @@ const services = [
 {
   id: "stretch-gloss",
 
-  icon: FaCog,
+   icon: FaLightbulb,
 
   title: (
     <>
@@ -68,7 +67,7 @@ const services = [
   description:
     "Premium high-gloss stretch ceiling with a seamless mirror-like reflective finish.",
 
-  image: "/images/stretch-gloss.png",
+  image: "/service/gloss-home.png",
 },
 
  {

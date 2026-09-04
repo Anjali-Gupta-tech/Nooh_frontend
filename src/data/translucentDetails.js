@@ -16,13 +16,17 @@ export const translucentDetails = {
 
     subtitle: "Fixed CCT LED System",
 
+    // HERO IMAGE
+    heroImage: "/images/translucent/static-white-hero.jpg",
+
+    // DESCRIPTION SECTION IMAGE
     image: "/images/translucent1.png",
 
     description:
       "This configuration uses a single fixed color-temperature LED system, providing clean, consistent and uniform illumination for premium architectural interiors.",
 
     introduction: {
-      title: "Pure & Consistent Illumination",
+      title: "Static White",
 
       description:
         "Static White technology delivers reliable, uniform and elegant illumination through a fixed colour-temperature LED system, creating a seamless lighting experience for premium architectural spaces.",
@@ -57,7 +61,6 @@ export const translucentDetails = {
       {
         title: "3000K",
         subtitle: "Warm White",
-
         description:
           "Creates a warm, comfortable and inviting atmosphere for elegant residential and hospitality interiors.",
       },
@@ -65,7 +68,6 @@ export const translucentDetails = {
       {
         title: "4000K",
         subtitle: "Natural White",
-
         description:
           "Provides balanced and comfortable illumination suitable for modern everyday environments.",
       },
@@ -73,7 +75,6 @@ export const translucentDetails = {
       {
         title: "6000K",
         subtitle: "Cool White",
-
         description:
           "Delivers bright and crisp illumination for functional and contemporary spaces.",
       },
@@ -138,13 +139,17 @@ export const translucentDetails = {
 
     subtitle: "Adjustable White LED System",
 
+    // HERO IMAGE
+    heroImage: "/images/translucent/tunable-white-hero.jpg",
+
+    // DESCRIPTION SECTION IMAGE
     image: "/images/translucent2.png",
 
     description:
       "Tunable White technology allows the colour temperature of the ceiling illumination to be adjusted from warm white to cool white, creating the right atmosphere for different spaces and moments.",
 
     introduction: {
-      title: "One Ceiling. Multiple White Environments.",
+      title: "Tunable White",
 
       description:
         "Tunable White technology gives you the flexibility to adjust the colour temperature according to mood, activity and the atmosphere required within the space.",
@@ -179,7 +184,6 @@ export const translucentDetails = {
       {
         title: "Warm White",
         subtitle: "Relax & Comfort",
-
         description:
           "Creates a warm and inviting atmosphere for relaxing and luxurious spaces.",
       },
@@ -187,7 +191,6 @@ export const translucentDetails = {
       {
         title: "Natural White",
         subtitle: "Balanced Lighting",
-
         description:
           "Provides comfortable and balanced illumination for everyday activities.",
       },
@@ -195,7 +198,6 @@ export const translucentDetails = {
       {
         title: "Cool White",
         subtitle: "Bright & Focused",
-
         description:
           "Delivers crisp and bright illumination for productive and functional environments.",
       },
@@ -260,13 +262,17 @@ export const translucentDetails = {
 
     subtitle: "Full Colour & White LED System",
 
+    // HERO IMAGE
+    heroImage: "/images/translucent/rgbw-hero.jpg",
+
+    // DESCRIPTION SECTION IMAGE
     image: "/images/translucent3.png",
 
     description:
       "RGBW technology combines millions of colour possibilities with dedicated white illumination, allowing the ceiling to adapt to different moods, occasions and architectural environments.",
 
     introduction: {
-      title: "Unlimited Colours. Complete Control.",
+      title: "RGBW Technology",
 
       description:
         "RGBW technology combines vibrant colour possibilities with dedicated white illumination, allowing you to create expressive and immersive lighting environments.",
@@ -301,7 +307,6 @@ export const translucentDetails = {
       {
         title: "RGB Colours",
         subtitle: "Creative Expression",
-
         description:
           "Create a wide range of colours to match different moods, occasions and environments.",
       },
@@ -309,7 +314,6 @@ export const translucentDetails = {
       {
         title: "White Lighting",
         subtitle: "Everyday Use",
-
         description:
           "Use dedicated white illumination when functional and comfortable lighting is required.",
       },
@@ -317,7 +321,6 @@ export const translucentDetails = {
       {
         title: "Custom Scenes",
         subtitle: "Personalised Atmosphere",
-
         description:
           "Create and control different lighting scenes according to the experience you want.",
       },
@@ -382,13 +385,17 @@ export const translucentDetails = {
 
     subtitle: "Programmable LED Pixel System",
 
+    // HERO IMAGE
+    heroImage: "/images/translucent/dynamic-pixel-hero.jpg",
+
+    // DESCRIPTION SECTION IMAGE
     image: "/images/translucent4.png",
 
     description:
       "Dynamic Pixel technology enables individually programmable lighting zones, creating animated patterns, colour transitions and immersive visual experiences across the ceiling surface.",
 
     introduction: {
-      title: "Lighting That Comes Alive.",
+      title: "Programmable LED Pixel System",
 
       description:
         "Dynamic Pixel technology transforms the ceiling into an immersive visual surface with individually programmable lighting zones, animated patterns and advanced colour transitions.",
@@ -423,7 +430,6 @@ export const translucentDetails = {
       {
         title: "Pixel Animation",
         subtitle: "Moving Light",
-
         description:
           "Create animated patterns and visual movement across the complete ceiling surface.",
       },
@@ -431,7 +437,6 @@ export const translucentDetails = {
       {
         title: "Colour Transitions",
         subtitle: "Immersive Experience",
-
         description:
           "Experience smooth and engaging transitions between multiple colours and lighting scenes.",
       },
@@ -439,7 +444,6 @@ export const translucentDetails = {
       {
         title: "Programmable Effects",
         subtitle: "Complete Creativity",
-
         description:
           "Create advanced customised effects and lighting experiences for high-impact interiors.",
       },
