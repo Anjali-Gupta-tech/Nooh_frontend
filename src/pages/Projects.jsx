@@ -123,8 +123,29 @@ const Projects = () => {
       description:
         "A premium textile ceiling solution designed to create elegant flowing forms, soft architectural curves, and immersive interior spaces.",
     },
-    {
-  id: 101,
+   
+{
+  id: 103,
+  title: "Embroidery Wallpaper",
+  category: "Product",
+  productCategory: "Wall Solutions",
+  type: "video",
+  media: "/video/emboidery-wallpaper.mp4",
+  description:
+    "A premium decorative wall solution inspired by the intricate beauty of embroidery. Featuring rich textures, detailed patterns, and artistic craftsmanship, Embroidery Wallpaper transforms ordinary walls into elegant statement surfaces with a luxurious and sophisticated character.",
+},
+{
+  id: 104,
+  title: "Printed Wallpaper",
+  category: "Product",
+  productCategory: "Wall Solutions",
+  type: "video",
+  media: "/video/print-wallpaper.mp4",
+  description:
+    "A premium customised wall solution featuring high-quality printed designs, patterns, and artwork. Printed Wallpaper transforms ordinary walls into visually striking surfaces, allowing complete creative freedom to match the style and character of any interior space.",
+},
+ {
+  id: 102,
 
   title: "Dimmable & Tunable Lighting",
 
@@ -139,7 +160,6 @@ const Projects = () => {
   description:
     "An advanced intelligent lighting solution that allows complete control over brightness and colour temperature, enabling users to create the perfect lighting atmosphere for every space and moment.",
 },
-
   ];
 
 
@@ -255,73 +275,58 @@ const Projects = () => {
                   {/* =================================================
                       MEDIA
                   ================================================= */}
+<div className="relative w-full h-[320px] sm:h-[380px] lg:h-[420px] bg-black overflow-hidden flex items-center justify-center">
 
-                  <div className="relative h-80 overflow-hidden">
+  {item.type === "video" ? (
 
-                    {item.type === "video" ? (
+    <video
+      src={item.media}
+      muted
+      loop
+      autoPlay
+      playsInline
+      preload="metadata"
+      className="w-full h-full object-contain"
+    />
 
-                      <video
-                        src={item.media}
-                        muted
-                        loop
-                        autoPlay
-                        playsInline
-                        preload="metadata"
-                        className="w-full h-full object-cover transform group-hover:scale-110 smooth-transition"
-                      />
+  ) : (
 
-                    ) : (
+    <img
+      src={item.media}
+      alt={item.title}
+      className="w-full h-full object-cover transform group-hover:scale-110 smooth-transition"
+    />
 
-                      <img
-                        src={item.media}
-                        alt={item.title}
-                        className="w-full h-full object-cover transform group-hover:scale-110 smooth-transition"
-                      />
+  )}
 
-                    )}
+  {/* DARK GRADIENT */}
+  <div className="absolute inset-0 bg-gradient-to-t to-transparent pointer-events-none" />
 
+  {/* CATEGORY */}
+  <div className="absolute top-4 right-4">
+    <span className="bg-luxury-gold text-luxury-black px-4 py-2 rounded-full text-xs font-bold uppercase">
+      {item.category === "Product"
+        ? item.productCategory
+        : item.category}
+    </span>
+  </div>
 
-                    {/* DARK GRADIENT */}
+  {/* VIDEO INDICATOR */}
+  {item.type === "video" && (
+    <div className="absolute bottom-4 left-4">
+      <span className="flex items-center gap-2 bg-black/60 backdrop-blur-md text-white px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider">
 
-                    <div className="absolute inset-0 bg-gradient-to-t from-luxury-black via-luxury-black/40 to-transparent pointer-events-none" />
+        <span className="w-2 h-2 rounded-full bg-luxury-gold animate-pulse" />
 
+        {item.category === "Product"
+          ? "Product Video"
+          : "Project Video"}
 
-                    {/* CATEGORY */}
+      </span>
+    </div>
+  )}
 
-                    <div className="absolute top-4 right-4">
-
-                      <span className="bg-luxury-gold text-luxury-black px-4 py-2 rounded-full text-xs font-bold uppercase">
-
-                        {item.category === "Product"
-                          ? item.productCategory
-                          : item.category}
-
-                      </span>
-
-                    </div>
-
-
-                    {/* VIDEO INDICATOR */}
-
-                    {item.type === "video" && (
-
-                      <div className="absolute bottom-4 left-4">
-
-                        <span className="flex items-center gap-2 bg-black/60 backdrop-blur-md text-white px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider">
-
-                          <span className="w-2 h-2 rounded-full bg-luxury-gold animate-pulse" />
-
-                          {item.category === "Product"
-                            ? "Product Video"
-                            : "Project Video"}
-
-                        </span>
-
-                      </div>
-
-                    )}
-
-                  </div>
+</div>
 
 
                   {/* =================================================
