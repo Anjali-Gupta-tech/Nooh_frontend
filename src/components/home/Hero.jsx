@@ -117,7 +117,7 @@ const Hero = () => {
 {
   desktop: "/hero-images/STARRY-LIGHT-PRINTING-STRETCH-CEILING.png",
   mobile: "/hero-images/starry-light.png",
-  title: "STRETCHE™ STARRY LIGHT PRINTED STRETCH CEILING",
+  title: "STRETCHE™ STARRYLIGHT PRINTED STRETCH CEILING",
   description:
     "A premium printed stretch ceiling featuring a mesmerizing starry sky design with integrated LED illumination, creating a magical nighttime ambiance and luxurious architectural interiors."
 },
