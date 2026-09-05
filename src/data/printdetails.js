@@ -11,7 +11,7 @@ export const printDetails = {
     subtitle: "Fixed White Backlighting",
 
     heroImage: "/images/print/static-cct-hero.jpg",
-    image: "/images/print/static-cct.jpg",
+    image: "/images/printed1.jpeg",
 
     description:
       "STRETCHÉ™ PRINT Type 1 combines a customized printed stretch ceiling with a single selected Fixed CCT LED lighting system. Depending on the desired appearance, the project can be configured with a white-light temperature such as 3000K, 4000K, 6000K or 10000K. Once selected, the ceiling delivers clean, consistent and uniform backlighting across the entire printed surface.",
@@ -133,13 +133,13 @@ export const printDetails = {
     subtitle: "Dimmable + Tunable CCT Backlighting",
 
     heroImage: "/images/print/tunable-white-hero.jpg",
-    image: "/images/print/tunable-white.jpg",
+    image: "/images/printed2.jpeg",
 
     description:
       "STRETCHÉ™ PRINT Type 2 takes lighting control one step further by integrating a Dimmable + Tunable White LED System behind the printed ceiling. Instead of being limited to one fixed white-light temperature, users can adjust both brightness and white-light colour temperature to create the perfect ambience for different environments and times of the day.",
 
     introduction: {
-      title: "Adjustable White Light",
+      title: "Tunable White",
       description:
         "Tunable White technology allows the printed stretch ceiling to change its white-light character while maintaining smooth and uniform illumination across the complete printed surface."
     },
@@ -253,13 +253,13 @@ export const printDetails = {
     subtitle: "Millions of Colours + White Light",
 
     heroImage: "/images/print/rgbw-hero.jpg",
-    image: "/images/print/rgbw.jpg",
+    image: "/images/printed3.jpeg",
 
     description:
       "STRETCHÉ™ PRINT RGBW combines a customized printed stretch ceiling with advanced RGBW LED technology. The system delivers millions of colours along with dedicated white-light capability, allowing the printed ceiling to transform its appearance for different moods, events and architectural environments.",
 
     introduction: {
-      title: "Colour Meets Architecture",
+      title: "RGBW",
       description:
         "RGBW technology adds dynamic colour control to printed stretch ceilings while retaining the ability to create clean white illumination whenever required."
     },
@@ -379,13 +379,13 @@ export const printDetails = {
     subtitle: "Pixel-Controlled Architectural Lighting",
 
     heroImage: "/images/print/dynamic-pixel-hero.jpg",
-    image: "/images/print/dynamic-pixel.jpg",
+    image: "/images/printed4.jpeg",
 
     description:
       "STRETCHÉ™ PRINT Dynamic Pixel introduces individually controlled lighting zones behind the printed stretch membrane. The system can create animated patterns, flowing transitions and programmable lighting effects, transforming the ceiling into a dynamic architectural feature.",
 
     introduction: {
-      title: "A Living Printed Ceiling",
+      title: "Dynamic Pixel Lighting",
       description:
         "Dynamic Pixel technology turns the printed stretch ceiling into an interactive visual surface with programmable lighting effects and animated transitions."
     },

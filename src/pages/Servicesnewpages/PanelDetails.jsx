@@ -3,18 +3,21 @@ import { useParams, Navigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 
-import {printDetails} from "../../data/printdetails";
+import panelDetails from "../../data/paneldetails";
 
-const PrintDetails = () => {
+const PanelDetails = () => {
   const { slug } = useParams();
 
-  const product = printDetails[slug];
+  const product = panelDetails[slug];
 
-  // If wrong slug
+  /* ================================================= */
+  /* PRODUCT NOT FOUND */
+  /* ================================================= */
+
   if (!product) {
     return (
       <Navigate
-        to="/products/stretch-ceiling/print"
+        to="/products/stretch-ceiling/panel"
         replace
       />
     );
@@ -28,7 +31,7 @@ const PrintDetails = () => {
 
       <Helmet>
         <title>
-          {product.title} | STRETCHÉ™ PRINT | NOOH Living Elevated
+          {product.title} | STRETCHÉ™ PANEL | NOOH Living Elevated
         </title>
 
         <meta
@@ -38,7 +41,7 @@ const PrintDetails = () => {
       </Helmet>
 
 
-      <div className="min-h-screen bg-luxury-black text-white pt-20">
+      <div className="min-h-screen text-white pt-20 bg-luxury-black">
 
 
         {/* ================================================= */}
@@ -47,31 +50,35 @@ const PrintDetails = () => {
 
         <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
 
-          {/* Hero Image */}
+          {/* HERO IMAGE */}
 
           <div className="absolute inset-0">
 
             <img
               src={product.heroImage}
-              alt={`${product.title} - STRETCHÉ PRINT`}
+              alt={`${product.title} - STRETCHÉ PANEL`}
               className="w-full h-full object-cover"
             />
+
+            {/* DARK OVERLAY */}
 
             <div className="absolute inset-0 bg-black/55" />
 
           </div>
 
 
-          {/* Gold Line */}
+          {/* GOLD BOTTOM LINE */}
 
-          <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-[#d6af45] z-20" />
+          <div className="absolute bottom-0 left-0 right-0 z-20 h-[3px] bg-[#d6af45]" />
 
 
-          {/* Hero Content */}
+          {/* HERO CONTENT */}
 
           <div className="relative z-10 w-full px-6 py-20">
 
             <div className="container-custom mx-auto text-center">
+
+              {/* TYPE */}
 
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -79,19 +86,53 @@ const PrintDetails = () => {
                 transition={{ duration: 0.5 }}
                 className="uppercase tracking-[5px] text-gold-300 font-semibold mb-5"
               >
+                {product.type}
+              </motion.p>
+
+
+              {/* CATEGORY */}
+
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1 }}
+                className="uppercase tracking-[4px] text-white/70 text-sm mb-4"
+              >
                 {product.category}
               </motion.p>
-s
 
-              <motion.h1
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7 }}
-                className="text-5xl md:text-7xl font-luxury font-bold mb-6"
-              >
-                {product.title}
-              </motion.h1>
 
+              {/* TITLE */}
+
+  <motion.h1
+  initial={{ opacity: 0, y: 30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.7 }}
+  className="text-5xl md:text-7xl font-luxury font-bold mb-6"
+>
+  <span className="inline-flex items-start">
+    <span>
+      STRETCHÉ
+      <sup
+        className="text-[0.28em] ml-1 font-sans font-bold tex-white"
+        style={{
+          position: "relative",
+          top: "-1.9em",
+        }}
+      >
+        ™
+      </sup>
+    </span>
+
+    <span className="ml-3">
+      {product.title
+        .replace("STRETCHÉ™ ", "")
+        .replace("STRETCHÉ ", "")}
+    </span>
+  </span>
+</motion.h1>
+
+              {/* SUBTITLE */}
 
               {product.subtitle && (
                 <motion.p
@@ -104,6 +145,8 @@ s
                 </motion.p>
               )}
 
+
+              {/* DESCRIPTION */}
 
               <motion.p
                 initial={{ opacity: 0, y: 25 }}
@@ -123,14 +166,14 @@ s
 
 
         {/* ================================================= */}
-        {/* CONTENT */}
+        {/* MAIN CONTENT */}
         {/* ================================================= */}
 
         <section className="section-padding bg-luxury-gray">
 
 
           {/* ================================================= */}
-          {/* INTRODUCTION */}
+          {/* PRODUCT INTRODUCTION */}
           {/* ================================================= */}
 
           <motion.section
@@ -161,8 +204,7 @@ s
               </motion.div>
 
 
-
-              {/* TEXT */}
+              {/* CONTENT */}
 
               <div>
 
@@ -185,7 +227,7 @@ s
                 </p>
 
 
-                {/* Feature Pills */}
+                {/* QUICK FEATURES */}
 
                 <div className="flex flex-wrap gap-3">
 
@@ -249,6 +291,7 @@ s
                   <h3 className="text-2xl text-gold-300 font-semibold mb-4">
                     {feature.label}
                   </h3>
+
 
                   <p className="text-white/70 leading-relaxed">
                     {feature.value}
@@ -331,7 +374,7 @@ s
 
 
           {/* ================================================= */}
-          {/* APPLICATIONS */}
+          {/* IDEAL APPLICATIONS */}
           {/* ================================================= */}
 
           <motion.section
@@ -467,18 +510,23 @@ s
 
                 <div className="grid md:grid-cols-2 gap-10">
 
+
+                  {/* PANEL WARRANTY */}
+
                   <div>
 
                     <p className="text-white/60 mb-3">
-                      Stretch Fabric Warranty
+                      Panel Warranty
                     </p>
 
-                    <p className="text-4xl font-luxury font-bold text-gold-300">
-                      {product.warranty.fabric}
+                    <p className="text-3xl md:text-4xl font-luxury font-bold text-gold-300">
+                      {product.warranty.panel}
                     </p>
 
                   </div>
 
+
+                  {/* LED WARRANTY */}
 
                   <div>
 
@@ -486,7 +534,7 @@ s
                       LED Lighting Warranty
                     </p>
 
-                    <p className="text-4xl font-luxury font-bold text-gold-300">
+                    <p className="text-3xl md:text-4xl font-luxury font-bold text-gold-300">
                       {product.warranty.led}
                     </p>
 
@@ -525,8 +573,8 @@ s
 
 
             <p className="max-w-4xl mx-auto text-white/70 text-lg leading-relaxed mb-10">
-              Discover how STRETCHÉ™ PRINT technology can transform your
-              interior with seamless illumination, premium printing and
+              Discover how STRETCHÉ™ PANEL technology can transform your
+              interior with seamless illumination, premium materials and
               exceptional architectural design.
             </p>
 
@@ -542,7 +590,7 @@ s
 
 
               <a
-                href="/catalogue/STRETCHE_PRINT.pdf"
+                href="/catalogue/STRETCHE_PANEL.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-outline-gold"
@@ -561,4 +609,4 @@ s
   );
 };
 
-export default PrintDetails;
+export default PanelDetails;

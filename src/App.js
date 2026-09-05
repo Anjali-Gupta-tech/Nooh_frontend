@@ -73,6 +73,7 @@ import CloudwaveSatin from './pages/Servicesnewpages/CloudwaveSatin';
 import CloudwaveTexture from './pages/Servicesnewpages/CloudwaveTexture';
 import TranslucentDetails from './pages/Servicesnewpages/TranslucentDetails';
 import PrintDetails from './pages/Servicesnewpages/PrintDetails';
+import PanelDetails from './pages/Servicesnewpages/PanelDetails';
 function App() {
 
   return (
@@ -99,6 +100,7 @@ function App() {
              <Route path="/products/cloudwave/texture" element={<CloudwaveTexture/>}/>
              <Route path="/products/translucent/:slug" element={<TranslucentDetails/>}/>
              <Route path="/products/print/:slug" element={<PrintDetails/>}/>
+             <Route path="/products/panel/:slug" element={<PanelDetails/>}/>
 
             {/* routes for specific ceiling types */}
             <Route path="/stretch-ceiling" element={<StretchCeiling />} />

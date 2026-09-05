@@ -95,7 +95,7 @@ const Services = () => {
 
   pdf: "/catalogue/STRETCHE_TM_TRANSLUCENT_CEILING.pdf",
 },
-{
+{ 
   id: "stretch-print",
 
   title: (
@@ -129,7 +129,7 @@ const Services = () => {
       subtitle:
         "Fixed Colour Temperature Illuminated Print Ceiling",
 
-      link: "/products/stretch-ceiling/print/static-cct",
+      link: "/products/print/static-cct",
     },
 
 
@@ -143,7 +143,7 @@ const Services = () => {
       subtitle:
         "Adjustable Warm to Cool White Printed Ceiling",
 
-      link: "/products/stretch-ceiling/print/tunable-white",
+      link: "/products/print/tunable-white",
     },
 
 
@@ -157,7 +157,7 @@ const Services = () => {
       subtitle:
         "Custom Colour & White Illuminated Print Ceiling",
 
-      link: "/products/stretch-ceiling/print/rgbw",
+      link: "/products/print/rgbw",
     },
 
 
@@ -171,7 +171,7 @@ const Services = () => {
       subtitle:
         "Programmable Animated Lighting for Immersive Ceiling Effects",
 
-      link: "/products/stretch-ceiling/print/dynamic",
+      link: "/products/print/dynamic-pixel",
     },
 
   ],
@@ -214,7 +214,7 @@ const Services = () => {
       subtitle:
         "Mirror-Like Reflective Ceiling Finish",
 
-      link: "/products/stretch-ceiling/gloss/high-gloss",
+      link: "/products/stretch-ceiling/gloss",
     },
 
   ],
@@ -253,7 +253,7 @@ const Services = () => {
         </>
       ),
       subtitle: "Uniform Backlit White Panel Lighting",
-      link: "/products/panel-lighting/white",
+      link: "/products/panel/white",
     },
 
     {
@@ -263,7 +263,7 @@ const Services = () => {
         </>
       ),
       subtitle: "Adjustable Warm-to-Cool White Lighting",
-      link: "/products/panel-lighting/tunable",
+      link: "/products/panel/tunable",
     },
 
     {
@@ -273,7 +273,7 @@ const Services = () => {
         </>
       ),
       subtitle: "Custom Backlit Printed Panel Ceiling",
-      link: "/products/panel-lighting/print",
+      link: "/products/panel/print",
     },
 
     {
@@ -283,7 +283,7 @@ const Services = () => {
         </>
       ),
       subtitle: "Dynamic Colour-Changing Panel Lighting",
-      link: "/products/panel-lighting/rgbw",
+      link: "/products/panel/rgbw",
     },
   ],
 
@@ -677,74 +677,7 @@ const Services = () => {
   pdf: "/catalogue/cloudwave-gloss-textile-ceiling.pdf",
 },
 
-{
-  id: "panel-lighting",
 
-  title: (
-    <>
-      STRETCHÉ<sup>™</sup> Panel Lighting
-    </>
-  ),
-
-  subheading: "Premium Backlit Stretch Panel Lighting Systems",
-
-  description: (
-    <>
-      STRETCHÉ<sup>™</sup> Panel Lighting by NOOH combines premium stretch
-      surfaces with advanced LED illumination to create seamless and visually
-      striking architectural lighting solutions. From elegant white lighting
-      and tunable colour temperatures to printed designs and dynamic RGBW
-      effects, each panel transforms ceilings and interiors into immersive
-      luminous experiences.
-    </>
-  ),
-
-  categories: [
-    {
-      title: (
-        <>
-          STRETCHÉ<sup>™</sup> PANEL WHITE
-        </>
-      ),
-      subtitle: "Uniform Backlit White Panel Lighting",
-      link: "/products/panel-lighting/white",
-    },
-
-    {
-      title: (
-        <>
-          STRETCHÉ<sup>™</sup> PANEL TUNABLE
-        </>
-      ),
-      subtitle: "Adjustable Warm-to-Cool White Lighting",
-      link: "/products/panel-lighting/tunable",
-    },
-
-    {
-      title: (
-        <>
-          STRETCHÉ<sup>™</sup> PANEL PRINT
-        </>
-      ),
-      subtitle: "Custom Backlit Printed Panel Ceiling",
-      link: "/products/panel-lighting/print",
-    },
-
-    {
-      title: (
-        <>
-          STRETCHÉ<sup>™</sup> PANEL RGBW
-        </>
-      ),
-      subtitle: "Dynamic Colour-Changing Panel Lighting",
-      link: "/products/panel-lighting/rgbw",
-    },
-  ],
-
-  image: "/service/product-panel.png",
-
-  pdf: "/catalogue/stretche-panel-lighting.pdf",
-},
 
   {
     id: "modular-kitchen",
