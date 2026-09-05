@@ -284,8 +284,11 @@ const Projects = () => {
 
                   {/* =================================================
                       MEDIA
-                  ================================================= */}
-<div className="relative w-full h-[320px] sm:h-[380px] lg:h-[420px] bg-black overflow-hidden flex items-center justify-center">
+{/* ================================================= */}
+{/* MEDIA / VIDEO */}
+{/* ================================================= */}
+
+<div className="relative w-full aspect-video bg-black overflow-hidden flex items-center justify-center">
 
   {item.type === "video" ? (
 
@@ -310,20 +313,31 @@ const Projects = () => {
   )}
 
   {/* DARK GRADIENT */}
-  <div className="absolute inset-0 bg-gradient-to-t to-transparent pointer-events-none" />
+
+  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
+
 
   {/* CATEGORY */}
-  <div className="absolute top-4 right-4">
+
+  <div className="absolute top-4 right-4 z-10">
+
     <span className="bg-luxury-gold text-luxury-black px-4 py-2 rounded-full text-xs font-bold uppercase">
+
       {item.category === "Product"
         ? item.productCategory
         : item.category}
+
     </span>
+
   </div>
 
+
   {/* VIDEO INDICATOR */}
+
   {item.type === "video" && (
-    <div className="absolute bottom-4 left-4">
+
+    <div className="absolute bottom-4 left-4 z-10">
+
       <span className="flex items-center gap-2 bg-black/60 backdrop-blur-md text-white px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider">
 
         <span className="w-2 h-2 rounded-full bg-luxury-gold animate-pulse" />
@@ -333,11 +347,12 @@ const Projects = () => {
           : "Project Video"}
 
       </span>
+
     </div>
+
   )}
 
 </div>
-
 
                   {/* =================================================
                       CONTENT
