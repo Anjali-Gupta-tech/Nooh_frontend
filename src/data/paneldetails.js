@@ -119,10 +119,9 @@ const panelDetails = {
   tunable: {
     id: 2,
     slug: "tunable",
-
-    type: "TYPE 2",
-    category: "STRETCHÉ™ PANEL",
-    title: " PANEL TUNABLE",
+     type: "TYPE 2",
+    category: " STRETCHÉ™ PANEL",
+    title: "STRETCHÉ PANEL TUNABLE",
     subtitle: "Adjustable Warm-to-Cool White Lighting",
 
     heroImage: "/images/panel/tunable-hero.jpg",

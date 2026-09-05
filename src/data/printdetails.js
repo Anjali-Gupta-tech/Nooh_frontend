@@ -7,7 +7,7 @@ export const printDetails = {
 
     type: "TYPE 1",
     category: "STRETCHÉ™ PRINT",
-    title: "STATIC CCT",
+    title: "STATIC CCT",    
     subtitle: "Fixed White Backlighting",
 
     heroImage: "/images/print/static-cct-hero.jpg",
@@ -139,7 +139,7 @@ export const printDetails = {
       "STRETCHÉ™ PRINT Type 2 takes lighting control one step further by integrating a Dimmable + Tunable White LED System behind the printed ceiling. Instead of being limited to one fixed white-light temperature, users can adjust both brightness and white-light colour temperature to create the perfect ambience for different environments and times of the day.",
 
     introduction: {
-      title: "Tunable White",
+      title: "Tunable White ",
       description:
         "Tunable White technology allows the printed stretch ceiling to change its white-light character while maintaining smooth and uniform illumination across the complete printed surface."
     },

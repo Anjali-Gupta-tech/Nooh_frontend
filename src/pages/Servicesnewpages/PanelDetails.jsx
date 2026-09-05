@@ -47,122 +47,81 @@ const PanelDetails = () => {
         {/* ================================================= */}
         {/* HERO */}
         {/* ================================================= */}
+            {/* ================================================= */}
+{/* HERO */}
+{/* ================================================= */}
 
-        <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+<section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
 
-          {/* HERO IMAGE */}
+  {/* HERO IMAGE */}
+  <div className="absolute inset-0">
 
-          <div className="absolute inset-0">
+    <img
+      src={product.heroImage}
+      alt={`${product.category} - ${product.title}`}
+      className="w-full h-full object-cover"
+    />
 
-            <img
-              src={product.heroImage}
-              alt={`${product.title} - STRETCHÉ PANEL`}
-              className="w-full h-full object-cover"
-            />
+    {/* DARK OVERLAY */}
+    <div className="absolute inset-0 bg-black/55" />
 
-            {/* DARK OVERLAY */}
+  </div>
 
-            <div className="absolute inset-0 bg-black/55" />
+  {/* GOLD BOTTOM LINE */}
+  <div className="absolute bottom-0 left-0 right-0 z-20 h-[3px] bg-[#d6af45]" />
 
-          </div>
+  {/* HERO CONTENT */}
+  <div className="relative z-10 w-full px-6 py-20">
 
+    <div className="container-custom mx-auto text-center">
 
-          {/* GOLD BOTTOM LINE */}
-
-          <div className="absolute bottom-0 left-0 right-0 z-20 h-[3px] bg-[#d6af45]" />
-
-
-          {/* HERO CONTENT */}
-
-          <div className="relative z-10 w-full px-6 py-20">
-
-            <div className="container-custom mx-auto text-center">
-
-              {/* TYPE */}
-
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="uppercase tracking-[5px] text-gold-300 font-semibold mb-5"
-              >
-                {product.type}
-              </motion.p>
-
-
-              {/* CATEGORY */}
-
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 }}
-                className="uppercase tracking-[4px] text-white/70 text-sm mb-4"
-              >
-                {product.category}
-              </motion.p>
-
-
-              {/* TITLE */}
-
-  <motion.h1
-  initial={{ opacity: 0, y: 30 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.7 }}
-  className="text-5xl md:text-7xl font-luxury font-bold mb-6"
->
-  <span className="inline-flex items-start">
-    <span>
-      STRETCHÉ
-      <sup
-        className="text-[0.28em] ml-1 font-sans font-bold tex-white"
-        style={{
-          position: "relative",
-          top: "-1.9em",
-        }}
+      {/* CATEGORY */}
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="uppercase tracking-[5px] text-gold-300 font-semibold mb-5"
       >
-        ™
-      </sup>
-    </span>
+        {product.category}
+      </motion.p>
 
-    <span className="ml-3">
-      {product.title
-        .replace("STRETCHÉ™ ", "")
-        .replace("STRETCHÉ ", "")}
-    </span>
-  </span>
-</motion.h1>
+      {/* TITLE */}
+      <motion.h1
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        className="text-5xl md:text-7xl font-luxury font-bold mb-6"
+      >
+        {product.title}
+      </motion.h1>
 
-              {/* SUBTITLE */}
+      {/* SUBTITLE */}
+      {product.subtitle && (
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="text-gold-300 text-lg md:text-xl mb-6"
+        >
+          {product.subtitle}
+        </motion.p>
+      )}
 
-              {product.subtitle && (
-                <motion.p
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.2 }}
-                  className="text-gold-300 text-lg md:text-xl mb-6"
-                >
-                  {product.subtitle}
-                </motion.p>
-              )}
+      {/* DESCRIPTION */}
+      <motion.p
+        initial={{ opacity: 0, y: 25 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3 }}
+        className="max-w-5xl mx-auto text-white/80 text-lg md:text-xl leading-relaxed"
+      >
+        {product.description}
+      </motion.p>
 
+    </div>
 
-              {/* DESCRIPTION */}
+  </div>
 
-              <motion.p
-                initial={{ opacity: 0, y: 25 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3 }}
-                className="max-w-5xl mx-auto text-white/80 text-lg md:text-xl leading-relaxed"
-              >
-                {product.description}
-              </motion.p>
-
-            </div>
-
-          </div>
-
-        </section>
-
+</section>
 
 
         {/* ================================================= */}
