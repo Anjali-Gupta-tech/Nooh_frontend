@@ -262,36 +262,31 @@ const Projects = () => {
 
             </div>
 
-
             {/* =====================================================
-                PROJECTS + PRODUCT VIDEOS GRID
-            ===================================================== */}
+    PROJECTS + PRODUCT VIDEOS GRID
+===================================================== */}
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-              {filteredItems.map((item, index) => (
+  {filteredItems.map((item, index) => (
 
-                <motion.div
-                  key={item.id}
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                  whileHover={{ y: -10 }}
-                  className="glass rounded-2xl overflow-hidden group cursor-pointer"
-                >
+    <motion.div
+      key={item.id}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: index * 0.1 }}
+      whileHover={{ y: -10 }}
+      className="glass rounded-2xl overflow-hidden group cursor-pointer"
+    >
 
+      {/* =================================================
+          MEDIA
+      ================================================= */}
 
-                  {/* =================================================
-                      MEDIA
-{/* ================================================= */}
-{/* MEDIA / VIDEO */}
-{/* ================================================= */}
-
-<div className="relative w-full aspect-video bg-black overflow-hidden flex items-center justify-center">
+   <div className="relative w-full h-[380px] sm:h-[420px] lg:h-[450px] bg-black overflow-hidden">
 
   {item.type === "video" ? (
-
     <video
       src={item.media}
       muted
@@ -299,217 +294,35 @@ const Projects = () => {
       autoPlay
       playsInline
       preload="metadata"
-      className="w-full h-full object-contain"
+      className="w-full h-full object-cover"
     />
-
   ) : (
-
     <img
       src={item.media}
       alt={item.title}
-      className="w-full h-full object-cover transform group-hover:scale-110 smooth-transition"
+      className="w-full h-full object-cover"
     />
-
-  )}
-
-  {/* DARK GRADIENT */}
-
-  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
-
-
-  {/* CATEGORY */}
-
-  <div className="absolute top-4 right-4 z-10">
-
-    <span className="bg-luxury-gold text-luxury-black px-4 py-2 rounded-full text-xs font-bold uppercase">
-
-      {item.category === "Product"
-        ? item.productCategory
-        : item.category}
-
-    </span>
-
-  </div>
-
-
-  {/* VIDEO INDICATOR */}
-
-  {item.type === "video" && (
-
-    <div className="absolute bottom-4 left-4 z-10">
-
-      <span className="flex items-center gap-2 bg-black/60 backdrop-blur-md text-white px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider">
-
-        <span className="w-2 h-2 rounded-full bg-luxury-gold animate-pulse" />
-
-        {item.category === "Product"
-          ? "Product Video"
-          : "Project Video"}
-
-      </span>
-
-    </div>
-
   )}
 
 </div>
 
-                  {/* =================================================
-                      CONTENT
-                  ================================================= */}
+      {/* =================================================
+          TITLE ONLY
+      ================================================= */}
 
-                  <div className="p-8">
+      <div className="p-6">
 
+        <h3 className="text-2xl font-luxury font-bold text-white text-center group-hover:text-luxury-gold smooth-transition">
+          {item.title}
+        </h3>
 
-                    {/* TITLE */}
+      </div>
 
-                    <h3 className="text-2xl font-luxury font-bold text-white mb-4 group-hover:text-luxury-gold smooth-transition">
+    </motion.div>
 
-                      {item.title}
+  ))}
 
-                    </h3>
-
-
-                    {/* DESCRIPTION */}
-
-                    <p className="text-white/70 mb-6 leading-relaxed">
-
-                      {item.description}
-
-                    </p>
-
-
-                    {/* =================================================
-                        PRODUCT OR PROJECT DETAILS
-                    ================================================= */}
-
-                    {item.category === "Product" ? (
-
-                      <div className="mb-7">
-
-                        <p className="text-white/50 text-xs uppercase tracking-wider mb-2">
-
-                          Product Category
-
-                        </p>
-
-                        <p className="text-white text-sm">
-
-                          {item.productCategory}
-
-                        </p>
-
-                      </div>
-
-                    ) : (
-
-                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-7">
-
-
-                        {/* LOCATION */}
-
-                        <div className="flex items-start space-x-2">
-
-                          <FaMapMarkerAlt className="text-luxury-gold mt-1 flex-shrink-0" />
-
-                          <div>
-
-                            <p className="text-white/50 text-xs uppercase tracking-wider">
-                              Location
-                            </p>
-
-                            <p className="text-white text-sm mt-1">
-                              {item.location}
-                            </p>
-
-                          </div>
-
-                        </div>
-
-
-                        {/* AREA */}
-
-                        <div className="flex items-start space-x-2">
-
-                          <FaRuler className="text-luxury-gold mt-1 flex-shrink-0" />
-
-                          <div>
-
-                            <p className="text-white/50 text-xs uppercase tracking-wider">
-                              Area
-                            </p>
-
-                            <p className="text-white text-sm mt-1">
-                              {item.area}
-                            </p>
-
-                          </div>
-
-                        </div>
-
-
-                        {/* YEAR */}
-
-                        <div className="flex items-start space-x-2">
-
-                          <FaCalendar className="text-luxury-gold mt-1 flex-shrink-0" />
-
-                          <div>
-
-                            <p className="text-white/50 text-xs uppercase tracking-wider">
-                              Year
-                            </p>
-
-                            <p className="text-white text-sm mt-1">
-                              {item.year}
-                            </p>
-
-                          </div>
-
-                        </div>
-
-                      </div>
-
-                    )}
-
-
-                    {/* =================================================
-                        MEDIA TYPE + ACTION
-                    ================================================= */}
-
-                    <div className="flex items-center justify-between">
-
-                      <span className="text-white/40 text-xs uppercase tracking-[2px]">
-
-                        {item.category === "Product"
-                          ? "NOOH Product Video"
-                          : item.type === "video"
-                          ? "Video Project"
-                          : "Project Gallery"}
-
-                      </span>
-
-
-                      <button
-                        type="button"
-                        className="text-luxury-gold font-semibold uppercase text-sm tracking-wider animated-underline"
-                      >
-
-                        {item.category === "Product"
-                          ? "Watch Video →"
-                          : "View Details →"}
-
-                      </button>
-
-                    </div>
-
-                  </div>
-
-                </motion.div>
-
-              ))}
-
-            </div>
+</div>
 
           </div>
 
