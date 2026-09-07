@@ -170,6 +170,26 @@ const Projects = () => {
   description:
     "A premium decorative ceiling solution featuring high-quality customised printed designs. Printed Stretch Ceiling transforms ordinary interiors into visually striking spaces with detailed artwork, creative patterns, and seamless architectural finishes.",
 },
+{
+  id: 106,
+  title: "STRETCHÉ™ PRINT",
+  category: "Product",
+  productCategory: "Ceiling Solutions",
+  type: "video",
+  media: "/video/stretch-marble-print.mp4",
+  description:
+    "A premium decorative stretch ceiling solution featuring high-quality customised printed designs. STRETCHÉ™ PRINT transforms ordinary interiors into visually striking spaces with detailed artwork, creative patterns, and seamless architectural finishes.",
+},
+{
+  id: 107,
+  title: "3D TRANSLUCENT STRETCH CEILING",
+  category: "Product",
+  productCategory: "Ceiling Solutions",
+  type: "video",
+  media: "/video/translucent-ceiling.mp4",
+  description:
+    "A premium 3D translucent stretch ceiling solution designed to create a seamless, illuminated architectural surface. The translucent membrane works with concealed LED lighting to produce a striking three-dimensional visual effect, adding depth, luxury, and a sophisticated ambience to modern interiors.",
+},
   ];
 
 
