@@ -1,20 +1,47 @@
-
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Helmet } from 'react-helmet-async';
-import { FaMapMarkerAlt, FaCalendar, FaRuler } from 'react-icons/fa';
+import React, { useState, useRef } from "react";
+import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
+import {
+  FaMapMarkerAlt,
+  FaCalendar,
+  FaVolumeUp,
+  FaVolumeMute,
+} from "react-icons/fa";
 
 const Projects = () => {
-  const [activeCategory, setActiveCategory] = useState('all');
+  const [activeCategory, setActiveCategory] = useState("all");
+
+  // Video references for mute/unmute
+  const videoRefs = useRef({});
+  const [soundOn, setSoundOn] = useState({});
+
+  const toggleSound = (id) => {
+    const video = videoRefs.current[id];
+
+    if (!video) return;
+
+    const newSoundState = !soundOn[id];
+
+    video.muted = !newSoundState;
+
+    // Keep video playing when sound is toggled
+    if (video.paused) {
+      video.play().catch(() => {});
+    }
+
+    setSoundOn((prev) => ({
+      ...prev,
+      [id]: newSoundState,
+    }));
+  };
 
   const categories = [
-    'all',
-    'Residential',
-    'Commercial',
-    'Hospitality',
-    'Product',
+    "all",
+    "Residential",
+    "Commercial",
+    "Hospitality",
+    "Product",
   ];
-
 
   /* =====================================================
       PROJECTS DATA
@@ -23,99 +50,33 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Luxury Villa - Greater Noida",
+      title: "Stretché™ Translucent Ceiling",
       category: "Residential",
-      location: "Greater Noida, UP",
+      location: "Kolkata, West Bengal",
       area: "5000 sq.ft",
-      year: "2023",
-      type: "image",
-      media:
-        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=85&w=2070&auto=format&fit=crop",
-      description:
-        "Complete interior design with stretch ceilings and fiber optic star ceilings",
-    },
-
-    {
-      id: 2,
-      title: "5-Star Hotel Suite",
-      category: "Hospitality",
-      location: "Mumbai, Maharashtra",
-      area: "3500 sq.ft",
-      year: "2023",
+      year: "2026",
       type: "video",
-      media:
-        "https://cdn.coverr.co/videos/coverr-a-modern-living-room-1576/1080p.mp4",
+      media: "/video/project1.mp4",
       description:
-        "Premium hospitality interiors with LED backlit panels and custom furniture",
+        "A premium translucent stretch ceiling solution with seamless backlighting, creating a bright, elegant, and immersive architectural surface.",
     },
 
-    {
-      id: 3,
-      title: "Corporate Office",
-      category: "Commercial",
-      location: "Bangalore, Karnataka",
-      area: "10000 sq.ft",
-      year: "2023",
-      type: "image",
-      media:
-        "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=85&w=2070&auto=format&fit=crop",
-      description:
-        "Modern office design with acoustic stretch ceilings and smart lighting",
-    },
 
-    {
-      id: 4,
-      title: "Designer Penthouse",
-      category: "Residential",
-      location: "Gurgaon, Haryana",
-      area: "4500 sq.ft",
-      year: "2023",
-      type: "video",
-      media:
-        "https://cdn.coverr.co/videos/coverr-modern-living-room-1575/1080p.mp4",
-      description:
-        "Ultra-luxury penthouse with NOOH SKYLUME artificial daylight systems",
-    },
 
-    {
-      id: 5,
-      title: "Fine Dining Restaurant",
-      category: "Hospitality",
-      location: "Delhi, NCR",
-      area: "2500 sq.ft",
-      year: "2022",
-      type: "image",
-      media:
-        "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=85&w=2070&auto=format&fit=crop",
-      description:
-        "Elegant restaurant interiors with custom wall murals and ambient lighting",
-    },
 
-    {
-      id: 6,
-      title: "Retail Showroom",
-      category: "Commercial",
-      location: "Pune, Maharashtra",
-      area: "6000 sq.ft",
-      year: "2022",
-      type: "video",
-      media:
-        "https://cdn.coverr.co/videos/coverr-a-luxurious-living-room-1576/1080p.mp4",
-      description:
-        "Contemporary showroom with translucent stretch ceilings and branding elements",
-    },
+    
+
+   
   ];
-
 
   /* =====================================================
       PRODUCT VIDEOS DATA
   ===================================================== */
 
   const productVideos = [
-
     {
       id: 101,
-      title: "CLOUDWAVE™  Ceiling",
+      title: "CLOUDWAVE™ Ceiling",
       category: "Product",
       productCategory: "Textile Ceiling",
       type: "video",
@@ -123,78 +84,118 @@ const Projects = () => {
       description:
         "A premium textile ceiling solution designed to create elegant flowing forms, soft architectural curves, and immersive interior spaces.",
     },
-   
-{
-  id: 102,
-  title: "Embroidery Wallpaper",
-  category: "Product",
-  productCategory: "Wall Solutions",
-  type: "video",
-  media: "/video/emboidery-wallpaper.mp4",
-  description:
-    "A premium decorative wall solution inspired by the intricate beauty of embroidery. Featuring rich textures, detailed patterns, and artistic craftsmanship, Embroidery Wallpaper transforms ordinary walls into elegant statement surfaces with a luxurious and sophisticated character.",
-},
-{
-  id: 103,
-  title: "Printed Wallpaper",
-  category: "Product",
-  productCategory: "Wall Solutions",
-  type: "video",
-  media: "/video/print-wallpaper.mp4",
-  description:
-    "A premium customised wall solution featuring high-quality printed designs, patterns, and artwork. Printed Wallpaper transforms ordinary walls into visually striking surfaces, allowing complete creative freedom to match the style and character of any interior space.",
-},
- {
-  id: 104,
 
-  title: "Dimmable & Tunable Lighting",
+  
 
-  category: "Product",
+    {
+      id: 103,
+      title: "Printed Wallpaper",
+      category: "Product",
+      productCategory: "Wall Solutions",
+      type: "video",
+      media: "/video/print-wallpaper.mp4",
+      description:
+        "A premium customised wall solution featuring high-quality printed designs, patterns, and artwork. Printed Wallpaper transforms ordinary walls into visually striking surfaces, allowing complete creative freedom to match the style and character of any interior space.",
+    },
 
-  productCategory: "Lighting Technology",
-
+    {
+      id: 104,
+      title: "Dimmable & Tunable Lighting",
+      category: "Product",
+      productCategory: "Lighting Technology",
+      type: "video",
+      media: "/video/tunnable-demmible.mp4",
+      description:
+        "An advanced intelligent lighting solution that allows complete control over brightness and colour temperature, enabling users to create the perfect lighting atmosphere for every space and moment.",
+    },
+    {
+  id: "stretch-3d-galaxy-printed",
+  title: "Stretché™ 3d Galaxy Printed",
+  category: "printed stretch ceiling",
   type: "video",
+  media: "/video/galaxy-stretch.mp4",
+  description:
+    "a premium 3d printed stretch ceiling featuring immersive galaxy-inspired visuals, creating a deep, luxurious and futuristic ceiling experience."
+},
 
-  media: "/video/tunnable-demmible.mp4",
+    {
+      id: 105,
+      title: "Printed Stretch Ceiling",
+      category: "Product",
+      productCategory: "Ceiling Solutions",
+      type: "video",
+      media: "/video/stretch-printed.mp4",
+      description:
+        "A premium decorative ceiling solution featuring high-quality customised printed designs. Printed Stretch Ceiling transforms ordinary interiors into visually striking spaces with detailed artwork, creative patterns, and seamless architectural finishes.",
+    },
 
-  description:
-    "An advanced intelligent lighting solution that allows complete control over brightness and colour temperature, enabling users to create the perfect lighting atmosphere for every space and moment.",
-},
-{
-  id: 105,
-  title: "Printed Stretch Ceiling",
-  category: "Product",
-  productCategory: "Ceiling Solutions",
+    {
+      id: 106,
+      title: "Stretché™ Print Ceiling",
+      category: "Product",
+      productCategory: "Ceiling Solutions",
+      type: "video",
+      media: "/video/stretch-marble-print.mp4",
+      description:
+        "A premium decorative stretch ceiling solution featuring high-quality customised printed designs. STRETCHÉ™ PRINT transforms ordinary interiors into visually striking spaces with detailed artwork, creative patterns, and seamless architectural finishes.",
+    },
+
+    {
+      id: 108,
+      title: "Fibersky™ Static",
+      category: "Product",
+      productCategory: "Fiber Optic Ceiling",
+      type: "video",
+      media: "/video/static-fibersky.mp4",
+      description:
+        "A premium fiber optic ceiling solution featuring evenly distributed points of light across the surface, creating a refined starry-sky effect with a subtle and elegant ambience.",
+    },
+
+    {
+      id: 109,
+      title: "Fibersky™ Galaxy",
+      category: "Product",
+      productCategory: "Fiber Optic Ceiling",
+      type: "video",
+      media: "/video/galaxy.mp4",
+      description:
+        "An immersive fiber optic ceiling solution inspired by the depth and beauty of a galaxy, combining dynamic points of light to create a dramatic celestial experience.",
+    },
+
+    {
+      id: 110,
+      title: "Stretché™ Translucent",
+      category: "Product",
+      productCategory: "Ceiling Solutions",
+      type: "video",
+      media: "/video/white-translucent.mp4",
+      description:
+        "A premium translucent stretch ceiling designed for seamless backlighting, delivering a bright, uniform, and elegant illuminated architectural surface.",
+    },
+
+    {
+      id: 111,
+      title: "Cloudwave™ Ceiling",
+      category: "Product",
+      productCategory: "Textile Ceiling",
+      type: "video",
+      media: "/video/wave.mp4",
+      description:
+        "A premium wave-form textile ceiling solution featuring flowing architectural curves that create a soft, sculptural, and visually dynamic ceiling design.",
+    },
+    {
+  id: "printed-ceiling",
+  title: "Stretché™ Printed Ceiling",
+  category: "Printed Stretch Ceiling",
   type: "video",
-  media: "/video/stretch-printed.mp4",
+  media: "/video/printed-ceiling.mp4",
   description:
-    "A premium decorative ceiling solution featuring high-quality customised printed designs. Printed Stretch Ceiling transforms ordinary interiors into visually striking spaces with detailed artwork, creative patterns, and seamless architectural finishes.",
-},
-{
-  id: 106,
-  title: "STRETCHÉ™ PRINT",
-  category: "Product",
-  productCategory: "Ceiling Solutions",
-  type: "video",
-  media: "/video/stretch-marble-print.mp4",
-  description:
-    "A premium decorative stretch ceiling solution featuring high-quality customised printed designs. STRETCHÉ™ PRINT transforms ordinary interiors into visually striking spaces with detailed artwork, creative patterns, and seamless architectural finishes.",
-},
-{
-  id: 107,
-  title: "3D TRANSLUCENT STRETCH CEILING",
-  category: "Product",
-  productCategory: "Ceiling Solutions",
-  type: "video",
-  media: "/video/translucent-ceiling.mp4",
-  description:
-    "A premium 3D translucent stretch ceiling solution designed to create a seamless, illuminated architectural surface. The translucent membrane works with concealed LED lighting to produce a striking three-dimensional visual effect, adding depth, luxury, and a sophisticated ambience to modern interiors.",
-},
+    "a premium printed stretch ceiling featuring high-resolution custom designs for a seamless, elegant and visually immersive architectural finish."
+}
   ];
 
-
   /* =====================================================
-      COMBINE PROJECTS + PRODUCT VIDEOS
+      COMBINE PRODUCTS FIRST + PROJECTS AFTER
   ===================================================== */
 
   const allItems = [
@@ -202,16 +203,14 @@ const Projects = () => {
     ...projects,
   ];
 
-
   /* =====================================================
       FILTER DATA
   ===================================================== */
 
   const filteredItems =
-    activeCategory === 'all'
+    activeCategory === "all"
       ? allItems
       : allItems.filter((item) => item.category === activeCategory);
-
 
   return (
     <>
@@ -247,12 +246,12 @@ const Projects = () => {
               transition={{ delay: 0.2 }}
               className="text-xl text-white/80 max-w-3xl mx-auto"
             >
-              Showcasing excellence in luxury interior design and innovative NOOH solutions across India
+              Showcasing excellence in luxury interior design and innovative
+              NOOH solutions across India
             </motion.p>
 
           </div>
         </section>
-
 
         {/* =====================================================
             CATEGORY FILTER
@@ -282,72 +281,189 @@ const Projects = () => {
 
             </div>
 
-            {/* =====================================================
-    PROJECTS + PRODUCT VIDEOS GRID
-===================================================== */}
+            {/* =================================================
+                PRODUCTS + PROJECTS GRID
+            ================================================= */}
 
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-  {filteredItems.map((item, index) => (
+              {filteredItems.map((item, index) => (
 
-    <motion.div
-      key={item.id}
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: index * 0.1 }}
-      whileHover={{ y: -10 }}
-      className="glass rounded-2xl overflow-hidden group cursor-pointer"
-    >
+                <motion.div
+                  key={`${item.id}-${item.title}`}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  whileHover={{ y: -10 }}
+                  className="glass rounded-2xl overflow-hidden group cursor-pointer"
+                >
 
-      {/* =================================================
-          MEDIA
-      ================================================= */}
+                  {/* =================================================
+                      MEDIA
+                  ================================================= */}
 
-   <div className="relative w-full h-[380px] sm:h-[420px] lg:h-[450px] bg-black overflow-hidden">
+                  <div className="relative w-full h-[380px] sm:h-[420px] lg:h-[450px] bg-black overflow-hidden">
 
-  {item.type === "video" ? (
-    <video
-      src={item.media}
-      muted
-      loop
-      autoPlay
-      playsInline
-      preload="metadata"
-      className="w-full h-full object-cover"
-    />
-  ) : (
-    <img
-      src={item.media}
-      alt={item.title}
-      className="w-full h-full object-cover"
-    />
-  )}
+                    {item.type === "video" ? (
 
-</div>
+                      <video
+                        ref={(el) => {
+                          if (el) {
+                            videoRefs.current[item.id] = el;
+                          }
+                        }}
+                        src={item.media}
+                        muted
+                        loop
+                        autoPlay
+                        playsInline
+                        preload="metadata"
+                        className="w-full h-full object-cover"
+                      />
 
-      {/* =================================================
-          TITLE ONLY
-      ================================================= */}
+                    ) : (
 
-      <div className="p-6">
+                      <img
+                        src={item.media}
+                        alt={item.title}
+                        className="w-full h-full object-cover"
+                      />
 
-        <h3 className="text-2xl font-luxury font-bold text-white text-center group-hover:text-luxury-gold smooth-transition">
-          {item.title}
-        </h3>
+                    )}
 
-      </div>
+                    {/* Gradient Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent pointer-events-none" />
 
-    </motion.div>
+                    {/* =================================================
+                        MUTE / UNMUTE BUTTON
+                    ================================================= */}
 
-  ))}
+                    {item.type === "video" && (
 
-</div>
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          toggleSound(item.id);
+                        }}
+                      className="absolute bottom-4 right-4 z-30 w-11 h-11 rounded-full bg-black/65 backdrop-blur-md border border-white/20 text-white flex items-center justify-center hover:bg-luxury-gold hover:text-luxury-black hover:border-luxury-gold transition-all duration-300"
+                        aria-label={
+                          soundOn[item.id]
+                            ? "Mute video"
+                            : "Unmute video"
+                        }
+                      >
+
+                        {soundOn[item.id] ? (
+                          <FaVolumeUp className="text-base" />
+                        ) : (
+                          <FaVolumeMute className="text-base" />
+                        )}
+
+                      </button>
+
+                    )}
+
+                    {/* =================================================
+                        CATEGORY BADGE
+                    ================================================= */}
+
+                    <div className="absolute top-4 right-4 z-10">
+
+                      <span className="bg-luxury-gold text-luxury-black px-4 py-2 rounded-full text-xs font-bold uppercase">
+
+                        {item.category === "Product"
+                          ? item.productCategory
+                          : item.category}
+
+                      </span>
+
+                    </div>
+
+                    {/* =================================================
+                        VIDEO BADGE
+                    ================================================= */}
+
+                    {item.type === "video" && (
+
+                      <div className="absolute bottom-4 left-4 z-10">
+
+                        <span className="flex items-center gap-2 bg-black/60 backdrop-blur-md text-white px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider">
+
+                          <span className="w-2 h-2 rounded-full bg-luxury-gold animate-pulse" />
+
+                          {item.category === "Product"
+                            ? "Product Video"
+                            : "Project Video"}
+
+                        </span>
+
+                      </div>
+
+                    )}
+
+                  </div>
+
+                  {/* =================================================
+                      CARD INFORMATION
+                  ================================================= */}
+
+                  <div className="p-6">
+
+                    {/* TITLE */}
+
+                    <h3 className="text-2xl font-luxury font-bold text-white text-center mb-4 group-hover:text-luxury-gold smooth-transition">
+                      {item.title}
+                    </h3>
+
+                    {/* PROJECT ONLY:
+                        LOCATION + YEAR
+                    */}
+
+                    {item.category !== "Product" && (
+
+                      <div className="flex items-center justify-center gap-6 text-white/60 text-sm">
+
+                        {item.location && (
+
+                          <span className="flex items-center gap-2">
+
+                            <FaMapMarkerAlt className="text-gold-300" />
+
+                            {item.location}
+
+                          </span>
+
+                        )}
+
+                        {item.year && (
+
+                          <span className="flex items-center gap-2">
+
+                            <FaCalendar className="text-gold-300" />
+
+                            {item.year}
+
+                          </span>
+
+                        )}
+
+                      </div>
+
+                    )}
+
+                  </div>
+
+                </motion.div>
+
+              ))}
+
+            </div>
 
           </div>
 
         </section>
-
 
         {/* =====================================================
             CTA SECTION
@@ -369,7 +485,8 @@ const Projects = () => {
               </h2>
 
               <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-                Let's collaborate to bring your vision to life with our expertise
+                Let's collaborate to bring your vision to life with our
+                expertise
               </p>
 
               <a
