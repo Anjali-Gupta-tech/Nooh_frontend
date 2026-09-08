@@ -14,7 +14,7 @@ const FloatingContactButtons = () => {
   const buttons = [
     {
       icon: <FaInstagram size={24} />,
-      link: "https://www.instagram.com/noohlivingelevated/",
+      link: "https://www.instagram.com/noohlivingofficial?stkn=NzFyMDRuN2Mwc2Nt",
       color: "bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500",
       hover: "hover:opacity-90",
       label: "Instagram",

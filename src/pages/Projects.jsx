@@ -48,25 +48,8 @@ const Projects = () => {
   ===================================================== */
 
   const projects = [
-    {
-      id: 1,
-      title: "Stretché™ Translucent Ceiling",
-      category: "Residential",
-      location: "Kolkata, West Bengal",
-      area: "5000 sq.ft",
-      year: "2026",
-      type: "video",
-      media: "/video/project1.mp4",
-      description:
-        "A premium translucent stretch ceiling solution with seamless backlighting, creating a bright, elegant, and immersive architectural surface.",
-    },
-
-
-
-
-    
-
    
+ 
   ];
 
   /* =====================================================
@@ -109,7 +92,16 @@ const Projects = () => {
         "An advanced intelligent lighting solution that allows complete control over brightness and colour temperature, enabling users to create the perfect lighting atmosphere for every space and moment.",
     },
     {
-  id: "stretch-3d-galaxy-printed",
+  id: 105,
+  title: "Stretché™ Translucent Ceiling",
+  category: "product",
+  type: "video",
+  media: "/video/project1.mp4",
+  description:
+    "a premium translucent stretch ceiling solution with seamless backlighting, creating a bright, elegant, and immersive architectural surface.",
+},
+    {
+  id: "106",
   title: "Stretché™ 3d Galaxy Printed",
   category: "printed stretch ceiling",
   type: "video",
@@ -119,7 +111,7 @@ const Projects = () => {
 },
 
     {
-      id: 105,
+      id: 107,
       title: "Printed Stretch Ceiling",
       category: "Product",
       productCategory: "Ceiling Solutions",
@@ -130,7 +122,7 @@ const Projects = () => {
     },
 
     {
-      id: 106,
+      id: 108,
       title: "Stretché™ Print Ceiling",
       category: "Product",
       productCategory: "Ceiling Solutions",
@@ -141,7 +133,7 @@ const Projects = () => {
     },
 
     {
-      id: 108,
+      id: 109,
       title: "Fibersky™ Static",
       category: "Product",
       productCategory: "Fiber Optic Ceiling",
@@ -152,7 +144,7 @@ const Projects = () => {
     },
 
     {
-      id: 109,
+      id: 110,
       title: "Fibersky™ Galaxy",
       category: "Product",
       productCategory: "Fiber Optic Ceiling",
@@ -163,7 +155,7 @@ const Projects = () => {
     },
 
     {
-      id: 110,
+      id: 111,
       title: "Stretché™ Translucent",
       category: "Product",
       productCategory: "Ceiling Solutions",
@@ -174,7 +166,7 @@ const Projects = () => {
     },
 
     {
-      id: 111,
+      id: 112,
       title: "Cloudwave™ Ceiling",
       category: "Product",
       productCategory: "Textile Ceiling",
@@ -184,15 +176,112 @@ const Projects = () => {
         "A premium wave-form textile ceiling solution featuring flowing architectural curves that create a soft, sculptural, and visually dynamic ceiling design.",
     },
     {
-  id: "printed-ceiling",
-  title: "Stretché™ Printed Ceiling",
-  category: "Printed Stretch Ceiling",
+  id: "113",
+  title: "Stretché™ Ceiling",
+  category: " Stretch Ceiling",
   type: "video",
-  media: "/video/printed-ceiling.mp4",
+  media: "/video/ceiling-solution.mp4",
   description:
     "a premium printed stretch ceiling featuring high-resolution custom designs for a seamless, elegant and visually immersive architectural finish."
-}
-  ];
+},
+  {
+    id: 114,
+    title: "Cloudwave™ Gloss Ceiling",
+    category: "product",
+    type: "video",
+    media: "/video/cloudwave-gloss.mp4",
+    description:
+      "a premium gloss ceiling solution designed to create a sleek, reflective and luxurious architectural finish.",
+  },
+
+  {
+    id: 115,
+    title: "Cloudwave™ Windfabric Textile Ceiling",
+    category: "product",
+    type: "video",
+    media: "/video/wave-textile.mp4",
+    description:
+      "a premium wave textile ceiling featuring elegant flowing forms for a soft, contemporary and sculptural interior finish.",
+  },
+
+  {
+    id: 116,
+    title: "Stretché™ Translucent Ceiling",
+    category: "product",
+    type: "video",
+    media: "/video/Translucent-2.mp4",
+    description:
+      "a premium translucent stretch ceiling with seamless backlighting, creating a bright, elegant and immersive architectural surface.",
+  },
+
+  {
+    id: 117,
+    title: "Stretché™ Marble Printed Ceiling",
+    category: "product",
+    type: "video",
+    media: "/video/marble-printed-1.mp4",
+    description:
+      "a premium marble printed stretch ceiling featuring realistic marble textures for a sophisticated and luxurious architectural finish.",
+  },
+
+  {
+    id: 118,
+    title: "Stretché™ Marble Printed Ceiling",
+    category: "product",
+    type: "video",
+    media: "/video/marble-printed-2.mp4",
+    description:
+      "a premium marble printed stretch ceiling featuring realistic marble textures for a sophisticated and luxurious architectural finish.",
+  },
+
+  {
+    id: 119,
+    title: "Stretché™ Marble Printed Ceiling",
+    category: "product",
+    type: "video",
+    media: "/video/marble-printed-3.mp4",
+    description:
+      "a premium marble printed stretch ceiling featuring realistic marble textures for a sophisticated and luxurious architectural finish.",
+  },
+   {
+  id: 120,
+  title: "NOOH™ printed wallpaper",
+  category: "product",
+  type: "video",
+  media: "/video/wallpaper-print.mp4",
+  description:
+    "a premium printed wallpaper solution featuring high-resolution custom designs for elegant and immersive interior spaces.",
+},
+
+
+
+
+
+  {
+  id: 121,
+  title: "Architectural wall Art™",
+  category: "product",
+  type: "video",
+  media: "/video/wallpaper-2.mp4",
+},
+
+{
+  id: 122,
+  title: "Architectural wall Art™",
+  category: "product",
+  type: "video",
+  media: "/video/wallpaper-4.mp4",
+},
+
+{
+  id: 123,
+  title: "Architectural wall Art™",
+  category: "product",
+  type: "video",
+  media: "/video/wallpaper-5.mp4",
+},
+];
+  
 
   /* =====================================================
       COMBINE PRODUCTS FIRST + PROJECTS AFTER
