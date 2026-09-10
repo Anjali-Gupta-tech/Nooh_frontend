@@ -638,11 +638,11 @@ const Projects = () => {
   media: "/videos/rgbw-translucent-ceiling.mp4",
 },
 {
- id:175,
-  title: "Nooh Architectural Wall Art™",
+ id:176,
+  title: "Stretché™ Fabric Backlit Wall",
   category: "product",
   type: "video",
-  media: "/videos/printed-floor.mp4",
+  media: "/videos/Stretche-fabric-backlit-wall.mp4",
 },
 
 
