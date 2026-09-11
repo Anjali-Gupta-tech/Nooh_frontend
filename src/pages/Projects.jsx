@@ -6,14 +6,21 @@ import {
   FaCalendar,
   FaVolumeUp,
   FaVolumeMute,
+  FaShareAlt,
 } from "react-icons/fa";
 
 const Projects = () => {
-  const [activeCategory, setActiveCategory] = useState("all");
 
-  // Video references for mute/unmute
+  /* =====================================================
+      VIDEO REFERENCES
+  ===================================================== */
+
   const videoRefs = useRef({});
   const [soundOn, setSoundOn] = useState({});
+
+  /* =====================================================
+      TOGGLE SOUND
+  ===================================================== */
 
   const toggleSound = (id) => {
     const video = videoRefs.current[id];
@@ -35,21 +42,41 @@ const Projects = () => {
     }));
   };
 
-  const categories = [
-    "all",
-    "Residential",
-    "Commercial",
-    "Hospitality",
-    "Product",
-  ];
+  /* =====================================================
+      SHARE VIDEO
+  ===================================================== */
+
+  const shareVideo = async (item) => {
+    try {
+      const shareUrl = `${window.location.origin}${item.media}`;
+
+      if (navigator.share) {
+        await navigator.share({
+          title: item.title || "NOOH Living Elevated",
+          text: `Check out ${
+            item.title || "this NOOH project"
+          } by NOOH – Living Elevated.`,
+          url: shareUrl,
+        });
+      } else {
+        await navigator.clipboard.writeText(shareUrl);
+
+        alert("Video link copied!");
+      }
+    } catch (error) {
+      // User cancelled the share menu
+      if (error.name !== "AbortError") {
+        console.error("Share failed:", error);
+      }
+    }
+  };
 
   /* =====================================================
       PROJECTS DATA
   ===================================================== */
 
   const projects = [
-   
- 
+    // KEEP YOUR EXISTING PROJECT DATA HERE
   ];
 
   /* =====================================================
@@ -67,8 +94,6 @@ const Projects = () => {
       description:
         "A premium textile ceiling solution designed to create elegant flowing forms, soft architectural curves, and immersive interior spaces.",
     },
-
-  
 
     {
       id: 103,
@@ -91,24 +116,26 @@ const Projects = () => {
       description:
         "An advanced intelligent lighting solution that allows complete control over brightness and colour temperature, enabling users to create the perfect lighting atmosphere for every space and moment.",
     },
+
     {
-  id: 105,
-  title: "Stretché™ Translucent Ceiling",
-  category: "product",
-  type: "video",
-  media: "/video/project1.mp4",
-  description:
-    "a premium translucent stretch ceiling solution with seamless backlighting, creating a bright, elegant, and immersive architectural surface.",
-},
+      id: 105,
+      title: "Stretché™ Translucent Ceiling",
+      category: "product",
+      type: "video",
+      media: "/video/project1.mp4",
+      description:
+        "a premium translucent stretch ceiling solution with seamless backlighting, creating a bright, elegant, and immersive architectural surface.",
+    },
+
     {
-  id: "106",
-  title: "Stretché™ 3d Galaxy Printed",
-  category: "printed stretch ceiling",
-  type: "video",
-  media: "/video/galaxy-stretch.mp4",
-  description:
-    "a premium 3d printed stretch ceiling featuring immersive galaxy-inspired visuals, creating a deep, luxurious and futuristic ceiling experience."
-},
+      id: "106",
+      title: "Stretché™ 3d Galaxy Printed",
+      category: "printed stretch ceiling",
+      type: "video",
+      media: "/video/galaxy-stretch.mp4",
+      description:
+        "a premium 3d printed stretch ceiling featuring immersive galaxy-inspired visuals, creating a deep, luxurious and futuristic ceiling experience.",
+    },
 
     {
       id: 107,
@@ -175,500 +202,544 @@ const Projects = () => {
       description:
         "A premium wave-form textile ceiling solution featuring flowing architectural curves that create a soft, sculptural, and visually dynamic ceiling design.",
     },
+
     {
-  id: "113",
-  title: "Stretché™ Ceiling",
-  category: " Stretch Ceiling",
-  type: "video",
-  media: "/video/ceiling-solution.mp4",
-  description:
-    "a premium printed stretch ceiling featuring high-resolution custom designs for a seamless, elegant and visually immersive architectural finish."
-},
-  {
-    id: 114,
-    title: "Cloudwave™ Gloss Ceiling",
-    category: "product",
-    type: "video",
-    media: "/video/cloudwave-gloss.mp4",
-    description:
-      "a premium gloss ceiling solution designed to create a sleek, reflective and luxurious architectural finish.",
-  },
+      id: "113",
+      title: "Stretché™ Ceiling",
+      category: " Stretch Ceiling",
+      type: "video",
+      media: "/video/ceiling-solution.mp4",
+      description:
+        "a premium printed stretch ceiling featuring high-resolution custom designs for a seamless, elegant and visually immersive architectural finish.",
+    },
 
-  {
-    id: 115,
-    title: "Cloudwave™ Windfabric Textile Ceiling",
-    category: "product",
-    type: "video",
-    media: "/video/wave-textile.mp4",
-    description:
-      "a premium wave textile ceiling featuring elegant flowing forms for a soft, contemporary and sculptural interior finish.",
-  },
+    {
+      id: 114,
+      title: "Cloudwave™ Gloss Ceiling",
+      category: "product",
+      type: "video",
+      media: "/video/cloudwave-gloss.mp4",
+      description:
+        "a premium gloss ceiling solution designed to create a sleek, reflective and luxurious architectural finish.",
+    },
 
-  {
-    id: 116,
-    title: "Stretché™ Translucent Ceiling",
-    category: "product",
-    type: "video",
-    media: "/video/Translucent-2.mp4",
-    description:
-      "a premium translucent stretch ceiling with seamless backlighting, creating a bright, elegant and immersive architectural surface.",
-  },
+    {
+      id: 115,
+      title: "Cloudwave™ Windfabric Textile Ceiling",
+      category: "product",
+      type: "video",
+      media: "/video/wave-textile.mp4",
+      description:
+        "a premium wave textile ceiling featuring elegant flowing forms for a soft, contemporary and sculptural interior finish.",
+    },
 
-  {
-    id: 117,
-    title: "Stretché™ Marble Printed Ceiling",
-    category: "product",
-    type: "video",
-    media: "/video/marble-printed-1.mp4",
-    description:
-      "a premium marble printed stretch ceiling featuring realistic marble textures for a sophisticated and luxurious architectural finish.",
-  },
+    {
+      id: 116,
+      title: "Stretché™ Translucent Ceiling",
+      category: "product",
+      type: "video",
+      media: "/video/Translucent-2.mp4",
+      description:
+        "a premium translucent stretch ceiling with seamless backlighting, creating a bright, elegant and immersive architectural surface.",
+    },
 
-  {
-    id: 118,
-    title: "Stretché™ Marble Printed Ceiling",
-    category: "product",
-    type: "video",
-    media: "/video/marble-printed-2.mp4",
-    description:
-      "a premium marble printed stretch ceiling featuring realistic marble textures for a sophisticated and luxurious architectural finish.",
-  },
+    {
+      id: 117,
+      title: "Stretché™ Marble Printed Ceiling",
+      category: "product",
+      type: "video",
+      media: "/video/marble-printed-1.mp4",
+      description:
+        "a premium marble printed stretch ceiling featuring realistic marble textures for a sophisticated and luxurious architectural finish.",
+    },
 
-  {
-    id: 119,
-    title: "Stretché™ Marble Printed Ceiling",
-    category: "product",
-    type: "video",
-    media: "/video/marble-printed-3.mp4",
-    description:
-      "a premium marble printed stretch ceiling featuring realistic marble textures for a sophisticated and luxurious architectural finish.",
-  },
-   {
-  id: 120,
-  title: "NOOH™ printed wallpaper",
-  category: "product",
-  type: "video",
-  media: "/video/wallpaper-print.mp4",
-  description:
-    "a premium printed wallpaper solution featuring high-resolution custom designs for elegant and immersive interior spaces.",
-},
+    {
+      id: 118,
+      title: "Stretché™ Marble Printed Ceiling",
+      category: "product",
+      type: "video",
+      media: "/video/marble-printed-2.mp4",
+      description:
+        "a premium marble printed stretch ceiling featuring realistic marble textures for a sophisticated and luxurious architectural finish.",
+    },
 
+    {
+      id: 119,
+      title: "Stretché™ Marble Printed Ceiling",
+      category: "product",
+      type: "video",
+      media: "/video/marble-printed-3.mp4",
+      description:
+        "a premium marble printed stretch ceiling featuring realistic marble textures for a sophisticated and luxurious architectural finish.",
+    },
 
+    {
+      id: 120,
+      title: "NOOH™ printed wallpaper",
+      category: "product",
+      type: "video",
+      media: "/video/wallpaper-print.mp4",
+      description:
+        "a premium printed wallpaper solution featuring high-resolution custom designs for elegant and immersive interior spaces.",
+    },
 
+    {
+      id: 121,
+      title: "Architectural wall Art™",
+      category: "product",
+      type: "video",
+      media: "/video/wallpaper-2.mp4",
+    },
 
+    {
+      id: 122,
+      title: "Architectural wall Art™",
+      category: "product",
+      type: "video",
+      media: "/video/wallpaper-4.mp4",
+    },
 
-  {
-  id: 121,
-  title: "Architectural wall Art™",
-  category: "product",
-  type: "video",
-  media: "/video/wallpaper-2.mp4",
-},
+    {
+      id: 123,
+      title: "Architectural wall Art™",
+      category: "product",
+      type: "video",
+      media: "/video/wallpaper-5.mp4",
+    },
 
-{
-  id: 122,
-  title: "Architectural wall Art™",
-  category: "product",
-  type: "video",
-  media: "/video/wallpaper-4.mp4",
-},
+    {
+      id: 124,
+      title: "Architectural Wall Art™",
+      category: "product",
+      type: "video",
+      media: "/videos/architectural-wall-art.mp4",
+    },
 
-{
-  id: 123,
-  title: "Architectural wall Art™",
-  category: "product",
-  type: "video",
-  media: "/video/wallpaper-5.mp4",
-},
-{
-  id: 124,
-  title: "Architectural Wall Art™",
-  category: "product",
-  type: "video",
-  media: "/videos/architectural-wall-art.mp4",
-},
-{
- id:125,
-  title: "Stretché™ Printed Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/architectural-walll-art-1.mp4",
-},
-{
- id:126,
-  title: "Stretché™ Printed Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/believe-in.mp4",
-},
-{
- id:127,
-  title: "Stretché™ Backlit Wall",
-  category: "product",
-  type: "video",
-  media: "/videos/wall-6.mp4",
-},
-{
- id:128,
-  title: "Stretché™ Printed Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/ceiling-4.mp4",
-},
-{
- id:129,
-  title: "",
-  category: "product",
-  type: "video",
-  media: "/videos/ceiling-7.mp4",
-},
-{
- id:130,
-  title: "Cloudwave™ Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/cloudwave-3.mp4",
-},
-{
- id:131,
-  title: "Creative Wallpaper™",
-  category: "product",
-  type: "video",
-  media: "/videos/creative-wallpaper.mp4",
-},
-{
- id:132,
-  title: "Nooh™ Marble Art",
-  category: "product",
-  type: "video",
-  media: "/videos/marble-art.mp4",
-},
-{
- id:133,
-  title: "Stretché™ Marble Printed Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/marble-printed-art.mp4",
-},
-{
- id:134,
-  title: "Stretché™ Panel Light",
-  category: "product",
-  type: "video",
-  media: "/videos/panel-5.mp4",
-},
-{
- id:134,
-  title: "Diamond Shaped RGBW Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/panel-8.mp4",
-},
-{
- id:135,
-  title: "Stretché™ Printed Skylume Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/printed-ceilin8.mp4",
-},
-{
- id:136,
-  title: "Stretché™ Printed Skylume Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/printed-ceiling-1.mp4",
-},
-{
- id:137,
-  title: "Nooh™ Printed Wallpaper",
-  category: "product",
-  type: "video",
-  media: "/videos/printed-wallpaper.mp4",
-},
-{
- id:138,
-  title: "Stretché™ Translucent RGBW Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/rbgw-1.mp4",
-},
-{
- id:139,
-  title: "Stretché™ Translucent RGBW Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/rgbw-7.mp4",
-},
-{
- id:140,
-  title: "Stretché™ Translucent RGBW Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/rwbg-4.mp4",
-},{
- id:141,
-  title: "Cloudwave™ Textile Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/textile-wave.mp4",
-},{
- id:142,
-  title: "Fibersky™ Static Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/star-static.mp4",
-},{
- id:143,
-  title: "Stretché™ Backlit Wall",
-  category: "product",
-  type: "video",
-  media: "/videos/stretch-backlit-wall.mp4",
-},{
- id:144,
-  title: "Stretché™ Printed Skylume Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/stretch-printed-skylume-ceiling.mp4",
-},
-{
- id:145,
-  title: "Translucent Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/translucent.mp4",
-},
-{
- id:146,
-  title: "Fibersky™ Twinkle Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/twinking-star.mp4",
-},
-{
- id:147,
-  title: "",
-  category: "product",
-  type: "video",
-  media: "/videos/rbgw.mp4",
-},
-{
- id:148,
-  title: "",
-  category: "product",
-  type: "video",
-  media: "/videos/budha-wallpaper.mp4",
-},
-{
- id:149,
-  title: "",
-  category: "product",
-  type: "video",
-  media: "/videos/ceiling-fabric.mp4",
-},
-{
- id:150,
-  title: "",
-  category: "product",
-  type: "video",
-  media: "/videos/wallpaper-printed.mp4",
-},
-{
- id:151,
-  title: "",
-  category: "product",
-  type: "video",
-  media: "/videos/city-wallpaper.mp4",
-},
-{
- id:152,
-  title: "Cloudwave™ Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/cloudwave.mp4",
-},
-{
- id:153,
-  title: "Nooh Rockscape™",
-  category: "product",
-  type: "video",
-  media: "/videos/rockscape.mp4",
-},
-{
- id:154,
-  title: "Dome Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/dome-ceiling.mp4",
-},
-{
- id:155,
-  title: "Fibersky™ Twinkle Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/fiber-optics.mp4",
-},
-{
- id:156,
-  title: "Fibersky™ Galaxy Pro Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/galaxy-star.mp4",
-},
-{
- id:157,
-  title: "Stretché™ Translucent RGBW Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/gim-ceiling.mp4",
-},
-{
- id:158,
-  title: "Stretché™ Printed Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/machine-printed.mp4",
-},
-{
- id:159,
-  title: "Mirrora™ Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/mirrora.mp4",
-},{
- id:160,
-  title: "",
-  category: "product",
-  type: "video",
-  media: "/videos/mural-ceiling.mp4",
-},{
- id:161,
-  title: "Stretché™ Translucent RGBW Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/rgbw-5.mp4",
-},
-{
- id:162,
-  title: "RWBG Textile Stretch Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/rwbg-textile-ceiling.mp4",
-},{
- id:163,
-  title: "Mirrora™ Spiral Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/spiral-rwbg.mp4",
-},{
- id:164,
-  title: "Fibersky™ Twinkle Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/twinking-star.mp4",
-},
+    {
+      id: 125,
+      title: "Stretché™ Printed Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/architectural-walll-art-1.mp4",
+    },
 
-{
- id:165,
-  title: "Fibersky™ Twinkle Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/twinkling-star-2.mp4",
-},
-{
- id:166,
-  title: "Fibersky™ Twinkle Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/twinkling-star-3.mp4",
-},
-{
- id:167,
-  title: "",
-  category: "product",
-  type: "video",
-  media: "/videos/virtual-window-5.mp4",
-},
-{
- id:168,
-  title: "Stretché™ Printed Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/virtual-window.mp4",
-},
-{
- id:169,
-  title: "",
-  category: "product",
-  type: "video",
-  media: "/videos/yellow-ceiling.mp4",
-},
-{
- id:170,
-  title: "",
-  category: "product",
-  type: "video",
-  media: "/videos/yoga-ceiling.mp4",
-},
-{
- id:171,
-  title: "Virtual Window™ ",
-  category: "product",
-  type: "video",
-  media: "/videos/virtual-window-4.mp4",
-},
-{
- id:172,
-  title: "Virtual Window™ ",
-  category: "product",
-  type: "video",
-  media: "/videos/virtual-window-8.mp4",
-},
-{
- id:173,
-  title: "Stretché™ Translucent Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/translucent-ceiling-9.mp4",
-},
-{
- id:174,
-  title: "RGBW Translucent Ceiling",
-  category: "product",
-  type: "video",
-  media: "/videos/rgbw-translucent-ceiling.mp4",
-},
-{
- id:176,
-  title: "Stretché™ Fabric Backlit Wall",
-  category: "product",
-  type: "video",
-  media: "/videos/Stretche-fabric-backlit-wall.mp4",
-},
+    {
+      id: 126,
+      title: "Stretché™ Printed Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/believe-in.mp4",
+    },
 
+    {
+      id: 127,
+      title: "Stretché™ Backlit Wall",
+      category: "product",
+      type: "video",
+      media: "/videos/wall-6.mp4",
+    },
 
+    {
+      id: 128,
+      title: "Stretché™ Printed Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/ceiling-4.mp4",
+    },
 
-];
-  
+    {
+      id: 129,
+      title: "",
+      category: "product",
+      type: "video",
+      media: "/videos/ceiling-7.mp4",
+    },
+
+    {
+      id: 130,
+      title: "Cloudwave™ Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/cloudwave-3.mp4",
+    },
+
+    {
+      id: 131,
+      title: "Creative Wallpaper™",
+      category: "product",
+      type: "video",
+      media: "/videos/creative-wallpaper.mp4",
+    },
+
+    {
+      id: 132,
+      title: "Nooh™ Marble Art",
+      category: "product",
+      type: "video",
+      media: "/videos/marble-art.mp4",
+    },
+
+    {
+      id: 133,
+      title: "Stretché™ Marble Printed Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/marble-printed-art.mp4",
+    },
+
+    {
+      id: 134,
+      title: "Stretché™ Panel Light",
+      category: "product",
+      type: "video",
+      media: "/videos/panel-5.mp4",
+    },
+
+    {
+      id: 134,
+      title: "Diamond Shaped RGBW Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/panel-8.mp4",
+    },
+
+    {
+      id: 135,
+      title: "Stretché™ Printed Skylume Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/printed-ceilin8.mp4",
+    },
+
+    {
+      id: 136,
+      title: "Stretché™ Printed Skylume Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/printed-ceiling-1.mp4",
+    },
+
+    {
+      id: 137,
+      title: "Nooh™ Printed Wallpaper",
+      category: "product",
+      type: "video",
+      media: "/videos/printed-wallpaper.mp4",
+    },
+
+    {
+      id: 138,
+      title: "Stretché™ Translucent RGBW Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/rbgw-1.mp4",
+    },
+
+    {
+      id: 139,
+      title: "Stretché™ Translucent RGBW Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/rgbw-7.mp4",
+    },
+
+    {
+      id: 140,
+      title: "Stretché™ Translucent RGBW Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/rwbg-4.mp4",
+    },
+
+    {
+      id: 141,
+      title: "Cloudwave™ Textile Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/textile-wave.mp4",
+    },
+
+    {
+      id: 142,
+      title: "Fibersky™ Static Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/star-static.mp4",
+    },
+
+    {
+      id: 143,
+      title: "Stretché™ Backlit Wall",
+      category: "product",
+      type: "video",
+      media: "/videos/stretch-backlit-wall.mp4",
+    },
+
+    {
+      id: 144,
+      title: "Stretché™ Printed Skylume Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/stretch-printed-skylume-ceiling.mp4",
+    },
+
+    {
+      id: 145,
+      title: "Translucent Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/translucent.mp4",
+    },
+
+    {
+      id: 146,
+      title: "Fibersky™ Twinkle Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/twinking-star.mp4",
+    },
+
+    {
+      id: 147,
+      title: "",
+      category: "product",
+      type: "video",
+      media: "/videos/rbgw.mp4",
+    },
+
+    {
+      id: 148,
+      title: "",
+      category: "product",
+      type: "video",
+      media: "/videos/budha-wallpaper.mp4",
+    },
+
+    {
+      id: 149,
+      title: "",
+      category: "product",
+      type: "video",
+      media: "/videos/ceiling-fabric.mp4",
+    },
+
+    {
+      id: 150,
+      title: "",
+      category: "product",
+      type: "video",
+      media: "/videos/wallpaper-printed.mp4",
+    },
+
+    {
+      id: 151,
+      title: "",
+      category: "product",
+      type: "video",
+      media: "/videos/city-wallpaper.mp4",
+    },
+
+    {
+      id: 152,
+      title: "Cloudwave™ Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/cloudwave.mp4",
+    },
+
+    {
+      id: 153,
+      title: "Nooh Rockscape™",
+      category: "product",
+      type: "video",
+      media: "/videos/rockscape.mp4",
+    },
+
+    {
+      id: 154,
+      title: "Dome Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/dome-ceiling.mp4",
+    },
+
+    {
+      id: 155,
+      title: "Fibersky™ Twinkle Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/fiber-optics.mp4",
+    },
+
+    {
+      id: 156,
+      title: "Fibersky™ Galaxy Pro Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/galaxy-star.mp4",
+    },
+
+    {
+      id: 157,
+      title: "Stretché™ Translucent RGBW Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/gim-ceiling.mp4",
+    },
+
+    {
+      id: 158,
+      title: "Stretché™ Printed Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/machine-printed.mp4",
+    },
+
+    {
+      id: 159,
+      title: "Mirrora™ Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/mirrora.mp4",
+    },
+
+    {
+      id: 160,
+      title: "",
+      category: "product",
+      type: "video",
+      media: "/videos/mural-ceiling.mp4",
+    },
+
+    {
+      id: 161,
+      title: "Stretché™ Translucent RGBW Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/rgbw-5.mp4",
+    },
+
+    {
+      id: 162,
+      title: "RWBG Textile Stretch Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/rwbg-textile-ceiling.mp4",
+    },
+
+    {
+      id: 163,
+      title: "Mirrora™ Spiral Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/spiral-rwbg.mp4",
+    },
+
+    {
+      id: 164,
+      title: "Fibersky™ Twinkle Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/twinking-star.mp4",
+    },
+
+    {
+      id: 165,
+      title: "Fibersky™ Twinkle Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/twinkling-star-2.mp4",
+    },
+
+    {
+      id: 166,
+      title: "Fibersky™ Twinkle Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/twinkling-star-3.mp4",
+    },
+
+    {
+      id: 167,
+      title: "",
+      category: "product",
+      type: "video",
+      media: "/videos/virtual-window-5.mp4",
+    },
+
+    {
+      id: 168,
+      title: "Stretché™ Printed Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/virtual-window.mp4",
+    },
+
+    {
+      id: 169,
+      title: "",
+      category: "product",
+      type: "video",
+      media: "/videos/yellow-ceiling.mp4",
+    },
+
+    {
+      id: 170,
+      title: "",
+      category: "product",
+      type: "video",
+      media: "/videos/yoga-ceiling.mp4",
+    },
+
+    {
+      id: 171,
+      title: "Virtual Window™",
+      category: "product",
+      type: "video",
+      media: "/videos/virtual-window-4.mp4",
+    },
+
+    {
+      id: 172,
+      title: "Virtual Window™",
+      category: "product",
+      type: "video",
+      media: "/videos/virtual-window-8.mp4",
+    },
+
+    {
+      id: 173,
+      title: "Stretché™ Translucent Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/translucent-ceiling-9.mp4",
+    },
+
+    {
+      id: 174,
+      title: "RGBW Translucent Ceiling",
+      category: "product",
+      type: "video",
+      media: "/videos/rgbw-translucent-ceiling.mp4",
+    },
+
+    {
+      id: 176,
+      title: "Stretché™ Fabric Backlit Wall",
+      category: "product",
+      type: "video",
+      media: "/videos/Stretche-fabric-backlit-wall.mp4",
+    },
+  ];
 
   /* =====================================================
-      COMBINE PRODUCTS FIRST + PROJECTS AFTER
+      COMBINE PRODUCTS + PROJECTS
   ===================================================== */
 
   const allItems = [
     ...productVideos,
     ...projects,
   ];
-
-  /* =====================================================
-      FILTER DATA
-  ===================================================== */
-
-  const filteredItems =
-    activeCategory === "all"
-      ? allItems
-      : allItems.filter((item) => item.category === activeCategory);
-
-      
 
   return (
     <>
@@ -684,73 +755,45 @@ const Projects = () => {
       <div className="min-h-screen bg-luxury-black pt-24">
 
         {/* =====================================================
-            HERO SECTION
+            PROJECTS HERO SECTION
         ===================================================== */}
 
-       {/* =====================================================
-    PROJECTS HERO SECTION
-===================================================== */}
+        <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
 
-<section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
+          <div className="absolute inset-0">
 
-  {/* Background Image */}
-  <div className="absolute inset-0">
+            {/* Desktop */}
+            <img
+              src="/image/nooh-project.png"
+              alt="NOOH Projects"
+              className="hidden md:block w-full h-full object-cover object-center"
+            />
 
-    {/* Desktop Image */}
-    <img
-      src="/image/nooh-project.png"
-      alt="NOOH Projects"
-      className="hidden md:block w-full h-full object-cover object-center"
-    />
+            {/* Mobile */}
+            <img
+              src="/projects-hero/projects-hero-mobile.png"
+              alt="NOOH Projects"
+              className="block md:hidden w-full h-full object-cover object-center"
+            />
 
-    {/* Mobile Image */}
-    <img
-      src="/projects-hero/projects-hero-mobile.png"
-      alt="NOOH Projects"
-      className="block md:hidden w-full h-full object-cover object-center"
-    />
+          </div>
 
-  </div>
+        </section>
 
-</section>
         {/* =====================================================
-            CATEGORY FILTER
+            PRODUCTS + PROJECTS GRID
         ===================================================== */}
 
-        <section className="section-padding pt-0">
+        <section className="section-padding pt-12">
 
           <div className="container-custom mx-auto">
 
-            <div className="flex flex-wrap justify-center gap-4 mb-12">
-
-              {categories.map((category) => (
-
-                <button
-                  key={category}
-                  onClick={() => setActiveCategory(category)}
-                  className={`px-8 py-3 rounded-full uppercase text-sm font-semibold tracking-wider smooth-transition ${
-                    activeCategory === category
-                      ? "bg-luxury-gold text-luxury-black"
-                      : "glass text-white hover:glass-gold"
-                  }`}
-                >
-                  {category}
-                </button>
-
-              ))}
-
-            </div>
-
-            {/* =================================================
-                PRODUCTS + PROJECTS GRID
-            ================================================= */}
-
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-              {filteredItems.map((item, index) => (
+              {allItems.map((item, index) => (
 
                 <motion.div
-                  key={`${item.id}-${item.title}`}
+                  key={`${item.id}-${item.title}-${index}`}
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -764,7 +807,7 @@ const Projects = () => {
                   ================================================= */}
 
                   <div className="relative w-full h-[380px] sm:h-[420px] lg:h-[450px] bg-black overflow-hidden">
-                          
+
                     {item.type === "video" ? (
 
                       <video
@@ -796,32 +839,51 @@ const Projects = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent pointer-events-none" />
 
                     {/* =================================================
-                        MUTE / UNMUTE BUTTON
+                        VIDEO CONTROLS
                     ================================================= */}
 
                     {item.type === "video" && (
-                      
-                      <button
-                        type="button"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          toggleSound(item.id);
-                        }}
-                      className="absolute bottom-4 right-4 z-30 w-11 h-11 rounded-full bg-black/65 backdrop-blur-md border border-white/20 text-white flex items-center justify-center hover:bg-luxury-gold hover:text-luxury-black hover:border-luxury-gold transition-all duration-300"
-                        aria-label={
-                          soundOn[item.id]
-                            ? "Mute video"
-                            : "Unmute video"
-                        }
-                      >
 
-                        {soundOn[item.id] ? (
-                          <FaVolumeUp className="text-base" />
-                        ) : (
-                          <FaVolumeMute className="text-base" />
-                        )}
+                      <div className="absolute bottom-4 right-4 z-30 flex items-center gap-3">
 
-                      </button>
+                        {/* SHARE BUTTON */}
+
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            shareVideo(item);
+                          }}
+                          className="w-11 h-11 rounded-full bg-black/65 backdrop-blur-md border border-white/20 text-white flex items-center justify-center hover:bg-luxury-gold hover:text-luxury-black hover:border-luxury-gold transition-all duration-300"
+                          aria-label="Share video"
+                          title="Share video"
+                        >
+                          <FaShareAlt className="text-base" />
+                        </button>
+
+                        {/* MUTE / UNMUTE BUTTON */}
+
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            toggleSound(item.id);
+                          }}
+                          className="w-11 h-11 rounded-full bg-black/65 backdrop-blur-md border border-white/20 text-white flex items-center justify-center hover:bg-luxury-gold hover:text-luxury-black hover:border-luxury-gold transition-all duration-300"
+                          aria-label={
+                            soundOn[item.id]
+                              ? "Mute video"
+                              : "Unmute video"
+                          }
+                        >
+                          {soundOn[item.id] ? (
+                            <FaVolumeUp className="text-base" />
+                          ) : (
+                            <FaVolumeMute className="text-base" />
+                          )}
+                        </button>
+
+                      </div>
 
                     )}
 
@@ -833,8 +895,8 @@ const Projects = () => {
 
                       <span className="bg-luxury-gold text-luxury-black px-4 py-2 rounded-full text-xs font-bold uppercase">
 
-                        {item.category === "Product"
-                          ? item.productCategory
+                        {item.category?.toLowerCase() === "product"
+                          ? item.productCategory || "Product"
                           : item.category}
 
                       </span>
@@ -853,7 +915,7 @@ const Projects = () => {
 
                           <span className="w-2 h-2 rounded-full bg-luxury-gold animate-pulse" />
 
-                          {item.category === "Product"
+                          {item.category?.toLowerCase() === "product"
                             ? "Product Video"
                             : "Project Video"}
 
@@ -873,15 +935,15 @@ const Projects = () => {
 
                     {/* TITLE */}
 
-                    <h3 className="text-2xl font-luxury font-bold text-white text-center mb-4 group-hover:text-luxury-gold smooth-transition">
-                      {item.title}
-                    </h3>
+                    {item.title && (
+                      <h3 className="text-2xl font-luxury font-bold text-white text-center mb-4 group-hover:text-luxury-gold smooth-transition">
+                        {item.title}
+                      </h3>
+                    )}
 
-                    {/* PROJECT ONLY:
-                        LOCATION + YEAR
-                    */}
+                    {/* PROJECT ONLY: LOCATION + YEAR */}
 
-                    {item.category !== "Product" && (
+                    {item.category?.toLowerCase() !== "product" && (
 
                       <div className="flex items-center justify-center gap-6 text-white/60 text-sm">
 
