@@ -668,6 +668,8 @@ const Projects = () => {
       ? allItems
       : allItems.filter((item) => item.category === activeCategory);
 
+      
+
   return (
     <>
       <Helmet>
@@ -685,30 +687,32 @@ const Projects = () => {
             HERO SECTION
         ===================================================== */}
 
-        <section className="section-padding">
-          <div className="container-custom mx-auto text-center">
+       {/* =====================================================
+    PROJECTS HERO SECTION
+===================================================== */}
 
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="text-4xl md:text-7xl font-luxury font-bold text-gold-300 mb-6"
-            >
-              Our Projects
-            </motion.h1>
+<section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
 
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="text-xl text-white/80 max-w-3xl mx-auto"
-            >
-              Showcasing excellence in luxury interior design and innovative
-              NOOH solutions across India
-            </motion.p>
+  {/* Background Image */}
+  <div className="absolute inset-0">
 
-          </div>
-        </section>
+    {/* Desktop Image */}
+    <img
+      src="/image/nooh-project.png"
+      alt="NOOH Projects"
+      className="hidden md:block w-full h-full object-cover object-center"
+    />
 
+    {/* Mobile Image */}
+    <img
+      src="/projects-hero/projects-hero-mobile.png"
+      alt="NOOH Projects"
+      className="block md:hidden w-full h-full object-cover object-center"
+    />
+
+  </div>
+
+</section>
         {/* =====================================================
             CATEGORY FILTER
         ===================================================== */}
@@ -760,7 +764,7 @@ const Projects = () => {
                   ================================================= */}
 
                   <div className="relative w-full h-[380px] sm:h-[420px] lg:h-[450px] bg-black overflow-hidden">
-
+                          
                     {item.type === "video" ? (
 
                       <video
@@ -796,7 +800,7 @@ const Projects = () => {
                     ================================================= */}
 
                     {item.type === "video" && (
-
+                      
                       <button
                         type="button"
                         onClick={(e) => {
