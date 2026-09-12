@@ -193,6 +193,7 @@ const Contact = () => {
                       <div>
                         <h3 className="text-white font-semibold mb-2">Head Office</h3>
                         <p className="text-white/80 leading-relaxed">
+                           NOOH ELEVATED LIVING LLP<br/>
                           D-180, Sector 10,<br />
                           Noida - 201301,<br />
                           Uttar Pradesh, India
