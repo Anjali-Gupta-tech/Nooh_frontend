@@ -349,7 +349,7 @@ const Projects = () => {
 
     {
       id: 129,
-      title: "",
+      title: "Stretché™ Texture Printed Ceiling",
       category: "product",
       type: "video",
       media: "/videos/ceiling-7.mp4",

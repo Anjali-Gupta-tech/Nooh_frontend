@@ -17,7 +17,7 @@ export const translucentDetails = {
     subtitle: "Fixed CCT LED System",
 
     // HERO IMAGE
-    heroImage: "/images/translucent/static-white-hero.jpg",
+    heroImage: "/hero-images/translucent-static-white-hero.png",
 
     // DESCRIPTION SECTION IMAGE
     image: "/images/translucent1.png",
@@ -140,7 +140,7 @@ export const translucentDetails = {
     subtitle: "Adjustable White LED System",
 
     // HERO IMAGE
-    heroImage: "/images/translucent/tunable-white-hero.jpg",
+    heroImage: "/hero-images/tunable-white.png",
 
     // DESCRIPTION SECTION IMAGE
     image: "/images/translucent2.png",
@@ -263,7 +263,7 @@ export const translucentDetails = {
     subtitle: "Full Colour & White LED System",
 
     // HERO IMAGE
-    heroImage: "/images/translucent/rgbw-hero.jpg",
+    heroImage: "/hero-images/rgb-translucent.png",
 
     // DESCRIPTION SECTION IMAGE
     image: "/images/translucent3.png",
@@ -386,7 +386,7 @@ export const translucentDetails = {
     subtitle: "Programmable LED Pixel System",
 
     // HERO IMAGE
-    heroImage: "/images/translucent/dynamic-pixel-hero.jpg",
+    heroImage: "/hero-images/dynamic-pixel-img-hero.png",
 
     // DESCRIPTION SECTION IMAGE
     image: "/images/translucent4.png",
