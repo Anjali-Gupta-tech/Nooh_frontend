@@ -10,7 +10,6 @@ import {
 } from "react-icons/fa";
 
 const Projects = () => {
-
   /* =====================================================
       VIDEO REFERENCES
   ===================================================== */
@@ -19,7 +18,7 @@ const Projects = () => {
   const [soundOn, setSoundOn] = useState({});
 
   /* =====================================================
-      TOGGLE SOUND
+      MUTE / UNMUTE
   ===================================================== */
 
   const toggleSound = (id) => {
@@ -64,7 +63,7 @@ const Projects = () => {
         alert("Video link copied!");
       }
     } catch (error) {
-      // User cancelled the share menu
+      // Ignore when user closes/cancels share menu
       if (error.name !== "AbortError") {
         console.error("Share failed:", error);
       }
@@ -76,7 +75,8 @@ const Projects = () => {
   ===================================================== */
 
   const projects = [
-    // KEEP YOUR EXISTING PROJECT DATA HERE
+    // Your existing projects data
+    // Keep your project objects here
   ];
 
   /* =====================================================
@@ -396,7 +396,7 @@ const Projects = () => {
     },
 
     {
-      id: 134,
+      id: "134-rgbw",
       title: "Diamond Shaped RGBW Ceiling",
       category: "product",
       type: "video",
@@ -755,21 +755,21 @@ const Projects = () => {
       <div className="min-h-screen bg-luxury-black pt-24">
 
         {/* =====================================================
-            PROJECTS HERO SECTION
+            PROJECTS HERO
         ===================================================== */}
 
         <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
 
           <div className="absolute inset-0">
 
-            {/* Desktop */}
+            {/* Desktop Image */}
             <img
               src="/image/nooh-project.png"
               alt="NOOH Projects"
               className="hidden md:block w-full h-full object-cover object-center"
             />
 
-            {/* Mobile */}
+            {/* Mobile Image */}
             <img
               src="/projects-hero/projects-hero-mobile.png"
               alt="NOOH Projects"
@@ -839,14 +839,14 @@ const Projects = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent pointer-events-none" />
 
                     {/* =================================================
-                        VIDEO CONTROLS
+                        SHARE + MUTE BUTTONS
                     ================================================= */}
 
                     {item.type === "video" && (
 
                       <div className="absolute bottom-4 right-4 z-30 flex items-center gap-3">
 
-                        {/* SHARE BUTTON */}
+                        {/* SHARE */}
 
                         <button
                           type="button"
@@ -861,7 +861,7 @@ const Projects = () => {
                           <FaShareAlt className="text-base" />
                         </button>
 
-                        {/* MUTE / UNMUTE BUTTON */}
+                        {/* MUTE / UNMUTE */}
 
                         <button
                           type="button"
@@ -941,34 +941,24 @@ const Projects = () => {
                       </h3>
                     )}
 
-                    {/* PROJECT ONLY: LOCATION + YEAR */}
+                    {/* PROJECT LOCATION + YEAR */}
 
                     {item.category?.toLowerCase() !== "product" && (
 
                       <div className="flex items-center justify-center gap-6 text-white/60 text-sm">
 
                         {item.location && (
-
                           <span className="flex items-center gap-2">
-
                             <FaMapMarkerAlt className="text-gold-300" />
-
                             {item.location}
-
                           </span>
-
                         )}
 
                         {item.year && (
-
                           <span className="flex items-center gap-2">
-
                             <FaCalendar className="text-gold-300" />
-
                             {item.year}
-
                           </span>
-
                         )}
 
                       </div>

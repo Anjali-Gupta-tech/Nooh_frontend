@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaWhatsapp } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaWhatsapp,FaBuilding } from 'react-icons/fa';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -199,6 +199,41 @@ const Contact = () => {
                         </p>
                       </div>
                     </div>
+                    {/* Corporate Office */}
+<div className="flex items-start space-x-4">
+  <FaBuilding className="text-luxury-gold text-2xl mt-1 flex-shrink-0" />
+  <div>
+    <h3 className="text-white font-semibold mb-2">Corporate Office</h3>
+    <p className="text-white/80 leading-relaxed">
+      Third Floor, Rao Mohar Singh Market,<br />
+      F-11, Golf Course Road,<br />
+      DLF Phase 1, Sector 27,<br />
+      Gurugram, Haryana - 122002<br />
+      Near Jalsa Restaurant
+    </p>
+  </div>
+</div>
+{/* Regional Office */}
+<div className="flex items-start space-x-4">
+  <FaBuilding className="text-luxury-gold text-2xl mt-1 flex-shrink-0" />
+  <div>
+    <h3 className="text-white font-semibold mb-2">Regional Office</h3>
+    <p className="text-white/80 leading-relaxed">
+      NOOH ELEVATED LIVING LLP<br />
+      Shed No. 1, 2 & 3, Mate Industrial Estate,<br />
+      Near Homedale Society,<br />
+      Khadakwasla, Sinhagad Road,<br />
+      Pune - 411041, Maharashtra, India
+    </p>
+
+    <a
+      href="mailto:pune@noohliving.com"
+      className="text-white/80 hover:text-luxury-gold smooth-transition block mt-2"
+    >
+      pune@noohliving.com
+    </a>
+  </div>
+</div>
 
                     {/* Phone */}
                     <div className="flex items-start space-x-4">

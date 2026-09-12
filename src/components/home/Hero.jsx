@@ -11,7 +11,7 @@ const Hero = () => {
 {
   desktop: "/hero-images/hero-main.png",
 
-  mobile: "/images/s.png",
+  mobile: "/hero-images/image-mob.png",
 
   title: "STRETCHÉ™ CEILING",
 
