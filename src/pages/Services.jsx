@@ -292,73 +292,7 @@ const Services = () => {
   pdf: "/catalogue/stretche-panel-lighting.pdf",
 },
 
-  {
-    id: "stretch-ceiling",
-
-    title: (
-      <>
-        STRETCHE<sup>™</sup> Stretch Ceiling Specialist by NOOH
-      </>
-    ),
-
-    subheading: "Premium Architectural Stretch Ceiling Systems",
-
-    description: (
-      <>
-        STRETCH<sup>™</sup> by NOOH is a premium, lightweight and seamless
-        ceiling system designed to transform ordinary ceilings into modern
-        architectural features. Its flexible membrane offers fast installation,
-        easy maintenance and exceptional design freedom for residential and
-        commercial interiors.
-      </>
-    ),
-
-    categories: [
-      {
-        title: (
-          <>
-            STRETCHE<sup>™</sup> TRANSLUCENT
-          </>
-        ),
-        subtitle: "Translucent & Illuminated Ceiling",
-        link: "/products/stretch-ceiling/translucent",
-      },
-
-      {
-        title: (
-          <>
-            STRETCHE<sup>™</sup> PRINT
-          </>
-        ),
-        subtitle: "Customized Printed Stretch Ceiling",
-        link: "/products/stretch-ceiling/print",
-      },
-
-      {
-        title: (
-          <>
-            STRETCHE<sup>™</sup> GLOSS
-          </>
-        ),
-        subtitle: "High-Gloss Reflective Ceiling",
-        link: "/products/stretch-ceiling/gloss",
-      },
-
-      {
-        title: (
-          <>
-            STRETCHE<sup>™</sup> PANEL
-          </>
-        ),
-        subtitle: "Premium Decorative Ceiling Panel",
-        link: "/products/stretch-ceiling/panel",
-      },
-    ],
-
-    image: "/images/Stretch-Ceiling.jpeg",
-
-    pdf: "/catalogue/STRETCHE_TM_STRETCH_CEILING_PANEL.pdf",
-  },
+ 
 
   {
     id: "fiber-optic",

@@ -112,7 +112,7 @@ const Training = () => {
       "Lighting Integration",
       "Live Site Training",
     ],
-    route: "/training/stretch-ceiling",
+    route: "/franchise/training/stretch-ceiling",
   },
 
   {
@@ -129,7 +129,7 @@ const Training = () => {
       "Lighting Integration",
       "Business Development",
     ],
-    route: "/training/3d-cloudwave",
+    route: "/franchise/training/3d-cloudwave",
   },
 
   {
@@ -146,7 +146,7 @@ const Training = () => {
       "Lighting Integration",
       "Business Development",
     ],
-    route: "/training/3d-fabric-ceiling",
+    route: "/franchise/training/3d-fabric-ceiling",
   },
 
   {
@@ -163,7 +163,7 @@ const Training = () => {
       "Frame & LED Installation",
       "Business Development",
     ],
-    route: "/training/skylume",
+    route: "/franchise/training/skylume",
   },
     {
     number: "05",
@@ -179,7 +179,7 @@ const Training = () => {
       "Surface Preparation",
       "Business Development",
     ],
-    route: "/training/3d-epoxy-flooring",
+    route: "/franchise/training/3d-epoxy-flooring",
   },
 
   {
@@ -196,7 +196,7 @@ const Training = () => {
       "Professional Installation",
       "Business Development",
     ],
-    route: "/training/architectural-wallpaper",
+    route: "/franchise/training/architectural-wallpaper",
   },
 ];
 
