@@ -104,7 +104,7 @@ const Training = () => {
     title: "Stretch Ceiling Installation",
     subtitle: "7-Day Certificate Training Program",
     duration: "7 Days",
-    image: "/franchaise-hero/stretch-ceiling-training .png",
+    image: "/franchaise-hero/stretch-ceiling-training.png",
     description:
       "Professional training in stretch ceiling technology, installation, lighting integration and practical site execution.",
     highlights: [
@@ -121,7 +121,7 @@ const Training = () => {
     title: "3D Cloudwave™ Ceiling",
     subtitle: "Business & Installation · 7-Day Certificate Training Program",
     duration: "7 Days",
-    image: "/training/cloudwave.jpg",
+    image: "/franchaise-hero/3d-cloudwave.png",
     description:
       "Learn 3D Cloudwave™ textile ceiling design, fabric shaping, framework preparation, lighting integration, installation and business development.",
     highlights: [
@@ -188,7 +188,7 @@ const Training = () => {
     title: "Architectural Wallpaper",
     subtitle: "Business & Installation · 7-Day Certificate Training Program",
     duration: "7 Days",
-    image: "/training/architectural-wallpaper.jpg",
+    image: "/franchaise-hero/wallpaper-training.png",
     description:
       "Learn professional architectural wallpaper selection, surface preparation, measurement, cutting, installation, finishing techniques and business development.",
     highlights: [
@@ -496,7 +496,7 @@ const Training = () => {
                   className="h-full w-full object-contain transition-transform duration-700 group-hover:scale-[1.04]"
                 />
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/20 to-transparent" />
 
                 <div className="absolute left-6 top-6 font-luxury text-[11px] tracking-[0.3em] text-white/70">
                   {program.number}
