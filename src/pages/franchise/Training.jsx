@@ -97,6 +97,109 @@ const Training = () => {
     },
   ];
 
+  const trainingPrograms = [
+  {
+    number: "01",
+    category: "INSTALLATION",
+    title: "Stretch Ceiling Installation",
+    subtitle: "7-Day Certificate Training Program",
+    duration: "7 Days",
+    image: "/franchaise-hero/stretch-ceiling-training .png",
+    description:
+      "Professional training in stretch ceiling technology, installation, lighting integration and practical site execution.",
+    highlights: [
+      "Hands-on Installation",
+      "Lighting Integration",
+      "Live Site Training",
+    ],
+    route: "/training/stretch-ceiling",
+  },
+
+  {
+    number: "02",
+    category: "DESIGN & BUSINESS",
+    title: "3D Cloudwave™ Ceiling",
+    subtitle: "Business & Installation · 7-Day Certificate Training Program",
+    duration: "7 Days",
+    image: "/training/cloudwave.jpg",
+    description:
+      "Learn 3D Cloudwave™ textile ceiling design, fabric shaping, framework preparation, lighting integration, installation and business development.",
+    highlights: [
+      "3D Design & Fabric Shaping",
+      "Lighting Integration",
+      "Business Development",
+    ],
+    route: "/training/3d-cloudwave",
+  },
+
+  {
+    number: "03",
+    category: "DESIGN & BUSINESS",
+    title: "3D Fabric Ceiling",
+    subtitle: "Business & Installation · 7-Day Certificate Training Program",
+    duration: "7 Days",
+    image: "/training/fabric-ceiling.jpg",
+    description:
+      "Professional training in 3D fabric ceiling design, frame preparation, fabric shaping, lighting, installation and business development.",
+    highlights: [
+      "Fabric Shaping & Installation",
+      "Lighting Integration",
+      "Business Development",
+    ],
+    route: "/training/3d-fabric-ceiling",
+  },
+
+  {
+    number: "04",
+    category: "VIRTUAL DESIGN & BUSINESS",
+    title: "3D SkyLume™ Virtual Window & Ceiling",
+    subtitle: "Business & Installation · 7-Day Certificate Training Course",
+    duration: "7 Days",
+    image: "/training/skylume.jpg",
+    description:
+      "Learn virtual window and ceiling design, frame fabrication, image and panel installation, LED integration, project costing and business development.",
+    highlights: [
+      "Virtual Window & Skylight",
+      "Frame & LED Installation",
+      "Business Development",
+    ],
+    route: "/training/skylume",
+  },
+    {
+    number: "05",
+    category: "FLOORING & BUSINESS",
+    title: "3D Epoxy Flooring",
+    subtitle: "Business & Installation · 7-Day Certificate Training Program",
+    duration: "7 Days",
+    image: "/training/epoxy-flooring.jpg",
+    description:
+      "Professional training in 3D epoxy flooring design, surface preparation, epoxy application, 3D graphics, finishing techniques and business development.",
+    highlights: [
+      "3D Design & Application",
+      "Surface Preparation",
+      "Business Development",
+    ],
+    route: "/training/3d-epoxy-flooring",
+  },
+
+  {
+    number: "06",
+    category: "DESIGN & BUSINESS",
+    title: "Architectural Wallpaper",
+    subtitle: "Business & Installation · 7-Day Certificate Training Program",
+    duration: "7 Days",
+    image: "/training/architectural-wallpaper.jpg",
+    description:
+      "Learn professional architectural wallpaper selection, surface preparation, measurement, cutting, installation, finishing techniques and business development.",
+    highlights: [
+      "Design & Material Selection",
+      "Professional Installation",
+      "Business Development",
+    ],
+    route: "/training/architectural-wallpaper",
+  },
+];
+
   return (
     <div className=" min-h-screen pt-20 bg-luxury-black text-white">
 
@@ -322,12 +425,13 @@ const Training = () => {
       {/* =====================================================
           PRODUCTS COVERED
       ===================================================== */}
+    <section
+  id="training"
+  className="section-padding bg-luxury-black"
+>
+  <div className="container-custom mx-auto">
 
-      <section className="section-padding bg-luxury-black">
-
-        <div className="container-custom mx-auto">
-
-          <motion.div
+  <motion.div
             initial={{ opacity: 0, y: 25 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -340,7 +444,7 @@ const Training = () => {
               <span className="h-px w-12 bg-luxury-gold/60" />
 
               <span className="text-[11px] font-medium uppercase tracking-[0.4em] text-luxury-gold">
-                TRAINING COVERAGE
+                Training Programs
               </span>
 
               <span className="h-px w-12 bg-luxury-gold/60" />
@@ -350,74 +454,141 @@ const Training = () => {
 
             <h2 className="font-luxury text-4xl font-bold md:text-5xl">
 
-              Products &{" "}
+              PRODUCT & <br/>
               <span className="text-gold-300">
-                Skills
+                INSTALLATION TRAINING
               </span>
 
             </h2>
-
 
             <div className="mx-auto mt-6 h-[2px] w-12 bg-luxury-gold" />
 
           </motion.div>
 
 
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+    {/* Training Cards */}
+    <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
 
-            {[
-              "Stretch Ceilings",
-              "Textile Ceilings",
-              "Fiber Optic",
-              "3D Epoxy Flooring",
-              "Installation Training",
-              "Business Training",
-            ].map((item, index) => (
+      {trainingPrograms.map((program, index) => (
 
-              <motion.div
-                key={item}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{
-                  duration: 0.6,
-                  delay: index * 0.08,
-                }}
-                whileHover={{ y: -7 }}
-                className="glass-gold p-7 transition-all duration-500"
-              >
+        <motion.div
+          key={program.number}
+          initial={{ opacity: 0, y: 35 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{
+            duration: 0.7,
+            delay: index * 0.1,
+          }}
+          className="group"
+        >
 
-                <div className="flex items-center justify-between">
+          <Link to={program.route} className="block">
 
-                  <span className="font-luxury text-3xl font-bold text-luxury-gold/40">
-                    0{index + 1}
-                  </span>
+            <div className="overflow-hidden border border-white/10 bg-[#0b0b0b] transition-all duration-500 group-hover:border-luxury-gold/40">
 
-                  <span className="flex h-10 w-10 items-center justify-center rounded-full border border-luxury-gold/40 text-luxury-gold">
-                    ✦
-                  </span>
+              {/* Image */}
+              <div className="relative h-[280px] overflow-hidden md:h-[300px]">
+
+                <img
+                  src={program.image}
+                  alt={program.title}
+                  className="h-full w-full object-contain transition-transform duration-700 group-hover:scale-[1.04]"
+                />
+
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+
+                <div className="absolute left-6 top-6 font-luxury text-[11px] tracking-[0.3em] text-white/70">
+                  {program.number}
+                </div>
+
+                
+
+                <div className="absolute bottom-6 left-6 right-6">
+
+                  <p className="mb-3 text-[11px] font-medium uppercase tracking-[0.4em] text-luxury-gold">
+                    {program.category}
+                  </p>
+
+                  <h3 className="font-luxury text-2xl font-bold leading-tight text-white md:text-[28px]">
+                    {program.title}
+                  </h3>
+
+                </div>
+
+              </div>
+
+
+              {/* Card Content */}
+              <div className="p-6 md:p-7">
+
+                <p className="text-sm leading-7 text-white/65">
+                  {program.description}
+                </p>
+
+                <div className="mt-6 grid gap-3 sm:grid-cols-3">
+
+                  {program.highlights.map((highlight, i) => (
+
+                    <div
+                      key={i}
+                      className="glass-gold border-l-2 border-luxury-gold p-4"
+                    >
+
+                      <div className="mb-2 h-px w-5 bg-luxury-gold/60" />
+
+                      <span className="text-[10px] font-medium uppercase tracking-[0.15em] text-gold-300">
+                        {highlight}
+                      </span>
+
+                    </div>
+
+                  ))}
 
                 </div>
 
 
-                <div className="mt-6 h-px w-10 bg-luxury-gold/60" />
+                {/* Explore */}
+                <div className="mt-7 flex items-center justify-between border-t border-white/10 pt-5">
+
+                  <span className="text-[11px] font-medium uppercase tracking-[0.3em] text-white/60 transition-colors duration-300 group-hover:text-luxury-gold">
+                    Explore Program
+                  </span>
+
+                  <span className="flex h-10 w-10 items-center justify-center border border-luxury-gold/40 text-luxury-gold transition-all duration-300 group-hover:bg-luxury-gold group-hover:text-black">
+                    →
+                  </span>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </Link>
+
+        </motion.div>
+
+      ))}
+
+    </div>
 
 
-                <h3 className="mt-6 font-luxury text-xl font-bold text-gold-300">
-                  {item}
-                </h3>
+    {/* Bottom Line */}
+    <div className="mt-14 flex flex-col gap-3 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between">
 
-              </motion.div>
+      <span className="text-[10px] font-medium uppercase tracking-[0.35em] text-white/40">
+        Theory · Workshop · Live Site
+      </span>
 
-            ))}
+      <span className="text-[10px] font-medium uppercase tracking-[0.35em] text-white/40">
+        Certificate Programs
+      </span>
 
-          </div>
+    </div>
 
-        </div>
-
-      </section>
-
-
+  </div>
+</section>
       {/* =====================================================
           CURRICULUM
       ===================================================== */}
