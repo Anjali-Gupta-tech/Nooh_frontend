@@ -138,7 +138,7 @@ const Training = () => {
     title: "3D Fabric Ceiling",
     subtitle: "Business & Installation · 7-Day Certificate Training Program",
     duration: "7 Days",
-    image: "/training/fabric-ceiling.jpg",
+    image: "/franchaise-hero/3d-fabric-training.png",
     description:
       "Professional training in 3D fabric ceiling design, frame preparation, fabric shaping, lighting, installation and business development.",
     highlights: [
@@ -155,7 +155,7 @@ const Training = () => {
     title: "3D SkyLume™ Virtual Window & Ceiling",
     subtitle: "Business & Installation · 7-Day Certificate Training Course",
     duration: "7 Days",
-    image: "/training/skylume.jpg",
+    image: "/franchaise-hero/skylume-training.png",
     description:
       "Learn virtual window and ceiling design, frame fabrication, image and panel installation, LED integration, project costing and business development.",
     highlights: [
@@ -171,7 +171,7 @@ const Training = () => {
     title: "3D Epoxy Flooring",
     subtitle: "Business & Installation · 7-Day Certificate Training Program",
     duration: "7 Days",
-    image: "/training/epoxy-flooring.jpg",
+    image: "/franchaise-hero/epoxy-flooring.png",
     description:
       "Professional training in 3D epoxy flooring design, surface preparation, epoxy application, 3D graphics, finishing techniques and business development.",
     highlights: [
