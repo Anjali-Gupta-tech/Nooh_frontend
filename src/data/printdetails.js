@@ -10,7 +10,7 @@ export const printDetails = {
     title: "STATIC CCT",    
     subtitle: "Fixed White Backlighting",
 
-    heroImage: "/images/print/static-cct-hero.jpg",
+    heroImage: "/hero-images/fixed-cct-head.png",
     image: "/images/printed1.jpeg",
 
     description:
@@ -132,7 +132,7 @@ export const printDetails = {
     title: "TUNABLE WHITE",
     subtitle: "Dimmable + Tunable CCT Backlighting",
 
-    heroImage: "/images/print/tunable-white-hero.jpg",
+    heroImage: "/hero-images/tunnable-white-print.png",
     image: "/images/printed2.jpeg",
 
     description:
@@ -252,7 +252,7 @@ export const printDetails = {
     title: "RGBW",
     subtitle: "Millions of Colours + White Light",
 
-    heroImage: "/images/print/rgbw-hero.jpg",
+    heroImage: "/hero-images/rgbw-print-head.png",
     image: "/images/printed3.jpeg",
 
     description:
@@ -378,7 +378,7 @@ export const printDetails = {
     title: "DYNAMIC PIXEL",
     subtitle: "Pixel-Controlled Architectural Lighting",
 
-    heroImage: "/images/print/dynamic-pixel-hero.jpg",
+    heroImage: "/hero-images/dynamic-pixel-head.png",
     image: "/images/printed4.jpeg",
 
     description:

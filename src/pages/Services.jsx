@@ -10,7 +10,7 @@ const Services = () => {
     const location = useLocation();
   const services = [
 
-    {
+{
   id: "stretch-translucent",
 
   title: (
@@ -219,7 +219,7 @@ const Services = () => {
 
   ],
 
-  image: "/images/stretch-gloss.png",
+  image: "/franchaise-hero/gloss-main.png",
 
   pdf: "/catalogue/STRETCHE_TM_GLOSS_CEILING.pdf",
 },
