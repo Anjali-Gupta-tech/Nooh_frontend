@@ -201,13 +201,7 @@ const Hero = () => {
     "Decorative illuminated wall systems featuring premium graphics with uniform LED backlighting for striking interiors."
 },
 
-{
-  desktop: "/hero-images/7D-STRETCHE-CEILING-SOLUTION.png",
-  mobile: "/images/7d-stretch-ceiling-mobile.webp",
-  title: "7D STRETCHÉ™ CEILING SOLUTION",
-  description:
-    "Advanced ceiling solutions delivering immersive visual depth through innovative stretch ceiling technology."
-},
+
 
 {
   desktop: "/hero-images/FIBER-OPTIC-CEILING.png",
