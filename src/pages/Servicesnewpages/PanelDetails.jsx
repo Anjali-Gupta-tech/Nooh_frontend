@@ -47,10 +47,7 @@ const PanelDetails = () => {
         {/* ================================================= */}
         {/* HERO */}
         {/* ================================================= */}
-            {/* ================================================= */}
-{/* HERO */}
-{/* ================================================= */}
-
+          
 <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
 
   {/* HERO IMAGE */}
@@ -63,7 +60,7 @@ const PanelDetails = () => {
     />
 
     {/* DARK OVERLAY */}
-    <div className="absolute inset-0 bg-black/55" />
+    <div className="absolute inset-0 bg-black/30" />
 
   </div>
 

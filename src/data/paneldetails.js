@@ -8,8 +8,8 @@ const panelDetails = {
     title: "STRETCHÉ PANEL WHITE",
     subtitle: "Uniform Backlit White Panel Lighting",
 
-    heroImage: "/images/panel/white-hero.jpg",
-    image: "/images/panel/white.jpg",
+    heroImage: "/service/stretch-panel-white.png",
+    image: "/service/panel-white-main.png",
 
     description:
       "STRETCHÉ™ PANEL WHITE is a clean and elegant backlit panel ceiling solution designed to deliver uniform white illumination across the entire ceiling surface.",
@@ -124,8 +124,8 @@ const panelDetails = {
     title: "STRETCHÉ PANEL TUNABLE",
     subtitle: "Adjustable Warm-to-Cool White Lighting",
 
-    heroImage: "/images/panel/tunable-hero.jpg",
-    image: "/images/panel/tunable.jpg",
+    heroImage: "/service/tunnable-panel-head.png",
+    image: "/service/panel-tunnable-main.png",
 
     description:
       "STRETCHÉ™ PANEL TUNABLE combines a seamless backlit panel ceiling with adjustable white-light technology. The system allows users to change the colour temperature and brightness of the lighting to create the right ambience for different activities, moods and times of the day.",
@@ -241,8 +241,8 @@ const panelDetails = {
     title: "STRETCHÉ PANEL PRINT",
     subtitle: "Custom Backlit Printed Panel Ceiling",
 
-    heroImage: "/images/panel/print-hero.jpg",
-    image: "/images/panel/print.jpg",
+    heroImage: "/service/print-panel.png",
+    image: "/service/panel-print.png",
 
     description:
       "STRETCHÉ™ PANEL PRINT combines a customizable printed surface with a professional backlighting system to create a visually striking luminous ceiling. Custom skies, architectural graphics, patterns, artwork and branded designs can be illuminated evenly across the panel surface.",
@@ -364,8 +364,8 @@ const panelDetails = {
     title: "STRETCHÉ PANEL RGBW",
     subtitle: "Dynamic Colour-Changing Panel Lighting",
 
-    heroImage: "/images/panel/rgbw-hero.jpg",
-    image: "/images/panel/rgbw.jpg",
+    heroImage: "/service/stretch-rgb-head.png",
+    image: "/service/rgb-panel-left.png",
 
     description:
       "STRETCHÉ™ PANEL RGBW combines a seamless panel ceiling with advanced RGBW lighting technology to create dynamic colour-changing environments. The system delivers millions of colours together with white-light capability, allowing the ceiling to adapt to different moods, events and experiences.",
