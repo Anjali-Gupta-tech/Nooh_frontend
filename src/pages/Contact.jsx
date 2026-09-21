@@ -46,26 +46,52 @@ const Contact = () => {
     return newErrors;
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const newErrors = validate();
-    
-    if (Object.keys(newErrors).length === 0) {
-      // Here you would typically send the data to your backend
-      console.log('Form submitted:', formData);
-      setSubmitted(true);
-      setFormData({
-        name: '',
-        phone: '',
-        email: '',
-        projectType: '',
-        message: '',
-      });
-      setTimeout(() => setSubmitted(false), 5000);
-    } else {
-      setErrors(newErrors);
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const newErrors = validate();
+
+  if (Object.keys(newErrors).length > 0) {
+    setErrors(newErrors);
+    return;
+  }
+
+  try {
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await response.json();
+
+    if (!response.ok || !data.success) {
+      throw new Error(data.message || "Failed to submit enquiry");
     }
-  };
+
+    console.log("Enquiry submitted:", data);
+
+    setSubmitted(true);
+
+    setFormData({
+      name: "",
+      phone: "",
+      email: "",
+      projectType: "",
+      message: "",
+    });
+
+    setTimeout(() => setSubmitted(false), 5000);
+  } catch (error) {
+    console.error("Contact form error:", error);
+
+    alert(
+      "Something went wrong while submitting your enquiry. Please try again."
+    );
+  }
+};
 
   const projectTypes = [
     'Residential - Villa',
