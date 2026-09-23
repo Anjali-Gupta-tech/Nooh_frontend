@@ -30,7 +30,7 @@ const services = [
   description:
     "Premium translucent stretch ceiling with integrated lighting technology.",
 
-  image: "/service/translucent-home.png",
+  image: "/service/translucent-home.webp",
 },
 
 {
@@ -48,7 +48,7 @@ const services = [
   description:
     "Premium printed stretch ceiling featuring high-resolution.",
 
-  image: "/images/stretch-ceiling-manufacted.png",
+  image: "/images/stretch-ceiling-manufacted.webp",
 },
 
 {
@@ -67,7 +67,7 @@ const services = [
   description:
     "Premium high-gloss stretch ceiling with a seamless mirror-like reflective finish.",
 
-  image: "/service/gloss-home.png",
+  image: "/service/gloss-home.webp",
 },
 
  {
@@ -86,7 +86,7 @@ const services = [
     description:
       "STRETCHE™ Panel Lighting combines high-quality stretch ceiling materials with advanced LED technology.",
 
-    image: "/images/panel-home.png",
+    image: "/images/panel-home.webp",
   },
   
 
@@ -106,7 +106,7 @@ const services = [
     description:
       "Create a breathtaking starry sky with NOOH Fiber Optic Ceiling.",
 
-    image: "/images/fiber-optics-home.png",
+    image: "/images/fiber-optics-home.webp",
   },
 {
   id: "architectural-wall-art",
@@ -123,7 +123,7 @@ const services = [
   description:
     "Architectural Wall Art™ transforms interior spaces with artistic wall compositions.",
 
-  image: "/images/embordery-wall.png",
+  image: "/images/embordery-wall.webp",
 },
  
 {
@@ -141,7 +141,7 @@ const services = [
   description:
     "Sculptural illuminated architectural forms that bring movement, rhythm and elegance to premium interiors.",
 
-  image: "/hero-images/mirrora-main.png",
+  image: "/hero-images/mirrora-main.webp",
 },
  {
     id: "cloudwave-gloss-textile",
@@ -159,7 +159,7 @@ const services = [
     description:
       "CLOUDWAVE™ by NOOH Gloss Textile Ceiling combines a premium high-gloss textile finish.",
 
-    image: "/images/cloudwave-gloss-home.png",
+    image: "/images/cloudwave-gloss-home.webp",
   },
 
 
@@ -181,7 +181,7 @@ const services = [
     description:
       "NOOH PRISM™ Decorative Customized Ceiling transforms ordinary ceilings into elegant architectural masterpieces.",
 
-    image: "/service/nooh-prism.png",
+    image: "/service/nooh-prism.webp",
   },
 
  
@@ -202,7 +202,7 @@ const services = [
     description:
       "EPOXY DECORS™ 3D EPOXY FLOORING transforms ordinary floors into seamless.",
 
-    image: "/service/epoxy-decore.png",
+    image: "/service/epoxy-decore.webp",
   },
 
   {
@@ -221,7 +221,7 @@ const services = [
     description:
       "NOOH MIRROR™ Gloss Stretch Ceiling System features a premium high-gloss reflective finish in 21 elegant colors.",
 
-    image: "/service/nooh-mirror.png",
+    image: "/service/nooh-mirror.webp",
   },
 
   {
@@ -240,7 +240,8 @@ const services = [
     description:
       "STRETCHÉ™ Pillar Stretch Ceiling System transforms ordinary columns into illuminated architectural features.",
 
-    image: "/service/stretch-piller.png",
+    image: "/service/stretch-piller.webp"
+    ,
   },
 
   {
@@ -259,7 +260,7 @@ const services = [
     description:
       "STRETCHÉ™ Kitchen Stretch Ceiling is a seamless, moisture-resistant ceiling system designed for modern kitchens.",
 
-    image: "/service/stretch-kitchen.png",
+    image: "/service/stretch-kitchen.webp",
   },
 
   {
@@ -278,7 +279,7 @@ const services = [
     description:
       "STRETCHÉ™ Dome Stretch Ceiling System creates elegant curved and dome-shaped ceilings with seamless premium membranes.",
 
-    image: "/service/stretch-dome.png",
+    image: "/service/stretch-dome.webp",
   },
 
   {
@@ -297,7 +298,7 @@ const services = [
     description:
       "It offers innovative decorative ceiling ideas and customized ceiling systems.",
 
-    image: "/service/restorant-decor.png",
+    image: "/service/restorant-decor.webp",
   },
 
   {
@@ -316,7 +317,7 @@ const services = [
     description:
       "NOOH – WallSculpt™ offers innovative decorative wall solutions and customized installations.",
 
-    image: "/service/WallSculpt.jpeg",
+    image: "/service/WallSculpt.webp",
   },
 ];
 
