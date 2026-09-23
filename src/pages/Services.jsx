@@ -708,7 +708,7 @@ const Services = () => {
 <div className="absolute inset-0">
   {/* Desktop Image */}
   <img
-    src="/hero-images/products.png"
+    src="/hero-images/products.webp"
     alt="NOOH Premium Services"
     className="hidden md:block w-full h-full object-cover object-center"
   />

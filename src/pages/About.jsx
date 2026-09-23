@@ -29,7 +29,7 @@ const About = () => {
   <div className="absolute inset-0">
     {/* Desktop Image */}
     <img
-      src="/images/about-image.png"
+      src="/images/about-image.webp"
       alt="NOOH"
       className="hidden md:block w-full h-full object-cover object-center"
     />

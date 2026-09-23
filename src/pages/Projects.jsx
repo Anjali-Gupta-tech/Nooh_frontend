@@ -764,7 +764,7 @@ const Projects = () => {
 
             {/* Desktop Image */}
             <img
-              src="/image/nooh-project.png"
+              src="/image/nooh-project.webp"
               alt="NOOH Projects"
               className="hidden md:block w-full h-full object-cover object-center"
             />
