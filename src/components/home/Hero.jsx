@@ -9,9 +9,9 @@ const Hero = () => {
   // Background Images
   const images = [
 {
-  desktop: "/hero-images/hero-main.png",
+  desktop: "/hero-images/hero-main.webp",
 
-  mobile: "/hero-images/image-mob.png",
+  mobile: "/hero-images/image-mob.webp",
 
   title: "STRETCHÉ™ CEILING",
 
@@ -20,8 +20,8 @@ const Hero = () => {
 },
      
     {
-  desktop: "/hero-images/translucent-stretch-ceiling.png",
-  mobile: "/images/translucent-mobile.png",
+  desktop: "/hero-images/translucent-stretch-ceiling.webp",
+  mobile: "/images/translucent-mobile.webp",
   title: "STRETCHE™ TRANSLUCENT CEILING",
   description:
     "A premium translucent stretch ceiling system with integrated LED backlighting, creating soft, uniform illumination, seamless finishes, and luxurious architectural interiors."
