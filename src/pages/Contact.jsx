@@ -121,7 +121,7 @@ const handleSubmit = async (e) => {
 
     {/* Desktop Image */}
     <img
-      src="/hero-images/stretch-ceiling-contact.png"
+      src="/hero-images/stretch-ceiling-contact.webp"
       alt="NOOH Contact"
       className="
         hidden
