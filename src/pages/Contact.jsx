@@ -8,10 +8,28 @@ const Contact = () => {
     name: '',
     phone: '',
     email: '',
-    projectType: '',
+    productType: '',
     message: '',
   });
-
+const productTypes = [
+  "STRETCHÉ™ TRANSLUCENT",
+  "STRETCHÉ™ PRINT",
+  "STRETCHÉ™ GLOSS",
+  "STRETCHÉ™ PANEL LIGHTING",
+  "STRETCHÉ™ FIBER OPTIC",
+  "ARCHITECTURAL WALL ART™",
+  "MIRRORA™",
+  "CLOUDWAVE™ TEXTILE CEILING",
+  "NOOH PRISM™",
+  "EPOXY DECORS™ 3D EPOXY FLOORING",
+  "NOOH MIRROR™",
+  "STRETCHÉ™ PILLAR",
+  "STRETCHÉ™ KITCHEN STRETCH CEILING",
+  "STRETCHÉ™ DOME STRETCH CEILING",
+  "RESTAURANT DECORS™",
+  "NOOH – WallSculpt™",
+  "Other",
+];
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
 
@@ -26,7 +44,9 @@ const Contact = () => {
         ...errors,
         [e.target.name]: '',
       });
+
     }
+   
   };
 
   const validate = () => {
@@ -40,14 +60,17 @@ const Contact = () => {
     else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       newErrors.email = 'Please enter a valid email';
     }
-    if (!formData.projectType) newErrors.projectType = 'Please select a project type';
+    if (!formData.productType) newErrors.productType = 'Please select a productt type';
     if (!formData.message.trim()) newErrors.message = 'Message is required';
 
     return newErrors;
   };
 
+
 const handleSubmit = async (e) => {
   e.preventDefault();
+
+  console.log("Submitting form:", formData);
 
   const newErrors = validate();
 
@@ -65,13 +88,17 @@ const handleSubmit = async (e) => {
       body: JSON.stringify(formData),
     });
 
+    console.log("STATUS:", response.status);
+
     const data = await response.json();
+
+    console.log("BACKEND RESPONSE:", data);
 
     if (!response.ok || !data.success) {
       throw new Error(data.message || "Failed to submit enquiry");
     }
 
-    console.log("Enquiry submitted:", data);
+    console.log("Enquiry submitted successfully");
 
     setSubmitted(true);
 
@@ -79,30 +106,26 @@ const handleSubmit = async (e) => {
       name: "",
       phone: "",
       email: "",
-      projectType: "",
+      productType: "",
       message: "",
     });
 
-    setTimeout(() => setSubmitted(false), 5000);
+    setErrors({});
+
+    setTimeout(() => {
+      setSubmitted(false);
+    }, 5000);
+
   } catch (error) {
     console.error("Contact form error:", error);
 
     alert(
-      "Something went wrong while submitting your enquiry. Please try again."
+      error.message ||
+      "Something went wrong while submitting your enquiry."
     );
   }
 };
-
-  const projectTypes = [
-    'Residential - Villa',
-    'Residential - Apartment',
-    'Commercial - Office',
-    'Commercial - Retail',
-    'Hospitality - Hotel',
-    'Hospitality - Restaurant',
-    'Turnkey Project',
-    'Other',
-  ];
+ 
 
   return (
     <>
@@ -411,28 +434,28 @@ const handleSubmit = async (e) => {
                       </div>
                     </div>
 
-                    {/* Project Type */}
+                    {/* Product Type */}
                     <div>
                       <label className="block text-white mb-2 font-semibold">
-                        Project Type *
+                        Product Type
                       </label>
                       <select
-                        name="projectType"
-                        value={formData.projectType}
+                        name="productType"
+                        value={formData.productType}
                         onChange={handleChange}
                         className={`w-full bg-luxury-black/50 border ${
-                          errors.projectType ? 'border-red-500' : 'border-luxury-gold/30'
+                          errors.productType ? 'border-red-500' : 'border-luxury-gold/30'
                         } rounded-lg px-4 py-3 text-white focus:border-luxury-gold focus:outline-none smooth-transition`}
                       >
-                        <option value="">Select project type</option>
-                        {projectTypes.map((type, index) => (
+                        <option value="">Select product type</option>
+                        {productTypes.map((type, index) => (
                           <option key={index} value={type}>
                             {type}
                           </option>
                         ))}
                       </select>
-                      {errors.projectType && (
-                        <p className="text-red-400 text-sm mt-1">{errors.projectType}</p>
+                      {errors.productType && (
+                        <p className="text-red-400 text-sm mt-1">{errors.productType}</p>
                       )}
                     </div>
 
@@ -458,7 +481,7 @@ const handleSubmit = async (e) => {
 
                     {/* Submit Button */}
                     <button type="submit" className="btn-luxury w-full">
-                      Send Message
+                      Get Exact Quote
                     </button>
                   </form>
                 </div>
@@ -467,9 +490,6 @@ const handleSubmit = async (e) => {
           </div>
         </section>
         {/*dealership*/}
-{/* =========================================================
-    OUR BRANCH OFFICES
-========================================================= */}
 {/* =========================================================
     OUR BRANCH OFFICES
 ========================================================= */}

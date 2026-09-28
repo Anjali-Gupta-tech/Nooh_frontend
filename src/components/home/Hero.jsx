@@ -8,16 +8,7 @@ const Hero = () => {
 
   // Background Images
   const images = [
-{
-  desktop: "/hero-images/hero-main.webp",
 
-  mobile: "/hero-images/image-mob.webp",
-
-  title: "STRETCHÉ™ CEILING",
-
-  description:
-    "A premium seamless stretch ceiling system designed to transform interiors with elegant surfaces, exceptional finishes and integrated architectural lighting."
-},
      
     {
   desktop: "/hero-images/translucent-stretch-ceiling.webp",
@@ -41,13 +32,7 @@ const Hero = () => {
     "A premium printed translucent stretch ceiling with integrated LED backlighting, creating a realistic open-sky illusion that brings natural brightness."
 },
 
-{
-  desktop: "/hero-images/3d-mural-ceiling.png",
-  mobile: "/images/embodry-mobile.png",
-  title: "STRETCHE™ 3D CEILING MURAL",
-  description:
-    "A premium custom-printed stretch ceiling featuring stunning 3D visual effects that create depth, realism, and an immersive architectural experience for residential, commercial, and luxury interiors."
-},
+
 
 {
   desktop: "/hero-images/3D-GALAXY-PRINTING-CEILING.png",
