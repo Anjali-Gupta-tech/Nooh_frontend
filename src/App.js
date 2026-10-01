@@ -104,7 +104,7 @@ function App() {
              <Route path="/products/translucent/:slug" element={<TranslucentDetails/>}/>
              <Route path="/products/print/:slug" element={<PrintDetails/>}/>
              <Route path="/products/panel/:slug" element={<PanelDetails/>}/>
-       <Route path="/franchise/training/:slug" element={<Trainingdetails/>}/>
+           <Route path="/franchise/training/:slug" element={<Trainingdetails/>}/>
 
             {/* routes for specific ceiling types */}
             <Route path="/stretch-ceiling" element={<StretchCeiling />} />
@@ -172,7 +172,7 @@ function App() {
       
            </Routes>
           <Footer />
-       
+
           <FloatingContactButtons/>
         </div>
       </Router>

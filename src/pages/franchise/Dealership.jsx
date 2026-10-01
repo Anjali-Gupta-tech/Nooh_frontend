@@ -93,7 +93,74 @@ const Dealership = () => {
 
       </section>
 
+{/* =====================================================
+    DEALERSHIP VIDEO
+===================================================== */}
 
+<section className="section-padding bg-luxury-black">
+  <div className="container-custom mx-auto">
+
+    {/* Section Heading */}
+    <motion.div
+      initial={{ opacity: 0, y: 25 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7 }}
+      className="mb-10 text-center"
+    >
+      <div className="mb-5 flex items-center justify-center gap-4">
+        <span className="h-px w-12 bg-luxury-gold/60" />
+
+        <span className="text-[11px] font-medium uppercase tracking-[0.4em] text-luxury-gold">
+          DEALERSHIP PROGRAM
+        </span>
+
+        <span className="h-px w-12 bg-luxury-gold/60" />
+      </div>
+
+      <h2 className="font-luxury text-4xl font-bold md:text-5xl">
+        See How The{" "}
+        <span className="text-gold-300">
+          NOOH Dealership Works
+        </span>
+      </h2>
+
+      <div className="mx-auto mt-6 h-[2px] w-12 bg-luxury-gold" />
+
+      <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/60 md:text-base">
+        Discover the complete NOOH dealership program, business model,
+        training, support and growth opportunities.
+      </p>
+    </motion.div>
+
+    {/* Video */}
+    <motion.div
+      initial={{ opacity: 0, y: 35 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      className="mx-auto max-w-5xl"
+    >
+      <div className="overflow-hidden rounded-2xl border border-luxury-gold/30 bg-black shadow-2xl">
+       <video
+  className="block w-full max-h-[75vh] object-contain"
+  controls
+  playsInline
+  preload="metadata"
+  poster="/franchaise-hero/dealership-poster.webp"
+>
+  <source
+    src="/dealership.mp4"
+    type="video/mp4"
+  />
+
+  Your browser does not support the video tag.
+</video>
+      </div>
+    </motion.div>
+
+  </div>
+</section>
       {/* =====================================================
     DEALERSHIP OPPORTUNITY
 ===================================================== */}
