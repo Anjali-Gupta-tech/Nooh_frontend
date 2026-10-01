@@ -2,9 +2,21 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { Share2 } from "lucide-react";
 
 const Dealership = () => {
+const handleShare = async () => {
+  if (navigator.share) {
+    await navigator.share({
+      title: "NOOH Dealership Program",
+      text: "Discover the NOOH Dealership Program.",
+      url: window.location.href,
+    });
+  }
+};
   return (
+
+
     <div className="min-h-screen pt-20 bg-luxury-black text-white">
 
       {/* =====================================================
@@ -96,7 +108,6 @@ const Dealership = () => {
 {/* =====================================================
     DEALERSHIP VIDEO
 ===================================================== */}
-
 <section className="section-padding bg-luxury-black">
   <div className="container-custom mx-auto">
 
@@ -141,26 +152,38 @@ const Dealership = () => {
       transition={{ duration: 0.8 }}
       className="mx-auto max-w-5xl"
     >
-      <div className="overflow-hidden rounded-2xl border border-luxury-gold/30 bg-black shadow-2xl">
-       <video
-  className="block w-full max-h-[75vh] object-contain"
-  controls
-  playsInline
-  preload="metadata"
-  poster="/franchaise-hero/dealership-poster.webp"
->
-  <source
-    src="/dealership.mp4"
-    type="video/mp4"
-  />
+      <div className="relative overflow-hidden rounded-2xl border border-luxury-gold/30 bg-black shadow-2xl">
 
-  Your browser does not support the video tag.
-</video>
+        <video
+          className="block w-full max-h-[75vh] object-contain"
+          controls
+          playsInline
+          preload="metadata"
+          poster="/franchaise-hero/dealership-poster.webp"
+        >
+          <source
+            src="/dealership.mp4"
+            type="video/mp4"
+          />
+
+          Your browser does not support the video tag.
+        </video>
+
+        {/* Share Button */}
+        <button
+          onClick={handleShare}
+          aria-label="Share Dealership Program"
+          className="absolute bottom-14 right-4 z-10 flex h-12 w-12 items-center justify-center rounded-full bg-black/80 text-white shadow-lg backdrop-blur-sm transition-all duration-300 hover:bg-luxury-gold hover:text-black"
+        >
+          <Share2 size={20} />
+        </button>
+
       </div>
     </motion.div>
 
   </div>
 </section>
+
       {/* =====================================================
     DEALERSHIP OPPORTUNITY
 ===================================================== */}

@@ -757,28 +757,29 @@ const Projects = () => {
         {/* =====================================================
             PROJECTS HERO
         ===================================================== */}
+       <section className="relative h-[50vh] flex items-center justify-center bg-luxury-gray">
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true, amount: 0.4 }}
+    transition={{ duration: 0.8, ease: "easeOut" }}
+    className="text-center"
+  >
 
-        <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
+    <h1 className="font-luxury text-5xl md:text-7xl lg:text-8xl font-bold text-luxury-gold">
+      Product Innovation
+    </h1>
 
-          <div className="absolute inset-0">
+    <motion.div
+      initial={{ width: 0, opacity: 0 }}
+      whileInView={{ width: 64, opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
+      className="mx-auto mt-6 h-[2px] bg-luxury-gold"
+    />
 
-            {/* Desktop Image */}
-            <img
-              src="/image/nooh-project.webp"
-              alt="NOOH Projects"
-              className="hidden md:block w-full h-full object-cover object-center"
-            />
-
-            {/* Mobile Image */}
-            <img
-              src="/projects-hero/projects-hero-mobile.png"
-              alt="NOOH Projects"
-              className="block md:hidden w-full h-full object-cover object-center"
-            />
-
-          </div>
-
-        </section>
+  </motion.div>
+</section>
 
         {/* =====================================================
             PRODUCTS + PROJECTS GRID
