@@ -8,21 +8,21 @@ const Franchise = () => {
       title: "DEALERSHIP PROGRAM",
       description:
         "Build your own NOOH business with premium products, professional training and dedicated business support.",
-      image: "/franchaise-hero/dealership.png",
+      image: "/franchaise-hero/dealership.webp",
       link: "/franchise/dealership",
     },
     {
       title: "ASSOCIATE PROGRAM",
       description:
         "Partner with NOOH to offer premium ceiling solutions with complete project and technical support.",
-      image: "/franchaise-hero/associate-hero.png",
+      image: "/franchaise-hero/associate-hero.webp",
       link: "/franchise/associate",
     },
     {
       title: "TRAINING PROGRAM",
       description:
         "Learn product knowledge, installation, estimation, sales and project execution through professional training.",
-      image: "/franchaise-hero/training-hero.png",
+      image: "/franchaise-hero/training-hero.webp",
       link: "/franchaise/training",
     },
   ];
@@ -46,7 +46,7 @@ const Franchise = () => {
 
   {/* Mobile Image */}
   <img
-    src="/franchise-hero/franchise-hero.png"
+    src="/franchaise-hero/franchise-phone.webp"
     alt="NOOH Premium Services"
     className="block md:hidden w-full h-full object-cover object-center"
   />

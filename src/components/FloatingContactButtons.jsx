@@ -14,7 +14,10 @@ const FloatingContactButtons = () => {
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  // Create one session ID for this browser
+  // =====================================================
+  // CREATE ONE SESSION ID FOR THIS BROWSER
+  // =====================================================
+
   const [sessionId] = useState(() => {
     let id = localStorage.getItem("nooh_chat_session");
 
@@ -98,7 +101,7 @@ const FloatingContactButtons = () => {
   };
 
   // =====================================================
-  // FLOATING CONTACT BUTTONS
+  // WHATSAPP / CALL / INSTAGRAM BUTTONS
   // =====================================================
 
   const buttons = [
@@ -128,6 +131,10 @@ const FloatingContactButtons = () => {
       label: "Instagram",
     },
   ];
+
+  // =====================================================
+  // QUICK QUESTIONS
+  // =====================================================
 
   const quickQuestions = [
     "What is Stretch Ceiling?",
@@ -166,15 +173,26 @@ const FloatingContactButtons = () => {
             }}
             className="
               fixed
-              bottom-8
-              right-[100px]
+
+              /* MOBILE */
+              bottom-24
+              right-4
+
+              /* DESKTOP */
+              sm:bottom-8
+              sm:right-[100px]
+
               z-[99999]
 
-              w-[380px]
-              h-[560px]
+              /* RESPONSIVE WIDTH */
+              w-[calc(100vw-32px)]
+              sm:w-[380px]
 
-              max-w-[calc(100vw-120px)]
-              max-h-[calc(100vh-64px)]
+              /* HEIGHT */
+              h-[min(560px,calc(100vh-120px))]
+
+              max-w-[380px]
+              max-h-[calc(100vh-120px)]
 
               overflow-hidden
 
@@ -201,9 +219,11 @@ const FloatingContactButtons = () => {
                 shrink-0
                 px-5
                 py-4
+
                 bg-gradient-to-b
                 from-[#191919]
                 to-[#101010]
+
                 border-b
                 border-white/10
               "
@@ -222,11 +242,14 @@ const FloatingContactButtons = () => {
                       w-11
                       h-11
                       rounded-full
+
                       flex
                       items-center
                       justify-center
+
                       border
                       border-[#C9A86A]/60
+
                       bg-[#C9A86A]/10
                     "
                   >
@@ -248,10 +271,14 @@ const FloatingContactButtons = () => {
                         absolute
                         right-0
                         bottom-0
+
                         w-3
                         h-3
+
                         rounded-full
+
                         bg-emerald-400
+
                         border-2
                         border-[#101010]
                       "
@@ -304,12 +331,16 @@ const FloatingContactButtons = () => {
                     w-9
                     h-9
                     rounded-full
+
                     flex
                     items-center
                     justify-center
+
                     text-white/40
+
                     hover:text-white
                     hover:bg-white/10
+
                     transition
                   "
                   aria-label="Close chatbot"
@@ -326,7 +357,9 @@ const FloatingContactButtons = () => {
                   bottom-0
                   left-8
                   right-8
+
                   h-px
+
                   bg-gradient-to-r
                   from-transparent
                   via-[#C9A86A]/60
@@ -343,48 +376,70 @@ const FloatingContactButtons = () => {
               className="
                 flex-1
                 overflow-y-auto
+
                 px-4
                 py-5
+
                 space-y-3
+
+                scrollbar-thin
+                scrollbar-thumb-[#C9A86A]/30
               "
             >
 
               {/* WELCOME BADGE */}
 
               <div className="flex justify-center mb-5">
+
                 <div
                   className="
                     px-3
                     py-1
+
                     rounded-full
+
                     border
                     border-[#C9A86A]/20
+
                     bg-[#C9A86A]/5
+
                     text-[#C9A86A]
+
                     text-[9px]
+
                     tracking-[0.2em]
+
                     uppercase
                   "
                 >
                   Living Elevated
                 </div>
+
               </div>
 
               {/* WELCOME MESSAGE */}
 
               <div className="flex justify-start">
+
                 <div
                   className="
                     max-w-[82%]
+
                     px-4
                     py-3
+
                     rounded-2xl
                     rounded-bl-md
+
                     bg-[#191919]
+
                     border
                     border-white/[0.08]
+
                     text-white/80
+
                     text-[13px]
+
                     leading-relaxed
                   "
                 >
@@ -395,6 +450,7 @@ const FloatingContactButtons = () => {
                   <br />
                   How can I help you today?
                 </div>
+
               </div>
 
               {/* =================================================
@@ -413,11 +469,16 @@ const FloatingContactButtons = () => {
                   <div
                     className={`
                       max-w-[82%]
+
                       px-4
                       py-3
+
                       rounded-2xl
+
                       text-[13px]
+
                       leading-relaxed
+
                       ${
                         msg.role === "user"
                           ? "bg-[#C9A86A] text-[#111] rounded-br-md"
@@ -436,21 +497,28 @@ const FloatingContactButtons = () => {
 
               {loading && (
                 <div className="flex justify-start">
+
                   <div
                     className="
                       px-4
                       py-3
+
                       rounded-2xl
                       rounded-bl-md
+
                       bg-[#191919]
+
                       border
                       border-white/[0.08]
+
                       text-white/40
+
                       text-[13px]
                     "
                   >
                     Thinking...
                   </div>
+
                 </div>
               )}
 
@@ -468,19 +536,31 @@ const FloatingContactButtons = () => {
                       disabled={loading}
                       className="
                         w-full
+
                         text-left
+
                         px-4
                         py-3
+
                         rounded-xl
+
                         border
                         border-white/[0.08]
+
                         bg-white/[0.025]
+
                         text-white/60
+
                         text-xs
+
                         hover:text-[#D8B878]
+
                         hover:border-[#C9A86A]/40
+
                         hover:bg-[#C9A86A]/5
+
                         transition-all
+
                         disabled:opacity-40
                         disabled:cursor-not-allowed
                       "
@@ -501,8 +581,11 @@ const FloatingContactButtons = () => {
             <div
               className="
                 shrink-0
+
                 p-4
+
                 bg-[#0A0A0A]
+
                 border-t
                 border-white/[0.08]
               "
@@ -512,13 +595,20 @@ const FloatingContactButtons = () => {
                 className="
                   flex
                   items-center
+
                   gap-2
+
                   rounded-2xl
+
                   border
                   border-white/10
+
                   bg-[#171717]
+
                   p-1.5
+
                   focus-within:border-[#C9A86A]/40
+
                   transition
                 "
               >
@@ -538,14 +628,21 @@ const FloatingContactButtons = () => {
                   disabled={loading}
                   className="
                     flex-1
+
                     min-w-0
+
                     px-3
                     py-2
+
                     bg-transparent
+
                     outline-none
+
                     text-sm
                     text-white
+
                     placeholder:text-white/25
+
                     disabled:opacity-50
                   "
                 />
@@ -558,15 +655,23 @@ const FloatingContactButtons = () => {
                   className="
                     w-10
                     h-10
+
                     shrink-0
+
                     rounded-xl
+
                     flex
                     items-center
                     justify-center
+
                     bg-[#C9A86A]
+
                     text-[#111]
+
                     hover:bg-[#D8B878]
+
                     transition
+
                     disabled:opacity-40
                     disabled:cursor-not-allowed
                   "
@@ -582,8 +687,11 @@ const FloatingContactButtons = () => {
               <p
                 className="
                   text-center
+
                   text-[9px]
+
                   text-white/20
+
                   mt-2
                 "
               >
@@ -596,6 +704,7 @@ const FloatingContactButtons = () => {
         )}
       </AnimatePresence>
 
+
       {/* =====================================================
           FLOATING BUTTONS
       ===================================================== */}
@@ -603,12 +712,20 @@ const FloatingContactButtons = () => {
       <div
         className="
           fixed
-          bottom-8
-          right-8
+
+          bottom-4
+          right-4
+
+          sm:bottom-8
+          sm:right-8
+
           z-[99999]
+
           flex
           flex-col
-          gap-4
+
+          gap-3
+          sm:gap-4
         "
       >
 
@@ -616,7 +733,84 @@ const FloatingContactButtons = () => {
             NOOH AI BUTTON — TOP
         ================================================= */}
 
-        
+        <motion.button
+          onClick={() => setChatOpen((prev) => !prev)}
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{
+            duration: 0.35,
+            ease: [0.22, 1, 0.36, 1],
+          }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="
+            relative
+
+            w-14
+            h-14
+
+            rounded-full
+
+            flex
+            items-center
+            justify-center
+
+            bg-[#C9A86A]
+
+            text-[#111]
+
+            shadow-2xl
+
+            border
+            border-[#E5C987]
+
+            hover:bg-[#D8B878]
+
+            transition-all
+          "
+          aria-label={
+            chatOpen
+              ? "Close NOOH AI Assistant"
+              : "Open NOOH AI Assistant"
+          }
+        >
+
+          {/* AI BUTTON PULSE */}
+
+          <motion.div
+            className="
+              absolute
+              inset-0
+
+              rounded-full
+
+              bg-[#C9A86A]
+            "
+            animate={{
+              scale: [1, 1.5, 1],
+              opacity: [0.5, 0, 0.5],
+            }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
+
+          {/* AI ICON */}
+
+          <span className="relative z-10">
+
+            {chatOpen ? (
+              <FaTimes size={24} />
+            ) : (
+              <FaRobot size={25} />
+            )}
+
+          </span>
+
+        </motion.button>
+
 
         {/* =================================================
             WHATSAPP / CALL / INSTAGRAM
@@ -625,33 +819,50 @@ const FloatingContactButtons = () => {
         {buttons.map((btn, index) => (
           <motion.a
             key={index}
+
             href={btn.link}
+
             target={
               btn.link.startsWith("http")
                 ? "_blank"
                 : undefined
             }
+
             rel="noopener noreferrer"
+
             initial={{ scale: 0 }}
+
             animate={{ scale: 1 }}
+
             transition={{
               delay: (index + 1) * 0.15,
             }}
+
             whileHover={{ scale: 1.1 }}
+
             whileTap={{ scale: 0.9 }}
+
             className={`
               relative
+
               w-14
               h-14
+
               rounded-full
+
               flex
               items-center
               justify-center
+
               text-white
+
               shadow-2xl
+
               ${btn.color}
+
               ${btn.hover}
             `}
+
             aria-label={btn.label}
           >
 
@@ -660,8 +871,11 @@ const FloatingContactButtons = () => {
             <motion.div
               className={`
                 absolute
+
                 inset-0
+
                 rounded-full
+
                 ${btn.color}
               `}
               animate={{

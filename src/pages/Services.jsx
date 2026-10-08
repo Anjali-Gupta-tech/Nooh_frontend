@@ -715,7 +715,7 @@ const Services = () => {
 
   {/* Mobile Image */}
   <img
-    src="/images/service-hero-mobile.png"
+    src="/hero-images/products-phone.webp"
     alt="NOOH Premium Services"
     className="block md:hidden w-full h-full object-cover object-center"
   />

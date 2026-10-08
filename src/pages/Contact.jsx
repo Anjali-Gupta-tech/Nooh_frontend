@@ -158,7 +158,7 @@ const handleSubmit = async (e) => {
 
     {/* Mobile Image */}
     <img
-      src="/images/contact-mobile.png"
+      src="/hero-images/contact-phone.webp"
       alt="NOOH Contact"
       className="
         block
