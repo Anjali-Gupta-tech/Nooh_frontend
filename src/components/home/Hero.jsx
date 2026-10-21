@@ -146,13 +146,7 @@ const Hero = () => {
 
 
 
-{
-  desktop: "/hero-images/3D-WALL-ART.png",
-  mobile: "/images/3d-wall-art-mobile.webp",
-  title: "3D DECORATIVE WALL ART",
-  description:
-    "Premium 3D wall art solutions crafted to add texture, depth, and architectural elegance to interior spaces."
-},
+
 
 {
   desktop: "/hero-images/WINDFABRIC-TEXTILE-CEILING.png",

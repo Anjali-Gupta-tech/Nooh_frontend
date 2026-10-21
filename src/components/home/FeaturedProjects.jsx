@@ -2,46 +2,70 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
+import {
+  Navigation,
+  Pagination,
+  Autoplay,
+  EffectCoverflow,
+} from 'swiper/modules';
 
 const FeaturedProjects = () => {
-  const projects = [
+  const products = [
     {
-      title: 'Luxury Villa Interior',
-      category: 'Residential',
-      location: 'Delhi NCR',
-      image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2070',
+      id: 'stretch-translucent',
+      title: 'STRETCHÉ™ TRANSLUCENT',
+      category: 'Illuminated Stretch Ceiling',
+      description:
+        'A premium illuminated stretch ceiling system delivering seamless surfaces and uniform lighting, with static white, tunable white, RGBW, and dynamic lighting options.',
+      image: '/service/translucent-main.png',
+      link: '/products/translucent/static-white',
     },
     {
-      title: 'Premium Hotel Suite',
-      category: 'Hospitality',
-      location: 'Mumbai',
-      image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070',
+      id: 'stretch-print',
+      title: 'STRETCHÉ™ PRINT',
+      category: 'Printed Stretch Ceiling',
+      description:
+        'Transform interiors with customised printed artwork and integrated LED illumination, featuring static, tunable, and dynamic lighting options.',
+      image: '/service/print-stretch-ceiling.png',
+      link: '/products/print/static-cct',
     },
     {
-      title: 'Modern Office Space',
-      category: 'Commercial',
-      location: 'Bangalore',
-      image: '/image/office.jpg',
+      id: 'stretch-gloss',
+      title: 'STRETCHÉ™ GLOSS',
+      category: 'High-Gloss Ceiling',
+      description:
+        'A premium reflective stretch ceiling with a smooth, mirror-like finish that enhances light reflection and creates a sophisticated interior.',
+      image: '/franchaise-hero/gloss-main.png',
+      link: '/products/stretch-ceiling/gloss',
     },
     {
-      title: 'Luxury Penthouse',
-      category: 'Residential',
-      location: 'Pune',
-      image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070',
+      id: 'panel-lighting',
+      title: 'STRETCHÉ™ PANEL LIGHTING',
+      category: 'Architectural Lighting',
+      description:
+        'Premium backlit stretch panels combining seamless surfaces with advanced LED technology, available in white, tunable, printed, and RGBW options.',
+      image: '/service/product-panel.png',
+      link: '/products/panel/white',
     },
     {
-      title: 'Designer Farmhouse',
-      category: 'Residential',
-      location: 'Gurgaon',
-      image: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=2074',
+      id: 'fiber-optic',
+      title: 'FIBERSKY™ STAR CEILING',
+      category: 'Fiber Optic Lighting',
+      description:
+        'Create a captivating starry-sky effect with fiber-optic lighting, custom star patterns, twinkling effects, and dynamic illumination.',
+      image: '/images/fiber-optics-hero.png',
+      link: '/products/fiber-optic/star-sky',
     },
-  {
-  title: 'Contemporary Bedroom',
-  category: 'Residential',
-  location: 'Bengaluru',
-  image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=2070',
-},
+    {
+      id: 'architectural-wall-art',
+      title: 'ARCHITECTURAL WALL ART™',
+      category: 'Luxury Wall Décor',
+      description:
+        'Discover customised wallpapers, seamless patterns, decorative murals, and distinctive wall coverings designed for sophisticated interiors.',
+      image: '/images/embroidery-wall.png',
+      link: '/products/bespokewall',
+    },
+    
   ];
 
   return (
@@ -55,31 +79,35 @@ const FeaturedProjects = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-6xl font-luxury font-bold text-gold-300 mb-6">
-            Featured Projects
+            Featured Products
           </h2>
+
           <p className="text-xl text-white/70 max-w-3xl mx-auto">
-            Explore our portfolio of exquisite luxury interiors and architectural masterpieces
+            Discover NOOH's premium stretch ceilings, innovative lighting
+            systems, and luxury architectural surface solutions.
           </p>
         </motion.div>
 
-        {/* Projects Slider */}
+        {/* Products Slider */}
         <Swiper
           modules={[Navigation, Pagination, Autoplay, EffectCoverflow]}
           effect="coverflow"
-          grabCursor={true}
-          centeredSlides={false}
-          slidesPerView="30"
-          spaceBetween={0}
+          grabCursor
+          centeredSlides
+          slidesPerView={1}
+          spaceBetween={20}
+          loop={products.length > 3}
           coverflowEffect={{
-            rotate: 50,
+            rotate: 15,
             stretch: 0,
             depth: 100,
             modifier: 1,
-            slideShadows: true,
+            slideShadows: false,
           }}
           autoplay={{
-            delay: 2000,
+            delay: 3000,
             disableOnInteraction: false,
+            pauseOnMouseEnter: true,
           }}
           pagination={{ clickable: true }}
           navigation
@@ -96,36 +124,44 @@ const FeaturedProjects = () => {
             },
           }}
         >
-          {projects.map((project, index) => (
-            <SwiperSlide key={index} className="pb-16">
+          {products.map((product) => (
+            <SwiperSlide key={product.id} className="pb-16 h-auto">
               <motion.div
-                whileHover={{ y: -10 }}
-                className="relative overflow-hidden rounded-2xl group cursor-pointer h-96"
+                whileHover={{ y: -8 }}
+                className="relative overflow-hidden rounded-2xl group h-full min-h-[460px] bg-white/5 border border-white/10"
               >
-                {/* Project Image */}
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transform group-hover:scale-110 smooth-transition"
-                />
-                
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-luxury-black via-luxury-black/60 to-transparent opacity-80 group-hover:opacity-90 smooth-transition" />
+                {/* Product Image */}
+                <div className="h-64 overflow-hidden bg-white/5">
+                  <img
+                    src={product.image}
+                    alt={product.title}
+                    loading="lazy"
+                    className="w-full h-full object-cover transform group-hover:scale-110 smooth-transition"
+                    onError={(event) => {
+                      event.currentTarget.style.visibility = 'hidden';
+                    }}
+                  />
+                </div>
 
-                {/* Content */}
-                <div className="absolute inset-0 p-8 flex flex-col justify-end">
-                  <span className="text-luxury-gold text-sm uppercase tracking-wider mb-2">
-                    {project.category}
+                {/* Product Information */}
+                <div className="p-6 flex flex-col">
+                  <span className="text-luxury-gold text-xs uppercase tracking-widest mb-3">
+                    {product.category}
                   </span>
-                  <h3 className="text-2xl font-luxury font-bold text-white mb-2">
-                    {project.title}
+
+                  <h3 className="text-xl font-luxury font-bold text-white mb-3">
+                    {product.title}
                   </h3>
-                  <p className="text-white/70 mb-4">{project.location}</p>
+
+                  <p className="text-white/70 text-sm leading-6 mb-6 flex-grow">
+                    {product.description}
+                  </p>
+
                   <Link
-                    to="/projects"
+                    to={product.link}
                     className="text-luxury-gold font-semibold uppercase text-sm tracking-wider animated-underline inline-block"
                   >
-                    View Details →
+                    Explore Product →
                   </Link>
                 </div>
               </motion.div>
@@ -138,27 +174,35 @@ const FeaturedProjects = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mt-16"
+          className="text-center mt-12"
         >
-          <Link to="/projects" className="btn-luxury">
-            View All Projects
+          <Link to="/products" className="btn-luxury">
+            Explore All Products
           </Link>
         </motion.div>
       </div>
 
+      {/* Slider Styling */}
       <style>{`
         .featured-projects-slider {
           padding: 40px 0;
         }
+
         .featured-projects-slider .swiper-slide {
-          width: 350px;
+          height: auto;
         }
+
         .featured-projects-slider .swiper-button-next,
         .featured-projects-slider .swiper-button-prev {
           color: #d4af37;
         }
+
         .featured-projects-slider .swiper-pagination-bullet {
           background: #d4af37;
+        }
+
+        .featured-projects-slider .swiper-pagination {
+          bottom: 0;
         }
       `}</style>
     </section>
@@ -166,4 +210,3 @@ const FeaturedProjects = () => {
 };
 
 export default FeaturedProjects;
-
