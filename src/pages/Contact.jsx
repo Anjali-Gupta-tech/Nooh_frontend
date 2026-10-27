@@ -629,10 +629,10 @@ const handleSubmit = async (e) => {
         {
           number: "03",
           icon: "⌖",
-          name: "NOOH Branch Office",
+          name: "SHRI RAM STORES",
 
           address:
-            "New Delhi, Delhi",
+            "Old G.T. Road, Aurangabad",
 
           branchManager: "Branch Manager Name",
           managerNumber: "+91 XXXXX XXXXX",

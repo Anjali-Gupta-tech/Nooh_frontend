@@ -91,10 +91,11 @@ const Services = () => {
 
   ],
 
-  image: "/service/translucent-main.png",
+  image: "/service/translucent-main.webp",
 
   pdf: "/catalogue/STRETCHE_TM_TRANSLUCENT_CEILING.pdf",
-},
+},   
+
 { 
   id: "stretch-print",
 
@@ -176,7 +177,7 @@ const Services = () => {
 
   ],
 
-  image: "/service/print-stretch-ceiling.png",
+  image: "/service/print-stretch-ceiling.webp",
 
   pdf: "/catalogue/STRETCHE_TM_PRINT_CEILING.pdf",
 },

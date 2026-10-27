@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Know Your Team | NOOH – Living Elevated</title>
+  <meta name="description" content="Meet the people behind NOOH – Living Elevated.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+  
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a
+      class="brand"
+      href="https://noohliving.com/"
+      aria-label="NOOH – Living Elevated home"
+    >
+      <svg
+        class="brand__logo"
+        viewBox="0 0 650 190"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        aria-label="NOOH Elevated Living LLP"
+      >
+        <!-- N -->
+        <path
+          d="M25 25 L25 135 L45 135 L45 65 L90 135 L110 135 L110 25 L90 25 L90 95 L45 25 Z"
+          fill="currentColor"
+        />
+
+        <!-- First O: Architectural Window -->
+        <rect x="150" y="25" width="110" height="110" fill="#d4af37" rx="5"/>
+        <rect x="160" y="35" width="90" height="90" fill="#ffffff" rx="3"/>
+        <rect x="165" y="40" width="80" height="80" fill="#d4af37" rx="2"/>
+        <rect x="170" y="45" width="70" height="70" fill="#ffffff"/>
+        <rect x="203" y="45" width="4" height="70" fill="#d4af37"/>
+        <rect x="170" y="77.5" width="70" height="4" fill="#d4af37"/>
+
+        <!-- Second O: Architectural Door -->
+        <rect x="290" y="25" width="110" height="110" fill="#d4af37" rx="5"/>
+        <rect x="300" y="35" width="90" height="90" fill="#ffffff" rx="3"/>
+        <rect x="310" y="45" width="70" height="70" fill="#d4af37"/>
+        <rect x="315" y="50" width="60" height="60" fill="#ffffff"/>
+
+        <!-- H -->
+        <path
+          d="M430 25 L430 135 L450 135 L450 85 L495 85 L495 135 L515 135 L515 25 L495 25 L495 65 L450 65 L450 25 Z"
+          fill="currentColor"
+        />
+
+        <!-- Trademark -->
+        <text
+          x="540"
+          y="45"
+          font-family="Montserrat, Arial, sans-serif"
+          font-size="24"
+          font-weight="700"
+          fill="currentColor"
+        >™</text>
+
+        <!-- Tagline -->
+        <text
+          x="25"
+          y="165"
+          textLength="490"
+          lengthAdjust="spacingAndGlyphs"
+          font-family="Montserrat, Arial, sans-serif"
+          font-size="20"
+          font-weight="600"
+          letter-spacing="1"
+          fill="currentColor"
+        >ELEVATED LIVING LLP</text>
+      </svg>
+    </a>
+  </div>
+</header>
+
+
+    <!-- 2. Hero -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <p class="hero__label">OUR PEOPLE</p>
+        <h1 class="hero__title">Know Your Team.</h1>
+        <p class="hero__subtitle">Meet the People Behind Our Excellence.</p>
+        <span class="gold-rule" aria-hidden="true"></span>
+        <p class="hero__description">
+          The people behind NOOH bring creativity, expertise, and dedication to every project.
+          Get to know the team that makes it all possible.
+        </p>
+      </div>
+    </section>
+
+    <!-- 3. Search and filter -->
+    <section class="controls" aria-label="Search and filter team members">
+      <div class="container controls__inner">
+        <div class="field field--search">
+          <label for="searchInput">Search by name or designation</label>
+          <input type="search" id="searchInput" placeholder="Search team members" autocomplete="off">
+        </div>
+        <div class="field field--filter">
+          <label for="departmentFilter">Department</label>
+          <select id="departmentFilter">
+            <option value="All Departments">All Departments</option>
+            <option value="Leadership">Leadership</option>
+            <option value="Project Coordination">Project Coordination</option>
+            <option value="Human Resources">Human Resources</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Sales">Sales</option>
+            <option value="Executive Assistance">Executive Assistance</option>
+          </select>
+        </div>
+        <p class="controls__count" id="resultCount" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- 4. Leadership -->
+    <section class="section section--leadership" id="leadershipSection" aria-labelledby="leadershipHeading">
+      <div class="container">
+        <h2 class="section__heading" id="leadershipHeading">Leadership</h2>
+        <div class="grid grid--leadership" id="leadershipGrid"></div>
+      </div>
+    </section>
+
+    <!-- 5. Team -->
+    <section class="section section--team" id="teamSection" aria-labelledby="teamHeading">
+      <div class="container">
+        <h2 class="section__heading" id="teamHeading">Our Team</h2>
+        <div class="grid grid--team" id="teamGrid"></div>
+      </div>
+    </section>
+
+    <!-- Empty state -->
+    <p class="empty-state container" id="emptyState" hidden>
+      No team members found. Try a different name, designation, or department.
+    </p>
+
+  </main>
+
+  <!-- 6. Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="footerYear">2026</span> NOOH – Living Elevated. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

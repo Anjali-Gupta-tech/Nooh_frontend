@@ -10,7 +10,7 @@ const Hero = () => {
   const images = [
 
      
-    {
+{
   desktop: "/hero-images/translucent-stretch-ceiling.webp",
   mobile: "/images/translucent-mobile.webp",
   title: "STRETCHE™ TRANSLUCENT CEILING",
@@ -85,6 +85,7 @@ const Hero = () => {
   description:
     "A premium printed translucent stretch ceiling featuring nature-inspired artwork and integrated LED backlighting, creating the illusion of an open sky while bringing elegance, tranquility, and biophilic design into modern interiors."
 },
+
   {
   desktop: "/hero-images/STRETCHE-BACKLIT-STRETCH-CEILING.png",
   mobile: "/hero-images/stretch-backlit.png",

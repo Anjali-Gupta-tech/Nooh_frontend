@@ -1,0 +1,916 @@
+
+/* ==========================================================
+   NOOH — LIVING ELEVATED
+   KNOW OUR TEAM
+   Luxury Black & Gold Design System
+   ========================================================== */
+
+/* ----------------------------------------------------------
+   1. BRAND TOKENS
+   Replace fallback hex values with the exact values
+   from tailwind.config.js to guarantee a perfect color match.
+   ---------------------------------------------------------- */
+
+:root {
+  --luxury-gold: var(--nooh-luxury-gold, #c9a43a);
+  --luxury-gray: var(--nooh-luxury-gray, #111111);
+  --gold-300: var(--nooh-gold-300, #d1ae6a);
+
+  --black: #080808;
+  --black-soft: #090909;
+  --card-bg: #171717;
+  --card-hover: #1d1d1d;
+
+  --white: #ffffff;
+  --text-primary: rgba(255, 255, 255, 0.92);
+  --text-secondary: rgba(255, 255, 255, 0.65);
+  --text-muted: rgba(255, 255, 255, 0.48);
+
+  --border-gold: rgba(201, 164, 58, 0.22);
+  --border-gold-hover: rgba(201, 164, 58, 0.7);
+  --border-white: rgba(255, 255, 255, 0.09);
+
+  --font-luxury: "font-luxury", Georgia, "Times New Roman", serif;
+  --font-body: "Segoe UI", Arial, sans-serif;
+
+  --radius: 12px;
+  --transition: 0.3s ease;
+  --container-width: 1200px;
+}
+
+/* ----------------------------------------------------------
+   2. RESET
+   ---------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+  background: var(--black);
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+
+  background: var(--black);
+  color: var(--text-primary);
+
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.75;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* NOOH Logo Header */
+
+/* ==========================================
+   NOOH OFFICIAL LOGO HEADER
+   ========================================== */
+
+.site-header {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  background: #111111;
+  border-bottom: 1px solid rgba(201, 164, 58, 0.2);
+}
+
+.site-header__inner {
+  min-height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.brand__logo {
+  display: block;
+  width: 185px;
+  height: auto;
+  max-height: 65px;
+  color: #ffffff;
+  object-fit: contain;
+  object-position: left center;
+  transition: opacity 0.3s ease;
+}
+
+.brand:hover .brand__logo {
+  opacity: 0.88;
+}
+
+@media (max-width: 720px) {
+  .site-header__inner {
+    min-height: 76px;
+  }
+
+  .brand__logo {
+    width: 155px;
+    max-height: 55px;
+  }
+}
+
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+input,
+select,
+button {
+  font: inherit;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+::selection {
+  background: var(--luxury-gold);
+  color: var(--black);
+}
+
+:focus-visible {
+  outline: 2px solid var(--luxury-gold);
+  outline-offset: 4px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+/* ----------------------------------------------------------
+   3. HEADER
+   ---------------------------------------------------------- */
+
+.site-header {
+  position: relative;
+  z-index: 10;
+
+  background: var(--black);
+  border-bottom: 1px solid var(--border-gold);
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 17px;
+  text-decoration: none;
+}
+
+.brand__name {
+  color: var(--luxury-gold);
+
+  font-family: var(--font-luxury);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  line-height: 1;
+
+  transition: color var(--transition);
+}
+
+.brand:hover .brand__name {
+  color: var(--gold-300);
+}
+
+.brand__tagline {
+  padding-left: 17px;
+  border-left: 1px solid var(--border-gold-hover);
+
+  color: var(--text-secondary);
+
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* ----------------------------------------------------------
+   4. HERO
+   ---------------------------------------------------------- */
+
+.hero {
+  position: relative;
+
+  padding: 100px 0 76px;
+
+  text-align: center;
+
+  background:
+    radial-gradient(
+      ellipse at 50% 0%,
+      rgba(201, 164, 58, 0.075),
+      transparent 55%
+    ),
+    var(--black);
+}
+
+.hero__inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero__label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+
+  margin: 0 0 22px;
+
+  color: var(--gold-300);
+
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.hero__label::before,
+.hero__label::after {
+  content: "";
+
+  width: 25px;
+  height: 1px;
+
+  background: var(--luxury-gold);
+}
+
+.hero__title {
+  margin: 0;
+
+  color: var(--white);
+
+  font-family: var(--font-luxury);
+  font-size: clamp(2.8rem, 6vw, 4.7rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+
+.hero__subtitle {
+  margin: 19px 0 0;
+
+  color: var(--gold-300);
+
+  font-family: var(--font-luxury);
+  font-size: clamp(1.05rem, 2.4vw, 1.4rem);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.gold-rule {
+  display: block;
+
+  width: 65px;
+  height: 2px;
+
+  margin: 28px auto;
+
+  background: var(--luxury-gold);
+}
+
+.hero__description {
+  max-width: 640px;
+  margin: 0 auto;
+
+  color: var(--text-secondary);
+
+  font-size: 0.97rem;
+  line-height: 1.9;
+}
+
+/* ----------------------------------------------------------
+   5. SEARCH AND FILTER
+   ---------------------------------------------------------- */
+
+.controls {
+  padding: 0 0 30px;
+  background: var(--black);
+}
+
+.controls__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 22px;
+
+  padding-top: 27px;
+  padding-bottom: 29px;
+
+  border-top: 1px solid var(--border-white);
+  border-bottom: 1px solid var(--border-white);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field--search {
+  flex: 1 1 320px;
+}
+
+.field--filter {
+  flex: 0 1 270px;
+}
+
+.field label {
+  color: var(--text-primary);
+
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  height: 48px;
+
+  padding: 0 15px;
+
+  color: var(--white);
+  background: var(--luxury-gray);
+
+  border: 1px solid var(--border-white);
+  border-radius: 7px;
+
+  font-size: 0.9rem;
+
+  transition:
+    border-color var(--transition),
+    box-shadow var(--transition);
+}
+
+.field input::placeholder {
+  color: var(--text-muted);
+}
+
+.field select option {
+  color: var(--white);
+  background: var(--luxury-gray);
+}
+
+.field input:hover,
+.field select:hover {
+  border-color: var(--luxury-gold);
+}
+
+.field input:focus,
+.field select:focus {
+  outline: none;
+
+  border-color: var(--luxury-gold);
+
+  box-shadow: 0 0 0 3px rgba(201, 164, 58, 0.13);
+}
+
+.controls__count {
+  margin: 0 0 11px auto;
+
+  color: var(--text-secondary);
+  font-size: 0.83rem;
+}
+
+/* ----------------------------------------------------------
+   6. SECTIONS
+   ---------------------------------------------------------- */
+
+.section {
+  padding: 68px 0;
+}
+
+.section[hidden] {
+  display: none;
+}
+
+.section__heading {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+
+  margin: 0 0 38px;
+
+  color: var(--white);
+
+  font-family: var(--font-luxury);
+  font-size: clamp(1.9rem, 3vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.section__heading::after {
+  content: "";
+
+  flex: 1;
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    var(--border-gold-hover),
+    transparent
+  );
+}
+
+/* ----------------------------------------------------------
+   7. LEADERSHIP
+   ---------------------------------------------------------- */
+
+.section--leadership {
+  position: relative;
+
+  padding: 76px 0 82px;
+
+  background:
+    radial-gradient(
+      ellipse at 50% 0%,
+      rgba(201, 164, 58, 0.055),
+      transparent 55%
+    ),
+    var(--black-soft);
+
+  border-top: 1px solid rgba(201, 164, 58, 0.08);
+  border-bottom: 1px solid rgba(201, 164, 58, 0.08);
+}
+
+.section--leadership .section__heading {
+  color: var(--gold-300);
+}
+
+.section--leadership .section__heading::after {
+  background: linear-gradient(
+    90deg,
+    var(--border-gold-hover),
+    transparent
+  );
+}
+
+/* ----------------------------------------------------------
+   8. TEAM SECTION
+   ---------------------------------------------------------- */
+
+.section--team {
+  background: var(--luxury-gray);
+}
+
+/* ----------------------------------------------------------
+   9. TEAM GRIDS
+   ---------------------------------------------------------- */
+
+.grid {
+  display: grid;
+  align-items: stretch;
+  gap: 26px;
+}
+
+.grid--team {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid--leadership {
+  grid-template-columns: repeat(2, minmax(0, 350px));
+  justify-content: center;
+  gap: 34px;
+}
+
+/* ----------------------------------------------------------
+   10. PROFILE CARDS
+   ---------------------------------------------------------- */
+
+.profile-card {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  background: var(--card-bg);
+
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius);
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+
+  transition:
+    transform var(--transition),
+    border-color var(--transition),
+    box-shadow var(--transition),
+    background var(--transition);
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+
+  background: var(--card-hover);
+
+  border-color: var(--border-gold-hover);
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* ----------------------------------------------------------
+   11. PROFILE PHOTOS
+   ---------------------------------------------------------- */
+
+.profile-card__photo {
+  position: relative;
+
+  height: 260px;
+  overflow: hidden;
+
+  background: var(--luxury-gray);
+}
+
+.profile-card__photo img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center 20%;
+
+  transition: transform 0.55s ease;
+}
+
+.profile-card:hover .profile-card__photo img {
+  transform: scale(1.04);
+}
+
+/* ----------------------------------------------------------
+   12. PROFILE DETAILS
+   ---------------------------------------------------------- */
+
+.profile-card__body {
+  position: relative;
+
+  flex: 1;
+
+  padding: 22px 20px 25px;
+
+  background: var(--card-bg);
+
+  border-top: 2px solid var(--luxury-gold);
+}
+
+.profile-card__name {
+  margin: 0;
+
+  color: var(--white);
+
+  font-family: var(--font-body);
+  font-size: 1.02rem;
+  font-weight: 700;
+  line-height: 1.55;
+
+  overflow-wrap: anywhere;
+}
+
+.profile-card__role {
+  margin: 7px 0 0;
+
+  color: var(--gold-300);
+
+  font-size: 0.83rem;
+  font-weight: 500;
+  line-height: 1.7;
+
+  overflow-wrap: anywhere;
+}
+
+/* ----------------------------------------------------------
+   13. LEADERSHIP CARDS
+   ---------------------------------------------------------- */
+
+.profile-card--leader {
+  --photo-height: 350px;
+}
+
+.profile-card--leader .profile-card__photo {
+  height: var(--photo-height);
+}
+
+.profile-card--leader .profile-card__body {
+  padding: 25px 25px 29px;
+}
+
+.profile-card--leader .profile-card__name {
+  font-family: var(--font-luxury);
+  font-size: 1.45rem;
+  font-weight: 600;
+}
+
+.profile-card--leader .profile-card__role {
+  margin-top: 9px;
+  font-size: 0.9rem;
+}
+
+.section--leadership .profile-card {
+  background: var(--card-bg);
+  border-color: var(--border-gold);
+}
+
+.section--leadership .profile-card:hover {
+  border-color: var(--luxury-gold);
+}
+
+.section--leadership .profile-card__body {
+  background: var(--card-bg);
+  border-top-color: var(--luxury-gold);
+}
+
+.section--leadership .profile-card__name {
+  color: var(--white);
+}
+
+.section--leadership .profile-card__role {
+  color: var(--gold-300);
+}
+
+/* ----------------------------------------------------------
+   14. EMPTY SEARCH RESULTS
+   ---------------------------------------------------------- */
+
+.empty-state {
+  padding-top: 65px;
+  padding-bottom: 75px;
+
+  color: var(--text-secondary);
+  background: var(--luxury-gray);
+
+  font-family: var(--font-luxury);
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.empty-state[hidden] {
+  display: none;
+}
+
+/* ----------------------------------------------------------
+   15. FOOTER
+   ---------------------------------------------------------- */
+
+.site-footer {
+  padding: 27px 0;
+
+  color: var(--text-secondary);
+  background: var(--black);
+
+  border-top: 1px solid var(--border-gold);
+
+  font-size: 0.79rem;
+  letter-spacing: 0.025em;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+/* ----------------------------------------------------------
+   16. TABLET
+   ---------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+  .container {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .grid--team {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .grid--leadership {
+    gap: 26px;
+  }
+
+  .profile-card__photo {
+    height: 285px;
+  }
+
+  .profile-card--leader {
+    --photo-height: 330px;
+  }
+}
+
+/* ----------------------------------------------------------
+   17. MOBILE
+   ---------------------------------------------------------- */
+
+@media (max-width: 720px) {
+  .container {
+    padding-right: 19px;
+    padding-left: 19px;
+  }
+
+  .site-header__inner {
+    min-height: 70px;
+  }
+
+  .brand {
+    gap: 12px;
+  }
+
+  .brand__name {
+    font-size: 1.7rem;
+    letter-spacing: 0.17em;
+  }
+
+  .brand__tagline {
+    padding-left: 12px;
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+  }
+
+  .hero {
+    padding: 70px 0 52px;
+  }
+
+  .hero__label {
+    margin-bottom: 19px;
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+  }
+
+  .hero__title {
+    font-size: clamp(2.45rem, 9vw, 3.7rem);
+  }
+
+  .hero__subtitle {
+    margin-top: 16px;
+  }
+
+  .hero__description {
+    font-size: 0.91rem;
+    line-height: 1.85;
+  }
+
+  .gold-rule {
+    margin: 24px auto;
+  }
+
+  .controls {
+    padding-bottom: 20px;
+  }
+
+  .controls__inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 17px;
+
+    padding-top: 23px;
+    padding-bottom: 24px;
+  }
+
+  .field--search,
+  .field--filter {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  .controls__count {
+    margin: 0;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+
+  .section--leadership {
+    padding: 54px 0 60px;
+  }
+
+  .section__heading {
+    gap: 15px;
+    margin-bottom: 29px;
+    font-size: 2rem;
+  }
+
+  .grid {
+    gap: 22px;
+  }
+
+  .grid--team,
+  .grid--leadership {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .grid--leadership {
+    max-width: 430px;
+    margin: 0 auto;
+  }
+
+  .profile-card__photo {
+    height: 320px;
+  }
+
+  .profile-card--leader {
+    --photo-height: 350px;
+  }
+
+  .profile-card--leader .profile-card__body {
+    padding: 24px 22px 26px;
+  }
+
+  .profile-card--leader .profile-card__name {
+    font-size: 1.4rem;
+  }
+
+  .empty-state {
+    padding-top: 45px;
+    padding-bottom: 55px;
+    font-size: 1.05rem;
+  }
+}
+
+/* ----------------------------------------------------------
+   18. SMALL MOBILE
+   ---------------------------------------------------------- */
+
+@media (max-width: 380px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .brand__name {
+    font-size: 1.5rem;
+    letter-spacing: 0.14em;
+  }
+
+  .brand__tagline {
+    font-size: 0.53rem;
+  }
+
+  .hero__title {
+    font-size: 2.35rem;
+  }
+
+  .profile-card__photo {
+    height: 270px;
+  }
+
+  .profile-card--leader {
+    --photo-height: 300px;
+  }
+}
+
+/* ----------------------------------------------------------
+   19. REDUCED MOTION
+   ---------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  .profile-card:hover {
+    transform: none;
+  }
+
+  .profile-card:hover .profile-card__photo img {
+    transform: none;
+  }
+}
+
