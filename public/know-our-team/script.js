@@ -13,12 +13,12 @@
     { name: "Mr.Kapil Verma",    designation: "Co-Founder",          department: "Leadership",           leader: true,  photo: "/images/kapil-verma.png" },
     
     { name: "Jyoti Agrawal",  designation: "Project Coordinator", department: "Project Coordination", leader: false, photo: "/images/Jyoti.jpeg" },
-    { name: "Gaurav Kumar",   designation: "HR Executive",        department: "Human Resources",      leader: false, photo: "/images/Gaurav.jpeg" },
+    { name: "Gaurav Kumar",   designation: "HR Executive",        department: "Human Resources",      leader: false, photo: "/images/gaurav.jpeg" },
     { name: "Anjali Gupta",   designation: "Web Developer",       department: "Web Development",      leader: false, photo: "/images/anjali-gupta.jpeg" },
     { name: "Deepak Singh",   designation: "Sales Coordinator",   department: "Sales",                leader: false, photo: "/images/deepak.jpeg" },
     { name: "Heena",          designation: "Sales Coordinator",   department: "Sales",                leader: false, photo: "/images/Heena.jpeg" },
     { name: "Nidhi Rathore",  designation: "Sales Coordinator",   department: "Sales",                leader: false, photo: "/images/nidh.jpeg" },
-    { name: "Anjali Kumari",  designation: "Executive Assistant", department: "Executive Assistance", leader: false, photo: "/images/anjali-Kumari.jpeg" },
+    { name: "Anjali Kumari",  designation: "Executive Assistant", department: "Executive Assistance", leader: false, photo: "/images/anjali-kumari.jpeg" },
     { name: "Muskan Pal",     designation: "Executive Assistant", department: "Executive Assistance", leader: false, photo: "/images/muskan.jpeg" },
     { name: "Alisha Sinha",   designation: "Sales Coordinator",   department: "Sales",                leader: false, photo: "/images/alisha-sinha.jpeg" }
   ];
