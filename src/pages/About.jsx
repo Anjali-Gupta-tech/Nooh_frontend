@@ -1,381 +1,635 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
+import {
+  FaEye,
+  FaBullseye,
+  FaHeart,
+  FaLightbulb,
+  FaUsers,
+  FaTools,
+} from "react-icons/fa";
 
-const Hero = () => {
+const About = () => {
+  return (
+    <>
+      <Helmet>
+        <title>About Us | NOOH Elevated Living LLP</title>
+        <meta
+          name="description"
+          content="Learn about NOOH Elevated Living LLP - India's innovation-driven interior solutions company specializing in stretch ceilings, textile ceilings, backlit panels and premium interior technologies."
+        />
+      </Helmet>
 
-  // Background Images
-  const images = [
+      <div className="min-h-screen bg-luxury-black">
 
-     
-{
-  desktop: "/hero-images/translucent-stretch-ceiling.webp",
-  mobile: "/images/translucent-mobile.webp",
-  title: "STRETCHE™ TRANSLUCENT CEILING",
-  description:
-    "A premium translucent stretch ceiling system with integrated LED backlighting, creating soft, uniform illumination, seamless finishes, and luxurious architectural interiors."
-},
-{
-      desktop: "/images/stretch-ceiling.png",
-      mobile: "/hero-images/stretch-manufature-mobile.png",
-      title: "STRETCHE™ CEILING",
-      description:"It is a premium decorative fabric ceiling system creating elegant wave effects, visual depth, and stunning illuminated architectural interiors",
-    },
+        {/* ================= HERO ================= */}
 
-{
-  desktop: "/hero-images/stretch-skylume.png",
-  mobile: "/images/skylume-mobile.png",
-  title: "STRETCHE™ SKYLUME CEILING",
-  description:
-    "A premium printed translucent stretch ceiling with integrated LED backlighting, creating a realistic open-sky illusion that brings natural brightness."
-},
+      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
+  <div className="absolute inset-0">
+    {/* Desktop Image */}
+    <img
+      src="/images/about-image.webp"
+      alt="NOOH"
+      className="hidden md:block w-full h-full object-cover object-center"
+    />
+
+    {/* Mobile Image */}
+    <img
+      src="/images/about-mobile.png"
+      alt="NOOH"
+      className="block md:hidden w-full h-full object-cover object-center"
+    />
+
+    {/* Overlay */}
+    <div className="absolute inset-0 bg-gradient-to-b luxury-black/20" />
+  </div>
+
+  {/* Your Content Here */}
+  <div className="relative z-10">
+    {/* Heading, Text, Buttons */}
+  </div>
+</section>
+
+        {/* ================= COMPANY OVERVIEW ================= */}
+
+      <section className="section-padding bg-luxury-gray">
+
+  <div className="container-custom mx-auto">
+
+    <div className="grid lg:grid-cols-2 gap-12 items-start">
+
+      {/* LEFT CONTENT */}
+
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="self-start pt-1"
+      >
+
+        <h2 className="text-5xl font-luxury font-bold text-gold-300 mb-5 leading-none">
+          Who We Are
+        </h2>
+
+        <p className="text-white/80 leading-8 mb-5">
+          <strong className="text-luxury-gold">
+            NOOH Elevated Living LLP
+          </strong>{" "}
+          is an innovative interior solutions company dedicated to
+          transforming residential, commercial, hospitality and
+          corporate spaces through advanced design, technology and
+          exceptional craftsmanship.
+        </p>
+
+        <p className="text-white/80 leading-8 mb-5">
+          Our premium portfolio includes
+          <strong className="text-luxury-gold">
+            {" "}CLOUDWAVE™ Textile Ceilings,
+          </strong>
+          <strong className="text-luxury-gold">
+            {" "}SKYLUME™ Backlit Panels,
+          </strong>
+          <strong className="text-luxury-gold">
+            {" "}STRETCHÉ™ Printed & Translucent Stretch Ceilings,
+          </strong>
+          <strong className="text-luxury-gold">
+            {" "}Embroidery Wallcoverings
+          </strong>{" "}
+          and
+          <strong className="text-luxury-gold">
+            {" "}Customized Wallpapers
+          </strong>
+          , delivering elegant and functional interior experiences.
+        </p>
+
+        <p className="text-white/80 leading-8">
+          Every project reflects our commitment to innovation,
+          architecture, premium materials and precision execution,
+          creating spaces that inspire, perform and stand the test of
+          time.
+        </p>
+
+      </motion.div>
+
+      {/* RIGHT IMAGES */}
+
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="grid grid-cols-2 gap-4 self-start"
+      >
+
+        <img
+          src="/images/nooh-cloudwave-textile-ceiling-modern-office-lobby.webp"
+          alt=""
+          className="rounded-[28px] h-[320px] w-full object-cover shadow-xl"
+        />
+
+        <img
+          src="/images/epoxy-flooring.png"
+          alt="3D Epoxy Bathroom Flooring"
+          className="rounded-[28px] h-[320px] w-full object-cover mt-6 shadow-xl"
+        />
+
+        <img
+          src="/images/image2.jpeg"
+          alt=""
+          className="rounded-[28px] h-[320px] w-full object-cover -mt-6 shadow-xl"
+        />
+
+        <img
+          src="/images/nooh-printed-stretch-ceiling-sky-design-commercial-space.webp"
+          alt=""
+          className="rounded-[28px] h-[320px] w-full object-cover shadow-xl"
+        />
+
+      </motion.div>
+
+    </div>
+
+  </div>
+
+</section>
+
+     {/* ================= FOUNDERS ================= */}
+
+<section className="section-padding bg-luxury-black">
+
+  <div className="container-custom mx-auto">
+
+    {/* ================= Founder 1 ================= */}
+
+    <div className="grid lg:grid-cols-2 gap-12 items-start mb-24">
+
+      {/* IMAGE */}
+
+      <motion.div
+        initial={{ opacity: 0, x: -60 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="self-start"
+      >
+
+        <img
+  src="/images/asif-sir.webp"
+  alt="Mr. Asif Ali"
+  className="w-full h-[620px] object-cover object-top rounded-[30px] shadow-2xl"
+/>
+
+      </motion.div>
+
+      {/* CONTENT */}
+
+      <motion.div
+        initial={{ opacity: 0, x: 60 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="self-start pt-1"
+      >
+
+        <p className="text-luxury-gold uppercase tracking-[4px] mb-3">
+          Founder & Innovation Head
+        </p>
+
+        <h2 className="text-5xl font-luxury font-bold text-white leading-none mb-5">
+          Mr. Asif Ali
+        </h2>
+
+        <p className="text-white/80 leading-8 mb-5">
+          Mr. Asif Ali is an entrepreneur and innovation leader with more than
+          <span className="text-luxury-gold font-semibold">
+            {" "}15 years of industry experience.
+          </span>
+          {" "}His passion for innovation and product development has helped
+          shape NOOH into a forward-thinking interior solutions company focused
+          on advanced design, technology and craftsmanship.
+        </p>
+
+        <p className="text-white/80 leading-8 mb-5">
+          Under his leadership, NOOH has introduced innovative interior
+          solutions including CLOUDWAVE™ Textile Ceilings, SKYLUME™ Backlit
+          Panels and STRETCHÉ™ Stretch Ceiling Systems, delivering premium
+          experiences for residential, commercial and hospitality projects.
+        </p>
+
+        <p className="text-white/80 leading-8 mb-6">
+          His vision continues to inspire innovation, develop skilled
+          professionals and create new business opportunities across the
+          interior industry.
+        </p>
+
+        <div className="grid sm:grid-cols-2 gap-4">
+
+          <div className="glass rounded-2xl p-5">
+            <h4 className="text-luxury-gold font-semibold mb-2">
+              Experience
+            </h4>
+
+            <p className="text-white/80">
+              15+ Years
+            </p>
+          </div>
+
+          <div className="glass rounded-2xl p-5">
+            <h4 className="text-luxury-gold font-semibold mb-2">
+              Expertise
+            </h4>
+
+            <p className="text-white/80">
+              Product Innovation
+            </p>
+          </div>
+
+          <div className="glass rounded-2xl p-5">
+            <h4 className="text-luxury-gold font-semibold mb-2">
+              Specialization
+            </h4>
+
+            <p className="text-white/80">
+              Interior Technologies
+            </p>
+          </div>
+
+          <div className="glass rounded-2xl p-5">
+            <h4 className="text-luxury-gold font-semibold mb-2">
+              Focus
+            </h4>
+
+            <p className="text-white/80">
+              Business Leadership
+            </p>
+          </div>
+
+        </div>
+
+      </motion.div>
+
+    </div>
+
+    {/* ================= Founder 2 ================= */}
+
+    <div className="grid lg:grid-cols-2 gap-12 items-start">
+
+      {/* CONTENT */}
+
+      <motion.div
+        initial={{ opacity: 0, x: -60 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="self-start pt-1"
+      >
+
+        <p className="text-luxury-gold uppercase tracking-[4px] mb-3">
+          Co-Founder & Principal Architect
+        </p>
+
+        <h2 className="text-5xl font-luxury font-bold text-white leading-none mb-5">
+          Mr. Kapil Verma
+        </h2>
+
+        <p className="text-white/80 leading-8 mb-5">
+          Mr. Kapil Verma is a Principal Architect with more than
+          <span className="text-luxury-gold font-semibold">
+            {" "}20 years of experience.
+          </span>
+          {" "}His expertise spans architecture, luxury interiors and
+          premium space planning.
+        </p>
+
+        <p className="text-white/80 leading-8 mb-5">
+          His architectural vision ensures every NOOH project reflects
+          innovation, functionality and timeless aesthetics while
+          delivering exceptional residential, commercial and hospitality
+          environments.
+        </p>
+
+        <p className="text-white/80 leading-8 mb-6">
+          Through creative vision and technical excellence, he continues
+          to lead NOOH towards becoming one of India's most innovative
+          premium interior solution companies.
+        </p>
+
+        <div className="grid sm:grid-cols-2 gap-4">
+
+          <div className="glass rounded-2xl p-5">
+            <h4 className="text-luxury-gold font-semibold mb-2">
+              Experience
+            </h4>
+
+            <p className="text-white/80">
+              20+ Years
+            </p>
+          </div>
+
+          <div className="glass rounded-2xl p-5">
+            <h4 className="text-luxury-gold font-semibold mb-2">
+              Expertise
+            </h4>
+
+            <p className="text-white/80">
+              Architecture
+            </p>
+          </div>
+
+          <div className="glass rounded-2xl p-5">
+            <h4 className="text-luxury-gold font-semibold mb-2">
+              Specialization
+            </h4>
+
+            <p className="text-white/80">
+              Luxury Interiors
+            </p>
+          </div>
+
+          <div className="glass rounded-2xl p-5">
+            <h4 className="text-luxury-gold font-semibold mb-2">
+              Focus
+            </h4>
+
+            <p className="text-white/80">
+              Design Excellence
+            </p>
+          </div>
+
+        </div>
+
+      </motion.div>
+
+      {/* IMAGE */}
+
+      <motion.div
+        initial={{ opacity: 0, x: 60 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="self-start"
+      >
+
+        <img
+          src="/images/kapil-sir.webp"
+          alt="Mr. Kapil Verma"
+          className="w-full h-[620px] object-cover rounded-[30px] shadow-2xl"
+        />
+
+      </motion.div>
+
+    </div>
+
+  </div>
+
+</section>
 
 
+        {/* ================= BUILD SKILLS ================= */}
 
-{
-  desktop: "/hero-images/3D-GALAXY-PRINTING-CEILING.png",
-  mobile: "/images/3-d-stretch.png",
-  title: "STRETCHE™ 3D GALAXY PRINTED CEILING",
-  description:
-    "A premium custom-printed stretch ceiling featuring breathtaking 3D galaxy visuals with integrated LED illumination, creating a spectacular cosmic ambiance and immersive architectural experience."
-},
+        <section className="section-padding bg-luxury-gray">
 
-{
-  desktop: "/hero-images/EMBRODIARY-CEILING-SYSTEMS.png",
-  mobile: "/hero-images/embordery.png",
-  title: "STRETCHE™ EMBROIDERY CEILING SYSTEM",
-  description:
-    "A premium stretch ceiling system featuring custom embroidered fabric designs that combine artistic craftsmanship with modern architecture, creating elegant, luxurious, and visually distinctive interior spaces."
-},
-{
-  desktop: "/hero-images/STRETCHE-PANEL-LIGHT.png",
-  mobile: "/hero-images/panel-hero-img.png",
-  title: "STRETCHE™ PANEL LIGHT",
-  description:
-    "A premium ultra-slim LED panel lighting solution engineered to deliver uniform illumination, high energy efficiency, and a sleek architectural finish for residential, commercial, and luxury interiors."
-},
-{
-  desktop: "/hero-images/Architechtural.png",
-  mobile: "/hero-images/architectural.png",
-  title: "ARCHITECTURAL WALL ART™",
-  description:
-    "Premium wall art solutions transforming architectural spaces through immersive visuals, artistic expression, and innovative surface design."
-},
-{
-  desktop: "/hero-images/STRETCH-GLOSS-STRETCH-CEILING.png",
-  mobile: "/hero-images/stretch-gloss.png",
-  title: "STRETCHE™ GLOSS CEILING",
-  description:
-    "A premium high-gloss stretch ceiling system with a mirror-like finish that enhances brightness, creates a sense of spaciousness, and adds a sleek, luxurious touch to modern interiors."
-},
-{
-  desktop: "/hero-images/noohlivingrock.png",
-  mobile: "/hero-images/rock-mobile.png",
-  title: "NOOH ROCKSCAPE™",
-  description:
-    "Architectural artificial rock systems creating realistic, sculptural environments through innovative textures, forms, and immersive surface design."
-},
+          <div className="container-custom mx-auto">
 
-{
-  desktop: "/hero-images/STRETCH-CEILING-MANUFACTURER-DELHI-NCR-NOIDA-DELHI.png",
-  mobile: "/images/stretch-gloss.png",
-  title: "STRETCHE™ CEILING",
-  description:
-    "A premium printed translucent stretch ceiling featuring nature-inspired artwork and integrated LED backlighting, creating the illusion of an open sky while bringing elegance, tranquility, and biophilic design into modern interiors."
-},
+           <div className="grid lg:grid-cols-2 gap-16 items-center">
+  <motion.div
+    initial={{ opacity: 0, x: -40 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    viewport={{ once: true }}
+  >
+    <div className="rounded-3xl overflow-hidden bg-white shadow-2xl">
+      <img
+        src="/images/StretchCeiling-Training.png"
+        alt="Training"
+        className="w-full h-auto object-contain"
+      />
+    </div>
+  </motion.div>
 
-  {
-  desktop: "/hero-images/STRETCHE-BACKLIT-STRETCH-CEILING.png",
-  mobile: "/hero-images/stretch-backlit.png",
-  title: "STRETCHE™ BACKLIT STRETCH CEILING",
-  description:
-    "A premium LED backlit stretch ceiling system designed to deliver seamless illumination, soft diffused lighting, and a sophisticated architectural finish for residential, commercial, and luxury interiors."
-},
-{
-  desktop: "/hero-images/STRETCHE-UV-PRINTING.png",
-  mobile: "/hero-images/UV-printing.png",
-  title: "STRETCHE™ UV PRINTED  CEILING",
-  description:
-    "A premium stretch ceiling featuring high-definition UV printing technology that delivers vibrant colors, exceptional durability, and custom-designed artwork for elegant residential, commercial, and luxury interiors."
-},
-{
-  desktop: "/hero-images/STARRY-LIGHT-PRINTING-STRETCH-CEILING.png",
-  mobile: "/hero-images/starry-light.png",
-  title: "STRETCHE™ STARRYLIGHT PRINTED STRETCH CEILING",
-  description:
-    "A premium printed stretch ceiling featuring a mesmerizing starry sky design with integrated LED illumination, creating a magical nighttime ambiance and luxurious architectural interiors."
-},
-{
-  desktop: "/hero-images/SKY-LUME-PANEL-LIGHTING.png",
-  mobile: "/images/sky-lume-panel-lighting-mobile.webp",
-  title: "STRETCHE™ SKYLUME PANEL LIGHTING",
-  description:
-    "A premium LED panel lighting system engineered to deliver uniform illumination, exceptional energy efficiency, and a realistic daylight effect, creating bright, elegant, and modern architectural interiors."
-},
-{
-  desktop: "/hero-images/STRETCHE-TRANSLITE-STRE.png",
-  mobile: "/images/translite-stretch-ceiling-mobile.webp",
-  title: "STRETCHE™ TRANSLITE STRETCH CEILING",
-  description:
-    "A premium translucent stretch ceiling system designed to diffuse light evenly, delivering seamless illumination, elegant aesthetics, and high-performance architectural lighting for luxury interiors."
-},
-{
-  desktop: "/hero-images/STRETCHE-DECORATIVE-CEILING (1).png",
-  mobile: "/images/decorative-stretch-ceiling-mobile.webp",
-  title: "STRETCHE™ DECORATIVE STRETCH CEILING",
-  description:
-    "A premium decorative stretch ceiling system designed to enhance interiors with elegant finishes, custom designs, and modern architectural aesthetics for residential, commercial, and luxury spaces."
-},
+  <motion.div
+    initial={{ opacity: 0, x: 40 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    viewport={{ once: true }}
+  >
+ <h2 className="text-5xl font-luxury font-bold text-gold-300 mb-5">
+  More Than Interiors
+</h2>
 
-{
-  desktop: "/hero-images/STRETCHE-GRAPHIC-CEILING.png",
-  mobile: "/images/graphic-stretch-ceiling-mobile.webp",
-  title: "STRETCHÉ™ GRAPHIC STRETCH CEILING",
-  description:
-    "Create stunning visual interiors with premium graphic stretch ceilings featuring customized artwork and seamless architectural finishes."
-},
+<h3 className="text-3xl text-white mb-6">
+  We Build Skills. We Build Businesses.
+</h3>
 
-{
-  desktop: "/hero-images/NOOH-EPOXY-FLOORING-INDIA.png",
-  mobile: "/images/epoxy-flooring-mobile.webp",
-  title: "3D EPOXY FLOORING",
-  description:
-    "Luxury seamless epoxy flooring designed with artistic finishes, exceptional durability, and modern decorative appeal."
-},
+<p className="text-white/80 leading-relaxed mb-6">
+  At <span className="text-luxury-gold font-semibold">NOOH Elevated Living LLP</span>,
+  we believe true innovation is not only about creating exceptional interior
+  solutions—it is about creating opportunities for people. Our mission is to
+  help individuals build successful careers and profitable businesses through
+  professional training, practical experience and continuous innovation.
+</p>
+
+<p className="text-white/80 leading-relaxed mb-6">
+  We conduct specialized workshops for aspiring entrepreneurs, technicians,
+  architects, interior designers, contractors, dealers and business owners.
+  From technical installation to business development, our programs are
+  designed to build both professional skills and successful businesses.
+</p>
+
+<div className="grid grid-cols-2 gap-4 my-8">
+
+  <div className="glass rounded-2xl p-5">
+    <h4 className="text-luxury-gold font-semibold mb-2">
+      Training Programs
+    </h4>
+
+    <p className="text-white/80 text-sm">
+      Stretch Ceilings, Textile Ceilings, Fiber Optic, 3D Epoxy Flooring,
+      Installation & Business Training.
+    </p>
+  </div>
+
+  <div className="glass rounded-2xl p-5">
+    <h4 className="text-luxury-gold font-semibold mb-2">
+      Learn. Build. Earn.
+    </h4>
+
+    <p className="text-white/80 text-sm">
+      Practical learning with real-world projects to help participants
+      confidently start or expand their interior business.
+    </p>
+  </div>
+
+  <div className="glass rounded-2xl p-5">
+    <h4 className="text-luxury-gold font-semibold mb-2">
+      Learn From Experts
+    </h4>
+
+    <p className="text-white/80 text-sm">
+      Guided by Asif Ali & Kapil Verma through product knowledge,
+      installation techniques, quality standards and customer handling.
+    </p>
+  </div>
+
+  <div className="glass rounded-2xl p-5">
+    <h4 className="text-luxury-gold font-semibold mb-2">
+      Innovation Never Stops
+    </h4>
+
+    <p className="text-white/80 text-sm">
+      Every year NOOH develops innovative decorative interior products,
+      creating new opportunities for partners and professionals.
+    </p>
+  </div>
+
+</div>
+
+<p className="text-white/80 leading-relaxed">
+  Whether your goal is to become a certified installer, launch your own
+  decorative interior business or become a franchise partner, NOOH provides
+  the knowledge, technology and long-term support to help you succeed.
+</p>
 
 
+ 
 
+</motion.div>
+</div>
 
+          </div>
 
-{
-  desktop: "/hero-images/WINDFABRIC-TEXTILE-CEILING.png",
-  mobile: "/images/windfabric-textile-mobile.webp",
-  title: "CLOUDWAVE™ WINDFABRIC TEXTILE CEILING",
-  description:
-    "Innovative textile ceiling systems offering flowing architectural designs with lightweight and elegant finishes."
-},
+        </section>
 
-{
-  desktop: "/hero-images/STRETCHE-RGB-STRETCH-CEILING.png",
-  mobile: "/images/rgb-stretch-ceiling-mobile.webp",
-  title: "STRETCHÉ™ RGB STRETCH CEILING",
-  description:
-    "Dynamic RGB stretch ceiling solutions that transform interiors with vibrant colours and intelligent lighting effects."
-},
+        {/* ================= WHY CHOOSE ================= */}
 
-{
-  desktop: "/hero-images/STRETCHE-TEXTURED-STRETCH-CEILING.png",
-  mobile: "/images/textured-stretch-ceiling-mobile.webp",
-  title: "STRETCHÉ™ TEXTURED STRETCH CEILING",
-  description:
-    "Premium textured stretch ceilings designed to create sophisticated surfaces with unique architectural character."
-},
+        <section className="section-padding">
 
-{
-  desktop: "/hero-images/STRETCHE-BACKLIT-WALL.png",
-  mobile: "/images/backlit-wall-mobile.webp",
-  title: "STRETCHÉ™ BACKLIT WALL",
-  description:
-    "Decorative illuminated wall systems featuring premium graphics with uniform LED backlighting for striking interiors."
-},
+          <div className="container-custom mx-auto">
 
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-16"
+            >
 
+              <h2 className="text-5xl md:text-6xl font-luxury font-bold text-gold-300 mb-6">
+                Why Choose NOOH
+              </h2>
 
-{
-  desktop: "/hero-images/FIBER-OPTIC-CEILING.png",
-  mobile: "/images/fiber-optic-mobile.webp",
-  title: " FIBERSKY™  FIBER  OPTIC CEILING",
-  description:
-    "Create breathtaking starry sky ceilings with premium fiber optic lighting for luxury residential and commercial spaces."
-},
+              <p className="text-xl text-white/70 max-w-3xl mx-auto">
+                Experience innovation, premium craftsmanship and complete
+                interior excellence.
+              </p>
 
-{
-  desktop: "/hero-images/WINDFABRIC-TEXTILE-CEILING.png",
-  mobile: "/images/windfabric-mobile.webp",
-  title: "CLOUDWAVE™ TEXTILE CEILING",
-  description:
-    "Elegant textile ceiling systems that blend innovative design with lightweight architectural performance."
-},
+            </motion.div>
 
-{
-  desktop: "/hero-images/CLOUDWAVE-TEXTILE-CEILING.png",
-  mobile: "/images/cloudwave-mobile.webp",
-  title: "CLOUDWAVE™ TEXTILE CEILING",
-  description:
-    "Modern textile ceiling solutions featuring seamless flowing forms for premium architectural interiors."
-},
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-{
-  desktop: "/hero-images/decorative_ceiling.png",
-  mobile: "/images/decorative-stretch-ceiling-mobile.webp",
-  title: "STRETCHÉ™ DECORATIVE STRETCH CEILING",
-  description:
-    "Premium decorative stretch ceilings crafted to enhance interiors with elegant finishes and contemporary design."
-},
+              {[
+                {
+                  icon: <FaLightbulb />,
+                  title: "Innovation-Driven Solutions",
+                },
+                {
+                  icon: <FaTools />,
+                  title: "Advanced Interior Technologies",
+                },
+                {
+                  icon: <FaHeart />,
+                  title: "Premium Quality Materials",
+                },
+                {
+                  icon: <FaUsers />,
+                  title: "Expert Design & Installation Team",
+                },
+                {
+                  icon: <FaBullseye />,
+                  title: "Customized Project Solutions",
+                },
+                {
+                  icon: <FaEye />,
+                  title: "Customer-First Approach",
+                },
+              ].map((item, index) => (
 
-{
-  desktop: "/hero-images/STRETCHE-DECORATIVE-CEILING.png",
-  mobile: "/images/decorative-ceiling-mobile.webp",
-  title: "STRETCHÉ™ DECORATIVE CEILING",
-  description:
-    "Luxury decorative ceiling systems combining innovative materials with timeless architectural elegance."
-},
-   
-  ];
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="glass rounded-3xl p-8 text-center hover:glass-gold duration-300"
+                >
 
-  const [currentImage, setCurrentImage] = useState(0);
-const [isPaused, setIsPaused] = useState(false);
+                  <div className="text-5xl text-luxury-gold flex justify-center mb-6">
+                    {item.icon}
+                  </div>
 
-// Auto Slider — change slides every 6 seconds.
-  // The timer does not restart on every slide change.
-  useEffect(() => {
-    if (isPaused) return undefined;
+                  <h3 className="text-xl font-semibold text-white">
+                    {item.title}
+                  </h3>
 
-    const interval = window.setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 6000);
+                </motion.div>
 
-    return () => window.clearInterval(interval);
-  }, [isPaused, images.length]);
+              ))}
 
-const nextSlide = () => {
-  setCurrentImage((prev) => (prev + 1) % images.length);
-};
+            </div>
 
-const prevSlide = () => {
-  setCurrentImage((prev) =>
-    prev === 0 ? images.length - 1 : prev - 1
+          </div>
+
+        </section>
+
+        {/* ================= CTA ================= */}
+
+        <section className="py-28 bg-gradient-to-r from-[#111111] via-[#181818] to-[#111111]">
+
+          <div className="container-custom mx-auto text-center">
+
+            <motion.h2
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-5xl md:text-7xl font-luxury font-bold text-gold-300 mb-8 leading-tight"
+            >
+              Transform Spaces.
+              <br />
+              Develop Skills.
+              <br />
+              Create Opportunities.
+              <br />
+              Elevate Lives.
+            </motion.h2>
+
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.2 }}
+              viewport={{ once: true }}
+              className="text-xl text-white/70 max-w-3xl mx-auto mb-10"
+            >
+              At NOOH Elevated Living LLP, we don't simply design interiors—we
+              create experiences, inspire innovation and build opportunities
+              that elevate the way people live, work and grow.
+            </motion.p>
+
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              href="/products"
+              className="inline-block px-10 py-4 rounded-full bg-luxury-gold text-black font-bold text-lg hover:bg-gold-300 transition-all duration-300"
+            >
+              Explore Our Solutions
+            </motion.a>
+
+          </div>
+
+        </section>
+
+      </div>
+
+    </>
+
   );
 };
 
-return (
-  <section
-    className="relative h-screen min-h-[520px] overflow-hidden"
-    aria-label="NOOH featured products"
-  >
-    {/* Optimized hero image: render only the active slide */}
-    <div className="absolute inset-0">
-      <picture key={currentImage}>
-        <source
-          media="(max-width: 768px)"
-          srcSet={images[currentImage].mobile}
-        />
-        <motion.img
-          key={`hero-image-${currentImage}`}
-          src={images[currentImage].desktop}
-          alt={images[currentImage].title}
-          fetchPriority={currentImage === 0 ? "high" : "auto"}
-          loading="eager"
-          decoding="async"
-          width="1920"
-          height="1080"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.45, ease: "easeOut" }}
-          className="absolute inset-0 h-full w-full object-cover"
-        />
-      </picture>
-    </div>
+export default About;
 
-    {/* Overlay */}
+     
 
-    <div className="absolute inset-0 bg-black/30 z-10" />
 
-    {/* Content */}
-
-    <div className="relative z-20 h-full flex items-center justify-center">
-
-      <div className="container-custom mx-auto px-6 text-center">
-
-        <motion.h2
-          key={currentImage}
-          initial={{ opacity: 0, y: 25 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.35, ease: "easeOut" }}
-          className="text-2xl md:text-4xl lg:text-5xl font-light text-white mb-5"
-        >
-
-          {images[currentImage].title}
-
-        </motion.h2>
-
-        <motion.p
-          key={`desc-${currentImage}`}
-          initial={{ opacity: 0, y: 25 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.35, ease: "easeOut" }}
-          className="max-w-3xl mx-auto text-white/80 text-lg md:text-xl leading-relaxed"
-        >
-
-          {images[currentImage].description}
-
-        </motion.p>
-
-      </div>
-
-    </div>
-
-    {/* Controls */}
-
-    <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30 flex items-center gap-5">
-
-      {/* Previous */}
-
-      <button
-        type="button"
-        aria-label="Previous slide"
-        onClick={prevSlide}
-        className="w-11 h-11 rounded-full bg-black/60 border border-white/20 text-white hover:bg-gold-300 hover:text-black transition-colors duration-300"
-      >
-        ❮
-      </button>
-
-      {/* Dots */}
-
-      <div className="flex gap-2">
-
-        {images.map((_, index) => (
-
-          <button
-            key={index}
-            type="button"
-            aria-label={`Go to slide ${index + 1}`}
-            aria-current={currentImage === index ? "true" : undefined}
-            onClick={() => setCurrentImage(index)}
-            className={`transition-all duration-300 rounded-full ${
-              currentImage === index
-                ? "w-8 h-2 bg-gold-300"
-                : "w-2 h-2 bg-white/50 hover:bg-white"
-            }`}
-          />
-
-        ))}
-
-      </div>
-
-      {/* Play / Pause */}
-      <button
-        type="button"
-        aria-label={isPaused ? "Play slideshow" : "Pause slideshow"}
-        onClick={() => setIsPaused((prev) => !prev)}
-        className="w-11 h-11 rounded-full bg-black/60 border border-white/20 text-white hover:bg-gold-300 hover:text-black transition-colors duration-300"
-      >
-        {isPaused ? "▶" : "Ⅱ"}
-      </button>
-
-      {/* Next */}
-      <button
-        type="button"
-        aria-label="Next slide"
-        onClick={nextSlide}
-        className="w-11 h-11 rounded-full bg-black/60 border border-white/20 text-white hover:bg-gold-300 hover:text-black transition-colors duration-300"
-      >
-        ❯
-      </button>
-
-    </div>
-
-  </section>
-);
-}
-export default Hero;
-
+ 
