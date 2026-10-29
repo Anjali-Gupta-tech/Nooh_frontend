@@ -26,7 +26,7 @@ const FeaturedProjects = () => {
       category: 'Printed Stretch Ceiling',
       description:
         'Transform interiors with customised printed artwork and integrated LED illumination, featuring static, tunable, and dynamic lighting options.',
-      image: '/service/print-stretch-ceiling.png',
+      image: '/service/print-stretch-ceiling.webp',
       link: '/products/print/static-cct',
     },
     {
@@ -35,7 +35,7 @@ const FeaturedProjects = () => {
       category: 'High-Gloss Ceiling',
       description:
         'A premium reflective stretch ceiling with a smooth, mirror-like finish that enhances light reflection and creates a sophisticated interior.',
-      image: '/franchaise-hero/gloss-main.png',
+      image: '/franchaise-hero/gloss-main.webp',
       link: '/products/stretch-ceiling/gloss',
     },
     {
@@ -44,7 +44,7 @@ const FeaturedProjects = () => {
       category: 'Architectural Lighting',
       description:
         'Premium backlit stretch panels combining seamless surfaces with advanced LED technology, available in white, tunable, printed, and RGBW options.',
-      image: '/service/product-panel.png',
+      image: '/service/product-panel.webp',
       link: '/products/panel/white',
     },
     {
@@ -53,7 +53,7 @@ const FeaturedProjects = () => {
       category: 'Fiber Optic Lighting',
       description:
         'Create a captivating starry-sky effect with fiber-optic lighting, custom star patterns, twinkling effects, and dynamic illumination.',
-      image: '/images/fiber-optics-hero.png',
+      image: '/images/fiber-optics-hero.webp',
       link: '/products/fiber-optic/star-sky',
     },
     {

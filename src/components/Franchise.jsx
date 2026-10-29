@@ -282,7 +282,7 @@ const Franchise = () => {
     number: "01",
     title: <>STRETCHÉ<sup>™</sup></>,
     type: "Stretch Ceiling",
-    image: "/images/stretch-ceiling-manufacted.png",
+    image: "/images/stretch-ceiling-manufacted.webp",
   },
 
   {

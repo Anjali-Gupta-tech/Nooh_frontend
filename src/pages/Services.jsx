@@ -15,7 +15,7 @@ const Services = () => {
 
   title: (
     <>
-      STRETCHÉ<sup>™</sup> TRANSLUCENT
+     DREAMSOL STRETCHÉ<sup>™</sup>TRANSLUCENT CEILING SYSTEM 
     </>
   ),
 
@@ -24,7 +24,7 @@ const Services = () => {
 
   description: (
     <>
-      STRETCHÉ<sup>™</sup> TRANSLUCENT is a premium illuminated stretch
+      DREAMSOL STRETCHÉ<sup>™</sup> TRANSLUCENT is a premium illuminated stretch
       ceiling system designed to create seamless, elegant and evenly
       illuminated architectural surfaces. Combined with advanced LED
       technology, it transforms ordinary interiors into sophisticated,
@@ -220,7 +220,7 @@ const Services = () => {
 
   ],
 
-  image: "/franchaise-hero/gloss-main.png",
+  image: "/franchaise-hero/gloss-main.webp",
 
   pdf: "/catalogue/STRETCHE_TM_GLOSS_CEILING.pdf",
 },
@@ -288,7 +288,7 @@ const Services = () => {
     },
   ],
 
-  image: "/service/product-panel.png",
+  image: "/service/product-panel.webp",
 
   pdf: "/catalogue/stretche-panel-lighting.pdf",
 },
@@ -358,7 +358,7 @@ const Services = () => {
       },
     ],
 
-    image: "/images/fiber-optics-hero.png",
+    image: "/images/fiber-optics-hero.webp",
 
     pdf: "/catalogue/fiber-optic-star-lights.pdf",
   },
