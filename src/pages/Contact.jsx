@@ -80,7 +80,7 @@ const handleSubmit = async (e) => {
   }
 
   try {
-    const response = await fetch("/api/contact", {
+    const response = await fetch("http://localhost:5000/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -472,7 +472,7 @@ const handleSubmit = async (e) => {
                         className={`w-full bg-luxury-black/50 border ${
                           errors.message ? 'border-red-500' : 'border-luxury-gold/30'
                         } rounded-lg px-4 py-3 text-white focus:border-luxury-gold focus:outline-none smooth-transition resize-none`}
-                        placeholder="Tell us about your project..."
+                        placeholder="Tell us about your product..."
                       />
                       {errors.message && (
                         <p className="text-red-400 text-sm mt-1">{errors.message}</p>
