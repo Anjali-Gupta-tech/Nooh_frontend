@@ -537,7 +537,7 @@ const Services = () => {
     },
   ],
 
-  image: "/hero-images/mirrora-main.png",
+  image: "/hero-images/mirrora-main.webp",
 
   pdf: "/catalogue/mirrora-architecture.pdf",
 },
@@ -607,7 +607,7 @@ const Services = () => {
     },
   ],
 
-  image: "/imag/cloudwave-gloss.png",
+  image: "/images/cloudwave-gloss-home.webp",
 
   pdf: "/catalogue/cloudwave-gloss-textile-ceiling.pdf",
 },
